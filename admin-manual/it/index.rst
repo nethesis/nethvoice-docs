@@ -74,7 +74,7 @@ Configurazione avanzata
     provisioning
     suoneria_differenziata
     interno_remoto
-    collegamento_remoti
+    collegamenti_remoti
     installare_il_codec_g729
     strategie_squillo
     pattern
@@ -156,8 +156,8 @@ Avanzate
 --------
 
 .. toctree::
-    impostazioni_avanzate_nethvoice
-    cli_nethvoice
+    impostazioni_avanzate
+    cli
     blacklist
     blocco_interni
     modulo_registrazione_chiamate
