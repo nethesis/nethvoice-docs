@@ -8,11 +8,7 @@ Documentazione |product|
             :alt: |product|
 
 .. rubric::
-   |product| è una nuova soluzione telefonica aperta ed integrata con l'intero sistema informativo aziendale, in grado di fornire tutti i servizi di comunicazione e collaborazione: dati, voce e video.
-
-Il cuore OpenSource di |product| è basato principalmente su due progetti `Asterisk <http://www.asterisk.org/>`_ e `FreePBX <http://www.freepbx.org/>`_ potenziati grazie allo sviluppo di innumerevoli moduli e funzioni per semplificarne l’utilizzo e permetterne una forte integrazione con i dati presenti in azienda, pur mantenendo la caratteristica di apertura volta a consentirne la massima flessibilità a chiunque intenda sviluppare le proprie integrazioni usando i linguaggi di programmazione più comuni.
-
-|product| concentra in un’unica soluzione, adattabile alle varie esigenze aziendali, le funzionalità del centralino tradizionale (PBX) con le più innovative peculiarità dei sistemi telefonici avanzati. I vantaggi di tale sistema consistono in una sensibile riduzione dei costi di gestione e manutenzione, e nella scalabilità dell’architettura IP che è adattabile alle eventuali evoluzioni strutturali dell’azienda.
+|product| è una nuova soluzione telefonica aperta ed integrata con l'intero sistema informativo aziendale, in grado di fornire tutti i servizi di comunicazione e collaborazione: dati, voce e video.
 
 
 .. sidebar:: contatti
