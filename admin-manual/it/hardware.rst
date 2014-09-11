@@ -2,8 +2,6 @@
 Hardware |product|
 ================================
 
-|product| è disponibile in soluzioni miniaturizzate che trovate nella nostra area di shop. 
-
 L'utilizzo di |product| non è vincolante rispetto alla scelta dell'hardware da utilizzare, non è quindi obbligatorio scegliere determinate marche o modelli da affiancare al centralino. E' necessario però conoscere quali hardware scegliere in base alle proprie esigenze e all'apparato telefonico in cui |product| verrà installato.
 
 Qiualora si voglia installare |product| su dell'hardware proprio, per stabilire la compatibilità hardware di |product| fare riferimento a quella di |parent_product|.
@@ -104,7 +102,7 @@ Telefoni
 WiFi e Dect
 -----------
 
-Il *wifi* non è adatto ad ambienti industriali, in quanto è un protocollo debole ed instabile in caso di rumore elettrico. E' adatto solo per piccoli uffici e coperture ridotte. L'alternativa dal punto di vista della copertura e della stabilità è il *dect*, utilizzando queste soluzioni a seconda del numero di cordless necessario e della vastità dell'area da coprire:
+Il **wifi** non è adatto ad ambienti industriali, in quanto è un protocollo debole ed instabile in caso di rumore elettrico. E' adatto solo per piccoli uffici e coperture ridotte. L'alternativa dal punto di vista della copertura e della stabilità è il **dect**, utilizzando queste soluzioni a seconda del numero di cordless necessario e della vastità dell'area da coprire:
 
 -  ata + cordless dect
 -  cordless dect con base IP
@@ -115,5 +113,5 @@ Telefoni IP
 
 Ogni modello di telefono IP che gestisce correttamente Il protocollo Sip è compatibile. La scelta dipende poi dalle funzionalità desiderate in ogni postazione. 
 
-Al momento consigliamo Yealink o Snom come marca con il miglior rapporto qualità/prezzo.
+Al momento consigliamo **Yealink** o **Snom** come marca con il miglior rapporto qualità/prezzo.
 
