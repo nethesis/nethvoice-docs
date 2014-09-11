@@ -4,135 +4,152 @@
 Documentazione |product| 
 ========================
 
-.. rubric:: |product| è una soluzione telefonica aperta ed integrata con l'intero sistema informativo aziendale, in grado di fornire tutti i servizi di comunicazione e collaborazione: dati, voce e video.
+.. image:: ../_static/logo.png
+            :alt: |product|
+
+.. rubric::
+   |product| è una nuova soluzione telefonica aperta ed integrata con l'intero sistema informativo aziendale, in grado di fornire tutti i servizi di comunicazione e collaborazione: dati, voce e video.
+
+Il cuore OpenSource di |product| è basato principalmente su due progetti `Asterisk <http://www.asterisk.org/>`_ e `FreePBX <http://www.freepbx.org/>`_ potenziati grazie allo sviluppo di innumerevoli moduli e funzioni per semplificarne l’utilizzo e permetterne una forte integrazione con i dati presenti in azienda, pur mantenendo la caratteristica di apertura volta a consentirne la massima flessibilità a chiunque intenda sviluppare le proprie integrazioni usando i linguaggi di programmazione più comuni.
+
+|product| concentra in un’unica soluzione, adattabile alle varie esigenze aziendali, le funzionalità del centralino tradizionale (PBX) con le più innovative peculiarità dei sistemi telefonici avanzati. I vantaggi di tale sistema consistono in una sensibile riduzione dei costi di gestione e manutenzione, e nella scalabilità dell’architettura IP che è adattabile alle eventuali evoluzioni strutturali dell’azienda.
+
 
 .. sidebar:: contatti
 
     * `Sito progetto <https://dev.nethesis.it/projects/nethvoice>`_
     * `Supporto: supporto@nethesis.it <mailto:supporto@nethesis.it>`_
+    * `Bug tracker <https://dev.nethesis.it/projects/nethvoice>`_
 
+
+Introduzione
+============
+
+.. toctree::
+    introduzione
+    hardware
 
 
 Installazione
 =============
-
+  
 .. toctree::
-    cenni_su_nethvoice
-    hardware_nethvoice
-    installazione_nethvoice_11
-    update_pack_nethvoice
+    installazione
+    aggiornamento
+
 
 Gestione hardware
 =================
 
 .. toctree::
-    linee_nethvoice
-    configurazione_patton_nethvoice
-    mediatrix_nethvoice
-    portech_nethvoice
-    aggiornamento_nethvoice_11
+    panoramica_tipologie_linee
+    configurazione_patton
+    configurazione_mediatrix
+    configurazione_portech
+
 
 Configurazione base
 ===================
 
 .. toctree::
-    accesso_nethvoice
-    rete_nethvoice
-    funzionalita_base_nethvoice
-    interni_nethvoice
-    casella_vocale_nethvoice
-    fasci_nethvoice
-    video_nethvoice
-    rubrica_nethvoice
-    registrazione_chiamate_nethvoice
-    fax_nethvoice
-    gestione_chiamata_in_entrata_nethvoice
-    gestione_chiamata_in_uscita_nethvoice
-    backup_e_restore_nethvoice
+    accesso
+    rete
+    funzionalita_base
+    interni
+    casella_vocale
+    fasci
+    chiamata_video
+    rubrica
+    registrazione_chiamate
+    fax
+    gestione_chiamata_in_entrata
+    gestione_chiamata_in_uscita
+    backup_e_restore
+
 
 Configurazione avanzata
 =======================
 
 .. toctree::
-    provisioning_nethvoice
-    suoneria_differenziata_nethvoice
-    interno_remoto_nethvoice
-    collegamento_nethvoice_remoti
-    installare_il_codec_g729_nethvoice
-    strategie_squillo_nethvoice
-    pattern_asterisk
-    struttura_filesystem_nethvoice
+    provisioning
+    suoneria_differenziata
+    interno_remoto
+    collegamento_remoti
+    installare_il_codec_g729
+    strategie_squillo
+    pattern
+    struttura_filesystem
 
-Moduli
-======
 
-Base
-----
+Moduli Base
+===========
 
 .. toctree::
-    annunci_nethvoice
-    interni_nethvoice
-    interni_iax_nethvoice
-    interni_sip_nethvoice
-    interni_dahdi_nethvoice
-    musica_di_attesa_nethvoice
-    configurazione_patton_nethvoice
-    wizard_provisioning_nethvoice
-    registrazioni_sistema_nethvoice
-    fasci_nethvoice
-    fasci_iax_nethvoice
-    fasci_sip_nethvoice
-    fasci_dahdi_nethvoice
-    configurazione_provider_voip_nethvoice
+    annunci
+    interni
+    interni_iax
+    interni_sip
+    interni_dahdi
+    musica_di_attesa
+    configurazione_patton
+    wizard_provisioning
+    registrazioni_sistema
+    fasci
+    fasci_iax
+    fasci_sip
+    fasci_dahdi
+    configurazione_provider_voip
+
 
 Applicazioni
-------------
+============
 
 .. toctree::
-    call_query_routing_nethvoice
-    conferenze_nethvoice
-    disa_nethvoice
-    seguimi_nethvoice
-    nethhotel
-    ivr_nethvoice
-    destinazioni_varie_nethvoice
-    numeri_brevi_nethvoice
-    paging_e_intercom_nethvoice
-    parcheggi_nethvoice
-    code_nethvoice
-    gruppi_di_chiamata_nethvoice
-    rubriche_esterne_nethvoice
-    server_fax_nethvoice
+    call_query_routing
+    conferenze
+    disa
+    seguimi
+    ivr
+    destinazioni_varie
+    numeri_brevi
+    paging_e_intercom
+    parcheggi
+    code
+    gruppi_di_chiamata
+    rubriche_esterne
+    server_fax
+
 
 Routing chiamata
-----------------
+================
+
 .. toctree::
-    controllo_flusso_chiamata_nethvoice
-    fasci_virtuali_nethvoice
-    rotte_entrata_nethvoice
-    rotte_uscita_nethvoice
-    servizio_notte_nethvoice
-    condizioni_temporali_nethvoice
-    gruppi_temporali_nethvoice
-    selezioni_passanti_zap_nethvoice
+    controllo_flusso_chiamata
+    fasci_virtuali
+    rotte_entrata
+    rotte_uscita
+    servizio_notte
+    condizioni_temporali
+    gruppi_temporali
+    selezioni_passanti_zap
+
 
 Amministrazione
----------------
+===============
 
 .. toctree::
-    amministratori_nethvoice
-    api_asterisk_nethvoice
-    impostazioni_iax_nethvoice
-    impostazioni_sip_nethvoice
-    call_debugger_nethvoice
-    contesti_personalizzati_nethvoice
-    amministrazione_contesti_personalizzati_nethvoice
-    codici_servizi_nethvoice
-    impostazioni_generali_nethvoice
-    amministrazione_moduli_nethvoice
-    messaggio_rotta_congestionata_nethvoice
-    amministrazione_caselle_vocali_nethvoice
-    nethcti_modulo_nethvoice
+    amministratori
+    api_asterisk
+    impostazioni_iax
+    impostazioni_sip
+    call_debugger
+    contesti_personalizzati
+    amministrazione_contesti_personalizzati
+    codici_servizi
+    impostazioni_generali
+    amministrazione_moduli
+    messaggio_rotta_congestionata
+    amministrazione_caselle_vocali
 
 
 Avanzate
@@ -141,40 +158,40 @@ Avanzate
 .. toctree::
     impostazioni_avanzate_nethvoice
     cli_nethvoice
-    blacklist_nethvoice
-    blocco_interni_nethvoice
-    modulo_registrazione_chiamate_nethvoice
-    destinazioni_personalizzate_nethvoice
-    interni_personalizzati_nethvoice
-    direttore_segretaria_nethvoice
-    import_interni_nethvoice
-    import_rotte_in_entrata_nethvoice
-    lingue_nethvoice
-    applicazioni_varie_nethvoice
-    gruppi_pin_nethvoice
-    priorita_code_nethvoice
-    richiamata_nethvoice
-    imposta_callerid_nethvoice
-    gruppi_caselle_vocali_nethvoice
+    blacklist
+    blocco_interni
+    modulo_registrazione_chiamate
+    destinazioni_personalizzate
+    interni_personalizzati
+    direttore_segretaria
+    import_interni
+    import_rotte_in_entrata
+    lingue
+    applicazioni_varie
+    gruppi_pin
+    priorita_code
+    richiamata
+    imposta_callerid
+    gruppi_caselle_vocali
 
 
 Provisioning
 ------------
 
 .. toctree::
-    provisioning_impostazione_avanzate_terminali_nethvoice
-    provisioning_configurazioni_terminali_nethvoice
-    provisioning_lista_terminali_nethvoice
-    provisioning_gestione_template_terminali_nethvoice
+    provisioning_impostazione_avanzate_terminali
+    provisioning_configurazioni_terminali
+    provisioning_lista_terminali
+    provisioning_gestione_template_terminali
 
 Report
 ------
 
 .. toctree::
-    informazioni_sul_sistema_nethvoice
-    file_log_di_asterisk_nethvoice
-    report_cdr_nethvoice
-    stato_sistema_nethvoice
+    informazioni_sul_sistema
+    file_log_di_asterisk
+    report_cdr
+    stato_sistema
 
 Addon
 =====
@@ -182,13 +199,12 @@ Addon
 .. toctree::
     report_code
     nethhotel
+    analisi_costi
 
 Appendice
 =========
 
 .. toctree::
-    accesso_remoto_nethesis
-    faq_nethvoice
     license
 
 Indici
