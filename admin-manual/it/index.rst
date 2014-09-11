@@ -23,7 +23,7 @@ Il cuore OpenSource di |product| è basato principalmente su due progetti `Aster
 
 
 Introduzione
-============
+------------
 
 .. toctree::
     introduzione
@@ -31,7 +31,7 @@ Introduzione
 
 
 Installazione
-=============
+-------------
   
 .. toctree::
     installazione
@@ -39,7 +39,7 @@ Installazione
 
 
 Gestione hardware
-=================
+-----------------
 
 .. toctree::
     panoramica_tipologie_linee
@@ -49,7 +49,7 @@ Gestione hardware
 
 
 Configurazione base
-===================
+-------------------
 
 .. toctree::
     accesso
@@ -68,7 +68,7 @@ Configurazione base
 
 
 Configurazione avanzata
-=======================
+-----------------------
 
 .. toctree::
     provisioning
@@ -82,7 +82,7 @@ Configurazione avanzata
 
 
 Moduli Base
-===========
+-----------
 
 .. toctree::
     annunci
@@ -102,7 +102,7 @@ Moduli Base
 
 
 Applicazioni
-============
+------------
 
 .. toctree::
     call_query_routing
@@ -121,7 +121,7 @@ Applicazioni
 
 
 Routing chiamata
-================
+----------------
 
 .. toctree::
     controllo_flusso_chiamata
@@ -135,7 +135,7 @@ Routing chiamata
 
 
 Amministrazione
-===============
+---------------
 
 .. toctree::
     amministratori
@@ -194,7 +194,7 @@ Report
     stato_sistema
 
 Addon
-=====
+-----
 
 .. toctree::
     report_code
@@ -202,7 +202,7 @@ Addon
     analisi_costi
 
 Appendice
-=========
+---------
 
 .. toctree::
     license
@@ -217,6 +217,3 @@ Indici
    :alt: CC by-nc-sa
    :align: right
    :target: http://creativecommons.org/licenses/by-nc-sa/4.0/legalcode
-
-
-
