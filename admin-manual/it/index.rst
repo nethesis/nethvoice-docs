@@ -23,6 +23,12 @@ Introduzione
 
 .. toctree::
     introduzione
+
+Hardware
+------------
+
+.. toctree::
+
     hardware
 
 
