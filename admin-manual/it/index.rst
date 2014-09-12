@@ -46,7 +46,7 @@ Gestione Hardware
 -----------------
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 1
 
    gestione_hardware
 
