@@ -19,7 +19,7 @@ Introduzione
 ------------
 
 .. toctree::
-   :maxdepth: 1
+   :maxdepth: 2
 
    introduzione
 
@@ -27,7 +27,7 @@ Hardware
 ------------
 
 .. toctree::
-   :maxdepth: 1
+   :maxdepth: 2
 
    hardware
   
@@ -36,7 +36,7 @@ Installazione
 -------------
   
 .. toctree::
-   :maxdepth: 1
+   :maxdepth: 2
 
    installazione
    aggiornamento
@@ -46,7 +46,7 @@ Gestione Hardware
 -----------------
 
 .. toctree::
-   :maxdepth: 1
+   :maxdepth: 2
 
    gestione_hardware
 
@@ -55,7 +55,7 @@ Configurazione Base
 -------------------
 
 .. toctree::
-   :maxdepth: 1
+   :maxdepth: 2
 
    configurazione_base
 
@@ -63,7 +63,7 @@ Configurazione Avanzata
 -----------------------
 
 .. toctree::
-   :maxdepth: 1
+   :maxdepth: 2
 
    configurazione_avanzata
 
@@ -71,7 +71,7 @@ Moduli Base
 -----------
 
 .. toctree::
-   :maxdepth: 1
+   :maxdepth: 2
 
    moduli_base
 
@@ -79,7 +79,7 @@ Applicazioni
 ------------
 
 .. toctree::
-   :maxdepth: 1
+   :maxdepth: 2
 
    applicazioni
 
@@ -87,7 +87,7 @@ Routing Chiamata
 ----------------
 
 .. toctree::
-   :maxdepth: 1
+   :maxdepth: 2
 
    routing_chiamata
 
@@ -96,7 +96,7 @@ Amministrazione
 ---------------
 
 .. toctree::
-   :maxdepth: 1
+   :maxdepth: 2
 
    amministrazione
 
@@ -105,7 +105,7 @@ Moduli Avanzati
 ---------------
 
 .. toctree::
-   :maxdepth: 1
+   :maxdepth: 2
 
    moduli_avanzati
 
@@ -113,7 +113,7 @@ Provisioning
 ------------
 
 .. toctree::
-   :maxdepth: 1
+   :maxdepth: 2
 
    provisioning
 
@@ -121,7 +121,7 @@ Report
 ------
 
 .. toctree::
-   :maxdepth: 1
+   :maxdepth: 2
 
    report
 
