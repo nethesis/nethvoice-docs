@@ -39,8 +39,14 @@ Installazione
    :maxdepth: 2
 
    installazione
-   aggiornamento
 
+Installazione
+-------------
+
+.. toctree::
+      :maxdepth: 2
+
+   aggiornamento
 
 Gestione Hardware
 -----------------
