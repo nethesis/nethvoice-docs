@@ -42,7 +42,7 @@ Installazione
    aggiornamento
 
 
-Gestione hardware
+Gestione Hardware
 -----------------
 
 .. toctree::
@@ -54,7 +54,7 @@ Gestione hardware
    configurazione_portech
 
 
-Configurazione base
+Configurazione Base
 -------------------
 
 .. toctree::
@@ -75,7 +75,7 @@ Configurazione base
    backup_e_restore
 
 
-Configurazione avanzata
+Configurazione Avanzata
 -----------------------
 
 .. toctree::
@@ -134,7 +134,7 @@ Applicazioni
    server_fax
 
 
-Routing chiamata
+Routing Chiamata
 ----------------
 
 .. toctree::
@@ -170,8 +170,8 @@ Amministrazione
    amministrazione_caselle_vocali
 
 
-Avanzate
---------
+Moduli Avanzati
+---------------
 
 .. toctree::
    :maxdepth: 2

@@ -73,9 +73,9 @@ Configurazione Lato |product|
 
 Per il gateway Mediatrix è necessario configurare :doc:`Fasci SIP <fasci_sip>` e :doc:`Rotte in Entrata <rotte_entrata>` per permettere a **NethVoice** di interagire con essi.
 
--  Le **:doc:`Rotte in Entrata <rotte_entrata>`** vanno create come al solito sul :ref:`Numero di Selezione Passante <rotte_entrata#numero_selezione_passante-label>`, che in questo caso sarà il numero della linea ISDN o della linea Analogica.
+-  Le :doc:`Rotte in Entrata <rotte_entrata>` vanno create come al solito sul :ref:`Numero di Selezione Passante <numero_selezione_passante-label>`, che in questo caso sarà il numero della linea ISDN o della linea Analogica.
 
--  Inoltre è necessario creare un **:doc:`Fascio SIP <fasci_sip>`** per ogni linea configurata sul Mediatrix.
+-  Inoltre è necessario creare un :doc:`Fascio SIP <fasci_sip>` per ogni linea configurata sul Mediatrix.
 
 I :doc:`Fasci SIP <fasci_sip>` dovranno avere nome ad esempio 4001, 4002, 4003, 4004 (tanti quanti sono le linee) se il Mediatrix è stato configurato come descritto sopra, e dovranno riportare questa configurazione in `Dettagli Peer`: ::
 
