@@ -131,7 +131,9 @@ Addon
 .. toctree::
    :maxdepth: 1
 
-   addon
+   report_code
+   nethhotel
+   analisi_costi
 
 Appendice
 ---------
