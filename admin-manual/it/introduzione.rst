@@ -53,7 +53,7 @@ Funzioni Evolute
 ================
 
 * Possibilità di integrazione con fax server (inoltro automatico via email - vedi paragrafo successivo)
-* Funzioni di :doc:`AudioVideoConferenza <conferenze>` con 'Aule Virtuali'
+* Funzioni di AudioVideoConferenza ` con 'Aule Virtuali'
 * Interfacciamento con software aziendali (es. CRM, ERP, Outlook, ecc..)
 * Possibilità di sviluppo di nuove funzionalità con minimo sforzo grazie alla piattaforma aperta su cui si basa il sistema Funzionalità complete VoIP (voice over IP), interfacciabile con stardard VOIP
 * Servizi di autenticazione (accesso a servizi tramite password e codici di sicurezza)
