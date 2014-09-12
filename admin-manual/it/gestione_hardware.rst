@@ -1,5 +1,5 @@
 =================
-Gestione hardware
+Gestione Hardware
 =================
 
 Configurazione Patton
