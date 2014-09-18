@@ -2,57 +2,73 @@
 Moduli Base
 ===========
 
+.. _annunci_ref_label:
+
 Annunci
 =======
 
 
-Interni
-=======
+.. _interni_iax_ref_label:
 
-
-Interni Iax
+Interni IAX
 ===========
 
 
-Interni Sip
+.. _interni_sip_ref_label:
+
+Interni SIP
 ===========
 
 
-Interni Dahdi
+.. _interni_dahdi_ref_label:
+
+Interni DAHDI
 =============
 
+
+.. _musiche_di_attesa_ref_label:
 
 Musica di Attesa
 ================
 
 
+.. _configurazione_patton_ref_label:
+
 Configurazione Patton
 =====================
 
+
+.. _wizard_provisioning_ref_label:
 
 Wizard Provisioning
 ===================
 
 
+.. _registrazioni_di_sistema_ref_label:
+
 Registrazioni Sistema
 =====================
 
 
-Fasci
-=====
+.. _fasci_sip_ref_label:
 
-
-Fasci Iax
+Fasci SIP
 =========
 
 
-Fasci Sip
+.. _fasci_iax_ref_label:
+
+Fasci IAX
 =========
 
 
-Fasci Dahdi
+.. _fasci_dahdi_ref_label:
+
+Fasci DAHDI
 ===========
 
+
+.. _configurazione_provider_voip_ref_label:
 
 Configurazione Provider Voip
 ============================

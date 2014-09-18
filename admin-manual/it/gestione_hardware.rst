@@ -7,7 +7,7 @@ Configurazione Patton
 
 Come descritto ampliamente nel documento :doc:`Hardware <hardware>`, viene suggerito e supportato l'utilizzo di gateway esterni da integrare con il |product|. In questo documento verranno descritte la procedura di configurazione dei Patton e la configurazione in |product|.
 
-.. note::   I Patton dalla versione '''6''' del proprio '''firmware''' supportano la configurazione tramite provisioning vedi anche :doc:`qui <wizard_provisioning>`
+.. note::   I Patton dalla versione '''6''' del proprio '''firmware''' supportano la configurazione tramite provisioning vedi anche :ref:`qui <wizard_provisioning_ref_label>`
 
 Creazione file di configurazione
 --------------------------------
@@ -32,11 +32,11 @@ Per creare il file di configurazione, procedere così:
 -  Per le porte **fxs** scegliere l'interno SIP collegato alla porta specificata. L'interno SIP deve essere precedentemente creato nell'apposita sezione.
 
 
--  Per le porte **fxo** scegliere il numero di telefono associato al numero di fascio autogenerato. L'interfaccia segnala a quale fascio sip verrà abbinata ogni porta, i fasci vengono automaticamente creati e sono disponibili nella sezione :doc:`Fasci <fasci_sip>`.
+-  Per le porte **fxo** scegliere il numero di telefono associato al numero di fascio autogenerato. L'interfaccia segnala a quale fascio sip verrà abbinata ogni porta, i fasci vengono automaticamente creati e sono disponibili nella sezione :ref:`fasci SIP <fasci_sip_ref_label>`.
 
--  Per le porte **isdn** scegliere la tipologia delle porte, o punto-punto o punto-multipunto. L'interfaccia segnala a quale fascio sip verrà abbinata ogni porta, i fasci vengono automaticamente creati e sono disponibili nella sezione :doc:`Fasci <fasci_sip>`.
+-  Per le porte **isdn** scegliere la tipologia delle porte, o punto-punto o punto-multipunto. L'interfaccia segnala a quale fascio sip verrà abbinata ogni porta, i fasci vengono automaticamente creati e sono disponibili nella sezione :ref:`fasci SIP <fasci_sip_ref_label>`.
 
--  Per le porte **pri** l'interfaccia segnala a quale fascio sip verrà abbinata ogni porta, i fasci vengono automaticamente creati e sono disponibili nella sezione :doc:`Fasci <fasci_sip>`.
+-  Per le porte **pri** l'interfaccia segnala a quale fascio sip verrà abbinata ogni porta, i fasci vengono automaticamente creati e sono disponibili nella sezione :ref:`fasci SIP <fasci_sip_ref_label>`.
 
 -  Dopo aver cliccato su Salva il modulo propone il link per scaricare la configurazione del Patton a seconda del firmware.
    Se è stato indicato il mac address è possibile applicare la configurazione tramite il provisioning.
@@ -124,13 +124,13 @@ Può essere utile effettuare il ripristino a factory default dell'apparato e suc
 Configurazione Lato |product|
 -----------------------------
 
-Per il gateway Mediatrix è necessario configurare :doc:`Fasci SIP <fasci_sip>` e :doc:`Rotte in Entrata <rotte_entrata>` per permettere a **NethVoice** di interagire con essi.
+Per il gateway Mediatrix è necessario configurare :ref:`fascio SIP <fasci_sip_ref_label>` e :ref:`Rotte in Entrata <rotte_in_entrata_ref_label>` per permettere a **NethVoice** di interagire con essi.
 
--  Le :doc:`Rotte in Entrata <rotte_entrata>` vanno create come al solito sul :ref:`Numero di Selezione Passante <numero_selezione_passante-label>`, che in questo caso sarà il numero della linea ISDN o della linea Analogica.
+-  Le :ref:`Rotte in Entrata <rotte_in_entrata_ref_label>` vanno create come al solito sul :ref:`Numero di Selezione Passante <numero_selezione_passante_ref_label>`, che in questo caso sarà il numero della linea ISDN o della linea Analogica.
 
--  Inoltre è necessario creare un :doc:`Fascio SIP <fasci_sip>` per ogni linea configurata sul Mediatrix.
+-  Inoltre è necessario creare un :ref:`fascio SIP <fasci_sip_ref_label>` per ogni linea configurata sul Mediatrix.
 
-I :doc:`Fasci SIP <fasci_sip>` dovranno avere nome ad esempio 4001, 4002, 4003, 4004 (tanti quanti sono le linee) se il Mediatrix è stato configurato come descritto sopra, e dovranno riportare questa configurazione in `Dettagli Peer`: ::
+I :ref:`fasci SIP <fasci_sip_ref_label>` dovranno avere nome ad esempio 4001, 4002, 4003, 4004 (tanti quanti sono le linee) se il Mediatrix è stato configurato come descritto sopra, e dovranno riportare questa configurazione in `Dettagli Peer`: ::
 
   canreinvite=no
   nat=no
@@ -144,7 +144,7 @@ I :doc:`Fasci SIP <fasci_sip>` dovranno avere nome ad esempio 4001, 4002, 4003, 
   port=5060
   dtmfmode=inband
 
-**Per i fasci successivi** (4002, 4003..) è necessario modificare `secret,username e port` di conseguenza, come è stato configurato sul Mediatrix, ad esempio se configurato come indicato sopra il :doc:`Fascio SIP <fasci_sip>` successivo avrà username e secret 4002 e port 5061.
+**Per i fasci successivi** (4002, 4003..) è necessario modificare `secret,username e port` di conseguenza, come è stato configurato sul Mediatrix, ad esempio se configurato come indicato sopra il :ref:`fascio SIP <fasci_sip_ref_label>` successivo avrà username e secret 4002 e port 5061.
 
 Configurazione Portech
 ======================

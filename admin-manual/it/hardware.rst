@@ -59,7 +59,7 @@ Linee Accesso Primario ISDN
 Linee Voip
 ----------
 
-E' possibile configurare sul |product| linee di tipo Voip. Basta configurare, secondo le specifiche del provider, un :doc:`fascio SIP. <configurazione_provider_voip>`
+E' possibile configurare sul |product| linee di tipo Voip. Basta configurare, secondo le specifiche del provider, un :ref:`fascio SIP <fasci_sip_ref_label>`
 
 
 Hardware |product|
@@ -84,7 +84,7 @@ I motivi di tale scelta sono molti:
 
 -  sono più affidabili
 -  gestiscono meglio i protocolli di comunicazione
--  :doc:`maggiormente configurabili <configurazione_patton>`
+-  :ref:`maggiormente configurabili <configurazione_patton_ref_label>`
 -  non aumentano il carico del server
 -  sono indipendenti dall'hardware del centralino
 -  permettono di usare hardware compatto e miniaturizzato
@@ -111,34 +111,34 @@ Inserire la scheda sul centralino e da riga di comando digitare: ::
 
 per configurarla.
 
--  :doc:`Configurazione Patton <configurazione_patton>`
+-  :ref:`Configurazione Patton <configurazione_patton_ref_label>`
 
 Ogni modello di **Patton** PRI è compatibile, esistono al momento **Patton** da una o quattro porte PRI.
 
 Gateway ISDN
 ------------
 
- :doc:`Configurazione Patton <configurazione_patton>`
+ :ref:`Configurazione Patton <configurazione_patton_ref_label>`
 
 -  Ogni modello di **Patton** ISDN è compatibile, esistono al momento **Patton** da una, due, quattro o otto porte ISDN.
 
 Gateway Analogici
 -----------------
- :doc:`Configurazione Patton <configurazione_patton>`
+ :ref:`Configurazione Patton <configurazione_patton_ref_label>`
 
 -  Ogni modello di **Patton** analogico è compatibile, esistono al momento **Patton** da due o quattro porte FXO
 
 Gateway Misti
 -------------
 
- :doc:`Configurazione Patton <configurazione_patton>`
+ :ref:`Configurazione Patton <configurazione_patton_ref_label>`
 
 -  Per gateway Misti si intende modelli di **Patton** che supportano sia linee ISDN che analogiche
 
 Gateway GSM
 -----------
 
- :doc:`Configurazione Patton <configurazione_patton>`
+ :ref:`Configurazione Patton <configurazione_patton_ref_label>`
 
 -  **Portech** mv370 - 1 SIM
 -  **Portech** mv372 - 2 SIM
