@@ -107,7 +107,7 @@ PRI
 
 Inserire la scheda sul centralino e da riga di comando digitare: ::
 
- nethvoice hwconf
+ |product_command| hwconf
 
 per configurarla.
 

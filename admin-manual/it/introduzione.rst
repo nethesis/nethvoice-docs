@@ -12,7 +12,7 @@ Il cuore OpenSource di |product| è basato principalmente su due progetti `Aster
 
 Componenti e connessioni
 ========================
-|product| integra un centralino tradizionale, con la tecnologia VOIP, linee ISDN e/o linee Analogiche e/o Flussi primari ed un sistema linux di tipo enterprise quale NethService. |product| non è altro che uno dei tanti moduli che è possibile installare su NethService di cui può sfruttare tutte le componenti e potenzialità. NethService, derivato da RedHat Enterprise e Centos, ha tra i servizi installati 
+|product| integra un centralino tradizionale, con la tecnologia VOIP, linee ISDN e/o linee Analogiche e/o Flussi primari ed un sistema linux di tipo enterprise quale |parent_product|. |product| non è altro che uno dei tanti moduli che è possibile installare su |parent_product| di cui può sfruttare tutte le componenti e potenzialità. |parent_product|, derivato da RedHat Enterprise e Centos, ha tra i servizi installati 
 
 * Apache
 * Php

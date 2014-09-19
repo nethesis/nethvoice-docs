@@ -140,7 +140,7 @@ Addon
    :maxdepth: 1
 
    report_code
-   nethhotel
+   hotel
    analisi_costi
 
 Appendice
