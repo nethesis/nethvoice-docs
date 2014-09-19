@@ -9,7 +9,7 @@ Configurazione Patton
 
 Come descritto ampliamente nel documento :doc:`Hardware <hardware>`, viene suggerito e supportato l'utilizzo di gateway esterni da integrare con il |product|. In questo documento verranno descritte la procedura di configurazione dei Patton e la configurazione in |product|.
 
-.. note::   I Patton dalla versione '''6''' del proprio '''firmware''' supportano la configurazione tramite provisioning vedi anche :ref:`qui <wizard_provisioning_ref_label>`
+.. note::   I Patton dalla versione 6 del proprio firmware supportano la configurazione tramite provisioning vedi anche :ref:`qui <wizard_provisioning_ref_label>`
 
 
 Creazione file di configurazione
@@ -166,9 +166,9 @@ Viene utilizzato insieme al |product| per sfruttare le tariffe telefoniche delle
 
 Inoltre permette di ricevere le telefonate dirette ad un numero mobile, direttamente su un centralino, molto utilizzato in presenza di RAM aziendali.
 
-.. note::   Tutti gli '''screenshot''' utilizzati in questo documento si riferiscono al Portech mv372
+.. note::   Tutti gli screenshot utilizzati in questo documento si riferiscono al Portech mv372
 
-.. warning::  Il Gateway GSM/UMTS '''non è in grado di gestire SIM con PIN attivato'''. E' necessario da cellulare, disattivare la richiesta del PIN da parte della SIM.
+.. warning::  Il Gateway GSM/UMTS non è in grado di gestire SIM con PIN attivato. E' necessario da cellulare, disattivare la richiesta del PIN da parte della SIM.
 
 Configurazione Portech con singola SIM
 --------------------------------------
@@ -283,7 +283,7 @@ Si dovrà configurare |product| in modo da poter utilizzare in entrata ed in usc
 .. image:: ../_static/portech_09.png
             :alt: Fascio |product|
 
-.. warning:: Il '''Nome Fascio''' nelle '''Impostazioni in Uscita''' deve essere uguale allo '''username''' dei '''Dettagli PEER'''.
+.. warning:: Il Nome Fascio nelle Impostazioni in Uscita deve essere uguale allo username dei Dettagli PEER.
 
 Dettagli PEER Fascio SIP
 ~~~~~~~~~~~~~~~~~~~~~~~~
@@ -383,7 +383,7 @@ Configurare Secondo Fascio SIP
 .. image:: ../_static/portech_13.png
             :alt: Secondo Fascio |product|
 
-.. warning:: Il '''Nome Fascio''' nelle '''Impostazioni in Uscita''' deve essere uguale allo '''username''' dei '''Dettagli PEER'''.
+.. warning:: Il Nome Fascio nelle Impostazioni in Uscita deve essere uguale allo username dei Dettagli PEER.
 
 Dettagli PEER Fascio SIP
 ~~~~~~~~~~~~~~~~~~~~~~~~
