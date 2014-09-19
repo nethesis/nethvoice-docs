@@ -11,6 +11,7 @@ Un generico centralino deve poter gestire telefoni analogici e isdn e spesso un 
 -  **ISDN**: passano due canali voce contemporaneamente, attraverso una borchia ISDN denominata NT1. La voce viene codificata in pacchetti, passando da analogico a digitale
 -  **Accesso primario**: cablaggio dedicato tramite il quale è possibile ricevere/fare da 15 a 30 chiamate contemporaneamente.
 
+
 Quindi per **Linee esterne** (Linee) si intendono i collegamenti del PBX verso la Rete Telefonica Pubblica (PSTN)
 
 Linee Analogiche fonia
@@ -105,45 +106,51 @@ PRI
 
 -  **Digium** schede a 1, 2 o 4 flussi primari
 
-Inserire la scheda sul centralino e da riga di comando digitare: ::
+ Inserire la scheda sul centralino e da riga di comando digitare
 
- |product_command| hwconf
+ |product_command| hwconf
 
-per configurarla.
+ per configurarla.
 
--  :ref:`Configurazione Patton <configurazione_patton_ref_label>`
+- Ogni modello di **Patton** PRI è compatibile, esistono al momento **Patton** da una o quattro porte PRI.
+ 
+ :ref:`Configurazione Patton <configurazione_patton_ref_label>`
 
-Ogni modello di **Patton** PRI è compatibile, esistono al momento **Patton** da una o quattro porte PRI.
 
 Gateway ISDN
 ------------
 
+-  Ogni modello di **Patton** ISDN è compatibile, esistono al momento **Patton** da una, due, quattro o otto porte ISDN.
+
  :ref:`Configurazione Patton <configurazione_patton_ref_label>`
 
--  Ogni modello di **Patton** ISDN è compatibile, esistono al momento **Patton** da una, due, quattro o otto porte ISDN.
 
 Gateway Analogici
 -----------------
- :ref:`Configurazione Patton <configurazione_patton_ref_label>`
 
 -  Ogni modello di **Patton** analogico è compatibile, esistono al momento **Patton** da due o quattro porte FXO
+
+ :ref:`Configurazione Patton <configurazione_patton_ref_label>`
+
 
 Gateway Misti
 -------------
 
+-  Per gateway Misti si intende modelli di **Patton** che supportano sia linee ISDN che analogiche
+
  :ref:`Configurazione Patton <configurazione_patton_ref_label>`
 
--  Per gateway Misti si intende modelli di **Patton** che supportano sia linee ISDN che analogiche
 
 Gateway GSM
 -----------
-
- :ref:`Configurazione Patton <configurazione_patton_ref_label>`
 
 -  **Portech** mv370 - 1 SIM
 -  **Portech** mv372 - 2 SIM
 -  **Portech** mv370 - 1 SIM UMTS
 -  **Portech** mv372 - 2 SIM UMTS
+
+ :ref:`Configurazione Portech <configurazione_portech_ref_label>`
+
 
 Linee interne
 =============

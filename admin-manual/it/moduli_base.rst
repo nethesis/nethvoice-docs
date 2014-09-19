@@ -32,10 +32,9 @@ Musica di Attesa
 ================
 
 
-.. _configurazione_patton_ref_label:
-
 Configurazione Patton
 =====================
+ :ref:`Configurazione Patton <configurazione_patton_ref_label>`
 
 
 .. _wizard_provisioning_ref_label:

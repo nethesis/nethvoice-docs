@@ -2,12 +2,15 @@
 Gestione Hardware
 =================
 
+.. _configurazione_patton_ref_label:
+
 Configurazione Patton
 =====================
 
 Come descritto ampliamente nel documento :doc:`Hardware <hardware>`, viene suggerito e supportato l'utilizzo di gateway esterni da integrare con il |product|. In questo documento verranno descritte la procedura di configurazione dei Patton e la configurazione in |product|.
 
 .. note::   I Patton dalla versione '''6''' del proprio '''firmware''' supportano la configurazione tramite provisioning vedi anche :ref:`qui <wizard_provisioning_ref_label>`
+
 
 Creazione file di configurazione
 --------------------------------
@@ -55,10 +58,13 @@ Gli apparati Patton vengono configurati attraverso un file di configurazione pre
 -  Salvare la configurazione con il pannello `Save`
 
 
+.. _configurazione_mediatrix_ref_label:
+
 Configurazione Mediatrix
 ========================
 
 Gli apparati **Mediatrix** sono dei gateway SIP, sia isdn che analogici, alternativi ai Patton che possono essere recuperati se |product| va a sostituire un centralino che li utilizzava.
+
 
 Configurazione tramite Interfaccia Web
 --------------------------------------
@@ -146,6 +152,7 @@ I :ref:`fasci SIP <fasci_sip_ref_label>` dovranno avere nome ad esempio 4001, 40
 
 **Per i fasci successivi** (4002, 4003..) è necessario modificare `secret,username e port` di conseguenza, come è stato configurato sul Mediatrix, ad esempio se configurato come indicato sopra il :ref:`fascio SIP <fasci_sip_ref_label>` successivo avrà username e secret 4002 e port 5061.
 
+.. _configurazione_portech_ref_label:
 
 Configurazione Portech
 ======================
@@ -168,8 +175,10 @@ Configurazione Portech con singola SIM
 
 Collegata la porta WAN del **Portech mv372**, di default risponderà all'indirizzo http://192.168.0.100, collegarsi all'indirizzo con credenziali:
 
-| ``username: voip``
-| ``password: 1234``
+::
+
+  username: voip
+  password: 1234
 
 Modificare l'IP del portech tramite il pannello **WAN Settings** e salvare la configurazione cliccando su *Save Changes*, verrà richiesto il reboot dell'apparato.
 
@@ -182,8 +191,10 @@ Mobile To LAN Settings
 
 Se usiamo il carattere “\*” vengono accettati tutti i numeri.
 
-| ``CID:* ``
-| ``URL:999``
+::
+
+  CID:*
+  URL:999
 
 L'url servirà per identificare la rotta in ingresso su |product|
 
@@ -195,8 +206,10 @@ LAN to Mobile Settings
 
 Impostare una regola che ci permetta di chiamare tutti i numeri.
 
-| ``URL:* ``
-| ``Call Num:#``
+::
+
+  URL:* 
+  Call Num:#
 
 In questo caso il carattere “#” permette di innoltrare automaticamente la chiamata al numero composto.
 
@@ -210,12 +223,14 @@ Configurare le credenziali per integrare il Gateway GSM/UMTS con |product|
 
 **Mobile 1**
 
-| ``Display Name: SIM 01``
-| ``User Name: 3001 (Nome del primo trunk)``
-| ``Registration Name: 3001``
-| ``Register Password: password1``
-| ``Domain Server: ip_|product|``
-| ``Proxy Server: ip_|product|``
+::
+
+  Display Name: SIM 01
+  User Name: 3001 (Nome del primo trunk)
+  Registration Name: 3001
+  Register Password: password1
+  Domain Server: ip centralino
+  Proxy Server: ip centralino
 
 .. image:: ../_static/portech_04.png
             :alt: Mobile 1
@@ -230,8 +245,10 @@ Modificare questa configurazione per restituire al |product| un segnale di servi
 
 Modificare la configurazione in questo modo, altrimenti **chiamate su cellulari spenti o non raggiungibili, restituiscono il tono di libero** al posto del normale tono di occupato.
 
--  OFF 180:Ringing
--  ON 183:Session Progress
+::
+
+  OFF 180:Ringing
+  ON 183:Session Progress
 
 .. image:: ../_static/portech_06.jpg
             :alt: Tono di libero
@@ -270,27 +287,31 @@ Si dovrà configurare |product| in modo da poter utilizzare in entrata ed in usc
 Dettagli PEER Fascio SIP
 ~~~~~~~~~~~~~~~~~~~~~~~~
 
-| ``allow=ulaw&alaw``
-| ``canreinvite=no``
-| ``context=from-pstn``
-| ``disallow=all``
-| ``dtmfmode=rfc2833``
-| ``fromuser=``\ **``3001``**
-| ``host=dynamic``
-| ``insecure=very``
-| ``qualify=yes``
-| ``regexten=``\ **``3001``**
-| ``secret=``\ **``password1``**
-| ``type=friend``
-| ``username=``\ **``3001``**
-| ``port=5060``
+::
+
+  allow=ulaw&alaw
+  canreinvite=no
+  context=from-pstn
+  disallow=all
+  dtmfmode=rfc2833
+  fromuser=3001
+  host=dynamic
+  insecure=very
+  qualify=yes
+  regexten=3001
+  secret=password1
+  type=friend
+  username=3001
+  port=5060
 
 Nascondere il numero nelle chiamate in uscita
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Per poter nascondere il numero del chiamante, quindi il numero della SIM installata sul portech, è necessario inserire un prefisso su tutte le chiamate in uscita. Quindi nella configurazione del fascio:
 
-``Prefisso Chiamate in Uscita: #31#``
+::
+
+  Prefisso Chiamate in Uscita: #31#
 
 Nell'esempio è stato inserito *#31* che vale per l'operatore TIM, per altri operatori sarà necessario inserire il codice opportuno.
 
@@ -302,7 +323,9 @@ Configurare Rotta in Ingresso
 
 Creare una nuova rotta con
 
-``Numero Selezione Passante: 999``
+::
+
+  Numero Selezione Passante: 999
 
 Ed impostare la destinazione ad un interno, gruppo, ecc..
 
@@ -314,15 +337,21 @@ Configurare Rotta in Uscita
 
 Nome Regola:
 
-``Cellulari``
+::
+
+  Cellulari
 
 Modello Chiamata:
 
-``3XXXXX.``
+::
+
+  3XXXXX.
 
 Sequenza Fasci:
 
-``GSM1``
+::
+
+  GSM1
 
 Configurazione doppia SIM
 -------------------------
@@ -335,12 +364,14 @@ Configurare il **Mobile 2**
 
 **Attenzione:** non il realm2 ma il **Mobile 2** selezionandolo dal menù a tendina in alto.
 
-| ``Display Name: SIM 02``
-| ``User Name: 3002 (Nome del secondo trunk)``
-| ``Registration Name: 3002``
-| ``Register Password: password2``
-| ``Domain Server: ip_|product|``
-| ``Proxy Server: ip_|product|``
+::
+
+  Display Name: SIM 02
+  User Name: 3002 (Nome del secondo trunk)
+  Registration Name: 3002
+  Register Password: password2
+  Domain Server: ip centralino
+  Proxy Server: ip centralino
 
 .. image:: ../_static/portech_12.png
             :alt: Mobile 2
@@ -356,20 +387,22 @@ Configurare Secondo Fascio SIP
 Dettagli PEER Fascio SIP
 ~~~~~~~~~~~~~~~~~~~~~~~~
 
-| ``allow=ulaw&alaw``
-| ``canreinvite=no``
-| ``context=from-pstn``
-| ``disallow=all``
-| ``dtmfmode=rfc2833``
-| ``fromuser=``\ **``3002``**
-| ``host=dynamic``
-| ``insecure=very``
-| ``qualify=yes``
-| ``regexten=``\ **``3002``**
-| ``secret=``\ **``password1``**
-| ``type=friend``
-| ``username=``\ **``3002``**
-| ``port=5060``
+::
+
+  allow=ulaw&alaw
+  canreinvite=no
+  context=from-pstn
+  disallow=all
+  dtmfmode=rfc2833
+  fromuser=3002
+  host=dynamic
+  insecure=very
+  qualify=yes
+  regexten=3002
+  secret=password2
+  type=friend
+  username=3002
+  port=5060
 
 Portech multi SIM e configurazione delle porte
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -381,10 +414,12 @@ In portech con più di una sim è necessario controllare la configurazione del p
 
 Se la configurazione è quella in figura, sarà necessario configurare il parametro *port* dei fasci **in maniera coerente**:
 
-| ``SIP 3001 --> port=5062``
-| ``SIP 3002 --> port=5064``
-| ``SIP 3003 --> port=5066``
-| ``SIP 3004 --> port=5068``
+::
+
+  SIP 3001 --> port=5062
+  SIP 3002 --> port=5064
+  SIP 3003 --> port=5066
+  SIP 3004 --> port=5068
 
 Configurare Rotta in Arrivo
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -422,8 +457,10 @@ Modalità con tono di linea
 
 In alternativa è possibile modificare la configurazione di *Mobile To LAN Settings* in questo modo:
 
-| ``CID:* ``
-| ``URL:*``
+::
+
+  CID:* 
+  URL:*
 
 Le chiamate entranti **riceveranno un tono di linea** e componendo successivamente il numero dell'interno desiderato la chiamata verrà redirezionata sull'interno scelto.
 
