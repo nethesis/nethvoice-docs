@@ -180,6 +180,7 @@ Collegata la porta WAN del **Portech mv372**, di default risponderà all'indiriz
   username: voip
   password: 1234
 
+
 Modificare l'IP del portech tramite il pannello **WAN Settings** e salvare la configurazione cliccando su *Save Changes*, verrà richiesto il reboot dell'apparato.
 
 .. image:: ../_static/portech_01.jpg
