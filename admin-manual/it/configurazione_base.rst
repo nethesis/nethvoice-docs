@@ -7,6 +7,18 @@ Configurazione Base
 Accesso
 =======
 
+Il pannello di configurazione di |product| è raggiungibile all'indirizzo
+
+https://nomeserver/|product_command|
+
+dove per *nomeserver* si intende il nome (anche seguito dal dominio) dato al |product| in fase di installazione.
+
+L'accesso è consentito anche sostituendo a *nomeserver* l'ip del |product|.
+
+L'accesso è garantito di default all'utente admin che viene configurato durante l'installazione.
+
+E' possibile poi accedere anche con altri utenti a patto che questi siano membri del gruppo **voicemanager** e che siano stati abilitati tramite il modulo :ref:`Amministratori <amministratori_ref_label>`.
+
 
 .. _rete_ref_label:
 
