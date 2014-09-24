@@ -7,7 +7,7 @@ Documentazione |product|
          :alt: |product|
 
 .. rubric::
-|product| è una nuova soluzione telefonica aperta ed integrata con l'intero sistema informativo aziendale, in grado di fornire tutti i servizi di comunicazione e collaborazione: dati, voce e video.
+   |product| è una nuova soluzione telefonica aperta ed integrata con l'intero sistema informativo aziendale, in grado di fornire tutti i servizi di comunicazione e collaborazione: dati, voce e video.
 
 .. sidebar:: Contatti
 
@@ -30,7 +30,6 @@ Hardware
    :maxdepth: 2
 
    hardware
-  
 
 Installazione
 -------------
@@ -39,7 +38,6 @@ Installazione
    :maxdepth: 2
 
    installazione
-
 
 Aggiornamento
 -------------
@@ -50,13 +48,12 @@ Aggiornamento
    aggiornamento
 
 Backup & Restore
--------------
+----------------
 
 .. toctree::
-      :maxdepth: 2
+   :maxdepth: 2
 
    backup_restore
-
 
 Gestione Hardware
 -----------------
@@ -65,7 +62,6 @@ Gestione Hardware
    :maxdepth: 2
 
    gestione_hardware
-
 
 Configurazione Base
 -------------------
@@ -107,7 +103,6 @@ Routing Chiamata
 
    routing_chiamata
 
-
 Amministrazione
 ---------------
 
@@ -115,7 +110,6 @@ Amministrazione
    :maxdepth: 2
 
    amministrazione
-
 
 Moduli Avanzati
 ---------------

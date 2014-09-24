@@ -34,7 +34,7 @@ Fatta questa associazione e **Applicate le Modifiche** il |product| nella cartel
 
 crea per ogni apparecchio telefonico sottoposto a Provisioning un file di configurazione e successivamente riavvia l'apparecchio telefonico che ripartendo contatterà il |product| prendendosi il file di configurazione appena creato.
 
-Questa associazione viene anche riportata nella configurazione dell'interno :ref:`qui <interni_sip_ref-label>`.
+Questa associazione viene anche riportata nella configurazione dell'interno :ref:`qui <interni_sip_ref_label>`.
 
 Il telefono viene configurato con la configurazione standard per la sua marca e modello caricata sul |product|.
 
@@ -116,7 +116,7 @@ in questa maniera si attiverà la suoneria custom relativa al Caller ID: direct
 Tale opzione permette di definire (a differenza di ALERT\_INFO) **una suoneria personalizzata per ogni telefono**, inoltre permette di gestire un **parco di telefoni misto** (snom e grandstream).
 
 Esempio SNOM 360
-~~~~~~~~~~~~~~~~
+----------------
 
 Negli snom è possibile abilitare l'opzione *direct* tra le preferenze
 
@@ -124,7 +124,7 @@ Negli snom è possibile abilitare l'opzione *direct* tra le preferenze
 *  Alert-Info Ringer: *scegliere la suoneria*
 
 Esempio Grandstream
-~~~~~~~~~~~~~~~~~~~
+-------------------
 
 Nelle impostazioni avanzate del telefono alla voce
 
@@ -132,7 +132,7 @@ Nelle impostazioni avanzate del telefono alla voce
 *  usato se l'incoming caller ID è: "direct"
 
 Esempio LinkSys
-~~~~~~~~~~~~~~~
+---------------
 
 Anche per i Linksys (con i firmware più recenti) è possibile usare il campo info Nel telefono occorre specificare "direct" nella voce caller:
 
@@ -140,7 +140,7 @@ Anche per i Linksys (con i firmware più recenti) è possibile usare il campo in
 *  Alert External Ringer: ------ Ringer1 (la suoneria da attivare)
 
 Esempio Yealink
-~~~~~~~~~~~~~~~
+---------------
 
 Collegarsi all'interfaccia web e spostarsi nel pannello Phone -> Ring, inserire la parola "direct" nel campo "Internal Ringer Text" e selezionare la suoneria preferita per le chiamate esterne (Internal Ringer File)
 
@@ -497,7 +497,7 @@ Il database di Asterisk, conosciuto anche come AstDB, è un meccanismo per conse
 Files Musiche di Attesa
 -----------------------
 
-I files della categoria Predefinita delle ::ref:`Musiche di Attesa <musica_di_attesa_ref_label>` si trovano in
+I files della categoria Predefinita delle ::ref:`Musiche di Attesa <musiche_di_attesa_ref_label>` si trovano in
 
 ::
   /var/lib/asterisk/mohmp3/
@@ -505,7 +505,7 @@ I files della categoria Predefinita delle ::ref:`Musiche di Attesa <musica_di_at
 I files delle varie categorie configurate si trovano poi in sottocartelle nominate con il nome della categoria.
 
 Files Caselle Vocali
----------------
+--------------------
 
 I files dei messaggi lasciati alle caselle vocali se configurati per essere conservati si trovano in
 
