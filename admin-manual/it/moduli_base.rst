@@ -19,6 +19,11 @@ Interni IAX
 Interni SIP
 ===========
 
+.. _interni_sip_callgroup_ref_label:
+
+.. _interni_sip_pickupgroup_ref_label:
+
+.. _interni_sip_voicemail_ref_label:
 
 .. _interni_dahdi_ref_label:
 

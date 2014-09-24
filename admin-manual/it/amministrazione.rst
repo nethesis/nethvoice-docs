@@ -51,7 +51,7 @@ Codici Servizi
 ==============
 
 
-.. _impostazione_generali_ref_label:
+.. _impostazioni_generali_ref_label:
 
 Impostazioni Generali
 =====================
