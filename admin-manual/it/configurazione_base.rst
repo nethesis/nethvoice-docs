@@ -562,7 +562,3 @@ I fax in ingresso vengono intercettati da |product| anche se nelle rotte in entr
 Per fare in modo che |product| non prenda in carico le chiamate destinate al fax è necessario creare una regola in entrata sul numero del fax che abbia come destinazione "Termina Chiamata" (ad esempio con Hangup) in modo che la linea rimanga libera e il fax fisico possa ricevere correttamente.
 
 .. _backup_e_restore_ref_label:
-
-Backup e Restore
-================
-
