@@ -257,11 +257,23 @@ Gli interni sono la parte principale di |product|.
 
 Ogni telefono per essere collegato al |product| ed utilizzarne i servizi ha bisogno di diventare un interno.
 
+La numerazione è del tutto libera a meno che non vada a sovrapporsi ai :ref:`Codici Servizi <codici_servizi_ref_label>` o qualunque altro modulo del |product| che occupa una numerazione.
+
+Il consiglio è, se possibile, di sviluppare la numerazione degli interni a partire dal 200. Questo evita di dover gestire le chiamate alle numerazioni di emergenza (112,113 etc..) che altrimenti se si sovrappongono agli interni vanno fatte con una :ref:`Rotta in Uscita <rotte_in_uscita_ref_label>` con prefisso, e di sovrapporsi ai :ref:`Codici Servizi <codici_servizi_ref_label>` che normalmente sono di due cifre.
+
 Su |product| c'è la possibilità di creare diversi tipi di interni a seconda del protocollo utilizzato dall'apparecchio:
 
 *  :ref:`Interni IAX <interni_iax_ref_label>`:  per collegare un qualsiasi client telefonico che utilizza il protocollo IAX.
 *  :ref:`Interni SIP <interni_sip_ref_label>`:  per collegare un qualsiasi client telefonico che utilizza il protocollo SIP.
 *  :ref:`Interni DAHDI <interni_dahdi_ref_label>`:  per collegare un qualsiasi telefono al |product| tramite una scheda interna utilizzando il protocollo DAHDI.
+
+Le impostazioni necessarie per creare un interno sono il numero di interno, il nome visualizzato e la password(secret), per gli interni di tipo DAHDI è necessario anche il il canale(indica la porta dove è collegato). Sono queste insieme all'indirizzo del |product| anche quelle necessarie per configurare un telefono ip di tipo IAX o SIP, ad esempio, per utilizzare l'interno creato. Tutte le altre opzioni sono a volte anche molto utili ma non indispensabili.
+
+Gli interni IAX e SIP hanno come scopo principale quello di collegare degli apparati telefonici che utilizzano i protocolli IAX o SIP, sia che siano dei softphone o dei telefoni ip, al |product|.
+
+Gli interni IAX servono anche per collegare uno iaxmodem al |product|. 
+
+Gli interni DAHDI servono a collegare degli apparati telefoni interfacciati tramite una scheda interna al |product|.
 
 .. _casella_vocale_ref_label:
 
