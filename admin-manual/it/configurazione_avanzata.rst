@@ -61,9 +61,9 @@ I telefoni Yealink vengono supportati dalla versione di firmware **v70** in poi,
 *  Accesso all'eventuale :ref:`Casella Vocale <casella_vocale_ref_label>`.
 *  Codice di :ref:`Pickup <funzionalita_base_ref_label>`.
 *  Rubrica LDAP collegata con |product| vedi :ref:`qui <rubrica_ref_label>`.
-*  Rubrica remota collegata con |product| vedi `qui <Rubrica_|product|#Yealink>`.
+*  Rubrica remota collegata con |product| vedi :ref:`qui <rubrica_ref_label>`.
 *  Tasti Funzionali programmati con nell'ordine **Registro Chiamate**, **Rubrica LDAP**, **Pickup**, **Menù**.
-*  Possibilità di aggiornare il firmware dei telefoni caricandolo nella cartella /tftpepm con nome MODELLO.rom ad esempio T22.rom T46.rom etc.
+*  Possibilità di aggiornare il firmware dei telefoni caricandolo nella cartella /var/lib/tftpboot/ con nome MODELLO.rom ad esempio T22.rom T46.rom etc.
 
 Snom
 ~~~~
@@ -76,8 +76,8 @@ I telefoni Snom vengono supportati dalla versione di firmware **v8**, la configu
 *  Codice di :ref:`Pickup <funzionalita_base_ref_label>`.
 *  Rubrica LDAP collegata con |product| vedi :ref:`qui <rubrica_ref_label>`.
 *  Tasti Funzionali programmati con nell'ordine **Gestione Identità**, **Registro Chiamate**, **Rubrica LDAP**, **Preferiti**.
-*  Possibilità di aggiornare il firmware dei telefoni caricandolo nella cartella /tftpepm con nome MODELLO.bin ad esempio 300.bin 821.bin etc.
-*  Per la serie 3XX, che da firmware superiori alla versione 6 per problemi di spazio non include il pacchetto linguaggi, se vengono caricati nella cartella /tftpepm i files gui\_lang\_IT.xml (Italiano) e gui\_lang\_EN.xml (Inglese), verranno caricati automaticamente
+*  Possibilità di aggiornare il firmware dei telefoni caricandolo nella cartella /var/lib/tftpboot/ con nome MODELLO.bin ad esempio 300.bin 821.bin etc.
+*  Per la serie 3XX, che da firmware superiori alla versione 6 per problemi di spazio non include il pacchetto linguaggi, se vengono caricati nella cartella /var/lib/tftpboot/ i files gui\_lang\_IT.xml (Italiano) e gui\_lang\_EN.xml (Inglese), verranno caricati automaticamente
 
 .. _suoneria_differenziata_ref_label:
 
