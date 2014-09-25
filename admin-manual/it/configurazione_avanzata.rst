@@ -320,7 +320,7 @@ Codec g729
 Introduzione
 ------------
 
-Il G.729 è un codec che permette di minimizzare l'utilizzo della banda nelle comunicazioni audio digitali pur mantenendo una buona qualità sonora, ciò significa che usando G.729 è possibile veicolare, a parità di banda, un maggior numero di comunicazioni contemporanee `rispetto agli altri codec http://voiprevolution.blogosfere.it/2007/02/quanta-banda-per-il-voip.html`_ (come il G.711), con un consumo per canale pari a 8 kbit/s.
+Il G.729 è un codec che permette di minimizzare l'utilizzo della banda nelle comunicazioni audio digitali pur mantenendo una buona qualità sonora, ciò significa che usando G.729 è possibile veicolare, a parità di banda, un maggior numero di comunicazioni contemporanee `rispetto agli altri codec <http://voiprevolution.blogosfere.it/2007/02/quanta-banda-per-il-voip.html>`_ (come il G.711), con un consumo per canale pari a 8 kbit/s.
 
 La licenza G.729 per Asterisk è a pagamento e viene venduta per singolo canale: è possibile acquistare più licenze per ogni server, così da poter instaurare più connessioni contemporanee utilizzando il codec G.729.
 
