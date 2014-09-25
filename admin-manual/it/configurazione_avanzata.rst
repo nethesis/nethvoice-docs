@@ -340,11 +340,13 @@ Installazione
 Per installare il modulo dare il comando
 
 ::
+
   yum install neth-g729
 
 A questo punto registrare la licenza con il comando
 
 ::
+
  register
 
 Selezionare le voci 1 e 5 ed inserire la key ID ricevuta via mail.
@@ -354,26 +356,31 @@ La Key ID è un codice del tipo: G729-9TLYBFP4XXXX (se c'è uno -01 o -02 finale
 Inserire i dati anagrafici richiesti, la procedura dovrebbe concludersi in questo modo:
 
 ::
+
   Wrote license to /var/lib/asterisk/licenses/G729-GLP6742727P4.lic
 
 Controllare che l'installazione sia andata a buon fine con il comando
 
 ::
+
   asterisk -rx "g729 show version"
 
 il cui output dovrebbe essere simile a
 
 ::
+
   Digium G.729A Module Version 11.0_3.1.5 (optimized for i686_32)
 
 Per usarlo sostituire nella configurazione dei fasci :ref:`sip <fasci_sip_ref_label>` o :ref:`iax <fasci_iax_ref_label>` questa voce (o equivalente):
 
 ::
+
   allow=gsm&alaw
 
 con questa
 
 ::
+
   allow=g729
 
 Per caricare il modulo riavviare il servizio |product|, tutte le chiamate saranno **terminate**,
@@ -442,6 +449,7 @@ Possono essere utilizzati ad esempio nelle :ref:`Rotte in Entrata <rotte_in_entr
 Sintassi
 --------
 ::
+
   Regole:
   X corrisponde ad un numero da 0 a 9
   N corrisponde ad un numero da 2 a 9
@@ -452,6 +460,7 @@ Sintassi
 Esempi:
 
 ::
+
   0721X.   Corrisponde a tutti i numeri che iniziano con 0721.
   [24-6]XX Corrisponde a tutti i numeri da 200 a 299, da 400 a 699.
   0ZX.     Corrisponde a tutti i numeri che iniziano con 0 seguiti da una cifra da 1 a 9.
@@ -472,6 +481,7 @@ Files di configurazione
 I file di configurazione si trovano dentro la directory
 
 ::
+
  /etc/asterisk/
 
 Si dividono in tre tipi:
@@ -492,6 +502,7 @@ Database Asterisk
 Il database di Asterisk, conosciuto anche come AstDB, è un meccanismo per conservare i dati di Asterisk su file. Si trova in
 
 ::
+
   /var/lib/asterisk/astdb.sqlite3
 
 Files Musiche di Attesa
@@ -500,6 +511,7 @@ Files Musiche di Attesa
 I files della categoria Predefinita delle ::ref:`Musiche di Attesa <musiche_di_attesa_ref_label>` si trovano in
 
 ::
+
   /var/lib/asterisk/mohmp3/
 
 I files delle varie categorie configurate si trovano poi in sottocartelle nominate con il nome della categoria.
@@ -510,6 +522,7 @@ Files Caselle Vocali
 I files dei messaggi lasciati alle caselle vocali se configurati per essere conservati si trovano in
 
 ::
+
   /var/spool/asterisk/voicemail/
 
 divisi in cartelle per ogni contesto e in sottocartelle con il numero di interno.
@@ -520,6 +533,7 @@ Files Registrazioni Chiamante
 I files delle registrazioni di chiamata sono in
 
 ::
+
   /var/spool/asterisk/monitor/
 
 Files Registrazioni di Sistema
@@ -528,11 +542,13 @@ Files Registrazioni di Sistema
 I files delle :ref:`Registrazioni di Sistema <registrazioni_di_sistema_ref_label>` si trovano in
 
 ::
+
   /var/lib/asterisk/sounds/custom/
 
 I files delle registrazioni dei messaggi di sistema di |product| sono in
 
 ::
+
  /var/lib/asterisk/sounds
 
 divisi in una cartella per ogni lingua.
@@ -543,6 +559,7 @@ Files Interfaccia Web
 I files dell'interfaccia web di |product| si trovano in
 
 ::
+
   /var/www/html/nethvoice/
 
 Files Script Eseguibili
@@ -551,6 +568,7 @@ Files Script Eseguibili
 |product| nel flusso della chiamata può eseguire script che si devono trovare in
 
 ::
+
   /var/lib/asterisk/agi-bin/
 
 Directory per creare una chiamata da file
