@@ -156,7 +156,7 @@ I casi possono essere due:
 |product| configurato come server&gateway
 -----------------------------------------
 
-Nel caso in cui il |product| sia il **gateway** della rete, è possibile utilizzare le modalità di vpn del |service_product| per collegare un interno remoto, vedi nella sua documentazione specifica.
+Nel caso in cui il |product| sia il **gateway** della rete, è possibile utilizzare le modalità di vpn del |product_service| per collegare un interno remoto, vedi nella sua documentazione specifica.
 
 In automatico la connessione vpn verrà considerata locale dal |product| e quindi tutti i servizi saranno raggiungibili anche dall'interno remoto. Sarà così possibile registrare l'interno remoto sul centralino ed utilizzarlo come se fosse in rete locale.
 
@@ -165,7 +165,7 @@ In automatico la connessione vpn verrà considerata locale dal |product| e quind
 
 Se il |product| è configurato in modalità **server-only** la vpn dovrà essere configurata sul gateway della rete, firewall o router che sia.
 
-Fatto questo se lo host remoto contatterà il |product| con un ip della rete locale (tipico di una vpn pptp) non c'è altro da fare, invece se l'ip sarà diverso, come ad esempio succede con openvpn, bisognerà aggiungere la rete della vpn tra le reti fidate del |service_product| accedendo all'indirizzo https://nomeserver:980 con lo username e password dell'utente admin.
+Fatto questo se lo host remoto contatterà il |product| con un ip della rete locale (tipico di una vpn pptp) non c'è altro da fare, invece se l'ip sarà diverso, come ad esempio succede con openvpn, bisognerà aggiungere la rete della vpn tra le reti fidate del |product_service| accedendo all'indirizzo https://nomeserver:980 con lo username e password dell'utente admin.
 
 E' teoricamente possibile in alternativa pubblicare i servizi del |product| su internet, facendo quindi accedere un interno remoto senza vpn.
 
@@ -189,7 +189,7 @@ I casi possono essere due:
 
 *  |product| configurato come **server&gateway**
 
-Nel caso in cui il |product| sia il **gateway** della rete, è possibile utilizzare le modalità di vpn del |service_product| per collegare un interno remoto, vedi nella sua documentazione specifica.
+Nel caso in cui il |product| sia il **gateway** della rete, è possibile utilizzare le modalità di vpn del |product_service| per collegare un interno remoto, vedi nella sua documentazione specifica.
 
 In automatico la connessione vpn verrà considerata locale dal |product| e quindi tutti i servizi saranno raggiungibili anche dall'interno remoto. Sarà così possibile registrare l'interno remoto sul centralino ed utilizzarlo come se fosse in rete locale.
 
@@ -197,7 +197,7 @@ In automatico la connessione vpn verrà considerata locale dal |product| e quind
 
 Se il |product| è configurato in modalità **server-only** la vpn dovrà essere configurata sul gateway della rete, firewall o router che sia.
 
-Fatto questo se il centralino remoto contatterà il |product| con un ip della rete locale non c'è altro da fare, invece se l'ip sarà diverso, come ad esempio succede con openvpn, bisognerà aggiungere la rete della vpn tra le reti fidate del |service_product| accedendo all'indirizzo https://nomeserver:980 con lo username e password dell'utente admin.
+Fatto questo se il centralino remoto contatterà il |product| con un ip della rete locale non c'è altro da fare, invece se l'ip sarà diverso, come ad esempio succede con openvpn, bisognerà aggiungere la rete della vpn tra le reti fidate del |product_service| accedendo all'indirizzo https://nomeserver:980 con lo username e password dell'utente admin.
 
 Collegamento senza VPN
 ----------------------
@@ -206,11 +206,11 @@ Ribadendo che la vpn è sempre consigliata, sia per ragioni di praticità ma sop
 
 *  |product| configurato come **server&gateway**
 
-Basta configurare tra le reti fidate del |service_product| gli ip pubblici delle sedi remote, andando all'indirizzo https://nomeserver:980 con lo username e password dell'utente admin. In questo modo il |product| aprirà i suoi servizi alle connessioni provenienti da quegli ip.
+Basta configurare tra le reti fidate del |product_service| gli ip pubblici delle sedi remote, andando all'indirizzo https://nomeserver:980 con lo username e password dell'utente admin. In questo modo il |product| aprirà i suoi servizi alle connessioni provenienti da quegli ip.
 
 *  |product| configurato come **server only**
 
-In questo caso il gateway della rete, firewall o router che sia, deve rigirare il traffico UDP entrante sulla porta 4569 al |product|, di solito con un port-forwarding, bisogna poi configurare tra le reti fidate del |service_product| gli ip pubblici delle sedi remote, andando all'indirizzo https://nomeserver:980 con lo username e password dell'utente admin.
+In questo caso il gateway della rete, firewall o router che sia, deve rigirare il traffico UDP entrante sulla porta 4569 al |product|, di solito con un port-forwarding, bisogna poi configurare tra le reti fidate del |product_service| gli ip pubblici delle sedi remote, andando all'indirizzo https://nomeserver:980 con lo username e password dell'utente admin.
 
 Configurazione Fasci IAX
 ------------------------

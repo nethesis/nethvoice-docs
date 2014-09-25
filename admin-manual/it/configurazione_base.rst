@@ -113,19 +113,19 @@ L'avviso di chiamata se attivo consente ad un interno di ricevere telefonate a l
   *70    Abilita Avviso di Chiamata, possibilità di ricevere più di una chiamata sull'interno
   *71    Disabilita Avviso di Chiamata
 
-Gestione Voicemail
-------------------
+Gestione Casella Vocale
+-----------------------
 
-La voicemail può essere gestita da un interno del centralino. Di default la voicemail è disabilitata quindi deve essere attivata nelle proprietà dell'interno vedi :ref:`qui <interni_sip_voicemail_ref_label>`. Accedendo alla voicemail da un interno, il proprio o no, verrà sempre chiesto l'inserimento della propria password. ::
+La casella vocale può essere gestita da un interno del centralino. Di default la casella vocale è disabilitata quindi deve essere attivata nelle proprietà dell'interno vedi :ref:`qui <casella_vocale_ref_label>`. Accedendo alla casella vocale da un interno, il proprio o no, verrà sempre chiesto l'inserimento della propria password. ::
 
-  *98    Accedi alla VoiceMail (viene chiesto su quale Casella)
-  *98XXX Accedi alla VoiceMail per la casella XXX
-  *97    Accedi alla propria VoiceMail (relativa al telefono da cui si digita il codice)
+  *98    Accedi alla Casella Vocale (viene chiesto su quale Casella)
+  *98XXX Accedi alla Casella Vocele per la casella XXX
+  *97    Accedi alla propria Casella Vocale (relativa al telefono da cui si digita il codice)
 
 Deviazione di Chiamata
 ----------------------
 
-La deviazione di chiamata dirotta la chiamata destinata ad un interno verso un'altra destinazione in determinate condizioni. Può essere attivato in ogni situazione o ad esempio in caso di interno occupato o nessuna risposta. Per attivare la deviazione ad una casella vocale basta utilizzare un \* davanti all'interno, ad esempio per attivare la deviazione di chiamata alla voicemail dell'interno 205 basta chiamare \*72\*205 ::
+La deviazione di chiamata dirotta la chiamata destinata ad un interno verso un'altra destinazione in determinate condizioni. Può essere attivato in ogni situazione o ad esempio in caso di interno occupato o nessuna risposta. Per attivare la deviazione ad una casella vocale basta utilizzare un \* davanti all'interno, ad esempio per attivare la deviazione di chiamata alla casella vocale dell'interno 205 basta chiamare \*72\*205 ::
 
   *72    Abilita deviazione di chiamata (vengono chiesti i dettagli)
   *72XXXXX   Abilita deviazione di Chiamata sul numero XXXXX
@@ -441,7 +441,7 @@ Basta andare nel modulo :ref:`Impostazioni Sip <impostazioni_sip_ref_label>` per
 Rubrica
 =======
 
-La rubrica di |product| è la Rubrica Centralizzata di |service_product|. Vedere nella documentazione di |service_product| come popolarla e integrarla con la rubrica del |product_cti| e i :ref:`Numeri Brevi <numeri_brevi_ref_label>`.
+La rubrica di |product| è la Rubrica Centralizzata di |product_service|. Vedere nella documentazione di |product_service| come popolarla e integrarla con la rubrica del |product_cti| e i :ref:`Numeri Brevi <numeri_brevi_ref_label>`.
 
 I telefoni vengono collegati alla rubrica di |product| automaticamente se configurati tramite il :ref:`provisioning <provisioning_ref_label>`, altrimenti per i modelli che lo supportano è possibile configurare una rubrica di tipo LDAP.
 I parametri da utilizzare per i vari modelli sono:
@@ -526,9 +526,9 @@ Fax
 
 |product| consente la gestione completa del servizio fax. La prima soluzione *intuibile* è quella di collegare la macchina fax tradizionale direttamente alla sorgente telefonica, vedi ad esempio più sotto, ma questo comporterebbe il bypass della linea telefonica ed è sconsigliato.
 
-E' opportuno invece far gestire anche la linea fax al |product| per poi configurare il servizio fax adattandolo alle esigenze del cliente.  Per la ricezione fax è possibile o collegare al centralino la macchina fax tradizionale tramite un `Ata <http://it.wikipedia.org/wiki/Analog_Telephone_Adapter>`_ o configurare all'interno del |service_product| uno o più **modem virtuali**, in modo da non aver alcun hardware aggiuntivo e poter moltiplicare le linee fax utilizzabili.
+E' opportuno invece far gestire anche la linea fax al |product| per poi configurare il servizio fax adattandolo alle esigenze del cliente.  Per la ricezione fax è possibile o collegare al centralino la macchina fax tradizionale tramite un `Ata <http://it.wikipedia.org/wiki/Analog_Telephone_Adapter>`_ o configurare all'interno del |product_service| uno o più **modem virtuali**, in modo da non aver alcun hardware aggiuntivo e poter moltiplicare le linee fax utilizzabili.
 
-Utilizzando un modem virtuale si possono automaticamente utilizzare tutti gli strumenti di gestione fax del |service_product| usandone tutte le potenzialità.
+Utilizzando un modem virtuale si possono automaticamente utilizzare tutti gli strumenti di gestione fax del |product_service| usandone tutte le potenzialità.
 
 In più il |product| in caso di linea mista voce/fax è in grado di riconoscere il tipo di chiamata in ingresso e direzionarla a seconda delle esigenze o al fax virtuale o al fax tradizionale o ai telefoni.
 
@@ -537,11 +537,11 @@ Creazione modem virtuale
 
 Bisogna per prima cosa creare un nuovo interno :ref:`IAX <interni_iax_ref_label>` dove si appoggerà il modem virtuale, preoccupandosi di inserire solo il numero di interno, il nome visualizzato e la password (secret).
 
-La creazione di un modem virtuale si svolge nell'interfaccia di gestione di |service_product|, riferirsi alla sua documentazione. 
+La creazione di un modem virtuale si svolge nell'interfaccia di gestione di |product_service|, riferirsi alla sua documentazione. 
 
 A questo punto basta destinare la :ref:`Rotta in Entrata <rotte_in_entrata_ref_label>` della linea fax all'interno IAX precedentemente creato per avere la ricezione del fax. E' consigliabile nei casi in cui il servizio fax sia molto importante e delicato creare un numero di modem virtuale in **sola ricezione** doppio rispetto alle chiamate fax massime ricevibili e inserire gli interni IAX di appoggio dei modem in un :ref:`Gruppo di Chiamata <gruppi_di_chiamata_ref_label>` con strategia di squillo **hunt**. Questo consente di non trovare occupato nei pochi secondi che servono ai vari modem per resettarsi dopo aver ricevuto un fax.
 
-.. note:: Assicurarsi che il servizio fax su |service_product| sia stato avviato.
+.. note:: Assicurarsi che il servizio fax su |product_service| sia stato avviato.
 
 Riconoscimento Fax
 ------------------

@@ -59,7 +59,7 @@ Funzioni Evolute
 * Servizi di autenticazione (accesso a servizi tramite password e codici di sicurezza)
 * Supporto di telemanutenzione per ridurre al minimo la necessità di interventi presso sede cliente
 * Possibilità di integrare GSM BOX
-* NethCTI
+* |product_cti|
 * Possibilità di integrazione server aziendali: firewall, proxy, ecc?
 * Il centralino con il voip è un centralino tradizionale, con aggiunte due linee: la LAN (telefoni voip, softphone) e Internet (provider voip)
 * Server Fax 
