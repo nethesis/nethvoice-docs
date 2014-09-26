@@ -1312,9 +1312,29 @@ Il prefisso CID da aggiungere a questa chiamata prima di indirizzarla alla desti
 Musica di Attesa
 ================
 
+Le musica di attesa permettono di configurare che file audio il |product| debba riprodurre in una chiamata messa in attesa o in tutte quelle situazioni dove un modulo di |product|, come ad esempio le :ref:`rotte in entrata <rotte_in_entrata_ref_label>`, :ref:`rotte in uscita <rotte_in_uscita_ref_label>`, le :ref:`code <code_ref_label>` o i :ref:`gruppi di chiamata <gruppi_di_chiamata_ref_label>`, sostituisce il classico suono di squillo.
+
+Per utilizare solo un determinato gruppo di files musicali in ogni occorrenza, le musiche di attesa si dividono in **categorie**.
+
+Sulla destra nel box verde vengono elencate le categorie di musica di attesa presenti.
+
+La categoria **predefinito** è la musica di attesa che viene usata di default, quando ad esempio un interno mette in attesa un altro interno.
+
+Per creare una nuova categoria di musica di attesa utilizzare la funzionalità in alto a destra.
+
+E' possibile caricare file .wav e file .mp3 che il |product| convertirà in .wav.
+
+Per caricare un file selezionarlo tramite l'apposito box e poi cliccare su Carica.
+
+Al momento dell'upload si può regolare il volume del file musicale interagendo con il menu Aggiustamento Volume.
+
+Selezionare la categoria se si vuole caricare il file in una categoria specifica, diversa dal predefinito.
+
+Esiste anche la possibilità di utilizzare come musica di attesa uno streaming audio, aggiungendo una apposita categoria di streaming.
 
 Configurazione Patton
 =====================
+
  :ref:`Configurazione Patton <configurazione_patton_ref_label>`
 
 
@@ -1324,33 +1344,483 @@ Wizard Provisioning
 ===================
 
 
+Descrizione
+-----------
+
+Il modulo Wizard Provisioning nasce con l'intento di facilitare la procedura di Provisioning e di diventare la base per configurare interamente e con pochi click il |product|.
+
+Da questo modulo inizia la procedura di Provisioning degli apparati, entrando nella pagina del modulo la prima volta il |product| effettua una scansione della sua rete locale cercando indirizzi mac address di produttori di apparecchi telefonici.
+
+Configurazione
+--------------
+
+Il risultato della scansione viene caricato in qualche secondo nella pagina.
+
+Si ottiene un elenco di tutti gli apparati telefonici individuati dalla scansione con il loro indirizzo ip, il loro mac address e il
+costruttore.
+
+Il modulo tenterà anche tramite una connessione http di individuare il modello dell'apparecchio telefonico, se questa ricerca avrà esito positivo verrà indicato, altrimenti verrà lasciata la possibilità di inserirlo a mano.
+
+Nella colonna **Interno** viene indicato se il mac address rilevato è già stato associato ad un interno, in caso contrario viene fornito un elenco di interni non ancora associati ad alcun apparecchio telefonico.
+
+E' anche possibile creare un nuovo interno da associare all'apparecchio rilevato: basta indicare il numero di interno, il nome da associare all'interno e la password, vedi :ref:`qui <interni_sip_ref_label>` per maggiori informazioni sugli interni.
+
+Una volta fatta l'associazione di un apparato telefonico con un interno, preesistente o nuovo, il |product| creerà il file di configurazione nella directory di tftp, vedi :ref:`qui <provisioning_ref_label>`, e riavvierà l'apparato (questa operazione potrebbe non andare a buon fine con certi modelli di telefono) in modo tale da passargli all'avvio la nuova configurazione.
+
 .. _registrazioni_di_sistema_ref_label:
 
 Registrazioni Sistema
 =====================
 
+Descrizione
+-----------
 
-.. _fasci_sip_ref_label:
+Le registrazioni di sistema sono lo strumento per caricare sul |product| dei file audio, di solito di servizio, per poi poterli usare tramite i moduli che lo consentono, ad esempio gli :ref:`annunci <annunci_ref_label>`, le `code <code_ref_label>`, i :ref:`gruppi di chiamata <gruppi_di_chiamata_ref_label>`, :ref:`IVR <ivr_ref_label>` etc..
 
-Fasci SIP
-=========
+Ogni modulo che può tra le sue funzionalità riprodurre un file audio di solito attinge alle registrazioni di sistema.
 
+E' possibile inoltre catturare una registrazione fatta direttamente da un interno del |product|.
+
+Configurazione
+--------------
+
+Registrazione da un interno
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Fase 1
+^^^^^^
+
+Dopo aver utilizzato i codici servizi dedicati, vedi :ref:`qui <funzionalita_base_ref_label>`, da un interno, indicare l'interno nell'apposito box e cliccare su vai.
+
+La pagina verrà ricaricata, il |product| ha individuato nel frattempo il file audio.
+
+Fase 2
+^^^^^^
+
+Inserire una descrizione nel campo Nome per riconoscere il file audio, dopo aver cliccato su Salva, la registrazione di sistema comparirà nell'elenco nel box verde a destra.
+
+Registrazione da File
+~~~~~~~~~~~~~~~~~~~~~
+
+Fase 1
+^^^^^^
+
+Caricare il file audio tramite l'apposito box e cliccare su CARICA.
+
+Il file **deve essere** .wav (registrato per esempio con il Registratore di Microsoft Windows) del formato PCM, 16Bit, 8000Hz.
+
+Questo perché il |product| non fa nessuna operazione sul file caricato, tipo conversione etc.., per non intaccarne la qualità, per questo il file deve essere già del formato con il quale il |product| gestisce le registrazioni di sistema.
+
+Verrà fatto l'upload del file e la pagina sarà ricaricata.
+
+Fase 2
+^^^^^^
+
+Inserire una descrizione nel campo Nome per riconoscere il file audio, dopo aver cliccato su Salva, la registrazione di sistema comparirà nell'elenco nel box verde a destra.
+
+Nell'elenco delle registrazioni sulla destra si trovano le registrazioni interne.
+
+Nelle registrazioni interne sono elencati tutti i file audio del |product| che vengono utilizzati per le funzionalità standard.
+
+E' possibile, selezionando uno di questi files, sostituirlo con un file personalizzato o con un altro file già caricato.
+
+Registrazione caricata
+~~~~~~~~~~~~~~~~~~~~~~
+
+Selezionando una registrazione caricata è possibile:
+
+Lista
+^^^^^
+
+Viene visualizzato qui dove è utilizzata la registrazione di sistema.
+
+Cambia Nome
+^^^^^^^^^^^
+
+Nome per la registrazione di sistema.
+
+Nome Descrittivo
+^^^^^^^^^^^^^^^^
+
+Campo descrittivo per individuare la registrazione di sistema.
+
+Collega ad un Codice Servizio
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Attivare questa opzione per attivare un codice di servizio che permetterà di cambiare direttamente questa registrazione. Il codice di servizio viene indicato dopo.
+
+Password Codice Servizio
+^^^^^^^^^^^^^^^^^^^^^^^^
+
+Password per proteggere l'accesso al codice di servizio. Deve essere numerica.
+
+File
+^^^^
+
+Viene indicato il file audio associato alla registrazione di sistema, è possibile cambiarlo, accodarne degli altri, ascoltarlo, cambiare l'ordine di riproduzione.
 
 .. _fasci_iax_ref_label:
 
 Fasci IAX
 =========
 
+Descrizione
+-----------
+
+I Fasci IAX permettono di collegare il |product| a delle fonti telefoniche tramite il protocollo IAX.
+
+I Fasci IAX vengono tipicamente usati per collegare due |product| remoti, vedi :ref:`qui <collegamenti_remoti_ref_label>`.
+
+Se il Fascio è utilizzato in qualche :ref:`Rotta in Uscita <rotte_in_uscita_ref_label>` viene notificato in alto.
+
+Sul menù di sinistra si trovano tutti i Fasci già creati, se evidenziati in grigio i Fasci sono disabilitati.
+
+Configurazione
+--------------
+
+Nome Fascio
+~~~~~~~~~~~
+
+Nome descrittivo per individuare il Fascio.
+
+Identificativo Chiamante in uscita
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+ID Chiamante per le chiamate in uscita con questo Fascio.
+
+Formato: <###########>. Può essere anche usato il formato "hidden" <#########> per nascondere l'ID Chiamante se supportato dal gestore della linea.
+
+Opzioni CID
+~~~~~~~~~~~
+
+Determina a quali CID sarà consentito utilizzare questo Fascio. 
+Gli ID di emergenza definiti sugli interni, vedi :ref:`qui <interni_sip_ref_label>`, potranno **sempre** usare questo Fascio se è in una Rotta di Emergenza.
+
+*  **Permetti tutti i CID**: tutti gli ID Chiamante, inclusi quelli esterni inoltrati dalle chiamate esterne, avranno accesso a questo Fascio.
+*  **Blocca CID esterni**: blocca i CID risultanti da una chiamata esterna inoltrata dal sistema. I CID interni hanno accesso.
+*  **Rimuovi CNAM**: il CNAM verrà rimosso dai CID che passano per questo Fascio.
+*  **Forza CID Fascio**: usa sempre il CID definito in questo Fascio a meno che non faccia parte di una rotta di emergenza con un CID di emergenza definito per l'interno.
+
+Numero Massimo di Canali
+~~~~~~~~~~~~~~~~~~~~~~~~
+
+Controlla il numero massimo di canali (chiamate contemporanee) che possono essere usate da questo fascio, incluso le chiamate entranti e uscenti. Lasciare vuoto per nessun limite.
+
+Disabilita il fascio
+~~~~~~~~~~~~~~~~~~~~
+
+Permette di disabilitare il Fascio da tutte le :ref:`Rotta in Uscita <rotte_in_uscita_ref_label>` dove è presente.
+
+Controlla Guasti Fascio
+~~~~~~~~~~~~~~~~~~~~~~~
+
+Se impostato su Attiva, immettere il nome di uno script caricato sul |product| che sarà chiamato per notificare il malfunzionamento del Fascio.
+
+Regole per le Chiamate in Uscita
+--------------------------------
+
+E' possibile sul Fascio limitare le chiamate permesse per questo Fascio.  
+Questa limitazione arriva dopo quella possibile sulle :ref:`Rotta in Uscita <rotte_in_uscita_ref_label>`.
+
+*  Anteponi: inserire le cifre che il |product| aggiungerà al numero chiamato prima di effettuare la chiamata. Non è possibile per ovvie ragioni usare i :ref:`pattern di Asterisk <pattern_ref_label>` in questo campo.
+*  Prefisso: inserire le cifre che devono essere tolte dal |product| a partire dall'inizio del numero chiamato prima di effettuare la chiamata. Non è possibile per ovvie ragioni usare i :ref:`pattern di Asterisk <pattern_ref_label>` in questo campo.
+*  Modello Corrispondente: inserire il modello di chiamata in uscita che la Rotta in Uscita deve considerare. E' possibile utilizzare i :ref:`pattern di Asterisk <pattern_ref_label>` in questo campo.
+
+Wizard Regole di Chiamata
+~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Con il menù del Wizard Modelli di chiamata è possibile caricare uno tra i tipi di chiamata che si trovano in elenco, con o senza prefisso d'uscita.
+
+Prefisso Chiamate in uscita
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Inserire qui un prefisso da aggiungere a tutte le chiamate in uscita.
+
+Impostazioni in Uscita
+----------------------
+
+Nome Fascio
+~~~~~~~~~~~
+
+Nome da dare alla parte PEER del Fascio. Deve essere univoco, non può essere comune a più Fasci.
+
+Dettagli PEER
+~~~~~~~~~~~~~
+
+Parametri per la connessione PEER del Fascio. L'ordine delle righe è importante.
+
+Impostazioni in Entrata
+-----------------------
+
+Contesto UTENTE (USER)
+~~~~~~~~~~~~~~~~~~~~~~
+
+Inserire l'utente per la parte USER del Fascio.
+
+Dettagli UTENTE
+~~~~~~~~~~~~~~~
+
+Parametri per configurare la parte USER del Fascio. L'ordine delle righe è importante.
+
+Stringa di registrazione
+~~~~~~~~~~~~~~~~~~~~~~~~
+
+Stringa di registrazione del Fascio. Può essere richiesta da alcuni provider Voip ad esempio.
+
+.. _fasci_sip_ref_label:
+
+Fasci SIP
+=========
+
+Descrizione
+-----------
+
+I Fasci SIP permettono di collegare il |product| a delle fonti telefoniche tramite il protocollo SIP.
+
+I Fasci SIP si usano ad esempio per collegare un provider Voip, vedi :ref:`qui <configurazione_provider_voip_ref_label>` e i Patton, vedi :ref:`qui <configurazione_patton_ref_label>`.
+
+Se il Fascio è utilizzato in qualche :ref:`Rotta in Uscita <rotte_in_uscita_ref_label>` viene notificato in alto.
+
+Sul menù di sinistra si trovano tutti i Fasci già creati, se evidenziati in grigio i Fasci sono disabilitati.
+
+Configurazione
+--------------
+
+Nome Fascio
+~~~~~~~~~~~
+
+Nome descrittivo per individuare il Fascio.
+
+Identificativo Chiamante in uscita
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+ID Chiamante per le chiamate in uscita con questo Fascio.
+
+Formato: <###########>. Può essere anche usato il formato "hidden" <#########> per nascondere l'ID Chiamante se supportato dal gestore della linea.
+
+Opzioni CID
+~~~~~~~~~~~
+
+Determina a quali CID sarà consentito utilizzare questo Fascio. 
+Gli ID di emergenza definiti sugli interni, vedi :ref:`qui <interni_sip_ref_label>`, potranno **sempre** usare questo Fascio se è in una Rotta di Emergenza.
+
+-  **Permetti tutti i CID**: tutti gli ID Chiamante, inclusi quelli esterni inoltrati dalle chiamate esterne, avranno accesso a questo Fascio.
+-  **Blocca CID esterni**: blocca i CID risultanti da una chiamata esterna inoltrata dal sistema. I CID interni hanno accesso.
+-  **Rimuovi CNAM**: il CNAM verrà rimosso dai CID che passano per questo Fascio.
+-  **Forza CID Fascio**: usa sempre il CID definito in questo Fascio a meno che non faccia parte di una rotta di emergenza con un CID di emergenza definito per l'interno.
+
+Numero Massimo di Canali
+~~~~~~~~~~~~~~~~~~~~~~~~
+
+Controlla il numero massimo di canali (chiamate contemporanee) che possono essere usate da questo fascio, incluso le chiamate entranti e uscenti. Lasciare vuoto per nessun limite.
+
+Disabilita il fascio
+~~~~~~~~~~~~~~~~~~~~
+
+Permette di disabilitare il Fascio da tutte le :ref:`Rotta in Uscita <rotte_in_uscita_ref_label>` dove è presente.
+
+Controlla Guasti Fascio
+~~~~~~~~~~~~~~~~~~~~~~~
+
+Se impostato su Attiva, immettere il nome di uno script caricato sul |product| che sarà chiamato per notificare il malfunzionamento del Fascio.
+
+Protocollo T38
+~~~~~~~~~~~~~~
+
+Se attivato, il protocollo T38 sarà abilitato per inviare fax utilizzando questo Fascio.
+
+Regole per le Chiamate in Uscita
+--------------------------------
+
+E' possibile sul Fascio limitare le chiamate permesse per questo Fascio. 
+Questa limitazione arriva dopo quella possibile sulle :ref:`Rotta in Uscita <rotte_in_uscita_ref_label>`.
+
+*  Anteponi: inserire le cifre che il |product| aggiungerà al numero chiamato prima di effettuare la chiamata. Non è possibile per ovvie ragioni usare i :ref:`pattern di Asterisk <pattern_ref_label>` in questo campo.
+*  Prefisso: inserire le cifre che devono essere tolte dal |product| a partire dall'inizio del numero chiamato prima di effettuare la chiamata. Non è possibile per ovvie ragioni usare i :ref:`pattern di Asterisk <pattern_ref_label>` in questo campo.
+*  Modello Corrispondente: inserire il modello di chiamata in uscita che la Rotta in Uscita deve considerare. E' possibile utilizzare i :ref:`pattern di Asterisk <pattern_ref_label>` in questo campo.
+
+Wizard Regole di Chiamata
+~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Con il menù del Wizard Modelli di chiamata è possibile caricare uno tra i tipi di chiamata che si trovano in elenco, con o senza prefisso d'uscita.
+
+Prefisso Chiamate in uscita
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Inserire qui un prefisso da aggiungere a tutte le chiamate in uscita.
+
+Impostazioni in Uscita
+----------------------
+
+Nome Fascio
+~~~~~~~~~~~
+
+Nome da dare alla parte PEER del Fascio. Deve essere univoco, non può essere comune a più Fasci.
+
+Dettagli PEER
+~~~~~~~~~~~~~
+
+Parametri per la connessione PEER del Fascio. L'ordine delle righe è importante.
+
+Impostazioni in Entrata
+-----------------------
+
+Contesto UTENTE (USER)
+~~~~~~~~~~~~~~~~~~~~~~
+
+Inserire l'utente per la parte USER del Fascio.
+
+Dettagli UTENTE
+~~~~~~~~~~~~~~~
+
+Parametri per configurare la parte USER del Fascio. L'ordine delle righe è importante.
+
+Stringa di registrazione
+~~~~~~~~~~~~~~~~~~~~~~~~
+
+Stringa di registrazione del Fascio. Può essere richiesta da alcuni provider Voip ad esempio.
 
 .. _fasci_dahdi_ref_label:
 
 Fasci DAHDI
 ===========
 
+Descrizione
+-----------
+
+I Fasci DAHDI permettono di collegare il |product| a delle fonti telefoniche tramite schede interne.
+
+Se il Fascio è utilizzato in qualche :ref:`Rotta in Uscita <rotte_in_uscita_ref_label>` viene notificato in alto.
+
+Sul menù di sinistra si trovano tutti i Fasci già creati, se evidenziati in grigio i Fasci sono disabilitati.
+
+Configurazione
+--------------
+
+Nome Fascio
+~~~~~~~~~~~
+
+Nome descrittivo per individuare il Fascio.
+
+Identificativo Chiamante in uscita
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+ID Chiamante per le chiamate in uscita con questo Fascio.
+
+Formato: <###########>. Può essere anche usato il formato "hidden" <#########> per nascondere l'ID Chiamante se supportato dal gestore della linea.
+
+Opzioni CID
+~~~~~~~~~~~
+
+Determina a quali CID sarà consentito utilizzare questo Fascio. 
+Gli ID di emergenza definiti sugli interni, vedi :ref:`qui <interni_sip_ref_label>`, potranno **sempre** usare questo Fascio se è in una Rotta di Emergenza.
+
+*  **Permetti tutti i CID**: tutti gli ID Chiamante, inclusi quelli esterni inoltrati dalle chiamate esterne, avranno accesso a questo Fascio.
+*  **Blocca CID esterni**: blocca i CID risultanti da una chiamata esterna inoltrata dal sistema. I CID interni hanno accesso.
+*  **Rimuovi CNAM**: il CNAM verrà rimosso dai CID che passano per questo Fascio.
+*  **Forza CID Fascio**: usa sempre il CID definito in questo Fascio a meno che non faccia parte di una rotta di emergenza con un CID di emergenza definito per l'interno.
+
+Numero Massimo di Canali
+~~~~~~~~~~~~~~~~~~~~~~~~
+
+Controlla il numero massimo di canali (chiamate contemporanee) che possono essere usate da questo fascio, incluso le chiamate entranti e uscenti. Lasciare vuoto per nessun limite.
+
+Disabilita il fascio
+~~~~~~~~~~~~~~~~~~~~
+
+Permette di disabilitare il Fascio da tutte le :ref:`Rotta in Uscita <rotte_in_uscita_ref_label>` dove è presente.
+
+Controlla Guasti Fascio
+~~~~~~~~~~~~~~~~~~~~~~~
+
+Se impostato su Attiva, immettere il nome di uno script caricato sul |product| che sarà chiamato per notificare il malfunzionamento del Fascio.
+
+Regole per le Chiamate in Uscita
+--------------------------------
+
+E' possibile sul Fascio limitare le chiamate permesse per questo Fascio.
+Questa limitazione arriva dopo quella possibile sulle :ref:`Rotta in Uscita <rotte_in_uscita_ref_label>`.
+
+*  Anteponi: inserire le cifre che il |product| aggiungerà al numero chiamato prima di effettuare la chiamata. Non è possibile per ovvie ragioni usare i :ref:`pattern di Asterisk <pattern_ref_label>` in questo campo.
+*  Prefisso: inserire le cifre che devono essere tolte dal |product| a partire dall'inizio del numero chiamato prima di effettuare la chiamata. Non è possibile per ovvie ragioni usare i :ref:`pattern di Asterisk <pattern_ref_label>` in questo campo.
+*  Modello Corrispondente: inserire il modello di chiamata in uscita che la Rotta in Uscita deve considerare. E' possibile utilizzare i :ref:`pattern di Asterisk <pattern_ref_label>` in questo campo.
+
+Wizard Regole di Chiamata
+~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Con il menù del Wizard Modelli di chiamata è possibile caricare uno tra i tipi di chiamata che si trovano in elenco, con o senza prefisso d'uscita.
+
+Prefisso Chiamate in uscita
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Inserire qui un prefisso da aggiungere a tutte le chiamate in uscita.
+
+Impostazioni in Uscita
+----------------------
+
+DAHDI Trunks
+~~~~~~~~~~~~
+
+Canale e Gruppo DAHDI disponibili da collegare al Fascio, indicare la porta e se iniziare dal primo canale o dall'ultimo del gruppo.
 
 .. _configurazione_provider_voip_ref_label:
 
 Configurazione Provider Voip
 ============================
 
+Descrizione
+-----------
+
+Il wizard per la configurazione di provider voip ha lo scopo di semplificare la creazione di un :ref:`Fascio Sip <fasci_sip_ref_label>` che collegherà il |product| con il provider.
+
+I provider al momento supportati sono **Eutelia**, **Messagenet**, **Squillo**, **VoipVoice** e **Enjoip**, stiamo lavorando per estendere questo elenco il più possibile.
+
+Inoltre è possibile collegare un account **Skype** tramite la modalità **Skype Connect**, con un account **Skype** business dove è stata abilitata, rende possibile utilizzare le tariffe di **Skype** per effettuare delle chiamate esterne. Stiamo lavorando per estendere l'integrazione con **Skype** alla possibilità di ricevere chiamate dagli account **Skype** oltre ad integrare la rubrica dell'account **Skype** nel |product|.
+
+Se si vuole configurare un provider non presente in elenco, il consiglio è partire dalla configurazione di Eutelia ed adattarla secondo le esigenze.
+
+Nota per la Ricezione delle chiamate
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+In situazioni particolari è necessario per registrare il fascio sip sul provider dichiarare il proprio ip pubblico. Se la registrazione del fascio va in errore, per controllarne lo stato vedi :ref:`qui <cli_ref_label>`, si può provare a configurare nelle :ref:`Impostazioni SIP <impostazioni_sip_ref_label>` l'ip pubblico e le reti locali del |product|.
+
+Configurazione
+--------------
+
+Provider
+~~~~~~~~
+
+Scegliere il Provider Voip che si vuole configurare.
+
+Nome Fascio
+~~~~~~~~~~~
+
+Nome del fascio SIP che si andrà a creare.
+
+Username
+~~~~~~~~
+
+Username per il collegamento con il Provider Voip, deve essere fornito dal Provider, spesso coincide con il numero di telefono.
+
+Password
+~~~~~~~~
+
+Password fornita dal Provider Voip per il collegamento.
+
+.. warning:: Per problemi di compatibilità con la stringa di registrazione, la password del fascio non può contenere il catattere /, se così fosse chiedere al Provider di rinnovarla
+
+Numero Telefono
+~~~~~~~~~~~~~~~
+
+Numero di telefono fornito dal Provider Voip. Ricordarsi di creare una :ref:`Rotta in Entrata <rotte_in_entrata_ref_label>` se si vogliono ricevere chiamate.
+
+Codec consentiti
+~~~~~~~~~~~~~~~~
+
+Codec utilizzabili con il Provider Voip, è possibile inserirne più di uno separandoli con una virgola.
+
+Forza codec
+~~~~~~~~~~~
+
+Se spuntato solo i codec consentiti saranno abilitati, proibendo l'uso di altri codec.
 
