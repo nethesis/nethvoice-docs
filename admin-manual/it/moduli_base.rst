@@ -1419,7 +1419,7 @@ Fase 2
 Inserire una descrizione nel campo Nome per riconoscere il file audio, dopo aver cliccato su Salva, la registrazione di sistema comparirà nell'elenco nel box verde a destra.
 
 Nell'elenco delle registrazioni sulla destra si trovano le registrazioni interne.
-
+r
 Nelle registrazioni interne sono elencati tutti i file audio del |product| che vengono utilizzati per le funzionalità standard.
 
 E' possibile, selezionando uno di questi files, sostituirlo con un file personalizzato o con un altro file già caricato.
@@ -1807,7 +1807,7 @@ Password
 
 Password fornita dal Provider Voip per il collegamento.
 
-.. warning:: Per problemi di compatibilità con la stringa di registrazione, la password del fascio non può contenere il catattere /, se così fosse chiedere al Provider di rinnovarla
+.. warning:: Per problemi di compatibilità con la stringa di registrazione, la password del fascio non può contenere il carattere /, se così fosse chiedere al Provider di rinnovarla
 
 Numero Telefono
 ~~~~~~~~~~~~~~~
