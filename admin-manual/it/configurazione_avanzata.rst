@@ -89,7 +89,7 @@ La suoneria differenziata viene realizzata tramite le intestazioni del protocoll
 E' possibile impostarla nei gruppi, nelle rotte in ingresso o nel FollowMe
 
 Utilizzo dell'opzione ALERT\_INFO
-=================================
+---------------------------------
 
 I telefoni che attualmente supportano la suoneria differenziata tramite ALERT\_INFO sono, i Cisco, gli Snom e gli Yealink . La stringa da inserire nel campo *Suoneria differenziata* **varia da telefono a telefono**, per cui occorre rifarsi alla documentazione dello specifico modello, anche se di normalmente è qualcosa del tipo: ::
 
@@ -100,7 +100,7 @@ Con questa opzione si stabilisce direttamente nel centralino quale suoneria util
 I telefoni grandstream, con le versioni attuali di firmware, non supportano tale opzione, ma per questi è possibile usare la soluzione riportata di seguito
 
 Utilizzo dell' ALERT\_INFO con parametro info
-=============================================
+---------------------------------------------
 
 In alternativa è possibile utilizzare il parametro info. Tale direttiva va indicata nel campo *Suoneria Differenziata* (o Alert Info) del Centralino (Gruppo, Rotte in Ingresso, Follow me) inserendo questa stringa: ::
 
