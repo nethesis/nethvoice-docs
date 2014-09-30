@@ -513,12 +513,11 @@ Descrizione
 
 Il modulo Amministrazione Contesti Personalizzati permette di apportare modificare al contesto *from-internal*, contesto base di |product|; quello a cui, ad esempio, appartengono di default tutti gli :ref:`interni <interni_ref_label>` appena creati e che di default consente l'accesso a tutte le funzionalità, applicazioni e risorse di |product|.
 
-E' possibile, quindi, modificare il contesto *from-internal* aggiungendo dei sotto contesti, che poi possono essere usati in varie modalità anche da altri moduli di *'|product|, o cancellando quelli esistenti.
+E' possibile, quindi, modificare il contesto *from-internal* aggiungendo dei sotto contesti, che poi possono essere usati in varie modalità anche da altri moduli di |product|, o cancellando quelli esistenti.
 
 Il modulo offre anche la possibilità di modificare la descrizione dei componenti del contesto *from-internal*, di tutti gli eventuali sotto contesti, di tutte le funzionalità e applicazioni incluse.
 
 Queste descrizioni poi verranno riportate anche in ogni :ref:`Contesto Personalizzato <contesti_personalizzati_ref_label>` creato tramite l'apposito modulo, vedi :ref:`qui <contesti_personalizzati_ref_label>` e quindi sono di aiuto per individuare velocemente le parti da modificare.
-
 
 .. _codici_servizi_ref_label:
 
