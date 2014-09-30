@@ -1012,7 +1012,7 @@ Abilitazione generale per la registrazione delle chiamate configurabili dagli in
 
 Se disabilitato ogni opzione *Registra Subito* configurata sugli Interni sarà ignorata non registrando nessuna chiamata.
 
-Questa opzione non ha effetti sulla registrazione su richiesta, configurabile in :ref:`Opzioni Chiamata <impostazioni_generali_ref_label`, ne sulle registrazioni di :ref:`Code <code_ref_label>` e :ref:`Conferenze <conferenze_ref_label>`.
+Questa opzione non ha effetti sulla registrazione su richiesta, configurabile in :ref:`Opzioni Chiamata <impostazioni_generali_ref_label>`, ne sulle registrazioni di :ref:`Code <code_ref_label>` e :ref:`Conferenze <conferenze_ref_label>`.
 
 Disabilitare questa opzione se non si utilizzano le registrazioni, velocizzando il processo delle chiamate da parte del |product|.
 
