@@ -63,6 +63,7 @@ Attraverso la pagina principale di |product| è possibile accedere al manuale de
 
 Tutti i comandi di seguito elencati si riferiscono al codice di default di |product|, per cambiarlo o per maggiori informazioni vedi i :ref:`Codici Servizi <codici_servizi_ref_label>`.
 
+
 Trasferimento Chiamate (cieco e consultativo)
 ---------------------------------------------
 
@@ -83,6 +84,7 @@ Per effettuare il Trasferimento Cieco della chiamata occorre semplicemente effet
 
 .. note::   Il metodo appena descritto vale per tutti i telefoni IP, indipendentemente da marca e modello. Oltre a questo metodo ogni telefono ha a disposizione un pulsante di trasferimento. Per il trasferimento delle chiamate usando i pulsanti specifici disponibili nei vari telefoni rimandiamo alla documentazione specifica del telefono.
 
+
 Parcheggio Chiamate
 -------------------
 
@@ -90,6 +92,7 @@ Per parcheggiare le chiamate in una delle 9 posizioni che vanno dal numero 71 al
 
   trasferire la chiamata all'interno 70 per parcheggiare la chiamata
   *85    intercetta qualsiasi chiamata Parcheggiata
+
 
 Non Disturbare
 --------------
@@ -103,7 +106,6 @@ oppure utilizzando le funzionalità dei telefoni che lo supportano.
 
 .. note::   Consigliamo sempre di utilizzare il DND del centralino e non dei telefoni, se viene utilizzato quello dei telefoni se ne perde la visibilità sugli strumenti che la monitorano come ad esempio il |product_cti|
 
-.. _avviso_chiamata_ref_label:
 
 Avviso di Chiamata
 ------------------
@@ -113,6 +115,7 @@ L'avviso di chiamata se attivo consente ad un interno di ricevere telefonate a l
   *70    Abilita Avviso di Chiamata, possibilità di ricevere più di una chiamata sull'interno
   *71    Disabilita Avviso di Chiamata
 
+
 Gestione Casella Vocale
 -----------------------
 
@@ -121,6 +124,7 @@ La casella vocale può essere gestita da un interno del centralino. Di default l
   *98    Accedi alla Casella Vocale (viene chiesto su quale Casella)
   *98XXX Accedi alla Casella Vocele per la casella XXX
   *97    Accedi alla propria Casella Vocale (relativa al telefono da cui si digita il codice)
+
 
 Deviazione di Chiamata
 ----------------------
@@ -140,6 +144,7 @@ La deviazione di chiamata dirotta la chiamata destinata ad un interno verso un'a
 .. note:: Consigliamo sempre di utilizzare la deviazione di chiamata del centralino e non dei telefoni, se viene utilizzato quello dei telefoni se ne perde la visibilità sugli strumenti che la monitorano come ad esempio il |product_cti|
 
 .. note:: Per effettuare la Deviazione di Chiamata su Numeri esterni ricordarsi di inserire l'eventuale codice di uscita (es: se per utilizzare un certo fascio occorre digitare lo 0, per attivare la deviazione di chiamata su un numero esterno 0721405516 occorre digitare: \*7200721405516).
+
 
 Risposta per Assente
 --------------------
@@ -164,6 +169,7 @@ Il pickup diretto consente di intercettare una chiamata che sta suonando su un d
 
   **XXX Risposta per Assente: Intercetta la chiamata sull'interno XXX
 
+
 Gestione Code
 -------------
 
@@ -174,6 +180,7 @@ seguenti operazioni chiamando i seguenti numeri: ::
   XXX*   login dell'agente
   XXX**  logout dell'agente
 
+
 Numeri Brevi
 ------------
 
@@ -181,12 +188,14 @@ Per poter utilizzare i numeri brevi creati con il pannello :ref:`Numeri Brevi <n
 
   99 + NumeroBreve
 
+
 Inclusione
 ----------
 
 Per intromettersi in una chiamata in corso. ::
 
   555+ XXX   Inclusione: Inserimento nella comunicazione dell'interno XXX
+
 
 Registrazioni di Sistema
 ------------------------
@@ -198,6 +207,7 @@ Per effettuare una registrazione audio da un interno ::
 Per riascoltarla ::
 
   *99      Controllo Registrazione
+
 
 Registrazione Chiamata
 ----------------------
@@ -214,6 +224,7 @@ Utilità
   *69    Comunica il numero dell'ultima chiamata
   *60    Legge l'orario
   *65    Ripete il numero interno dal quale si sta chiamando
+
 
 Richiama su Occupato/Non Risposta
 ---------------------------------
