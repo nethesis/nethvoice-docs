@@ -468,3 +468,22 @@ Le chiamate entranti **riceveranno un tono di linea** e componendo successivamen
 .. image:: ../_static/portech_17.jpg
             :alt: Lan Tone
 
+
+.. _configurazione_schede_interne_ref_label:
+
+Configurazione Schede Interne
+=============================
+
+Le schede interne supportate da |product| sono **Digium** per flussi primari.
+
+Spegnere il server ed inserire la scheda poi da riga di comando digitare
+
+ |product_command| hwdetect
+
+Il comando riporta l'elenco delle schede interne supportate rilevate dal |product|. Se la scheda inserita non fosse stata rilevata segnalarlo all'assistenza tecnica.
+Il comando che la configura per il |product| è:
+ 
+ |product_command| hwconf
+
+Riavviare il server per caricare correttamente i moduli necessari al funzionamento della scheda.
+

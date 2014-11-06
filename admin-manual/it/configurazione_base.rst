@@ -154,9 +154,9 @@ La risposta per assente o Pickup consente di intercettare una chiamata che sta *
 Pickup Generale
 ~~~~~~~~~~~~~~~
 
-Il pickup generale di |product| consente di intercettare una chiamata che sta suonando su un interno che abbia configurato nel parametro callgroup un valore uguale al pickupgroup dell'interno che usa il pickup, per maggiori informazioni vedi :ref:`qui <interni_sip_callgroup_ref_label>` e :ref:`qui <interni_sip_pickupgroup_ref_label>`.
+Il pickup generale di |product| consente di intercettare una chiamata che sta suonando su un interno che abbia configurato nel parametro callgroup un valore uguale al pickupgroup dell'interno che usa il pickup, per maggiori informazioni vedi :ref:`qui <interni_sip_callgroup_ref_label>` e :ref:`qui <interni_sip_pickupgroup_ref_label>`. ::
 
-``*8 Risposta per Assente su Gruppo: Intercetta la chiamata su un interno appartenente al proprio gruppo (pickupgroup)``
+  *8 Intercetta la chiamata su un interno appartenente al proprio gruppo (pickupgroup)
 
 Questa è la metodologia consigliata per fare pickup della chiamata se si
 vuole limitare la possibilità di intercettare chiamate a gruppi
@@ -214,7 +214,7 @@ Registrazione Chiamata
 
 La registrazione di chiamata può essere effettuata anche durante la stessa ::
 
-  *1 Permette di registrare l'audio della chiamata (se abilitato dall'amministratore in modalità on Demand)
+  *1 Permette di registrare l'audio della chiamata
 
 Utilità
 -------
@@ -445,7 +445,7 @@ Chiamata Video
 
 Su |product| la video chiamata di default è disabilitata.
 
-Basta andare nel modulo :ref:`Impostazioni Sip <impostazioni_sip_ref_label>` per attivarla.
+Basta andare nel modulo :ref:`Impostazioni Sip <impostazioni_sip_ref_label>` per attivarla e abilitarla sugli interni coinvolti :ref:`vedi qui <interni_sip_videosupport_ref_label>`.
 
 .. _rubrica_ref_label:
 

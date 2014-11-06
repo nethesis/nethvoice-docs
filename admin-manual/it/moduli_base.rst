@@ -559,6 +559,8 @@ directmedia
 
 Impostazioni di reinvite per l'interno, impostare a No questo parametro per client WebRTC
 
+.. _interni_sip_videosupport_ref_label:
+
 videosupport
 ~~~~~~~~~~~~
 

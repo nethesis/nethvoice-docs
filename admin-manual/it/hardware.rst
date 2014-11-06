@@ -106,11 +106,7 @@ PRI
 
 -  **Digium** schede a 1, 2 o 4 flussi primari
 
- Inserire la scheda sul centralino e da riga di comando digitare
-
- |product_command| hwconf
-
- per configurarla.
+ :ref:`Configurazione Schede Interne <configurazione_schede_interne_ref_label>` 
 
 - Ogni modello di **Patton** PRI è compatibile, esistono al momento **Patton** da una o quattro porte PRI.
  
@@ -152,7 +148,7 @@ Gateway GSM
  :ref:`Configurazione Portech <configurazione_portech_ref_label>`
 
 
-Linee interne
+Linee Interne
 =============
 
 ATA SIP
