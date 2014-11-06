@@ -474,7 +474,7 @@ Le chiamate entranti **riceveranno un tono di linea** e componendo successivamen
 Configurazione Schede Interne
 =============================
 
-Le schede interne supportate da |product| sono **Digium** per flussi primari.
+Le schede interne supportate da |product| sono le schede **Digium** per flussi primari.
 
 Spegnere il server ed inserire la scheda poi da riga di comando digitare
 
