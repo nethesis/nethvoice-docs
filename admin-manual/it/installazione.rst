@@ -7,7 +7,7 @@ Requisiti minimi
 
 |product| è uno dei tanti prodotti installabile sulla base |parent_product|.
 
-Per installare |product| quindi il primo passo è installare |parent_product|, per i requisiti minimi, la compatibilità hardware e le modalità di installazione fare riferimento alla documentazione specifica `qui <http://nethservice.docs.nethesis.it/it/latest/installation.html>`_.
+Per installare |product| quindi il primo passo è installare |parent_product|, per i requisiti minimi, la compatibilità hardware e le modalità di installazione fare riferimento alla documentazione specifica, vedi `qui <http://nethservice.docs.nethesis.it/it/latest/installation.html>`_.
 
 Quando l'installazione di |parent_product| è stata completata con successo, per installare |product| è necessario prima registrare il server seguendo la procedura documentata `qui <http://nethservice.docs.nethesis.it/it/latest/registration.html>`_.
 

@@ -10,7 +10,7 @@ Solo in caso di aggiornamento di **Asterisk** o di un componente correlato sarà
 
  |product_command| restart
 
-che comporta il riavvio di tutti i servizi di |product| facendolo partire con le versioni aggironate.
+che comporta il riavvio di tutti i servizi, con caduta delle eventuali chiamate in corso, di |product| facendolo partire con le versioni aggironate.
 
 Per forzare gli aggiornamenti utilizzare il comando 
 
