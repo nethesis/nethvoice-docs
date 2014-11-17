@@ -485,5 +485,5 @@ Il comando che la configura per il |product| è:
  
  |product_command| hwconf
 
-Riavviare il server per caricare correttamente i moduli necessari al funzionamento della scheda.
+**Riavviare** il server per caricare correttamente i moduli necessari al funzionamento della scheda.
 

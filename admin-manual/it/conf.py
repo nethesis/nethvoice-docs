@@ -47,7 +47,7 @@ copyright = u'2014, Nethesis'
 # built documents.
 #
 # The short X.Y version.
-version = '11.3-ng'
+version = '11.4-ng'
 # The full version, including alpha/beta/rc tags.
 release = version
 

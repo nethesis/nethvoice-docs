@@ -108,6 +108,8 @@ Nell'elenco cliccando sul simbolo nella colonna Modifica, la configurazione vien
 
 E' possibile anche, in questo caso, cambiare il template di configurazione associato al telefono, vengono proposti tutti i template creati oltre a quello di default per la marca/modello selezionati.  
 
+.. warning:: Ogni configurazione effettuata nei vari moduli del Provisioning ha bisogno per essere attivata che venga cliccato il pulsante **Applica Modifiche**
+
 .. _provisioning_gestione_template_terminali_ref_label:
 
 Provisioning Gestione Template Terminali

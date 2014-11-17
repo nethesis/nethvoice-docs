@@ -204,7 +204,7 @@ Per effettuare una registrazione audio da un interno ::
 
   *77      Salva Registrazione
 
-Per riascoltarla ::
+Per ascoltarla ::
 
   *99      Controllo Registrazione
 
