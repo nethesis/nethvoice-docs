@@ -122,7 +122,7 @@ Gestione Casella Vocale
 La casella vocale può essere gestita da un interno del centralino. Di default la casella vocale è disabilitata quindi deve essere attivata nelle proprietà dell'interno vedi :ref:`qui <casella_vocale_ref_label>`. Accedendo alla casella vocale da un interno, il proprio o no, verrà sempre chiesto l'inserimento della propria password. ::
 
   *98    Accedi alla Casella Vocale (viene chiesto su quale Casella)
-  *98XXX Accedi alla Casella Vocele per la casella XXX
+  *98XXX Accedi alla Casella Vocale per la casella XXX
   *97    Accedi alla propria Casella Vocale (relativa al telefono da cui si digita il codice)
 
 
@@ -134,7 +134,7 @@ La deviazione di chiamata dirotta la chiamata destinata ad un interno verso un'a
   *72    Abilita deviazione di chiamata (vengono chiesti i dettagli)
   *72XXXXX   Abilita deviazione di Chiamata sul numero XXXXX
   *73    Disabilita deviazione di chiamata
-  *90    Abilita deviazione di Chiamata su Occupato (vengono chiesti i detttagli)
+  *90    Abilita deviazione di Chiamata su Occupato (vengono chiesti i dettagli)
   *90XXXXX   Abilita deviazione di Chiamata su Occupato sul numero XXXXX
   *91    Disabilita deviazione di chiamata su Occupato
   *52    Abilita deviazione di Chiamata su Nessuna Risposta
@@ -487,7 +487,7 @@ Yealink
   Mostra nome LDAP: %cn %o
   Protocol: Versione3
   Ricerca LDAP per chiamate in ingresso: Disabilitato
-  Resultati di ordinamento LDAP: Abilitato
+  Risultati di ordinamento LDAP: Abilitato
 
 
 In alternativa per i modelli Yealink che non hanno la rubrica LDAP inserire nel pannello Rubrica -> Rubrica Remota -> URL Remoto la stringa: ::
@@ -580,7 +580,7 @@ In situazione con linea isdn, borchia NT1 plus (ma il discorso è generale) :
 *  centralino collegato sull'uscita digitale (1 numero gestito, fax non gestito)
 *  fax fisico collegato sull'uscita analogica della borchia stessa (invio e riceve sull'altro numero)
 
-I fax in ingresso vengono intercettati da |product| anche se nelle rotte in entrata non vi è alcuna regola che comprende il numero del fax questo perchè |product| prende in carico tutte le chiamate che sente arrivare, indipendentemente dall'avere o meno una regola in ingresso in grado di gestirle.
+I fax in ingresso vengono intercettati da |product| anche se nelle rotte in entrata non vi è alcuna regola che comprende il numero del fax questo perché |product| prende in carico tutte le chiamate che sente arrivare, indipendentemente dall'avere o meno una regola in ingresso in grado di gestirle.
 
 Per fare in modo che |product| non prenda in carico le chiamate destinate al fax è necessario creare una regola in entrata sul numero del fax che abbia come destinazione "Termina Chiamata" (ad esempio con Hangup) in modo che la linea rimanga libera e il fax fisico possa ricevere correttamente.
 

@@ -29,7 +29,7 @@ che vengono utilizzati dal modulo |product|. Le componenti prettamente telefonic
 
 * con il gestore telefonico che fornisce le linee ISDN o Analogiche o l'accesso primario
 * con telefoni analogici (tramite ATA)
-* con un box GSM, per telefonate pervo cellulari
+* con un box GSM, per telefonate per cellulari
 * con la rete aziendale (pc, telefoni IP wifi e dect)
 * con internet, tramite il router/firewall
 * con utenti mobili, via notebook con Softphone

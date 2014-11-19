@@ -324,7 +324,7 @@ Il G.729 è un codec che permette di minimizzare l'utilizzo della banda nelle co
 
 La licenza G.729 per Asterisk è a pagamento e viene venduta per singolo canale: è possibile acquistare più licenze per ogni server, così da poter instaurare più connessioni contemporanee utilizzando il codec G.729.
 
-|product| ha anche una versione opensource di questo codec già installata che è possibile utilizzare in alternativa della versione a pagamento, consiglaimo di verificarne la compatibilità con un provider esterno.
+|product| ha anche una versione opensource di questo codec già installata che è possibile utilizzare in alternativa della versione a pagamento, consigliamo di verificarne la compatibilità con un provider esterno.
 Per migliore la qualità delle chiamate e minimizzare il consumo della banda, il codec G.729a diventa indispensabile:
 
 *  nei fasci con :ref:`provider VoIP <configurazione_provider_voip_ref_label>`.

@@ -59,7 +59,7 @@ Viene mostrato il loro stato, il codice per controllarli e quanti li controllano
 Utenti Caselle Vocali
 ---------------------
 
-Stato di tutte le :ref:`Caselle Voceli <casella_vocale_ref_label>` configurate sul |product|.
+Stato di tutte le :ref:`Caselle Vocali <casella_vocale_ref_label>` configurate sul |product|.
 
 Code
 ----
@@ -154,7 +154,7 @@ Seleziona il canale destinazione su cui ricercare. Inserire semplicemente il tip
 Destinazione
 ~~~~~~~~~~~~
 
-Ricerca nella destinazione chiamate. E' possibile inserire valori multipli seprata da virgola. Questo campo supporta i :ref:`Pattern di Asterisk <pattern_ref_label>`.
+Ricerca nella destinazione chiamate. E' possibile inserire valori multipli separata da virgola. Questo campo supporta i :ref:`Pattern di Asterisk <pattern_ref_label>`.
 
 Campo Utente
 ~~~~~~~~~~~~

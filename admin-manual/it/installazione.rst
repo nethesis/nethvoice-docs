@@ -18,7 +18,7 @@ Registrato il server, dalla gestione pacchetti, vedi `qui <http://nethservice.do
 
 Una volta avviata l'installazione il server scaricherà i pacchetti occorrenti da vari repository per poi automaticamente installarli ee effettuare le configurazioni necessarie.
 
-Terminata questa fase, |product| sarà pronto per essere utilizato.
+Terminata questa fase, |product| sarà pronto per essere utilizzato.
 
 Il pannello di configurazione di |product| è raggiungibile all'indirizzo
 

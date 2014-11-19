@@ -107,7 +107,7 @@ URL per collegarsi al database per effettuare la query per ricavare il codice cl
 Nome db codice cliente
 ~~~~~~~~~~~~~~~~~~~~~~
 
-Nome del databse dove effettuare la query codice cliente.
+Nome del database dove effettuare la query codice cliente.
 
 Username db codice cliente
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -401,7 +401,7 @@ Tempo di squillo
 
 Tempo di squillo in secondi degli interni indicati nella Lista Seguimi. Il massimo indicabile è 60 secondi.
 
-Per la stategia di squillo hunt equivale al tempo di ogni singolo interno.
+Per la strategia di squillo hunt equivale al tempo di ogni singolo interno.
 
 Lista Seguimi
 ~~~~~~~~~~~~~
@@ -639,7 +639,7 @@ Digitando il codice dei Numeri Brevi, di default 99 ma è modificabile :ref:`qui
 
 E' anche possibile selezionare un ordine dei Fasci da utilizzare per effettuare la chiamata che non sia quello delle :ref:`Rotte in Uscita <rotte_in_uscita_ref_label>` come se fosse una qualsiasi chiamata ma che sia riservato ai soli Numeri Brevi.
 
-Il modulo Numeri Brevi può anche essere utilizzato semplicemente per aggiungere dei contatti alla rubrica del |product|, tutti i Numeri Brevi inseriti sono inclusi di defalut nella rubrica di |product|.
+Il modulo Numeri Brevi può anche essere utilizzato semplicemente per aggiungere dei contatti alla rubrica del |product|, tutti i Numeri Brevi inseriti sono inclusi di default nella rubrica di |product|.
 
 Utilizzando il menù di sinistra si può esportare i contatti presenti nei Numeri brevi in formato csv e importare nel modulo Numeri Brevi dei contatti sempre da file csv.
 
@@ -1001,7 +1001,7 @@ Configurare come la Coda deve trattare gli agenti occupati, se saltarli e in che
 
 -  **No** gli agenti occupati non saranno saltati, se si tratta di interni con l':ref:`Avviso di Chiamata <funzionalita_base_ref_label>` attivo ad esempio suoneranno.
 -  **Si** gli agenti occupati verranno saltati. Questo significa che eventuali interni con l':ref:`Avviso di Chiamata <funzionalita_base_ref_label>` attivo se al telefono su una linea verranno comunque considerati occupati.
--  **Si + (ringinuse=no)** gli agenti occupati verranno saltati in più verra settatto il parametro ringinuse a no per la Coda, che comporta che verranno trattati alla stessa maniera gli egenti esterni, collegati da remoto o attraverso il :ref:`Seguimi <seguimi_ref_label>`, così che la Coda non invierà una chiamata a questi interni se occupati.
+-  **Si + (ringinuse=no)** gli agenti occupati verranno saltati in più verrà settatto il parametro ringinuse a no per la Coda, che comporta che verranno trattati alla stessa maniera gli agenti esterni, collegati da remoto o attraverso il :ref:`Seguimi <seguimi_ref_label>`, così che la Coda non invierà una chiamata a questi interni se occupati.
 -  **Solo chiamate in coda (ringinuse=no)** gli agenti che appartengono a più Code verranno considerati raggiungibili solo da una chiamata proveniente da qualsiasi Coda alla volta.
 
 Peso Coda (Weight)

@@ -45,7 +45,7 @@ Le borchie isdn possono essere programmate dal gestore telefonico, in modi diver
 -  **PPMP Punto MultiPunto**: più apparati ISDN possono essere collegati sul Bus s0
 
 
-.. note:: Sapere com'è stata  programmata la borchia è indifferente ai fini della connessione, alla borchia verrà collegato sempre e solo il centralino, ma è indispensabile per la configurazione del gateway isdn che deve sapere in che modalità lavorare. 
+.. note:: Sapere come'è stata  programmata la borchia è indifferente ai fini della connessione, alla borchia verrà collegato sempre e solo il centralino, ma è indispensabile per la configurazione del gateway isdn che deve sapere in che modalità lavorare. 
 
 Linee Accesso Primario ISDN
 ---------------------------
@@ -68,18 +68,18 @@ Hardware |product|
 
 L'utilizzo di |product| non è vincolante rispetto alla scelta dell'hardware da utilizzare, non è quindi obbligatorio scegliere determinate marche o modelli da affiancare al centralino. E' necessario però conoscere quali hardware scegliere in base alle proprie esigenze e all'apparato telefonico in cui |product| verrà installato.
 
-Qiualora si voglia installare |product| su dell'hardware proprio, per stabilire la compatibilità hardware di |product| fare riferimento a quella di |parent_product|.
+Qualora si voglia installare |product| su dell'hardware proprio, per stabilire la compatibilità hardware di |product| fare riferimento a quella di |parent_product|.
 
 
 L'obiettivo di questo documento è segnalare prodotti testati e consigliati, in base alle esigenze operative e strutturali del cliente.
 
 
-Perchè usare gateway esterni?
+Perché usare gateway esterni?
 -----------------------------
 
 |product| supporta esclusivamente l'utilizzo di gateway esterni (eccezion fatta per i flussi primari).
 
-Ogni gateway esterno che utilizza corretamente il protocollo Sip è teoricamente compatibile.
+Ogni gateway esterno che utilizza correttamente il protocollo Sip è teoricamente compatibile.
 
 I motivi di tale scelta sono molti:
 

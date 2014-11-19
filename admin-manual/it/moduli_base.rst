@@ -206,12 +206,12 @@ Asterisk: cc\_offer\_timer. Entro quanti secondi dopo aver chiamato una estensio
 Timeout Richiama su Occupato
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Asteirsk: ccbs\_available\_timer. Quanto tempo una richiesta di Richiama su Occupato deve rimane attiva, in secondi, prima di scadere se l'estensione chiamata era occupata al primo tentativo.
+Asterisk: ccbs\_available\_timer. Quanto tempo una richiesta di Richiama su Occupato deve rimane attiva, in secondi, prima di scadere se l'estensione chiamata era occupata al primo tentativo.
 
 Timeout Richiama su Non Risposta
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Asteirsk: ccnr\_available\_timer. Quanto tempo una richiesta di Richiamata su Non Risposta deve rimanere attiva, in secondi, prima di scadere se l'estensione chiamata non ha risposto al primo tentativo.
+Asterisk: ccnr\_available\_timer. Quanto tempo una richiesta di Richiamata su Non Risposta deve rimanere attiva, in secondi, prima di scadere se l'estensione chiamata non ha risposto al primo tentativo.
 
 Timeout di Richiamata
 ~~~~~~~~~~~~~~~~~~~~~
@@ -241,7 +241,7 @@ Per mandare un annuncio all'estensione che viene richiamata quando il telefono �
 Alert-Info Richiamata su Occupato
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Una suoneria particolare può essere utilizata per il Richiama su Occupato. Solo se l'interno è in modalità *generic* e la modalità di richiamata è Richiamata Diretta.
+Una suoneria particolare può essere utilizzata per il Richiama su Occupato. Solo se l'interno è in modalità *generic* e la modalità di richiamata è Richiamata Diretta.
 
 Prefisso ID Chiamante
 ~~~~~~~~~~~~~~~~~~~~~
@@ -253,7 +253,7 @@ Alert-Info per il chiamato
 
 Una suoneria differenziata configurata per essere mandata all'estensione da richiamare.
 
-Perfisso ID Chiamante per il chiamato
+Prefisso ID Chiamante per il chiamato
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Un prefisso Id Chiamante opzionale può essere inviato all'estensione che viene richiamato.
@@ -518,7 +518,7 @@ type
 ~~~~
 
 Tipo di configurazione lato **Asterisk** per l'interno. Normalmente
-friend per i telefoni.ù
+friend per i telefoni. 
 
 *  **user** entità su **Asterisk** che può fare chiamate.
 *  **peer** entità su **Asterisk** a cui vengono mandate le chiamate, tipicamente un Provider Voip.
@@ -682,12 +682,12 @@ Asterisk: cc\_offer\_timer. Entro quanti secondi dopo aver chiamato una estensio
 Timeout Richiama su Occupato
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Asteirsk: ccbs\_available\_timer. Quanto tempo una richiesta di Richiama su Occupato deve rimane attiva, in secondi, prima di scadere se l'estensione chiamata era occupata al primo tentativo.
+Asterisk: ccbs\_available\_timer. Quanto tempo una richiesta di Richiama su Occupato deve rimane attiva, in secondi, prima di scadere se l'estensione chiamata era occupata al primo tentativo.
 
 Timeout Richiama su Non Risposta
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Asteirsk: ccnr\_available\_timer. Quanto tempo una richiesta di Richiamata su Non Risposta deve rimanere attiva, in secondi, prima di scadere se l'estensione chiamata non ha risposto al primo tentativo.
+Asterisk: ccnr\_available\_timer. Quanto tempo una richiesta di Richiamata su Non Risposta deve rimanere attiva, in secondi, prima di scadere se l'estensione chiamata non ha risposto al primo tentativo.
 
 Timeout di Richiamata
 ~~~~~~~~~~~~~~~~~~~~~
@@ -717,7 +717,7 @@ Per mandare un annuncio all'estensione che viene richiamata quando il telefono �
 Alert-Info Richiamata su Occupato
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Una suoneria particolare può essere utilizata per il Richiama su Occupato. Solo se l'interno è in modalità *generic* e la modalità di richiamata è Richiamata Diretta.
+Una suoneria particolare può essere utilizzata per il Richiama su Occupato. Solo se l'interno è in modalità *generic* e la modalità di richiamata è Richiamata Diretta.
 
 Prefisso ID Chiamante
 ~~~~~~~~~~~~~~~~~~~~~
@@ -729,7 +729,7 @@ Alert-Info per il chiamato
 
 Una suoneria differenziata configurata per essere mandata all'estensione da richiamare.
 
-Perfisso ID Chiamante per il chiamato
+Prefisso ID Chiamante per il chiamato
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Un prefisso Id Chiamante opzionale può essere inviato all'estensione che viene richiamato.
@@ -1118,12 +1118,12 @@ Asterisk: cc\_offer\_timer. Entro quanti secondi dopo aver chiamato una estensio
 Timeout Richiama su Occupato
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Asteirsk: ccbs\_available\_timer. Quanto tempo una richiesta di Richiama su Occupato deve rimane attiva, in secondi, prima di scadere se l'estensione chiamata era occupata al primo tentativo.
+Asterisk: ccbs\_available\_timer. Quanto tempo una richiesta di Richiama su Occupato deve rimane attiva, in secondi, prima di scadere se l'estensione chiamata era occupata al primo tentativo.
 
 Timeout Richiama su Non Risposta
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Asteirsk: ccnr\_available\_timer. Quanto tempo una richiesta di Richiamata su Non Risposta deve rimanere attiva, in secondi, prima di scadere se l'estensione chiamata non ha risposto al primo tentativo.
+Asterisk: ccnr\_available\_timer. Quanto tempo una richiesta di Richiamata su Non Risposta deve rimanere attiva, in secondi, prima di scadere se l'estensione chiamata non ha risposto al primo tentativo.
 
 Timeout di Richiamata
 ~~~~~~~~~~~~~~~~~~~~~
@@ -1153,7 +1153,7 @@ Per mandare un annuncio all'estensione che viene richiamata quando il telefono �
 Alert-Info Richiamata su Occupato
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Una suoneria particolare può essere utilizata per il Richiama su Occupato. Solo se l'interno è in modalità *generic* e la modalità di richiamata è Richiamata Diretta.
+Una suoneria particolare può essere utilizzata per il Richiama su Occupato. Solo se l'interno è in modalità *generic* e la modalità di richiamata è Richiamata Diretta.
 
 Prefisso ID Chiamante
 ~~~~~~~~~~~~~~~~~~~~~
@@ -1165,7 +1165,7 @@ Alert-Info per il chiamato
 
 Una suoneria differenziata configurata per essere mandata all'estensione da richiamare.
 
-Perfisso ID Chiamante per il chiamato
+Prefisso ID Chiamante per il chiamato
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Un prefisso Id Chiamante opzionale può essere inviato all'estensione che viene richiamato.
@@ -1240,7 +1240,7 @@ Indirizzo Email
 Indirizzo mail a cui inviare le dettature complete.
 
 
-.. warning:: L'indirizzo mittente della mail sarà @dominio del |product|, nel caso la posta non sia gestita direttamente dal |product| un dominio fittizio potrebbe portare problemi sull'invio della mail, vedi la docuemntazione di |product_service|.
+.. warning:: L'indirizzo mittente della mail sarà @dominio del |product|, nel caso la posta non sia gestita direttamente dal |product| un dominio fittizio potrebbe portare problemi sull'invio della mail, vedi la documentazione di |product_service|.
    }}
 
 VmX Locater
@@ -1316,7 +1316,7 @@ Musica di Attesa
 
 Le musica di attesa permettono di configurare che file audio il |product| debba riprodurre in una chiamata messa in attesa o in tutte quelle situazioni dove un modulo di |product|, come ad esempio le :ref:`rotte in entrata <rotte_in_entrata_ref_label>`, :ref:`rotte in uscita <rotte_in_uscita_ref_label>`, le :ref:`code <code_ref_label>` o i :ref:`gruppi di chiamata <gruppi_di_chiamata_ref_label>`, sostituisce il classico suono di squillo.
 
-Per utilizare solo un determinato gruppo di files musicali in ogni occorrenza, le musiche di attesa si dividono in **categorie**.
+Per utilizzare solo un determinato gruppo di files musicali in ogni occorrenza, le musiche di attesa si dividono in **categorie**.
 
 Sulla destra nel box verde vengono elencate le categorie di musica di attesa presenti.
 

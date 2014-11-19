@@ -326,7 +326,7 @@ E' possibile definire se questa Rotta viene utilizzata per chiamate di emergenza
 Musica di Attesa
 ~~~~~~~~~~~~~~~~
 
-La :ref:`Musica di Attesa <musiche_di_attesa_ref_label>` che verrà utilizzata per chiamate che escono da questa Rotta è configurabile, scegliendo la categora desiderata.
+La :ref:`Musica di Attesa <musiche_di_attesa_ref_label>` che verrà utilizzata per chiamate che escono da questa Rotta è configurabile, scegliendo la categoria desiderata.
 
 Gruppo temporale
 ~~~~~~~~~~~~~~~~

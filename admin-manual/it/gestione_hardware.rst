@@ -7,7 +7,7 @@ Gestione Hardware
 Configurazione Patton
 =====================
 
-Come descritto ampliamente nel documento :doc:`Hardware <hardware>`, viene suggerito e supportato l'utilizzo di gateway esterni da integrare con il |product|. In questo documento verranno descritte la procedura di configurazione dei Patton e la configurazione in |product|.
+Come descritto ampiamente nel documento :doc:`Hardware <hardware>`, viene suggerito e supportato l'utilizzo di gateway esterni da integrare con il |product|. In questo documento verranno descritte la procedura di configurazione dei Patton e la configurazione in |product|.
 
 .. note::   I Patton dalla versione 6 del proprio firmware supportano la configurazione tramite provisioning vedi anche :ref:`qui <wizard_provisioning_ref_label>`
 
@@ -35,7 +35,7 @@ Per creare il file di configurazione, procedere così:
 -  Per le porte **fxs** scegliere l'interno SIP collegato alla porta specificata. L'interno SIP deve essere precedentemente creato nell'apposita sezione.
 
 
--  Per le porte **fxo** scegliere il numero di telefono associato al numero di fascio autogenerato. L'interfaccia segnala a quale fascio sip verrà abbinata ogni porta, i fasci vengono automaticamente creati e sono disponibili nella sezione :ref:`fasci SIP <fasci_sip_ref_label>`.
+-  Per le porte **fxo** scegliere il numero di telefono associato al numero di fascio auto generato. L'interfaccia segnala a quale fascio sip verrà abbinata ogni porta, i fasci vengono automaticamente creati e sono disponibili nella sezione :ref:`fasci SIP <fasci_sip_ref_label>`.
 
 -  Per le porte **isdn** scegliere la tipologia delle porte, o punto-punto o punto-multipunto. L'interfaccia segnala a quale fascio sip verrà abbinata ogni porta, i fasci vengono automaticamente creati e sono disponibili nella sezione :ref:`fasci SIP <fasci_sip_ref_label>`.
 
@@ -212,7 +212,7 @@ Impostare una regola che ci permetta di chiamare tutti i numeri.
   URL:* 
   Call Num:#
 
-In questo caso il carattere “#” permette di innoltrare automaticamente la chiamata al numero composto.
+In questo caso il carattere “#” permette di inoltrare automaticamente la chiamata al numero composto.
 
 .. image:: ../_static/portech_03.jpg
             :alt: Lan To Mobile

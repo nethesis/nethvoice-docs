@@ -259,7 +259,7 @@ Inserire gli gli interni da categorizzare come Segretarie, uno per riga.
 Amministratori
 ~~~~~~~~~~~~~~
 
-Inserire gli gli interni da categorizzare come Aministratori, uno per riga.
+Inserire gli gli interni da categorizzare come Amministratori, uno per riga.
 
 Pulisci e Rimuovi Duplicati
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -413,7 +413,7 @@ Il modulo Priorità Coda permette di impostare al chiamante una priorità nella 
 
 Normalmente un chiamante ha priorità 0. Impostando una priorità alta il chiamante verrà risposto prima degli altri presenti già in :ref:`Coda <code_ref_label>`.
 
-La priorità è applicata a tutte le `Code <Code_|product|>`__ dove il chiamante eventualmente è diretto. Di solito come destinazione viene imposta una :ref:`Coda <code_ref_label>`, ma questo non è obbigatorio.
+La priorità è applicata a tutte le `Code <Code_|product|>`__ dove il chiamante eventualmente è diretto. Di solito come destinazione viene imposta una :ref:`Coda <code_ref_label>`, ma questo non è obbligatorio.
 
 Per esempio si potrebbe impostare come destinazione un unico :ref:`IVR <ivr_ref_label>` ma proveniente da due diverse :ref:`Rotte in Entrata <rotte_in_entrata_ref_label>`, e di conseguenza le chiamate che andranno dall':ref:`IVR <ivr_ref_label>` nelle successive :ref:`Code <code_ref_label>` seguiranno la priorità qui impostata.
 

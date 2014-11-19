@@ -355,7 +355,7 @@ Il modulo Call Debugger aiuta a raccogliere dai log di |product| tutte le inform
 
 Selezionando una chiamata, quindi, verrà raggruppato tutto il log che la riguarda e proposto per valutare eventuali problemi o comportamenti strani.
 
-Il modulo non nasce per effettuare una consultazione di dati a ritroso nel tempo ma per avere il log di una chiamata molto recente, praticamente appena effettuarta, fatta per riprodurre un comportamento sbagliato o un errore.
+Il modulo non nasce per effettuare una consultazione di dati a ritroso nel tempo ma per avere il log di una chiamata molto recente, praticamente appena effettuata, fatta per riprodurre un comportamento sbagliato o un errore.
 
 Configurazione
 --------------
@@ -848,7 +848,7 @@ Codici del modulo :doc:`|product_hotel| <hotel>`.
 Assegna un extra ad una camera.
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Codice per assengare un extra ad una camera. La sintassi è codice (il default è \*33), numero camera, cancelletto (#), id extra su due cifre, cancelletto (#). quantità su due cifre.
+Codice per assegnare un extra ad una camera. La sintassi è codice (il default è \*33), numero camera, cancelletto (#), id extra su due cifre, cancelletto (#). quantità su due cifre.
 
 Configura la sveglia da una camera.
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -1172,7 +1172,7 @@ Amministrazione Caselle Vocali
 Descrizione
 -----------
 
-Il modulo Amministrazione Caselle Vocali consente di gestire tutte le :ref:`Caselle Vocali <casella_vocale_ref_label>` configurarate su |product|.
+Il modulo Amministrazione Caselle Vocali consente di gestire tutte le :ref:`Caselle Vocali <casella_vocale_ref_label>` configurate su |product|.
 
 Il modulo si divide in varie parti, sia generali che per le singole caselle.
 

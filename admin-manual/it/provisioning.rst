@@ -34,7 +34,7 @@ Il Provisioning si basa su queste associazioni per effettuare l'auto-discovery t
 Editor Opzioni/Configurazione Prodotto
 --------------------------------------
 
-Questa parte del modulo consente di modificare i template precaricati per effettuare dei cambiamenti che poi verranno applicati a tutti i telefoni del modello prescelto.
+Questa parte del modulo consente di modificare i template pre caricati per effettuare dei cambiamenti che poi verranno applicati a tutti i telefoni del modello prescelto.
 
 I template posso essere formati da più files, che si trovano una volta selezionato il modello, nell'elenco a sinistra, sotto *File Configurazioni Locale*.
 
@@ -100,7 +100,7 @@ Facendo una selezione multipla è possibile modificare più telefoni contemporan
 Le funzionalità previste sono la cancellazione, la rigenerazione delle configurazioni o l'aggiornamento di marca e modello per i telefoni
 selezionati.
 
-E' anche possibile agire su tutti i telefono in elenco senza la necessità di selezionarli tutti, utilizzando i tasti funzione più sotto(Opzioni Globali Telefoni), potendo rigenerare tutte le configurazioni, riavviare una marca specifica, o cambaire il template di configurazione o per marca o per modello.
+E' anche possibile agire su tutti i telefono in elenco senza la necessità di selezionarli tutti, utilizzando i tasti funzione più sotto(Opzioni Globali Telefoni), potendo rigenerare tutte le configurazioni, riavviare una marca specifica, o cambiare il template di configurazione o per marca o per modello.
 
 Cliccando sul simbolo nella colonna Modifica, la configurazione viene caricata nella parte alta del modulo dove è possibile modificare nello specifico tutta il template creato dal provisioning (cliccando su sul simbolo di modifica), modificare il modello del telefono, le linee e l'interno associato.
 
