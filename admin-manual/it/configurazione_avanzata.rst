@@ -341,7 +341,8 @@ Per installare il modulo dare il comando
 
 ::
 
-  yum install neth-g729
+ yum localinstall http://packages.digium.com/centos/6/current/i386/RPMS/register-3.0.3-1_centos6.i686.rpm
+ yum install nethserver-g729-helper
 
 A questo punto registrare la licenza con il comando
 
