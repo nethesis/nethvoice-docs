@@ -16,7 +16,7 @@ Quando l'installazione di |parent_product| è stata completata con successo, per
 
 Registrato il server, dalla gestione pacchetti, vedi `qui <http://nethservice.docs.nethesis.it/it/latest/packages.html>`_, è possibile installare |product| e tutti i moduli correlati opzionali, come ad esempio il |product_cti|.
 
-Una volta avviata l'installazione il server scaricherà i pacchetti occorrenti da vari repository per poi automaticamente installarli ee effettuare le configurazioni necessarie.
+Una volta avviata l'installazione il server scaricherà i pacchetti occorrenti da vari repository per poi automaticamente installarli ed effettuare le configurazioni necessarie.
 
 Terminata questa fase, |product| sarà pronto per essere utilizzato.
 

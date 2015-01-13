@@ -53,16 +53,11 @@ Funzioni Evolute
 ================
 
 * Possibilità di integrazione con fax server (inoltro automatico via email - vedi paragrafo successivo)
-* Funzioni di AudioVideoConferenza ` con 'Aule Virtuali'
+* Funzioni di AudioVideoConferenza con 'Aule Virtuali'
 * Interfacciamento con software aziendali (es. CRM, ERP, Outlook, ecc..)
 * Possibilità di sviluppo di nuove funzionalità con minimo sforzo grazie alla piattaforma aperta su cui si basa il sistema Funzionalità complete VoIP (voice over IP), interfacciabile con stardard VOIP
 * Servizi di autenticazione (accesso a servizi tramite password e codici di sicurezza)
 * Supporto di telemanutenzione per ridurre al minimo la necessità di interventi presso sede cliente
 * Possibilità di integrare GSM BOX
 * |product_cti|
-* Possibilità di integrazione server aziendali: firewall, proxy, ecc?
-* Il centralino con il voip è un centralino tradizionale, con aggiunte due linee: la LAN (telefoni voip, softphone) e Internet (provider voip)
-* Server Fax 
-
-
-    
+* Server Fax
