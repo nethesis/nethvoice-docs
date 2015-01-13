@@ -14,7 +14,7 @@ che comporta il riavvio di tutti i servizi, con caduta delle eventuali chiamate 
 
 Per forzare gli aggiornamenti utilizzare il comando 
 
- |product_command| update
+ yum update
 
 
 Aggiornamento da versioni precedenti
