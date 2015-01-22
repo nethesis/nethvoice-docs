@@ -1,7 +1,7 @@
 .. NethVoice documentation master file
 
 Manuale amministratore |product| 
-========================
+================================
 
 .. image:: ../_static/logo.png
          :alt: |product|

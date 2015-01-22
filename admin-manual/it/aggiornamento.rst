@@ -17,13 +17,13 @@ Per forzare gli aggiornamenti utilizzare il comando
  yum update
 
 
-Aggiornamento da versioni precedenti
-====================================
+Aggiornamento |product| installato su base differente
+=====================================================
 
-La procedura è in fase di testing, sarà pubblicata a breve. 
+L'aggiornamento di una versione di |product| installata su base differente da |parent_product| è possibile tramite la procedura di migrazione.
+La migrazione è il processo che consente di convertire un’installazione SME Server/|product_service_old| (:dfn:`origine`) in un nuovo server |parent_product| (:dfn:`destinazione`).
 
-Contattare il supporto per urgenze.
+.. warning:: L'unico prerequisito è che la versione di |product| nel server di origine sia la 11.4 
 
-
-
+Tutta la procedura da seguire è documentata qui `Migrazione <http://nethservice.docs.nethesis.it/it/latest/migration.html>`_.
 
