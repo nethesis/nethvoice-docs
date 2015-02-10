@@ -432,7 +432,10 @@ Opzioni Code
 *  **random**: chiama un agente a caso.
 *  **rrmemory**: fa girare automaticamente le chiamate, ma, memorizzando dove l' ultima volta è passata senza risposta.
 *  **rrordered**: come rrmemory, ma viene preservato l'ordine dei membri all'interno del file di configurazione.
-*  **linear**: Suoneranno gli agenti nell' ordine stabilito. Per gli agenti dinamici, si usa l'ordine con il quale si sono registrati.
+*  **linear**: Suoneranno gli agenti nell' ordine stabilito. Per gli agenti dinamici, si usa l'ordine con il quale si sono registrati. Per avere rispettato l'ordine corretto degli agenti statici inseriti è necessario un riavvio di Asterisk, con il comando
+
+ |product_command| restart
+
 *  **wrandom**: causale, usando la penalità come fattore di ponderazione.
 
 .. _pattern_ref_label:
