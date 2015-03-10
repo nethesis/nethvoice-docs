@@ -381,6 +381,9 @@ Tramite questo modulo viene creato un contesto personalizzato equiparabile al co
 
 Una volta creato il contesto personalizzato è possibile associarci gli `interni <Interni_|product|>`__ tramite l'apposita opzione, vedi :ref:`qui <interni_sip_ref_label>`.
 
+
+.. note:: Per effettuare delle restrizioni di accesso è necessario configurare a VIETATO la voce "TUTTO il Dialplan" per poi andare a vietare e/o permettere le varie voci successive. "TUTTO il Dialplan" funge da interruttore generale per l'accesso ad ogni funzionalità, nel caso sia configuato a PERMETTI eventuali divieti nelle voci successive verranno ingnorati. Stesso concetto si applica alle Rotte in Uscita, dove per effettuare delle restrizioni è necessario configurare a VIETATO sia la voce "TUTTO il Dialplan" che la voce "TUTTE LE ROTTE IN USCITA" per poi configuare nello specifico le varie Rotte in Uscita.
+
 Configurazione
 --------------
 
@@ -414,7 +417,7 @@ Contesto Interno Standard
 
 *  **Dialplan Interno Personalizzato**: accesso al contesto *from-internal-custom*.
 *  **Parcheggio Chiamate**: accesso al contesto di parcheggio, vedi :ref:`qui <parcheggi_ref_label>`.
-*  **TUTTO il Dialplan Interno**: accesso a tutto il dialplan di |product|, in pratica tutto quello elencato sotto, interni, funzionalità e :ref:`Rotte in Uscita <rotte_in_uscita_ref_label>`.
+*  **TUTTO il Dialplan**: accesso a tutto il dialplan di |product|, in pratica tutto quello elencato sotto, interni, funzionalità e :ref:`Rotte in Uscita <rotte_in_uscita_ref_label>`.
 
 Dialplan Interno
 ~~~~~~~~~~~~~~~~
