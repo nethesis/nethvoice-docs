@@ -20,7 +20,7 @@ Una volta avviata l'installazione il server scaricherà i pacchetti occorrenti d
 
 Terminata questa fase, |product| sarà pronto per essere utilizzato.
 
-Il pannello di configurazione di |product| è raggiungibile all'indirizzo
+Il pannello di configurazione di |product| è raggiungibile *dalle reti locali e dalle reti fidate* all'indirizzo
 
 https://nomeserver/|product_command|
 
@@ -30,3 +30,4 @@ L'accesso è consentito anche sostituendo a *nomeserver* l'ip del |product|.
 
 L'accesso è garantito di default all'utente admin che viene configurato durante l'installazione.
 
+Per accedere da una rete diversa da quelle locali o fidate, aggiungere la rete dalla voce "Accesso centralino" del menù di |parent_product|.
