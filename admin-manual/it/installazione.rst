@@ -30,4 +30,24 @@ L'accesso è consentito anche sostituendo a *nomeserver* l'ip del |product|.
 
 L'accesso è garantito di default all'utente admin che viene configurato durante l'installazione.
 
-Per accedere da una rete diversa da quelle locali o fidate, aggiungere la rete dalla voce "Accesso centralino" del menù di |parent_product|.
+
+.. _accesso_esterno_ref_label:
+
+Accesso Esterno
+===============
+
+Interfaccia Web
+---------------
+Per accedere da una rete diversa da quelle locali o fidate all'interfaccia web di amministrazione di |product|, aggiungere la rete di provenienza nel menù *Accesso centralino-> Accesso interfaccia web* di |parent_product|.
+
+
+Servizi
+=======
+
+|product| consente di aprire a reti esterne il protocollo IAX, il protocollo WebRTC e la WebSocket per l'accesso al |product_cti|.
+
+.. warning:: L'apertura verso l'esterno del protocollo SIP è decisamente sconsigliata e per questo non prevista da interfaccia.
+
+Per aprire IAX, WebRTC e la WebSocket accedere all'interfaccia di amministrazione di |parent_product| nel menù *Accesso centralino-> Accesso esterno*.
+
+

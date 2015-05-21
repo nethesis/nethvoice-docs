@@ -390,11 +390,24 @@ Il Servizio Notte e' uno strumento molto utile, perché permette di cambiare il 
 
 Un possibile esempio di utilizzo può essere la necessità di chiudere in anticipo l'ufficio rispetto all'orario di chiusura, componendo i codici del Servizio Notte verrà attivata ad esempio la segreteria telefonica o l'IVR notturno o l'inoltro di chiamata, dato che il Servizio Notte avrà priorità sul resto delle condizioni impostate sulla :ref:`Rotta in Entrata <rotte_in_entrata_ref_label>`.
 
+Il Servizio Notte è configurabile anche da |product_cti|, dove è possibile bypassare la configurazione del |product| per personalizzarne temporaneamente il funzionamento.
+
+
 .. image:: ../_static/servizionotte_01.png
                :alt: Esempio di percorso delle chiamate in entrata con Servizio Notte configurato
 
 Configurazione
 --------------
+
+La configurazione mostra quale delle due impostazioni, quella lato |product| o quella lato |product_cti|, è al momento quella in vigore.
+E' possibile cambiare questa configurazione semplicemente selezionando la modalità desiderata e facendo salva.
+Lato centralino non è ovviamente modificabile la configurazione del Servizio Notte fatta dal |product_cti|, è possibile solo escluderla e riattivare quella lato |product|.
+Se è attiva la configurazione fatta lato |product_cti| viene mostrato:
+
+* il tipo di configurazione scelta in Azione, con i dettagli della configurazione successivamente
+* quale utente ha effettuato la configurazione e quando
+
+Per la configurazione lato |product| invece:
 
 Nome Servizio Notte
 ~~~~~~~~~~~~~~~~~~~

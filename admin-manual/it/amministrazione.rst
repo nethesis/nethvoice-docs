@@ -1167,6 +1167,42 @@ Numero Incompleto
 
 Messaggio o tono da riprodurre se il Fascio riporta Numero Errato o Incompleto. Il messaggio di default è: "Il numero chiamato non è attivo, verificare il numero è riprovare."
 
+
+.. _configurazione_stun_ref_label:
+
+Configurazione Stun
+===================
+
+Descrizione
+-----------
+
+Il modulo Configurazione Stun consente di configurare il servizio Stun in |product|.
+
+Uno STUN (Session Traversal of User Datagram Protocol [UDP] Through Network Address Translators [NATs]) server permette ai client dietro a NAT di individuare il proprio ip pubblico e il tipo di NAT dietro al quale si trovano e il lato della porta internet associato dal NAT con una particolare porta locale. 
+
+Questi dati vengono usati per impostare la comunicazione UDP tra il client e il server. 
+
+Configurazione
+--------------
+
+Server Stun
+~~~~~~~~~~~
+
+Abilitazione Server Stun.
+
+
+Indirizzo Server Stun
+~~~~~~~~~~~~~~~~~~~~~
+
+Indirizzo Server Stun.
+
+
+Porta Server Stun
+~~~~~~~~~~~~~~~~~
+
+Porta Server Stun.
+
+
 .. _amministrazione_caselle_vocali_ref_label:
 
 Amministrazione Caselle Vocali
@@ -1193,7 +1229,7 @@ Configurazione
 Impostazioni
 ~~~~~~~~~~~~
 
-Nelle immagini i valori di default.
+Opzioni configurabili:
 
 *  **adsifdn**: numero descrittore della applicazione ADSI per scaricare a.
 *  **adsisec**: codice di sicurezza applicazione ADSI.
