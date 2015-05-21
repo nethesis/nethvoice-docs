@@ -42,7 +42,7 @@ Per accedere da una rete diversa da quelle locali o fidate all'interfaccia web d
 
 
 Servizi
-=======
+-------
 
 |product| consente di aprire a reti esterne il protocollo IAX, il protocollo WebRTC e la WebSocket per l'accesso al |product_cti|.
 
