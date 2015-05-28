@@ -160,12 +160,18 @@ Nel caso in cui il |product| sia il **gateway** della rete, è possibile utilizz
 
 In automatico la connessione vpn verrà considerata locale dal |product| e quindi tutti i servizi saranno raggiungibili anche dall'interno remoto. Sarà così possibile registrare l'interno remoto sul centralino ed utilizzarlo come se fosse in rete locale.
 
+.. note:: E' necessario aggiungere la rete della vpn alle reti locali del protocollo SIP nel modulo :ref:`Impostazioni SIP <impostazioni_sip_ref_label>`
+
+
 |product| configurato come server only
 --------------------------------------
 
 Se il |product| è configurato in modalità **server-only** la vpn dovrà essere configurata sul gateway della rete, firewall o router che sia.
 
 Fatto questo se lo host remoto contatterà il |product| con un ip della rete locale (tipico di una vpn pptp) non c'è altro da fare, invece se l'ip sarà diverso, come ad esempio succede con openvpn, bisognerà aggiungere la rete della vpn tra le reti fidate del |product_service| accedendo all'indirizzo https://nomeserver:980 con lo username e password dell'utente admin.
+
+.. note:: E' necessario aggiungere la rete remota del client in vpn alle reti locali del protocollo SIP nel modulo :ref:`Impostazioni SIP <impostazioni_sip_ref_label>`
+
 
 E' teoricamente possibile in alternativa pubblicare i servizi del |product| su internet, facendo quindi accedere un interno remoto senza vpn.
 
