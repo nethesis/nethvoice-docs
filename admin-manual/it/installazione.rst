@@ -34,14 +34,14 @@ L'accesso è garantito di default all'utente admin che viene configurato durante
 .. _accesso_esterno_ref_label:
 
 Accesso Esterno
--===============
--
--Interfaccia Web
-----------------
+===============
+
+Interfaccia Web
+---------------
 Per accedere da una rete diversa da quelle locali o fidate all'interfaccia web di amministrazione di |product|, aggiungere la rete di provenienza nel menù *Accesso centralino-> Accesso interfaccia web* di |parent_product|.
 
 
--Servizi
+Servizi
 --------
 
 |product| consente di aprire a reti esterne il protocollo IAX, il protocollo WebRTC e la WebSocket per l'accesso al |product_cti|.
