@@ -433,6 +433,13 @@ Gestione Chiamata in Uscita
 
 |product| gestisce le chiamate in uscita tramite le :ref:`Rotta in Uscita <rotte_in_uscita_ref_label>`. Tutte le politiche di controllo della chiamata in uscita possono essere configurate nelle rotte, dalla sequenza di utilizzo delle linee telefoniche alla differenziazione per modello di chiamata, per interno, ai diversi comportamenti a seconda dell'ora, del giorno del mese etc. E' possibile inoltre decidere le politiche per le chiamate in uscita anche tramite il modulo :ref:`Contesti Personalizzati <contesti_personalizzati_ref_label>` interno per interno, configurando preventivamente a che rotta in uscita ogni interno può accedere. La politica per le chiamate in uscita va configurata di solito come ultimo passo, dopo aver affrontato le :ref:`chiamate in entrata <gestione_chiamata_in_entrata_ref_label>` e collegato le :doc:`sorgenti telefoniche <gestione_hardware>`.
 
+Rimuovi prefisso nazionale in uscita
+-------------------------------------
+Nei fasci non VoIP, per consentire al centralino di chiamare numeri nazionali che sonno stati memorizzati in rubrica con il prefisso nazionale (+39, 0039) è necessario rimuovere questo prefisso prima di inviare la chiamata al fascio. 
+Per fare ciò, nella pagina del fascio selezionare 
+ Wizard Regole di Chiamata -> Rimuovi prefisso dai numeri locali
+inserire poi il prefisso (0039) e un pattern di chiamata che identifica i numeri a cui dovrà essere applicata la regola, per esempio "NXXXXX."
+
 Utilizzo prefisso in uscita
 ---------------------------
 
