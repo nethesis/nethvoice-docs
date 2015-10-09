@@ -20,6 +20,15 @@ L'accesso è garantito di default all'utente admin che viene configurato durante
 E' possibile poi accedere anche con altri utenti a patto che questi siano membri del gruppo **voicemanager** e che siano stati abilitati tramite il modulo :ref:`Amministratori <amministratori_ref_label>`.
 
 
+.. _applica_ref_label:
+
+Applica Cambiamenti
+===================
+
+Tutte le configurazioni di |product| vengono salvate in un database MySQL, ogni volta che viene fatto un cambiamento alla configurazione di |product| compare il tasto "Applica Cambiamenti".
+
+Premendo questo pulsante le configurazioni salvate sul database vengono applicate ai files di configurazione di |product| attivandole, una configurazione effettuata senza avere premuto il pulsante "Applica Cambiamenti" rimarrà non attiva, quindi ad esempio se creo un interno senza Applica Cambiamenti non riuscirò a registrare un qualsiasi telefono. 
+
 .. _rete_ref_label:
 
 Rete
@@ -30,7 +39,7 @@ Configurazione di Rete
 
 Il |product|, essendo un centralino Voip, svolge le tutte le sue funzionalità via rete.
 
-Tramite la rete comunica con gli apparecchi telefonici, con i gateway delle risorse telefoniche (Patton, Portech, Provider Voip...), tramite la rete si aggiorna e comunica al Centro Servizi il suo stato di funzionamento.
+Tramite la rete comunica con gli apparecchi telefonici, con i gateway delle risorse telefoniche (Sangoma, Patton, Portech, Provider Voip...), tramite la rete si aggiorna e comunica al Centro Servizi il suo stato di funzionamento.
 
 |product| non ha necessità di avere una rete dedicata alle comunicazioni Voip in praticamente nessun caso, può essere consigliata solo in caso di traffico elevatissimo e di switch non in grado di gestirlo insieme a tutto il resto.
 
@@ -376,7 +385,7 @@ Fasci
 Descrizione
 -----------
 
-Il modulo Fasci(trunks in inglese) di |product| permette il collegamento del centralino con le sorgenti telefoniche, sia che si tratti di schede interne, provider voip, Patton o centralini remoti.
+Il modulo Fasci(trunks in inglese) di |product| permette il collegamento del centralino con le sorgenti telefoniche, sia che si tratti di schede interne, provider voip, gateway o centralini remoti.
 
 Il Fascio infatti è una connessione di comunicazione e viene fatto dal |product| verso un sorgente telefonica.
 
@@ -395,7 +404,13 @@ Gestione Chiamata in Entrata
 ============================
 
 
-|product| elabora la chiamata in entrata sul centralino in maniera molto granulare. La chiamata processata da gateway esterni, schede interne o collegamenti voip sip o iax, arriva al centralino e inizia ad essere gestita nelle :ref:`Rotte in Entrata <rotte_in_entrata_ref_label>`. Da qui poi viene distribuita e trattata secondo le politiche scelte dall'amministratore del |product|. Per configurare quindi la chiamata in entrata si deve partire dal punto di arrivo della chiamata andando a ritroso fino alla :ref:`Rotte in Entrata <rotte_in_entrata_ref_label>`. Ecco quindi un piccolo schema di come farlo su |product|:
+|product| elabora la chiamata in entrata sul centralino in maniera molto granulare. La chiamata processata da gateway esterni, schede interne o collegamenti voip sip o iax, arriva al centralino e inizia ad essere gestita nelle :ref:`Rotte in Entrata <rotte_in_entrata_ref_label>`. Da qui poi viene distribuita e trattata secondo le politiche scelte dall'amministratore del |product|. 
+
+Configurare la chiamata in entrata è possibile farlo in due modalità: 
+
+* utilizzando il modulo :ref:`Visual Plan <visual_plan_ref_label>` che permette una visione unica del percorso della chiamata e un configurazione lineare dalla :ref:`Rotte in Entrata <rotte_in_entrata_ref_label>` alla destinazione finale delle chiamata.
+* configurando i moduli che intessano uno ad uno, in questo caso si deve partire dal punto di arrivo della chiamata andando a ritroso fino alla :ref:`Rotte in Entrata <rotte_in_entrata_ref_label>`. Ecco quindi un piccolo schema di come farlo su |product|:
+
 
 Creazione Interni
 -----------------
@@ -473,7 +488,7 @@ Snom
   LDAP number filter: (|(telephoneNumber=%)(mobile=%))
   Indirizzo del server: ip o nome centralino
   Porta: 389
-  Base: ou=Phonebook,dc=DOMINIO,dc=SUFFISSO
+  Base: ou=phonebook,dc=directory,dc=nh
   LDAP name attributes: cn sn givenName o
   LDAP number attributes: telephoneNumber
   LDAP display name: %cn %o

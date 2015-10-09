@@ -7,7 +7,7 @@ Applicazioni
 Call Query Routing
 ==================
 
-.. warning:: Il collegamento con un batabase di tipo MSSQL al momento non è supportato. Verrà implementato a breve.
+.. warning:: Il collegamento con un database di tipo MSSQL al momento non è supportato. Verrà implementato a breve.
 
  
 Descrizione
@@ -992,7 +992,7 @@ Strategia di squillo
 
 Vedi :ref:`qui <strategie_squillo_ref_label>`.
 
-Autocompletamento (Autofill)
+Auto-completamento (Autofill)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Attivando questa opzione se si ha più di un agente libero, ogni singola chiamata viene inviata ai singoli agenti liberi secondo la strategia di squillo selezionata. Se disattivata tutte le chiamate vengono messe in attesa finché la prima chiamata in Coda non viene risposta.
@@ -1004,7 +1004,7 @@ Configurare come la Coda deve trattare gli agenti occupati, se saltarli e in che
 
 -  **No** gli agenti occupati non saranno saltati, se si tratta di interni con l':ref:`Avviso di Chiamata <funzionalita_base_ref_label>` attivo ad esempio suoneranno.
 -  **Si** gli agenti occupati verranno saltati. Questo significa che eventuali interni con l':ref:`Avviso di Chiamata <funzionalita_base_ref_label>` attivo se al telefono su una linea verranno comunque considerati occupati.
--  **Si + (ringinuse=no)** gli agenti occupati verranno saltati in più verrà settatto il parametro ringinuse a no per la Coda, che comporta che verranno trattati alla stessa maniera gli agenti esterni, collegati da remoto o attraverso il :ref:`Seguimi <seguimi_ref_label>`, così che la Coda non invierà una chiamata a questi interni se occupati.
+-  **Si + (ringinuse=no)** gli agenti occupati verranno saltati in più verrà settato il parametro ringinuse a no per la Coda, che comporta che verranno trattati alla stessa maniera gli agenti esterni, collegati da remoto o attraverso il :ref:`Seguimi <seguimi_ref_label>`, così che la Coda non invierà una chiamata a questi interni se occupati.
 -  **Solo chiamate in coda (ringinuse=no)** gli agenti che appartengono a più Code verranno considerati raggiungibili solo da una chiamata proveniente da qualsiasi Coda alla volta.
 
 Peso Coda (Weight)

@@ -63,6 +63,7 @@ I telefoni Yealink vengono supportati dalla versione di firmware **v70** in poi,
 *  Rubrica LDAP collegata con |product| vedi :ref:`qui <rubrica_ref_label>`.
 *  Rubrica remota collegata con |product| vedi :ref:`qui <rubrica_ref_label>`.
 *  Tasti Funzionali programmati con nell'ordine **Registro Chiamate**, **Rubrica LDAP**, **Pickup**, **Menù**.
+*  Funzioni DND (Do not Disturb), CF (Call Forward), CFB (Call Forward Busy), CFU (Call Forward Unavailable) mappate sui codici di |product|
 *  Possibilità di aggiornare il firmware dei telefoni caricandolo nella cartella /var/lib/tftpboot/ con nome MODELLO.rom ad esempio T22.rom T46.rom etc.
 
 Snom
@@ -76,6 +77,7 @@ I telefoni Snom vengono supportati dalla versione di firmware **v8**, la configu
 *  Codice di :ref:`Pickup <funzionalita_base_ref_label>`.
 *  Rubrica LDAP collegata con |product| vedi :ref:`qui <rubrica_ref_label>`.
 *  Tasti Funzionali programmati con nell'ordine **Gestione Identità**, **Registro Chiamate**, **Rubrica LDAP**, **Preferiti**.
+*  Funzioni DND (Do not Disturb), CF (Call Forward), CFB (Call Forward Busy), CFU (Call Forward Unavailable) mappate sui codici di |product|
 *  Possibilità di aggiornare il firmware dei telefoni caricandolo nella cartella /var/lib/tftpboot/ con nome MODELLO.bin ad esempio 300.bin 821.bin etc.
 *  Per la serie 3XX, che da firmware superiori alla versione 6 per problemi di spazio non include il pacchetto linguaggi, se vengono caricati nella cartella /var/lib/tftpboot/ i files gui\_lang\_IT.xml (Italiano) e gui\_lang\_EN.xml (Inglese), verranno caricati automaticamente
 
@@ -304,7 +306,7 @@ Se i due |product| hanno la numerazione di interni sovrapposta, stessi interni i
 
 Il prefisso fa instradare la chiamata non per l'interno locale ma per l'interno remoto.
 
-Ovviamente l'unico fascio da utilizzare sarà quello IAX precedentemente creato per il collegamento infrasede.
+Ovviamente l'unico fascio da utilizzare sarà quello IAX precedentemente creato per il collegamento infra sede.
 
 Ricordarsi di spuntare **Rotta Intra-Aziendale** se si vuole inviare al centralino remoto anche il nome del chiamante oltre che il numero. in modo che il chiamato sul display del telefono lo visualizzi.
 

@@ -85,7 +85,7 @@ I motivi di tale scelta sono molti:
 
 -  sono più affidabili
 -  gestiscono meglio i protocolli di comunicazione
--  :ref:`maggiormente configurabili <configurazione_patton_ref_label>`
+-  :ref:`maggiormente configurabili <configurazione_gateway_ref_label>`
 -  non aumentano il carico del server
 -  sono indipendenti dall'hardware del centralino
 -  permettono di usare hardware compatto e miniaturizzato
@@ -108,33 +108,33 @@ PRI
 
  :ref:`Configurazione Schede Interne <configurazione_schede_interne_ref_label>` 
 
-- Ogni modello di **Patton** PRI è compatibile, esistono al momento **Patton** da una o quattro porte PRI.
+- Ogni modello di **Sangoma** e **Patton** (con firmware SmartWare) PRI è compatibile.
  
- :ref:`Configurazione Patton <configurazione_patton_ref_label>`
+ :ref:`Configurazione Gateway <configurazione_gateway_ref_label>`
 
 
 Gateway ISDN
 ------------
 
--  Ogni modello di **Patton** ISDN è compatibile, esistono al momento **Patton** da una, due, quattro o otto porte ISDN.
+-  Ogni modello di **Sangoma** e **Patton** (con firmware SmartWare) ISDN è compatibile.
 
- :ref:`Configurazione Patton <configurazione_patton_ref_label>`
+ :ref:`Configurazione Gateway <configurazione_gateway_ref_label>`
 
 
 Gateway Analogici
 -----------------
 
--  Ogni modello di **Patton** analogico è compatibile, esistono al momento **Patton** da due o quattro porte FXO
+-  Ogni modello di **Sangoma** e **Patton** (con firmware SmartWare) analogico è compatibile
 
- :ref:`Configurazione Patton <configurazione_patton_ref_label>`
+ :ref:`Configurazione Gateway <configurazione_gateway_ref_label>`
 
 
 Gateway Misti
 -------------
 
--  Per gateway Misti si intende modelli di **Patton** che supportano sia linee ISDN che analogiche
+-  Per gateway Misti si intende modelli di **Patton** (con firmware SmartWare) che supportano sia linee ISDN che analogiche
 
- :ref:`Configurazione Patton <configurazione_patton_ref_label>`
+ :ref:`Configurazione Gateway <configurazione_patton_ref_label>`
 
 
 Gateway GSM
@@ -155,6 +155,7 @@ ATA SIP
 -------
 
 -  **Cisco** SPA112 ad esempio, esistono anche adattatori FXS di altre marche.
+-  Ogni modello di **Sangoma** analogico con porte FXS
 -  Ogni modello di **Patton** analogico con porte FXS
 
 ATA IAX

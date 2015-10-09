@@ -50,6 +50,76 @@ Destinazione dopo la riproduzione
 
 Selezionare come far proseguire la chiamata tra tutte le funzionalità configurate in |product|.
 
+.. _annunci__tts_ref_label:
+
+Annunci TTS
+==========
+
+Descrizione
+-----------
+
+Gli annunci TTS hanno lo scopo di riprodurre nel flusso della chiamata la lettura di un testo da parte del sintonizzatore vocale.
+
+Il file audio non viene creato al momento del salva sul modulo ma solo quando |product| ne avrà bisogno nel flusso della chiamata collegandosi via internet al
+ sintonizzatore.
+
+|product| gestisce una cache per non creare ogni volta i messaggi utilizzati più spesso che di default è di 250 MB.
+
+Per vedere il valore di cache configurato dare il comando 
+
+::
+   config getprop nethvoice tts-maxsize
+
+Per cambiare il valore, ad esempio a 500 MB
+
+::
+   config setprop nethvoice tts-maxsize 500
+   expand-template /etc/freepbx.conf
+
+
+Configurazione
+--------------
+
+Descrizione
+~~~~~~~~~~~
+
+Inserire una descrizione per individuare l'annuncio TTS.
+
+Testo
+~~~~~
+
+Inserire il testo da riprodurre.
+
+Lingua TTS
+~~~~~~~~~~
+
+La lingua del sintonizzatore vocale, non verranno fatte traduzioni del testo inserito, se non viene inserita verrà utilizzata la lingua della chiamata.
+
+Velocità di Riproduzione TTS
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+La velocità di lettura del testo da parte del sintonizzatore vocale.
+
+Ripeti
+~~~~~~
+
+Se l'annuncio prevede di essere riascoltato da parte del chiamante, selezionare qui il tasto per riascoltarlo.
+
+Permetti Salta
+~~~~~~~~~~~~~~
+
+Per permettere al chiamante di saltare l'annuncio, spuntare qui.
+
+Ritorna All'IVR
+~~~~~~~~~~~~~~~
+
+Se l'annuncio viene utilizzato in un IVR, spuntare qui per tornare all'IVR dopo la riproduzione dell'annuncio.
+
+Destinazione dopo la riproduzione
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Selezionare come far proseguire la chiamata tra tutte le funzionalità configurate in |product|.
+
 .. _interni_iax_ref_label:
 
 Interni IAX
@@ -84,7 +154,7 @@ Opzioni Apparato
 secret
 ~~~~~~
 
-Password per questo interno. Può essere alfanumerica.
+Password per questo interno, deve essere almeno di 6 caratteri e contenere almeno 2 lettere e 2 numeri. 
 
 transfer
 ~~~~~~~~
@@ -486,7 +556,7 @@ Opzioni Apparato
 secret
 ~~~~~~
 
-Password per questo interno. Può essere alfanumerica.
+Password per questo interno, deve essere almeno di 6 caratteri e contenere almeno 2 lettere e 2 numeri.
 
 dtmfmode
 ~~~~~~~~
@@ -1309,6 +1379,31 @@ Prefisso CID
 
 Il prefisso CID da aggiungere a questa chiamata prima di indirizzarla alla destinazione su Non Raggiungibile.
 
+.. _gestione_multipla_interni_ref_label:
+
+Gestione Multipla Interni
+=========================
+
+Il modulo gestione multipla interni serve ad eseguire operazioni di massa su gruppi di interni.
+
+Gli interni posso essere raggruppati per intervallo o per nome oltre ovviamente ad essere selezionati tuttii.
+
+Sugli interni selezioni è possibile:
+
+* modificare il nome visualizzato
+* modificare il contesto, vedi :ref:`qui <contesti_personalizzati_ref_label>`
+* modificare lo stato dell'avviso di chiamata, vedi :ref:`qui <funzionalita_base_ref_label>`.
+
+Il modulo consente anche la creazione massiva di interni per intervalli e la cancellazione massiva di gruppi di interni.
+
+Nelle varie operazioni di massa è possibile utilizzare il numero di interno nel campo nome con la sintassi
+
+::
+
+  %{EXTEN}
+
+
+
 .. _musiche_di_attesa_ref_label:
 
 Musica di Attesa
@@ -1334,10 +1429,36 @@ Selezionare la categoria se si vuole caricare il file in una categoria specifica
 
 Esiste anche la possibilità di utilizzare come musica di attesa uno streaming audio, aggiungendo una apposita categoria di streaming.
 
-Configurazione Patton
-=====================
+.. _configurazione_gateway_ref_label:
 
- :ref:`Configurazione Patton <configurazione_patton_ref_label>`
+
+Configurazione Gateway
+======================
+
+ :ref:`Configurazione Gateway <configurazione_gateway_generale_ref_label>`
+
+.. _configurazione_failover_ref_label:
+
+
+Configurazione Failover
+=======================
+
+Il modulo Failover consente di realizzare un altro |product| con la configurazione gemella da utilizzare come centralino di failover per i client telefonici.
+
+Il caso di uso tipico è quello di una configurazione con |product| master remoto e un |product| slave locale e i client telefonici locali con un account sia sul |product| master sia su quello slave, in modo tale che se il collegamento con il |product| master viene interrotto è possibile utilizzare il |product| slave come failover.
+
+La configurazione quindi, va fatta tutta sul |product| master e poi tramite il modulo Failover copiata sul |product| slave, possono essere anche più di uno i |product| slave configurabili. 
+
+L'unica condizione necessaria al funzionamento del modulo Failover è che ci sia una connessione SSH tra il |product| e i |product| slave senza richiesta di password, quindi con uno scambio di chiavi SSH, scambiare manualmente le chiavi SSH per consentire la connessione SSH senza password dal master allo slave o lanciare dalla shell del |product| master il comando /var/lib/asterisk/bin/failover_setup.sh che prova a farlo in automatico chiedendo solo la password del |product|.
+
+Configurazione
+--------------
+
+La configurazione richiede l'inserimento dell'indirizzo del |product| slave e della porta SSH, è possibile scegliere se sincronizzare anche il database dello storico delle chiamate CDR e le :ref:`Rotta in Uscita <rotte_in_uscita_ref_label>`.
+
+Una volta fatta la configurazione è possibile testare la connessione e la sincronizzazione con i pulsanti dedicati.
+
+Se attivato la sincronizzazione tra il |product| master e il |product| slave viene effettuata ogni 10 minuti.
 
 
 .. _wizard_provisioning_ref_label:
@@ -1351,33 +1472,37 @@ Descrizione
 
 Il modulo Wizard Provisioning nasce con l'intento di facilitare la procedura di Provisioning e di diventare la base per configurare interamente e con pochi click il |product|.
 
-Da questo modulo inizia la procedura di Provisioning degli apparati, entrando nella pagina del modulo la prima volta il |product| effettua una scansione della sua rete locale cercando indirizzi mac address di produttori di apparecchi telefonici.
+Da questo modulo inizia la procedura di Provisioning degli apparati telefonici supportati, basta indicare nel tab **Dispositivi non configurati** la rete di ricerca e cliccare sul pulsante **Trova nuovi Dispositivi** per dare inizio alla scansione della rete.
 
 Configurazione
 --------------
 
 Il risultato della scansione viene caricato in qualche secondo nella pagina.
 
-Si ottiene un elenco di tutti gli apparati telefonici individuati dalla scansione con il loro indirizzo ip, il loro mac address e il
-costruttore.
+Si ottiene un elenco di tutti gli apparati telefonici individuati dalla scansione non abbinati ad un interno con il loro indirizzo ip, il loro mac address e il costruttore.
 
 Il modulo tenterà anche tramite una connessione http di individuare il modello dell'apparecchio telefonico, se questa ricerca avrà esito positivo verrà indicato, altrimenti verrà lasciata la possibilità di inserirlo a mano.
 
-Nella colonna **Interno** viene indicato se il mac address rilevato è già stato associato ad un interno, in caso contrario viene fornito un elenco di interni non ancora associati ad alcun apparecchio telefonico.
+Premendo il pulsante della colonna **Azione** è possibile associare un interno libero all'apparato.
 
 E' anche possibile creare un nuovo interno da associare all'apparecchio rilevato: basta indicare il numero di interno, il nome da associare all'interno e la password, vedi :ref:`qui <interni_sip_ref_label>` per maggiori informazioni sugli interni.
 
 Una volta fatta l'associazione di un apparato telefonico con un interno, preesistente o nuovo, il |product| creerà il file di configurazione nella directory di tftp, vedi :ref:`qui <provisioning_ref_label>`, e riavvierà l'apparato (questa operazione potrebbe non andare a buon fine con certi modelli di telefono) in modo tale da passargli all'avvio la nuova configurazione.
 
+Riguardo ai gateway telefonici supportati invece, il pulsante porta al modulo per configurarli, vedi :ref:`qui <configurazione_gateway_generale_ref_label>`, oppure alla loro interfaccia web se non supportati.
+
+Dopo aver associato l'apparecchio telefonico ad un :ref:`interno <interni_sip_ref_label>` la configurazione viene elencata nel tab **Dispositivi Associati**  dove è possibile andare a modificare il template di configurazione o eliminarlo.
+
+
 .. _registrazioni_di_sistema_ref_label:
 
-Registrazioni Sistema
-=====================
+Registrazioni di  Sistema
+=========================
 
 Descrizione
 -----------
 
-Le registrazioni di sistema sono lo strumento per caricare sul |product| dei file audio, di solito di servizio, per poi poterli usare tramite i moduli che lo consentono, ad esempio gli :ref:`annunci <annunci_ref_label>`, le `code <code_ref_label>`, i :ref:`gruppi di chiamata <gruppi_di_chiamata_ref_label>`, :ref:`IVR <ivr_ref_label>` etc..
+Le registrazioni di sistema sono lo strumento per caricare sul |product| dei file audio, di solito di servizio, per poi poterli usare tramite i moduli che lo consentono, ad esempio gli :ref:`annunci <annunci_ref_label>`, le :ref:`code <code_ref_label>`, i :ref:`gruppi di chiamata <gruppi_di_chiamata_ref_label>`, :ref:`IVR <ivr_ref_label>` etc..
 
 Ogni modulo che può tra le sue funzionalità riprodurre un file audio di solito attinge alle registrazioni di sistema.
 
@@ -1460,6 +1585,42 @@ File
 ^^^^
 
 Viene indicato il file audio associato alla registrazione di sistema, è possibile cambiarlo, accodarne degli altri, ascoltarlo, cambiare l'ordine di riproduzione.
+
+.. _registrazioni__tts_ref_label:
+
+Registrazioni TTS
+=================
+
+Descrizione
+-----------
+
+Le registrazioni TTS sono lo strumento per creare sul |product| dei files audio tramite la lettura di un testo da parte del sintonizzatore vocale.
+
+Una volta creata una registrazione TTS automaticamente viene creata anche una :ref: `registrazione di sistema <registrazioni_di_sistema_ref_label>` che consente di utilizzare il file audio creato tramite i moduli che lo prevedono, ad esempio gli :ref:`annunci <annunci_ref_label>`, le :ref:`code <code_ref_label>`, i :ref:`gruppi di chiamata <gruppi_di_chiamata_ref_label>`, :ref:`IVR <ivr_ref_label>` etc..
+
+
+Configurazione
+--------------
+
+Nome
+~~~~
+
+Inserire un nome per individuare la registrazione TTS.
+
+Testo
+~~~~~
+
+Inserire il testo da riprodurre.
+
+Lingua TTS
+~~~~~~~~~~
+
+La lingua del sintonizzatore vocale, non verranno fatte traduzioni del testo inserito.
+
+Velocità di Riproduzione TTS
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+La velocità di lettura del testo da parte del sintonizzatore vocale.
 
 .. _fasci_iax_ref_label:
 
@@ -1579,7 +1740,7 @@ Descrizione
 
 I Fasci SIP permettono di collegare il |product| a delle fonti telefoniche tramite il protocollo SIP.
 
-I Fasci SIP si usano ad esempio per collegare un provider Voip, vedi :ref:`qui <configurazione_provider_voip_ref_label>` e i Patton, vedi :ref:`qui <configurazione_patton_ref_label>`.
+I Fasci SIP si usano ad esempio per collegare un provider Voip, vedi :ref:`qui <configurazione_provider_voip_ref_label>` e i Gateway, vedi :ref:`qui <configurazione_gateway_ref_label>`.
 
 Se il Fascio è utilizzato in qualche :ref:`Rotta in Uscita <rotte_in_uscita_ref_label>` viene notificato in alto.
 
@@ -1775,7 +1936,7 @@ Descrizione
 
 Il wizard per la configurazione di provider voip ha lo scopo di semplificare la creazione di un :ref:`Fascio Sip <fasci_sip_ref_label>` che collegherà il |product| con il provider.
 
-I provider al momento supportati sono **Eutelia**, **Messagenet**, **Squillo**, **VoipVoice** e **Enjoip**, stiamo lavorando per estendere questo elenco il più possibile.
+I provider al momento supportati sono **Eutelia**, **Messagenet**, **Squillo**, **VoipVoice**, **Enjoip** e **Cheapnet**, stiamo lavorando per estendere questo elenco il più possibile.
 
 Inoltre è possibile collegare un account **Skype** tramite la modalità **Skype Connect**, con un account **Skype** business dove è stata abilitata, rende possibile utilizzare le tariffe di **Skype** per effettuare delle chiamate esterne. Stiamo lavorando per estendere l'integrazione con **Skype** alla possibilità di ricevere chiamate dagli account **Skype** oltre ad integrare la rubrica dell'account **Skype** nel |product|.
 

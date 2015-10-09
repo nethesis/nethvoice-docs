@@ -2,6 +2,53 @@
 Gestione Hardware
 =================
 
+.. _configurazione_gateway_generale_ref_label:
+
+.. _configurazione_sangoma_ref_label:
+
+Configurazione Sangoma
+======================
+
+Come descritto ampiamente nel documento :doc:`Hardware <hardware>`, viene suggerito e supportato l'utilizzo di gateway esterni da integrare con il |product|.
+In questo documento verranno descritte la procedura di configurazione dei Sangoma e la configurazione in |product|.
+
+.. note:: E' molto probabile (dipende dalla configurazione delle linee telefoniche) che la chiamata che arriva al |product| dal gateway Sangoma sia priva dello 0 iniziale, configurare le :ref:`Rotte in Entrata <rotte_in_entrata_ref_label>` di conseguenza. 
+
+Creazione file di configurazione
+--------------------------------
+
+|product| introduce il modulo **Configurazione Gateway** che semplifica notevolmente la configurazione di questi apparati.
+
+Per creare il file di configurazione, procedere così:
+
+-  Aprire la pagina **Configurazione Gateway** e scegliere il modello del proprio **Sangoma**
+
+-  Specificare un nome per la configurazione, l'indirizzo IP del Sangoma, il gateway della rete e il mac address se si vuole utilizzare il provisioning per configurare il **Sangoma**
+
+-  Per le porte **fxs** scegliere l'interno SIP collegato alla porta specificata. L'interno SIP deve essere precedentemente creato nell'apposita sezione.
+
+
+-  Per le porte **fxo** scegliere il numero di telefono associato al numero di fascio auto generato. L'interfaccia segnala a quale fascio sip verrà abbinata ogni porta, i fasci vengono automaticamente creati e sono disponibili nella sezione :ref:`fasci SIP <fasci_sip_ref_label>`.
+
+-  Per le porte **isdn** scegliere la tipologia delle porte, o punto-punto o punto-multipunto. L'interfaccia segnala a quale fascio sip verrà abbinata ogni porta, i fasci vengono automaticamente creati e sono disponibili nella sezione :ref:`fasci SIP <fasci_sip_ref_label>`.
+
+-  Per le porte **pri** l'interfaccia segnala a quale fascio sip verrà abbinata ogni porta, i fasci vengono automaticamente creati e sono disponibili nella sezione :ref:`fasci SIP <fasci_sip_ref_label>`.
+
+-  Dopo aver cliccato su Salva il modulo propone il link per scaricare la configurazione del Sangoma.
+   Se è stato indicato il mac address è possibile applicare la configurazione tramite il provisioning.
+
+Configurazione Sangoma
+----------------------
+
+Gli apparati Sangoma vengono configurati attraverso un file di configurazione pre-formattato che va importato attraverso l'interfaccia web di amministrazione.
+
+-  Collegare il Sangoma alla propria rete LAN, inserendo il cavo di rete nell'interfaccia WAN dello stesso.
+-  Il Sangoma di default richiede un ip in DHCP, controllare dai log di |parent_product| qual'è IP che gli è stato assegnato.
+-  Collegarsi all'interfaccia web, inserendo tale IP nel browser (username/password di default sono `admin` e password `admin`)
+-  Spostarsi nel pannello `System` -> Receive File From Gateway -> Selezionare il File di Configurazione (vedi paragrafo successivo)
+-  Salvare la configurazione
+-  Riavviare il Sangoma
+
 .. _configurazione_patton_ref_label:
 
 Configurazione Patton
@@ -9,17 +56,19 @@ Configurazione Patton
 
 Come descritto ampiamente nel documento :doc:`Hardware <hardware>`, viene suggerito e supportato l'utilizzo di gateway esterni da integrare con il |product|. In questo documento verranno descritte la procedura di configurazione dei Patton e la configurazione in |product|.
 
+.. warning:: I soli Patton con firmware SmartWare sono supportati al momento dal modulo Gateway, il firmware Trinity non è supportato.
+
 .. note::   I Patton dalla versione 6 del proprio firmware supportano la configurazione tramite provisioning vedi anche :ref:`qui <wizard_provisioning_ref_label>`
 
 
 Creazione file di configurazione
 --------------------------------
 
-|product| introduce il modulo **Configurazione Patton** che semplifica notevolmente la configurazione di questi apparati.
+|product| introduce il modulo **Configurazione Gateway** che semplifica notevolmente la configurazione di questi apparati.
 
 Per creare il file di configurazione, procedere così:
 
--  Aprire la pagina **Configurazione Patton** e scegliere il modello del proprio **Patton**
+-  Aprire la pagina **Configurazione Gateway** e scegliere il modello del proprio **Patton**
 
     Il modello è individuabile dal codice che si trova collegandosi all'interfaccia web del Patton vedi la seconda immagine sotto.
 
@@ -63,7 +112,7 @@ Gli apparati Patton vengono configurati attraverso un file di configurazione pre
 Configurazione Mediatrix
 ========================
 
-Gli apparati **Mediatrix** sono dei gateway SIP, sia isdn che analogici, alternativi ai Patton che possono essere recuperati se |product| va a sostituire un centralino che li utilizzava.
+Gli apparati **Mediatrix** sono dei gateway SIP, sia isdn che analogici, alternativi ai Sangoma e i Patton che possono essere recuperati se |product| va a sostituire un centralino che li utilizzava.
 
 
 Configurazione tramite Interfaccia Web

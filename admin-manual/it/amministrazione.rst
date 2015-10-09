@@ -382,7 +382,7 @@ Tramite questo modulo viene creato un contesto personalizzato equiparabile al co
 Una volta creato il contesto personalizzato è possibile associarci gli `interni <Interni_|product|>`__ tramite l'apposita opzione, vedi :ref:`qui <interni_sip_ref_label>`.
 
 
-.. note:: Per effettuare delle restrizioni di accesso è necessario configurare a VIETATO la voce "TUTTO il Dialplan" per poi andare a vietare e/o permettere le varie voci successive. "TUTTO il Dialplan" funge da interruttore generale per l'accesso ad ogni funzionalità, nel caso sia configuato a PERMETTI eventuali divieti nelle voci successive verranno ignorati. Stesso concetto si applica alle Rotte in Uscita, dove per effettuare delle restrizioni è necessario configurare a VIETATO sia la voce "TUTTO il Dialplan" che la voce "TUTTE LE ROTTE IN USCITA" per poi configuare nello specifico le varie Rotte in Uscita. Ad esempio, quindi, per creare un Contesto Personalizzato con l'accesso ad una sola delle rotte in uscita create, bisogna configurare a VIETATO la voce "TUTTO il Dialplan", la voce "TUTTE LE ROTTE IN USCITA" e tutte le rotte in uscita tranne quella da abilitare.
+.. note:: Per effettuare delle restrizioni di accesso è necessario configurare a VIETATO la voce "TUTTO il Dialplan" per poi andare a vietare e/o permettere le varie voci successive. "TUTTO il Dialplan" funge da interruttore generale per l'accesso ad ogni funzionalità, nel caso sia configurato a PERMETTI eventuali divieti nelle voci successive verranno ignorati. Stesso concetto si applica alle Rotte in Uscita, dove per effettuare delle restrizioni è necessario configurare a VIETATO sia la voce "TUTTO il Dialplan" che la voce "TUTTE LE ROTTE IN USCITA" per poi configurare nello specifico le varie Rotte in Uscita. Ad esempio, quindi, per creare un Contesto Personalizzato con l'accesso ad una sola delle rotte in uscita create, bisogna configurare a VIETATO la voce "TUTTO il Dialplan", la voce "TUTTE LE ROTTE IN USCITA" e tutte le rotte in uscita tranne quella da abilitare.
 
 Configurazione
 --------------
@@ -1202,6 +1202,39 @@ Porta Server Stun
 
 Porta Server Stun.
 
+.. _visual_plan_ref_label:
+
+Visual Plan
+===========
+
+Il modulo Visual Plan nasce per dare una visione completa della configurazione delle :ref:`Rotte in Entrata <rotte_in_entrata_ref_label>` per capire immediatamente il percorso della chiamata entrante.
+Il Visual Plan permette la completa configurazione di una :ref:`Rotte in Entrata <rotte_in_entrata_ref_label>`, dalla creazione alla definizione di tutto il percorso della chiamata.
+
+Accedendo al modulo si ha l'elenco di tutte le :ref:`Rotte in Entrata <rotte_in_entrata_ref_label>` configurate e la possibilità di aggiungerne una nuova.
+
+Selezionando, ad esempio, una :ref:`Rotte in Entrata <rotte_in_entrata_ref_label>` esistente viene creata tutta l'alberatura del percorso della chiamata già configurato.
+
+Aperta la parte di configurazione, nella colonna di sinistra ci sono tutti i moduli di |product| supportati dal Visual Plan, basta trascinarne uno all'interno della configurazione della :ref:`Rotte in Entrata <rotte_in_entrata_ref_label>` per usarlo avendo la possibilità di scegliere tra la creazione di una nuova voce o l'utilizzo di una esistente.
+
+Nella riga superiore ci sono le opzioni del Visual Plan:
+
+* zoom in
+* zoom a 0%
+* zoom out
+* trascinamento (consente di trascinare l'intero albero con il mouse) o selezione multipla (consente di trascinare solo gli oggetti selezionati con il mouse)
+* avanti 
+* indietro
+* modifica l'oggetto selezionato
+* cancella l'oggetto selezionato
+* salva
+
+L'inserimento di un nuovo modulo comporta la configurazione dei parametri indispensabili mentre per le altre caratteristiche non necessarie fare riferimento alla parte di configurazione su |product|, ad esempio nella configurazione di un :ref:`Gruppo di Chiamata <gruppi_di_chiamata_ref_label>` verranno chiesti Numero, Descrizione e lista degli interni, se sarà necessario configurare altri parametri sarà necessario farlo direttamente nel modulo per la configurazione dei :ref:`Gruppi di Chiamata <gruppi_di_chiamata_ref_label>`.
+
+I moduli vanno collegati tra loro tramite il mouse trascinando una freccia da un punto di uscita ad uno di entrata.
+
+Il modulo :ref:`Rotte in Entrata <rotte_in_entrata_ref_label>` ha solo il punto d'uscita e deve essere sempre il modulo iniziale della configurazione, altri moduli come :ref:`Interni <interni_ref_label>`, :ref:`Casella Vocale <casella_vocale_ref_label>` e :ref:`Conferenze <conferenze_ref_label>` e Termina Chiamata hanno solo punti d'entrata e possono essere solo la parte terminale di un ramo della configurazione.
+
+Solo premendo il tasto salva la configurazione verrà inviata a |product| creando i nuovi moduli e modificando quelli esistenti se necessario.
 
 .. _amministrazione_caselle_vocali_ref_label:
 
