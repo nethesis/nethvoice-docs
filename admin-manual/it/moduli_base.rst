@@ -1449,7 +1449,13 @@ Il caso di uso tipico è quello di una configurazione con |product| master remot
 
 La configurazione quindi, va fatta tutta sul |product| master e poi tramite il modulo Failover copiata sul |product| slave, possono essere anche più di uno i |product| slave configurabili. 
 
-L'unica condizione necessaria al funzionamento del modulo Failover è che ci sia una connessione SSH tra il |product| e i |product| slave senza richiesta di password, quindi con uno scambio di chiavi SSH, scambiare manualmente le chiavi SSH per consentire la connessione SSH senza password dal master allo slave o lanciare dalla shell del |product| master il comando /var/lib/asterisk/bin/failover_setup.sh che prova a farlo in automatico chiedendo solo la password del |product|.
+L'unica condizione necessaria al funzionamento del modulo Failover è che ci sia una connessione SSH tra il |product| e i |product| slave senza richiesta di password, quindi con uno scambio di chiavi SSH, scambiare manualmente le chiavi SSH per consentire la connessione SSH senza password dal master allo slave o lanciare dalla shell del |product| master il comando 
+
+::
+
+ /var/lib/asterisk/bin/failover_setup.sh 
+
+che prova a farlo in automatico chiedendo solo la password del |product|.
 
 Configurazione
 --------------
