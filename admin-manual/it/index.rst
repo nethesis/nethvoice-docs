@@ -13,7 +13,7 @@ Manuale amministratore |product|
 
     * `Sito progetto <https://dev.nethesis.it/projects/nethvoice>`_
     * `Bug tracker <https://dev.nethesis.it/projects/nethvoice/issues>`_
-    * `Supporto: supporto@nethesis.it <mailto:supporto@nethesis.it>`_
+    * `Supporto <http://helpdesk.nethesis.it>`_
 
 Introduzione
 ------------

@@ -47,7 +47,7 @@ copyright = u'2014, Nethesis'
 # built documents.
 #
 # The short X.Y version.
-version = '11.4-ng'
+version = '11.5-ng'
 # The full version, including alpha/beta/rc tags.
 release = version
 
@@ -109,7 +109,7 @@ html_title = "Documentazione %s %s" % (project, release)
 
 # The name of an image file (relative to this directory) to place at the top
 # of the sidebar.
-#html_logo = '../_static/logo.png'
+html_logo = '../_static/logo2.png'
 
 # The name of an image file (within the static path) to use as favicon of the
 # docs.  This file should be a Windows icon file (.ico) being 16x16 or 32x32
