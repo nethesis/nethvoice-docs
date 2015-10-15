@@ -127,6 +127,14 @@ Provisioning
 
    provisioning
 
+App mobile
+----------
+
+.. toctree::
+   :maxdepth: 2
+
+   app_mobile
+
 Report
 ------
 
