@@ -202,3 +202,71 @@ Dopo aver salvato il file appena creato dare i comandi ::
 
 .. note:: Configurare il timeout di digitazione sui vari telefoni utilizzati dalle camere del |product_hotel| a valori bassi per facilitare il comportamento voluto
 
+
+FIAS
+====
+
+grazie al protocollo FIAS, il neth-hotel può condividere col gestionale alberghiero lo stato delle camere, l'importo delle chiamate e le sveglie. È quindi possibile, per esempio, abilitare la sveglia di NethHotel dal gestionale o avere un feedback sul gestionale della sveglia che è stata abilitata.
+Le informazioni comunicate sono: 
+* Checkin e checkout delle camera
+* Pulizia della camera
+* Sveglia e cancellazione sveglia
+* Importo delle chiamate effettuate 
+
+Per abilitare il protocollo fias, installare il pacchetto neth-hotel-fias:: 
+ 
+  yum install neth-hotel-fias
+
+Configurare l'indirizzo del PMS (nell'esempio, il PMS è all'indirizzo 192.168.122.12)::
+ 
+  config setprop fias host 192.168.122.12
+
+Configurare la porta del PMS (nell'esempio, il PMS ha un servizio che gira alla porta 5010)::
+ 
+  config setprop fias port 5010
+
+Per applicare le modifiche, lanciare il comando::
+
+  signal-event neth-hotel-fias-update
+
+Per abilitare la comunicazion dell'importo delle chiamate effettuate dalla camera::
+
+  config setprop nethcti-server CdrScript /var/lib/fias/cdr.php
+  signal-event nethcti-server-update
+
+Altre impostazioni
+------------------
+
+Unità di misura delle tariffe del cdr. 100 => €, 10 => 0.1€, 1 => 0.01€. Il dfault è 100, cambiare l'unità se il PMS si aspetta l'importo in centesimi o decimi di euro.::
+
+  config setprop fias cdrAmountUnits 100
+
+Lunghezza degli interni. È usata per dal software per analizzare le chiamate. Il default è 4, che è adeguato anceh per interni a 3 cifre. se gli interni hanno 5 o più cifre, aumentare il valore.::
+
+  config setprop fias cdrExtensionLength 4
+
+Interni aggiuntivi. Configurare qui eventuali numeri che devono essere trattati come interni anche se dalla lunghezza possono essere scambiati per numeri esterni, separati da virgola. Riportare i numeri come appiono nel campo dst del cdr.::
+
+  config setprop fias cdrExternalExtensions "02313542254,anonymous":
+
+numeri esterni aggiuntivi. Configurare qui eventuali numeri che devono essere trattati come esterni anche se dalla lunghezza possono essere scambiati per numeri interni, separati da virgola. Riportare i numeri come appiono nel campo dst del cdr.::
+
+  config setprop fias cdrInternalExtensions "123,118,113"
+
+Aggiungere pattern (regular expression) per considerare un insieme di numeri come esterni o interni::
+
+  config setprop fias cdrExternalPatterns
+
+o::
+
+  config setprop fias cdrInternalPatterns
+
+Modificare la verbosità del log. Il default è 1. Il file di log è /var/log/fias e alla verbosità di default registra tutti i messaggi scambiati tra PMS e nethhotel::
+
+  config setprop fias logLevel 3
+
+Dopo aver modificato queste variabili rendere sempre effettivi i cambiamenti lanciando l'evento neth-hotel-fias-update::
+
+  signal-event neth-hotel-fias-update
+
+
