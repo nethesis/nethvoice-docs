@@ -25,7 +25,10 @@ Per accedere tramite l'App Mobile è necessario inserire le proprie credenziali 
 Funzionamento
 =============
 
-L'App Mobile ha una sola vista, in cui sono concentrate tutte le informazioni e i dati richiesti. Appena aperta, cliccando sul pulsante `Scan MAC` si aprirà la visualizzazione dello scanner del codice a barre e posizionandosi sul relativo codice verrà identificato e successivamente inserito nel campo relativo della vista. 
+L'App Mobile ha una sola vista, in cui sono concentrate tutte le informazioni e i dati richiesti. Appena aperta, cliccando sul pulsante `Scan MAC` si aprirà la visualizzazione dello scanner del codice a barre e posizionandosi sul relativo codice verrà identificato e successivamente inserito nel campo relativo della vista.
+
+E' possibile inserire anche manualmente il MAC address qualora ci fossero problemi con il rilevamento del codice da fotocamera. L'unica accortezza da seguire è che deve esserci il carattere `-` o `:` ogni due caratteri del MAC address. Ad esempio:
+ - 0089ef67ad15 => 00:89:ef:67:ad:15 oppure 00-89-ef-67-ad-15
 
 In base al MAC address rilevato l'applicazione è in grado di capire la marca dell'apparato supportato che si è andati a scannerizzare, mostrando succesivamente i modelli disponibili. 
 
