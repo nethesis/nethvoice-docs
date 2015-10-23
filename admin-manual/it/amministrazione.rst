@@ -1330,10 +1330,10 @@ Opzioni configurabili:
 *  **searchcontexts**: cerca la Casella Vocale in tutti i contesti oltre al corrente.
 *  **sendvoicemail**: abilita l'invio alla Casella Vocale.
 *  **serveremail**: indirizzo mittente della mail di notifica della Casella Vocale. E' possibile anche forzare un mittente che non sia con il dominio del |parent_product|.  Esempi:
-        * casella.vocale (configurazione di default) il mittente sarà casella.vocale@dominio con dominio che è quello del |parent_product|
-        * casella.vocale@dominio il mittente sarà casella.vocale@dominio
-        * indirizzo@dominio il mittente sarà indirizzo@dominio
-        * /usr/sbin/sendmail -t -f indirizzo@dominio -N never il mittente sarà indirizzo@dominio e sarà forzato a indirizzo@dominio anche l'envelope address 
+        * *casella.vocale* (configurazione di default) il mittente sarà casella.vocale@dominio con dominio che è quello del |parent_product|
+        * *casella.vocale@dominio* il mittente sarà casella.vocale@dominio
+        * *indirizzo@dominio* il mittente sarà indirizzo@dominio
+        * */usr/sbin/sendmail -t -f indirizzo@dominio -N never* il mittente sarà indirizzo@dominio e sarà forzato a indirizzo@dominio anche l'envelope address
 *  **silencethreshold**: che valore di rumore considerare silenzio.
 *  **skipms**: quanti millesecondi per spostarsi avanti/indietro quando si effettua lo scorrimento avanti/indietro nel messaggio.
 *  **smdienable**: abilita interfaccia SMDI.
