@@ -1304,7 +1304,7 @@ Opzioni configurabili:
 *  **listen-control-restart-key**: tasto personalizzato per il riavvio dei messaggi.
 *  **listen-control-reverse-key**: tasto personalizzato per scorre indietro i messaggi.
 *  **listen-control-stop-key**: tasto personalizzato per fermare i messaggi.
-*  **mailcmd**: comando per inviare email.
+*  **mailcmd**: comando per inviare email. Se si vuole forzare indirizzo mittente, da configurare uguale in **serveremail**, e anche l'envelope address usare questa sintassi : */usr/sbin/sendmail -t -f indirizzo@dominio -N never*
 *  **maxgreet**: massima durata del benvenuto.
 *  **maxlogins**: numero massimo di tentativi di accesso.
 *  **maxmessage**: lunghezza massima messaggio, dimensione.
@@ -1333,7 +1333,6 @@ Opzioni configurabili:
         * *casella.vocale* (configurazione di default) il mittente sarà casella.vocale@dominio con dominio che è quello del |parent_product|
         * *casella.vocale@dominio* il mittente sarà casella.vocale@dominio
         * *indirizzo@dominio* il mittente sarà indirizzo@dominio
-        * */usr/sbin/sendmail -t -f indirizzo@dominio -N never* il mittente sarà indirizzo@dominio e sarà forzato a indirizzo@dominio anche l'envelope address
 *  **silencethreshold**: che valore di rumore considerare silenzio.
 *  **skipms**: quanti millesecondi per spostarsi avanti/indietro quando si effettua lo scorrimento avanti/indietro nel messaggio.
 *  **smdienable**: abilita interfaccia SMDI.
