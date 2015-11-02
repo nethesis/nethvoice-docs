@@ -5,14 +5,15 @@
 |product_hotel| è un modulo di |product| che permette di gestire degli interni opportunamente configurati come camere di un hotel.
 
 Caratteristiche principali:
-- Check-in/Check-out camere
-- Sveglia
-- Sveglia di gruppo
-- Report chiamate
-- Personalizzazione Tariffe
-- Numeri brevi
-- Storico chiamate
-- Abilitazione/Disabilitazione chiamate fra camere
+
+* Check-in/Check-out camere
+* Sveglia
+* Sveglia di gruppo
+* Report chiamate
+* Personalizzazione Tariffe
+* Numeri brevi
+* Storico chiamate
+* Abilitazione/Disabilitazione chiamate fra camere
 
 
 Configurazione |product|
@@ -26,10 +27,11 @@ E' possibile trasformare un interno in camera modificando il contesto direttamen
 Come configurare il centralino 
 ==============================
 Consigliamo di configurare il centralino in questo modo:
-- tutti gli interni delle camere devono essere aggiunti al contesto camere sul pannello di gestione del centralino in Gestione Camere
-- gli interni di servizio, come ad esempio la reception, non devono essere aggiunti al contesto camere e devono essere configurati con interni standard, seguendo la normale politica dell'hotel. Ad esempio se le camere avranno come range di interni dal 201 al 299, l'interno della reception dovrà essere sempre a 3 cifre, ad esempio 200 o 300. Per consentire alle camere di chiamare la reception bisognerà configurare un numero breve, invece gli interni di servizio tra di loro si dovranno chiamare direttamente.
-- è consigliata la creazione di due rotte in uscita sul centralino, la prima senza prefisso **limitata agli interni di servizio** per farli chiamare all'esterno numeri di 5 o più cifre, la seconda con il prefisso scelto nelle opzioni del |product_hotel| per far chiamare le camere (**ATTENZIONE l'ordine è IMPORTANTE**). Un unico accorgimento bisogna ricordarsi, per chiamate dagli interni di servizio, nel caso di corrispondenza tra numeri di emergenza e numeri delle camere (112,113 etc..), di utilizzare per chiamare i numeri di emergenza il prefisso come se si fosse una camera. 
-- è possibile utilizzare un unica rotta in uscita con prefisso, sia per le camere che per gli interni di servizio, in questo caso però ad esempio dal telefono della reception non si potrà richiamare direttamente i numeri delle chiamate perse sul telefono per l'assenza del prefisso in questi ultimi.
+
+* tutti gli interni delle camere devono essere aggiunti al contesto camere sul pannello di gestione del centralino in Gestione Camere
+* gli interni di servizio, come ad esempio la reception, non devono essere aggiunti al contesto camere e devono essere configurati con interni standard, seguendo la normale politica dell'hotel. Ad esempio se le camere avranno come range di interni dal 201 al 299, l'interno della reception dovrà essere sempre a 3 cifre, ad esempio 200 o 300. Per consentire alle camere di chiamare la reception bisognerà configurare un numero breve, invece gli interni di servizio tra di loro si dovranno chiamare direttamente.
+* è consigliata la creazione di due rotte in uscita sul centralino, la prima senza prefisso **limitata agli interni di servizio** per farli chiamare all'esterno numeri di 5 o più cifre, la seconda con il prefisso scelto nelle opzioni del |product_hotel| per far chiamare le camere (**ATTENZIONE l'ordine è IMPORTANTE**). Un unico accorgimento bisogna ricordarsi, per chiamate dagli interni di servizio, nel caso di corrispondenza tra numeri di emergenza e numeri delle camere (112,113 etc..), di utilizzare per chiamare i numeri di emergenza il prefisso come se si fosse una camera. 
+* è possibile utilizzare un unica rotta in uscita con prefisso, sia per le camere che per gli interni di servizio, in questo caso però ad esempio dal telefono della reception non si potrà richiamare direttamente i numeri delle chiamate perse sul telefono per l'assenza del prefisso in questi ultimi.
 
 Codici funzioni da telefono
 ===========================
@@ -91,12 +93,13 @@ Opzioni
 =======
 
 Le opzioni generali comprendono:
-- Configurazione del prefisso per effettuare chiamate esterne
-- Formato interni
-- Abilitazione/disabilitazione delle chiamate fra camere
-- Abilitazione/disabilitazione delle chiamate fra camere che non hanno eseguito il check-in
-- Interno da contattare per allarmi sveglia non risposta
-- Abilitare il codice per la pulizia camere
+
+* Configurazione del prefisso per effettuare chiamate esterne
+* Formato interni
+* Abilitazione/disabilitazione delle chiamate fra camere
+* Abilitazione/disabilitazione delle chiamate fra camere che non hanno eseguito il check-in
+* Interno da contattare per allarmi sveglia non risposta
+* Abilitare il codice per la pulizia camere
 
 
 Numeri Brevi
@@ -145,55 +148,58 @@ inserendoci il seguente contenuto e sostituendo **XXX** con il prefisso impostat
  ;#------------------------------------------------------------
     
  [camere]
- exten => XXX,1,Noop(Chiamata Esterna)
- exten => XXX,n,Set(TIMEOUT(digit)=5)
- exten => XXX,n,Set(TIMEOUT(response)=10)
- exten => XXX,n,DISA(no-password,camere-disa,$\{CALLERID(number)\})
- exten => _[*#0-9]!,1,agi(camere.php,$\{CALLERID(number)\},$\{EXTEN\})
- exten => _[*#0-9]!,n,Set(CHANNEL(language)=it)
- exten => _[*#0-9]!,n(chiama),Goto(from-internal,$\{toCall\},1)
- exten => _[*#0-9]!,n,Macro(hangupcall)
+ exten => _[*#0-9]!,1,Noop(Chiamata Esterna)
+ exten => _[*#0-9]!,n,Set(TIMEOUT(digit)=5)
+ exten => _[*#0-9]!,n,Set(TIMEOUT(response)=10)
+ exten => _[*#0-9]!,n,DISA(no-password,camere-disa,$\{CALLERID(number)\})
+ exten => _[*#0-9]!,n,agi(set-room-lang.php,${CALLERID(number)})
+ exten => _[*#0-9]!,n,agi(camere.php,${CALLERID(number)},${EXTEN})
+ exten => _[*#0-9]!,n(chiamaEXT),Goto(from-internal,${toCall},1)
+ exten => _[*#0-9]!,n,Goto(hangup)
+ exten => _[*#0-9]!,n(chiamaINT),Macro(dial-one,15,${DIAL_OPTIONS},${toCall})
+ exten => _[*#0-9]!,n(hangup),Macro(hangupcall)
  exten => _[*#0-9]!,n(chiudi),playback(alarm/contattare-reception)
  exten => _[*#0-9]!,n,Macro(hangupcall)
  exten => h,1,Macro(hangupcall)
-    
+
  [camere-disa]
- exten => _[*#0-9].,1,Set(NETH_HOTEL_EXTEN=XXX$\{EXTEN\})
- exten => _[*#0-9].,n,Noop($\{NETH_HOTEL_EXTEN\})
- exten => _[*#0-9].,n,agi(camere.php,$\{CALLERID(number)\},$\{NETH_HOTEL_EXTEN\})
- exten => _[*#0-9].,n,Set(CHANNEL(language)=it)
- exten => _[*#0-9].,n(chiama),Goto(from-internal,$\{toCall\},1)
- exten => _[*#0-9].,n,Macro(hangupcall)
- exten => _[*#0-9].,n(chiudi),playback(alarm/contattare-reception)
- exten => _[*#0-9].,n,Macro(hangupcall)
+ exten => _[*#0-9]!,1,agi(set-room-lang.php,${CALLERID(number)})
+ exten => _[*#0-9]!,n,agi(camere.php,${CALLERID(number)},${EXTEN})
+ exten => _[*#0-9]!,n(chiamaEXT),Goto(from-internal,${toCall},1)
+ exten => _[*#0-9]!,n,Goto(hangup)
+ exten => _[*#0-9]!,n(chiamaINT),Macro(dial-one,15,${DIAL_OPTIONS},${toCall})
+ exten => _[*#0-9]!,n(hangup),Macro(hangupcall)
+ exten => _[*#0-9]!,n(chiudi),playback(alarm/contattare-reception)
+ exten => _[*#0-9]!,n,Macro(hangupcall)
  exten => h,1,Macro(hangupcall)
-   
+
  [sveglia]
  exten => s,1,Noop(Sveglia)
  exten => s,n,playback(beep)
+ exten => s,n,agi(set-room-lang.php,${CALLERID(number)})
  exten => s,n,playback(alarm/sonoleore)
- exten => s,n,Set(CHANNEL(language)=it)
  exten => s,n,SayUnixTime(,,R)
  exten => s,n,playback(minutes)
  exten => s,n,MusicOnHold(sveglia)
- exten => s,n,Noop(fine) 
-   
+ exten => s,n,Noop(fine)
+
  exten => failed,1,Noop(Chiamata non risposta - ALLARME)
- exten => failed,n,AGI(svegliafallita.php,$\{CAMERA\},$\{ALARM\},$\{RECEPTION\})
+ exten => failed,n,AGI(svegliafallita.php,${CAMERA},${ALARM},${RECEPTION})
  exten => failed,n,hangup()
-   
+
  [allarmesveglia]
  exten => s,1,Noop(AllarmeSveglia)
+ exten => s,n,agi(set-reception-lang.php)
  exten => s,n,playback(alarm/sveglianonrisposta)
+ exten => s,n,agi(set-reception-lang.php)
  exten => s,n,playback(alarm/camera)
- exten => s,n,Set(CHANNEL(language)=it)
- exten => s,n,SayDigits($\{CAMERA\})
+ exten => s,n,SayDigits(${CAMERA})
  exten => s,n,playback(hours)
- exten => s,n,SayUnixTime($\{ALARM\},,R)
+ exten => s,n,SayUnixTime(${ALARM},,R)
  exten => s,n,playback(minutes)
- exten => s,n,MusicOnHold(sveglia) 
+ exten => s,n,MusicOnHold(sveglia) ; come passiamo la categoria?
  exten => s,n,Noop(fine)
-     
+
 
 Dopo aver salvato il file appena creato dare i comandi ::
 
@@ -208,6 +214,7 @@ FIAS
 
 grazie al protocollo FIAS, il |product_hotel| può condividere col gestionale alberghiero lo stato delle camere, l'importo delle chiamate e le sveglie. È quindi possibile, per esempio, abilitare la sveglia di NethHotel dal gestionale o avere un feedback sul gestionale della sveglia che è stata abilitata.
 Le informazioni comunicate sono: 
+
 * Checkin e checkout delle camera
 * Pulizia della camera
 * Sveglia e cancellazione sveglia
