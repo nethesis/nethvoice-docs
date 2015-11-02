@@ -206,7 +206,7 @@ Dopo aver salvato il file appena creato dare i comandi ::
 FIAS
 ====
 
-grazie al protocollo FIAS, il neth-hotel può condividere col gestionale alberghiero lo stato delle camere, l'importo delle chiamate e le sveglie. È quindi possibile, per esempio, abilitare la sveglia di NethHotel dal gestionale o avere un feedback sul gestionale della sveglia che è stata abilitata.
+grazie al protocollo FIAS, il |product_hotel| può condividere col gestionale alberghiero lo stato delle camere, l'importo delle chiamate e le sveglie. È quindi possibile, per esempio, abilitare la sveglia di NethHotel dal gestionale o avere un feedback sul gestionale della sveglia che è stata abilitata.
 Le informazioni comunicate sono: 
 * Checkin e checkout delle camera
 * Pulizia della camera
@@ -261,7 +261,7 @@ o::
 
   config setprop fias cdrInternalPatterns
 
-Modificare la verbosità del log. Il default è 1. Il file di log è /var/log/fias e alla verbosità di default registra tutti i messaggi scambiati tra PMS e nethhotel::
+Modificare la verbosità del log. Il default è 1. Il file di log è /var/log/fias e alla verbosità di default registra tutti i messaggi scambiati tra PMS e |product_hotel|::
 
   config setprop fias logLevel 3
 
