@@ -488,7 +488,7 @@ Snom
   LDAP number filter: (|(telephoneNumber=%)(mobile=%))
   Indirizzo del server: ip o nome centralino
   Porta: 389
-  Base: ou=phonebook,dc=directory,dc=nh
+  Base: dc=phonebook,dc=nh
   LDAP name attributes: cn sn givenName o
   LDAP number attributes: telephoneNumber
   LDAP display name: %cn %o
@@ -502,7 +502,7 @@ Yealink
   Filtro Numero LDAP: (|(telephoneNumber=%)(mobile=%))
   Indirizzo Server: ip o nome centralino
   Porta: 389
-  Base: ou=Phonebook,dc=DOMINIO,dc=SUFFISSO
+  Base: dc=phonebook,dc=nh
   Battute massime (1-32000): 50
   Attributi nome LDAP: cn sn givenName o
   Attributi numero LDAP: telephoneNumber
