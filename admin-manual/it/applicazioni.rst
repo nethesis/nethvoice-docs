@@ -7,8 +7,6 @@ Applicazioni
 Call Query Routing
 ==================
 
-.. warning:: Il collegamento con un database di tipo MSSQL al momento non è supportato. Verrà implementato a breve.
-
  
 Descrizione
 -----------
