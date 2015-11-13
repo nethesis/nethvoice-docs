@@ -12,7 +12,9 @@ Configurazione Sangoma
 Come descritto ampiamente nel documento :doc:`Hardware <hardware>`, viene suggerito e supportato l'utilizzo di gateway esterni da integrare con il |product|.
 In questo documento verranno descritte la procedura di configurazione dei Sangoma e la configurazione in |product|.
 
-.. note:: E' molto probabile (dipende dalla configurazione delle linee telefoniche) che la chiamata che arriva al |product| dal gateway Sangoma sia priva dello 0 iniziale in caso di linee digitali, configurare le :ref:`Rotte in Entrata <rotte_in_entrata_ref_label>` di conseguenza. 
+.. warn:: In caso di linee digitali isdn la chiamata che arriva al |product| dal gateway Sangoma è priva dello 0 iniziale, configurare le :ref:`Rotte in Entrata <rotte_in_entrata_ref_label>` di conseguenza. 
+
+.. warn:: I **Sangoma** per linee analogiche vanno necessariamente portati alla versione di firmware più recente e poi resettati alle impostazioni di fabbrica prima di essere configurati 
 
 Creazione file di configurazione
 --------------------------------
