@@ -14,7 +14,7 @@ In questo documento verranno descritte la procedura di configurazione dei Sangom
 
 .. warn:: In caso di linee digitali isdn la chiamata che arriva al |product| dal gateway Sangoma è priva dello 0 iniziale, configurare le :ref:`Rotte in Entrata <rotte_in_entrata_ref_label>` di conseguenza. 
 
-.. warn:: I **Sangoma** per linee analogiche vanno necessariamente portati alla versione di firmware più recente e poi resettati alle impostazioni di fabbrica prima di essere configurati 
+.. warn:: I gateway **Sangoma** vanno portati alla versione di firmware più recente e poi resettati alle impostazioni di fabbrica prima di essere configurati
 
 Creazione file di configurazione
 --------------------------------
