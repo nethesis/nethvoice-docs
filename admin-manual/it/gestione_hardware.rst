@@ -342,10 +342,10 @@ Dettagli PEER Fascio SIP
 
 ::
 
+  disallow=all
   allow=ulaw&alaw
   canreinvite=no
   context=from-pstn
-  disallow=all
   dtmfmode=rfc2833
   fromuser=3001
   host=dynamic
@@ -442,10 +442,10 @@ Dettagli PEER Fascio SIP
 
 ::
 
+  disallow=all
   allow=ulaw&alaw
   canreinvite=no
   context=from-pstn
-  disallow=all
   dtmfmode=rfc2833
   fromuser=3002
   host=dynamic
