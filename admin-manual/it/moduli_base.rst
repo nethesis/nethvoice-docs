@@ -53,7 +53,7 @@ Selezionare come far proseguire la chiamata tra tutte le funzionalità configura
 .. _annunci__tts_ref_label:
 
 Annunci TTS
-==========
+===========
 
 Descrizione
 -----------

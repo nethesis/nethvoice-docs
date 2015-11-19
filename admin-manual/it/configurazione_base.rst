@@ -443,7 +443,7 @@ La :ref:`Rotta in Entrata <rotte_in_entrata_ref_label>` serve a raccogliere tutt
 .. _gestione_chiamata_in_uscita_ref_label:
 
 Gestione Chiamata in Uscita
-============================
+===========================
 
 
 |product| gestisce le chiamate in uscita tramite le :ref:`Rotta in Uscita <rotte_in_uscita_ref_label>`. Tutte le politiche di controllo della chiamata in uscita possono essere configurate nelle rotte, dalla sequenza di utilizzo delle linee telefoniche alla differenziazione per modello di chiamata, per interno, ai diversi comportamenti a seconda dell'ora, del giorno del mese etc. E' possibile inoltre decidere le politiche per le chiamate in uscita anche tramite il modulo :ref:`Contesti Personalizzati <contesti_personalizzati_ref_label>` interno per interno, configurando preventivamente a che rotta in uscita ogni interno può accedere. La politica per le chiamate in uscita va configurata di solito come ultimo passo, dopo aver affrontato le :ref:`chiamate in entrata <gestione_chiamata_in_entrata_ref_label>` e collegato le :doc:`sorgenti telefoniche <gestione_hardware>`.
@@ -461,6 +461,7 @@ Utilizzo prefisso in uscita
 |product| non richiede l'utilizzo di prefissi per impegnare la linea, si tratta di una configurazione legata ai centralini tradizionali, che comunque può essere riprodotta nelle :ref:`Rotta in Uscita <rotte_in_uscita_ref_label>`.
 
 .. _chiamata_video_ref_label:
+
 
 Chiamata Video
 ==============

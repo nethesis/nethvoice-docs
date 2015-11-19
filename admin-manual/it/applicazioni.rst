@@ -28,6 +28,11 @@ E' possibile con il numero del chiamante consultare subito un database per otten
 Configurazione
 --------------
 
+Collegamento a database MSSQL
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Per il collegamento ad un database MSSQL è necessario preliminarmente configurare il collegamento ODBC, vedi nella documentazione `Rubrica Centralizzata <http://nethserver.docs.nethesis.it/it/latest/phonebook-mysql.html#configurazione-odbc>`_
+
 Nome CQR
 ~~~~~~~~
 
@@ -991,7 +996,7 @@ Strategia di squillo
 Vedi :ref:`qui <strategie_squillo_ref_label>`.
 
 Auto-completamento (Autofill)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Attivando questa opzione se si ha più di un agente libero, ogni singola chiamata viene inviata ai singoli agenti liberi secondo la strategia di squillo selezionata. Se disattivata tutte le chiamate vengono messe in attesa finché la prima chiamata in Coda non viene risposta.
 
