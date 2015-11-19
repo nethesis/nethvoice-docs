@@ -64,7 +64,7 @@ URL per collegarsi al database per effettuare la query. In caso del |product| st
 Nome Database
 ~~~~~~~~~~~~~
 
-Nome del database al quale collegarsi.
+Nome del database al quale collegarsi, nel caso di sorgente MSSQL nome configurato nella connessione ODBC(nomeDSN).
 
 Username
 ~~~~~~~~
@@ -113,7 +113,7 @@ URL per collegarsi al database per effettuare la query per ricavare il codice cl
 Nome db codice cliente
 ~~~~~~~~~~~~~~~~~~~~~~
 
-Nome del database dove effettuare la query codice cliente.
+Nome del database dove effettuare la query codice cliente, nel caso di sorgente MSSQL nome configurato nella connessione ODBC(nomeDSN).
 
 Username db codice cliente
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
