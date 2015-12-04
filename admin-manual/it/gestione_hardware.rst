@@ -47,7 +47,7 @@ Gli apparati Sangoma vengono configurati attraverso un file di configurazione pr
 -  Collegare il Sangoma alla propria rete LAN, inserendo il cavo di rete nell'interfaccia WAN dello stesso.
 -  Il Sangoma di default richiede un ip in DHCP, controllare dai log di |parent_product| qual'è IP che gli è stato assegnato.
 -  Collegarsi all'interfaccia web, inserendo tale IP nel browser (username/password di default sono `admin` e password `admin`)
--  Spostarsi nel pannello `Expert Config` -> `System` -> `Receive File From Gateway` -> Selezionare il File di Configurazione (vedi paragrafo precedente)
+-  Spostarsi nel pannello `Expert Config` -> `System` -> `Send File To Gateway` -> Selezionare il File di Configurazione (vedi paragrafo precedente)
 -  Salvare la configurazione
 -  Applicare la configurazione 
 -  Riavviare il Sangoma
