@@ -261,7 +261,7 @@ Impostazioni in Ingresso
 
   secret=passwordA
   type=user 
-  context=from-internal
+  context=from-intracompany
 
 Sede B
 ^^^^^^
@@ -290,7 +290,7 @@ Impostazioni in Ingresso
 
   secret=passwordB
   type=user 
-  context=from-internal
+  context=from-intracompany
 
 Configurazione Rotte in Uscita
 ------------------------------
