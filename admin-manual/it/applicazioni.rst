@@ -956,7 +956,7 @@ Ad esempio:
   203,2
   204,1
 
-Con la :ref:`Strategie di Squillo <strategie_squillo_ref_label>` squillano tutti suonerà il primo agente disponibile con la priorità più bassa, quindi 204 poi eventualmente 201 e 203 e infine 202.
+Con la :ref:`Strategie di Squillo <strategie_squillo_ref_label>` squillano tutti suonerà il primo agente disponibile con la priorità più bassa, quindi 204, se il 204 è occupato o non disponibile suonereanno gli agenti 201 e 203, se anche questi sono occupati o non disponibili suonerà l'agente 202.
 
 Selezione Veloce Interno
 ~~~~~~~~~~~~~~~~~~~~~~~~
