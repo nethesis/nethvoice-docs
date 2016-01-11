@@ -30,7 +30,7 @@ L'App Mobile ha una sola vista, in cui sono concentrate tutte le informazioni e 
 E' possibile inserire anche manualmente il MAC address qualora ci fossero problemi con il rilevamento del codice da fotocamera. L'unica accortezza da seguire è che deve esserci il carattere `-` o `:` ogni due caratteri del MAC address. Ad esempio:
  - 0089ef67ad15 => 00:89:ef:67:ad:15 oppure 00-89-ef-67-ad-15
 
-In base al MAC address rilevato l'applicazione è in grado di capire la marca dell'apparato supportato che si è andati a scannerizzare, mostrando succesivamente i modelli disponibili. 
+In base al MAC address rilevato l'applicazione è in grado di capire la marca dell'apparato supportato che si è andati a scannerizzare, mostrando successivamente i modelli disponibili. 
 
 Una volta selezionato il modello relativo si può decidere se creare un nuovo interno da associare a quel telefono o scegliere un interno già disponibile.
 

@@ -212,7 +212,7 @@ Dopo aver salvato il file appena creato dare i comandi ::
 FIAS
 ====
 
-grazie al protocollo FIAS, il |product_hotel| può condividere col gestionale alberghiero lo stato delle camere, l'importo delle chiamate e le sveglie. È quindi possibile, per esempio, abilitare la sveglia di NethHotel dal gestionale o avere un feedback sul gestionale della sveglia che è stata abilitata.
+grazie al protocollo FIAS, il |product_hotel| può condividere col gestionale alberghiero lo stato delle camere, l'importo delle chiamate e le sveglie. È quindi possibile, per esempio, abilitare la sveglia di |product_hotel| dal gestionale o avere un feedback sul gestionale della sveglia che è stata abilitata.
 Le informazioni comunicate sono: 
 
 * Checkin e checkout delle camera
@@ -236,7 +236,7 @@ Per applicare le modifiche, lanciare il comando::
 
   signal-event neth-hotel-fias-update
 
-Per abilitare la comunicazion dell'importo delle chiamate effettuate dalla camera::
+Per abilitare la comunicazione dell'importo delle chiamate effettuate dalla camera::
 
   config setprop nethcti-server CdrScript /var/lib/fias/cdr.php
   signal-event nethcti-server-update
@@ -244,19 +244,19 @@ Per abilitare la comunicazion dell'importo delle chiamate effettuate dalla camer
 Altre impostazioni
 ------------------
 
-Unità di misura delle tariffe del cdr. 100 => €, 10 => 0.1€, 1 => 0.01€. Il dfault è 100, cambiare l'unità se il PMS si aspetta l'importo in centesimi o decimi di euro.::
+Unità di misura delle tariffe del cdr. 100 => €, 10 => 0.1€, 1 => 0.01€. Il default è 100, cambiare l'unità se il PMS si aspetta l'importo in centesimi o decimi di euro.::
 
   config setprop fias cdrAmountUnits 100
 
-Lunghezza degli interni. È usata per dal software per analizzare le chiamate. Il default è 4, che è adeguato anceh per interni a 3 cifre. se gli interni hanno 5 o più cifre, aumentare il valore.::
+Lunghezza degli interni. È usata per dal software per analizzare le chiamate. Il default è 4, che è adeguato anche per interni a 3 cifre. se gli interni hanno 5 o più cifre, aumentare il valore.::
 
   config setprop fias cdrExtensionLength 4
 
-Interni aggiuntivi. Configurare qui eventuali numeri che devono essere trattati come interni anche se dalla lunghezza possono essere scambiati per numeri esterni, separati da virgola. Riportare i numeri come appiono nel campo dst del cdr.::
+Interni aggiuntivi. Configurare qui eventuali numeri che devono essere trattati come interni anche se dalla lunghezza possono essere scambiati per numeri esterni, separati da virgola. Riportare i numeri come appaiono nel campo dst del cdr.::
 
   config setprop fias cdrExternalExtensions "02313542254,anonymous":
 
-numeri esterni aggiuntivi. Configurare qui eventuali numeri che devono essere trattati come esterni anche se dalla lunghezza possono essere scambiati per numeri interni, separati da virgola. Riportare i numeri come appiono nel campo dst del cdr.::
+numeri esterni aggiuntivi. Configurare qui eventuali numeri che devono essere trattati come esterni anche se dalla lunghezza possono essere scambiati per numeri interni, separati da virgola. Riportare i numeri come appaiono nel campo dst del cdr.::
 
   config setprop fias cdrInternalExtensions "123,118,113"
 

@@ -149,6 +149,7 @@ Addon
 .. toctree::
    :maxdepth: 1
 
+   inbound_report
    report_code
    hotel
    analisi_costi
