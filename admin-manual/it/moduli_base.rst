@@ -1386,17 +1386,25 @@ Gestione Multipla Interni
 
 Il modulo gestione multipla interni serve ad eseguire operazioni di massa su gruppi di interni.
 
-Gli interni posso essere raggruppati per intervallo o per nome oltre ovviamente ad essere selezionati tuttii.
+Gli interni posso essere raggruppati per intervallo o per nome oltre ovviamente ad essere selezionati tutti.
 
-Sugli interni selezioni è possibile:
+Sugli interni selezionati è possibile:
 
 * modificare il nome visualizzato
 * modificare il contesto, vedi :ref:`qui <contesti_personalizzati_ref_label>`
 * modificare lo stato dell'avviso di chiamata, vedi :ref:`qui <funzionalita_base_ref_label>`.
+* modificare la tipologia di telefono fisico o WebRTC, se si trasforma un interno WebRTC in fisico è necessario un riavvio di |product|
+* modificare le destinazioni opzionali su nessuna risposta, occupato e non raggiungibile
+* modificare il tempo di squillo
+* modificare il callgroup vedi :ref:`qui <_interni_sip_callgroup_ref_label>`
+* modificare il pickupgroup vedi :ref:`qui <_interni_sip_pickupgroup_ref_label>`
+* modificare i codec permessi
+* modificare i codec non permessi 
+* modificare l'ID in uscita 
 
 Il modulo consente anche la creazione massiva di interni per intervalli e la cancellazione massiva di gruppi di interni.
 
-Nelle varie operazioni di massa è possibile utilizzare il numero di interno nel campo nome con la sintassi
+Nelle varie operazioni di massa è possibile utilizzare il numero di interno nel campo nome e ID in uscita con la sintassi
 
 ::
 
