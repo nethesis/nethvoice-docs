@@ -188,22 +188,22 @@ Collegarsi all'interfaccia web del Mediatrix http://ip_mediatrix le credenziali 
                   :alt: Configurazione Mediatrix
 
 - In caso di mancanza dello zero iniziale nel numero del chiamante nelle chiamate in entrata è necessario istruire il Mediatrix per aggiungere lo zero iniziale alle chiamate nazionali in ingresso. Accedere in **Call Router -> Route Config** e seguire questa procedura:
-        * Aggiungere un nuovo tipo di mappatura su Mapping type (fare click sul pulsante +).
+        - Aggiungere un nuovo tipo di mappatura su Mapping type (fare click sul pulsante +).
                 * **Name**: scrivere *ZeroPlus*
                 * **Criteria**: selezionare Calling E164
                 * **Transformation**: selezionare Calling E164
                 * Fare click su Submit & Insert Expression.
-        * Apparirà la pagina per la creazione di una nuova espressione relativa al mapping type appena inserito (sezione Mapping Expression). Inserire i seguenti dati:
+        - Apparirà la pagina per la creazione di una nuova espressione relativa al mapping type appena inserito (sezione Mapping Expression). Inserire i seguenti dati:
                 * **Name**: scegliere *ZeroPlus* dal menu a tendina “suggestion” a lato
                 * **Criteria**: inserire i simboli .+
                 * **Transformation**: inserire i simboli 0\0
                 * Fare click su Submit
-        * Aggiungere un nuovo tipo di mappatura su Mapping type (fare click sul pulsante +).
+        - Aggiungere un nuovo tipo di mappatura su Mapping type (fare click sul pulsante +).
                 * **Name**: scrivere *National*;
                 * **Criteria**: selezionare Calling TON
                 * **Transformation**: none
                 * Fare click su Submit & Insert Expression
-        * Apparirà la pagina per la creazione di una nuova espressione relativa al mapping type appena inserito (sezione Mapping Expression). Inserire i seguenti dati:
+        - Apparirà la pagina per la creazione di una nuova espressione relativa al mapping type appena inserito (sezione Mapping Expression). Inserire i seguenti dati:
                 * **Name**: inserire il nome *National* scegliendolo dal menu a tendina *suggestion* a lato
                 * **Criteria**: scegliere *National* dal menu a tendina *suggestion* a lato
                 * **Transformation**: lasciare il campo vuoto
