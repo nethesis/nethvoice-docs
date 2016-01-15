@@ -14,7 +14,7 @@ In questo documento verranno descritte la procedura di configurazione dei Sangom
 
 .. warning:: I gateway **Sangoma** vanno portati alla versione di firmware più recente e poi resettati alle impostazioni di fabbrica prima di essere configurati
 
-.. warning:: In caso di linee digitali isdn la chiamata che arriva al |product| dal gateway Sangoma è priva dello 0 iniziale, configurare le :ref:`Rotte in Entrata <rotte_in_entrata_ref_label>` di conseguenza. 
+.. warning:: In caso di linee digitali ISDN la chiamata che arriva al |product| dal gateway Sangoma è priva dello 0 iniziale, configurare le :ref:`Rotte in Entrata <rotte_in_entrata_ref_label>` di conseguenza. 
 
 
 Creazione file di configurazione
@@ -129,13 +129,31 @@ Presto aggiungeremo in questa pagina anche i files di configurazione per i gatew
 
 Può essere utile effettuare il ripristino a factory default dell'apparato e successivamente aggiornare il firmware all'ultima versione.
 
-- Collegarsi all'interfaccia web del Mediatrix http://ip_mediatrix le credenziali di default sono:
+Per resettare l'apparato accendere il gateway e, quando sarà completamente avviato (il Led Power smette di lampeggiare), premere il pulsante di RESET, attendere che tutti i LED lampeggino (prima lampeggerà soltanto il LED POWER e dopo circa 5-7 secondi tutti gli altri). 
+Appena tutti i LED iniziano a lampeggiare, rilasciare il pulsante.
+
+Collegarsi all'interfaccia web del Mediatrix http://ip_mediatrix le credenziali di default sono:
 
 ::
 
-  IP: 192.168.0.11
+  IP: 192.168.0.1
   Username: public
   Password:
+
+- Per configurare Gateway, DNS e SNTP andare nel menù **Network -> Host**, indicare che verrà utilizzato un indirizzo IP statico impostando il campo *Configuration source*, su *Static* ed inserire l'indirizzo del Gateway, del server DNS e del server SNTP nei vari moduli. Alla voce *Static Time Zone* inserire *WEST-1DWEST-2,M3.5.0/02:00:00,M10.5.0/03:00:00*
+
+- Per configurare l'ip del gateway Mediatrix andare nel menù **Network -> Interfaces** e alla riga *Uplink*, selezionare *eth1*, *IPv4 Static* ed impostare l’indirizzo IP nel campo *Static IP Address*.
+
+- In **ISDN -> Basic Rate Interface** le differenze rispetto alla configurazione di default sono:
+        * **Connection Type**: impostare Point to Point oppure Point to Multipoint in base alla configurazione della borchia ISDN
+        * **Link Establishment**: impostare su Permanent (sia per borchie PP che PMP)
+        * **TEI Negotiation**: impostare a Power Up
+        * **Inband DTMF Dialing**: se l’operatore è Telecom e fornisce un servizio di selezione passante, impostare su Disabled
+        * **Maximum Active calls**: impostare 2.
+        * **Calling Name Max lenght**: impostare 0.
+
+.. image:: ../_static/mediatrix_07.png
+                  :alt: Configurazione Mediatrix
 
 - Andare su **SIP -> Gateways** e creare un gateway per ogni porta dell'apparato e collegarli alla porta di Uplink. Utilizzare una porta tcp diversa per ogni gateway.
 
@@ -164,20 +182,50 @@ Può essere utile effettuare il ripristino a factory default dell'apparato e suc
 .. image:: ../_static/mediatrix_05.png
                   :alt: Configurazione Mediatrix
 
+- Creare le rotte in **Call Router -> Route Config** per utilizzare le porte del Mediatrix. Servono una rotta in entrata e una rotta in uscita per ogni porta utilizzata. Le rotte in entrata vanno dalla porta fisica (isdn o analogica) al parte sip, le rotte in uscita l'esatto contrario. Fare attenzione ad associare alla porta la giusta destinazione sip e viceversa.
+
+.. image:: ../_static/mediatrix_08.png
+                  :alt: Configurazione Mediatrix
+
+- In caso di mancanza dello zero iniziale nel numero del chiamante nelle chiamate in entrata è necessario istruire il Mediatrix per aggiungere lo zero iniziale alle chiamate nazionali in ingresso. Accedere in **Call Router -> Route Config** e seguire questa procedura:
+        * Aggiungere un nuovo tipo di mappatura su Mapping type (fare click sul pulsante +).
+                * **Name**: scrivere *ZeroPlus*
+                * **Criteria**: selezionare Calling E164
+                * **Transformation**: selezionare Calling E164
+                * Fare click su Submit & Insert Expression.
+        * Apparirà la pagina per la creazione di una nuova espressione relativa al mapping type appena inserito (sezione Mapping Expression). Inserire i seguenti dati:
+                * **Name**: scegliere *ZeroPlus* dal menu a tendina “suggestion” a lato
+                * **Criteria**: inserire i simboli .+
+                * **Transformation**: inserire i simboli 0\0
+                * Fare click su Submit
+        * Aggiungere un nuovo tipo di mappatura su Mapping type (fare click sul pulsante +).
+                * **Name**: scrivere *National*;
+                * **Criteria**: selezionare Calling TON
+                * **Transformation**: none
+                * Fare click su Submit & Insert Expression
+        * Apparirà la pagina per la creazione di una nuova espressione relativa al mapping type appena inserito (sezione Mapping Expression). Inserire i seguenti dati:
+                * **Name**: inserire il nome *National* scegliendolo dal menu a tendina *suggestion* a lato
+                * **Criteria**: scegliere *National* dal menu a tendina *suggestion* a lato
+                * **Transformation**: lasciare il campo vuoto
+                * **Sub Mappings**: scegliere *ZeroPlus* dal menu a tendina *suggestion* a lato
+                * Fare click su Submit
+
+E' necessario a questo punto indicare l'utilizzo di questa mappatura nelle Route da ISDN -> SIP. Andare in **Call Router -> Route Config** e modificare tutte le rotte con *sources* -> isdn-BRI* e *Destination* -> sip-nethvoice* selezionando in *Mappings* la mappatura **National**.
+ 
+- In **Call Router -> Route Config** creare una nuova regola *Signaling properties*, chiamarla *EarlyDisconnect* e abilitare la proprietà *Early Disconnect*. Dopo avere premuto il pulsante Submit, questa regola va selezionata nelle Route da ISDN -> SIP. Andare in **Call Router -> Route Config** e modificare tutte le rotte con *sources* -> isdn-BRI* e *Destination* -> sip-nethvoice* selezionando in *Signaling Properties* la regola appena creata.
+
+- In **Media -> Codecs** abilitare Voce e Dati solo per il codec G.711 a-Law e disabilitare tutti gli altri codec. Nella sezione Generic VAD, occorre disabilitare il VAD selezionando Disable dal menu a tendina. Cliccare su Edit in corrispondenza del codec G.711 a-Law per aprire le configurazioni avanzate del codec e definire la lunghezza del pacchetto voce a 20ms in *Minimum e Maximun Packetization Time*.
+
+- In **Media -> Misc** inserire *Out-of-brand using RTP* nella sezione *Transport Method* mentre compilare il campo *Payload Type* con il valore *101*.
+
 - In **Telephony -> Services** assicurarsi che per ogni Endpoint le tre voci Endpoint Specific siano a no.
 
 .. image:: ../_static/mediatrix_06.png
                   :alt: Configurazione Mediatrix
 
-- In **ISDN -> Basic Rate Interface** configurare in caso di porte ISDN il tipo, punto-punto o punto-multipunto, in Connection Type e il massimo numero di canali in Maximum Active Calls, due per isdn ad esempio o una per analogiche.
+- In **Telephony -> Misc** nel menù a tendina *Country Selection* selezionare *Italy1* premere il pulsante Submit.
 
-.. image:: ../_static/mediatrix_07.png
-                  :alt: Configurazione Mediatrix
-
-- Creare le rotte in **Call Router -> Route Config** per utilizzare le porte del Mediatrix. Servono una rotta in entrata e una rotta in uscita per ogni porta utilizzata. Le rotte in entrata vanno dalla porta fisica (isdn o analogica) al parte sip, le rotte in uscita l'esatto contrario. Fare attenzione ad associare alla porta la giusta destinazione sip e viceversa.
-
-.. image:: ../_static/mediatrix_08.png
-                  :alt: Configurazione Mediatrix
+- Dopo aver effettuato la configurazione è consigliabile riavviare il gateway.
 
 Configurazione Lato |product|
 -----------------------------
