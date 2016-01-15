@@ -1329,7 +1329,6 @@ Opzioni configurabili:
 *  **saydurationm**: specificare la durata minima da comunicare.
 *  **searchcontexts**: cerca la Casella Vocale in tutti i contesti oltre al corrente.
 *  **sendvoicemail**: abilita l'invio alla Casella Vocale.
-.. _mittente_caselle_vocali_ref_label:
 *  **serveremail**: indirizzo mittente della mail di notifica della Casella Vocale. E' possibile anche forzare un mittente che non sia con il dominio del |parent_product|.  Esempi:
         * *casella.vocale* (configurazione di default) il mittente sarà casella.vocale@dominio con dominio che è quello del |parent_product|
         * *casella.vocale@dominio* il mittente sarà casella.vocale@dominio
