@@ -337,7 +337,7 @@ Indirizzo Email
 Indirizzo Email a cui inviare i messaggi.
 
 
-.. warning:: L'indirizzo mittente della mail sarà casella.vocale@dominio del |product| se non specificato un indirizzo completo, nel caso la posta non sia gestita direttamente dal |product| un dominio fittizio potrebbe portare problemi sull'invio della mail.
+.. warning:: L'indirizzo mittente della mail sarà casella.vocale@dominio del |product| se non specificato un indirizzo completo, nel caso la posta non sia gestita direttamente dal |product| un dominio fittizio potrebbe portare problemi sull'invio della mail. Vedi anche la documentazione per l'impostazione dell'indirizzo mittente :ref:`qui <mittente_caselle_vocali_ref_label>`
 
 Indirizzo Email Gateway SMS
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
