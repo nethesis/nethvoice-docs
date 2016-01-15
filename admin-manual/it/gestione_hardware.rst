@@ -145,12 +145,12 @@ Collegarsi all'interfaccia web del Mediatrix http://ip_mediatrix le credenziali 
 - Per configurare l'ip del gateway Mediatrix andare nel menù **Network -> Interfaces** e alla riga *Uplink*, selezionare *eth1*, *IPv4 Static* ed impostare l’indirizzo IP nel campo *Static IP Address*.
 
 - In **ISDN -> Basic Rate Interface** le differenze rispetto alla configurazione di default sono:
-        * **Connection Type**: impostare Point to Point oppure Point to Multipoint in base alla configurazione della borchia ISDN
-        * **Link Establishment**: impostare su Permanent (sia per borchie PP che PMP)
-        * **TEI Negotiation**: impostare a Power Up
-        * **Inband DTMF Dialing**: se l’operatore è Telecom e fornisce un servizio di selezione passante, impostare su Disabled
-        * **Maximum Active calls**: impostare 2.
-        * **Calling Name Max lenght**: impostare 0.
+        - **Connection Type**: impostare Point to Point oppure Point to Multipoint in base alla configurazione della borchia ISDN
+        - **Link Establishment**: impostare su Permanent (sia per borchie PP che PMP)
+        - **TEI Negotiation**: impostare a Power Up
+        - **Inband DTMF Dialing**: se l’operatore è Telecom e fornisce un servizio di selezione passante, impostare su Disabled
+        - **Maximum Active calls**: impostare 2.
+        - **Calling Name Max lenght**: impostare 0.
 
 .. image:: ../_static/mediatrix_07.png
                   :alt: Configurazione Mediatrix
