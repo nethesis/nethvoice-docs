@@ -116,7 +116,7 @@ Qualora sia necessario consultare uno storico di tutte le chiamate effettuate da
 
 
 Tono di chiamata alla digitazione del prefisso
-----------------------------------------------
+==============================================
 
 |product| non crea un tono di chiamata automaticamente con la digitazione del solo prefisso, ma aspetta l'intera digitazione del numero da chiamare.
 
@@ -138,36 +138,25 @@ Creare il file ::
  
 inserendoci il seguente contenuto e sostituendo **XXX** con il prefisso impostato nell'interfaccia di |product_hotel| ::
 
- ;#------------------------------------------------------------
- ;# DO NOT MODIFY THIS FILE! It is updated automatically by the
- ;# SME Server software. Instead, modify the source template in
- ;# an /etc/e-smith/templates-custom directory. For more
- ;# information, see http://www.e-smith.org/custom/
- ;#
- ;# copyright (C) 1999-2003 Mitel Networks Corporation
- ;#------------------------------------------------------------
-    
+ ;-----     Inizio Configurazione NethHotel -------
+
  [camere]
  exten => _[*#0-9]!,1,Noop(Chiamata Esterna)
  exten => _[*#0-9]!,n,Set(TIMEOUT(digit)=5)
  exten => _[*#0-9]!,n,Set(TIMEOUT(response)=10)
  exten => _[*#0-9]!,n,DISA(no-password,camere-disa,$\{CALLERID(number)\})
- exten => _[*#0-9]!,n,agi(set-room-lang.php,${CALLERID(number)})
- exten => _[*#0-9]!,n,agi(camere.php,${CALLERID(number)},${EXTEN})
- exten => _[*#0-9]!,n(chiamaEXT),Goto(from-internal,${toCall},1)
- exten => _[*#0-9]!,n,Goto(hangup)
- exten => _[*#0-9]!,n(chiamaINT),Macro(dial-one,15,${DIAL_OPTIONS},${toCall})
+ exten => _[*#0-9]!,n,agi(set-room-lang.php,$\{CALLERID(number)\})
+ exten => _[*#0-9]!,n,agi(camere.php,$\{CALLERID(number)\},$\{EXTEN\})
+ exten => _[*#0-9]!,n(chiama),Goto(from-internal,$\{toCall\},1)
  exten => _[*#0-9]!,n(hangup),Macro(hangupcall)
  exten => _[*#0-9]!,n(chiudi),playback(alarm/contattare-reception)
  exten => _[*#0-9]!,n,Macro(hangupcall)
  exten => h,1,Macro(hangupcall)
 
  [camere-disa]
- exten => _[*#0-9]!,1,agi(set-room-lang.php,${CALLERID(number)})
- exten => _[*#0-9]!,n,agi(camere.php,${CALLERID(number)},${EXTEN})
- exten => _[*#0-9]!,n(chiamaEXT),Goto(from-internal,${toCall},1)
- exten => _[*#0-9]!,n,Goto(hangup)
- exten => _[*#0-9]!,n(chiamaINT),Macro(dial-one,15,${DIAL_OPTIONS},${toCall})
+ exten => _[*#0-9]!,1,agi(set-room-lang.php,$\{CALLERID(number)\})
+ exten => _[*#0-9]!,n,agi(camere.php,$\{CALLERID(number)\},$\{EXTEN\})
+ exten => _[*#0-9]!,n(chiama),Goto(from-internal,$\{toCall\},1)
  exten => _[*#0-9]!,n(hangup),Macro(hangupcall)
  exten => _[*#0-9]!,n(chiudi),playback(alarm/contattare-reception)
  exten => _[*#0-9]!,n,Macro(hangupcall)
@@ -176,7 +165,7 @@ inserendoci il seguente contenuto e sostituendo **XXX** con il prefisso impostat
  [sveglia]
  exten => s,1,Noop(Sveglia)
  exten => s,n,playback(beep)
- exten => s,n,agi(set-room-lang.php,${CALLERID(number)})
+ exten => s,n,agi(set-room-lang.php,$\{CALLERID(number)\})
  exten => s,n,playback(alarm/sonoleore)
  exten => s,n,SayUnixTime(,,R)
  exten => s,n,playback(minutes)
@@ -184,7 +173,7 @@ inserendoci il seguente contenuto e sostituendo **XXX** con il prefisso impostat
  exten => s,n,Noop(fine)
 
  exten => failed,1,Noop(Chiamata non risposta - ALLARME)
- exten => failed,n,AGI(svegliafallita.php,${CAMERA},${ALARM},${RECEPTION})
+ exten => failed,n,AGI(svegliafallita.php,$\{CAMERA\},$\{ALARM\},$\{RECEPTION\})
  exten => failed,n,hangup()
 
  [allarmesveglia]
@@ -193,13 +182,14 @@ inserendoci il seguente contenuto e sostituendo **XXX** con il prefisso impostat
  exten => s,n,playback(alarm/sveglianonrisposta)
  exten => s,n,agi(set-reception-lang.php)
  exten => s,n,playback(alarm/camera)
- exten => s,n,SayDigits(${CAMERA})
+ exten => s,n,SayDigits($\{CAMERA\})
  exten => s,n,playback(hours)
- exten => s,n,SayUnixTime(${ALARM},,R)
+ exten => s,n,SayUnixTime($\{ALARM\},,R)
  exten => s,n,playback(minutes)
  exten => s,n,MusicOnHold(sveglia) ; come passiamo la categoria?
  exten => s,n,Noop(fine)
 
+ ;-----     Fine Configurazione NethHotel -------
 
 Dopo aver salvato il file appena creato dare i comandi ::
 
