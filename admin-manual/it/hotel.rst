@@ -141,11 +141,11 @@ inserendoci il seguente contenuto e sostituendo **XXX** con il prefisso impostat
  ;-----     Inizio Configurazione NethHotel -------
 
  [camere]
- exten => _[*#0-9]!,1,Noop(Chiamata Esterna)
- exten => _[*#0-9]!,n,Set(TIMEOUT(digit)=5)
- exten => _[*#0-9]!,n,Set(TIMEOUT(response)=10)
- exten => _[*#0-9]!,n,DISA(no-password,camere-disa,$\{CALLERID(number)\})
- exten => _[*#0-9]!,n,agi(set-room-lang.php,$\{CALLERID(number)\})
+ exten => XXX,1,Noop(Chiamata Esterna)
+ exten => XXX,n,Set(TIMEOUT(digit)=5)
+ exten => XXX,n,Set(TIMEOUT(response)=10)
+ exten => XXX,n,DISA(no-password,camere-disa,$\{CALLERID(number)\})
+ exten => _[*#0-9]!,1,agi(set-room-lang.php,$\{CALLERID(number)\})
  exten => _[*#0-9]!,n,agi(camere.php,$\{CALLERID(number)\},$\{EXTEN\})
  exten => _[*#0-9]!,n(chiama),Goto(from-internal,$\{toCall\},1)
  exten => _[*#0-9]!,n(hangup),Macro(hangupcall)
@@ -154,12 +154,14 @@ inserendoci il seguente contenuto e sostituendo **XXX** con il prefisso impostat
  exten => h,1,Macro(hangupcall)
 
  [camere-disa]
- exten => _[*#0-9]!,1,agi(set-room-lang.php,$\{CALLERID(number)\})
- exten => _[*#0-9]!,n,agi(camere.php,$\{CALLERID(number)\},$\{EXTEN\})
- exten => _[*#0-9]!,n(chiama),Goto(from-internal,$\{toCall\},1)
- exten => _[*#0-9]!,n(hangup),Macro(hangupcall)
- exten => _[*#0-9]!,n(chiudi),playback(alarm/contattare-reception)
- exten => _[*#0-9]!,n,Macro(hangupcall)
+ exten => _[*#0-9].,1,Set(NETH_HOTEL_EXTEN=XXX$\{EXTEN\})
+ exten => _[*#0-9].,n,Noop($\{NETH_HOTEL_EXTEN\})
+ exten => _[*#0-9].,n,agi(set-room-lang.php,$\{CALLERID(number)\})
+ exten => _[*#0-9].,n,agi(camere.php,$\{CALLERID(number)\},$\{NETH_HOTEL_EXTEN\})
+ exten => _[*#0-9].,n(chiama),Goto(from-internal,$\{toCall\},1)
+ exten => _[*#0-9].,n(hangup),Macro(hangupcall)
+ exten => _[*#0-9].,n(chiudi),playback(alarm/contattare-reception)
+ exten => _[*#0-9].,n,Macro(hangupcall)
  exten => h,1,Macro(hangupcall)
 
  [sveglia]
@@ -190,6 +192,7 @@ inserendoci il seguente contenuto e sostituendo **XXX** con il prefisso impostat
  exten => s,n,Noop(fine)
 
  ;-----     Fine Configurazione NethHotel -------
+
 
 Dopo aver salvato il file appena creato dare i comandi ::
 
