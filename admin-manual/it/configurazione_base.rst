@@ -17,7 +17,7 @@ L'accesso è consentito anche sostituendo a *nomeserver* l'ip del |product|.
 
 L'accesso è garantito di default all'utente admin che viene configurato durante l'installazione.
 
-E' possibile poi accedere anche con altri utenti a patto che questi siano membri del gruppo **voicemanager** e che siano stati abilitati tramite il modulo :ref:`Amministratori <amministratori_ref_label>`.
+E' possibile poi accedere anche con altri utenti a patto che questi siano membri del gruppo **voicemanagers** e che siano stati abilitati tramite il modulo :ref:`Amministratori <amministratori_ref_label>`.
 
 
 .. _applica_ref_label:
