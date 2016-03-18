@@ -5,7 +5,7 @@ App Mobile
 App Mobile è l'estensione di |product| per smartphone Android ed Apple e consente una rapida e facile configurazione degli apparati telefonici all'interno della rete. Attraverso la scannerizzazione del codice a barre in cui è presente il MAC address del telefono (sulla scatola del telefono o sul telefono stesso) è possibile effettuare il provisioning dei dispositivi, associando ad essi un interno ed un nome.
 
 
-.. note::  iOS 9 richiede la presenza di un certificato valido, non autofirmato, sul |product| per consentire l'accesso all'app. Stiamo ultimando una procedura che consentirà di installarne uno che sia accettato anche da iOS 9, rivolgersi all'assistenza per maggiori dettagli.
+.. note::  iOS 9 richiede la presenza di un certificato valido, non autofirmato e fornito da un ente terzo fidato e riconosciuto come autorità di certificazione (CA), sul |parent_product| per consentire l'accesso all'app. Nel caso non se ne sia forniti, non si voglia chiederlo direttamente a un'autorità di certificazione o non si sia in grado di gestirlo, stiamo ultimando una procedura che consentirà di installarne uno che sia accettato anche da iOS 9, rivolgersi all'assistenza per maggiori dettagli.
 
 
 Installazione
