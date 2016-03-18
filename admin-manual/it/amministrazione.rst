@@ -20,7 +20,7 @@ Nel caso si voglia consentire l'accesso ad un'utente diverso, deve essere prima 
 
 sezione Collaborazione -> Utenti.
 
-Questo nuovo utente deve, poi, diventare membro del gruppo **voicemanager**, operazione da effettuare nella sezione Gestione -> Gruppi.
+Questo nuovo utente deve, poi, diventare membro del gruppo **voicemanagers**, operazione da effettuare nella sezione Gestione -> Gruppi.
 
 Dopo aver eseguito queste operazioni, si deve accedere al modulo Amministratori e replicare l'utente appena creato sul |product_service| anche qui.
 
