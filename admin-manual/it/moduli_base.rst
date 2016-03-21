@@ -59,7 +59,6 @@ Descrizione
 -----------
 
 Gli annunci TTS hanno lo scopo di riprodurre nel flusso della chiamata la lettura di un testo da parte del sintonizzatore vocale.
-
 Il file audio non viene creato al momento del salva sul modulo ma solo quando |product| ne avrà bisogno nel flusso della chiamata collegandosi via internet al
  sintonizzatore.
 
