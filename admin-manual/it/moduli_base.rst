@@ -68,11 +68,13 @@ Il file audio non viene creato al momento del salva sul modulo ma solo quando |p
 Per vedere il valore di cache configurato dare il comando 
 
 ::
+
    config getprop nethvoice tts-maxsize
 
 Per cambiare il valore, ad esempio a 500 MB
 
 ::
+
    config setprop nethvoice tts-maxsize 500
    expand-template /etc/freepbx.conf
 
@@ -84,6 +86,21 @@ Descrizione
 ~~~~~~~~~~~
 
 Inserire una descrizione per individuare l'annuncio TTS.
+
+TTS Engine
+~~~~~~~~~~
+
+Motore per la sintesi vocale, scegliere tra uno di quelli supportati
+
+Username/Client ID
+~~~~~~~~~~~~~~~~~~
+
+Username o client ID per la connessione al motore TTS
+
+Password
+~~~~~~~~
+
+Password per la connessione al motore TTS
 
 Testo
 ~~~~~
@@ -1620,6 +1637,26 @@ Nome
 ~~~~
 
 Inserire un nome per individuare la registrazione TTS.
+
+Descrizione
+~~~~~~~~~~~
+
+Descrizione per questa registrazione TTS
+
+TTS Engine
+~~~~~~~~~~
+
+Motore per la sintesi vocale, scegliere tra uno di quelli supportati
+
+Username/Client ID
+~~~~~~~~~~~~~~~~~~
+
+Username o client ID per la connessione al motore TTS
+
+Password
+~~~~~~~~
+
+Password per la connessione al motore TTS
 
 Testo
 ~~~~~
