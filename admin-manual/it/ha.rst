@@ -209,6 +209,10 @@ Il backup deve essere configurato su entrambi i nodi ed eseguito su una condivis
 Solo il nodo primario effettuerà realmente il backup, il backup del nodo secondario
 verrà automaticamente abilitato qualora il nodo primario sia guasto.
 
-In caso di guasto di entrambi i nodi, reinstallare il nodo primario, riconfigurare il cluster
-ed infine ripristinare il backup.
-Al termine, riavviare il sistema.
+In caso di guasto di entrambi i nodi, reinstallare il nodo primario,
+ripristinare il backup della configurazione e avviare il cluster: ::
+
+ signal-event nethserver-ha-save
+
+Infine ripristinare il backup dei date e, al termine, riavviare il sistema.
+
