@@ -118,6 +118,7 @@ Moduli Avanzati
    :maxdepth: 2
 
    moduli_avanzati
+   ha
 
 Provisioning
 ------------
