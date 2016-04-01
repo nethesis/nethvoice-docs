@@ -17,7 +17,6 @@ Questa configurazione supporta:
   * MySQL
   * Asterisk
   * NethCTI server
-  
 
 Limitazioni
 ===========
@@ -25,6 +24,11 @@ Limitazioni
 * E' necessario configurare un server LDAP/Active Directory esterno per l'autenticazione.
 * E' necessario configurare un server Jabber esterno per l'integrazione della chat nel CTI
 
+Il demone di monitoraggio (ARDAD) controlla periodicamente lo stato dei servizi.
+Dal momento che alcuni servizi (es. asterisk, MySQL) sono in esecuzione solo sul nodo primario,
+il demone potrebbe generare degli allarmi sul nodo secondario.
+Questi allarmi possono essere silenziati dal Centro Servizi, all'interno del quale
+ogni nodo del cluster ha la propria chiave di registrazione (LK).
 
 Requisiti hardware
 ==================
