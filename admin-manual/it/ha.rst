@@ -18,11 +18,18 @@ Questa configurazione supporta:
   * Asterisk
   * NethCTI server
 
-Limitazioni
-===========
 
+Inoltre, al fine di ridurre la complessità del sistema in alta affidabilità si tenga conto delle seguenti limitazioni.
+
+* Gli aggiornamenti automatici sono disabilitati
 * E' necessario configurare un server LDAP/Active Directory esterno per l'autenticazione.
 * E' necessario configurare un server Jabber esterno per l'integrazione della chat nel CTI
+* La rubrica centralizzata non può essere pubblicata su LDAP
+* Non è disponibile il gruppo *voicemangers*: l'accesso ai report e alle pagine di configurazione deve
+  essere effettuato obbligatoriamente usando l'utente *admin* la cui password è sincronizzata con quella
+  dell'utente *root*
+* E' necessario configurare un server DHCP esterno, e configurarlo affinchè i telefoni utilizzino
+  come server TFTP l'IP virtuale del cluster
 
 Il demone di monitoraggio (ARDAD) controlla periodicamente lo stato dei servizi.
 Dal momento che alcuni servizi (es. asterisk, MySQL) sono in esecuzione solo sul nodo primario,
