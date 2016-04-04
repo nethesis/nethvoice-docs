@@ -25,7 +25,7 @@ Inoltre, al fine di ridurre la complessità del sistema in alta affidabilità si
 * E' necessario configurare un server LDAP/Active Directory esterno per l'autenticazione.
 * E' necessario configurare un server Jabber esterno per l'integrazione della chat nel CTI
 * La rubrica centralizzata non può essere pubblicata su LDAP
-* Non è disponibile il gruppo *voicemangers*: l'accesso ai report e alle pagine di configurazione deve
+* Non è disponibile il gruppo *voicemanagers*: l'accesso ai report e alle pagine di configurazione deve
   essere effettuato obbligatoriamente usando l'utente *admin* la cui password è sincronizzata con quella
   dell'utente *root*
 * E' necessario configurare un server DHCP esterno, e configurarlo affinchè i telefoni utilizzino
