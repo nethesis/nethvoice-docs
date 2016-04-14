@@ -48,11 +48,13 @@ La procedura prevede l'installazione su due nodi gemelli. Ogni nodo dovrà avere
 
 E' necessario possedere due switch all'interno della LAN, per esempio SW1 e SW2.
 Creare un bond su ciascun nodo usando due interfacce di rete. 
-Ogni nodo deve essere collegato ad entrambi gli switch SW1 e SW2.
+Ogni nodo deve essere collegato ad entrambi gli switch SW1 e SW2. Usando switch di tipo managed che supportano IF-MIB è possibile far svolgere a questi dispositivi anche il ruolo di fence device. 
 
 
 Fence device
 ------------
+
+.. image:: ../_static/ha_network.png
 
 Ogni nodo dovrà essere collegato ad almeno un fence device già correttamente configurato.
 
@@ -64,13 +66,18 @@ Molti server possiedono un'interfaccia di gestione preinstallata conosciuta con 
 ILO (HP), DRAC (Dell) o BMC (IBM). Tutte queste interfacce rispettano lo standard IPMI e possono
 essere utilizzate come dispositivi di fence.
 
+Il dispositivo di fence consigliato in questa guida, consiste in uno switch che supporti il protocollo di management tramite SNMP IF-MIB. I nodi usano IF-MIB::ifAdminStatus per controllare lo stato delle interfacce di rete dello switch, chiudendo le porte con cui l'altro nodo comunica con la rete nel caso in cui sia necessario dargli un fence. L'altro nodo non viene spento, ma non sarà più in grado di comunicare. Per garantire che la  rottura di uno switch non fermi il servizio, si usano due switch, collegati come in figura.
+
 Collegamenti esterni:
 
 * lista dei dispositivi supportati: https://access.redhat.com/articles/28603
 * maggiori informazioni sul fencing: http://clusterlabs.org/doc/crm_fencing.html
 
 .. note::
-   In questa guida sono riportati solo i comandi per gestire fence device di tipo IPMI.
+   In questa guida sono riportati solo i comandi per configurare due switch muniti di management IF-MIB come fence device.
+
+.. note::
+   Per abilitare e configurare IF-MIB sullo switch, fare riferimento alla guida ed al supporto del produttore.
 
 Installazione
 =============
@@ -133,23 +140,42 @@ Passi finali
 
  pcs property set stonith-enabled=true
 
-* Configurare i fence device, i comandi possono essere eseguiti su uno qualsiasi dei nodi.
+* Per configurare i fence device, valorizzare correttamente le variabili in questi comandi e lanciarli su uno qualsiasi dei nodi.
 
-  Esempio con nome dominio ``nethserver.org``:
+  * community=<COMMUNITY>:  nome della community SNMP, si configura sullo switch 
+  * ipaddr=<IP_SWITCH_1>: indirizzo IP dello switch 1 o 2
+  * login=<USERNAME>: username dell'utente abilitato ad eseguire IF-MIB::ifAdminStatus.
+  * password=<PASSWORD>: password dell'utente abilitato ad eseguire IF-MIB::ifAdminStatus.
+  * port=N: porta dello switch che verrà chiusa. 
+  * snmp_auth_prot=MD5: il protocollo di autenticazione. Deve essere lo stesso configurato sullo switch. Esempio: MD5
+  * snmp_priv_passwd=<PASSWORD_PRIV>: password usata per cifrare il traffico. Deve essere la stessa configurata sullo switch
+  * snmp_priv_prot=DES: è il protocollo usato per cifrare la comunicazione con lo switch. Per esempio DES. 
+  * snmp_sec_level=authPriv: "authPriv" significa che è richiesta l'autenticazione e che lo scambio di messaggi è cifrato con una pre shared key. Non è consigliato usare altri valori.
+  * snmp_version=<VERSIONE_SNMP>: versione di snmp da usare. 3 va bene. 
+  * pcmk_host_list=<HOST_1>: l'FQDN del nodo (sempre ns1 o ns2) e il dominio. Nel nostro caso, l nome dominio sarà  ``nethserver.org``, quindi  HOST_1 = "ns1.nethserver.org" e HOST_2 "ns2.nethserver.org"
+
+  Per testare di aver correttamente configurato gli switch, verificare che sia possibile chiudere ed aprire le porte con il comando
 
   ::
+  
+    fence_ifmib -a <IP_SWITCH_1> -l <USERNAME> -p <PASSWORD> -P <PASSWORD_PRIV> -b MD5 -B DES -d <VERSIONE_SNMP> -c <COMMUNITY> -n<PORTA> -o <off|on|status>
+
+  Per configurare il cluster per utilizzare gli switch come fence device:
+  
+  ::
+
+    pcs stonith create ns1sw1 fence_ifmib action=off community=<COMMUNITY> ipaddr=<IP_SWITCH_1> login=<USERNAME> passwd=<PASSWORD> port=1 snmp_auth_prot=MD5 snmp_priv_passwd=<PASSWORD_PRIV> snmp_priv_prot=DES snmp_sec_level=authPriv snmp_version=3 pcmk_host_list="<HOST_1>"
+    pcs stonith create ns1sw2 fence_ifmib action=off community=fence ipaddr=<IP_SWITCH_2> login=<USERNAME> passwd=<PASSWORD> port=1 snmp_auth_prot=MD5 snmp_priv_passwd=<PASSWORD_PRIV> snmp_priv_prot=DES snmp_sec_level=authPriv snmp_version=3 pcmk_host_list="<HOST_1>"
+    pcs stonith create ns2sw1 fence_ifmib action=off community=fence ipaddr=<IP_SWITCH_1> login=<USERNAME> passwd=<PASSWORD> port=2 snmp_auth_prot=MD5 snmp_priv_passwd=<PASSWORD_PRIV> snmp_priv_prot=DES snmp_sec_level=authPriv snmp_version=3 pcmk_host_list="<HOST_2>"
+    pcs stonith create ns2sw2 fence_ifmib action=off community=fence ipaddr=<IP_SWITCH_2> login=<USERNAME> passwd=<PASSWORD> port=2 snmp_auth_prot=MD5 snmp_priv_passwd=<PASSWORD_PRIV> snmp_priv_prot=DES snmp_sec_level=authPriv snmp_version=3 pcmk_host_list="<HOST_2>"
+    pcs stonith level add 1 <HOST_1> ns1sw1,ns1sw2
+    pcs stonith level add 1 <HOST_2> ns2sw1,ns2sw2
+    pcs constraint location ns1sw1 prefers <HOST_2>=INFINITY
+    pcs constraint location ns1sw2 prefers <HOST_2>=INFINITY
+    pcs constraint location ns2sw1 prefers <HOST_1>=INFINITY
+    pcs constraint location ns2sw2 prefers <HOST_1>=INFINITY
  
-    pcs stonith create ns2Stonith fence_ipmilan pcmk_host_list="ns2.nethserver.org" ipaddr="ns2-ipmi.nethserver.org" login=ADMIN passwd=ADMIN timeout=4 power_timeout=4 power_wait=4 stonith-timeout=4 lanplus=1 op monitor interval=60s
-    pcs stonith create ns1Stonith fence_ipmilan pcmk_host_list="ns1.nethserver.org" ipaddr="ns1-ipmi.nethserver.org" login=ADMIN passwd=ADMIN timeout=4 power_timeout=4 power_wait=4 stonith-timeout=4 lanplus=1 op monitor interval=60s
-
-  Dove ns1-ipmi.nethserver.org e ns2-ipmi.nethserver.org sono i nomi host associati agli IP delle interfacce di gestione.
-
-  Inoltre, assicurarsi che la risorsa stonith risieda sul nodo corretto:
-
-  ::
-
-    pcs constraint location ns2Stonith prefers ns1.nethserver.org=INFINITY
-    pcs constraint location ns1Stonith prefers ns2.nethserver.org=INFINITY
+  È inoltre consigliato configurare un'altra scheda di rete con un'altra green o rendere accessibile l'interfaccia di IPMI per facilitare il ripristino del nodo dopo un fence.
 
 * Configurare un indirizzo mail a cui inviare le notifiche in caso di guasto:
 
@@ -197,6 +223,20 @@ Dopo aver ripristinato il dispositivo di fence, informare il cluster sullo stato
 di ciascun dispositivo con il seguente comando: ::
 
   crm_resource --resource <stonith_name> --cleanup --node <node_name>
+
+Ripristino dopo un fence con IF-MIB
+-----------------------------------
+
+Nel caso di fencing con IF-MIB il nodo che subisce il fence rimane acceso e se si riaprono le porte dello switch si avrà uno split brain. Quindi sul nodo che ha subito il fence è opportuno fermare il cluster 
+  
+  ::
+  pcs cluster stop --force
+
+riaprire poi le porte dello switch
+  
+  ::
+  fence_ifmib -a <IP_SWITCH_1> -l <USERNAME> -p <PASSWORD> -P <PASSWORD_PRIV> -b MD5 -B DES -d <VERSIONE_SNMP> -c <COMMUNITY> -n<PORTA> -o on
+  fence_ifmib -a <IP_SWITCH_2> -l <USERNAME> -p <PASSWORD> -P <PASSWORD_PRIV> -b MD5 -B DES -d <VERSIONE_SNMP> -c <COMMUNITY> -n<PORTA> -o on
 
 Disaster recovery
 -----------------
