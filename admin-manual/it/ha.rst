@@ -227,16 +227,50 @@ di ciascun dispositivo con il seguente comando: ::
 Ripristino dopo un fence con IF-MIB
 -----------------------------------
 
-Nel caso di fencing con IF-MIB il nodo che subisce il fence rimane acceso e se si riaprono le porte dello switch si avrà uno split brain. Quindi sul nodo che ha subito il fence è opportuno fermare il cluster 
-  
-  ::
+Nel caso di fencing con IF-MIB il nodo che subisce il fence rimane acceso e se si riaprono le porte dello switch si avrà uno split brain. Quindi sul nodo che ha subito il fence è opportuno fermare il cluster  ::
+
   pcs cluster stop --force
 
-riaprire poi le porte dello switch
-  
-  ::
+riaprire poi le porte dello switch  ::
+
   fence_ifmib -a <IP_SWITCH_1> -l <USERNAME> -p <PASSWORD> -P <PASSWORD_PRIV> -b MD5 -B DES -d <VERSIONE_SNMP> -c <COMMUNITY> -n<PORTA> -o on
   fence_ifmib -a <IP_SWITCH_2> -l <USERNAME> -p <PASSWORD> -P <PASSWORD_PRIV> -b MD5 -B DES -d <VERSIONE_SNMP> -c <COMMUNITY> -n<PORTA> -o on
+
+
+Split Brain DRBD
+----------------
+Lo split brain del DRBD è una situazione subdola che accade quando lo storage dei nodi non è più sincronizzato. Tipicamente può avvenire a causa di un fence fallito. Può non essere banale da riconoscere , in quanto il nodo primario avrà sempre il drbd in Primary, ma l'altro sarà Unknow. Migrando i servizi, lo stato del drbd sarà sempre Primary/Unknow sul nodo attivo e Secondary/Unknow sull'altro. L'effetto visibile è che lo storage del nodo attivo non è quello condiviso ma i dati presenti sui due nodi sono diversi. Inoltre con il comando ::
+  
+  pcs status
+
+si vedrà il drbd nello stato:
+ Master/Slave Set: DRBDDataPrimary [DRBDData]
+     Masters: [ ns1.itdsolutions.it ]
+     Stopped: [ ns2.itdsolutions.it ]
+
+invece di:
+ Master/Slave Set: DRBDDataPrimary [DRBDData]
+     Masters: [ ns1.itdsolutions.it ]
+     Slaves: [ ns2.itdsolutions.it ]
+
+Soluzione: 
+
+sul nodo in cui si vogliono tenere tutti i dati dare il comando :: 
+
+  drbdadm invalidate-remote drbd00
+
+sul nodo in cui si desiderano eliminare tutti i dati dare il comando ::
+
+  drbdadm invalidate drbd00
+
+Dare poi su tutti e due i nodi il comando ::
+
+  drbdadm connect drbd00 
+
+verificare poi che il drbd sia di nuovo sincronizzato con ::
+
+  cat /proc/drbd
+
 
 Disaster recovery
 -----------------
