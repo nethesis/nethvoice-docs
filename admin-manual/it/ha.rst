@@ -239,19 +239,21 @@ riaprire poi le porte dello switch  ::
 
 Split Brain DRBD
 ----------------
-Lo split brain del DRBD è una situazione subdola che accade quando lo storage dei nodi non è più sincronizzato. Tipicamente può avvenire a causa di un fence fallito. Può non essere banale da riconoscere , in quanto il nodo primario avrà sempre il drbd in Primary, ma l'altro sarà Unknow. Migrando i servizi, lo stato del drbd sarà sempre Primary/Unknow sul nodo attivo e Secondary/Unknow sull'altro. L'effetto visibile è che lo storage del nodo attivo non è quello condiviso ma i dati presenti sui due nodi sono diversi. Inoltre con il comando ::
-  
+In caso di split brain del DRBD, i dati non vengono più sincronizzati. Può avvenire a causa di un fence fallito.
+Lo stato del DRBD del nodo attivo in questa situazione (visibile con cat /proc/drbd) sarà Primary/Unknown e sul nodo non attivo Secondary/Unknown. (invece di Primary/Secondary e Secondary/Primary)
+Inoltre con il comando ::
+
   pcs status
 
 si vedrà il drbd nello stato:
  Master/Slave Set: DRBDDataPrimary [DRBDData]
-     Masters: [ ns1.itdsolutions.it ]
-     Stopped: [ ns2.itdsolutions.it ]
+     Masters: [ ns1.nethserver.org ]
+     Stopped: [ ns2.nethserver.org ]
 
 invece di:
  Master/Slave Set: DRBDDataPrimary [DRBDData]
-     Masters: [ ns1.itdsolutions.it ]
-     Slaves: [ ns2.itdsolutions.it ]
+     Masters: [ ns1.nethserver.org ]
+     Slaves: [ ns2.nethserver.org ]
 
 Soluzione: 
 
