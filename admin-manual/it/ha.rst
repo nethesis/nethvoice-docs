@@ -227,16 +227,52 @@ di ciascun dispositivo con il seguente comando: ::
 Ripristino dopo un fence con IF-MIB
 -----------------------------------
 
-Nel caso di fencing con IF-MIB il nodo che subisce il fence rimane acceso e se si riaprono le porte dello switch si avrà uno split brain. Quindi sul nodo che ha subito il fence è opportuno fermare il cluster 
-  
-  ::
+Nel caso di fencing con IF-MIB il nodo che subisce il fence rimane acceso e se si riaprono le porte dello switch si avrà uno split brain. Quindi sul nodo che ha subito il fence è opportuno fermare il cluster  ::
+
   pcs cluster stop --force
 
-riaprire poi le porte dello switch
-  
-  ::
+riaprire poi le porte dello switch  ::
+
   fence_ifmib -a <IP_SWITCH_1> -l <USERNAME> -p <PASSWORD> -P <PASSWORD_PRIV> -b MD5 -B DES -d <VERSIONE_SNMP> -c <COMMUNITY> -n<PORTA> -o on
   fence_ifmib -a <IP_SWITCH_2> -l <USERNAME> -p <PASSWORD> -P <PASSWORD_PRIV> -b MD5 -B DES -d <VERSIONE_SNMP> -c <COMMUNITY> -n<PORTA> -o on
+
+
+Split Brain DRBD
+----------------
+In caso di split brain del DRBD, i dati non vengono più sincronizzati. Può avvenire a causa di un fence fallito.
+Lo stato del DRBD del nodo attivo in questa situazione (visibile con cat /proc/drbd) sarà Primary/Unknown e sul nodo non attivo Secondary/Unknown. (invece di Primary/Secondary e Secondary/Primary)
+Inoltre con il comando ::
+
+  pcs status
+
+si vedrà il drbd nello stato:
+ Master/Slave Set: DRBDDataPrimary [DRBDData]
+     Masters: [ ns1.nethserver.org ]
+     Stopped: [ ns2.nethserver.org ]
+
+invece di:
+ Master/Slave Set: DRBDDataPrimary [DRBDData]
+     Masters: [ ns1.nethserver.org ]
+     Slaves: [ ns2.nethserver.org ]
+
+Soluzione: 
+
+sul nodo in cui si vogliono tenere tutti i dati dare il comando :: 
+
+  drbdadm invalidate-remote drbd00
+
+sul nodo in cui si desiderano eliminare tutti i dati dare il comando ::
+
+  drbdadm invalidate drbd00
+
+Dare poi su tutti e due i nodi il comando ::
+
+  drbdadm connect drbd00 
+
+verificare poi che il drbd sia di nuovo sincronizzato con ::
+
+  cat /proc/drbd
+
 
 Disaster recovery
 -----------------
