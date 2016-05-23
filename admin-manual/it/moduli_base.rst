@@ -1402,9 +1402,32 @@ Gestione Multipla Interni
 
 Il modulo gestione multipla interni serve ad eseguire operazioni di massa su gruppi di interni.
 
-Gli interni posso essere raggruppati per intervallo o per nome oltre ovviamente ad essere selezionati tutti.
+Creazione
+---------
 
-Sugli interni selezionati è possibile:
+E' possibile creare interni in maniera seriale indicando un intervallo e configurando le seguenti opzioni
+
+* nome interni, è utilizzabile il carattere %{EXTEN} per indicare il numero interno
+* contesto vedi :ref:`qui <contesti_personalizzati_ref_label>`
+* avviso di chiamata vedi :ref:`qui <funzionalita_base_ref_label>`
+* tipo di telefono, fisico adatto a telefoni SIP ip o WebRTC
+* destinazioni opzionali su nessuna risposta, occupato e non raggiungibile
+* tempo di squillo
+* callgroup vedi :ref:`qui <_interni_sip_callgroup_ref_label>`
+* pickupgroup vedi :ref:`qui <_interni_sip_pickupgroup_ref_label>`
+* codec permessi
+* codec non permessi
+* modificare l'ID in uscita, è utilizzabile il carattere %{EXTEN} per indicare il numero interno o anche una parte di esso, ad esempio 072140551%{EXTEN:1} in caso di intero 201 equivale a 0721405511 (%{EXTEN:1} -> 1), 07214055%{EXTEN:2} in caso di intero 201 equivale a 0721405501 (%{EXTEN:2} -> 01) etc.
+* selezione passante, è utilizzabile il carattere %{EXTEN} per indicare il numero interno o anche una parte di esso, ad esempio 072140551%{EXTEN:1} in caso di intero 201 equivale a 0721405511 (%{EXTEN:1} -> 1), 07214055%{EXTEN:2} in caso di intero 201 equivale a 0721405501 (%{EXTEN:2} -> 01) etc.
+* descrizione selezione passante, è utilizzabile il carattere %{EXTEN} per indicare il numero interno
+
+
+Modifica
+--------
+
+Gli interni posso essere raggruppati per intervallo o per nome oltre ovviamente ad essere selezionati singolarmente o tutti.
+
+Sugli interni selezionati è possibile modificare:
 
 * modificare il nome visualizzato
 * modificare il contesto, vedi :ref:`qui <contesti_personalizzati_ref_label>`
@@ -1416,17 +1439,10 @@ Sugli interni selezionati è possibile:
 * modificare il pickupgroup vedi :ref:`qui <_interni_sip_pickupgroup_ref_label>`
 * modificare i codec permessi
 * modificare i codec non permessi 
-* modificare l'ID in uscita 
+* modificare l'ID in uscita, è utilizzabile il carattere %{EXTEN} per indicare il numero interno o anche una parte di esso, ad esempio 072140551%{EXTEN:1} in caso di intero 201 equivale a 0721405511 (%{EXTEN:1} -> 1), 07214055%{EXTEN:2} in caso di intero 201 equivale a 0721405501 (%{EXTEN:2} -> 01) etc.
 
-Il modulo consente anche la creazione massiva di interni per intervalli e la cancellazione massiva di gruppi di interni.
-
-Nelle varie operazioni di massa è possibile utilizzare il numero di interno nel campo nome e ID in uscita con la sintassi
-
-::
-
-  %{EXTEN}
-
-
+Ogni valore non selezionato verrà ignorato e lasciato alla configuirazione attuale.
+Il modulo consente anche la cancellazione massiva di gruppi di interni.
 
 .. _musiche_di_attesa_ref_label:
 
