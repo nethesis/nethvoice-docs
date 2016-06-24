@@ -130,6 +130,62 @@ Nodo secondario
  
    signal-event nethserver-ha-save
 
+Configurazione reti aggiuntive
+==============================
+
+Per assicurarsi che |product| risponda sempre dall'IP virtuale e che venga utilizzato dai telefoni per il traffico voce, è necessario configurare il source NAT, le reti locali e il bind address. Queste configurazioni non sono necessarie se non ci sono reti locali aggiuntive.
+
+Source NAT
+----------
+
+creare un template-custom di shorewall
+
+::
+
+  mkdir -p /etc/e-smith/templates-custom/etc/shorewall/masq
+
+editare il file  `/etc/e-smith/templates-custom/etc/shorewall/masq/15snat`
+Per ogni rete locale da cui dovrà essere raggiunto l'IP virtuale (tutte le reti con i telefoni) aggiungere al file creato
+
+<INTERFACCIA>:<RETE LOCALE>/<CIDR> <RETE IP VIRTUALE>/<CIDR> <IP VIRTUALE>
+
+quindi se per esempio volessimo aggiungere le reti 10.10.10.0/24 e 10.2.0.0/16, con l'IP virtuale che è 192.168.1.11 sulla rete 192.168.1.0/24, il nostro file sarà:
+
+::
+
+  # SNAT to Virtual IP
+  bond0:10.10.10.0/24 192.168.1.0/24 192.168.1.11
+  bond0:10.2.0.0/16 192.168.1.0/24 192.168.1.11
+
+dare i comandi
+
+::
+
+  expand-template /etc/shorewall/masq
+  shorewall check
+
+e se il sistema non riporta errori
+
+::
+
+  shorewall restart
+
+*Eseguire queste operazioni su tutti e due i nodi*
+
+Reti locali e reti fidate
+-------------------------
+
+Configurare le reti aggiuntive nell'interfaccia di NethServer "Reti fidate" *Eseguire questa operazione su tutti e due i nodi*
+
+Sull'interfaccia di |product|, in `Impostazioni SIP` -> `Configurazione IP` selezionare `IP Statico` o `IP Dinamico` ed aggiungere le reti alle `Reti locali`
+
+Bind address
+------------
+
+Sull'interfaccia di |product|, in `Impostazioni SIP` -> `Indirizzo Utilizzato` scrivere l'`IP virtuale`
+
+Sull'interfaccia di |product|, in `Impostazioni IAX` -> `Indirizzo Utilizzato` scrivere l'`IP virtuale`
+
 
 Passi finali
 ------------
