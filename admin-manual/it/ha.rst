@@ -175,7 +175,7 @@ e se il sistema non riporta errori
 Reti locali e reti fidate
 -------------------------
 
-Configurare le reti aggiuntive nell'interfaccia di NethServer "Reti fidate" *Eseguire questa operazione su tutti e due i nodi*
+Configurare le reti aggiuntive nell'interfaccia di NethServer "Reti fidate". *Eseguire questa operazione su tutti e due i nodi*
 
 Sull'interfaccia di |product|, in `Impostazioni SIP` -> `Configurazione IP` selezionare `IP Statico` o `IP Dinamico` ed aggiungere le reti alle `Reti locali`
 
