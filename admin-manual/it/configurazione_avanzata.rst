@@ -446,6 +446,18 @@ Opzioni Code
 
 *  **wrandom**: causale, usando la penalità come fattore di ponderazione.
 
+Le Code gestiscono anche la penalità degli agenti, la penalità è crescente, un agente con penalità più alta suonerà dopo un agente con penalità più bassa.
+Ad esempio:
+
+::
+
+  201,2
+  202,3
+  203,2
+  204,1
+
+Con la strategia di squillo squillano tutti suonerà il primo agente disponibile con la priorità più bassa, quindi 204, se il 204 è occupato o non disponibile suoneranno gli agenti 201 e 203, se anche questi sono occupati o non disponibili suonerà l'agente 202.
+
 .. _pattern_ref_label:
 
 Pattern

@@ -947,17 +947,6 @@ Agenti Statici
 
 Gli agenti statici sono interni che si intendono sempre attivi come membri di una Coda, non hanno bisogno di login/logout. Inserire gli interni uno per riga, è possibile inserire interni di sistemi remoti o numeri esterni come ad esempio un cellulare. Opzionalmente è possibile inserire la penalità separata dalla virgola, che può essere usata in particolari :ref:`Strategie di Squillo <strategie_squillo_ref_label>`. La penalità è crescente, un agente con penalità più alta suonerà dopo un agente con penalità più bassa.
 
-Ad esempio: 
-
-::
-
-  201,2
-  202,3
-  203,2
-  204,1
-
-Con la :ref:`Strategie di Squillo <strategie_squillo_ref_label>` squillano tutti suonerà il primo agente disponibile con la priorità più bassa, quindi 204, se il 204 è occupato o non disponibile suoneranno gli agenti 201 e 203, se anche questi sono occupati o non disponibili suonerà l'agente 202.
-
 Selezione Veloce Interno
 ~~~~~~~~~~~~~~~~~~~~~~~~
 
