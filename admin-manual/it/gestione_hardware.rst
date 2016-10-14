@@ -196,7 +196,7 @@ Collegarsi all'interfaccia web del Mediatrix http://ip_mediatrix le credenziali 
         - Apparirà la pagina per la creazione di una nuova espressione relativa al mapping type appena inserito (sezione Mapping Expression). Inserire i seguenti dati:
                 * **Name**: scegliere *ZeroPlus* dal menu a tendina “suggestion” a lato
                 * **Criteria**: inserire i simboli .+
-                * **Transformation**: inserire i simboli 0\0
+                * **Transformation**: inserire i simboli 0\\0
                 * Fare click su Submit
         - Aggiungere un nuovo tipo di mappatura su Mapping type (fare click sul pulsante +).
                 * **Name**: scrivere *National*;
