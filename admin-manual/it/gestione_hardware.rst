@@ -6,6 +6,10 @@ Gestione Hardware
 
 .. _configurazione_sangoma_ref_label:
 
+
+
+
+
 Configurazione Sangoma
 ======================
 
@@ -37,12 +41,12 @@ Per creare il file di configurazione, procedere così:
 -  Per le porte **pri** l'interfaccia segnala a quale fascio sip verrà abbinata ogni porta, i fasci vengono automaticamente creati e sono disponibili nella sezione :ref:`fasci SIP <fasci_sip_ref_label>`.
 
 -  Dopo aver cliccato su Salva il modulo propone il link per scaricare la configurazione del Sangoma.
-   Se è stato indicato il mac address è possibile applicare la configurazione tramite il provisioning.
+   **E' possibile forzare la configurazione del gateway premendo sul pulsante apposito.**
 
 Configurazione Sangoma
 ----------------------
 
-Gli apparati Sangoma vengono configurati attraverso un file di configurazione pre-formattato che va importato attraverso l'interfaccia web di amministrazione.
+Se non viene utilizzata la funzionalità di configurazione automatica del Sangoma, è possibile configurare il Sangoma attraverso un file di configurazione pre-formattato che va importato attraverso l'interfaccia web di amministrazione.
 
 -  Collegare il Sangoma alla propria rete LAN, inserendo il cavo di rete nell'interfaccia WAN dello stesso.
 -  Il Sangoma di default richiede un ip in DHCP, controllare dai log di |parent_product| qual'è IP che gli è stato assegnato.
@@ -58,8 +62,6 @@ Configurazione Patton
 =====================
 
 Come descritto ampiamente nel documento :doc:`Hardware <hardware>`, viene suggerito e supportato l'utilizzo di gateway esterni da integrare con il |product|. In questo documento verranno descritte la procedura di configurazione dei Patton e la configurazione in |product|.
-
-.. warning:: I soli Patton con firmware SmartWare sono supportati al momento dal modulo Gateway, il firmware Trinity non è supportato.
 
 .. note::   I Patton dalla versione 6 del proprio firmware supportano la configurazione tramite provisioning vedi anche :ref:`qui <wizard_provisioning_ref_label>`
 
@@ -94,12 +96,13 @@ Per creare il file di configurazione, procedere così:
 -  Per le porte **pri** l'interfaccia segnala a quale fascio sip verrà abbinata ogni porta, i fasci vengono automaticamente creati e sono disponibili nella sezione :ref:`fasci SIP <fasci_sip_ref_label>`.
 
 -  Dopo aver cliccato su Salva il modulo propone il link per scaricare la configurazione del Patton a seconda del firmware.
-   Se è stato indicato il mac address è possibile applicare la configurazione tramite il provisioning.
+   **E' possibile forzare la configurazione del gateway premendo sul pulsante apposito.**
 
 Configurazione Patton
 ---------------------
 
-Gli apparati Patton vengono configurati attraverso un file di configurazione pre-formattato che va importato attraverso l'interfaccia web di amministrazione.
+Se non viene utilizzata la funzionalità di configurazione automatica del Patton, è possibile configurare il Patton attraverso un file di configurazione pre-formattato che va importato attraverso l'interfaccia web di amministrazione.
+   Se è stato indicato il mac address è possibile applicare la configurazione tramite il provisioning.
 
 -  Collegare il Patton alla propria rete LAN, inserendo il cavo di rete nell'interfaccia WAN dello stesso.
 -  Il Patton di default richiede un ip in DHCP, controllare dai log di |parent_product| qual'è IP che gli è stato assegnato.
@@ -115,7 +118,26 @@ Gli apparati Patton vengono configurati attraverso un file di configurazione pre
 Configurazione Mediatrix
 ========================
 
-Gli apparati **Mediatrix** sono dei gateway SIP, sia isdn che analogici, alternativi ai Sangoma e i Patton che possono essere recuperati se |product| va a sostituire un centralino che li utilizzava.
+Creazione file di configurazione
+--------------------------------
+
+|product| introduce il modulo **Configurazione Gateway** che semplifica notevolmente la configurazione di questi apparati.
+
+Per creare il file di configurazione, procedere così:
+
+-  Aprire la pagina **Configurazione Gateway** e scegliere il modello del proprio **Mediatrix**
+
+-  Specificare un nome per la configurazione, l'indirizzo IP del Mediatrix, il gateway della rete e il mac address se si vuole utilizzare il provisioning per configurare il **Mediatrix**
+
+-  Per le porte **isdn** scegliere la tipologia delle porte, o punto-punto o punto-multipunto. L'interfaccia segnala a quale fascio sip verrà abbinata ogni porta, i fasci vengono automaticamente creati e sono disponibili nella sezione :ref:`fasci SIP <fasci_sip_ref_label>`.
+
+-  Dopo aver cliccato su Salva il modulo propone il link per scaricare la configurazione del Mediatrix.
+   **E' possibile forzare la configurazione del gateway premendo sul pulsante apposito.**
+
+Configurazione Mediatrix 
+----------------------
+
+Se non viene utilizzata la funzionalità di configurazione automatica del Mediatrix, è possibile configurare il Mediatrix attraverso un file di configurazione pre-formattato che va importato attraverso l'interfaccia web di amministrazione.
 
 
 Configurazione tramite Interfaccia Web
