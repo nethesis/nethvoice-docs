@@ -478,17 +478,17 @@ Rubrica
 La rubrica di |product| è la Rubrica Centralizzata di |product_service|. Vedere nella documentazione di |product_service| come popolarla e integrarla con la rubrica del |product_cti| e i :ref:`Numeri Brevi <numeri_brevi_ref_label>`.
 
 I telefoni vengono collegati alla rubrica di |product| automaticamente se configurati tramite il :ref:`provisioning <provisioning_ref_label>`, altrimenti per i modelli che lo supportano è possibile configurare una rubrica di tipo LDAP.
-I parametri da utilizzare per i vari modelli sono (sostituire DOMINIO e SUFFISSO con il dominio del |product|, ad esempio pippo.it DOMINIO=pippo SUFFISSO=it) :
+I parametri da utilizzare per i vari modelli sono:
 
 Snom
 ----
 
 ::
 
-  LDAP name filter: (|(sn=%)(cn=%)(givenName=%)(o=%)) 
-  LDAP number filter: (|(telephoneNumber=%)(mobile=%))
+  LDAP name filter: (|(sn=%)(cn=%)(givenName=%)(o=%))
+  LDAP number filter: (|(telephoneNumber=%)(mobile=%)(homePhone=%))
   Indirizzo del server: ip o nome centralino
-  Porta: 389
+  Porta: 10389
   Base: dc=phonebook,dc=nh
   LDAP name attributes: cn sn givenName o
   LDAP number attributes: telephoneNumber
@@ -500,9 +500,9 @@ Yealink
 ::
 
   Filtro Nome LDAP: (|(sn=%)(cn=%)(givenName=%)(o=%))
-  Filtro Numero LDAP: (|(telephoneNumber=%)(mobile=%))
+  Filtro Numero LDAP: (|(telephoneNumber=%)(mobile=%)(homePhone=%))
   Indirizzo Server: ip o nome centralino
-  Porta: 389
+  Porta: 10389
   Base: dc=phonebook,dc=nh
   Battute massime (1-32000): 50
   Attributi nome LDAP: cn sn givenName o
