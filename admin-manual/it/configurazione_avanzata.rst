@@ -93,7 +93,7 @@ E' possibile impostarla nei gruppi, nelle rotte in ingresso o nel FollowMe
 Utilizzo dell'opzione ALERT\_INFO
 ---------------------------------
 
-I telefoni che attualmente supportano la suoneria differenziata tramite ALERT\_INFO sono, i Cisco, gli Snom e gli Yealink . La stringa da inserire nel campo *Suoneria differenziata* **varia da telefono a telefono**, per cui occorre rifarsi alla documentazione dello specifico modello, anche se di normalmente è qualcosa del tipo: ::
+I telefoni che attualmente supportano la suoneria differenziata tramite ALERT\_INFO sono, i Cisco, gli Snom, gli Yealink e i Sangoma. La stringa da inserire nel campo *Suoneria differenziata* **varia da telefono a telefono**, per cui occorre rifarsi alla documentazione dello specifico modello, anche se di normalmente è qualcosa del tipo: ::
 
   http://127.0.0.1/Bellcore-dr3
 
@@ -106,21 +106,29 @@ Utilizzo dell' ALERT\_INFO con parametro info
 
 In alternativa è possibile utilizzare il parametro info. Tale direttiva va indicata nel campo *Suoneria Differenziata* (o Alert Info) del Centralino (Gruppo, Rotte in Ingresso, Follow me) inserendo questa stringa: ::
 
-  <http://notused >\;info=direct
+  <http://www.notused >\;info=direct
 
 in questa maniera si attiverà la suoneria custom relativa al Caller ID: direct
 
-.. warning::   Per i telefoni Yealink dal firmware X.60.0.140 la stringa funzionate è 
+.. warning::   Per i telefoni Yealink precedenti il firmware X.60.0.140 la stringa funzionate è 
     
-    <http://www.notused >\;info=direct
+  <http://notused >\;info=direct
 
 
 Tale opzione permette di definire (a differenza di ALERT\_INFO) **una suoneria personalizzata per ogni telefono**, inoltre permette di gestire un **parco di telefoni misto** (snom e grandstream).
 
+Esempio telefoni Sangoma
+------------------------
+
+Nei telefoni Sangoma è possibile abilitare l'opzione *direct* in Phone -> Funzionalità -> Alert Ring 
+
+* Alert Ring Text: *direct*
+* Alert Ring File: *scegliere la suoneria*
+
 Esempio SNOM 360
 ----------------
 
-Negli snom è possibile abilitare l'opzione *direct* tra le preferenze
+Negli Snom è possibile abilitare l'opzione *direct* tra le preferenze
 
 *  Alert Internal Text: *direct*
 *  Alert-Info Ringer: *scegliere la suoneria*
