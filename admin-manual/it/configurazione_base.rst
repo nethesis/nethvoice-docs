@@ -480,6 +480,17 @@ La rubrica di |product| è la Rubrica Centralizzata di |product_service|. Vedere
 I telefoni vengono collegati alla rubrica di |product| automaticamente se configurati tramite il :ref:`provisioning <provisioning_ref_label>`, altrimenti per i modelli che lo supportano è possibile configurare una rubrica di tipo LDAP.
 I parametri da utilizzare per i vari modelli sono:
 
+Sangoma
+-------
+::
+
+  LDAP name filter: (&(telephoneNumber=*)(sn=%))
+  LDAP number filter: (&(telephoneNumber=%)(sn=*))
+  Indirizzo del server: ip o nome centralino
+  Porta: 389
+  Base: dc=phonebook,dc=nh
+  LDAP display name: cn
+
 Snom
 ----
 
