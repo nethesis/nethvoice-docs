@@ -1642,7 +1642,7 @@ Descrizione
 
 Le registrazioni TTS sono lo strumento per creare sul |product| dei files audio tramite la lettura di un testo da parte del sintonizzatore vocale.
 
-Una volta creata una registrazione TTS automaticamente viene creata anche una :ref: `registrazione di sistema <registrazioni_di_sistema_ref_label>` che consente di utilizzare il file audio creato tramite i moduli che lo prevedono, ad esempio gli :ref:`annunci <annunci_ref_label>`, le :ref:`code <code_ref_label>`, i :ref:`gruppi di chiamata <gruppi_di_chiamata_ref_label>`, :ref:`IVR <ivr_ref_label>` etc..
+Una volta creata una registrazione TTS automaticamente viene creata anche una :ref:`registrazione di sistema <registrazioni_di_sistema_ref_label>` che consente di utilizzare il file audio creato tramite i moduli che lo prevedono, ad esempio gli :ref:`annunci <annunci_ref_label>`, le :ref:`code <code_ref_label>`, i :ref:`gruppi di chiamata <gruppi_di_chiamata_ref_label>`, :ref:`IVR <ivr_ref_label>` etc..
 
 
 Configurazione
