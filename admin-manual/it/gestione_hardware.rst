@@ -102,7 +102,7 @@ Configurazione Patton
 ---------------------
 
 Se non viene utilizzata la funzionalità di configurazione automatica del Patton, è possibile configurare il Patton attraverso un file di configurazione pre-formattato che va importato attraverso l'interfaccia web di amministrazione.
-   Se è stato indicato il mac address è possibile applicare la configurazione tramite il provisioning.
+Se è stato indicato il mac address è possibile applicare la configurazione tramite il provisioning.
 
 -  Collegare il Patton alla propria rete LAN, inserendo il cavo di rete nell'interfaccia WAN dello stesso.
 -  Il Patton di default richiede un ip in DHCP, controllare dai log di |parent_product| qual'è IP che gli è stato assegnato.
