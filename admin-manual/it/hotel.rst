@@ -61,7 +61,7 @@ Ogni cliente può configurare la sveglia della propria camera componendo il nume
 Gruppi
 ======
 
-E' possibile raggruppare più camere in un unico gruppo. Questo consente di configurare la sveglia su una singola camera e poi estendere la configurazione a tutte le camere appartenenti al gruppo.
+E' possibile raggruppare più camere in un unico gruppo. Questo consente effettuare operazioni su tutte le camere membre del gruppo (checkin, checkout, sveglia) e avere delle politiche sulle chiamate dedicate alle camere che fanno parte del gruppo nelle impostazioni(abilitazione chiamate tra le camere, abilitazione chiamate tra tutte le camere, abilitazione chiamate esterne).
 
 
 Aggiungere un Extra
