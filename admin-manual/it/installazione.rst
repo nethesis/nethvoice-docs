@@ -28,7 +28,7 @@ dove per *nomeserver* si intende il nome (anche seguito dal dominio) dato al |pr
 
 L'accesso è consentito anche sostituendo a *nomeserver* l'ip del |product|.
 
-L'accesso è garantito di default all'utente admin che viene configurato durante l'installazione.
+L'accesso è garantito di default all'utente admin che viene configurato durante l'installazione con la stessa password dell'utente root.
 
 
 .. _accesso_esterno_ref_label:

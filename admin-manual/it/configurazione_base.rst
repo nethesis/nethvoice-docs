@@ -487,18 +487,7 @@ Sangoma
   LDAP name filter: (&(telephoneNumber=*)(sn=%))
   LDAP number filter: (&(telephoneNumber=%)(sn=*))
   Indirizzo del server: ip o nome centralino
-  Porta: 389
-  Base: dc=phonebook,dc=nh
-  LDAP display name: cn
-
-Sangoma
--------
-::
-
-  LDAP name filter: (&(telephoneNumber=*)(sn=%))
-  LDAP number filter: (&(telephoneNumber=%)(sn=*))
-  Indirizzo del server: ip o nome centralino
-  Porta: 389
+  Porta: 10389
   Base: dc=phonebook,dc=nh
   LDAP display name: cn
 
