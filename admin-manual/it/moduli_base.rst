@@ -1580,7 +1580,7 @@ Fase 1
 
 Caricare il file audio tramite l'apposito box e cliccare su CARICA.
 
-Il file **deve essere** .wav (registrato per esempio con il Registratore di Microsoft Windows) del formato PCM, 16Bit, 8000Hz.
+Il file **deve essere** .wav (registrato per esempio con il Registratore di Microsoft Windows) del formato PCM, 16Bit, 8000Hz e mono.
 
 Questo perché il |product| non fa nessuna operazione sul file caricato, tipo conversione etc.., per non intaccarne la qualità, per questo il file deve essere già del formato con il quale il |product| gestisce le registrazioni di sistema.
 
