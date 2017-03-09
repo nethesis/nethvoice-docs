@@ -12,45 +12,7 @@ Descrizione
 
 |product|, di default, permette l'accesso all'interfaccia web al solo utente admin.
 
-Nel caso si voglia consentire l'accesso ad un'utente diverso, deve essere prima creato sul |product_service| sottostante, accedendo alla pagina
-
-::
-
-  http://nome_server:980
-
-sezione Collaborazione -> Utenti.
-
-Questo nuovo utente deve, poi, diventare membro del gruppo **voicemanagers**, operazione da effettuare nella sezione Gestione -> Gruppi.
-
-Dopo aver eseguito queste operazioni, si deve accedere al modulo Amministratori e replicare l'utente appena creato sul |product_service| anche qui.
-
-Creando un nuovo utente per interfaccia web del |product| è anche possibile limitarne l'accesso ad alcuni moduli e/o solo ad un intervallo di interni, code e gruppi di chiamata.
-
-Configurazione
---------------
-
-Nome utente
-~~~~~~~~~~~
-
-Indicare il nome utente, l'utente deve essere già stato creato sul |product_service|.
-
-Restrizioni d'accesso
----------------------
-
-Nome Dipartimento
-~~~~~~~~~~~~~~~~~
-
-Restringe la visualizzazione per questo utente a IVR e Registrazioni di Sistema che appartengono a questo dipartimento.
-
-Intervallo Interni
-~~~~~~~~~~~~~~~~~~
-
-Possibilità di restringere l'accesso per l'utente ad un intervallo di numerazioni, comprende Interni, Gruppi di Chiamata e Code.
-
-Accesso Amministratore
-~~~~~~~~~~~~~~~~~~~~~~
-
-Selezionare i moduli di |product| a cui consentire l'accesso all'utente.
+La versione 11 di |product| installata su base a partire da |product_service| 7.3 non supporta l'accesso con altro utente.
 
 .. _api_asterisk_ref_label:
 

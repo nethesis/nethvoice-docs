@@ -4,7 +4,7 @@
 
 |product_hotel| è un modulo di |product| che permette di gestire degli interni opportunamente configurati come camere di un hotel.
 
-L'accesso al |product_hotel| è consentito di default all'utente admin e ad ogni utente membro del gruppo hotelmanager.
+L'accesso al |product_hotel| è consentito di default all'utente admin.
 
 Caratteristiche principali:
 

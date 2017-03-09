@@ -4,7 +4,7 @@ Analisi Costi
 
 L'Analisi Costi è un modulo di |product| che consente di avere un'analisi statistica e dei grafici dedicati a tutte le chiamate uscenti e ai loro costo.
 
-L'accesso all'Analisi Costi è consentito di default all'utente admin e ad ogni utente membro del gruppo costmanager.
+L'accesso all'Analisi Costi è consentito di default all'utente admin.
 
 Il modulo si divide in tre sezioni, Report dove vengono racconti i dati statistici, Grafici dove questi dati vengono utilizzati per produrre dei grafici che semplificano l'analisi dei dati e Configurazione dove è possibile gestire le opzioni di tariffazione e raggruppamento degli interni.
 
