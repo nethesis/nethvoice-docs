@@ -4,7 +4,7 @@ Report Code
 
 Il Report delle Code è un modulo di |product| che consente di avere un'analisi statistica e dei grafici dedicati a tutte le chiamate entrate in una coda.
 
-L'accesso al Report Code è consentito di default all'utente admin e ad ogni utente membro del gruppo queuemanager.
+L'accesso al Report Code è consentito di default all'utente admin.
 
 Il modulo si divide in due sezioni principalmente, quelle Generale e Distribuzione dove vengono racconti i dati statistici, e quella dei Grafici dove questi dati vengono utilizzati per produrre dei grafici che semplificano l'analisi dei dati.
 
