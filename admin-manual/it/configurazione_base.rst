@@ -489,38 +489,48 @@ Sangoma
   Indirizzo del server: ip o nome centralino
   Porta: 10389
   Base: dc=phonebook,dc=nh
+  LDAP name attributes: cn o
+  LDAP number attributes: telephoneNumber mobile homePhone
   LDAP display name: cn
+  Protocol: Version3
+  Ricerca LDAP per chiamate in ingresso: Off
+  Risultati di ordinamento LDAP: On
 
 Snom
 ----
 
 ::
 
-  LDAP name filter: (|(sn=%)(cn=%)(givenName=%)(o=%))
+  LDAP name filter: (|(cn=%)(o=%))
   LDAP number filter: (|(telephoneNumber=%)(mobile=%)(homePhone=%))
   Indirizzo del server: ip o nome centralino
   Porta: 10389
   Base: dc=phonebook,dc=nh
-  LDAP name attributes: cn sn givenName o
-  LDAP number attributes: telephoneNumber
+  LDAP name attributes: cn o
+  LDAP number attributes: telephoneNumber mobile homePhone
   LDAP display name: %cn %o
+  LDAP over TLS: off
+  Ordina Risultati: on
+  Predici Testo: on
+  Fai una query iniziale: on
 
 Yealink
 -------
 
 ::
 
-  Filtro Nome LDAP: (|(sn=%)(cn=%)(givenName=%)(o=%))
+  Filtro Nome LDAP: (|(cn=%)(o=%))
   Filtro Numero LDAP: (|(telephoneNumber=%)(mobile=%)(homePhone=%))
   Indirizzo Server: ip o nome centralino
   Porta: 10389
   Base: dc=phonebook,dc=nh
   Battute massime (1-32000): 50
-  Attributi nome LDAP: cn sn givenName o
-  Attributi numero LDAP: telephoneNumber
+  Attributi nome LDAP: cn o
+  Attributi numero LDAP: telephoneNumber mobile homePhone
   Mostra nome LDAP: %cn %o
   Protocol: Versione3
   Ricerca LDAP per chiamate in ingresso: Disabilitato
+  Ricerca LDAP in uscita: Disabilitato
   Risultati di ordinamento LDAP: Abilitato
 
 
