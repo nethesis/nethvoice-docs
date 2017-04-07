@@ -338,71 +338,12 @@ Introduzione
 
 Il G.729 è un codec che permette di minimizzare l'utilizzo della banda nelle comunicazioni audio digitali pur mantenendo una buona qualità sonora, ciò significa che usando G.729 è possibile veicolare, a parità di banda, un maggior numero di comunicazioni contemporanee `rispetto agli altri codec <http://voiprevolution.blogosfere.it/2007/02/quanta-banda-per-il-voip.html>`_ (come il G.711), con un consumo per canale pari a 8 kbit/s.
 
-La licenza G.729 per Asterisk è a pagamento e viene venduta per singolo canale: è possibile acquistare più licenze per ogni server, così da poter instaurare più connessioni contemporanee utilizzando il codec G.729.
-
-|product| ha anche una versione opensource di questo codec già installata che è possibile utilizzare in alternativa della versione a pagamento, consigliamo di verificarne la compatibilità con un provider esterno.
-Per migliore la qualità delle chiamate e minimizzare il consumo della banda, il codec G.729a diventa indispensabile:
+|product| ha una versione opensource di questo codec che è possibile installare dal Software Center, consigliamo di verificarne la compatibilità con un provider esterno.
+Per migliore la qualità delle chiamate e minimizzare il consumo della banda, il codec G.729 diventa indispensabile:
 
 *  nei fasci con :ref:`provider VoIP <configurazione_provider_voip_ref_label>`.
 *  nei fasci :ref:`IAX infra-sede <collegamenti_remoti_ref_label>`.
 *  negli interni posizionati fuori sede e collegati a |product| via VPN.
-
-Una volta acquistata la licenza per il codec dal proprio rivenditore Digium (ART-00299) sarà possibile registrarla seguendo il documento
-successivo.
-
-Installazione
--------------
-
-Per installare il modulo dare il comando
-
-::
-
- yum localinstall http://packages.digium.com/centos/6/current/i386/RPMS/register-3.0.3-1_centos6.i686.rpm
- yum install nethserver-g729-helper
-
-A questo punto registrare la licenza con il comando
-
-::
-
- register
-
-Selezionare le voci 1 e 5 ed inserire la key ID ricevuta via mail.
-
-La Key ID è un codice del tipo: G729-9TLYBFP4XXXX (se c'è uno -01 o -02 finale, vanno tolti)
-
-Inserire i dati anagrafici richiesti, la procedura dovrebbe concludersi in questo modo:
-
-::
-
-  Wrote license to /var/lib/asterisk/licenses/G729-GLP6742727P4.lic
-
-Controllare che l'installazione sia andata a buon fine con il comando
-
-::
-
-  asterisk -rx "g729 show version"
-
-il cui output dovrebbe essere simile a
-
-::
-
-  Digium G.729A Module Version 11.0_3.1.5 (optimized for i686_32)
-
-Per usarlo sostituire nella configurazione dei fasci :ref:`sip <fasci_sip_ref_label>` o :ref:`iax <fasci_iax_ref_label>` questa voce (o equivalente):
-
-::
-
-  allow=gsm&alaw
-
-con questa
-
-::
-
-  allow=g729
-
-Per caricare il modulo riavviare il servizio |product|, tutte le chiamate saranno **terminate**,
-
- |product_command| restart
 
 .. _strategie_squillo_ref_label:
 
