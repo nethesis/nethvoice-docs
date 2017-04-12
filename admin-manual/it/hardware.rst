@@ -180,5 +180,5 @@ Telefoni IP
 
 Ogni modello di telefono IP che gestisce correttamente Il protocollo Sip è compatibile. La scelta dipende poi dalle funzionalità desiderate in ogni postazione.
 
-Al momento consigliamo **Yealink** o **Snom** come marca con il miglior rapporto qualità/prezzo.
+Al momento consigliamo **Sangoma*** come marca con il miglior rapporto qualità/prezzo.
 

@@ -21,7 +21,7 @@ Una volta configurato un Controllo Flusso Chiamata viene creato un codice, \*28X
 Integrazione BLF Telefoni
 -------------------------
 
-E' possibile integrare il Controllo Flusso Chiamata con le luci dei telefoni che supportano il BLF (es. snom, thomson, grandstream GXP2000), semplicemente impostando come extension da monitorare sul telefono il codice del Controllo Flusso Chiamata ( \*28X ). In questa maniera, la luce accesa informa che il Controllo Flusso Chiamata configurato in quel pulsante è in modalità **Alternativa**, la luce spenta significa che è in modalità **Normale**. Premendo il pulsante relativo a questo interno, si potrà attivare/disattivare il servizio.
+E' possibile integrare il Controllo Flusso Chiamata con le luci dei telefoni che supportano il BLF (es. Sangoma, Yealink, Snom), semplicemente impostando come extension da monitorare sul telefono il codice del Controllo Flusso Chiamata ( \*28X ). In questa maniera, la luce accesa informa che il Controllo Flusso Chiamata configurato in quel pulsante è in modalità **Alternativa**, la luce spenta significa che è in modalità **Normale**. Premendo il pulsante relativo a questo interno, si potrà attivare/disattivare il servizio.
 
 Configurazione
 --------------
@@ -446,7 +446,7 @@ dove XX è il progressivo assegnato a questo Servizio Notte.
 Integrazione BLF Telefoni
 -------------------------
 
-E' possibile integrare il Servizio Notte con le luci dei telefoni che supportano il BLF (es. snom, thomson, grandstream GXP2000), semplicemente impostando come extension da monitorare sul telefono l'interno relativo alla attivazione/disattivazione del servizio notte ( 8XX2). In questa maniera, la luce accesa informa che il Servizio Notte manuale configurato in quel pulsante è attivo, la luce spenta significa che è non attivo. Premendo il pulsante relativo a questo interno, si potrà attivare/disattivare il servizio, ascoltando un messaggio di conferma.
+E' possibile integrare il Servizio Notte con le luci dei telefoni che supportano il BLF (es. Sangoma, yealink, Snom), semplicemente impostando come extension da monitorare sul telefono l'interno relativo alla attivazione/disattivazione del servizio notte ( 8XX2). In questa maniera, la luce accesa informa che il Servizio Notte manuale configurato in quel pulsante è attivo, la luce spenta significa che è non attivo. Premendo il pulsante relativo a questo interno, si potrà attivare/disattivare il servizio, ascoltando un messaggio di conferma.
 
 .. _condizioni_temporali_ref_label:
 
