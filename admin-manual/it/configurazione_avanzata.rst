@@ -51,6 +51,21 @@ Nelle :ref:`Impostazioni Avanzate Terminali <provisioning_impostazione_avanzate_
 Configurazioni di Default Provisioning marche più utilizzate
 ------------------------------------------------------------
 
+Sangoma
+~~~~~~~
+
+I telefoni Sangoma vengono supportati dalla versione di firmware **2.0.4** in poi, la configurazione base che viene caricata con il Provisioning imposta:
+
+*  Configurazione dell'interno selezionato.
+*  Collegamento con il |product| per quanto riguarda sip, ntp, etc.
+*  Accesso all'eventuale :ref:`Casella Vocale <casella_vocale_ref_label>`.
+*  Codice di :ref:`Pickup <funzionalita_base_ref_label>`.
+*  Rubrica LDAP collegata con |product| vedi :ref:`qui <rubrica_ref_label>`.
+*  Tasti Funzionali programmati con nell'ordine **Registro Chiamate**, **Rubrica LDAP**, **Pickup**, **DND**.
+*  Funzioni DND (Do not Disturb), CF (Call Forward), CFB (Call Forward Busy), CFU (Call Forward Unavailable) mappate sui codici di |product|
+*  Possibilità di aggiornare il firmware dei telefoni caricandolo nella cartella /var/lib/tftpboot/ con nome MODELLO.rom ad esempio fw300.rom fw500.rom etc.
+
+
 Yealink
 ~~~~~~~
 
@@ -61,7 +76,6 @@ I telefoni Yealink vengono supportati dalla versione di firmware **v70** in poi,
 *  Accesso all'eventuale :ref:`Casella Vocale <casella_vocale_ref_label>`.
 *  Codice di :ref:`Pickup <funzionalita_base_ref_label>`.
 *  Rubrica LDAP collegata con |product| vedi :ref:`qui <rubrica_ref_label>`.
-*  Rubrica remota collegata con |product| vedi :ref:`qui <rubrica_ref_label>`.
 *  Tasti Funzionali programmati con nell'ordine **Registro Chiamate**, **Rubrica LDAP**, **Pickup**, **Menù**.
 *  Funzioni DND (Do not Disturb), CF (Call Forward), CFB (Call Forward Busy), CFU (Call Forward Unavailable) mappate sui codici di |product|
 *  Possibilità di aggiornare il firmware dei telefoni caricandolo nella cartella /var/lib/tftpboot/ con nome MODELLO.rom ad esempio T22.rom T46.rom etc.
@@ -81,6 +95,17 @@ I telefoni Snom vengono supportati dalla versione di firmware **v8**, la configu
 *  Possibilità di aggiornare il firmware dei telefoni caricandolo nella cartella /var/lib/tftpboot/ con nome MODELLO.bin ad esempio 300.bin 821.bin etc.
 *  Per la serie 3XX, che da firmware superiori alla versione 6 per problemi di spazio non include il pacchetto linguaggi, se vengono caricati nella cartella /var/lib/tftpboot/ i files gui\_lang\_IT.xml (Italiano) e gui\_lang\_EN.xml (Inglese), verranno caricati automaticamente
 
+Alcatel
+~~~~~~~
+
+Per i telefoni Alcatel la configurazione base che viene caricata con il Provisioning imposta:
+
+*  Configurazione dell'interno selezionato.
+*  Collegamento con il |product| per quanto riguarda sip, ntp, etc.
+*  Accesso all'eventuale :ref:`Casella Vocale <casella_vocale_ref_label>`.
+*  Rubrica LDAP collegata con |product| vedi :ref:`qui <rubrica_ref_label>`.
+*  Possibilità di aggiornare il firmware dei telefoni caricandolo nella cartella /var/lib/tftpboot/ con nome MODELLO.bin ad esempio IP251G.img IP301G.img etc.
+
 .. _suoneria_differenziata_ref_label:
 
 Suoneria Differenziata
@@ -93,7 +118,7 @@ E' possibile impostarla nei gruppi, nelle rotte in ingresso o nel FollowMe
 Utilizzo dell'opzione ALERT\_INFO
 ---------------------------------
 
-I telefoni che attualmente supportano la suoneria differenziata tramite ALERT\_INFO sono, i Cisco, gli Snom, gli Yealink e i Sangoma. La stringa da inserire nel campo *Suoneria differenziata* **varia da telefono a telefono**, per cui occorre rifarsi alla documentazione dello specifico modello, anche se di normalmente è qualcosa del tipo: ::
+I telefoni che attualmente supportano la suoneria differenziata tramite ALERT\_INFO sono  gli Snom, gli Yealink e i Sangoma. La stringa da inserire nel campo *Suoneria differenziata* **varia da telefono a telefono**, per cui occorre rifarsi alla documentazione dello specifico modello, anche se di normalmente è qualcosa del tipo: ::
 
   http://127.0.0.1/Bellcore-dr3
 
