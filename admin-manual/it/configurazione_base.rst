@@ -484,8 +484,8 @@ Sangoma
 -------
 ::
 
-  LDAP name filter: (&(telephoneNumber=*)(sn=%))
-  LDAP number filter: (&(telephoneNumber=%)(sn=*))
+  LDAP name filter: (|(cn=%)(o=%))
+  LDAP number filter: (|(telephoneNumber=%)(mobile=%)(homePhone=%))
   Indirizzo del server: ip o nome centralino
   Porta: 10389
   Base: dc=phonebook,dc=nh
