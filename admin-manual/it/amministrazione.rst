@@ -10,9 +10,20 @@ Amministratori
 Descrizione
 -----------
 
-|product|, di default, permette l'accesso all'interfaccia web al solo utente admin.
+|product|, di default, permette l’accesso all’interfaccia web al solo utente admin.
 
-La versione 11 di |product| installata su base a partire da |product_service| 7.3 non supporta l'accesso con altro utente.
+Nel caso si voglia consentire l’accesso ad un utente diverso, deve essere prima creato sul |parent_product| sottostante, accedendo alla pagina
+
+http://nome_server:980
+
+
+Questo nuovo utente deve, poi, diventare membro del gruppo voicemanagers, gruppo che va creato se non presente.
+
+Dopo aver eseguito queste operazioni, si deve accedere al modulo Amministratori e replicare l’utente appena creato sul NethService NG anche qui.
+
+Creando un nuovo utente per interfaccia web del NethVoice è anche possibile limitarne l’accesso ad alcuni moduli e/o solo ad un intervallo di interni, code e gruppi di chiamata.
+
+
 
 .. _api_asterisk_ref_label:
 
