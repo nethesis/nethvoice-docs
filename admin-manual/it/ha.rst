@@ -2,6 +2,9 @@
 HA (High Availability)
 ======================
 
+.. note::
+   Disponibile solo su |parent_product| 6.
+
 |product| supporta una configurazione in HA limitata ad alcuni scenari specifici.
 
 Il cluster è composto da due nodi in modalità active-passive:

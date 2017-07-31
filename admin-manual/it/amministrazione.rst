@@ -14,14 +14,15 @@ Descrizione
 
 Nel caso si voglia consentire l’accesso ad un utente diverso, deve essere prima creato sul |parent_product| sottostante, accedendo alla pagina
 
-http://nome_server:980
+::
 
+  http://nome_server:980
 
 Questo nuovo utente deve, poi, diventare membro del gruppo voicemanagers, gruppo che va creato se non presente.
 
-Dopo aver eseguito queste operazioni, si deve accedere al modulo Amministratori e replicare l’utente appena creato sul NethService NG anche qui.
+Dopo aver eseguito queste operazioni, si deve accedere al modulo Amministratori e replicare l’utente appena creato sul Server Manager anche qui.
 
-Creando un nuovo utente per interfaccia web del NethVoice è anche possibile limitarne l’accesso ad alcuni moduli e/o solo ad un intervallo di interni, code e gruppi di chiamata.
+Creando un nuovo utente per interfaccia web di |product| è anche possibile limitarne l’accesso ad alcuni moduli e/o solo ad un intervallo di interni, code e gruppi di chiamata.
 
 
 

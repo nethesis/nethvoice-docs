@@ -438,30 +438,30 @@ Configurazione Rotta In Entrata
 La :ref:`Rotta in Entrata <rotte_in_entrata_ref_label>` serve a raccogliere tutte le configurazioni effettuate fino a questo punto e a metterle logicamente in ordine per ottenere il comportamento voluto dal |product| rispetto ad una chiamata entrante su un determinato numero. La :ref:`Rotta in Entrata <rotte_in_entrata_ref_label>` deve destinare la chiamata alle configurazioni temporali se previste, quindi ad una :ref:`Condizione Temporale <condizioni_temporali_ref_label>`, che poi a seconda degli orari smisterà la chiamata ad eventuali distributori, :ref:`IVR <ivr_ref_label>` o :ref:`Call Query Routing <call_query_routing_ref_label>` che a loro volta ripartiranno la chiamata o verso :ref:`Gruppi di Chiamata <gruppi_di_chiamata_ref_label>` o :ref:`Code <code_ref_label>` o direttamente agli interni :ref:`sip <interni_sip_ref_label>` o :ref:`iax <interni_iax_ref_label>`. Chiaramente in caso di configurazioni più semplici alcuni di questi passaggi possono essere tralasciati, possono non essere necessarie :ref:`Condizioni Temporali <condizioni_temporali_ref_label>` e/o :ref:`IVR <ivr_ref_label>` e :ref:`Call Query Routing <call_query_routing_ref_label>` e/o :ref:`Gruppi di Chiamata <gruppi_di_chiamata_ref_label>` o :ref:`Code <code_ref_label>`.
 
 .. image:: ../_static/config_base_01.png
-               :alt:  Schema Configurazione Chiamata in Entrata
+   :alt:  Schema Configurazione Chiamata in Entrata
 
 .. _gestione_chiamata_in_uscita_ref_label:
 
 Gestione Chiamata in Uscita
 ===========================
 
-
 |product| gestisce le chiamate in uscita tramite le :ref:`Rotta in Uscita <rotte_in_uscita_ref_label>`. Tutte le politiche di controllo della chiamata in uscita possono essere configurate nelle rotte, dalla sequenza di utilizzo delle linee telefoniche alla differenziazione per modello di chiamata, per interno, ai diversi comportamenti a seconda dell'ora, del giorno del mese etc. E' possibile inoltre decidere le politiche per le chiamate in uscita anche tramite il modulo :ref:`Contesti Personalizzati <contesti_personalizzati_ref_label>` interno per interno, configurando preventivamente a che rotta in uscita ogni interno può accedere. La politica per le chiamate in uscita va configurata di solito come ultimo passo, dopo aver affrontato le :ref:`chiamate in entrata <gestione_chiamata_in_entrata_ref_label>` e collegato le :doc:`sorgenti telefoniche <gestione_hardware>`.
 
 Rimuovi prefisso nazionale in uscita
--------------------------------------
+------------------------------------
+
 Nei fasci non VoIP, per consentire al centralino di chiamare numeri nazionali che sonno stati memorizzati in rubrica con il prefisso nazionale (+39, 0039) è necessario rimuovere questo prefisso prima di inviare la chiamata al fascio. 
-Per fare ciò, nella pagina del fascio selezionare 
- Wizard Regole di Chiamata -> Rimuovi prefisso dai numeri locali
+Per fare ciò, nella pagina del fascio selezionare  Wizard Regole di Chiamata -> Rimuovi prefisso dai numeri locali
 inserire poi il prefisso (0039) e un pattern di chiamata che identifica i numeri a cui dovrà essere applicata la regola, per esempio "NXXXXX."
 
 Utilizzo prefisso in uscita
 ---------------------------
 
-|product| non richiede l'utilizzo di prefissi per impegnare la linea, si tratta di una configurazione legata ai centralini tradizionali, che comunque può essere riprodotta nelle :ref:`Rotta in Uscita <rotte_in_uscita_ref_label>`.
+|product| non richiede l'utilizzo di prefissi per impegnare la linea, si tratta di una configurazione legata ai centralini tradizionali,
+che comunque può essere riprodotta nelle :ref:`rotte_in_uscita_ref_label`.
+
 
 .. _chiamata_video_ref_label:
-
 
 Chiamata Video
 ==============
@@ -480,65 +480,71 @@ La rubrica di |product| è la Rubrica Centralizzata di |product_service|. Vedere
 I telefoni vengono collegati alla rubrica di |product| automaticamente se configurati tramite il :ref:`provisioning <provisioning_ref_label>`, altrimenti per i modelli che lo supportano è possibile configurare una rubrica di tipo LDAP.
 I parametri da utilizzare per i vari modelli sono:
 
+Parametri comuni
+----------------
+
+Indirizzo del server:
+  ``Indirizzo IP o nome centralino``
+
+Base: 
+  ``dc=phonebook,dc=nh``
+  
+Attributi nome LDAP: 
+  ``cn o``
+  
+Attributi numero LDAP: 
+  ``telephoneNumber mobile homePhone``
+
+Porta:
+  ``389`` per |parent_product| 6
+  
+  ``10389`` per |parent_product| 7
+
+Filtro ricerca nomi LDAP:
+  ``(&(telephoneNumber=*)(sn=%))`` per |parent_product| 6
+
+  ``(|(cn=%)(o=%))`` per |parent_product| 7
+
+Filtro ricerca numeri LDAP:
+  ``(&(telephoneNumber=%)(sn=*))`` per |parent_product| 6
+
+  ``(|(telephoneNumber=%)(mobile=%)(homePhone=%))`` per |parent_product| 7
+
+Protocollo:
+  ``Version3``
+
 Sangoma
 -------
-::
 
-  LDAP name filter: (|(cn=%)(o=%))
-  LDAP number filter: (|(telephoneNumber=%)(mobile=%)(homePhone=%))
-  Indirizzo del server: ip o nome centralino
-  Porta: 10389
-  Base: dc=phonebook,dc=nh
-  LDAP name attributes: cn o
-  LDAP number attributes: telephoneNumber mobile homePhone
-  LDAP display name: cn
-  Protocol: Version3
-  Ricerca LDAP per chiamate in ingresso: Off
-  Risultati di ordinamento LDAP: On
+Parametri aggiuntivi:
+
+* Ricerca LDAP per chiamate in ingresso: Off
+* Risultati di ordinamento LDAP: On
 
 Snom
 ----
 
-::
+Parametri aggiuntivi:
 
-  LDAP name filter: (|(cn=%)(o=%))
-  LDAP number filter: (|(telephoneNumber=%)(mobile=%)(homePhone=%))
-  Indirizzo del server: ip o nome centralino
-  Porta: 10389
-  Base: dc=phonebook,dc=nh
-  LDAP name attributes: cn o
-  LDAP number attributes: telephoneNumber mobile homePhone
-  LDAP display name: %cn %o
-  LDAP over TLS: off
-  Ordina Risultati: on
-  Predici Testo: on
-  Fai una query iniziale: on
+* LDAP su TLS: off
+* Ordina Risultati: on
+* Predici Testo: on
+* Fai una query iniziale: on
 
 Yealink
 -------
 
-::
+Parametri aggiuntivi:
 
-  Filtro Nome LDAP: (|(cn=%)(o=%))
-  Filtro Numero LDAP: (|(telephoneNumber=%)(mobile=%)(homePhone=%))
-  Indirizzo Server: ip o nome centralino
-  Porta: 10389
-  Base: dc=phonebook,dc=nh
-  Battute massime (1-32000): 50
-  Attributi nome LDAP: cn o
-  Attributi numero LDAP: telephoneNumber mobile homePhone
-  Mostra nome LDAP: %cn %o
-  Protocol: Versione3
-  Ricerca LDAP per chiamate in ingresso: Disabilitato
-  Ricerca LDAP in uscita: Disabilitato
-  Risultati di ordinamento LDAP: Abilitato
+* Battute massime (1-32000): 50
+* Mostra nome LDAP: %cn %o
+* Ricerca LDAP per chiamate in ingresso: Disabilitato
+* Ricerca LDAP in uscita: Disabilitato
+* Risultati di ordinamento LDAP: Abilitato
 
 
-In alternativa per i modelli Yealink che non hanno la rubrica LDAP inserire nel pannello Rubrica -> Rubrica Remota -> URL Remoto la stringa: ::
-
-  http://ip_centralino/phonebook/yealink.php?NAME=#SEARCH
-
-e in Nome Display Rubrica Centralino
+In alternativa per i modelli Yealink che non hanno la rubrica LDAP inserire nel pannello :guilabel:`Rubrica -> Rubrica Remota -> URL Remoto` la stringa
+``http://ip_centralino/phonebook/yealink.php?NAME=#SEARCH`` e in :guilabel:`Nome Display`, "Rubrica Centralino".
 
 
 .. _registrazione_chiamate_ref_label:
