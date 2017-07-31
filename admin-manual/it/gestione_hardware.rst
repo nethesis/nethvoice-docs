@@ -135,7 +135,7 @@ Per creare il file di configurazione, procedere così:
    **E' possibile forzare la configurazione del gateway premendo sul pulsante apposito.**
 
 Configurazione Mediatrix 
-----------------------
+------------------------
 
 Se non viene utilizzata la funzionalità di configurazione automatica del Mediatrix, è possibile configurare il Mediatrix attraverso un file di configurazione pre-formattato che va importato attraverso l'interfaccia web di amministrazione.
 

@@ -59,8 +59,8 @@ Descrizione
 -----------
 
 Gli annunci TTS hanno lo scopo di riprodurre nel flusso della chiamata la lettura di un testo da parte del sintonizzatore vocale.
-Il file audio non viene creato al momento del salva sul modulo ma solo quando |product| ne avrà bisogno nel flusso della chiamata collegandosi via internet al
- sintonizzatore.
+Il file audio non viene creato al momento del salva sul modulo ma solo quando |product| ne avrà bisogno nel flusso della chiamata collegandosi 
+via internet al sintonizzatore.
 
 |product| gestisce una cache per non creare ogni volta i messaggi utilizzati più spesso che di default è di 250 MB.
 
@@ -1408,13 +1408,13 @@ Creazione
 E' possibile creare interni in maniera seriale indicando un intervallo e configurando le seguenti opzioni
 
 * nome interni, è utilizzabile il carattere %{EXTEN} per indicare il numero interno
-* contesto vedi :ref:`qui <contesti_personalizzati_ref_label>`
-* avviso di chiamata vedi :ref:`qui <funzionalita_base_ref_label>`
+* contesto vedi :ref:`contesti_personalizzati_ref_label`
+* avviso di chiamata vedi :ref:`funzionalita_base_ref_label`
 * tipo di telefono, fisico adatto a telefoni SIP ip o WebRTC
 * destinazioni opzionali su nessuna risposta, occupato e non raggiungibile
 * tempo di squillo
-* callgroup vedi :ref:`qui <_interni_sip_callgroup_ref_label>`
-* pickupgroup vedi :ref:`qui <_interni_sip_pickupgroup_ref_label>`
+* callgroup vedi :ref:`interni_sip_callgroup_ref_label`
+* pickupgroup vedi :ref:`interni_sip_pickupgroup_ref_label`
 * codec permessi
 * codec non permessi
 * modificare l'ID in uscita, è utilizzabile il carattere %{EXTEN} per indicare il numero interno o anche una parte di esso, ad esempio 072140551%{EXTEN:1} in caso di intero 201 equivale a 0721405511 (%{EXTEN:1} -> 1), 07214055%{EXTEN:2} in caso di intero 201 equivale a 0721405501 (%{EXTEN:2} -> 01) etc.
@@ -1430,13 +1430,13 @@ Gli interni posso essere raggruppati per intervallo o per nome oltre ovviamente 
 Sugli interni selezionati è possibile modificare:
 
 * modificare il nome visualizzato
-* modificare il contesto, vedi :ref:`qui <contesti_personalizzati_ref_label>`
-* modificare lo stato dell'avviso di chiamata, vedi :ref:`qui <funzionalita_base_ref_label>`.
+* modificare il contesto, vedi :ref:`contesti_personalizzati_ref_label`
+* modificare lo stato dell'avviso di chiamata, vedi :ref:`funzionalita_base_ref_label`.
 * modificare la tipologia di telefono fisico o WebRTC, se si trasforma un interno WebRTC in fisico è necessario un riavvio di |product|
 * modificare le destinazioni opzionali su nessuna risposta, occupato e non raggiungibile
 * modificare il tempo di squillo
-* modificare il callgroup vedi :ref:`qui <_interni_sip_callgroup_ref_label>`
-* modificare il pickupgroup vedi :ref:`qui <_interni_sip_pickupgroup_ref_label>`
+* modificare il callgroup vedi :ref:`interni_sip_callgroup_ref_label`
+* modificare il pickupgroup vedi :ref:`interni_sip_pickupgroup_ref_label`
 * modificare i codec permessi
 * modificare i codec non permessi 
 * modificare l'ID in uscita, è utilizzabile il carattere %{EXTEN} per indicare il numero interno o anche una parte di esso, ad esempio 072140551%{EXTEN:1} in caso di intero 201 equivale a 0721405511 (%{EXTEN:1} -> 1), 07214055%{EXTEN:2} in caso di intero 201 equivale a 0721405501 (%{EXTEN:2} -> 01) etc.
