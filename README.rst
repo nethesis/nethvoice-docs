@@ -13,7 +13,7 @@ All other .rst files are chapters of the manual.
 If you wish to add a new chapter, create a new file and add it to the index.rst file.
 
 Branches
---------
+========
 
 The manual should be develped on **master** branch and merged to current released version.
 
@@ -23,8 +23,9 @@ Available branches:
 - v11: NethVoice 11
 - v14: NethVoice 14
 
-Alpha branches are marked by appending **a** to the branch name, eg: v14a
-Beta branches are marked by appending **b** to the branch name, eg: v14b
+Alpha branches are marked by appending **a** to the branch name, eg: v14a.
+
+Beta branches are marked by appending **b** to the branch name, eg: v14b.
 
 
 How to contribute
