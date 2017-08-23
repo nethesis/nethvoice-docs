@@ -3,7 +3,7 @@
 Manuale amministratore |product| |release| 
 ==========================================
 
-.. image:: ../_static/logo.png
+.. image:: _static/logo.png
          :alt: |product|
 
 .. rubric::
@@ -53,7 +53,7 @@ Indici
 * :ref:`genindex`
 * :ref:`search`
 
-.. image:: ../_static/by-nc-sa_small.png
+.. image:: _static/by-nc-sa_small.png
    :alt: CC by-nc-sa
    :align: right
    :target: http://creativecommons.org/licenses/by-nc-sa/4.0/legalcode
