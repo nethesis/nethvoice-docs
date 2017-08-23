@@ -77,9 +77,9 @@ Per creare il file di configurazione, procedere così:
 
     Il modello è individuabile dal codice che si trova collegandosi all'interfaccia web del Patton vedi la seconda immagine sotto.
 
-.. image:: ../_static/patton_01.png
+.. image:: _static/patton_01.png
             :alt: Configurazione Patton
-.. image:: ../_static/patton_02.png
+.. image:: _static/patton_02.png
             :alt: Configurazione Patton
 
 .. note::   Nel caso non sia in elenco il proprio modello di Patton, utilizzarne un'altro con le stesse funzionalità e comunicare al supporto la mancanza
@@ -174,39 +174,39 @@ Collegarsi all'interfaccia web del Mediatrix http://ip_mediatrix le credenziali 
         - **Maximum Active calls**: impostare 2.
         - **Calling Name Max lenght**: impostare 0.
 
-.. image:: ../_static/mediatrix_07.png
+.. image:: _static/mediatrix_07.png
                   :alt: Configurazione Mediatrix
 
 - Andare su **SIP -> Gateways** e creare un gateway per ogni porta dell'apparato e collegarli alla porta di Uplink. Utilizzare una porta tcp diversa per ogni gateway.
 
-.. image:: ../_static/mediatrix.png
+.. image:: _static/mediatrix.png
                   :alt: Configurazione Mediatrix
 
 - In **SIP -> Servers** configurare l'ip del |product| alle voci Registrar Host, Proxy Host, Messaging Server Host con la sintassi IP:0 che indica la porta 5060
 
-.. image:: ../_static/mediatrix_01.png
+.. image:: _static/mediatrix_01.png
                   :alt: Configurazione Mediatrix
 
 - In **SIP -> Registrations** creare una unità di registrazione per ogni gateway configurato. Consigliamo di utilizzare username a partire da 4000 per poi facilitare la configurazione lato |product|.
 
-.. image:: ../_static/mediatrix_02.png
+.. image:: _static/mediatrix_02.png
                   :alt: Configurazione Mediatrix
 
 - In **SIP -> Authentication** creare una autenticazione per ogni gateway configurato. Consigliamo di utilizzare username a partire da 4000 con password uguale allo username per poi facilitare la configurazione lato |product|. In fase di creazione disabilitare Validate Realm.
 
-.. image:: ../_static/mediatrix_03.png
+.. image:: _static/mediatrix_03.png
                   :alt: Configurazione Mediatrix
-.. image:: ../_static/mediatrix_04.png
+.. image:: _static/mediatrix_04.png
                   :alt: Configurazione Mediatrix
 
 - In **SIP -> Transport** assicurarsi che Add Sip Transport in Registration sia Enable.
 
-.. image:: ../_static/mediatrix_05.png
+.. image:: _static/mediatrix_05.png
                   :alt: Configurazione Mediatrix
 
 - Creare le rotte in **Call Router -> Route Config** per utilizzare le porte del Mediatrix. Servono una rotta in entrata e una rotta in uscita per ogni porta utilizzata. Le rotte in entrata vanno dalla porta fisica (isdn o analogica) al parte sip, le rotte in uscita l'esatto contrario. Fare attenzione ad associare alla porta la giusta destinazione sip e viceversa.
 
-.. image:: ../_static/mediatrix_08.png
+.. image:: _static/mediatrix_08.png
                   :alt: Configurazione Mediatrix
 
 - In caso di mancanza dello zero iniziale nel numero del chiamante nelle chiamate in entrata è necessario istruire il Mediatrix per aggiungere lo zero iniziale alle chiamate nazionali in ingresso. Accedere in **Call Router -> Route Config** e seguire questa procedura:
@@ -242,7 +242,7 @@ E' necessario a questo punto indicare l'utilizzo di questa mappatura nelle Route
 
 - In **Telephony -> Services** assicurarsi che per ogni Endpoint le tre voci Endpoint Specific siano a no.
 
-.. image:: ../_static/mediatrix_06.png
+.. image:: _static/mediatrix_06.png
                   :alt: Configurazione Mediatrix
 
 - In **Telephony -> Misc** nel menù a tendina *Country Selection* selezionare *Italy1* premere il pulsante Submit.
@@ -305,7 +305,7 @@ Collegata la porta WAN del **Portech mv372**, di default risponderà all'indiriz
 
 Modificare l'IP del portech tramite il pannello **WAN Settings** e salvare la configurazione cliccando su *Save Changes*, verrà richiesto il reboot dell'apparato.
 
-.. image:: ../_static/portech_01.jpg
+.. image:: _static/portech_01.jpg
             :alt: WAN Settings
 
 
@@ -321,7 +321,7 @@ Se usiamo il carattere “\*” vengono accettati tutti i numeri.
 
 L'url servirà per identificare la rotta in ingresso su |product|
 
-.. image:: ../_static/portech_02.jpg
+.. image:: _static/portech_02.jpg
             :alt: Mobile To LAN
 
 LAN to Mobile Settings
@@ -336,7 +336,7 @@ Impostare una regola che ci permetta di chiamare tutti i numeri.
 
 In questo caso il carattere “#” permette di inoltrare automaticamente la chiamata al numero composto.
 
-.. image:: ../_static/portech_03.jpg
+.. image:: _static/portech_03.jpg
             :alt: Lan To Mobile
 
 SIP Settings
@@ -355,7 +355,7 @@ Configurare le credenziali per integrare il Gateway GSM/UMTS con |product|
   Domain Server: ip centralino
   Proxy Server: ip centralino
 
-.. image:: ../_static/portech_04.png
+.. image:: _static/portech_04.png
             :alt: Mobile 1
 
 SIP Responses
@@ -363,7 +363,7 @@ SIP Responses
 
 Modificare questa configurazione per restituire al |product| un segnale di servizio non disponibile, nel caso in cui una SIM sia occupata.
 
-.. image:: ../_static/portech_05.png
+.. image:: _static/portech_05.png
             :alt: Servizio non disponibile 
 
 Modificare la configurazione in questo modo, altrimenti **chiamate su cellulari spenti o non raggiungibili, restituiscono il tono di libero** al posto del normale tono di occupato.
@@ -373,7 +373,7 @@ Modificare la configurazione in questo modo, altrimenti **chiamate su cellulari 
   OFF 180:Ringing
   ON 183:Session Progress
 
-.. image:: ../_static/portech_06.jpg
+.. image:: _static/portech_06.jpg
             :alt: Tono di libero
 
 Mobile Status
@@ -381,7 +381,7 @@ Mobile Status
 
 Vengono visualizzati i parametri di registrazione al network GSM/UMTS della sim.
 
-.. image:: ../_static/portech_07.jpg
+.. image:: _static/portech_07.jpg
             :alt: Mobile Status
 
 DTMF Setting
@@ -389,7 +389,7 @@ DTMF Setting
 
 Configurare i toni DTMF cambiando **2833** al posto di inband
 
-.. image:: ../_static/portech_08.png
+.. image:: _static/portech_08.png
             :alt: DTMF Setting
 
 Mobile Setting
@@ -402,7 +402,7 @@ Configurare |product|
 
 Si dovrà configurare |product| in modo da poter utilizzare in entrata ed in uscita il Gateway GSM/UMTS
 
-.. image:: ../_static/portech_09.png
+.. image:: _static/portech_09.png
             :alt: Fascio |product|
 
 .. warning:: Il Nome Fascio nelle Impostazioni in Uscita deve essere uguale allo username dei Dettagli PEER.
@@ -441,7 +441,7 @@ Nell'esempio è stato inserito *#31* che vale per l'operatore TIM, per altri ope
 Configurare Rotta in Ingresso
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-.. image:: ../_static/portech_10.png
+.. image:: _static/portech_10.png
             :alt: Rotta In Entrata |product|
 
 Creare una nuova rotta con
@@ -455,7 +455,7 @@ Ed impostare la destinazione ad un interno, gruppo, ecc..
 Configurare Rotta in Uscita
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-.. image:: ../_static/portech_11.png
+.. image:: _static/portech_11.png
             :alt: Rotta In Uscita |product|
 
 Nome Regola:
@@ -496,13 +496,13 @@ Configurare il **Mobile 2**
   Domain Server: ip centralino
   Proxy Server: ip centralino
 
-.. image:: ../_static/portech_12.png
+.. image:: _static/portech_12.png
             :alt: Mobile 2
 
 Configurare Secondo Fascio SIP
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-.. image:: ../_static/portech_13.png
+.. image:: _static/portech_13.png
             :alt: Secondo Fascio |product|
 
 .. warning:: Il Nome Fascio nelle Impostazioni in Uscita deve essere uguale allo username dei Dettagli PEER.
@@ -532,7 +532,7 @@ Portech multi SIM e configurazione delle porte
 
 In portech con più di una sim è necessario controllare la configurazione del pannello *Port Setting* sul Portech
 
-.. image:: ../_static/portech_14.png
+.. image:: _static/portech_14.png
             :alt: Configurazione delle porte sul Portech
 
 Se la configurazione è quella in figura, sarà necessario configurare il parametro *port* dei fasci **in maniera coerente**:
@@ -567,11 +567,11 @@ Differenziare la destinazione della chiamata per ogni SIM
 
 Per differenziare le chiamate in entrata sulle due SIM è necessario modificare su Route Mobile to lan Settings creando una nuova regola alla posizione 7 con URL 998.
 
-.. image:: ../_static/portech_15.png
+.. image:: _static/portech_15.png
 
 Fatto questo in Mobile Settings si deve configurare il Routing Range della prima scheda da 0 a 5 e per la seconda da 6 a 10.
 
-.. image:: ../_static/portech_16.png
+.. image:: _static/portech_16.png
 
 Questa configurazione permetterà di ricevere le chiamate della prima SIM sulla Rotta in Entrata con Selezione Passante 999 e le chiamate della seconda SIM sulla Rotta in Entrata con Selezione Passante 998.
 
@@ -587,7 +587,7 @@ In alternativa è possibile modificare la configurazione di *Mobile To LAN Setti
 
 Le chiamate entranti **riceveranno un tono di linea** e componendo successivamente il numero dell'interno desiderato la chiamata verrà redirezionata sull'interno scelto.
 
-.. image:: ../_static/portech_17.jpg
+.. image:: _static/portech_17.jpg
             :alt: Lan Tone
 
 

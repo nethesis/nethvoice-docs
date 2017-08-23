@@ -437,7 +437,7 @@ Configurazione Rotta In Entrata
 
 La :ref:`Rotta in Entrata <rotte_in_entrata_ref_label>` serve a raccogliere tutte le configurazioni effettuate fino a questo punto e a metterle logicamente in ordine per ottenere il comportamento voluto dal |product| rispetto ad una chiamata entrante su un determinato numero. La :ref:`Rotta in Entrata <rotte_in_entrata_ref_label>` deve destinare la chiamata alle configurazioni temporali se previste, quindi ad una :ref:`Condizione Temporale <condizioni_temporali_ref_label>`, che poi a seconda degli orari smisterà la chiamata ad eventuali distributori, :ref:`IVR <ivr_ref_label>` o :ref:`Call Query Routing <call_query_routing_ref_label>` che a loro volta ripartiranno la chiamata o verso :ref:`Gruppi di Chiamata <gruppi_di_chiamata_ref_label>` o :ref:`Code <code_ref_label>` o direttamente agli interni :ref:`sip <interni_sip_ref_label>` o :ref:`iax <interni_iax_ref_label>`. Chiaramente in caso di configurazioni più semplici alcuni di questi passaggi possono essere tralasciati, possono non essere necessarie :ref:`Condizioni Temporali <condizioni_temporali_ref_label>` e/o :ref:`IVR <ivr_ref_label>` e :ref:`Call Query Routing <call_query_routing_ref_label>` e/o :ref:`Gruppi di Chiamata <gruppi_di_chiamata_ref_label>` o :ref:`Code <code_ref_label>`.
 
-.. image:: ../_static/config_base_01.png
+.. image:: _static/config_base_01.png
    :alt:  Schema Configurazione Chiamata in Entrata
 
 .. _gestione_chiamata_in_uscita_ref_label:

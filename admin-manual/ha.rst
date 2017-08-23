@@ -57,7 +57,7 @@ Ogni nodo deve essere collegato ad entrambi gli switch SW1 e SW2. Usando switch 
 Fence device
 ------------
 
-.. image:: ../_static/ha_network.png
+.. image:: _static/ha_network.png
 
 Ogni nodo dovrà essere collegato ad almeno un fence device già correttamente configurato.
 

@@ -393,7 +393,7 @@ Un possibile esempio di utilizzo può essere la necessità di chiudere in antici
 Il Servizio Notte è configurabile anche da |product_cti|, dove è possibile bypassare la configurazione del |product| per personalizzarne temporaneamente il funzionamento.
 
 
-.. image:: ../_static/servizionotte_01.png
+.. image:: _static/servizionotte_01.png
                :alt: Esempio di percorso delle chiamate in entrata con Servizio Notte configurato
 
 Configurazione
