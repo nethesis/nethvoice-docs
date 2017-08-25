@@ -130,12 +130,25 @@ Premendo il tasto "Salva" la configurazione viene scritta nel centralino e da qu
 
 Applicazioni
 ============
+La sezione "Applicazioni" consente di creare, modificare o eliminare determinate funzionalità del centralino, che nel wizard vengono solo create e configurate, ma che poi vengono utilizzate nel CTI.
+
+Ad esempio le schede cliente, nel wizard, vengono configurate per accedere al database e per mostrare in maniera pratica le informazioni ottenute, ma il reale utilizzo sarà all'interno del CTI, durante le chiamate o durante la ricerca di determinate informazioni.
 
 Schede cliente
 --------------
 
 Sorgenti video
 --------------
+In questa sezione è possibile configurare le sorgenti video o telecamere IP. Cliccando sul bottone "Crea nuova sorgente" è possibile compilare un form per la creazione:
+
+- Nome: specificare il nome da dare alla sorgente
+- Extension: specificare l'interno relativo alla sorgente video (precedentemente creata nella sezione "Utenti")
+- URL: specificare l'URL di collegamento in cui prendere i frame video da mostrare
+- Codice d'apertura: inserire il tono DTMF relativo per un eventale codice d'apertura (se la telecamera è collegata ad un cancello ad esempio)
+- Profilo: specificare il profilo da assegnare alla sorgente per filtare la tipologia di utente che ha accesso alla sorgente video
+- Connessione: premere il bottone "Verifica" e verificare che l'URL inserito sia corretto, testando la connessione e ottenendo il frame video relativo.
+
+Una volta completata la compilazione del form premere "Salva" per salvare le infomazioni e creare una nuova sorgente video.
 
 Amministratore
 ==============
