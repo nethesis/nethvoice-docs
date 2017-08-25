@@ -110,12 +110,23 @@ Premere "Crea" per creare la configurazione relativa per quel fascio VoIP.
 
 Rotte
 =====
+Nella sezione rotte è possibile configurare le rotte in entrata e in uscita per il vostro centralino
 
 In entrata
 ----------
+Una volta in questa sezione, vi si presenta la lista delle rotte già configurate, con la possibilità di modificarle o eliminarle.
+
+Premendo sul bottone "Crea nuova rotta" si apre una differente applicazione il Visual Plan, che vi consente di creare, modificare e collegare le varie componenti per gestire al meglio il flusso della chiamata su un determinato numero in ingresso.
+
+Premendo il simbolo di spunta nell'applicazione Visual Plan, la configurazione della vostra rotta verrà salvata e da quel momento potrete ricevere chiamate e indirizzare il flusso a seconda della vostra scelta.
 
 In uscita
 ---------
+In questa sezione è presente la lista delle rotte in uscita presenti, la prima volta che questa pagina viene visitata, il wizard vi propone delle rotte in uscita di default con i pattern di chiamate specifici per le diverse lingue.
+
+E' possibile inoltre specificare l'ordine con cui usare i fasci, precedentemente creati, e regolare così in maniera personalizzata il percorso delle chiamate in uscita.
+
+Premendo il tasto "Salva" la configurazione viene scritta nel centralino e da quel momento è possibile effeturare chiamate verso l'esterno (avendo oppurtunamente configurato i fasci negli step precedenti).
 
 Applicazioni
 ============
