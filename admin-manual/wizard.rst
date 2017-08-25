@@ -85,12 +85,28 @@ La lista degli utenti mostra quelli a cui è stato associato un interno nel prim
 
 Fasci
 =====
+Nella sezione fasci è possibile configurare i gateway per gestire le linee fisiche o creare fascio VoIP specificando le credenziali dei vostri provider
 
 Fisici
 ------
+Come per i dispositivi, questa sezione scansiona la vostra rete e cerca dei gateway dispobili, una volta individuati è possible specificare, selezionandone uno, due impostazioni:
+
+- Modello: specificare il modello del gateway
+- Impostazioni dinamiche in base al modello:
+
+ - ISDN (Specificare per la linea se è Point-Point or Point-MultiPoint)
+ - PRI
+ - FXS (Specificare per ogni porta, l'interno da assegnare scegliendo un utente precedentemente configurato)
+ - FXO (Specificare direttamente il numero, nel campo di testo)
+
+Una volta salvate le impostazioni è possibile caricare la configurazione sul gateway tramite il bottone "Carica"
+Il gateway prende la configurazione e si riavvia, vengono inoltre creati i fasci relativi.
 
 VoIP
 ----
+E' possible creare dei fasci VoIP selezionando uno dei provider supportati, e inserendo le informazioni necessarie.
+
+Premere "Crea" per creare la configurazione relativa per quel fascio VoIP.
 
 Rotte
 =====
