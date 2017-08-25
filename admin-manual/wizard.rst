@@ -140,8 +140,20 @@ Sorgenti video
 Amministratore
 ==============
 
+La sezione "Amministratore" raggruppa le azioni che possono essere fatte dall'amminostratore del centralino
+
 Impostazioni
 ------------
+Nella parte "Impostazioni", è possibile cambiare la password dell'utente admin.
 
 Report
 ------
+La sezione "Report" riporta l'elenco completo degli utenti del centralino specificando il loro:
+
+- Interno
+- Username
+- Nome e Cognome
+- Password Voicemail
+- Password utente (se si è in modalità Legacy)
+
+E' presente anche la possibilità di stampare l'elenco in formato PDF cliccando sul bottone "Stampa report PDF"
