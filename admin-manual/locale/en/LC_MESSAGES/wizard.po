@@ -1,0 +1,777 @@
+# Polidori Alessandro <alessandro.polidori@gmail.com>, 2017. #zanata
+msgid ""
+msgstr ""
+"Project-Id-Version: NethVoice 14\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-08-28 10:55+0200\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2017-08-28 05:33-0400\n"
+"Last-Translator: Polidori Alessandro <alessandro.polidori@gmail.com>\n"
+"Language-Team: English (United States)\n"
+"Language: en-US\n"
+"X-Generator: Zanata 3.9.6\n"
+"Plural-Forms: nplurals=2; plural=(n != 1)\n"
+
+#: ../../wizard.rst:12
+msgid "Wizard prima configurazione"
+msgstr "First configuration wizard"
+
+#: ../../wizard.rst:14
+msgid ""
+"Il wizard di prima configurazione consente di installare e configurare "
+"agevolmente tutte le componenti di un centralino."
+msgstr ""
+"The first configuration wizard allows you to easily install and configure "
+"all the components of a switchboard."
+
+#: ../../wizard.rst:16
+msgid "Visitando:"
+msgstr "Visiting:"
+
+#: ../../wizard.rst:18
+msgid "`https://IP_DEL_SERVER/NOME_PRODOTTO`"
+msgstr "`https://SERVER_IP/PRODUCT_NAME`"
+
+#: ../../wizard.rst:20
+msgid "`https://IP_DEL_SERVER/freepbx/admin`"
+msgstr "`https://SERVER_IP/freepbx/admin`"
+
+#: ../../wizard.rst:22
+msgid "è possibile raggiungere l'applicazione web."
+msgstr "You can reach the web application."
+
+#: ../../wizard.rst:24
+msgid "Le credenziali per il login sono le seguenti:"
+msgstr "The credentials login are the following:"
+
+#: ../../wizard.rst:26
+msgid "`username: admin`"
+msgstr "`username: admin`"
+
+#: ../../wizard.rst:28
+msgid "`password: Nethesis,1234`"
+msgstr "`username: admin`"
+
+#: ../../wizard.rst:31
+msgid "Modalità centralino"
+msgstr "PBX mode"
+
+#: ../../wizard.rst:32
+msgid ""
+"Una volta effettuato il login, vi viene subito proposto di scegliere che "
+"tipologia di centralino intendete installare:"
+msgstr ""
+"Once logged in, you are immediately offered to choose what type of "
+"switchboard you want to install:"
+
+#: ../../wizard.rst:34
+msgid ""
+"*Legacy*: il centralino diventa anche la base per i creare i vostri utenti, "
+"quindi al vostro server verrà installare una base LDAP su cui creare i "
+"vostri utenti"
+msgstr ""
+"*Legacy*: the switchboard also becomes the basis for creating your users, so "
+"your server will install an LDAP base on which to create your own users\n"
+
+#: ../../wizard.rst:35
+msgid ""
+"*Unified*: il centralino utilizza la base utenti già presente nel vostro "
+"server (LDAP o Active Directory)"
+msgstr ""
+"*Unified*: the switchboard uses the user base already present on your server "
+"(LDAP or Active Directory)"
+
+#: ../../wizard.rst:37
+msgid ""
+"Una volta scelta la modalità, si procede alla configurazione degli utenti"
+msgstr "Once the mode is selected, users must be configured"
+
+#: ../../wizard.rst:40
+msgid "Utenti"
+msgstr "Users"
+
+#: ../../wizard.rst:41
+msgid ""
+"Una volta scelta la modalità del centralino, vedrete una lista vuota (nel "
+"caso di Legacy) o la lista degli utenti già presenti nel server (nel caso di "
+"Unified)."
+msgstr ""
+"Once you have selected the pbx mode, you will see an empty list (in the case "
+"of Legacy) or the list of users already present on the server (in the case "
+"of Unified)."
+
+#: ../../wizard.rst:43
+msgid ""
+"Se siete in modalità Legacy create il vostro primo utente, scegliendo un "
+"username e il nome completo."
+msgstr ""
+"If you are in legacy mode create your first user, choosing a username and "
+"full name."
+
+#: ../../wizard.rst:46
+msgid "Interni"
+msgstr "Extensions"
+
+#: ../../wizard.rst:47
+msgid "E' possibile ora inserire gli interni relativi per ogni utente:"
+msgstr "It is now possible to enter the extensions for each user:"
+
+#: ../../wizard.rst:49
+msgid ""
+"Inserire il numero dell'interno (consigliato a partire dal numero 200) nel "
+"campo di testo"
+msgstr ""
+"Enter the extension number (recommended starting at number 200) in the text "
+"field"
+
+#: ../../wizard.rst:50
+msgid "Cliccare su Inserisci"
+msgstr "Click on Insert"
+
+#: ../../wizard.rst:51
+msgid ""
+"L'utente si evidenzia e una spunta verde compare se tutto è andato a buon "
+"fine"
+msgstr ""
+"The user is highlighted and a green check appears if everything is "
+"successful"
+
+#: ../../wizard.rst:54
+msgid "Gruppi"
+msgstr "Groups"
+
+#: ../../wizard.rst:55
+msgid ""
+"E' possibile creare dei gruppi utente che servono per raggruppare "
+"determinati utenti che poi saranno visibili nell'applicazione componenti"
+msgstr ""
+"It is possible to create user groups that are used to group certain users "
+"that will then be visible in the application"
+
+#: ../../wizard.rst:57
+msgid "Cliccare il bottone \"Crea nuovo gruppo\""
+msgstr "Click the \"Create New Group\" button"
+
+#: ../../wizard.rst:58
+msgid "Specificare un nome e salvare"
+msgstr "Specify a name and save it"
+
+#: ../../wizard.rst:59
+msgid "Il gruppo compare tra la lista"
+msgstr "The group appears in the list"
+
+#: ../../wizard.rst:62
+msgid "Profili"
+msgstr "Profiles"
+
+#: ../../wizard.rst:63
+msgid ""
+"Il centralino prevede di specificare determinate funzionalità per ogni "
+"utente e queste funzionalità vengono raggrupate in dei profili."
+msgstr ""
+"The switchboard is designed to specify certain features for each user and "
+"these features are grouped into profiles."
+
+#: ../../wizard.rst:65
+msgid ""
+"Con l'installazione, vengono creati di default 4 profili che contengono "
+"l'abilitazione o meno a certe funzionalità."
+msgstr ""
+"During the installation, 4 default profiles are created that contain the "
+"ability to enable or disable certain features"
+
+#: ../../wizard.rst:67
+msgid "Base: funzionalità minime per l'utente"
+msgstr "Base: minimal user capabilities"
+
+#: ../../wizard.rst:68
+msgid "Standard: funzionalità di gestione classiche per l'utente"
+msgstr "Standard: classic management features for the user"
+
+#: ../../wizard.rst:69
+msgid ""
+"Avanzato: quasi tutte le funzionalità sono sbloccate, per l'utente Avanzato"
+msgstr "Advanced: almost all features are unlocked, for Advanced user"
+
+#: ../../wizard.rst:70
+msgid ""
+"Tutto: ogni funzionalità presente è abilitata, utilizzata per gli utenti "
+"amministratori"
+msgstr ""
+"Everything: every feature present is enabled, used for administrator users"
+
+#: ../../wizard.rst:72
+msgid ""
+"E' possibile creare anche nuovi profili, duplicando uno esistente o "
+"creandone di nuovi e specificando le varie funzionalità"
+msgstr ""
+"You can also create new profiles, duplicate an existing one or create new "
+"ones and specify the various features"
+
+#: ../../wizard.rst:75
+msgid "Dispositivi"
+msgstr "Devices"
+
+#: ../../wizard.rst:76
+msgid ""
+"In questa sezione è possibile scansionare la propria rete e il wizard "
+"troverà in automatico i telefoni che sono collegati alla vostra rete, "
+"individuando, dove è possibile, marco e modello e vi fornisce inoltre "
+"l'indirizzo IP e il MAC address."
+msgstr ""
+"In this section you can scan your network and the wizard automatically finds "
+"the phones that are connected to your network by identifying, where "
+"possible, brand and model and also provides you with the IP address and MAC "
+"address."
+
+#: ../../wizard.rst:78
+msgid ""
+"Se in alcuni telefoni non è stato possibile trovare automaticamente il "
+"modello, servirsi del menù a tendina per specificarlo."
+msgstr ""
+"If some model phone has not been found automatically, use the drop-down menu "
+"to specify it."
+
+#: ../../wizard.rst:80
+msgid "Per rieseguire la scansione della rete, premere il pulsante *Scan*"
+msgstr "To scan the network again, press the *Scan* button"
+
+#: ../../wizard.rst:83
+msgid "Configurazioni"
+msgstr "Configurations"
+
+#: ../../wizard.rst:84
+msgid ""
+"Lo step finale della sezione Utenti, prevede di raggruppare tutte le "
+"impostazioni create e definite nei passi precedenti. La lista degli utenti "
+"mostra quelli a cui è stato associato un interno nel primo step. "
+"Selezionando un utente è possibile:"
+msgstr ""
+"The final step of the Users section is to group all the settings created and "
+"defined in the previous steps. The list of the users shows those to which an "
+"extension has been associated in the first step. By selecting a user you can:"
+""
+
+#: ../../wizard.rst:87
+msgid "Creare un dispositivo personalizzato (ad esempio softphone)"
+msgstr "Create a custom device (such as softphone)"
+
+#: ../../wizard.rst:88
+msgid ""
+"Associare un telefono di quelli precedentemente configurati (effettuando il "
+"provisioning automatico)"
+msgstr ""
+"Associate a phone with those previously configured (by doing automatic "
+"provisioning)"
+
+#: ../../wizard.rst:89
+msgid "Inserire un numero di cellulare"
+msgstr "Insert a cellphone number"
+
+#: ../../wizard.rst:90
+msgid "Abilitare il support alla voicemail"
+msgstr "Enable voicemail support"
+
+#: ../../wizard.rst:91
+msgid "Abilitare il support al WebRTC"
+msgstr "Enable WebRTC support"
+
+#: ../../wizard.rst:92
+msgid ""
+"Scegliere il profilo da destinare all'utente (uno di quelli definiti allo "
+"step 3)"
+msgstr "Choose the profile to be assigned to the user (one defined in step 3)"
+
+#: ../../wizard.rst:93
+msgid "Scegliere un gruppo a cui far parte (uno di quelli creati allo step 2)"
+msgstr "Choose a group to join (one created in step 2)"
+
+#: ../../wizard.rst:96
+msgid "Fasci"
+msgstr "Trunks"
+
+#: ../../wizard.rst:97
+msgid ""
+"Nella sezione fasci è possibile configurare i gateway per gestire le linee "
+"fisiche o creare fascio VoIP specificando le credenziali dei vostri provider"
+msgstr ""
+"In the trunks section, you can configure gateways to manage physical lines "
+"or create VoIP trunk by specifying your provider's credentials"
+
+#: ../../wizard.rst:100
+msgid "Fisici"
+msgstr "Physical"
+
+#: ../../wizard.rst:101
+msgid ""
+"Come per i dispositivi, questa sezione scansiona la vostra rete e cerca dei "
+"gateway dispobili, una volta individuati è possible specificare, "
+"selezionandone uno, due impostazioni:"
+msgstr ""
+"As with devices, this section scans your network and looks for broken "
+"gateways, once it is detected it is possible to specify, selecting one, two "
+"settings:"
+
+#: ../../wizard.rst:103
+msgid "Modello: specificare il modello del gateway"
+msgstr "Model: specify the gateway model"
+
+#: ../../wizard.rst:104
+msgid "Impostazioni dinamiche in base al modello:"
+msgstr "Dynamic settings based on model:"
+
+#: ../../wizard.rst:106
+msgid "ISDN (Specificare per la linea se è Point-Point or Point-MultiPoint)"
+msgstr "ISDN (Specify for the line if it is Point-Point or Point-MultiPoint)"
+
+#: ../../wizard.rst:107
+msgid "PRI"
+msgstr "PRI"
+
+#: ../../wizard.rst:108
+msgid ""
+"FXS (Specificare per ogni porta, l'interno da assegnare scegliendo un utente "
+"precedentemente configurato)"
+msgstr ""
+"FXS (Specify for each port, the extension to be assigned by choosing a "
+"previously configured user)"
+
+#: ../../wizard.rst:109
+msgid "FXO (Specificare direttamente il numero, nel campo di testo)"
+msgstr "FXO (Specify the number directly in the text field)"
+
+#: ../../wizard.rst:111
+msgid ""
+"Una volta salvate le impostazioni è possibile caricare la configurazione sul "
+"gateway tramite il bottone \"Carica\" Il gateway prende la configurazione e "
+"si riavvia, vengono inoltre creati i fasci relativi."
+msgstr ""
+"Once you saved the settings you can load the configuration on the gateway "
+"via the \"Load\" button. The gateway takes the configuration and restarts, "
+"and the related trunks are also created."
+
+#: ../../wizard.rst:115
+msgid "VoIP"
+msgstr "VoIP"
+
+#: ../../wizard.rst:116
+msgid ""
+"E' possible creare dei fasci VoIP selezionando uno dei provider supportati, "
+"e inserendo le informazioni necessarie."
+msgstr ""
+"You can create VoIP trunks by selecting one of the supported providers and "
+"entering the necessary information."
+
+#: ../../wizard.rst:118
+msgid ""
+"Premere \"Crea\" per creare la configurazione relativa per quel fascio VoIP."
+msgstr ""
+"Press \"Create\" to create the relative configuration for that VoIP trunk."
+
+#: ../../wizard.rst:121
+msgid "Rotte"
+msgstr "Routes"
+
+#: ../../wizard.rst:122
+msgid ""
+"Nella sezione rotte è possibile configurare le rotte in entrata e in uscita "
+"per il vostro centralino"
+msgstr ""
+"In the routes section you can configure the inbound and outbound routes for "
+"your switchboard"
+
+#: ../../wizard.rst:125
+msgid "In entrata"
+msgstr "Incoming"
+
+#: ../../wizard.rst:126
+msgid ""
+"Una volta in questa sezione, vi si presenta la lista delle rotte già "
+"configurate, con la possibilità di modificarle o eliminarle."
+msgstr ""
+"Once in this section, you will see the list of already configured routes, "
+"with the option to edit or delete them."
+
+#: ../../wizard.rst:128
+msgid ""
+"Premendo sul bottone \"Crea nuova rotta\" si apre una differente "
+"applicazione il Visual Plan, che vi consente di creare, modificare e "
+"collegare le varie componenti per gestire al meglio il flusso della chiamata "
+"su un determinato numero in ingresso."
+msgstr ""
+"By clicking on \"Create new route\" button, a different application opens up "
+"the Visual Plan, which allows you to create, modify and link the various "
+"components to better manage the flow of the call on a given input number."
+
+#: ../../wizard.rst:130
+msgid ""
+"Premendo il simbolo di spunta nell'applicazione Visual Plan, la "
+"configurazione della vostra rotta verrà salvata e da quel momento potrete "
+"ricevere chiamate e indirizzare il flusso a seconda della vostra scelta."
+msgstr ""
+"By pressing the check mark in the Visual Plan application, the configuration "
+"of your route will be saved and from that time you can receive calls and "
+"direct the flow depending on your choice."
+
+#: ../../wizard.rst:133
+msgid "In uscita"
+msgstr "Outgoing"
+
+#: ../../wizard.rst:134
+msgid ""
+"In questa sezione è presente la lista delle rotte in uscita presenti, la "
+"prima volta che questa pagina viene visitata, il wizard vi propone delle "
+"rotte in uscita di default con i pattern di chiamate specifici per le "
+"diverse lingue."
+msgstr ""
+"In this section you will find the list of outbound routes, the first time "
+"this page is visited, the wizard will propose default outbound routes with "
+"call-specific patterns for different languages."
+
+#: ../../wizard.rst:136
+msgid ""
+"E' possibile inoltre specificare l'ordine con cui usare i fasci, "
+"precedentemente creati, e regolare così in maniera personalizzata il "
+"percorso delle chiamate in uscita."
+msgstr ""
+"You can also specify the order to use the previously created trunks and "
+"customize the route of outgoing calls in a custom way."
+
+#: ../../wizard.rst:138
+msgid ""
+"Premendo il tasto \"Salva\" la configurazione viene scritta nel centralino e "
+"da quel momento è possibile effeturare chiamate verso l'esterno (avendo "
+"oppurtunamente configurato i fasci negli step precedenti)."
+msgstr ""
+"By pressing the \"Save\" button the configuration is written to the "
+"switchboard and from that time you can make outgoing calls (having "
+"previously configured the trunks in the previous steps)."
+
+#: ../../wizard.rst:141
+msgid "Applicazioni"
+msgstr "Applications"
+
+#: ../../wizard.rst:142
+msgid ""
+"La sezione \"Applicazioni\" consente di creare, modificare o eliminare "
+"determinate funzionalità del centralino, che nel wizard vengono solo create "
+"e configurate, ma che poi vengono utilizzate nel CTI."
+msgstr ""
+"The \"Applications\" section allows you to create, modify or delete specific "
+"switchboard features that are only created and configured in the wizard, but "
+"are then used in the CTI."
+
+#: ../../wizard.rst:144
+msgid ""
+"Ad esempio le schede cliente, nel wizard, vengono configurate per accedere "
+"al database e per mostrare in maniera pratica le informazioni ottenute, ma "
+"il reale utilizzo sarà all'interno del CTI, durante le chiamate o durante la "
+"ricerca di determinate informazioni."
+msgstr ""
+"For example, customer cards in the wizard are configured to access the "
+"database and to show the information in a practical way, but actual use will "
+"be inside the CTI, during calls or while searching for certain information."
+
+#: ../../wizard.rst:147
+msgid "Schede cliente"
+msgstr "Customer cards"
+
+#: ../../wizard.rst:149
+msgid ""
+"La sezione schede cliente, permette di raggrupare le informazioni presente "
+"su database esterni al centralino e mostrarle in fase di chiamata. Ad "
+"esempio, sulla chiamata di un certo cliente, prendere le infomazioni sul "
+"database relative alle sue fatture o ad eventuali insoluti e valutare ad "
+"esempio, se fornire assistenza o meno. Per generare una nuova scheda cliente "
+"i passi sono i seguenti"
+msgstr ""
+"The customer card section allows you to combine the information on external "
+"databases to the switchboard and display them at a call. For example, on an "
+"incoming customer call, get information about its invoices or any unused "
+"payments and consider, for example, whether to provide assistance or not. To "
+"generate a new customer card, the steps are as follows"
+
+#: ../../wizard.rst:152
+msgid "Sorgenti"
+msgstr "Sources"
+
+#: ../../wizard.rst:154
+msgid ""
+"Cliccare sul bottone \"Crea nuova sorgente\" e compilare il form che si "
+"presenta: - Tipo database: specificare la tipologia di database su cui "
+"andare a prendere le informazioni - Nome database: specificare il nome del "
+"database a cui connettersi - Indirizzo database: specificare l'indirizzo per "
+"collegarsi al database (localhost, socket o IP esterni) - Porta database: "
+"specificare un porta del db diversa da quella di default proposta - Utente "
+"database: specificare l'utente usato per connettersi al database - Password "
+"database: speficare la password per collegarsi al database - Connessione: "
+"premere il pulsante \"Verifica\" per testare che le informazioni insertite "
+"siano corrette per la connessione"
+msgstr ""
+"Click on the \"Create new source\" button and fill in the form: - Database "
+"type: specify the database type to which you want to get the information - "
+"Database name: specify the name of the database to connect to - Database "
+"address: specify the database server address (localhost, socket or external "
+"IP) - Database port: specify a port of the db  - Database user: specify the "
+"user used to connect to the database - Database password: specify the "
+"password for connect to the database - Connection: press the \"Verify\" "
+"button to test that the inserted information is correct for the connection"
+
+#: ../../wizard.rst:163
+msgid ""
+"Premere \"Salva\" per aggiungere la sorgente database. La sorgente appena "
+"creata apparirà tra la lista di quelle disponibili"
+msgstr ""
+"Press \"Save\" to add the database source. The newly created source will "
+"appear in the list of available ones"
+
+#: ../../wizard.rst:166
+msgid "Template"
+msgstr "Template"
+
+#: ../../wizard.rst:168
+msgid ""
+"I template sono il fac-simile per le vostre schede cliente. Utilizzano il "
+"motore `ejs`, che ha una sintassi *JavaScript-like*, che vi permette di "
+"scrivere codice html utilizzando specifiche direttive che potete trovare nel "
+"sito https://github.com/tj/ejs."
+msgstr ""
+"Templates are the facsimile for your customer cards. They use the `ejs` "
+"engine, which has a *JavaScript-like* syntax that allows you to write html "
+"code using specific guidelines that you can find at https://github.com/tj/"
+"ejs."
+
+#: ../../wizard.rst:170
+msgid ""
+"Cliccare sul bottone \"Crea nuovo template\" per iniziare il processo di "
+"creazione: - Nome: specificare il nome del template - Results: contiene "
+"l'output della vostra query in formato JSON, utilizzate il campo di testo "
+"per effetuare delle prove e vedere come il vostro template HTML risulterà "
+"essere con i vostri dati. - Codice (ejs): in questo campo di testo, inserite "
+"il codice del vostro template, che rispetta la sintassi `ejs`, utilizzando i "
+"valori sopra indicati (che non sono altro che le colonne di risultato della "
+"vostra query) - Anteprima: combinando i risultati e il codice `ejs` vedrete "
+"l'output relativo HTML che sarà la vostra scheda cliente."
+msgstr ""
+"Click the \"Create new template\" button to begin the creation process: - "
+"Name: specify template name - Results: contains the output of your query in "
+"JSON format, use the text field to run the tests and see how your HTML "
+"template will appear with your data. - Code (ejs): in this text field, enter "
+"the code of your template that respects the `ejs` syntax, using the above "
+"values (which are the columns result of your query) - Preview: combining the "
+"results and the `ejs` code you will see the relevant HTML output that will "
+"be your customer card."
+
+#: ../../wizard.rst:176
+msgid ""
+"Il centralino prevede giù dei template predefiniti con codice HTML già "
+"scritto, che potete duplicare e modificare cambiando colore."
+msgstr ""
+"The switchboard provides some predefined templates with HTML code already "
+"written, which you can duplicate and edit by changing color."
+
+#: ../../wizard.rst:179
+msgid "Schede"
+msgstr "Tabs"
+
+#: ../../wizard.rst:181
+msgid ""
+"Una volta creata la sorgente e il template della vostra scheda, in questa "
+"sessione dovrete unire le due informazioni per far si che la scheda venga "
+"creata correttamente. Cliccare sul bottono \"Crea nuova scheda\" e compilare "
+"il form: - Nome: nome della scheda cliente - Sorgene: specificare la "
+"sorgente di database precedentemente creata - Template: specificare il "
+"template da associare precedentemente creato - Profilo: scegliare il tipo di "
+"profilo utente a cui far vedere la scheda cliente che stato creando - Query: "
+"inserite la query che vi restituirà le informazioni relative - Render: "
+"premendo il pulsante, la **query** verrà eseguita sulla **sorgente** "
+"specificata e i dati verranno inseriti nel **template** selezionato, "
+"producendo l'output desiderato."
+msgstr ""
+"Once you've created the source and template of your card, in this session, "
+"you'll need to merge the two information to make sure the card is created "
+"correctly. Click on the \"Create new tab\" button and fill in the form: - "
+"Name: customer card name - Source: specify the previously created database "
+"source - Template: specify the template to be associated with the one "
+"previously created - Profile: choose the user profile to show the customer "
+"card you are creating - Query: enter the query that will return the related "
+"information - Render: by pressing the button, the **query** will be executed "
+"on the **source** specified and the data will be entered into the selected "
+"**Template**, producing the desired output."
+
+#: ../../wizard.rst:189
+msgid "Premere il tasto \"Salva\" per salvare la vostra scheda cliente."
+msgstr "Press the \"Save\" button to save your customer card."
+
+#: ../../wizard.rst:191
+msgid ""
+"Una volta creata la query e la scheda e verificato che il tutto funziona, "
+"utilizzare la variabile `$NUMBER` per sostituire i parametri numerici di "
+"ricerca delle vostra query."
+msgstr ""
+"Once you've created the query and the card and verified that everything "
+"works, use the `$NUMBER` variable to replace your query's search parameters."
+
+#: ../../wizard.rst:193
+msgid "*Esempio*:"
+msgstr "*Example*:"
+
+#: ../../wizard.rst:195
+msgid "Se la vostra query è di questo tipo:"
+msgstr "If your query is of this type:"
+
+#: ../../wizard.rst:197
+msgid ""
+"`select * from phonebook where homephone like '%150' or workphone like "
+"'%850' or cellphone like '%150' or fax like '%850'`"
+msgstr ""
+"`select * from phonebook where homephone like '% 150' or workphone like '% "
+"850' or cellphone like '% 150' or fax like '% 850'`"
+
+#: ../../wizard.rst:199
+msgid "dovrà diventare così:"
+msgstr "it will have to be like this:"
+
+#: ../../wizard.rst:201
+msgid ""
+"`select * from phonebook where homephone like '%$NUMBER' or workphone like "
+"'%$NUMBER' or cellphone like '%$NUMBER' or fax like '%$NUMBER'`"
+msgstr ""
+"`select * from phonebook where homephone like '%$NUMBER' or workphone like "
+"'%$NUMBER' or cellphone like '%$NUMBER' or fax like '%$NUMBER'`"
+
+#: ../../wizard.rst:203
+msgid ""
+"La variable `$NUMBER` non è altro che il numero chiamante del centralino a "
+"cui la scheda cliente fa riferimento per effettuare la raccolta dei dati da "
+"mostrare."
+msgstr ""
+"The `$NUMBER` variable is the caller phone number to which the customer card "
+"refers to collect the data to be displayed."
+
+#: ../../wizard.rst:206
+msgid "Sorgenti video"
+msgstr "Video sources"
+
+#: ../../wizard.rst:207
+msgid ""
+"In questa sezione è possibile configurare le sorgenti video o telecamere IP. "
+"Cliccando sul bottone \"Crea nuova sorgente\" è possibile compilare un form "
+"per la creazione:"
+msgstr ""
+"In this section you can configure video sources or IP cameras. By clicking "
+"on the \"Create new source\" button you can fill out a form for creation:"
+
+#: ../../wizard.rst:209
+msgid "Nome: specificare il nome da dare alla sorgente"
+msgstr "Name: specify the name to give to the source"
+
+#: ../../wizard.rst:210
+msgid ""
+"Extension: specificare l'interno relativo alla sorgente video "
+"(precedentemente creata nella sezione \"Utenti\")"
+msgstr ""
+"Extension: specify the extension for the video source (previously created in "
+"the \"Users\" section)"
+
+#: ../../wizard.rst:211
+msgid ""
+"URL: specificare l'URL di collegamento in cui prendere i frame video da "
+"mostrare"
+msgstr "URL: specify the URL link where you want the video frames to show"
+
+#: ../../wizard.rst:212
+msgid ""
+"Codice d'apertura: inserire il tono DTMF relativo per un eventale codice "
+"d'apertura (se la telecamera è collegata ad un cancello ad esempio)"
+msgstr ""
+"Opening Code: enter the DTMF tone for an opening code event (for example if "
+"the camera is connected to a gate)"
+
+#: ../../wizard.rst:213
+msgid ""
+"Profilo: specificare il profilo da assegnare alla sorgente per filtare la "
+"tipologia di utente che ha accesso alla sorgente video"
+msgstr ""
+"Profile: specify the profile to be assigned to the source to filter out the "
+"users that have access to the video source"
+
+#: ../../wizard.rst:214
+msgid ""
+"Connessione: premere il bottone \"Verifica\" e verificare che l'URL inserito "
+"sia corretto, testando la connessione e ottenendo il frame video relativo."
+msgstr ""
+"Connection: press the \"Verify\" button and verify that the entered URL is "
+"correct, testing the connection and getting the related video frame."
+
+#: ../../wizard.rst:216
+msgid ""
+"Una volta completata la compilazione del form premere \"Salva\" per salvare "
+"le infomazioni e creare una nuova sorgente video."
+msgstr ""
+"Once the form is completed, press \"Save\" to save the information and "
+"create a new video source."
+
+#: ../../wizard.rst:219
+msgid "Amministratore"
+msgstr "Administrator"
+
+#: ../../wizard.rst:221
+msgid ""
+"La sezione \"Amministratore\" raggruppa le azioni che possono essere fatte "
+"dall'amministratore del centralino"
+msgstr ""
+"The \"Administrator\" section groups actions that can be made by the PBX "
+"Administrator"
+
+#: ../../wizard.rst:224
+msgid "Impostazioni"
+msgstr "Settings"
+
+#: ../../wizard.rst:225
+msgid ""
+"Nella parte \"Impostazioni\", è possibile cambiare la password dell'utente "
+"admin."
+msgstr "From the \"Settings\" section, you can change the admin user password."
+
+#: ../../wizard.rst:228
+msgid "Report"
+msgstr "Report"
+
+#: ../../wizard.rst:229
+msgid ""
+"La sezione \"Report\" riporta l'elenco completo degli utenti del centralino "
+"specificando il loro:"
+msgstr ""
+"The \"Report\" section lists the complete list of switchboard users by "
+"specifying their:"
+
+#: ../../wizard.rst:231
+msgid "Interno"
+msgstr "Extension"
+
+#: ../../wizard.rst:232
+msgid "Username"
+msgstr "Username"
+
+#: ../../wizard.rst:233
+msgid "Nome e Cognome"
+msgstr "Name and Surname"
+
+#: ../../wizard.rst:234
+msgid "Password Voicemail"
+msgstr "Voicemail Password"
+
+#: ../../wizard.rst:235
+msgid "Password utente (se si è in modalità Legacy)"
+msgstr "User password (if Legacy mode is used)"
+
+#: ../../wizard.rst:237
+msgid ""
+"E' presente anche la possibilità di stampare l'elenco in formato PDF "
+"cliccando sul bottone \"Stampa report PDF\""
+msgstr ""
+"It is also possible to print the list in PDF format by clicking on the "
+"\"Print PDF Report\" button"
