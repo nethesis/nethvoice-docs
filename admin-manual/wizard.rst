@@ -137,7 +137,7 @@ Ad esempio le schede cliente, nel wizard, vengono configurate per accedere al da
 Schede cliente
 --------------
 
-La sezione schede cliente, permette di raggrupare le informazioni presente su database esterni al centralino e mostrarle in fase di chiamata. Ad esempio, sulla chiamata di un certo cliente, prendere le infomazioni sul database relative alle sue fatture o ad eventuali insoluti e valutare ad esempio, se fornire assistenza o meno. Per generare una nuova scheda cliente i passi sono i seguenti
+La sezione schede cliente, permette di raggrupare le informazioni presenti su database esterni al centralino e mostrarle in fase di chiamata. Ad esempio, sulla chiamata di un certo cliente, prendere le infomazioni sul database relative alle sue fatture o ad eventuali insoluti e valutare ad esempio, se fornire assistenza o meno. Per generare una nuova scheda cliente i passi sono i seguenti
 
 Sorgenti
 ........
@@ -169,11 +169,11 @@ Il centralino prevede giù dei template predefiniti con codice HTML già scritto
 Schede
 ......
 
-Una volta creata la sorgente e il template della vostra scheda, in questa sessione dovrete unire le due informazioni per far si che la scheda venga creata correttamente. Cliccare sul bottono "Crea nuova scheda" e compilare il form:
+Una volta creata la sorgente e il template della vostra scheda, in questa sessione dovrete unire le due informazioni per far si che la scheda venga creata correttamente. Cliccare sul bottone "Crea nuova scheda" e compilare il form:
 - Nome: nome della scheda cliente
-- Sorgene: specificare la sorgente di database precedentemente creata
-- Template: specificare il template da associare precedentemente creato
-- Profilo: scegliare il tipo di profilo utente a cui far vedere la scheda cliente che stato creando
+- Sorgente: specificare la sorgente di database precedentemente creata
+- Template: specificare il template da associare a quello precedentemente creato
+- Profilo: scegliare il tipo di profilo utente a cui far vedere la scheda cliente che state creando
 - Query: inserite la query che vi restituirà le informazioni relative
 - Render: premendo il pulsante, la **query** verrà eseguita sulla **sorgente** specificata e i dati verranno inseriti nel **template** selezionato, producendo l'output desiderato.
 
