@@ -153,7 +153,7 @@ Una volta completata la compilazione del form premere "Salva" per salvare le inf
 Amministratore
 ==============
 
-La sezione "Amministratore" raggruppa le azioni che possono essere fatte dall'amminostratore del centralino
+La sezione "Amministratore" raggruppa le azioni che possono essere fatte dall'amministratore del centralino
 
 Impostazioni
 ------------
