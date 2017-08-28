@@ -22,7 +22,7 @@ Modalità centralino
 ===================
 Una volta effettuato il login, vi viene subito proposto di scegliere che tipologia di centralino intendete installare:
 
-- *Legacy*: il centralino diventa anche la base per i creare i vostri utenti, quindi al vostro server verrà installare una base LDAP su cui creare i vostri utenti
+- *Legacy*: il centralino diventa anche la base per creare i vostri utenti, quindi al vostro server verrà installata una base LDAP su cui creare i vostri utenti
 - *Unified*: il centralino utilizza la base utenti già presente nel vostro server (LDAP o Active Directory)
 
 Una volta scelta la modalità, si procede alla configurazione degli utenti
