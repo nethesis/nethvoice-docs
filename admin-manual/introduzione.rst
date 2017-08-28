@@ -7,7 +7,7 @@ Il cuore OpenSource di |product| è basato principalmente su due progetti `Aster
 
 |product| concentra in un’unica soluzione, adattabile alle varie esigenze aziendali, le funzionalità del centralino tradizionale (PBX) con le più innovative peculiarità dei sistemi telefonici avanzati. I vantaggi di tale sistema consistono in una sensibile riduzione dei costi di gestione e manutenzione, e nella scalabilità dell’architettura IP che è adattabile alle eventuali evoluzioni strutturali dell’azienda.
 
-.. image:: ../_static/scheme.png
+.. image:: _static/scheme.png
                :alt: |product|
 
 Componenti e connessioni

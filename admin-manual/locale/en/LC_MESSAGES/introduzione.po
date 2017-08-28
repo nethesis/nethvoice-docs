@@ -1,0 +1,269 @@
+# Giovanni Bezicheri <giovanni.bezicheri@nethesis.it>, 2017. #zanata
+# Polidori Alessandro <alessandro.polidori@gmail.com>, 2017. #zanata
+msgid ""
+msgstr ""
+"Project-Id-Version: NethVoice 14\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-08-28 12:58+0200\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2017-08-28 05:42-0400\n"
+"Last-Translator: Giovanni Bezicheri <giovanni.bezicheri@nethesis.it>\n"
+"Language-Team: English (United States)\n"
+"Language: en-US\n"
+"X-Generator: Zanata 3.9.6\n"
+"Plural-Forms: nplurals=2; plural=(n != 1)\n"
+
+#: ../../introduzione.rst:12
+msgid "Introduzione"
+msgstr "Introduction"
+
+#: ../../introduzione.rst:13
+msgid ""
+"|product| è una nuova soluzione telefonica aperta ed integrata con l'intero "
+"sistema informativo aziendale, in grado di fornire tutti i servizi di "
+"comunicazione e collaborazione: dati, voce e video."
+msgstr ""
+"|product! is a new open phone solution integrated with the entire "
+"information system of the company, able to provide all communication and "
+"collaboration services: data, voice and video"
+
+#: ../../introduzione.rst:15
+msgid ""
+"Il cuore OpenSource di |product| è basato principalmente su due progetti "
+"`Asterisk <http://www.asterisk.org/>`_ e `FreePBX <http://www.freepbx.org/"
+">`_ potenziati grazie allo sviluppo di innumerevoli moduli e funzioni per "
+"semplificarne l’utilizzo e permetterne una forte integrazione con i dati "
+"presenti in azienda, pur mantenendo la caratteristica di apertura volta a "
+"consentirne la massima flessibilità a chiunque intenda sviluppare le proprie "
+"integrazioni usando i linguaggi di programmazione più comuni."
+msgstr ""
+"The OpenSource heart of |product| is mainly based on two projects `Asterisk "
+"<http://www.asterisk.org/>`_ and `FreePBX <http://www.freepbx.org/>`_ "
+"enhanced by the development of innumerable modules and functions to simplify "
+"their use and allow for a strong integration with the data in the company, "
+"while maintaining the opening feature to allow maximum flexibility for "
+"anyone who intends to develop their integrations using the most common "
+"programming languages."
+
+#: ../../introduzione.rst:17
+msgid ""
+"|product| concentra in un’unica soluzione, adattabile alle varie esigenze "
+"aziendali, le funzionalità del centralino tradizionale (PBX) con le più "
+"innovative peculiarità dei sistemi telefonici avanzati. I vantaggi di tale "
+"sistema consistono in una sensibile riduzione dei costi di gestione e "
+"manutenzione, e nella scalabilità dell’architettura IP che è adattabile alle "
+"eventuali evoluzioni strutturali dell’azienda."
+msgstr ""
+"|Product| focuses on a single solution, adaptable to various business needs, "
+"the functionality of the traditional PBX with the most innovative "
+"peculiarities of advanced phone systems. The benefits of this system include "
+"a significant reduction in management and maintenance costs and scalability "
+"of IP architecture that is adaptable to any company's structural evolution."
+
+#: ../../introduzione.rst:23
+msgid "Componenti e connessioni"
+msgstr "Components and connections"
+
+#: ../../introduzione.rst:24
+msgid ""
+"|product| integra un centralino tradizionale, con la tecnologia VOIP, linee "
+"ISDN e/o linee Analogiche e/o Flussi primari ed un sistema linux di tipo "
+"enterprise quale |parent_product|. |product| non è altro che uno dei tanti "
+"moduli che è possibile installare su |parent_product| di cui può sfruttare "
+"tutte le componenti e potenzialità. |parent_product|, derivato da RedHat "
+"Enterprise e Centos, ha tra i servizi installati"
+msgstr ""
+"|product| incorporates a traditional PBX, with VOIP technology, ISDN lines "
+"and/or analog lines and/or primary flows and an enterprise  linux system "
+"like |parent_product|. |product| is nothing more than one of the many "
+"modules that can be installed on |parent_product| of which it can leverage "
+"all the components and potentialities. |parent_product| derived from RedHat "
+"Enterprise and Centos, has with installed services"
+
+#: ../../introduzione.rst:26
+msgid "Apache"
+msgstr "Apache"
+
+#: ../../introduzione.rst:27
+msgid "Php"
+msgstr "Php"
+
+#: ../../introduzione.rst:28
+msgid "Mysql"
+msgstr "Mysql"
+
+#: ../../introduzione.rst:30
+msgid ""
+"che vengono utilizzati dal modulo |product|. Le componenti prettamente "
+"telefoniche invece sono:"
+msgstr ""
+"which are used by the |product| module. The purely telephone components are:"
+
+#: ../../introduzione.rst:32
+msgid "Basato su Asterisk"
+msgstr "Based on Asterisk"
+
+#: ../../introduzione.rst:33
+msgid "Schede per connessione con Fonia Pubblica (PSTN): Digium"
+msgstr "Public Phones (PSTN) cards: Digium"
+
+#: ../../introduzione.rst:34
+msgid "Tutti i Codec disponibili"
+msgstr "All available codecs"
+
+#: ../../introduzione.rst:35
+msgid "Tutti i Protocolli disponibili, utilizzati di default SIP e IAX"
+msgstr "All available protocols, used by default SIP and IAX"
+
+#: ../../introduzione.rst:37
+msgid "|product| può interagire"
+msgstr "|product| can interact"
+
+#: ../../introduzione.rst:39
+msgid ""
+"con il gestore telefonico che fornisce le linee ISDN o Analogiche o "
+"l'accesso primario"
+msgstr ""
+"with the telephone operator providing ISDN or Analogue lines or primary "
+"access"
+
+#: ../../introduzione.rst:40
+msgid "con telefoni analogici (tramite ATA)"
+msgstr "with analog phones (via ATA)"
+
+#: ../../introduzione.rst:41
+msgid "con un box GSM, per telefonate per cellulari"
+msgstr "with a GSM box, for cellphone calls"
+
+#: ../../introduzione.rst:42
+msgid "con la rete aziendale (pc, telefoni IP wifi e dect)"
+msgstr "with the corporate network (PCs, IP Phones wifi and dect)"
+
+#: ../../introduzione.rst:43
+msgid "con internet, tramite il router/firewall"
+msgstr "with the internet, via the router/firewall"
+
+#: ../../introduzione.rst:44
+msgid "con utenti mobili, via notebook con Softphone"
+msgstr "with mobile users, via notebook with Softphone"
+
+#: ../../introduzione.rst:45
+msgid "con sedi remote, con altro |product|"
+msgstr "with remote sites, with other |product|"
+
+#: ../../introduzione.rst:48
+msgid "Funzioni Principali"
+msgstr "Main Functions"
+
+#: ../../introduzione.rst:50
+msgid ""
+"Funzioni Telefoniche: trasferta, inoltro, deviazione, gruppi di chiamata, "
+"parcheggio, risposta x assente, gestione ID chiamante/chiamato"
+msgstr ""
+"Phone Features: transfer, forwarding, calling groups, parking, answer on no "
+"available, management of ID caller/called"
+
+#: ../../introduzione.rst:51
+msgid "Gestione avanzata dell?inoltro delle chiamate (CID, CLIP)"
+msgstr "Advanced management of the calls forward (CID, CLIP)"
+
+#: ../../introduzione.rst:52
+msgid ""
+"Segreteria telefonica/Voicemail: interfaccia web, integrazione con posta "
+"elettronica, personalizzazione messaggio"
+msgstr ""
+"Answering service/Voicemail: web interface, email integration, message "
+"personalization"
+
+#: ../../introduzione.rst:53
+msgid ""
+"Funzioni Messaggistica giorno/notte/festivo/pausa personalizzabili e "
+"flessibili"
+msgstr "Customizable and flexible day/night/holiday/pause messages service"
+
+#: ../../introduzione.rst:54
+msgid "Risponditore telefonico multilivello programmabile ( IVR)"
+msgstr "Answering service, multi-level and programmable (IVR)"
+
+#: ../../introduzione.rst:55
+msgid "Annunci vocali personalizzati, sistema basato su mp3 e wav"
+msgstr "Customizable voice  messages, mp3 and wav based system"
+
+#: ../../introduzione.rst:56
+msgid "Autocompletamento del CallerID sulla rubrica"
+msgstr "CallerID auto-completion on the phonebook"
+
+#: ../../introduzione.rst:57
+msgid "Gestione CODE di CallCenter o Contact Center"
+msgstr "Call Center / Contact Center queues management"
+
+#: ../../introduzione.rst:58
+msgid ""
+"Gestione LCR ( Instradamento delle chiamate verso l'operatore più economico "
+"per tipo di chiamata - incluso instradamento verso schede GSM)"
+msgstr ""
+"LCR management (call forwarding towards the better economically viable "
+"operator by call type, GSM forwarding included)"
+
+#: ../../introduzione.rst:59
+msgid "Registrazione dettagli chiamata (CDR)"
+msgstr "Call details recording (CDR)"
+
+#: ../../introduzione.rst:62
+msgid "Funzioni Evolute"
+msgstr "Advanced functions"
+
+#: ../../introduzione.rst:64
+msgid ""
+"Possibilità di integrazione con fax server (inoltro automatico via email - "
+"vedi paragrafo successivo)"
+msgstr ""
+"Possible to integrate with a fax server (auto-forwarding via email, see next "
+"chapter)"
+
+#: ../../introduzione.rst:65
+msgid "Funzioni di AudioVideoConferenza con 'Aule Virtuali'"
+msgstr "Audio video conference features with 'Virtual Classrooms'"
+
+#: ../../introduzione.rst:66
+msgid "Interfacciamento con software aziendali (es. CRM, ERP, Outlook, ecc..)"
+msgstr "Interfacing with enterprise software (eg. CRM, ERP, Outlook, etc.)"
+
+#: ../../introduzione.rst:67
+msgid ""
+"Possibilità di sviluppo di nuove funzionalità con minimo sforzo grazie alla "
+"piattaforma aperta su cui si basa il sistema Funzionalità complete VoIP "
+"(voice over IP), interfacciabile con standard VOIP"
+msgstr ""
+"Easy to develop new features with a minimal effort thanks to the open "
+"platform on which the VoIP (Voice over IP) system is based, VoIP standard "
+"compliant"
+
+#: ../../introduzione.rst:68
+msgid ""
+"Servizi di autenticazione (accesso a servizi tramite password e codici di "
+"sicurezza)"
+msgstr ""
+"Authentication services (access to services through passwords and security "
+"codes)"
+
+#: ../../introduzione.rst:69
+msgid ""
+"Supporto di tele manutenzione per ridurre al minimo la necessità di "
+"interventi presso sede cliente"
+msgstr ""
+"Maintenance support to minimize the interventions need at the customer site"
+
+#: ../../introduzione.rst:70
+msgid "Possibilità di integrare GSM BOX"
+msgstr "Possibility to integrate GSM BOX"
+
+#: ../../introduzione.rst:71
+msgid "|product_cti|"
+msgstr "|product_cti|"
+
+#: ../../introduzione.rst:72
+msgid "Server Fax"
+msgstr "Fax server"

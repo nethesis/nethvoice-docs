@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<config xmlns="http://zanata.org/namespace/config/">
+  <url>https://translate.zanata.org/</url>
+  <project>nethvoice-docs</project>
+  <project-version>v14</project-version>
+  <project-type>gettext</project-type>
+  <src-dir>_build/locale</src-dir>
+  <trans-dir>locale</trans-dir>
+  <rules>
+      <rule pattern="_build/locale/*.pot">{locale}/LC_MESSAGES/{filename}.po</rule>
+  </rules>
+</config>
