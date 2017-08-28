@@ -104,7 +104,7 @@ Il gateway prende la configurazione e si riavvia, vengono inoltre creati i fasci
 
 VoIP
 ----
-E' possibile creare dei fasci VoIP selezionando uno dei provider supportati, e inserendo le informazioni necessarie.
+E' possible creare dei fasci VoIP selezionando uno dei provider supportati, e inserendo le informazioni necessarie.
 
 Premere "Crea" per creare la configurazione relativa per quel fascio VoIP.
 
@@ -136,6 +136,62 @@ Ad esempio le schede cliente, nel wizard, vengono configurate per accedere al da
 
 Schede cliente
 --------------
+
+La sezione schede cliente, permette di raggrupare le informazioni presente su database esterni al centralino e mostrarle in fase di chiamata. Ad esempio, sulla chiamata di un certo cliente, prendere le infomazioni sul database relative alle sue fatture o ad eventuali insoluti e valutare ad esempio, se fornire assistenza o meno. Per generare una nuova scheda cliente i passi sono i seguenti
+
+Sorgenti
+........
+
+Cliccare sul bottone "Crea nuova sorgente" e compilare il form che si presenta:
+- Tipo database: specificare la tipologia di database su cui andare a prendere le informazioni
+- Nome database: specificare il nome del database a cui connettersi
+- Indirizzo database: specificare l'indirizzo per collegarsi al database (localhost, socket o IP esterni)
+- Porta database: specificare un porta del db diversa da quella di default proposta
+- Utente database: specificare l'utente usato per connettersi al database
+- Password database: speficare la password per collegarsi al database
+- Connessione: premere il pulsante "Verifica" per testare che le informazioni insertite siano corrette per la connessione
+
+Premere "Salva" per aggiungere la sorgente database. La sorgente appena creata apparirà tra la lista di quelle disponibili
+
+Template
+........
+
+I template sono il fac-simile per le vostre schede cliente. Utilizzano il motore `ejs`, che ha una sintassi *JavaScript-like*, che vi permette di scrivere codice html utilizzando specifiche direttive che potete trovare nel sito https://github.com/tj/ejs.
+
+Cliccare sul bottone "Crea nuovo template" per iniziare il processo di creazione:
+- Nome: specificare il nome del template
+- Results: contiene l'output della vostra query in formato JSON, utilizzate il campo di testo per effetuare delle prove e vedere come il vostro template HTML risulterà essere con i vostri dati.
+- Codice (ejs): in questo campo di testo, inserite il codice del vostro template, che rispetta la sintassi `ejs`, utilizzando i valori sopra indicati (che non sono altro che le colonne di risultato della vostra query)
+- Anteprima: combinando i risultati e il codice `ejs` vedrete l'output relativo HTML che sarà la vostra scheda cliente.
+
+Il centralino prevede giù dei template predefiniti con codice HTML già scritto, che potete duplicare e modificare cambiando colore.
+
+Schede
+......
+
+Una volta creata la sorgente e il template della vostra scheda, in questa sessione dovrete unire le due informazioni per far si che la scheda venga creata correttamente. Cliccare sul bottono "Crea nuova scheda" e compilare il form:
+- Nome: nome della scheda cliente
+- Sorgene: specificare la sorgente di database precedentemente creata
+- Template: specificare il template da associare precedentemente creato
+- Profilo: scegliare il tipo di profilo utente a cui far vedere la scheda cliente che stato creando
+- Query: inserite la query che vi restituirà le informazioni relative
+- Render: premendo il pulsante, la **query** verrà eseguita sulla **sorgente** specificata e i dati verranno inseriti nel **template** selezionato, producendo l'output desiderato.
+
+Premere il tasto "Salva" per salvare la vostra scheda cliente.
+
+.. warning:: Una volta creata la query e la scheda e verificato che il tutto funziona, utilizzare la variabile `$NUMBER` per sostituire i parametri numerici di ricerca delle vostra query.
+
+*Esempio*:
+
+Se la vostra query è di questo tipo:
+
+`select * from phonebook where homephone like '%150' or workphone like '%850' or cellphone like '%150' or fax like '%850'`
+
+dovrà diventare così:
+
+`select * from phonebook where homephone like '%$NUMBER' or workphone like '%$NUMBER' or cellphone like '%$NUMBER' or fax like '%$NUMBER'`
+
+La variable `$NUMBER` non è altro che il numero chiamante del centralino a cui la scheda cliente fa riferimento per effettuare la raccolta dei dati da mostrare.
 
 Sorgenti video
 --------------
