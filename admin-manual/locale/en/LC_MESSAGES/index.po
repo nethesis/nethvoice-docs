@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: NethVoice 14\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-08-28 12:58+0200\n"
+"POT-Creation-Date: 2017-08-30 12:05+0200\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -30,33 +30,37 @@ msgstr ""
 "collaboration services: data, voice and video."
 
 #: ../../index.rst:22
+msgid "Note di rilascio"
+msgstr ""
+
+#: ../../index.rst:30
 msgid "Introduzione"
 msgstr "Introduction"
 
-#: ../../index.rst:30
+#: ../../index.rst:38
 msgid "Installazione"
 msgstr "Installation"
 
-#: ../../index.rst:38
+#: ../../index.rst:46
 msgid "Backup & Restore"
 msgstr "Backup & Restore"
 
-#: ../../index.rst:46
+#: ../../index.rst:54
 msgid "Configurazione Base"
 msgstr "Base Configuration"
 
-#: ../../index.rst:54
+#: ../../index.rst:62
 msgid "Appendice"
 msgstr "Appendix"
 
-#: ../../index.rst:60
+#: ../../index.rst:68
 msgid "Indici"
 msgstr "Index"
 
-#: ../../index.rst:62
+#: ../../index.rst:70
 msgid ":ref:`genindex`"
 msgstr ":ref:`genindex`"
 
-#: ../../index.rst:63
+#: ../../index.rst:71
 msgid ":ref:`search`"
 msgstr ":ref:`search`"
