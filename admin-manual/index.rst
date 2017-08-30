@@ -9,6 +9,14 @@ Manuale amministratore |product| |release|
 .. rubric::
    |product| è una nuova soluzione telefonica aperta ed integrata con l'intero sistema informativo aziendale, in grado di fornire tutti i servizi di comunicazione e collaborazione: dati, voce e video.
 
+Note di rilascio
+----------------
+
+.. toctree::
+   :maxdepth: 2
+
+   release_notes
+
 Introduzione
 ------------
 
