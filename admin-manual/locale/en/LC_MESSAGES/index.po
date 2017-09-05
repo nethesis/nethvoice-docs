@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: NethVoice 14\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-08-30 12:05+0200\n"
+"POT-Creation-Date: 2017-09-05 11:32+0200\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -49,18 +49,18 @@ msgstr "Backup & Restore"
 msgid "Configurazione Base"
 msgstr "Base Configuration"
 
-#: ../../index.rst:62
+#: ../../index.rst:63
 msgid "Appendice"
 msgstr "Appendix"
 
-#: ../../index.rst:68
+#: ../../index.rst:69
 msgid "Indici"
 msgstr "Index"
 
-#: ../../index.rst:70
+#: ../../index.rst:71
 msgid ":ref:`genindex`"
 msgstr ":ref:`genindex`"
 
-#: ../../index.rst:71
+#: ../../index.rst:72
 msgid ":ref:`search`"
 msgstr ":ref:`search`"

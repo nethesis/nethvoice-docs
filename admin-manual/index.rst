@@ -1,6 +1,6 @@
 .. NethVoice documentation master file
 
-Manuale amministratore |product| |release| 
+Manuale amministratore |product| |release|
 ==========================================
 
 .. image:: _static/logo.png
@@ -27,7 +27,7 @@ Introduzione
 
 Installazione
 -------------
-  
+
 .. toctree::
    :maxdepth: 2
 
@@ -48,6 +48,7 @@ Configurazione Base
    :maxdepth: 2
 
    wizard
+   app_mobile
 
 Appendice
 ---------
