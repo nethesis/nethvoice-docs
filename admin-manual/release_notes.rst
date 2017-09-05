@@ -14,6 +14,18 @@ Cambiamenti significativi dalla release 11:
 * NethCTI  mobile app per IOS e Android rinnovata
 * NethVoice Scan & Play mobile app rinnovata
 
+Funzioni non ancora disponibili:
+
+* Analisi costi
+* Modulo Hotel con integrazione FIAS
+* Creazione modifica interni in modalità bulk
+* Call Query Routing
+* Selezione lingua dal prefisso
+* Servizio notte
+* Annunci e registrazioni TTS
+* Fasci Virtuali
+* Failover geografico e HA
+
 Aggiornamento
 =============
 
