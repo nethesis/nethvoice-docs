@@ -10,7 +10,7 @@ Installazione
 L'applicazione è disponibile ai seguenti link:
 
 - Android: https://play.google.com/store/apps/details?id=it.nethesis.scanplay14
-- iOS: https://itunes.apple.com/us/app/nethvoice-scan-14/id1277558637?ls=1&mt=8
+- iOS: https://itunes.apple.com/us/app/nethvoice-scan-play-14/id1277558637?ls=1&mt=8
 
 E' possibile comunque cercare la parola **macscan** nei diversi store e installarla senza il link diretto.
 
