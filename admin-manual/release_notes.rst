@@ -16,6 +16,7 @@ Cambiamenti significativi dalla release 11:
 
 Funzioni non ancora disponibili:
 
+* Numeri Brevi
 * Analisi costi
 * Modulo Hotel con integrazione FIAS
 * Creazione modifica interni in modalità bulk
@@ -25,6 +26,7 @@ Funzioni non ancora disponibili:
 * Annunci e registrazioni TTS
 * Fasci Virtuali
 * Failover geografico e HA
+* Codec g729
 
 Aggiornamento
 =============
