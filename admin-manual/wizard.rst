@@ -62,6 +62,9 @@ Con l'installazione, vengono creati di default 4 profili che contengono l'abilit
 
 E' possibile creare anche nuovi profili, duplicando uno esistente o creandone di nuovi e specificando le varie funzionalità
 
+
+.. _telefoni_fisici_supportati:
+
 Dispositivi
 -----------
 In questa sezione è possibile scansionare la propria rete e il wizard troverà in automatico i telefoni che sono collegati alla vostra rete, individuando, dove è possibile, marco e modello e vi fornisce inoltre l'indirizzo IP e il MAC address.

@@ -50,6 +50,14 @@ Configurazione Base
    wizard
    app_mobile
 
+Configurazione Avanzata
+-----------------------
+
+.. toctree::
+   :maxdepth: 2
+
+   advanced_config
+
 Appendice
 ---------
 
