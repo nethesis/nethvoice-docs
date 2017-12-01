@@ -7,7 +7,7 @@ Di default il file di log riporta solamente messaggi di *warning* ed *errori*.
 .. code-block:: bash
 
   config setprop nethcti-server LogLevel info
-  signal-event nethcti-server-update
+  signal-event nethcti-server3-update
 
 .. warning::
   Innalzando il livello la dimensione del file di log aumenta rapidamente.
@@ -17,7 +17,7 @@ Per ripristinare il livello di default:
 .. code-block:: bash
 
   config setprop nethcti-server LogLevel warn
-  signal-event nethcti-server-update
+  signal-event nethcti-server3-update
 
 
 Disattivazione della modalità di Click2Call automatico
@@ -33,11 +33,11 @@ il centralino telefonico è in cloud ed i telefoni siano in LAN dietro NAT. Per 
 .. code-block:: bash
 
   config setprop nethcti-server AutoC2C disabled
-  signal-event nethcti-server-update
+  signal-event nethcti-server3-update
 
 Per ripristinare il valore di default:
 
 .. code-block:: bash
 
   config setprop nethcti-server AutoC2C enabled
-  signal-event nethcti-server-update
+  signal-event nethcti-server3-update
