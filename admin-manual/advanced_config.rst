@@ -23,8 +23,6 @@ Per ripristinare il livello di default:
 Disattivazione della modalità di Click2Call automatico
 ======================================================
 
-La modalità *Click2Call automatica* è attiva di default per tutti i :ref:`telefoni fisici supportati <telefoni_fisici_supportati>` e
-offre la possibilità di pilotare le telefonate (chiamate e risposte) direttamente da NethCTI senza la
 necessità di sollevare la cornetta telefonica.
 
 In alcuni scenari potrebbe essere utile disattivare la funzionalità, ad esempio nel caso in cui
@@ -41,3 +39,32 @@ Per ripristinare il valore di default:
 
   config setprop nethcti-server AutoC2C enabled
   signal-event nethcti-server3-update
+
+
+Utilizzo di un server chat esterno
+==================================
+
+È possibile configurare un server chat presente su un'altra macchina:
+
+.. code-block:: bash
+
+  config setprop nethcti-server JabberUrl <BOSH_URL>
+  signal-event nethcti-server3-update
+
+For example:
+
+.. code-block:: bash
+
+  config setprop nethcti-server JabberUrl https://nethserver.mydomain.it/http-bind
+  signal-event nethcti-server3-update
+
+Per ripristinare il default:
+
+.. code-block:: bash
+
+  config setprop nethcti-server JabberUrl ""
+  signal-event nethcti-server3-update
+
+.. note::
+  Il server chat specificato deve supportare `XMPP <https://en.wikipedia.org/wiki/XMPP>`_ su protocollo `BOSH <https://en.wikipedia.org/wiki/BOSH_(protocol)>`_.
+  `NethServer <http://docs.nethserver.org/it/v7/chat.html>`_ lo supporta di default.
