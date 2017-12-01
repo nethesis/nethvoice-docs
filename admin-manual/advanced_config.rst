@@ -51,7 +51,7 @@ Per ripristinare il valore di default:
   config setprop nethcti-server JabberUrl <BOSH_URL>
   signal-event nethcti-server3-update
 
-For example:
+Per esempio:
 
 .. code-block:: bash
 
