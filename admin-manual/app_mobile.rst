@@ -4,6 +4,13 @@ App mobile
 
 L'applicazione Scan&Play è disponibile su smartphone e permette di scansionare i MAC address dei telefoni per velocizzare la configurazione e il provisioning.
 
+Requisiti
+---------
+
+- Presenza di un certificato valido sul server
+- Raggiungibilità della porta HTTPS 443 dall'esterno
+- Apertura del range di porte UDP dalla 10000 alla 20000 per consentire l'utilizzo del softphone WebRTC
+
 Installazione
 -------------
 
