@@ -1,14 +1,15 @@
 # Edoardo Spadoni <edoardo.spadoni@nethesis.it>, 2017. #zanata
+# Polidori Alessandro <alessandro.polidori@gmail.com>, 2017. #zanata
 msgid ""
 msgstr ""
 "Project-Id-Version: NethVoice 14\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-12-01 16:36+0100\n"
+"POT-Creation-Date: 2017-12-04 16:55+0100\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2017-09-11 03:14-0400\n"
-"Last-Translator: Edoardo Spadoni <edoardo.spadoni@nethesis.it>\n"
+"PO-Revision-Date: 2017-12-04 11:01-0500\n"
+"Last-Translator: Polidori Alessandro <alessandro.polidori@gmail.com>\n"
 "Language-Team: English (United States)\n"
 "Language: en-US\n"
 "X-Generator: Zanata 3.9.6\n"
@@ -28,14 +29,34 @@ msgstr ""
 "addresses to speed-up configuration and provisioning."
 
 #: ../../app_mobile.rst:17
+msgid "Requisiti"
+msgstr "Requirements"
+
+#: ../../app_mobile.rst:19
+msgid "Presenza di un certificato valido sul server"
+msgstr "A valid certificate on the server"
+
+#: ../../app_mobile.rst:20
+msgid "Raggiungibilità della porta HTTPS 443 dall'esterno"
+msgstr "Port HTTPS 443 open from outside"
+
+#: ../../app_mobile.rst:21
+msgid ""
+"Apertura del range di porte UDP dalla 10000 alla 20000 per consentire "
+"l'utilizzo del softphone WebRTC"
+msgstr ""
+"Opening UDP range ports from 10000 to 20000 to allow the use of the WebRTC "
+"softphone"
+
+#: ../../app_mobile.rst:24
 msgid "Installazione"
 msgstr "Installation"
 
-#: ../../app_mobile.rst:19
+#: ../../app_mobile.rst:26
 msgid "L'applicazione è disponibile ai seguenti link:"
 msgstr "The app is available at following links:"
 
-#: ../../app_mobile.rst:21
+#: ../../app_mobile.rst:28
 msgid ""
 "Android: https://play.google.com/store/apps/details?id=it.nethesis."
 "scanplay14"
@@ -43,14 +64,14 @@ msgstr ""
 "Android: https://play.google.com/store/apps/details?id=it.nethesis."
 "scanplay14"
 
-#: ../../app_mobile.rst:22
+#: ../../app_mobile.rst:29
 msgid ""
 "iOS: https://itunes.apple.com/us/app/nethvoice-scan-play-14/id1277558637?ls="
 "1&mt=8"
 msgstr ""
 "iOS: https://itunes.apple.com/us/app/nethvoice-scan-play-14/id1277558637"
 
-#: ../../app_mobile.rst:24
+#: ../../app_mobile.rst:31
 msgid ""
 "E' possibile comunque cercare la parola **macscan** nei diversi store e "
 "installarla senza il link diretto."
@@ -58,25 +79,25 @@ msgstr ""
 "It is also possible to search word **macscan** in diffrent stores without "
 "direct link"
 
-#: ../../app_mobile.rst:27
+#: ../../app_mobile.rst:34
 msgid "Utilizzo"
 msgstr "Use"
 
-#: ../../app_mobile.rst:29
+#: ../../app_mobile.rst:36
 msgid "Appena avviata l'applicazione vi chiede le infomazioni di login:"
 msgstr "Once the app is installed, insert the info to login into:"
 
-#: ../../app_mobile.rst:31
+#: ../../app_mobile.rst:38
 msgid ""
 "Username: l'username dell'utente amministratore del centralino con cui "
 "collegarsi (che è `admin`)"
 msgstr "Username: is the administrator username of pbx (that is `admin`)"
 
-#: ../../app_mobile.rst:32
+#: ../../app_mobile.rst:39
 msgid "Password: la password dell'utente admin con cui collegarsi"
 msgstr "Password: the password of admin user"
 
-#: ../../app_mobile.rst:33
+#: ../../app_mobile.rst:40
 msgid ""
 "Hostname: il nome o l'indirizzo IP del server (server in cui è installato il "
 "centralino)"
@@ -84,38 +105,38 @@ msgstr ""
 "Hostname: the name or the IP of the server (server in which the pbx is "
 "installed)"
 
-#: ../../app_mobile.rst:35
+#: ../../app_mobile.rst:42
 msgid "Una volta effettuato il login:"
 msgstr "Once the login is done:"
 
-#: ../../app_mobile.rst:37
+#: ../../app_mobile.rst:44
 msgid "Premere il pulsante \"Scan\" per avviare la fotocamera dello smartphone"
 msgstr "Click on the \"Scan\" button to start smartphone camera"
 
-#: ../../app_mobile.rst:38
+#: ../../app_mobile.rst:45
 msgid "Avvicinarsi al MAC address del telefono o della scatola del telefono"
 msgstr ""
 "Keep the smartphone near the MAC address of telephone or telephone box"
 
-#: ../../app_mobile.rst:39
+#: ../../app_mobile.rst:46
 msgid ""
 "L'applicazione riconosce il MAC address e ricava il fornitore del telefono"
 msgstr ""
 "The app recognize the MAC address and retrieve the vendor of telephone"
 
-#: ../../app_mobile.rst:40
+#: ../../app_mobile.rst:47
 msgid "Selezionare il modello di telefono"
 msgstr "Select the telephone model"
 
-#: ../../app_mobile.rst:41
+#: ../../app_mobile.rst:48
 msgid "Selezionare l'utente del centralino a cui associare il telefono"
 msgstr "Select the user of pbx to associate the phone"
 
-#: ../../app_mobile.rst:42
+#: ../../app_mobile.rst:49
 msgid "Premere il pulsante \"Salva\" per salvare la configurazione"
 msgstr "Click \"Save\" button to save the configuration"
 
-#: ../../app_mobile.rst:44
+#: ../../app_mobile.rst:51
 msgid ""
 "Collegare il telefono nella stessa rete del centralino e verificare che "
 "venga effettuato correttamente il provisioning del telefono."
