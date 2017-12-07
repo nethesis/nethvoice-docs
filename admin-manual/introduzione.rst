@@ -39,7 +39,7 @@ Funzioni Principali
 ===================
 
 * Funzioni Telefoniche: trasferta, inoltro, deviazione, gruppi di chiamata, parcheggio, risposta x assente, gestione ID chiamante/chiamato
-* Gestione avanzata dell?inoltro delle chiamate (CID, CLIP)
+* Gestione avanzata dell'inoltro delle chiamate (CID, CLIP)
 * Segreteria telefonica/Voicemail: interfaccia web, integrazione con posta elettronica, personalizzazione messaggio
 * Funzioni Messaggistica giorno/notte/festivo/pausa personalizzabili e flessibili
 * Risponditore telefonico multilivello programmabile ( IVR)
