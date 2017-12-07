@@ -43,7 +43,7 @@ E' possibile ora inserire gli interni relativi per ogni utente:
 
 Gruppi
 ------
-E' possibile creare dei gruppi utente che servono per raggruppare determinati utenti che poi saranno visibili nell'applicazione componenti
+E' possibile creare dei gruppi utente che poi saranno visibili e utilizzabili nelle applicazioni, come ad esempio nel |product_cti| 
 
 - Cliccare il bottone "Crea nuovo gruppo"
 - Specificare un nome e salvare
@@ -62,12 +62,15 @@ Con l'installazione, vengono creati di default 4 profili che contengono l'abilit
 
 E' possibile creare anche nuovi profili, duplicando uno esistente o creandone di nuovi e specificando le varie funzionalità
 
+.. note:: Ricordarsi di abilitare sui profili dove necessario l'accesso ai gruppi utente precedentemente creati.
 
 .. _telefoni_fisici_supportati:
 
 Dispositivi
 -----------
 In questa sezione è possibile scansionare la propria rete e il wizard troverà in automatico i telefoni che sono collegati alla vostra rete, individuando, dove è possibile, marco e modello e vi fornisce inoltre l'indirizzo IP e il MAC address.
+
+Le marche telefoniche al momento supportate sono *Sangoma, Yealink, Snom, Alcatel*.
 
 Se in alcuni telefoni non è stato possibile trovare automaticamente il modello, servirsi del menù a tendina per specificarlo.
 
@@ -78,11 +81,11 @@ Configurazioni
 Lo step finale della sezione Utenti, prevede di raggruppare tutte le impostazioni create e definite nei passi precedenti.
 La lista degli utenti mostra quelli a cui è stato associato un interno nel primo step. Selezionando un utente è possibile:
 
-- Creare un dispositivo personalizzato (ad esempio softphone)
+- Creare un dispositivo personalizzato per collegare all'utente un appararto telefonico non supportato (ad esempio softphone)
 - Associare un telefono di quelli precedentemente configurati (effettuando il provisioning automatico)
 - Inserire un numero di cellulare
-- Abilitare il support alla voicemail
-- Abilitare il support al WebRTC
+- Abilitare la voicemail
+- Abilitare il client WebRTC
 - Scegliere il profilo da destinare all'utente (uno di quelli definiti allo step 3)
 - Scegliere un gruppo a cui far parte (uno di quelli creati allo step 2)
 

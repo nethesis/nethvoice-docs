@@ -58,6 +58,17 @@ Configurazione Avanzata
 
    advanced_config
 
+Moduli Aggiuntivi
+-----------------
+
+.. toctree::
+   :maxdepth: 2
+
+   queue_report
+   inbound_report
+   hotel
+
+
 |product_cti|: Guida Sviluppatori
 ---------------------------------
 
