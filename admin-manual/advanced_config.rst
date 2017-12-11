@@ -1,7 +1,7 @@
 |product|: installazione codec g729
 ===================================
 
-Per installare ed attivare il codec g729 opensource ecco la procedura (comporta il riavvio di asterisk e quindi l'eventuale caduta di chiamate incorso):
+Per installare ed attivare il codec g729 opensource ecco la procedura (comporta il riavvio di asterisk e quindi l'eventuale caduta di chiamate in corso):
 
 .. code-block:: bash
 
@@ -12,6 +12,7 @@ Per installare ed attivare il codec g729 opensource ecco la procedura (comporta 
   systemctl restart asterisk
 
 Il codec g729 opensource non è compatibile con la versione a pagamento di Digium, che si può installare seguendo la procedura che vi forniranno con l'acquisto.
+
 E' possibile, quindi, utilizzare contemporaneamente solo una delle due versioni di g729, opensource o Digium.
 
 
@@ -40,7 +41,7 @@ Per ripristinare il livello di default:
 |product_cti|: disattivazione della modalità di Click2Call automatico
 =====================================================================
 
-necessità di sollevare la cornetta telefonica.
+Necessità di sollevare la cornetta telefonica.
 
 In alcuni scenari potrebbe essere utile disattivare la funzionalità, ad esempio nel caso in cui
 il centralino telefonico è in cloud ed i telefoni siano in LAN dietro NAT. Per disattivare:
