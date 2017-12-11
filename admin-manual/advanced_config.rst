@@ -1,3 +1,20 @@
+|product|: installazione codec g729
+===================================
+
+Per installare ed attivare il codec g729 opensource ecco la procedura (comporta il riavvio di asterisk e quindi l'eventuale caduta di chiamate incorso):
+
+.. code-block:: bash
+
+  cd /usr/lib64/asterisk/modules/
+  wget http://asterisk.hosting.lv/bin/codec_g729-ast130-gcc4-glibc-x86_64-pentium4.so
+  mv codec_g729-ast130-gcc4-glibc-x86_64-pentium4.so codec_g729.so
+  chmod 755 codec_g729.so
+  systemctl restart asterisk
+
+Il codec g729 opensource non è compatibile con la versione a pagamento di Digium, che si può installare seguendo la procedura che vi forniranno con l'acquisto.
+E' possibile, quindi, utilizzare contemporaneamente solo una delle due versioni di g729, opensource o Digium.
+
+
 |product_cti|: attivazione debug
 ================================
 
