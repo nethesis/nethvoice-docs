@@ -4,7 +4,7 @@ Report Chiamate Entranti
 
 Il Report delle Chiamate Entranti è un modulo di |product| che consente di avere un'analisi statistica e dei grafici dedicati a tutte le chiamate entranti.
 
-L’accesso al Report Chiamate Entranti è consentito di default all’utente admin e ad ogni utente membro del gruppo inboundmanager, che se non presente va creato.
+L’accesso al Report Chiamate Entranti è consentito di default all’utente admin.
 
 Il modulo si divide in due sezioni principalmente, quelle Generale e Distribuzione dove vengono racconti i dati statistici, e quella dei Grafici dove questi dati vengono utilizzati per produrre dei grafici che semplificano l'analisi dei dati.
 
