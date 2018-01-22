@@ -20,7 +20,6 @@ Funzioni non ancora disponibili:
 * Analisi costi
 * Integrazione FIAS
 * Creazione modifica interni in modalità bulk
-* Call Query Routing
 * Annunci e registrazioni TTS
 * Fasci Virtuali
 * Failover geografico e HA
