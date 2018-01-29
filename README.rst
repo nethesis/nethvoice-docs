@@ -12,7 +12,7 @@ Inside each document directory there are some specials files:
 * Makefile: Sphinx build makefile
 * index.rst: document structure
 
-All other ``.rst`` files are chapters of the manual. 
+All other ``.rst`` files are chapters of the manual.
 If you wish to add a new chapter, create a new file and add it to the index.rst file.
 
 Branches
@@ -34,7 +34,7 @@ Beta branches are marked by appending **b** to the branch name, eg: v14b.
 How to contribute
 =================
 
-The easiest way to contribute is by forking and editing the repository 
+The easiest way to contribute is by forking and editing the repository
 directly on GitHub:
 
 * Create a GitHub account if you don't already have it
@@ -73,7 +73,7 @@ Next headers levels are::
     ~~~~~~~~~~~~
 
 Use the \* character for unordered list ::
- 
+
     * First element
     * Second element
 
@@ -91,11 +91,11 @@ A field description can also contain a bullet list ::
         * Second element
 
 Highlight important words ::
-   
+
     This is and *important* word.
-    
+
 Add notes with ::
-    
+
     .. note:: Highlight this text
 
 Add warnings with ::
@@ -103,13 +103,13 @@ Add warnings with ::
     .. warning:: Warning text fragments
 
 
-    
+
 You can find more info about **RST Inline Markup** here: rst-cheatsheet_
 
 .. _rst-cheatsheet: https://github.com/ralsina/rst-cheatsheet/blob/master/rst-cheatsheet.rst
- 
 
-Do not use *NethVoice* name inside documentation. Any time you need to add the product name, 
+
+Do not use *NethVoice* name inside documentation. Any time you need to add the product name,
 use the *product* macro::
 
   |product| has this amazing feature!
@@ -133,7 +133,7 @@ For example if you are naming a system user::
  The :dfn:`admin` user is mighty powerful.
 
 Also take care of indexing important content. You must index a word only one time per section::
- 
+
  The :dfn:`admin` user is mighty powerful.
  Remember to change the :index:`admin` password.
 
@@ -167,7 +167,7 @@ The source language is Italian. To build the English manual: ::
 Localization
 ============
 
-The localization workflow is based on Zanata. 
+The localization workflow is based on Zanata.
 
 https://translate.zanata.org/project/view/nethvoice-docs
 
@@ -177,13 +177,17 @@ The source language is Italian. To build the ``.pot`` files under
    make gettext
 
 Upload ``.pot`` files to Zanata: ::
-    
+
     zanata-cli push --src-lang it
 
 Download tranlations from Zanata: ::
-    
+
     zanata-cli pull
 
 .. warning::
 
     Remember to commit the downloaded translations!
+
+Requirements::
+
+   pip install sphinx sphinx_rtd_theme sphinx_bootstrap_theme
