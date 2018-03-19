@@ -22,7 +22,7 @@ permanente (WebSocket o TCP).
 Eseguire il login
 -----------------
 
-1. Il client invia una richiesta HTTP (POST) alla seguente rest api:
+1. Il client invia una richiesta HTTPS (POST) alla seguente rest api:
 
 .. code-block:: bash
 
@@ -34,7 +34,7 @@ specificando lo *username* e *password* in formato JSON:
 
  { "username": "my_user", "password": "my_password" }
 
-2. Il client riceve una risposta standard HTTP 401. Se l'autenticazione ha avuto successo la rispostacontiene un *nonce* (una stringa) nello header HTTP, altrimenti l'autenticazione è fallita. Un esempio di header è (il nonce è *06d15944d8ece69bdc97742b37c507970e2f6651*):
+2. Il client riceve una risposta standard HTTPS 401. Se l'autenticazione ha avuto successo la risposta contiene un *nonce* (una stringa) nello header HTTPS, altrimenti l'autenticazione è fallita. Un esempio di header è (il nonce è *06d15944d8ece69bdc97742b37c507970e2f6651*):
 
 .. code-block:: bash
 
@@ -57,7 +57,7 @@ Una nuova fase d'autenticazione è necessaria.**
 Eseguire il logout
 ------------------
 
-1. Il client invia una richiesta HTTP (POST) alla seguente rest api:
+1. Il client invia una richiesta HTTPS (POST) alla seguente rest api:
 
 .. code-block:: bash
 
@@ -80,22 +80,22 @@ Come usare una API
 
 Di seguito vengono elencate le caratteristiche comuni a tutte le REST API:
 
-* una API viene invocata tramite l'invio di una richiesta HTTP[S] al server |product_cti| che risponde fornendo i dati richiesti o tramite un codice di stato o entrambi.
-* I codici di stato delle risposte HTTP sono quelli `standard <http://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html>`_.
+* una API viene invocata tramite l'invio di una richiesta HTTPS al server |product_cti| che risponde fornendo i dati richiesti o tramite un codice di stato o entrambi.
+* I codici di stato delle risposte HTTPS sono quelli `standard <http://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html>`_.
 * Il formato utilizzato per lo scambio dati è `JSON <http://www.json.org/>`_.
 * Tutte le risorse sono raggiungibili tramite l'urli base:
 
 .. code-block:: bash
 
-  http[s]://<SERVER>/webrest/
+  https://<SERVER>/webrest/
 
 * Per richiedere una API è necessario aggiungere un *patì* al baseurl che specifica la risorsa da richiedere. Per esempio:
 
 .. code-block:: bash
 
-  http[s]://<SERVER>/webrest/phonebook/search
+  https://<SERVER>/webrest/phonebook/search
 
-* Ogni richiesta deve contenere i parametri d'autenticazione per il controllo d'accesso, specificando lo header HTTP ``Authorization``:
+* Ogni richiesta deve contenere i parametri d'autenticazione per il controllo d'accesso, specificando lo header HTTPS ``Authorization``:
 
 .. code-block:: bash
 
@@ -108,7 +108,7 @@ Autenticazione
 --------------
 
 #. L'autenticazione di una richiesta REST viene eseguita dal server controllando la validità del token passato. Quindi, come fase preliminare, Il client deve eseguire il login e deve creare un token d'autenticazione come descritto :ref:`qui <authentication-ref-label>`.
-#. Ogni richiesta deve contenere lo header HTTP ``Authorization``:
+#. Ogni richiesta deve contenere lo header HTTPS ``Authorization``:
 
 .. code-block:: bash
 
