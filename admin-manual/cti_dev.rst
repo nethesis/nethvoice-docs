@@ -238,8 +238,18 @@ Per stabilire una connessione WebSocket col server |product_cti| è necessaria u
 Eseguire il login
 -----------------
 
-1. Il client esegue il login e crea un nuovo token d'autenticazione come descritto :ref:`qui <authentication-ref-label>`.
-2. Il client stabilisce una connessione websocket con il server (la porta di default sicura è la 8181).
+1. Il client esegue il login e crea un nuovo token d'autenticazione come descritto :ref:`qui <authentication-ref-label>`
+2. Il client stabilisce una connessione websocket con il server sulla porta HTTPS 443:
+
+.. code-block:: bash
+
+ socket = new io('https://server.domain.com', {
+   "upgrade": false,
+   "transports": ['websocket'],
+   "reconnection": true,
+   "reconnectionDelay": 2000
+ });
+
 3. Il client invia il messaggio *login* al server attraverso la connessione websocket specificando *username* e *token* in formato JSON:
 
 .. code-block:: bash
