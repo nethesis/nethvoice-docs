@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: NethVoice 14\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-12-12 10:23+0100\n"
+"POT-Creation-Date: 2018-04-05 14:44+0200\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -15,15 +15,15 @@ msgstr ""
 "X-Generator: Zanata 3.9.6\n"
 "Plural-Forms: nplurals=2; plural=(n != 1)\n"
 
-#: ../../release_notes.rst:12
+#: ../../release_notes.rst:13
 msgid "Note di rilascio |version|"
 msgstr "Release notes |version|"
 
-#: ../../release_notes.rst:14
+#: ../../release_notes.rst:15
 msgid "|product| release |version|"
 msgstr "|product| release |version|"
 
-#: ../../release_notes.rst:16
+#: ../../release_notes.rst:17
 msgid ""
 "Questa release è basata su `Asterisk 13 <https://wiki.asterisk.org/wiki/"
 "display/AST/New+in+13>`_ e `FreePBX 14 <https://www.freepbx.org/freepbx-14-"
@@ -33,49 +33,45 @@ msgstr ""
 "<https://wiki.asterisk.org/wiki/display/AST/New+in+13/>` _ and `FreePBX 14 "
 "<https://www.freepbx.org/freepbx- 14-release-candidate /> `_:"
 
-#: ../../release_notes.rst:19
+#: ../../release_notes.rst:20
 msgid "Cambiamenti significativi dalla release 11:"
 msgstr "Relevant changes since 11:"
 
-#: ../../release_notes.rst:21
+#: ../../release_notes.rst:22
 msgid "Wizard per la configurazione"
 msgstr "Wizard for the configuration"
 
-#: ../../release_notes.rst:22
+#: ../../release_notes.rst:23
 msgid "Nuovo |product_cti| più intuitivo e con supporto completo a WebRTC"
 msgstr "New | product_cti | more intuitive and with full support to WebRTC"
 
-#: ../../release_notes.rst:23
+#: ../../release_notes.rst:24
 msgid "NethCTI  mobile app per IOS e Android rinnovata"
 msgstr "NethCTI mobile app for IOS and Android renewed"
 
-#: ../../release_notes.rst:24
+#: ../../release_notes.rst:25
 msgid "NethVoice Scan & Play mobile app rinnovata"
 msgstr "NethVoice Scan&Play mobile app renewed"
 
-#: ../../release_notes.rst:26
+#: ../../release_notes.rst:27
 msgid "Funzioni non ancora disponibili:"
 msgstr "Functions not yet available:"
 
-#: ../../release_notes.rst:28
+#: ../../release_notes.rst:29
 msgid "Numeri Brevi"
 msgstr "Short numbers"
 
-#: ../../release_notes.rst:29
+#: ../../release_notes.rst:30
 msgid "Analisi costi"
 msgstr "Cost analysis\n"
 
-#: ../../release_notes.rst:30
+#: ../../release_notes.rst:31
 msgid "Integrazione FIAS"
 msgstr "FIAS integration"
 
-#: ../../release_notes.rst:31
+#: ../../release_notes.rst:32
 msgid "Creazione modifica interni in modalità bulk"
 msgstr "Creation of internal changes in bulk mode"
-
-#: ../../release_notes.rst:32
-msgid "Call Query Routing"
-msgstr "Call Query Routing"
 
 #: ../../release_notes.rst:33
 msgid "Annunci e registrazioni TTS"
