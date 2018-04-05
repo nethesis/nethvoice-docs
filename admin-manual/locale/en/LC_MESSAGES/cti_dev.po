@@ -1,0 +1,533 @@
+# Youssef <mehniyoussef@gmail.com>, 2018. #zanata
+msgid ""
+msgstr ""
+"Project-Id-Version: NethVoice 14\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-12-05 12:53+0100\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2018-02-16 06:01-0500\n"
+"Last-Translator: Youssef <mehniyoussef@gmail.com>\n"
+"Language-Team: English (United States)\n"
+"Language: en-US\n"
+"X-Generator: Zanata 3.9.6\n"
+"Plural-Forms: nplurals=2; plural=(n != 1)\n"
+
+#: ../../cti_dev.rst:11
+msgid "Panoramica"
+msgstr "Overview"
+
+#: ../../cti_dev.rst:13
+msgid ""
+"Questa sezione della documentazione ha lo scopo di avviare lo sviluppatore "
+"alla realizzazione di un'applicazione reale che sfrutti le REST API di "
+"|product_cti|. Gli argomenti trattati sono quelli dell'autenticazione, "
+"dell'utilizzo delle REST API e della comunicazione bidirezionale via "
+"WebSocket."
+msgstr ""
+"This section of the documentation aims to start the developer to create a "
+"real application that exploits the REST API of | product_cti |. Topics "
+"covered are authentication, REST API usage and bidirectional communication "
+"via WebSocket."
+
+#: ../../cti_dev.rst:18
+msgid ""
+"In tal modo lo sviluppatore sarà in grado di realizzare applicazioni in "
+"grado di mostrare informazioni in tempo reale e di poter effettuare "
+"operazioni di ogni genere."
+msgstr ""
+"In this way the developer will be able to create applications that can "
+"display information in real time and can perform operations of all kinds."
+
+#: ../../cti_dev.rst:24
+#: ../../cti_dev.rst:117
+msgid "Autenticazione"
+msgstr "Authentication"
+
+#: ../../cti_dev.rst:26
+msgid ""
+"Lo scopo della fase d’autenticazione è creare un token che sarà usato per le "
+"operazioni future, quali l’invocazione delle REST API o per creare una "
+"connessione permanente (WebSocket o TCP)."
+msgstr ""
+"The purpose of the authentication process is to create a token that will be "
+"used for future operations, such as the invocation of the REST API or to "
+"create a permanent connection (WebSocket or TCP)."
+
+#: ../../cti_dev.rst:32
+#: ../../cti_dev.rst:248
+msgid "Eseguire il login"
+msgstr "Login"
+
+#: ../../cti_dev.rst:34
+#: ../../cti_dev.rst:69
+msgid "Il client invia una richiesta HTTP (POST) alla seguente rest api:"
+msgstr "The client send a HTTP request(POST) to the following API:"
+
+#: ../../cti_dev.rst:40
+msgid "specificando lo *username* e *password* in formato JSON:"
+msgstr "specifying the username and passowrd in JSON format:"
+
+#: ../../cti_dev.rst:46
+msgid ""
+"Il client riceve una risposta standard HTTP 401. Se l'autenticazione ha "
+"avuto successo la rispostacontiene un *nonce* (una stringa) nello header "
+"HTTP, altrimenti l'autenticazione è fallita. Un esempio di header è (il "
+"nonce è *06d15944d8ece69bdc97742b37c507970e2f6651*):"
+msgstr ""
+"The client recive a standard response HTTP_401 . If the authentication had "
+"succes the response contain a nonce in the HTTP header,otherwise the "
+"authentication fail. An example of a header is( nonce is "
+"\"06d15944d8ece69bdc97742b37c507970e2f6651\");"
+
+#: ../../cti_dev.rst:53
+msgid "Il client calcola il token:"
+msgstr "The client calculate the token"
+
+#: ../../cti_dev.rst:60
+msgid "Il client memorizza il token per usi futuri."
+msgstr "The client save the token for future uses"
+
+#: ../../cti_dev.rst:62
+msgid ""
+"**Se il token d'autenticazione non viene mai usato, scade dopo un certo "
+"periodo di tempo (il default è mezz'ora). Una nuova fase d'autenticazione è "
+"necessaria.**"
+msgstr ""
+"** If the authentication token is never used, it expires after a certain "
+"period of time (default is half an hour). A new authentication phase is "
+"required. **"
+
+#: ../../cti_dev.rst:67
+msgid "Eseguire il logout"
+msgstr "Logout"
+
+#: ../../cti_dev.rst:75
+msgid "Il token viene rimosso dal server."
+msgstr "The token is removed from the server"
+
+#: ../../cti_dev.rst:79
+msgid "REST API"
+msgstr "REST API"
+
+#: ../../cti_dev.rst:81
+msgid ""
+"Le REST API sono dei Web Services che consentono l'interazione con il server "
+"|product_cti|. È uno strumento molto utile per l'integrazione e lo sviluppo."
+msgstr ""
+"REST APIs are Web Services that allow interaction with the | product_cti | "
+"server. It is a very useful tool for integration and development."
+
+#: ../../cti_dev.rst:85
+msgid ""
+"Questo documento assume che il lettore possegga già una certa familiarità "
+"con le più comuni tecniche di programmazione e Web Services."
+msgstr ""
+"This document assume that the reader is already familar with the common "
+"programing technique and Web Services"
+
+#: ../../cti_dev.rst:88
+msgid "Come usare una API"
+msgstr "How to use an API"
+
+#: ../../cti_dev.rst:90
+msgid ""
+"Di seguito vengono elencate le caratteristiche comuni a tutte le REST API:"
+msgstr "The characteristics common to all REST APIs are listed below"
+
+#: ../../cti_dev.rst:92
+msgid ""
+"una API viene invocata tramite l'invio di una richiesta HTTP[S] al server "
+"|product_cti| che risponde fornendo i dati richiesti o tramite un codice di "
+"stato o entrambi."
+msgstr ""
+"an API is invoked by sending an HTTP[S] request to the | product_cti | "
+"server responding by providing the requested data either via a status code "
+"or both."
+
+#: ../../cti_dev.rst:93
+msgid ""
+"I codici di stato delle risposte HTTP sono quelli `standard <http://www.w3."
+"org/Protocols/rfc2616/rfc2616-sec10.html>`_."
+msgstr ""
+"The   HTTP status code  are the 'standard' one\n"
+"<http://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html>"
+
+#: ../../cti_dev.rst:94
+msgid ""
+"Il formato utilizzato per lo scambio dati è `JSON <http://www.json.org/>`_."
+msgstr ""
+"The format used for  data interchange  is  JSON <http://www.json.org/>"
+
+#: ../../cti_dev.rst:95
+msgid "Tutte le risorse sono raggiungibili tramite l'urli base:"
+msgstr "All the resources are reacheble through the base url:"
+
+#: ../../cti_dev.rst:101
+msgid ""
+"Per richiedere una API è necessario aggiungere un *patì* al baseurl che "
+"specifica la risorsa da richiedere. Per esempio:"
+msgstr ""
+"To request an API, you need to add a * patì * to the baseurl that specifies "
+"the resource to request. For example:"
+
+#: ../../cti_dev.rst:107
+msgid ""
+"Ogni richiesta deve contenere i parametri d'autenticazione per il controllo "
+"d'accesso, specificando lo header HTTP ``Authorization``:"
+msgstr ""
+"Each request must contain the authentication parameters for access control, "
+"specifying the HTTP header `` Authorization`` ::"
+
+#: ../../cti_dev.rst:113
+msgid ""
+"Ogni richiesta viene *autenticata* e *autorizzata* del server |product_cti|."
+msgstr ""
+"Each request is * authenticated * and * authorized * by the | product_cti | "
+"server."
+
+#: ../../cti_dev.rst:119
+msgid ""
+"L'autenticazione di una richiesta REST viene eseguita dal server "
+"controllando la validità del token passato. Quindi, come fase preliminare, "
+"Il client deve eseguire il login e deve creare un token d'autenticazione "
+"come descritto :ref:`qui <authentication-ref-label>`."
+msgstr ""
+"Authentication of a REST request is performed by the server by checking the "
+"validity of the token passed. Then, as a preliminary step, the client must "
+"login and must create an authentication token as described: ref: `here "
+"<authentication-ref-label>`."
+
+#: ../../cti_dev.rst:120
+msgid "Ogni richiesta deve contenere lo header HTTP ``Authorization``:"
+msgstr "Each request must contain the HTTP `` Authorization`` header:"
+
+#: ../../cti_dev.rst:126
+msgid ""
+"**La validità del token d'autenticazione viene aggiornato ad ogni richiesta, "
+"altrimenti scade dopo un certo intervallo temporale (di default pari a "
+"un'ora). Dopo la scadenza è necessaria una nuova fase d'autenticazione.**"
+msgstr ""
+"** The validity of the authentication token is updated with each request, "
+"otherwise it expires after a certain time interval (default of one hour). "
+"After the deadline a new authentication phase is required. **"
+
+#: ../../cti_dev.rst:130
+msgid "Autorizzazione"
+msgstr "Authorization"
+
+#: ../../cti_dev.rst:132
+msgid ""
+"Ogni richiesta REST API viene autorizzata dal server che controlla i "
+"permessi utente configurati dall'amministratore attraverso l'interfaccia di "
+"|parent_product|."
+msgstr ""
+"Each REST API request is authorized by the server that controls the user "
+"permissions configured by the administrator through the interface of | "
+"parent_product |."
+
+#: ../../cti_dev.rst:136
+msgid "Esempio d'uso con cURL"
+msgstr "Example of use with cURL"
+
+#: ../../cti_dev.rst:138
+msgid ""
+"L'esempio seguente mostra come eseguire una richiesta rest tramite `cURL "
+"<http://curl.haxx.se/>`_. Lo strumento si può rivelare utile per eseguire "
+"dei test e per comprendere il meccanismo delle chiamate con maggior "
+"dettaglio."
+msgstr ""
+" The following example shows how to make a rest request via `cURL <http://"
+"curl.haxx.se/>` _. The tool can be useful for testing and understanding the "
+"call mechanism in more detail."
+
+#: ../../cti_dev.rst:140
+msgid ""
+"Supponiamo di volere effettuare la ricerca in rubrica del contatto "
+"*nethesis* per estrarre il numero telefonico. La prima operazione da "
+"eseguire è l'autenticazione (è necessaria solamente la prima volta per la "
+"costruzione del token)."
+msgstr ""
+"Suppose you want to search the contact * nethesis * to extract the phone "
+"number. The first operation to be performed is authentication (it is only "
+"necessary the first time to build the token)."
+
+#: ../../cti_dev.rst:146
+msgid "L'autenticazione ha successo e il server risponde con:"
+msgstr "Authentication is successful and the server responds with:"
+
+#: ../../cti_dev.rst:156
+msgid "Estraiamo il nonce dall'header *www-authenticate*:"
+msgstr "We extract the nonce from the header * www-authenticate *:"
+
+#: ../../cti_dev.rst:162
+msgid "Costruiamo il token d'autenticazione:"
+msgstr "We build the authentication token:"
+
+#: ../../cti_dev.rst:172
+msgid "Chiamiamo la rest api *phonebook/search*:"
+msgstr "We call the rest api * phonebook / search *:"
+
+#: ../../cti_dev.rst:178
+msgid "Il server invia la risposta in format JSON con i dati richiesti:"
+msgstr "The server sends the answer in JSON format with the requested data:"
+
+#: ../../cti_dev.rst:217
+msgid "Elenco delle API |product_cti|"
+msgstr "List of APIs | product_cti |"
+
+#: ../../cti_dev.rst:229
+msgid "Path"
+msgstr "Path"
+
+#: ../../cti_dev.rst:229
+#: ../../cti_dev.rst:275
+msgid "Descrizione"
+msgstr "Description"
+
+#: ../../cti_dev.rst:231
+msgid "`/astproxy`_"
+msgstr "`/astproxy`_"
+
+#: ../../cti_dev.rst:231
+msgid "Interazione con il server Asterisk"
+msgstr "Interaction with the Asterisk server"
+
+#: ../../cti_dev.rst:232
+msgid "`/authentication`_"
+msgstr "`/authentication`_"
+
+#: ../../cti_dev.rst:232
+msgid "Funzionalità d'autenticazione"
+msgstr "Authentication features"
+
+#: ../../cti_dev.rst:233
+msgid "`/custcard`_"
+msgstr "`/custcard`_"
+
+#: ../../cti_dev.rst:233
+msgid "Funzionalità relative alle schede clienti"
+msgstr "Features related to customer cards"
+
+#: ../../cti_dev.rst:234
+msgid "`/historycall`_"
+msgstr "`/historycall`_"
+
+#: ../../cti_dev.rst:234
+msgid "Storico delle chiamate del proprio utente"
+msgstr "Call history of your user"
+
+#: ../../cti_dev.rst:235
+msgid "`/histcallswitch`_"
+msgstr "`/histcallswitch`_"
+
+#: ../../cti_dev.rst:235
+msgid "Storico delle chiamate di tutti gli utenti del sistema"
+msgstr "Call history of all system users"
+
+#: ../../cti_dev.rst:236
+msgid "`/phonebook`_"
+msgstr "`/phonebook`_"
+
+#: ../../cti_dev.rst:236
+msgid "Funzionalità relative alle rubriche"
+msgstr "Features related to the phonebooks"
+
+#: ../../cti_dev.rst:237
+msgid "`/streaming`_"
+msgstr "`/streaming`_"
+
+#: ../../cti_dev.rst:237
+msgid "Funzionalità sulle sorgenti video"
+msgstr "Functionality on video sources"
+
+#: ../../cti_dev.rst:238
+msgid "`/voicemail`_"
+msgstr "`/voicemail`_"
+
+#: ../../cti_dev.rst:238
+msgid "Funzionalità relative alle voicemail"
+msgstr "Functionality on Functionality on video sources and video sources"
+
+#: ../../cti_dev.rst:242
+msgid "WebSocket"
+msgstr "WebSocket"
+
+#: ../../cti_dev.rst:244
+msgid ""
+"La connessione WebSocket viene utilizzata dal server per comunicare in tempo "
+"reale con tutti i client connessi (ad esempio per notificare gli eventi del "
+"server Asterisk). Per stabilire una connessione WebSocket col server "
+"|product_cti| è necessaria una prima fase d'autenticazione."
+msgstr ""
+"The WebSocket connection is used by the server to communicate in real time "
+"with all connected clients (for example to notify the Asterisk server "
+"events). To establish a WebSocket connection with the | product_cti | server "
+"a first authentication stage is required."
+
+#: ../../cti_dev.rst:250
+msgid ""
+"Il client esegue il login e crea un nuovo token d'autenticazione come "
+"descritto :ref:`qui <authentication-ref-label>`."
+msgstr ""
+"The client logs in and creates a new authentication token as described: ref: "
+"`here <authentication-ref-label>`."
+
+#: ../../cti_dev.rst:251
+msgid ""
+"Il client stabilisce una connessione websocket con il server (la porta di "
+"default sicura è la 8181)."
+msgstr ""
+"The client establishes a websocket connection with the server (the default "
+"secure port is 8181)."
+
+#: ../../cti_dev.rst:252
+msgid ""
+"Il client invia il messaggio *login* al server attraverso la connessione "
+"websocket specificando *username* e *token* in formato JSON:"
+msgstr ""
+"The client sends the * login * message to the server through the websocket "
+"connection specifying * username * and * token * in JSON format:"
+
+#: ../../cti_dev.rst:258
+msgid ""
+"Se il login ha avuto successo il client riceve il messaggio *authe_ok*, "
+"altrimenti il messaggio *401* e il client viene disconnesso."
+msgstr ""
+"If the login is successful, the client receives the * authe_ok * message, "
+"otherwise the message * 401 * and the client is disconnected."
+
+#: ../../cti_dev.rst:260
+msgid ""
+"**Una volta completato il login con successo, il token ha validità infinita "
+"fino al riavvio del server.**"
+msgstr ""
+"** Once the login is completed successfully, the token has infinite validity "
+"until the server is restarted. **"
+
+#: ../../cti_dev.rst:263
+msgid "Sottoscrizione eventi"
+msgstr "Event subscription"
+
+#: ../../cti_dev.rst:265
+msgid "Attraverso la connessione WebSocket vengono emessi i seguenti eventi:"
+msgstr "The following events are output via the WebSocket connection:"
+
+#: ../../cti_dev.rst:275
+msgid "Evento"
+msgstr "Event"
+
+#: ../../cti_dev.rst:277
+msgid "`extenUpdate`_"
+msgstr "`extenUpdate`_"
+
+#: ../../cti_dev.rst:277
+msgid "Aggiornamento di stato di un interno telefonico"
+msgstr "Status update of a telephone extension"
+
+#: ../../cti_dev.rst:278
+msgid "*updateNewVoiceMessages*"
+msgstr "*updateNewVoiceMessages*"
+
+#: ../../cti_dev.rst:278
+msgid ""
+"Invia tutti i nuovi messaggi vocali in corrispondenza dell'arrivo di uno "
+"nuovo"
+msgstr "Send all new voice messages when a new one arrives"
+
+#: ../../cti_dev.rst:279
+msgid "*newVoiceMessageCounter*"
+msgstr "*newVoiceMessageCounter*"
+
+#: ../../cti_dev.rst:279
+msgid ""
+"Invia il numero di nuovi messaggi vocali in corrispondenza dell'arrivo di "
+"uno nuovo"
+msgstr "Send the number of new voice messages at the arrival of a new one"
+
+#: ../../cti_dev.rst:280
+msgid "`queueMemberUpdate`_"
+msgstr "`queueMemberUpdate`_"
+
+#: ../../cti_dev.rst:280
+msgid "Aggiornamento di stato di un agente di una coda"
+msgstr "Updating the status of an agent in a queue"
+
+#: ../../cti_dev.rst:281
+msgid "`trunkUpdate`_"
+msgstr "`trunkUpdate`_"
+
+#: ../../cti_dev.rst:281
+msgid "Aggiornamento di stato di un fascio"
+msgstr "Update the status of a trunk "
+
+#: ../../cti_dev.rst:282
+msgid "*extenRinging*"
+msgstr "*extenRinging*"
+
+#: ../../cti_dev.rst:282
+msgid ""
+"Notifica che un interno sta squillando e riporta l'identificativo del "
+"chiamante"
+msgstr "Notifying an extension is ringing and reporting the caller's ID"
+
+#: ../../cti_dev.rst:283
+msgid "`queueUpdate`_"
+msgstr "`queueUpdate`_\n"
+
+#: ../../cti_dev.rst:283
+msgid "Aggiornamento di stato di una coda"
+msgstr "Update status of a queue"
+
+#: ../../cti_dev.rst:284
+msgid "`parkingUpdate`_"
+msgstr "`parkingUpdate`_\n"
+
+#: ../../cti_dev.rst:284
+msgid "Aggiornamento di stato di un parcheggio"
+msgstr "Parking status update"
+
+#: ../../cti_dev.rst:285
+msgid "`wsClientLoggedIn`_"
+msgstr "`wsClientLoggedIn`_\n"
+
+#: ../../cti_dev.rst:285
+msgid "Un utente ha effettuato il login a |product_cti|"
+msgstr "A user has logged in to | product_cti |"
+
+#: ../../cti_dev.rst:286
+msgid "*allWsClientDisonnection*"
+msgstr "*allWsClientDisonnection*\n"
+
+#: ../../cti_dev.rst:286
+msgid "Un utente non ha più nessuna connessione WebSocket attiva"
+msgstr "A user no longer has any active WebSocket connections"
+
+#: ../../cti_dev.rst:287
+msgid "*401*"
+msgstr "*401*\n"
+
+#: ../../cti_dev.rst:287
+msgid "L'autenticazione è fallita"
+msgstr "Authentication has failed"
+
+#: ../../cti_dev.rst:288
+msgid "*authe_ok*"
+msgstr "*authe_ok*\n"
+
+#: ../../cti_dev.rst:288
+msgid "L'autenticazione è avvenuta con successo"
+msgstr "Authentication has been successful"
+
+#: ../../cti_dev.rst:291
+msgid "Ogni evento fornisce i dati relativi in formato JSON."
+msgstr "Each event provides the related data in JSON format."
+
+#: ../../cti_dev.rst:293
+msgid ""
+"È possibile sottoscrivere un ascoltatore per ciascuno degli eventi. Un "
+"esempio è il seguente:"
+msgstr ""
+"You can subscribe to a listener for each of the events. An example is the "
+"following:"

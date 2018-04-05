@@ -1,24 +1,57 @@
 # Polidori Alessandro <alessandro.polidori@gmail.com>, 2017. #zanata
+# Youssef <mehniyoussef@gmail.com>, 2018. #zanata
 msgid ""
 msgstr ""
 "Project-Id-Version: NethVoice 14\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-12-01 16:49+0100\n"
+"POT-Creation-Date: 2017-12-12 10:23+0100\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2017-12-01 10:52-0500\n"
-"Last-Translator: Polidori Alessandro <alessandro.polidori@gmail.com>\n"
+"PO-Revision-Date: 2018-02-15 03:53-0500\n"
+"Last-Translator: Youssef <mehniyoussef@gmail.com>\n"
 "Language-Team: English (United States)\n"
 "Language: en-US\n"
 "X-Generator: Zanata 3.9.6\n"
 "Plural-Forms: nplurals=2; plural=(n != 1)\n"
 
 #: ../../advanced_config.rst:11
+msgid "|product|: installazione codec g729"
+msgstr "|product|:installation codec g729"
+
+#: ../../advanced_config.rst:13
+msgid ""
+"Per installare ed attivare il codec g729 opensource ecco la procedura "
+"(comporta il riavvio di asterisk e quindi l'eventuale caduta di chiamate in "
+"corso):"
+msgstr ""
+"To install and activate the codec g729 opensource here is the procedure "
+"(involves the restart of asterisk and then the possible fall of calls in "
+"progress):"
+
+#: ../../advanced_config.rst:23
+msgid ""
+"Il codec g729 opensource non è compatibile con la versione a pagamento di "
+"Digium, che si può installare seguendo la procedura che vi forniranno con "
+"l'acquisto."
+msgstr ""
+"The open source codec g729 is not compatible with the paid version of "
+"Digium, which can be installed following the procedure that will provide you "
+"with the purchase."
+
+#: ../../advanced_config.rst:25
+msgid ""
+"E' possibile, quindi, utilizzare contemporaneamente solo una delle due "
+"versioni di g729, opensource o Digium."
+msgstr ""
+" It is possible,then, to use only one of the two versions of g729, "
+"opensource or Digium at the same time."
+
+#: ../../advanced_config.rst:29
 msgid "|product_cti|: attivazione debug"
 msgstr "|product_cti|: debug activation"
 
-#: ../../advanced_config.rst:13
+#: ../../advanced_config.rst:31
 msgid ""
 "Di default il file di log riporta solamente messaggi di *warning* ed "
 "*errori*. È possibile innalzare il livello di debug per avere maggiori "
@@ -27,24 +60,24 @@ msgstr ""
 "By default, the log file only reports *warnings* and *errors* messages. You "
 "can raise the debug level to get more information:"
 
-#: ../../advanced_config.rst:22
+#: ../../advanced_config.rst:40
 msgid ""
 "Innalzando il livello la dimensione del file di log aumenta rapidamente."
 msgstr "Raising log level the log file size rapidly increases."
 
-#: ../../advanced_config.rst:24
+#: ../../advanced_config.rst:42
 msgid "Per ripristinare il livello di default:"
 msgstr "To restore default level:"
 
-#: ../../advanced_config.rst:33
+#: ../../advanced_config.rst:51
 msgid "|product_cti|: disattivazione della modalità di Click2Call automatico"
 msgstr "|product_cti|: disable automatic Click2Call mode"
 
-#: ../../advanced_config.rst:35
-msgid "necessità di sollevare la cornetta telefonica."
-msgstr "need to lift the phone"
+#: ../../advanced_config.rst:53
+msgid "Necessità di sollevare la cornetta telefonica."
+msgstr "Need to lift the telephone handset."
 
-#: ../../advanced_config.rst:37
+#: ../../advanced_config.rst:55
 msgid ""
 "In alcuni scenari potrebbe essere utile disattivare la funzionalità, ad "
 "esempio nel caso in cui il centralino telefonico è in cloud ed i telefoni "
@@ -54,28 +87,28 @@ msgstr ""
 "the switchboard is in the cloud and the phones are on LAN behind a NAT. To "
 "disable:"
 
-#: ../../advanced_config.rst:45
+#: ../../advanced_config.rst:63
 msgid "Per ripristinare il valore di default:"
 msgstr "To restore default value:"
 
-#: ../../advanced_config.rst:54
+#: ../../advanced_config.rst:72
 msgid "|product_cti|: utilizzo di un server chat esterno"
 msgstr "|product_cti|: use external chat server"
 
-#: ../../advanced_config.rst:56
+#: ../../advanced_config.rst:74
 msgid "È possibile configurare un server chat presente su un'altra macchina:"
 msgstr "You can configure a chat server on another machine:"
 
-#: ../../advanced_config.rst:63
+#: ../../advanced_config.rst:81
 msgid "Per esempio:"
 msgstr "For example:"
 
-#: ../../advanced_config.rst:70
-#: ../../advanced_config.rst:93
+#: ../../advanced_config.rst:88
+#: ../../advanced_config.rst:111
 msgid "Per ripristinare il default:"
 msgstr "To restore default:"
 
-#: ../../advanced_config.rst:78
+#: ../../advanced_config.rst:96
 msgid ""
 "Il server chat specificato deve supportare `XMPP <https://en.wikipedia.org/"
 "wiki/XMPP>`_ su protocollo `BOSH <https://en.wikipedia.org/wiki/"
@@ -87,10 +120,99 @@ msgstr ""
 "`NethServer <http://docs.nethserver.org/it/v7/chat.html>`_ support it by "
 "default."
 
-#: ../../advanced_config.rst:83
+#: ../../advanced_config.rst:101
 msgid "|product_cti|: configurazione di un prefisso telefonico"
 msgstr "|product_cti|: phone prefix configuration"
 
-#: ../../advanced_config.rst:85
+#: ../../advanced_config.rst:103
 msgid "È possibile configurare un prefisso telefonico per qualsiasi chiamata:"
 msgstr "You can configure a phone prefix for any call:"
+
+#: ../../advanced_config.rst:120
+msgid "|product_cti|: configurazione Softphone WebRTC"
+msgstr "|product_cti|:WebRTC Softphone configuration"
+
+#: ../../advanced_config.rst:122
+msgid ""
+"Il softphone WebRTC utilizza il `Gateway Janus <https://github.com/meetecho/"
+"janus-gateway>`_ installato direttamente nel centralino telefonico."
+msgstr ""
+"The WebRTC softphone use the Janus Gateway  <https://github.com/meetecho/"
+"janus-gateway> that is installed in the telephone exchange"
+
+#: ../../advanced_config.rst:125
+msgid "Janus-gateway può operare in tre differenti modalità di NAT:"
+msgstr "Janus-gateway can operate in three different NAT modes:"
+
+#: ../../advanced_config.rst:127
+msgid "STUN (default)"
+msgstr "STUN (default)"
+
+#: ../../advanced_config.rst:128
+msgid "ICE"
+msgstr "ICE"
+
+#: ../../advanced_config.rst:129
+msgid "1:1 (NAT)"
+msgstr "1:1 (NAT)"
+
+#: ../../advanced_config.rst:131
+msgid ""
+"Per la configurazione del NAT e delle opzioni, sono disponibili quattro "
+"proprietà sotto la chiave *janus-gateway* del database di configurazione:"
+msgstr ""
+"For NAT configuration and options, there are four properties under the * "
+"janus-gateway * key of the configuration database:"
+
+#: ../../advanced_config.rst:134
+msgid "NatMode: <stun|ice|1:1>"
+msgstr "NatMode: <stun|ice|1:1>"
+
+#: ../../advanced_config.rst:135
+msgid ""
+"StunServer: indirizzo del server STUN da usare. Il default è *stun1.l.google."
+"com*. Viene ignorato se la modalità non è STUN"
+msgstr ""
+"StunServer: STUN server address to use. The default is * stun1.l.google.com "
+"*. It is ignored if the mode is not STUN"
+
+#: ../../advanced_config.rst:136
+msgid ""
+"StunPort: porta del server STUN. Il default è 19302. Viene ignorato se la "
+"modalità non è STUN"
+msgstr ""
+"StunPort: STUN server port .The default is 19302. It is ignored if the mode "
+"is not STUN"
+
+#: ../../advanced_config.rst:137
+msgid ""
+"PublicIP: è l'indirizzo IP pubblico del server su cui è in esecuzione janus-"
+"gateway. Viene ignorato se la modalità non è 1:1"
+msgstr ""
+"PublicIP: is the public IP address of the server running janus-gateway. It "
+"is ignored if the mode is not 1: 1"
+
+#: ../../advanced_config.rst:139
+msgid ""
+"In alcuni scenari d'utilizzo l'audio delle telefonate potrebbe non "
+"funzionare e conseguentemente le chiamate vengono terminate automaticamente "
+"dal centralino dopo un certo intervallo temporale. In questi casi è "
+"necessario configurare correttamente il WebRTC in base all'architettura di "
+"rete utilizzata."
+msgstr ""
+"In some usage scenarios the audio of the telephone calls may not work and "
+"consequently the calls are automatically terminated by the switchboard after "
+"a certain time interval. In these cases, the WebRTC must be configured "
+"correctly according to the network architecture used."
+
+#: ../../advanced_config.rst:143
+msgid "*Esempio*"
+msgstr "*Example*"
+
+#: ../../advanced_config.rst:145
+msgid ""
+"Nel caso si utilizzi un centralino in cloud dietro NAT, è necessario "
+"configurare il WebRTC come segue:"
+msgstr ""
+"If you use a cloud-based switchboard behind NAT, you need to configure the "
+"WebRTC as follows:"

@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: NethVoice 14\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-12-01 16:36+0100\n"
+"POT-Creation-Date: 2017-12-12 10:23+0100\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -166,8 +166,8 @@ msgstr ""
 "available, management of ID caller/called"
 
 #: ../../introduzione.rst:51
-msgid "Gestione avanzata dell?inoltro delle chiamate (CID, CLIP)"
-msgstr "Advanced management of the calls forward (CID, CLIP)"
+msgid "Gestione avanzata dell'inoltro delle chiamate (CID, CLIP)"
+msgstr ""
 
 #: ../../introduzione.rst:52
 msgid ""
