@@ -1,0 +1,370 @@
+# Polidori Alessandro <alessandro.polidori@gmail.com>, 2018. #zanata
+msgid ""
+msgstr ""
+"Project-Id-Version: NethVoice 14\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-04-05 14:44+0200\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2018-04-05 09:07-0400\n"
+"Last-Translator: Polidori Alessandro <alessandro.polidori@gmail.com>\n"
+"Language-Team: English (United States)\n"
+"Language: en-US\n"
+"X-Generator: Zanata 3.9.6\n"
+"Plural-Forms: nplurals=2; plural=(n != 1)\n"
+
+#: ../../nethifier.rst:13
+msgid "|product_nethifier|"
+msgstr "|product_nethifier|"
+
+#: ../../nethifier.rst:15
+msgid ""
+"|product_nethifier| Windows Integration è l'applicazione per Microsoft "
+"Windows che consente l'integrazione di |product| con il desktop Windows. In "
+"particolare consente la visualizzazione di popup di notifica nel desktop in "
+"corrispondenza della ricezione di telefonate dirette a un qualsiasi interno "
+"telefonico dell'utente."
+msgstr ""
+"|product_nethifier| Windows Integration is the application for Microsoft "
+"Windows that allows the integration of |product| with the Windows desktop. "
+"In particular, it allows the display of notification popup on the desktop in "
+"front of incoming calls directed to any telephone extension of the user."
+
+#: ../../nethifier.rst:20
+msgid ""
+"Versioni di Windows compatibili: Windows 7 (64 bit), Windows 8 e Windows 10."
+msgstr ""
+"Compatible Windows versions: Windows 7 (64 bit), Windows 8 and Windows 10."
+
+#: ../../nethifier.rst:22
+msgid ""
+"Per la personalizzazione dei popup seguire la :ref:`documentazione <custom-"
+"nethifier-label>`."
+msgstr ""
+"For the customization of popup follow the: ref: `documentation <custom-"
+"nethifier-label>`."
+
+#: ../../nethifier.rst:25
+msgid "Requisiti"
+msgstr "Requirements"
+
+#: ../../nethifier.rst:27
+msgid ".NET Framework 4.5."
+msgstr ".NET Framework 4.5."
+
+#: ../../nethifier.rst:28
+msgid "Server |product| 3.x."
+msgstr "Server |product| 3.x."
+
+#: ../../nethifier.rst:29
+msgid ""
+"Il pc su cui è in esecuzione |product_nethifier| deve risolvere l'indirizzo "
+"``nomenethvoice.dominio``."
+msgstr ""
+"The PC on which |product_nethifier| is running must resolve the "
+"``nethvoicename.domain`` address."
+
+#: ../../nethifier.rst:31
+msgid ""
+"Per ottenere il nome di dominio si può utilizzare il comando ``hostname -f``"
+msgstr "To obtain the domain name you can use the command ``hostname -f``"
+
+#: ../../nethifier.rst:34
+msgid "Download"
+msgstr "Download"
+
+#: ../../nethifier.rst:36
+msgid ""
+"Il download è disponibile `nell'area relativa <http://helpdesk.nethesis.it/"
+"solution/folders/3000014059)>`_."
+msgstr ""
+"The download is available `in the related area <http://helpdesk.nethesis.it/"
+"solution/folders/3000014059)>`_."
+
+#: ../../nethifier.rst:39
+msgid "Installazione"
+msgstr "Installation"
+
+#: ../../nethifier.rst:41
+msgid ""
+"È sufficiente effettuare il download dell'installer ed eseguirlo. Terminata "
+"la fase d'installazione il programma verrà avviato automaticamente."
+msgstr ""
+"Simply download the installer and run it. Once the installation is complete, "
+"the program will be started automatically."
+
+#: ../../nethifier.rst:45
+msgid ""
+"Per poter essere eseguito |product_nethifier| necessita di privilegi "
+"amministrativi perciò è necessario ricordarsi di installarlo utilizzando "
+"l'opzione \"*Esegui come amministratore*\"."
+msgstr ""
+"In order to be able to run |product_nethifier| you need the administrative "
+"privileges so you need to remember to install it using the \"*Run as "
+"administrator*\" option."
+
+#: ../../nethifier.rst:48
+msgid "Configurazione"
+msgstr "Configuration"
+
+#: ../../nethifier.rst:50
+msgid "È necessaria solamente la prima volta. I dati da inserire sono:"
+msgstr "It is only necessary the first time. The data to be inserted are:"
+
+#: ../../nethifier.rst:52
+msgid "indirizzo del server (nome o IP)"
+msgstr "Server address (name or IP)"
+
+#: ../../nethifier.rst:53
+msgid "credenziali dell'utente"
+msgstr "User credentials"
+
+#: ../../nethifier.rst:55
+msgid ""
+"È necessario salvare i dati cliccando il pulsante apposito in maniera tale "
+"da non doverli più reinserire agli avvii successivi. È anche possibile "
+"attivare l'esecuzione automatica di |product_nethifier| all'avvio di Windows."
+""
+msgstr ""
+"It is necessary to save the data by clicking the appropriate button in order "
+"to avoid having to re-enter it at the next start-up. You can also activate "
+"the automatic execution of |product_nethifier| when Windows starts."
+
+#: ../../nethifier.rst:60
+msgid "Combinazione tasti chiamata"
+msgstr "Call key combination"
+
+#: ../../nethifier.rst:62
+msgid ""
+"È possibile personalizzare la combinazione di tasti usati per effettuare una "
+"chiamata o per ricomporre l'ultimo numero, tramite la scheda \"Dialer "
+"Hotkey\" delle opzioni."
+msgstr ""
+"You can customize the key combination used to make a call or to redial the "
+"last number via the \"Dialer Hotkey\" options tab."
+
+#: ../../nethifier.rst:65
+msgid "Rimozione"
+msgstr "Remove"
+
+#: ../../nethifier.rst:67
+msgid ""
+"È sufficiente aprire il menu *Programmi* di Windows e cliccare la voce "
+"\"|product_nethifier| -> Uninstall\"."
+msgstr ""
+"Simply open the Windows *Programs* menu and click on \"|product_nethifier| -"
+"> Uninstall\"."
+
+#: ../../nethifier.rst:73
+msgid "Personalizzazione"
+msgstr "Customization"
+
+#: ../../nethifier.rst:75
+msgid ""
+"I popup possono essere personalizzati sia nella *grafica*, sia nel "
+"*contenuto* attraverso i seguenti template HTML: ::"
+msgstr ""
+"Pop-ups can be customized in both *graphics* and *content* through the "
+"following HTML templates: ::"
+
+#: ../../nethifier.rst:81
+msgid ""
+"Il primo serve a mostrare i dati di una chiamata generica, mentre il secondo "
+"quelli di una sorgente video, quale ad esempio un videocitofono."
+msgstr ""
+"The first one is used to show the data of a generic call, while the second "
+"one is for a video source, such as a video door phone."
+
+#: ../../nethifier.rst:84
+msgid ""
+"Conoscenze richieste: linguaggi di programmazione HTML, CSS e Javascript."
+msgstr "Required knowledge: HTML, CSS and Javascript programming languages."
+
+#: ../../nethifier.rst:87
+msgid "Personalizzazione della grafica"
+msgstr "Graphic customization"
+
+#: ../../nethifier.rst:89
+msgid ""
+"È sufficiente personalizzare il codice HTML e/o CSS dei template indicati. "
+"Supponiamo ad esempio di voler modificare il colore del **nome e numero "
+"chiamante** in verde nel template ``call.html``: sarà sufficiente aggiungere "
+"la regola css ``color: green`` nel selettore ``.contact-info``, che "
+"diventerà:"
+msgstr ""
+"Simply customize the HTML and/or CSS code of the indicated templates. For "
+"example, suppose you want to change the color of the **name and caller "
+"number** in green in the ``call.html`` template: just add the css rule "
+"``color: green`` in the ``contact-info selector``, which will become:"
+
+#: ../../nethifier.rst:104
+msgid "Personalizzazione del contenuto"
+msgstr "Content customization"
+
+#: ../../nethifier.rst:106
+msgid ""
+"È possibile estendere le funzionalità presenti all'interno dei popup con "
+"nuovi comandi da eseguire."
+msgstr ""
+"It is possible to extend the functions present in the popups with new "
+"commands to be executed."
+
+#: ../../nethifier.rst:108
+msgid "Creare il template custom `win_popup.json`:"
+msgstr "Create the custom `win_popup.json` template:"
+
+#: ../../nethifier.rst:115
+msgid "Aprire il template appena creato con un editor di testi:"
+msgstr "Open the newly created template with a text editor:"
+
+#: ../../nethifier.rst:121
+msgid ""
+"3. Aggiungere il nuovo comando all'interno dell'oggetto JSON `\"commands\"`, "
+"specificando il percorso del programma eseguibile di Windows che si "
+"intenderà eseguire: ::"
+msgstr ""
+"3. Add the new command within the JSON ``\"commands\"`object, specifying the "
+"path of the Windows executable program that you want to run: ::"
+
+#: ../../nethifier.rst:129
+msgid ""
+"Se ad esempio il nuovo comando si chiama **\"gestionale\"** e il programma "
+"da eseguire è **\"c:\\\\windows\\\\notepad.exe\"**, la sezione da inserire "
+"sarà: ::"
+msgstr ""
+"For example, if the new command is called **\"crm\"** and the program to run "
+"is **\"c:\\\\windows\\\\notepad.exe\"**, the section to insert will be: ::"
+
+#: ../../nethifier.rst:138
+msgid "e quindi il template custom diventerà: ::"
+msgstr "and then the custom template will become: ::"
+
+#: ../../nethifier.rst:167
+msgid ""
+"Il percorso dell'eseguibile di Windows deve utilizzare la stringa "
+"\"\\\\\\\\\\\\\" come separatore."
+msgstr ""
+"The path of the Windows executable must use the string \"\\\\\\\\\\\\\" as a "
+"separator."
+
+#: ../../nethifier.rst:169
+msgid ""
+"4. Adattare l'altezza del popup che si intende modificare, in base "
+"all'elemento grafico da aggiungere. Se ad esempio si vuole inserire un nuovo "
+"pulsante nel template `\"call.html\"`, un'altezza pari a 175px può essere "
+"sufficiente: ::"
+msgstr ""
+"4. Adjust the height of the popup you want to change, depending on the "
+"graphic element to be added. For example, if you want to insert a new button "
+"in the `\"call.html \"` template, a height of 175px may be suffice:"
+
+#: ../../nethifier.rst:179
+msgid "Salvare la configurazione e uscire dall'editor di testi."
+msgstr "Save the configuration and exit from text editor."
+
+#: ../../nethifier.rst:181
+msgid "Eseguire il comando: ::"
+msgstr "Run the command: ::"
+
+#: ../../nethifier.rst:185
+msgid ""
+"7. Personalizzare uno o entrambi i template HTML in base alle proprie "
+"necessità: è necessario inserire un **elemento grafico** e **un'azione da "
+"eseguire** in corrispondenza del click sullo stesso. Supponiamo ad esempio "
+"di voler inserire un nuovo pulsante nel template *\"call.html\"* cliccando "
+"il quale eseguire il nuovo comando \"gestionale\"."
+msgstr ""
+"7. Customize one or both HTML templates according to your needs: you need to "
+"insert a **graphic element** and **an action to execute** when  click on it. "
+"For example, suppose you want to insert a new button in the *\"call.html\"* "
+"template by clicking on it to execute the new \"crm\" command."
+
+#: ../../nethifier.rst:191
+msgid ""
+"Il codice HTML del nuovo pulsante grafico da inserire in *call.html* sarà:"
+msgstr ""
+"The HTML code of the new graphic button to be inserted in *call.html* will "
+"be:"
+
+#: ../../nethifier.rst:199
+msgid ""
+"8. **Opzionale:** se si desidera passare l'identificativo del chiamante come "
+"parametro al programma di Windows, è necessario aggiungere il seguente "
+"codice javascript in coda alla funzione `window.onload`:"
+msgstr ""
+"8. **Optional:** if you want to pass the caller's identifier as a parameter "
+"to the Windows program, you need to add the following javascript code at the "
+"end of the `window.onload` function:"
+
+#: ../../nethifier.rst:207
+msgid "Eseguire |product_nethifier| in Windows e connettersi al server cti."
+msgstr "Run |product_nethifier| in Windows and connect to the cti server."
+
+#: ../../nethifier.rst:209
+msgid ""
+"Da questo momento alla ricezione di una chiamata generica nel popup sarà "
+"presente un nuovo pulsante di nome \"Gestionale\", cliccando il quale si "
+"aprirà il notepad di Windows."
+msgstr ""
+"From this moment on receiving a generic incoming call, the popup will be "
+"present with a new button called \"crm\" and clicking it will open the "
+"Windows notepad."
+
+#: ../../nethifier.rst:212
+msgid ""
+"Ogni client |product_nethifier| può inoltre personalizzare i path dei "
+"programmi da eseguire:"
+msgstr ""
+"Every client |product_nethifier| it can also customize the paths of the "
+"programs to be executed:"
+
+#: ../../nethifier.rst:214
+msgid ""
+"aprire l'interfaccia grafica |product_nethifier| attraverso la voce "
+"\"Visualizza\" del menù contestuale dell'icona nella system tray di Windows"
+msgstr ""
+"open the graphical interface |product_nethifier| through the \"View\" item "
+"of the context menu of the icon in the Windows system tray"
+
+#: ../../nethifier.rst:215
+msgid "selezionare il tab \"Esegui\""
+msgstr "select the \"Execute\" tab"
+
+#: ../../nethifier.rst:216
+msgid "personalizzare i path"
+msgstr "customized paths"
+
+#: ../../nethifier.rst:217
+msgid "salvare la configurazione"
+msgstr "save the configuration"
+
+#: ../../nethifier.rst:220
+msgid "Personalizzazione del protocollo"
+msgstr "Customize the protocol"
+
+#: ../../nethifier.rst:222
+msgid ""
+"È possibili modificare il protocollo con cui aprire |product| tramite il "
+"click sul popup. Eseguire: ::"
+msgstr ""
+"It is possible to modify the protocol used to open |product| by clicking on "
+"the popup. To execute: ::"
+
+#: ../../nethifier.rst:228
+msgid "dove <PROTO> può assumere i valori *http* o *https*."
+msgstr "where <PROTO> can take the values *http* or *https*."
+
+#: ../../nethifier.rst:231
+msgid "Backup"
+msgstr "Backup"
+
+#: ../../nethifier.rst:233
+msgid ""
+"Una volta effettuata una personalizzazione, ricordarsi di aggiungere i file "
+"alla lista dei backup seguendo le istruzioni `qui riportate <http://docs."
+"nethserver.org/en/latest/backup.html#inclusion>`_."
+msgstr ""
+"Once you have made a customization, remember to add the files to the backup "
+"list by following the `instructions <http://docs.nethserver.org/en/latest/"
+"backup.html#inclusion>`_."

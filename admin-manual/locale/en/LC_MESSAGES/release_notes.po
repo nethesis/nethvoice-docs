@@ -1,108 +1,98 @@
 # Giovanni Bezicheri <giovanni.bezicheri@nethesis.it>, 2017. #zanata
+# Youssef <mehniyoussef@gmail.com>, 2018. #zanata
 msgid ""
 msgstr ""
 "Project-Id-Version: NethVoice 14\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-12-01 16:36+0100\n"
+"POT-Creation-Date: 2018-04-05 14:44+0200\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2017-08-30 08:10-0400\n"
-"Last-Translator: Giovanni Bezicheri <giovanni.bezicheri@nethesis.it>\n"
+"PO-Revision-Date: 2018-02-15 06:14-0500\n"
+"Last-Translator: Youssef <mehniyoussef@gmail.com>\n"
 "Language-Team: English (United States)\n"
 "Language: en-US\n"
 "X-Generator: Zanata 3.9.6\n"
 "Plural-Forms: nplurals=2; plural=(n != 1)\n"
 
-#: ../../release_notes.rst:12
+#: ../../release_notes.rst:13
 msgid "Note di rilascio |version|"
 msgstr "Release notes |version|"
 
-#: ../../release_notes.rst:14
+#: ../../release_notes.rst:15
 msgid "|product| release |version|"
 msgstr "|product| release |version|"
 
-#: ../../release_notes.rst:16
+#: ../../release_notes.rst:17
 msgid ""
 "Questa release è basata su `Asterisk 13 <https://wiki.asterisk.org/wiki/"
 "display/AST/New+in+13>`_ e `FreePBX 14 <https://www.freepbx.org/freepbx-14-"
 "release-candidate/>`_:"
 msgstr ""
+"This release is based on `Asterisk 13 \n"
+"<https://wiki.asterisk.org/wiki/display/AST/New+in+13/>` _ and `FreePBX 14 "
+"<https://www.freepbx.org/freepbx- 14-release-candidate /> `_:"
 
-#: ../../release_notes.rst:19
+#: ../../release_notes.rst:20
 msgid "Cambiamenti significativi dalla release 11:"
 msgstr "Relevant changes since 11:"
 
-#: ../../release_notes.rst:21
+#: ../../release_notes.rst:22
 msgid "Wizard per la configurazione"
 msgstr "Wizard for the configuration"
 
-#: ../../release_notes.rst:22
-msgid "Nuovo |product_cti| più intuitivo e con supporto completo a WebRTC"
-msgstr ""
-
 #: ../../release_notes.rst:23
-msgid "NethCTI  mobile app per IOS e Android rinnovata"
-msgstr ""
+msgid "Nuovo |product_cti| più intuitivo e con supporto completo a WebRTC"
+msgstr "New | product_cti | more intuitive and with full support to WebRTC"
 
 #: ../../release_notes.rst:24
+msgid "NethCTI  mobile app per IOS e Android rinnovata"
+msgstr "NethCTI mobile app for IOS and Android renewed"
+
+#: ../../release_notes.rst:25
 msgid "NethVoice Scan & Play mobile app rinnovata"
 msgstr "NethVoice Scan&Play mobile app renewed"
 
-#: ../../release_notes.rst:26
+#: ../../release_notes.rst:27
 msgid "Funzioni non ancora disponibili:"
-msgstr ""
-
-#: ../../release_notes.rst:28
-msgid "Numeri Brevi"
-msgstr ""
+msgstr "Functions not yet available:"
 
 #: ../../release_notes.rst:29
-msgid "Analisi costi"
-msgstr ""
+msgid "Numeri Brevi"
+msgstr "Short numbers"
 
 #: ../../release_notes.rst:30
-msgid "Modulo Hotel con integrazione FIAS"
-msgstr ""
+msgid "Analisi costi"
+msgstr "Cost analysis\n"
 
 #: ../../release_notes.rst:31
-msgid "Creazione modifica interni in modalità bulk"
-msgstr ""
+msgid "Integrazione FIAS"
+msgstr "FIAS integration"
 
 #: ../../release_notes.rst:32
-msgid "Call Query Routing"
-msgstr ""
+msgid "Creazione modifica interni in modalità bulk"
+msgstr "Creation of internal changes in bulk mode"
 
 #: ../../release_notes.rst:33
-msgid "Selezione lingua dal prefisso"
-msgstr ""
+msgid "Annunci e registrazioni TTS"
+msgstr "TTS announcements and registrations\n"
 
 #: ../../release_notes.rst:34
-msgid "Servizio notte"
-msgstr ""
+msgid "Fasci Virtuali"
+msgstr "Virtual beams"
 
 #: ../../release_notes.rst:35
-msgid "Annunci e registrazioni TTS"
-msgstr ""
-
-#: ../../release_notes.rst:36
-msgid "Fasci Virtuali"
-msgstr ""
-
-#: ../../release_notes.rst:37
 msgid "Failover geografico e HA"
-msgstr ""
+msgstr "Geographical Failover and HA"
 
 #: ../../release_notes.rst:38
-msgid "Codec g729"
-msgstr ""
-
-#: ../../release_notes.rst:41
 msgid "Aggiornamento"
-msgstr ""
+msgstr "Update"
 
-#: ../../release_notes.rst:43
+#: ../../release_notes.rst:40
 msgid ""
 "L'aggiornamento da versioni precedenti non è attualmente supportato, ma sarà "
 "disponibile a breve."
 msgstr ""
+"Upgrading from previous versions is not currently supported, but will be "
+"available soon."

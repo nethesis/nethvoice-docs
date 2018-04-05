@@ -1,24 +1,455 @@
 # Polidori Alessandro <alessandro.polidori@gmail.com>, 2017. #zanata
+# Youssef <mehniyoussef@gmail.com>, 2018. #zanata
 msgid ""
 msgstr ""
 "Project-Id-Version: NethVoice 14\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-12-01 16:49+0100\n"
+"POT-Creation-Date: 2018-04-05 14:44+0200\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2017-12-01 10:52-0500\n"
-"Last-Translator: Polidori Alessandro <alessandro.polidori@gmail.com>\n"
+"PO-Revision-Date: 2018-02-15 03:53-0500\n"
+"Last-Translator: Youssef <mehniyoussef@gmail.com>\n"
 "Language-Team: English (United States)\n"
 "Language: en-US\n"
 "X-Generator: Zanata 3.9.6\n"
 "Plural-Forms: nplurals=2; plural=(n != 1)\n"
 
-#: ../../advanced_config.rst:11
+#: ../../advanced_config.rst:12
+msgid "|product|: Call Query Routing"
+msgstr ""
+
+#: ../../advanced_config.rst:15
+msgid "Descrizione"
+msgstr ""
+
+#: ../../advanced_config.rst:17
+msgid ""
+"Il Call Query Routing di |product| ribalta il concetto di IVR tradizionale "
+"spostando dal chiamante allo stesso |product| la decisione di come trattare "
+"la chiamata in ingresso e quindi verso che destinazione sul centralino deve "
+"proseguire."
+msgstr ""
+
+#: ../../advanced_config.rst:19
+msgid ""
+"Riconoscendo il chiamante, grazie al numero telefonico o alla richiesta di "
+"un codice cliente, il |product| può interrogare database sia esterni che "
+"interni (MYSQL o MSSQL) chiedendo dei dati relativi al chiamante e in base "
+"alla risposta può poi comportarsi come configurato."
+msgstr ""
+
+#: ../../advanced_config.rst:21
+msgid ""
+"Si tratta quindi di uno strumento flessibile, che in tempo reale ottiene "
+"informazioni e poi si comporta in base a queste, ma queste informazioni "
+"possono variare nel tempo variando di conseguenza in comportamento del "
+"|product|."
+msgstr ""
+
+#: ../../advanced_config.rst:23
+msgid ""
+"L'esempio tipico di utilizzo del Call Query Routing è utilizzarlo per "
+"discriminare se un chiamante sia un cliente in regola con i pagamenti o no."
+msgstr ""
+
+#: ../../advanced_config.rst:25
+msgid ""
+"Il |product| chiederà questa informazione al database del software "
+"gestionale ed ottenuta la risposta si comporterà di conseguenza, ad esempio "
+"se si tratta di un cliente in regola la chiamata verrà fatta proseguire "
+"verso la coda di assistenza mentre se si tratta di un cliente insolvente la "
+"chiamata verrà dirottata verso gli interni dell'amministrazione e magari se "
+"si tratta di un potenziale cliente la chiamata verrà girata ai commerciali."
+msgstr ""
+
+#: ../../advanced_config.rst:27
+msgid ""
+"Le uniche condizioni necessarie al Call Query Routing sono l'accessibilità "
+"da parte del |product| ai database da interrogare e l'impostazione della "
+"query per fare l'interrogazione, di competenza di chi conosce il database."
+msgstr ""
+
+#: ../../advanced_config.rst:29
+msgid ""
+"E' possibile con il numero del chiamante consultare subito un database per "
+"ottenere lo stato del cliente, oppure sempre partendo dal numero chiamante "
+"prima ricavare il codice cliente del chiamante per poi utilizzarlo nel "
+"database clienti. In caso di fallimento della procedura di scoperta del "
+"codice cliente è possibile avere come backup la richiesta di inserimento "
+"manuale del codice cliente."
+msgstr ""
+
+#: ../../advanced_config.rst:32
+msgid "Configurazione"
+msgstr ""
+
+#: ../../advanced_config.rst:34
+msgid ""
+"Per il collegamento ad un database MSSQL è necessario preliminarmente "
+"configurare il collegamento ODBC, vedi nella documentazione `Rubrica "
+"Centralizzata <http://nethserver.docs.nethesis.it/it/latest/phonebook-mysql."
+"html#configurazione-odbc>`_"
+msgstr ""
+
+#: ../../advanced_config.rst:38
+msgid "Nome CQR"
+msgstr ""
+
+#: ../../advanced_config.rst:40
+msgid ""
+"Nome del CQR che poi verrà utilizzato da |product| nelle destinazioni dei "
+"vari moduli."
+msgstr ""
+
+#: ../../advanced_config.rst:43
+msgid "Descrizione CQR"
+msgstr ""
+
+#: ../../advanced_config.rst:45
+msgid "Descrizione del CQR."
+msgstr ""
+
+#: ../../advanced_config.rst:48
+msgid "Risoluzione Codice Cliente"
+msgstr ""
+
+#: ../../advanced_config.rst:51
+msgid "Usa Codice Cliente"
+msgstr ""
+
+#: ../../advanced_config.rst:53
+msgid ""
+"Se abilitato, il CQR è attivato per la ricerca del codice cliente. Il Codice "
+"cliente viene ricavato dal numero del chiamante tramite la query apposita, "
+"nel caso la procedura non desse risultati e fosse stata abilita la voce "
+"Codice Cliente Manuale verrà chiesto dal |product| l'inserimento del codice."
+msgstr ""
+
+#: ../../advanced_config.rst:56
+msgid "Tipo Db Codice Cliente"
+msgstr ""
+
+#: ../../advanced_config.rst:58
+msgid "Tipo di database dove effettuare la query per il codice cliente."
+msgstr ""
+
+#: ../../advanced_config.rst:61
+msgid "URL db codice cliente"
+msgstr ""
+
+#: ../../advanced_config.rst:63
+msgid ""
+"URL per collegarsi al database per effettuare la query per ricavare il "
+"codice cliente."
+msgstr ""
+
+#: ../../advanced_config.rst:66
+msgid "Nome db codice cliente"
+msgstr ""
+
+#: ../../advanced_config.rst:68
+msgid ""
+"Nome del database dove effettuare la query codice cliente, nel caso di "
+"sorgente MSSQL nome configurato nella connessione ODBC(nomeDSN)."
+msgstr ""
+
+#: ../../advanced_config.rst:71
+msgid "Username db codice cliente"
+msgstr ""
+
+#: ../../advanced_config.rst:73
+msgid ""
+"Username per il collegamento al database per la query codice cliente. "
+"Accertarsi che abbia i permessi d'accesso."
+msgstr ""
+
+#: ../../advanced_config.rst:77
+msgid "Password db codice cliente"
+msgstr ""
+
+#: ../../advanced_config.rst:79
+#: ../../advanced_config.rst:158
+msgid "Password dell'utente per accedere al database."
+msgstr ""
+
+#: ../../advanced_config.rst:82
+msgid "Query codice cliente"
+msgstr ""
+
+#: ../../advanced_config.rst:84
+msgid ""
+"Query per ottenere il codice cliente partendo dal numero chiamante. %CID% "
+"verrà sostituito con il numero chiamante."
+msgstr ""
+
+#: ../../advanced_config.rst:87
+msgid ""
+"Ad esempio: SELECT\\` customer\\_code\\` FROM \\`phonebook\\` WHERE "
+"\\`caller\\_id\\` = '%CID%'"
+msgstr ""
+
+#: ../../advanced_config.rst:90
+msgid "Codice Cliente Manuale"
+msgstr ""
+
+#: ../../advanced_config.rst:92
+msgid ""
+"Se abilitato nel caso la query del codice cliente non dia risultati viene "
+"richiesto l'inserimento manuale del codice cliente."
+msgstr ""
+
+#: ../../advanced_config.rst:95
+msgid "Annuncio Codice Cliente"
+msgstr ""
+
+#: ../../advanced_config.rst:97
+msgid ""
+"Annuncio da riprodurre per richiedere l'inserimento del codice cliente "
+"manualmente. Viene proposto l'elenco delle Registrazioni di Sistema già "
+"caricate."
+msgstr ""
+
+#: ../../advanced_config.rst:100
+msgid "Annuncio Errore Codice Cliente"
+msgstr ""
+
+#: ../../advanced_config.rst:102
+msgid ""
+"Annuncio da riprodurre in caso di errore nell'inserimento del codice cliente."
+" Viene proposto l'elenco delle Registrazioni di Sistema già caricate."
+msgstr ""
+
+#: ../../advanced_config.rst:105
+msgid "Lunghezza Codice Cliente"
+msgstr ""
+
+#: ../../advanced_config.rst:107
+msgid ""
+"Lunghezza del codice cliente nel caso si arrivi all'inserimento manuale."
+msgstr ""
+
+#: ../../advanced_config.rst:110
+msgid "Numero Tentativi"
+msgstr ""
+
+#: ../../advanced_config.rst:112
+msgid ""
+"Numero di tentativi disponibile per inserire un codice cliente valido "
+"manualmente."
+msgstr ""
+
+#: ../../advanced_config.rst:115
+msgid "Query Controllo Codice Cliente"
+msgstr ""
+
+#: ../../advanced_config.rst:117
+msgid ""
+"Query da effettuare dopo l'inserimento del codice cliente manualmente per "
+"controllarle la validità."
+msgstr ""
+
+#: ../../advanced_config.rst:119
+msgid ""
+"I parametri di collegamento utilizzati sono quelli indicati per la Query "
+"Codice Cliente."
+msgstr ""
+
+#: ../../advanced_config.rst:121
+msgid ""
+"Formattare la query in modo da far ritornare un qualsiasi risultato in caso "
+"di codice cliente corretto, mentre non devono ritornare risultati in caso di "
+"codice cliente errato."
+msgstr ""
+
+#: ../../advanced_config.rst:123
+msgid "%CODCLI% verrà sostituito con il codice cliente inserito."
+msgstr ""
+
+#: ../../advanced_config.rst:125
+msgid ""
+"Ad esempio: SELECT \\`customer\\_code\\` FROM \\`phonebook\\` WHERE "
+"\\`customer\\_code\\` = '%CODCLI%'"
+msgstr ""
+
+#: ../../advanced_config.rst:128
+msgid "Opzioni CQR"
+msgstr ""
+
+#: ../../advanced_config.rst:131
+msgid "Annuncio"
+msgstr ""
+
+#: ../../advanced_config.rst:133
+msgid ""
+"Messaggio che viene riprodotto al chiamante mentre il CQR viene utilizzato. "
+"Deve essere almeno della durata delle interrogazioni in modo da dare al "
+"|product| il tempo di effettuarle."
+msgstr ""
+
+#: ../../advanced_config.rst:136
+msgid "Tipo di database"
+msgstr ""
+
+#: ../../advanced_config.rst:138
+msgid ""
+"Tipo di database dove effettuare la query per ottenere un risultato sul "
+"quale basare come il |product| debba proseguire il flusso della chiamata."
+msgstr ""
+
+#: ../../advanced_config.rst:141
+msgid "URL Datatbase"
+msgstr ""
+
+#: ../../advanced_config.rst:143
+msgid ""
+"URL per collegarsi al database per effettuare la query. In caso del "
+"|product| stesso inserire localhost."
+msgstr ""
+
+#: ../../advanced_config.rst:146
+msgid "Nome Database"
+msgstr ""
+
+#: ../../advanced_config.rst:148
+msgid ""
+"Nome del database al quale collegarsi, nel caso di sorgente MSSQL nome "
+"configurato nella connessione ODBC(nomeDSN)."
+msgstr ""
+
+#: ../../advanced_config.rst:151
+msgid "Username"
+msgstr ""
+
+#: ../../advanced_config.rst:153
+msgid ""
+"Username per il collegamento al database. Accertarsi che l'utente abbia i "
+"permessi di accesso."
+msgstr ""
+
+#: ../../advanced_config.rst:156
+msgid "Password"
+msgstr ""
+
+#: ../../advanced_config.rst:160
+msgid "Query Query ~~~~~"
+msgstr ""
+
+#: ../../advanced_config.rst:164
+msgid ""
+"Query da effettuare una volta avvenuto il collegamento con il database."
+msgstr ""
+
+#: ../../advanced_config.rst:166
+msgid ""
+"La query si baserà sul numero chiamante nel caso non sia abilitata la "
+"richiesta di codice cliente o direttamente sul codice cliente ricavato dalla "
+"query del codice cliente da configurare successivamente."
+msgstr ""
+
+#: ../../advanced_config.rst:168
+msgid ""
+"Sono da inserire nella query %CID% che verrà sostituito con il numero del "
+"chiamante nel primo caso o %CUSTOMERCODE% nel caso di utilizzo del codice "
+"cliente."
+msgstr ""
+
+#: ../../advanced_config.rst:170
+msgid ""
+"Ad esempio: SELECT \\`name\\` FROM \\`phonebook\\` WHERE \\`workphone\\`= "
+"'%CID%' o SELECT \\`name\\` FROM \\`phonebook\\` WHERE \\`customercode\\` = "
+"'%CUSTOMERCODE%'"
+msgstr ""
+
+#: ../../advanced_config.rst:173
+msgid "Destinazione di default"
+msgstr ""
+
+#: ../../advanced_config.rst:175
+msgid ""
+"Destinazione della chiamata per ogni condizione non specificata "
+"successivamente, di solito la più probabile. E' anche la destinazione della "
+"chiamata in caso di un qualsiasi errore, sia esso di connessione al database "
+"o nell'effettuare la query."
+msgstr ""
+
+#: ../../advanced_config.rst:178
+msgid "Voci NethCQR"
+msgstr ""
+
+#: ../../advanced_config.rst:181
+msgid "Posizione"
+msgstr ""
+
+#: ../../advanced_config.rst:183
+msgid ""
+"La posizione indica l'ordine con il quale il |product| valuterà il risultato "
+"che ha ritornato la query."
+msgstr ""
+
+#: ../../advanced_config.rst:186
+msgid "Condizione"
+msgstr ""
+
+#: ../../advanced_config.rst:188
+msgid "Inserire qui i possibili risultati della query, uno per riga."
+msgstr ""
+
+#: ../../advanced_config.rst:191
+msgid "Destinazione"
+msgstr ""
+
+#: ../../advanced_config.rst:193
+msgid ""
+"Destinazione della chiamata se il risultato della query coincide con la "
+"condizione inserita."
+msgstr ""
+
+#: ../../advanced_config.rst:196
+msgid "Elimina"
+msgstr ""
+
+#: ../../advanced_config.rst:198
+msgid "Cancella una riga errata o non più necessaria."
+msgstr ""
+
+#: ../../advanced_config.rst:202
+msgid "|product|: installazione codec g729"
+msgstr "|product|:installation codec g729"
+
+#: ../../advanced_config.rst:204
+msgid ""
+"Per installare ed attivare il codec g729 opensource ecco la procedura "
+"(comporta il riavvio di asterisk e quindi l'eventuale caduta di chiamate in "
+"corso):"
+msgstr ""
+"To install and activate the codec g729 opensource here is the procedure "
+"(involves the restart of asterisk and then the possible fall of calls in "
+"progress):"
+
+#: ../../advanced_config.rst:214
+msgid ""
+"Il codec g729 opensource non è compatibile con la versione a pagamento di "
+"Digium, che si può installare seguendo la procedura che vi forniranno con "
+"l'acquisto."
+msgstr ""
+"The open source codec g729 is not compatible with the paid version of "
+"Digium, which can be installed following the procedure that will provide you "
+"with the purchase."
+
+#: ../../advanced_config.rst:216
+msgid ""
+"E' possibile, quindi, utilizzare contemporaneamente solo una delle due "
+"versioni di g729, opensource o Digium."
+msgstr ""
+" It is possible,then, to use only one of the two versions of g729, "
+"opensource or Digium at the same time."
+
+#: ../../advanced_config.rst:220
 msgid "|product_cti|: attivazione debug"
 msgstr "|product_cti|: debug activation"
 
-#: ../../advanced_config.rst:13
+#: ../../advanced_config.rst:222
 msgid ""
 "Di default il file di log riporta solamente messaggi di *warning* ed "
 "*errori*. È possibile innalzare il livello di debug per avere maggiori "
@@ -27,24 +458,24 @@ msgstr ""
 "By default, the log file only reports *warnings* and *errors* messages. You "
 "can raise the debug level to get more information:"
 
-#: ../../advanced_config.rst:22
+#: ../../advanced_config.rst:231
 msgid ""
 "Innalzando il livello la dimensione del file di log aumenta rapidamente."
 msgstr "Raising log level the log file size rapidly increases."
 
-#: ../../advanced_config.rst:24
+#: ../../advanced_config.rst:233
 msgid "Per ripristinare il livello di default:"
 msgstr "To restore default level:"
 
-#: ../../advanced_config.rst:33
+#: ../../advanced_config.rst:242
 msgid "|product_cti|: disattivazione della modalità di Click2Call automatico"
 msgstr "|product_cti|: disable automatic Click2Call mode"
 
-#: ../../advanced_config.rst:35
-msgid "necessità di sollevare la cornetta telefonica."
-msgstr "need to lift the phone"
+#: ../../advanced_config.rst:244
+msgid "Necessità di sollevare la cornetta telefonica."
+msgstr "Need to lift the telephone handset."
 
-#: ../../advanced_config.rst:37
+#: ../../advanced_config.rst:246
 msgid ""
 "In alcuni scenari potrebbe essere utile disattivare la funzionalità, ad "
 "esempio nel caso in cui il centralino telefonico è in cloud ed i telefoni "
@@ -54,28 +485,28 @@ msgstr ""
 "the switchboard is in the cloud and the phones are on LAN behind a NAT. To "
 "disable:"
 
-#: ../../advanced_config.rst:45
+#: ../../advanced_config.rst:254
 msgid "Per ripristinare il valore di default:"
 msgstr "To restore default value:"
 
-#: ../../advanced_config.rst:54
+#: ../../advanced_config.rst:263
 msgid "|product_cti|: utilizzo di un server chat esterno"
 msgstr "|product_cti|: use external chat server"
 
-#: ../../advanced_config.rst:56
+#: ../../advanced_config.rst:265
 msgid "È possibile configurare un server chat presente su un'altra macchina:"
 msgstr "You can configure a chat server on another machine:"
 
-#: ../../advanced_config.rst:63
+#: ../../advanced_config.rst:272
 msgid "Per esempio:"
 msgstr "For example:"
 
-#: ../../advanced_config.rst:70
-#: ../../advanced_config.rst:93
+#: ../../advanced_config.rst:279
+#: ../../advanced_config.rst:302
 msgid "Per ripristinare il default:"
 msgstr "To restore default:"
 
-#: ../../advanced_config.rst:78
+#: ../../advanced_config.rst:287
 msgid ""
 "Il server chat specificato deve supportare `XMPP <https://en.wikipedia.org/"
 "wiki/XMPP>`_ su protocollo `BOSH <https://en.wikipedia.org/wiki/"
@@ -87,10 +518,99 @@ msgstr ""
 "`NethServer <http://docs.nethserver.org/it/v7/chat.html>`_ support it by "
 "default."
 
-#: ../../advanced_config.rst:83
+#: ../../advanced_config.rst:292
 msgid "|product_cti|: configurazione di un prefisso telefonico"
 msgstr "|product_cti|: phone prefix configuration"
 
-#: ../../advanced_config.rst:85
+#: ../../advanced_config.rst:294
 msgid "È possibile configurare un prefisso telefonico per qualsiasi chiamata:"
 msgstr "You can configure a phone prefix for any call:"
+
+#: ../../advanced_config.rst:311
+msgid "|product_cti|: configurazione Softphone WebRTC"
+msgstr "|product_cti|:WebRTC Softphone configuration"
+
+#: ../../advanced_config.rst:313
+msgid ""
+"Il softphone WebRTC utilizza il `Gateway Janus <https://github.com/meetecho/"
+"janus-gateway>`_ installato direttamente nel centralino telefonico."
+msgstr ""
+"The WebRTC softphone use the Janus Gateway  <https://github.com/meetecho/"
+"janus-gateway> that is installed in the telephone exchange"
+
+#: ../../advanced_config.rst:316
+msgid "Janus-gateway può operare in tre differenti modalità di NAT:"
+msgstr "Janus-gateway can operate in three different NAT modes:"
+
+#: ../../advanced_config.rst:318
+msgid "STUN (default)"
+msgstr "STUN (default)"
+
+#: ../../advanced_config.rst:319
+msgid "ICE"
+msgstr "ICE"
+
+#: ../../advanced_config.rst:320
+msgid "1:1 (NAT)"
+msgstr "1:1 (NAT)"
+
+#: ../../advanced_config.rst:322
+msgid ""
+"Per la configurazione del NAT e delle opzioni, sono disponibili quattro "
+"proprietà sotto la chiave *janus-gateway* del database di configurazione:"
+msgstr ""
+"For NAT configuration and options, there are four properties under the * "
+"janus-gateway * key of the configuration database:"
+
+#: ../../advanced_config.rst:325
+msgid "NatMode: <stun|ice|1:1>"
+msgstr "NatMode: <stun|ice|1:1>"
+
+#: ../../advanced_config.rst:326
+msgid ""
+"StunServer: indirizzo del server STUN da usare. Il default è *stun1.l.google."
+"com*. Viene ignorato se la modalità non è STUN"
+msgstr ""
+"StunServer: STUN server address to use. The default is * stun1.l.google.com "
+"*. It is ignored if the mode is not STUN"
+
+#: ../../advanced_config.rst:327
+msgid ""
+"StunPort: porta del server STUN. Il default è 19302. Viene ignorato se la "
+"modalità non è STUN"
+msgstr ""
+"StunPort: STUN server port .The default is 19302. It is ignored if the mode "
+"is not STUN"
+
+#: ../../advanced_config.rst:328
+msgid ""
+"PublicIP: è l'indirizzo IP pubblico del server su cui è in esecuzione janus-"
+"gateway. Viene ignorato se la modalità non è 1:1"
+msgstr ""
+"PublicIP: is the public IP address of the server running janus-gateway. It "
+"is ignored if the mode is not 1: 1"
+
+#: ../../advanced_config.rst:330
+msgid ""
+"In alcuni scenari d'utilizzo l'audio delle telefonate potrebbe non "
+"funzionare e conseguentemente le chiamate vengono terminate automaticamente "
+"dal centralino dopo un certo intervallo temporale. In questi casi è "
+"necessario configurare correttamente il WebRTC in base all'architettura di "
+"rete utilizzata."
+msgstr ""
+"In some usage scenarios the audio of the telephone calls may not work and "
+"consequently the calls are automatically terminated by the switchboard after "
+"a certain time interval. In these cases, the WebRTC must be configured "
+"correctly according to the network architecture used."
+
+#: ../../advanced_config.rst:334
+msgid "*Esempio*"
+msgstr "*Example*"
+
+#: ../../advanced_config.rst:336
+msgid ""
+"Nel caso si utilizzi un centralino in cloud dietro NAT, è necessario "
+"configurare il WebRTC come segue:"
+msgstr ""
+"If you use a cloud-based switchboard behind NAT, you need to configure the "
+"WebRTC as follows:"
