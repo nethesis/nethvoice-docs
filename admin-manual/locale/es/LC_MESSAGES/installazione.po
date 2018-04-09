@@ -1,0 +1,167 @@
+# Alejandro Moreno <alejandro.martinez@nethesis.it>, 2018. #zanata
+msgid ""
+msgstr ""
+"Project-Id-Version: NethVoice 14\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-04-05 14:44+0200\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2018-04-09 07:11-0400\n"
+"Last-Translator: Alejandro Moreno <alejandro.martinez@nethesis.it>\n"
+"Language-Team: Spanish (Spain)\n"
+"Language: es-ES\n"
+"X-Generator: Zanata 3.9.6\n"
+"Plural-Forms: nplurals=2; plural=(n != 1)\n"
+
+#: ../../installazione.rst:13
+#: ../../installazione.rst:22
+msgid "Installazione"
+msgstr "Instalación"
+
+#: ../../installazione.rst:16
+msgid "Requisiti minimi"
+msgstr "Requisitos mínimos"
+
+#: ../../installazione.rst:18
+msgid ""
+"|product| è uno dei tanti prodotti installabile sulla base |parent_product|."
+msgstr ""
+"|product| es uno de los tantos productos instalables en la base "
+"|parent_product|."
+
+#: ../../installazione.rst:24
+msgid ""
+"Per installare |product| quindi il primo passo è installare "
+"|parent_product|, per i requisiti minimi, la compatibilità hardware e le "
+"modalità di installazione fare riferimento alla documentazione specifica, "
+"vedi il manuale di |parent_product|: `Installazione <http://nethserver.docs."
+"nethesis.it/it/latest/installation.html>`_."
+msgstr ""
+"Para instalar |product| el primer paso es instalar |parent_product|, para "
+"los requisitos mínimos, la compatibilidad hardware y la modalidad de "
+"instalación dirigirse a la documentación específica, ver el manual de "
+"|parent_product|: `Instalación <http://nethserver.docs.nethesis.it/it/latest/"
+"installation.html>`_."
+
+#: ../../installazione.rst:27
+msgid ""
+"Quando l'installazione di |parent_product| è stata completata con successo, "
+"per installare |product| è necessario prima registrare il server seguendo la "
+"procedura documentata: `Registrazione <http://nethserver.docs.nethesis.it/it/"
+"latest/registration.html>`_."
+msgstr ""
+"Cuando la instalación de |parent_product| ha sido completada con éxito, para "
+"instalar |product| es necesario antes  registrar el servidor siguiendo el "
+"procedimiento documentado:\n"
+"`Registro <http://nethserver.docs.nethesis.it/it/latest/registration.html>`_."
+""
+
+#: ../../installazione.rst:30
+msgid ""
+"Registrato il server, dalla gestione pacchetti, vedi `qui <http://nethserver."
+"docs.nethesis.it/it/latest/packages.html>`_, è possibile installare "
+"|product| e tutti i moduli correlati opzionali, come ad esempio il "
+"|product_cti|."
+msgstr ""
+"Registrado el servidor, desde la gestión de paquetes, ver `aquí\n"
+"<http://nethserver.docs.nethesis.it/it/latest/packages.html>`_, es posible "
+"instalar |product| y todos los módulos relacionados opcionales, como por "
+"ejemplo el |product_cti|."
+
+#: ../../installazione.rst:32
+msgid ""
+"Una volta avviata l'installazione il server scaricherà i pacchetti "
+"occorrenti da vari repository per poi automaticamente installarli ed "
+"effettuare le configurazioni necessarie."
+msgstr ""
+"Una vez iniciada la instalación el servidor descargará los paquetes "
+"necesarios de varios repositorios para después automáticamente instalarlos y "
+"efectuar las configuraciones necesarias."
+
+#: ../../installazione.rst:34
+msgid "Terminata questa fase, |product| sarà pronto per essere utilizzato."
+msgstr "Terminada esta fase, |product| estará listo para ser utilizado."
+
+#: ../../installazione.rst:36
+msgid ""
+"Il pannello di configurazione di |product| è raggiungibile *dalle reti "
+"locali e dalle reti fidate* all'indirizzo"
+msgstr ""
+"El panel de configuración de |product| es alcanzable *desde redes locales y "
+"desde redes de confianza* en la dirección"
+
+#: ../../installazione.rst:38
+msgid "https://nomeserver/|product_command|"
+msgstr "https://nomeserver/|product_command|"
+
+#: ../../installazione.rst:40
+msgid ""
+"dove per *nomeserver* si intende il nome (anche seguito dal dominio) dato al "
+"|product| in fase di installazione."
+msgstr ""
+"donde para *nombreservidor* se entiende el nombre (seguido del dominio) dado "
+"al |product| en fase de instalación."
+
+#: ../../installazione.rst:42
+msgid ""
+"L'accesso è consentito anche sostituendo a *nomeserver* l'ip del |product|."
+msgstr ""
+"El acceso es consentido también sustituyendo a *nombreservidor* la ip del "
+"|product|."
+
+#: ../../installazione.rst:44
+msgid ""
+"L'accesso è garantito di default all'utente admin che ha come password di "
+"default *Nethesis,1234*"
+msgstr ""
+"El acceso está garantizado por defecto al usuario admin que tiene como "
+"contraseña por defecto *Nethesis,1234*"
+
+#: ../../installazione.rst:50
+msgid "Accesso Esterno"
+msgstr "Acceso Externo"
+
+#: ../../installazione.rst:53
+msgid "Interfaccia Web"
+msgstr "Interfaz Web"
+
+#: ../../installazione.rst:54
+msgid ""
+"Per accedere da una rete diversa da quelle locali o fidate all'interfaccia "
+"web di amministrazione di |product|, aggiungere la rete di provenienza nel "
+"menù *Accesso centralino-> Accesso interfaccia web* di |parent_product|."
+msgstr ""
+"Para acceder a una red diferente desde las locales o de confianza a la "
+"interfaz web de administración de |product|, añadir la red de procedencia en "
+"el menú *Acceso centralita-> Acceso interfaz web* de |parent_product|."
+
+#: ../../installazione.rst:58
+msgid "Servizi"
+msgstr "Servicios"
+
+#: ../../installazione.rst:60
+msgid ""
+"|product| consente di aprire a reti esterne il protocollo IAX, il protocollo "
+"WebRTC e la WebSocket per l'accesso al |product_cti|."
+msgstr ""
+"|product| permite abrir a redes externas el protocolo IAX, el protocolo "
+"WebRTC y la WebSocket para el acceso al |product_cti|."
+
+#: ../../installazione.rst:62
+msgid ""
+"L'apertura verso l'esterno del protocollo SIP è decisamente sconsigliata e "
+"per questo non prevista da interfaccia."
+msgstr ""
+"La apertura a través del externo del protocolo SIP es definitivamente no "
+"recomendada y por esto no prevista de interfaz."
+
+#: ../../installazione.rst:64
+msgid ""
+"Per aprire IAX, WebRTC e la WebSocket accedere all'interfaccia di "
+"amministrazione di |parent_product| nel menù *Accesso centralino-> Accesso "
+"esterno*."
+msgstr ""
+"Para abrir IAX, WebRTC y la WebSocket acceder a la interfaz de "
+"administración de |parent_product| en el menú *Acceso centralita-> Acceso "
+"externo*."

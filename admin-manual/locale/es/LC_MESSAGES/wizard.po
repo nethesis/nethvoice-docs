@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: NethVoice 14\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-04-05 14:44+0200\n"
+"POT-Creation-Date: 2018-04-09 16:32+0200\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -240,21 +240,13 @@ msgstr ""
 
 #: ../../wizard.rst:83
 msgid ""
-"Le marche telefoniche al momento supportate sono *Sangoma, Yealink, Snom, "
-"Alcatel*."
-msgstr ""
-"Las marcas telefónicas al momento soportadas son *Sangoma, Yealink, Snom, "
-"Alcatel*."
-
-#: ../../wizard.rst:85
-msgid ""
 "Se in alcuni telefoni non è stato possibile trovare automaticamente il "
 "modello, servirsi del menù a tendina per specificarlo."
 msgstr ""
 "Si en algunos teléfonos no ha sido posible encontrar automáticamente el "
 "modelo, utilizar el menú desplegable para especificarlo."
 
-#: ../../wizard.rst:87
+#: ../../wizard.rst:85
 msgid "Per rieseguire la scansione della rete, premere il pulsante *Scan*"
 msgstr "Para volver a ejecutar el escaneo de la red, pulsar el botón *Scan*"
 
@@ -328,11 +320,11 @@ msgstr ""
 "las líneas físicas o crear conexión VoIP especificando las credenciales de "
 "vuestros proveedores"
 
-#: ../../wizard.rst:107
+#: ../../wizard.rst:109
 msgid "Fisici"
 msgstr "Físicas"
 
-#: ../../wizard.rst:108
+#: ../../wizard.rst:110
 msgid ""
 "Come per i dispositivi, questa sezione scansiona la vostra rete e cerca dei "
 "gateway dispobili, una volta individuati è possible specificare, "
@@ -342,23 +334,23 @@ msgstr ""
 "gateway disponibles, una vez identificados es posible especificar, "
 "seleccionando uno, dos ajustes:"
 
-#: ../../wizard.rst:110
+#: ../../wizard.rst:112
 msgid "Modello: specificare il modello del gateway"
 msgstr "Modelo: especificar el modelo del gateway"
 
-#: ../../wizard.rst:111
+#: ../../wizard.rst:113
 msgid "Impostazioni dinamiche in base al modello:"
 msgstr "Ajustes dinámicos en base al modelo:"
 
-#: ../../wizard.rst:113
+#: ../../wizard.rst:115
 msgid "ISDN (Specificare per la linea se è Point-Point or Point-MultiPoint)"
 msgstr "ISDN (Especificar para la línea si es Punto-Punto o Punto-MultiPunto)"
 
-#: ../../wizard.rst:114
+#: ../../wizard.rst:116
 msgid "PRI"
 msgstr "PRI"
 
-#: ../../wizard.rst:115
+#: ../../wizard.rst:117
 msgid ""
 "FXS (Specificare per ogni porta, l'interno da assegnare scegliendo un utente "
 "precedentemente configurato)"
@@ -366,11 +358,11 @@ msgstr ""
 "FXS ( Especificar para cada puerta, el interno a asignar eligiendo un "
 "usuario anteriormente configurado)"
 
-#: ../../wizard.rst:116
+#: ../../wizard.rst:118
 msgid "FXO (Specificare direttamente il numero, nel campo di testo)"
 msgstr "FXO (Especificar directamente el número, en el campo de texto)"
 
-#: ../../wizard.rst:118
+#: ../../wizard.rst:120
 msgid ""
 "Una volta salvate le impostazioni è possibile caricare la configurazione sul "
 "gateway tramite il bottone \"Carica\" Il gateway prende la configurazione e "
@@ -380,11 +372,11 @@ msgstr ""
 "a través del botón \"Cargar\" El gateway coge la configuración y se "
 "reinicia, vienen también creados las conexiones relativas."
 
-#: ../../wizard.rst:122
+#: ../../wizard.rst:124
 msgid "VoIP"
 msgstr "VoIP"
 
-#: ../../wizard.rst:123
+#: ../../wizard.rst:125
 msgid ""
 "E' possible creare dei fasci VoIP selezionando uno dei provider supportati, "
 "e inserendo le informazioni necessarie."
@@ -392,18 +384,18 @@ msgstr ""
 "Es posible crear las conexiones VoIP seleccionando uno de los proveedores "
 "soportados, e introduciendo la información necesaria."
 
-#: ../../wizard.rst:125
+#: ../../wizard.rst:127
 msgid ""
 "Premere \"Crea\" per creare la configurazione relativa per quel fascio VoIP."
 msgstr ""
 "Pinchar en \"Crear\" para crear la configuración relativa para dicha "
 "conexión VoIP."
 
-#: ../../wizard.rst:128
+#: ../../wizard.rst:130
 msgid "Rotte"
 msgstr "Rutas"
 
-#: ../../wizard.rst:129
+#: ../../wizard.rst:131
 msgid ""
 "Nella sezione rotte è possibile configurare le rotte in entrata e in uscita "
 "per il vostro centralino"
@@ -411,11 +403,11 @@ msgstr ""
 "En la sección rutas es posible configurar las rutas en entrada y en salida "
 "para vuestra centralita"
 
-#: ../../wizard.rst:132
+#: ../../wizard.rst:134
 msgid "In entrata"
 msgstr "En entrada"
 
-#: ../../wizard.rst:133
+#: ../../wizard.rst:135
 msgid ""
 "Una volta in questa sezione, vi si presenta la lista delle rotte già "
 "configurate, con la possibilità di modificarle o eliminarle."
@@ -423,7 +415,7 @@ msgstr ""
 "Una vez en esta sección, se os presenta la lista de las rutas ya "
 "configuradas, con la posibilidad de modificar o eliminar."
 
-#: ../../wizard.rst:135
+#: ../../wizard.rst:137
 msgid ""
 "Premendo sul bottone \"Crea nuova rotta\" si apre una differente "
 "applicazione il Visual Plan, che vi consente di creare, modificare e "
@@ -435,7 +427,7 @@ msgstr ""
 "componentes para gestionar lo mejor posible el flujo de la llamada en un "
 "número determinado en entrada."
 
-#: ../../wizard.rst:137
+#: ../../wizard.rst:139
 msgid ""
 "Premendo il simbolo di spunta nell'applicazione Visual Plan, la "
 "configurazione della vostra rotta verrà salvata e da quel momento potrete "
@@ -445,11 +437,11 @@ msgstr ""
 "configuración de vuestra ruta será guardada y desde ese momento podréis "
 "recibir llamadas y dirigir el flujo dependiendo de vuestra elección."
 
-#: ../../wizard.rst:140
+#: ../../wizard.rst:142
 msgid "In uscita"
 msgstr "En salida"
 
-#: ../../wizard.rst:141
+#: ../../wizard.rst:143
 msgid ""
 "In questa sezione è presente la lista delle rotte in uscita presenti, la "
 "prima volta che questa pagina viene visitata, il wizard vi propone delle "
@@ -461,7 +453,7 @@ msgstr ""
 "salida por defecto con el patrón de llamadas específicas para las diversas "
 "lenguas."
 
-#: ../../wizard.rst:143
+#: ../../wizard.rst:145
 msgid ""
 "E' possibile inoltre specificare l'ordine con cui usare i fasci, "
 "precedentemente creati, e regolare così in maniera personalizzata il "
@@ -471,7 +463,7 @@ msgstr ""
 "anteriormente creadas, y regular así de manera personalizada el transcurso "
 "de las llamadas en salida."
 
-#: ../../wizard.rst:145
+#: ../../wizard.rst:147
 msgid ""
 "Premendo il tasto \"Salva\" la configurazione viene scritta nel centralino e "
 "da quel momento è possibile effeturare chiamate verso l'esterno (avendo "
@@ -482,11 +474,11 @@ msgstr ""
 "(teniendo de forma oportuna configurado las conexiones en los pasos "
 "anteriores)."
 
-#: ../../wizard.rst:148
+#: ../../wizard.rst:150
 msgid "Applicazioni"
 msgstr "Aplicaciones"
 
-#: ../../wizard.rst:149
+#: ../../wizard.rst:151
 msgid ""
 "La sezione \"Applicazioni\" consente di creare, modificare o eliminare "
 "determinate funzionalità del centralino, che nel wizard vengono solo create "
@@ -496,7 +488,7 @@ msgstr ""
 "funcionalidades de la centralita, que en el asistente vienen solamente "
 "creadas y configuradas, pero que más tarde vienen utilizadas en el CTI."
 
-#: ../../wizard.rst:151
+#: ../../wizard.rst:153
 msgid ""
 "Ad esempio le schede cliente, nel wizard, vengono configurate per accedere "
 "al database e per mostrare in maniera pratica le informazioni ottenute, ma "
@@ -508,11 +500,11 @@ msgstr ""
 "obtenida, pero el uso real será en el interior del CTI, durante las llamadas "
 "o durante la búsqueda de determinada información."
 
-#: ../../wizard.rst:154
+#: ../../wizard.rst:156
 msgid "Schede cliente"
 msgstr "Tarjetas cliente"
 
-#: ../../wizard.rst:156
+#: ../../wizard.rst:158
 msgid ""
 "La sezione schede cliente, permette di raggrupare le informazioni presenti "
 "su database esterni al centralino e mostrarle in fase di chiamata. Ad "
@@ -528,11 +520,11 @@ msgstr ""
 "por ejemplo, si dar asistencia o no. Para generar una nueva tarjeta cliente "
 "los pasos son los siguientes"
 
-#: ../../wizard.rst:159
+#: ../../wizard.rst:161
 msgid "Sorgenti"
 msgstr "Fuentes"
 
-#: ../../wizard.rst:161
+#: ../../wizard.rst:163
 msgid ""
 "Cliccare sul bottone \"Crea nuova sorgente\" e compilare il form che si "
 "presenta: - Tipo database: specificare la tipologia di database su cui "
@@ -557,7 +549,7 @@ msgstr ""
 "base de datos - Conexiones: pulsar el botón \"Verificar\" para comprobar que "
 "la información introducida sea correcta para la conexión "
 
-#: ../../wizard.rst:170
+#: ../../wizard.rst:172
 msgid ""
 "Premere \"Salva\" per aggiungere la sorgente database. La sorgente appena "
 "creata apparirà tra la lista di quelle disponibili"
@@ -565,11 +557,11 @@ msgstr ""
 "Pulsar \"Guardar\" para añadir la fuente base de datos. La fuente creada "
 "aparecerá en la lista de aquellas disponibles"
 
-#: ../../wizard.rst:173
+#: ../../wizard.rst:175
 msgid "Template"
 msgstr "Plantilla"
 
-#: ../../wizard.rst:175
+#: ../../wizard.rst:177
 msgid ""
 "I template sono il fac-simile per le vostre schede cliente. Utilizzano il "
 "motore `ejs`, che ha una sintassi *JavaScript-like*, che vi permette di "
@@ -581,7 +573,7 @@ msgstr ""
 "permite escribir código html usando especificas directrices que podéis "
 "encontrar en el sitio https://github.com/tj/ejs."
 
-#: ../../wizard.rst:177
+#: ../../wizard.rst:179
 msgid ""
 "Cliccare sul bottone \"Crea nuovo template\" per iniziare il processo di "
 "creazione: - Nome: specificare il nome del template - Results: contiene "
@@ -603,7 +595,7 @@ msgstr ""
 "de resultado de vuestra consulta) - Anteprima: combinando los resultados y "
 "el código `ejs`veréis el resultado HTML que será vuestra tarjeta cliente."
 
-#: ../../wizard.rst:183
+#: ../../wizard.rst:185
 msgid ""
 "Il centralino prevede giù dei template predefiniti con codice HTML già "
 "scritto, che potete duplicare e modificare cambiando colore."
@@ -611,11 +603,11 @@ msgstr ""
 "La centralita proporciona las plantillas predefinidas con código HTML ya "
 "escrito, que podéis duplicar y modificar cambiando color."
 
-#: ../../wizard.rst:186
+#: ../../wizard.rst:188
 msgid "Schede"
 msgstr "Tarjetas"
 
-#: ../../wizard.rst:188
+#: ../../wizard.rst:190
 msgid ""
 "Una volta creata la sorgente e il template della vostra scheda, in questa "
 "sessione dovrete unire le due informazioni per far si che la scheda venga "
@@ -640,11 +632,11 @@ msgstr ""
 "especificada y los datos serán introducidos en la **plantilla** "
 "seleccionada, produciendo el resultado deseado."
 
-#: ../../wizard.rst:196
+#: ../../wizard.rst:198
 msgid "Premere il tasto \"Salva\" per salvare la vostra scheda cliente."
 msgstr "Pulsar la tecla \"Guardar\" para guardar vuestra tarjeta cliente."
 
-#: ../../wizard.rst:198
+#: ../../wizard.rst:200
 msgid ""
 "Una volta creata la query e la scheda e verificato che il tutto funziona, "
 "utilizzare la variabile `$NUMBER` per sostituire i parametri numerici di "
@@ -654,15 +646,15 @@ msgstr ""
 "utilizar la variable `$NUMBER` para sustituir los parámetros numéricos de "
 "búsqueda de vuestra consulta."
 
-#: ../../wizard.rst:200
+#: ../../wizard.rst:202
 msgid "*Esempio*:"
 msgstr "*Ejemplo*:"
 
-#: ../../wizard.rst:202
+#: ../../wizard.rst:204
 msgid "Se la vostra query è di questo tipo:"
 msgstr "Si vuestra consulta es de este tipo:"
 
-#: ../../wizard.rst:204
+#: ../../wizard.rst:206
 msgid ""
 "`select * from phonebook where homephone like '%150' or workphone like "
 "'%850' or cellphone like '%150' or fax like '%850'`"
@@ -670,11 +662,11 @@ msgstr ""
 "`select * from phonebook where homephone like '%150' or workphone like "
 "'%850' or cellphone like '%150' or fax like '%850'`"
 
-#: ../../wizard.rst:206
+#: ../../wizard.rst:208
 msgid "dovrà diventare così:"
 msgstr "deberá convertirse así:"
 
-#: ../../wizard.rst:208
+#: ../../wizard.rst:210
 msgid ""
 "`select * from phonebook where homephone like '%$NUMBER' or workphone like "
 "'%$NUMBER' or cellphone like '%$NUMBER' or fax like '%$NUMBER'`"
@@ -682,7 +674,7 @@ msgstr ""
 "`select * from phonebook where homephone like '%$NUMBER' or workphone like "
 "'%$NUMBER' or cellphone like '%$NUMBER' or fax like '%$NUMBER'`"
 
-#: ../../wizard.rst:210
+#: ../../wizard.rst:212
 msgid ""
 "La variable `$NUMBER` non è altro che il numero chiamante del centralino a "
 "cui la scheda cliente fa riferimento per effettuare la raccolta dei dati da "
@@ -692,11 +684,11 @@ msgstr ""
 "que la tarjeta cliente hace referencia para efectuar la recogida de los "
 "datos a mostrar."
 
-#: ../../wizard.rst:213
+#: ../../wizard.rst:215
 msgid "Sorgenti video"
 msgstr "Fuentes video"
 
-#: ../../wizard.rst:214
+#: ../../wizard.rst:216
 msgid ""
 "In questa sezione è possibile configurare le sorgenti video o telecamere IP. "
 "Cliccando sul bottone \"Crea nuova sorgente\" è possibile compilare un form "
@@ -706,11 +698,11 @@ msgstr ""
 "Haciendo clic en el botón \"Crear nueva fuente\" es posible compilar un "
 "formulario para la creación: "
 
-#: ../../wizard.rst:216
+#: ../../wizard.rst:218
 msgid "Nome: specificare il nome da dare alla sorgente"
 msgstr "Nombre: especificar el nombre a asignar a la fuente"
 
-#: ../../wizard.rst:217
+#: ../../wizard.rst:219
 msgid ""
 "Extension: specificare l'interno relativo alla sorgente video "
 "(precedentemente creata nella sezione \"Utenti\")"
@@ -718,7 +710,7 @@ msgstr ""
 "Extensión: especificar el interno relativo a la fuente de video "
 "(anteriormente creada en la sección \"Usuarios\")"
 
-#: ../../wizard.rst:218
+#: ../../wizard.rst:220
 msgid ""
 "URL: specificare l'URL di collegamento in cui prendere i frame video da "
 "mostrare"
@@ -726,7 +718,7 @@ msgstr ""
 "URL: especificar la URL de conexión en la que coger los fotograbas de vídeo "
 "a mostrar"
 
-#: ../../wizard.rst:219
+#: ../../wizard.rst:221
 msgid ""
 "Codice d'apertura: inserire il tono DTMF relativo per un eventale codice "
 "d'apertura (se la telecamera è collegata ad un cancello ad esempio)"
@@ -734,7 +726,7 @@ msgstr ""
 "Código de apertura: introducir el tono DTMF relativo para un código eventual "
 "de apertura (si la telecámara está conectada a una puerta por ejemplo)"
 
-#: ../../wizard.rst:220
+#: ../../wizard.rst:222
 msgid ""
 "Profilo: specificare il profilo da assegnare alla sorgente per filtare la "
 "tipologia di utente che ha accesso alla sorgente video"
@@ -742,7 +734,7 @@ msgstr ""
 "Perfil: especificar el perfil a asignar a la fuente para filtrar la "
 "tipología de usuario que tiene acceso a la fuente de vídeo"
 
-#: ../../wizard.rst:221
+#: ../../wizard.rst:223
 msgid ""
 "Connessione: premere il bottone \"Verifica\" e verificare che l'URL inserito "
 "sia corretto, testando la connessione e ottenendo il frame video relativo."
@@ -751,7 +743,7 @@ msgstr ""
 "sea correcta, comprobando la conexión y obteniendo el fotograma vídeo "
 "relativo."
 
-#: ../../wizard.rst:223
+#: ../../wizard.rst:225
 msgid ""
 "Una volta completata la compilazione del form premere \"Salva\" per salvare "
 "le infomazioni e creare una nuova sorgente video."
@@ -759,11 +751,11 @@ msgstr ""
 "Una vez completado el formulario pulsar \"Guardar\" para guardar la "
 "información y crear una nueva fuente de vídeo."
 
-#: ../../wizard.rst:226
+#: ../../wizard.rst:228
 msgid "Amministratore"
 msgstr "Administrador"
 
-#: ../../wizard.rst:228
+#: ../../wizard.rst:230
 msgid ""
 "La sezione \"Amministratore\" raggruppa le azioni che possono essere fatte "
 "dall'amministratore del centralino"
@@ -771,22 +763,22 @@ msgstr ""
 "La sección \"Administrador\" reagrupa las acciones que pueden ser realizadas "
 "por el administrador de la centralita"
 
-#: ../../wizard.rst:231
+#: ../../wizard.rst:233
 msgid "Impostazioni"
 msgstr "Ajustes"
 
-#: ../../wizard.rst:232
+#: ../../wizard.rst:234
 msgid ""
 "Nella parte \"Impostazioni\", è possibile cambiare la password dell'utente "
 "admin."
 msgstr ""
 "En la parte \"Ajustes\", es posible cambiar la contraseña del usuario admin."
 
-#: ../../wizard.rst:235
+#: ../../wizard.rst:237
 msgid "Report"
 msgstr "Informe"
 
-#: ../../wizard.rst:236
+#: ../../wizard.rst:238
 msgid ""
 "La sezione \"Report\" riporta l'elenco completo degli utenti del centralino "
 "specificando il loro:"
@@ -794,27 +786,27 @@ msgstr ""
 "La sección \"Informe\" reporta la lista completa de los usuarios de la "
 "centralita especificando:"
 
-#: ../../wizard.rst:238
+#: ../../wizard.rst:240
 msgid "Interno"
 msgstr "Interno"
 
-#: ../../wizard.rst:239
+#: ../../wizard.rst:241
 msgid "Username"
 msgstr "Usuario"
 
-#: ../../wizard.rst:240
+#: ../../wizard.rst:242
 msgid "Nome e Cognome"
 msgstr "Nombre y Apellido"
 
-#: ../../wizard.rst:241
+#: ../../wizard.rst:243
 msgid "Password Voicemail"
 msgstr "Password Voicemail"
 
-#: ../../wizard.rst:242
+#: ../../wizard.rst:244
 msgid "Password utente (se si è in modalità Legacy)"
 msgstr "Password usuario (si se encuentra en modalidad Legacy)"
 
-#: ../../wizard.rst:244
+#: ../../wizard.rst:246
 msgid ""
 "E' presente anche la possibilità di stampare l'elenco in formato PDF "
 "cliccando sul bottone \"Stampa report PDF\""
