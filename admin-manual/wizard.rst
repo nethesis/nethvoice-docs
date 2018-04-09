@@ -61,7 +61,7 @@ Per esempio:
   paolo,Paolo Bianchi,200
   carlo201,Carlo Neri,201,Carlo1@.!
 
-Cliccare su :guilabel:`"Importa` e selezionare il file creato.
+Cliccare su :guilabel:`Importa` e selezionare il file creato.
 
 Nella finestra che si aprirà, fare click su :guilabel:`Importa` e attendere che gli utenti vengano creati.
 
@@ -249,7 +249,7 @@ Una volta completata la compilazione del form premere "Salva" per salvare le inf
 Gestione Multipla
 -----------------
 
-L'applicazione interni bulk consente di modificare massivamente gruppi di utenti.
+L'applicazione *Gestione Multipla Interni* consente di modificare massivamente gruppi di utenti.
 
 E' possibile selezionare gli interni che si desidera modificare utilizzando la lista "Seleziona" o le checkbox accanto agli utenti elencati.
 
