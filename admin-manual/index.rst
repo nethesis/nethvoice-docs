@@ -50,6 +50,15 @@ Configurazione Base
    wizard
    app_mobile
 
+Provisioning
+------------
+
+.. toctree::
+   :maxdepth: 2
+
+   provisioning_phone
+   provisioning_gateway
+
 Configurazione Avanzata
 -----------------------
 
