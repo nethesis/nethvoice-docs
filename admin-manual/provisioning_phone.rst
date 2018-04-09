@@ -37,8 +37,6 @@ GIGASET
 
 * Maxwell basic, Maxwell 2, Maxwell 3
    
-Alcuni modelli non più in produzione vengono comunque supportati per retrocompatibilità.
-
 Provisioning
 ============
 
@@ -60,12 +58,12 @@ Il **Provisioning** si svolge in diversi passi:
 Ricerca dei telefoni
 --------------------
 
-|product| deve recuperare i mac-address dei telefoni da configurare, il mac-address è alla base del **Provisioning** in quanto strumento univoco di identificazione dei telefoni.
+|product| deve recuperare i MAC ADDRESS dei telefoni da configurare, il MAC ADDRESS è alla base del **Provisioning** in quanto strumento univoco di identificazione dei telefoni.
 
 Due modalità possibili:
 
 1. Scansione delle reti locali alla ricerca di apparati telefonici supportati già online come documentato :ref:`qui <telefoni_fisici_supportati>`
-2. Scansione del codice a barre del mac-address del telefono tramite l’app :ref:`Scan & Play 14 <app_mobile>` in questo caso il telefono può essere ancora inscatolato
+2. Scansione del codice a barre del MAC ADDRESS del telefono tramite l’app :ref:`Scan & Play 14 <app_mobile>` in questo caso il telefono può essere ancora inscatolato
 
 Creazione della configurazione
 ------------------------------
@@ -82,7 +80,7 @@ Ad ogni utente possono essere associati al massimo 8 device telefonici che verra
 Pubblicazione della configurazione
 ----------------------------------
 
-La pubblicazione dei file di configurazione avviene quando viene premuto il pulsante Configura e Riavvia nel :ref:`Wizard di configurazione <configurazioni>`.
+La pubblicazione dei file di configurazione avviene quando viene premuto il pulsante :guilabel:`Configura e Riavvia` nel :ref:`Wizard di configurazione <configurazioni>`.
 
 Aggiornamento firmware
 ----------------------
@@ -91,23 +89,20 @@ Contemporaneamente alla configurazione dei telefoni è possibile anche aggiornar
 
 Per farlo è necessario caricare il firmware nella directory
 
-/var/lib/tftpboot/
+:file:`/var/lib/tftpboot/`
 
 Il file deve essere nominato seguendo le specifiche del produttore del telefono, di solito lo schema è **Modello.estensione** 
 
 Ad esempio:  
 
-fw500.rom   per Sangoma 500
+::
 
-T27P.rom    per Yealink T27P
-
-D745.bin    per Snom D745
-
-725.bin     per Snom D725
-
-IP701G.img  per Alcatel IP701G
-
-maxwell.bin per Gigaset Maxwell Basic/2/3  
+ fw500.rom   per Sangoma 500
+ T27P.rom    per Yealink T27P
+ D745.bin    per Snom D745
+ 725.bin     per Snom D725
+ IP701G.img  per Alcatel IP701G
+ maxwell.bin per Gigaset Maxwell Basic/2/3  
 
 
 I telefoni SNOM richiedono necessariamente il firmware per un corretto avvio del telefono, se non presente il telefono mostrerà un errore a schermo superabile solo con la pressione di un tasto.
@@ -121,7 +116,7 @@ I telefoni necessitano di conoscere dove si trova la configurazione a loro dedic
 I metodi principali per farlo sono:
 
 * DHCP
-* Plug & Play
+* Plug & Play(PNP)
 * Interfaccia web
 
 
@@ -135,8 +130,8 @@ Il DHCP di |product| configura automaticamente questa opzione, quindi se è |pro
 Se invece è un altro server a dare l’IP ai telefoni è necessario configurare l’opzione necessaria con l’IP del |product|.
 
 
-Plug & Play
-~~~~~~~~~~~
+Plug & Play(PNP)
+~~~~~~~~~~~~~~~~
 
 Il servizio Plug & Play che molti modelli supportano consente ai telefoni di autonomamente cercare in rete un server in grado di configurarli.
 
@@ -150,7 +145,7 @@ Interfaccia Web
 
 Come ultima possibilità, è possibile collegarsi all’interfaccia web del telefono e indicare dove il telefono deve collegarsi per ottenere la configurazione.
 
-Ricordarsi di disattivare le modalità automatiche se non utilizzate, DHCP e PNP(Plug & Play).
+Ricordarsi di disattivare le modalità automatiche se non utilizzate, DHCP e PNP.
 
 
 Riavvio dei telefoni
@@ -164,11 +159,7 @@ Per riavviarlo utilizzare la funzionalità nel :ref:`Wizard di configurazione <c
 Scambio file
 ------------
 
-|product| e i telefoni supportati per lo scambio dei files di configurazione ed eventualmente del firmware utilizzano il protocollo:
-
-TFTP
-
-Che utilizza la porta 69 UDP
+|product| e i telefoni supportati per lo scambio dei files di configurazione ed eventualmente del firmware utilizzano il protocollo **TFTP** sulla porta 69 UDP
 
 
 Template
@@ -190,6 +181,23 @@ Infatti, ad ogni riavvio del telefono, quelle impostazioni non verranno mantenut
 
 Bisogna invece intervenire direttamente sull'interfaccia avanzata di |product|, modificando i template del provisioning. 
 
+I valori modificabili sono:
+
+* Lingua                                                         
+* Fuso orario
+* Formato data/ora                                        
+* Toni
+* Password utente admin                              
+* Avviso di chiamata
+* Suoneria                                                     
+* Modalità di trasferimento
+* Rubrica LDAP                                             
+* VLAN
+* Soft keys                                                     
+* Line keys
+* Exp keys                                                                                                                   
+* Screen Saver e Sfondo (Sangomai, Yealink)
+
 Le possibilità sono due:
 
 1. Personalizzare singolo telefono
@@ -204,77 +212,42 @@ Può emergere l’esigenza di cambiare la configurazione di un singolo telefono,
 
 Queste operazioni possono essere effettuate nell’interfaccia avanzata di |product|, ma lavoreremo per integrare queste funzionalità direttamente nel Wizard.
 
-Nel menù scegliere Connettività -> OSS Endpoint Template Manager
+Nel menù scegliere :guilabel:`Connettività -> OSS Endpoint Template Manager`.
 
 In questa parte si trovano tutte le configurazioni create dal provisioning di |product|.
 
-La chiave per individuare il telefono da modificare è il **mac-address**.
+La chiave per individuare il telefono da modificare è il **MAC ADDRESS**.
 
 Entrando in modifica del telefono scelto, vengono mostrati i parametri che è possibile variare.
 
-Per i telefoni supportati sono:
-
-* Lingua                                                         
-* Fuso orario
-* Formato data/ora                                        
-* Toni
-* Password utente admin                              
-* Avviso di chiamata
-* Suoneria                                                     
-* Modalità di trasferimento
-* Rubrica LDAP                                             
-* VLAN
-* Soft keys                                                     
-* Line keys
-* Exp keys                                                                                                                   
-* Screen Saver e Sfondo (Sangomai, Yealink)
-
-
 Dopo aver salvato i cambiamenti, per pubblicare la configurazione modificata è necessario applicare i cambiamenti.
 
-Rimane il riavvio del dispositivo per consentire al telefono di recuperare la nuova configurazione, da effettuare con le modalità solite nel :ref:`Wizard di configurazione <configurazioni>` o da Connettività -> OSS Endpoint Device List.
+Rimane il riavvio del dispositivo per consentire al telefono di recuperare la nuova configurazione, da effettuare con le modalità solite nel :ref:`Wizard di configurazione <configurazioni>` o da :guilabel:`Connettività -> OSS Endpoint Device List`.
 
 
 Personalizzare singolo modello
 ------------------------------
 
-Se l’esigenza invece quella di modificare la configurazione non di un singolo telefono ma quella di tutti i telefoni dello stesso modello, ad esempio tutti i telefoni Sangoma 500, non agiremo su una configurazione legata ad un mac-address ma dovremo creare un template ad hoc. 
+Se l’esigenza invece quella di modificare la configurazione non di un singolo telefono ma quella di tutti i telefoni dello stesso modello, ad esempio tutti i telefoni Sangoma 500, non agiremo su una configurazione legata ad un MAC ADDRESS ma dovremo creare un template ad hoc. 
 
 Queste operazioni possono essere effettuate nell’interfaccia avanzata di |product|.
 
-Nel menù scegliere Connettività -> OSS Endpoint Template Manager
+Nel menù scegliere :guilabel:`Connettività -> OSS Endpoint Template Manager`.
 
-Cliccare in Aggiungi Nuovo Template.
+Cliccare in :guilabel:`Aggiungi Nuovo Template`.
 
 Indicare il template che verrà utilizzato come base per la nuova configurazione.
 
+Variare i parametri come si desidera per i telefoni.
 
-Variare i parametri come si desidera per i telefoni supportati sono:
+Dopo aver creato un nuovo template per un modello specifico di telefono, è necessario segnalare a |product| per quali dei telefoni che sono stati già configurati utilizzarlo in sostituzione di quello standard.
 
-* Lingua                                                         
-* Fuso orario
-* Formato data/ora                                        
-* Toni
-* Password utente admin                              
-* Avviso di chiamata
-* Suoneria                                                     
-* Modalità di trasferimento
-* Rubrica LDAP                                             
-* VLAN
-* Soft keys                                                     
-* Line keys
-* Exp keys                                                                                                                   
-* Screen Saver e Sfondo (Sangomai, Yealink)
-
-
-Dopo aver creato un nuovo template per un modello specifico di telefono, dovremo indicare a |product| per quali dei telefoni che sono stati già configurati utilizzarlo in sostituzione di quello standard.
-
-Nel menù scegliere Connettività -> OSS Endpoint Device List
+Nel menù scegliere :guilabel:`Connettività -> OSS Endpoint Device List`.
 
 Se si desidera utilizzare il template creato per diversi telefoni del modello scelto ma non per la loro totalità:
 
 * selezionare il primo telefono a cui applicare il template appena creato
-* fare clic su Edit (il simbolo della matita): il telefono apparirà nella parte alta della pagina, nella sezione Edit device
+* fare clic su :guilabel:`Edit` (il simbolo della matita): il telefono apparirà nella parte alta della pagina, nella sezione Edit device
 * nella voce Template, selezionare il template appena creato
 * salvare il template
 * applicare i cambiamenti
