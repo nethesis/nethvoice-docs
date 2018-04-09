@@ -32,7 +32,9 @@ Installazione
 ed eseguirlo. Terminata la fase d'installazione il programma verrà
 avviato automaticamente.
 
-.. warning:: Per poter essere eseguito |product_nethifier| necessita di privilegi amministrativi perciò è necessario ricordarsi di installarlo utilizzando l'opzione "*Esegui come amministratore*".
+Per poter essere eseguito |product_nethifier| necessita di privilegi amministrativi perciò è necessario ricordarsi di installarlo utilizzando l'opzione "Esegui come amministratore".
+
+.. warning:: Durante l'installazione su Windows 10 verrà mostrato un avviso di sicurezza di Windows Defender SmartScreen. È sufficiente cliccare la voce "Esegui comunque" e continuare nelle fasi successive. Qua maggiori `informazioni <https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-defender-smartscreen/windows-defender-smartscreen-set-individual-device>`_.
 
 Configurazione
 ==============
@@ -42,9 +44,8 @@ Configurazione
 -  indirizzo del server (nome o IP)
 -  credenziali dell'utente
 
-È necessario salvare i dati cliccando il pulsante apposito in maniera tale da
-non doverli più reinserire agli avvii successivi. È anche possibile attivare
-l'esecuzione automatica di |product_nethifier| all'avvio di Windows.
+È necessario salvare i dati cliccando il pulsante apposito in maniera tale da non doverli più reinserire
+agli avvii successivi. È anche possibile attivare l'esecuzione automatica di |product_nethifier| all'avvio di Windows.
 
 Combinazione tasti chiamata
 ---------------------------
