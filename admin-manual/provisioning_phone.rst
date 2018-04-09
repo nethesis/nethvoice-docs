@@ -58,12 +58,12 @@ Il **Provisioning** si svolge in diversi passi:
 Ricerca dei telefoni
 --------------------
 
-|product| deve recuperare i MAC ADDRESS dei telefoni da configurare, il MAC ADDRESS è alla base del **Provisioning** in quanto strumento univoco di identificazione dei telefoni.
+|product| deve recuperare i MAC address dei telefoni da configurare, il MAC address è alla base del **Provisioning** in quanto strumento univoco di identificazione dei telefoni.
 
 Due modalità possibili:
 
 1. Scansione delle reti locali alla ricerca di apparati telefonici supportati già online come documentato :ref:`qui <telefoni_fisici_supportati>`
-2. Scansione del codice a barre del MAC ADDRESS del telefono tramite l’app :ref:`Scan & Play 14 <app_mobile>` in questo caso il telefono può essere ancora inscatolato
+2. Scansione del codice a barre del MAC address del telefono tramite l’app :ref:`Scan & Play 14 <app_mobile>` in questo caso il telefono può essere ancora inscatolato
 
 Creazione della configurazione
 ------------------------------
@@ -87,9 +87,7 @@ Aggiornamento firmware
 
 Contemporaneamente alla configurazione dei telefoni è possibile anche aggiornare il firmware.
 
-Per farlo è necessario caricare il firmware nella directory
-
-:file:`/var/lib/tftpboot/`
+Per farlo è necessario caricare il firmware nella directory :file:`/var/lib/tftpboot/`
 
 Il file deve essere nominato seguendo le specifiche del produttore del telefono, di solito lo schema è **Modello.estensione** 
 
@@ -193,9 +191,9 @@ I valori modificabili sono:
 * Modalità di trasferimento
 * Rubrica LDAP                                             
 * VLAN
-* Soft keys                                                     
-* Line keys
-* Exp keys                                                                                                                   
+* Soft keys (Tasti del telefono sotto lo schermo)                                                    
+* Line keys (Tasti linea)
+* Exp keys  (Tasti linea dei moduli di espansione)                                                                                                                 
 * Screen Saver e Sfondo (Sangomai, Yealink)
 
 Le possibilità sono due:
@@ -216,7 +214,7 @@ Nel menù scegliere :guilabel:`Connettività -> OSS Endpoint Template Manager`.
 
 In questa parte si trovano tutte le configurazioni create dal provisioning di |product|.
 
-La chiave per individuare il telefono da modificare è il **MAC ADDRESS**.
+La chiave per individuare il telefono da modificare è il **MAC address**.
 
 Entrando in modifica del telefono scelto, vengono mostrati i parametri che è possibile variare.
 
@@ -228,7 +226,7 @@ Rimane il riavvio del dispositivo per consentire al telefono di recuperare la nu
 Personalizzare singolo modello
 ------------------------------
 
-Se l’esigenza invece quella di modificare la configurazione non di un singolo telefono ma quella di tutti i telefoni dello stesso modello, ad esempio tutti i telefoni Sangoma 500, non agiremo su una configurazione legata ad un MAC ADDRESS ma dovremo creare un template ad hoc. 
+Se l’esigenza invece quella di modificare la configurazione non di un singolo telefono ma quella di tutti i telefoni dello stesso modello, ad esempio tutti i telefoni Sangoma 500, non agiremo su una configurazione legata ad un MAC address ma dovremo creare un template ad hoc. 
 
 Queste operazioni possono essere effettuate nell’interfaccia avanzata di |product|.
 
