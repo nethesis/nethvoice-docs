@@ -33,6 +33,7 @@ Una volta scelta la modalità del centralino, vedrete una lista vuota (nel caso 
 
 Se siete in modalità Legacy create il vostro primo utente, scegliendo un username e il nome completo.
 
+
 Interni
 -------
 E' possibile ora inserire gli interni relativi per ogni utente:
@@ -40,6 +41,37 @@ E' possibile ora inserire gli interni relativi per ogni utente:
 - Inserire il numero dell'interno (consigliato a partire dal numero 200) nel campo di testo
 - Cliccare su Inserisci
 - L'utente si evidenzia e una spunta verde compare se tutto è andato a buon fine
+
+Importazione utenti da csv
+..........................
+
+Nei centralini **Legacy**, è possibile importare gli utenti con un file CSV.
+
+Creare un file di testo, con un utente per riga e il formato 
+
+:: 
+
+  <NOME UTENTE>,<NOME COMPLETO>[,INTERNO[,PASSWORD]]
+
+Per esempio:
+
+::
+
+  mario,Mario Rossi
+  paolo,Paolo Bianchi,200
+  carlo201,Carlo Neri,201,Carlo1@.!
+
+Cliccare su :guilabel:`Importa` e selezionare il file creato.
+
+Nella finestra che si aprirà, fare click su :guilabel:`Importa` e attendere che gli utenti vengano creati.
+
+Se viene omesso l'interno, verranno creati solo gli utenti.
+
+Se il campo *password* non viene compilato, la password sarà generata casualmente.
+
+E' possibile utilizzare la funzione anche per assegnare gli interni ad utenti già creati, ma senza interno assegnato. 
+
+In questo caso, il campo *password* verrà ignorato.
 
 Gruppi
 ------
@@ -213,6 +245,23 @@ In questa sezione è possibile configurare le sorgenti video o telecamere IP. Cl
 - Connessione: premere il bottone "Verifica" e verificare che l'URL inserito sia corretto, testando la connessione e ottenendo il frame video relativo.
 
 Una volta completata la compilazione del form premere "Salva" per salvare le infomazioni e creare una nuova sorgente video.
+
+Gestione Multipla
+-----------------
+
+L'applicazione *Gestione Multipla Interni* consente di modificare massivamente gruppi di utenti.
+
+E' possibile selezionare gli interni che si desidera modificare utilizzando la lista "Seleziona" o le checkbox accanto agli utenti elencati.
+
+Cliccando poi sul tasto :guilabel:`Modifica`, verrà visualizzata una finestra con le impostazioni che possono essere modificate.
+
+Il contenuto dei campi viene mostrato solo se gli interni selezionati hanno tutti lo stesso valore per quel campo, altrimenti rimane vuoto.
+
+L'icona :guilabel:`lucchetto` chiuso alla destra del campo indica che il campo non verrà modificato.
+
+Per esempio, se gli interni 201 e 202 hanno un valore differente per il gruppo di chiamata, il campo sarà vuoto, ma se il :guilabel:`lucchetto` è chiuso, il valore non verrà sovrascritto.
+
+Se invece si clicca sul :guilabel:`lucchetto` in modo che sia aperto e si salva, il gruppo di chiamata verrà sovrascritto con il valore del campo.
 
 Amministratore
 ==============
