@@ -74,7 +74,12 @@ Query codice cliente
 Query per ottenere il codice cliente partendo dal numero chiamante.
 %CID% verrà sostituito con il numero chiamante.
 
-Ad esempio: SELECT\` customer\_code\` FROM \`phonebook\` WHERE \`caller\_id\` = '%CID%'
+Ad esempio: 
+
+::
+
+  SELECT `customer_code` FROM `phonebook` WHERE `caller_id` = '%CID%'
+
 
 Codice Cliente Manuale
 ~~~~~~~~~~~~~~~~~~~~~~
@@ -112,7 +117,11 @@ Formattare la query in modo da far ritornare un qualsiasi risultato in caso di c
 
 %CODCLI% verrà sostituito con il codice cliente inserito.
 
-Ad esempio: SELECT \`customer\_code\` FROM \`phonebook\` WHERE \`customer\_code\` = '%CODCLI%'
+Ad esempio: 
+
+::
+  
+  SELECT `customer_code` FROM `phonebook` WHERE `customer_code` = '%CODCLI%'
 
 Opzioni CQR
 -----------
@@ -127,7 +136,7 @@ Tipo di database
 
 Tipo di database dove effettuare la query per ottenere un risultato sul quale basare come il |product| debba proseguire il flusso della chiamata.
 
-URL Datatbase
+URL Database
 ~~~~~~~~~~~~~
 
 URL per collegarsi al database per effettuare la query. In caso del |product| stesso inserire localhost.
@@ -148,7 +157,6 @@ Password
 Password dell'utente per accedere al database.
 
 Query
-Query
 ~~~~~
 
 Query da effettuare una volta avvenuto il collegamento con il database.
@@ -157,7 +165,13 @@ La query si baserà sul numero chiamante nel caso non sia abilitata la richiesta
 
 Sono da inserire nella query %CID% che verrà sostituito con il numero del chiamante nel primo caso o %CUSTOMERCODE% nel caso di utilizzo del codice cliente.
 
-Ad esempio: SELECT \`name\` FROM \`phonebook\` WHERE \`workphone\`= '%CID%' o SELECT \`name\` FROM \`phonebook\` WHERE \`customercode\` = '%CUSTOMERCODE%'
+Ad esempio: 
+
+::
+
+  SELECT `name` FROM `phonebook` WHERE `workphone`= '%CID%'  
+  
+  SELECT `name` FROM `phonebook` WHERE `customercode` = '%CUSTOMERCODE%'
 
 Destinazione di default
 ~~~~~~~~~~~~~~~~~~~~~~~

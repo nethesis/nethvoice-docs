@@ -1,15 +1,16 @@
 # Polidori Alessandro <alessandro.polidori@gmail.com>, 2017. #zanata
+# Andrea Marchionni <andrea.marchionni@nethesis.it>, 2018. #zanata
 # Youssef <mehniyoussef@gmail.com>, 2018. #zanata
 msgid ""
 msgstr ""
 "Project-Id-Version: NethVoice 14\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-04-05 14:44+0200\n"
+"POT-Creation-Date: 2018-04-09 09:59+0200\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2018-02-15 03:53-0500\n"
-"Last-Translator: Youssef <mehniyoussef@gmail.com>\n"
+"PO-Revision-Date: 2018-04-10 03:40-0400\n"
+"Last-Translator: Andrea Marchionni <andrea.marchionni@nethesis.it>\n"
 "Language-Team: English (United States)\n"
 "Language: en-US\n"
 "X-Generator: Zanata 3.9.6\n"
@@ -17,11 +18,11 @@ msgstr ""
 
 #: ../../advanced_config.rst:12
 msgid "|product|: Call Query Routing"
-msgstr ""
+msgstr "|product|: Call Query Routing"
 
 #: ../../advanced_config.rst:15
 msgid "Descrizione"
-msgstr ""
+msgstr "Description"
 
 #: ../../advanced_config.rst:17
 msgid ""
@@ -30,6 +31,10 @@ msgid ""
 "la chiamata in ingresso e quindi verso che destinazione sul centralino deve "
 "proseguire."
 msgstr ""
+"The Call Query Routing of |product| reverses the concept of traditional IVR "
+"by shifting from the caller to the same |product| the decision of how to "
+"handle the incoming call and then to which destination on the switchboard "
+"must continue."
 
 #: ../../advanced_config.rst:19
 msgid ""
@@ -38,6 +43,10 @@ msgid ""
 "interni (MYSQL o MSSQL) chiedendo dei dati relativi al chiamante e in base "
 "alla risposta può poi comportarsi come configurato."
 msgstr ""
+"Recognizing the caller, thanks to the telephone number or the request for a "
+"customer code, the |product| it can query both external and internal "
+"databases (MYSQL or MSSQL) asking for data on the caller and based on the "
+"response can then behave as configured."
 
 #: ../../advanced_config.rst:21
 msgid ""
@@ -46,12 +55,17 @@ msgid ""
 "possono variare nel tempo variando di conseguenza in comportamento del "
 "|product|."
 msgstr ""
+"It is, therefore, a flexible tool, which in real time obtains information "
+"and then behaves according to these, but this information may vary over "
+"time, consequently changing in the behavior of the |product|."
 
 #: ../../advanced_config.rst:23
 msgid ""
 "L'esempio tipico di utilizzo del Call Query Routing è utilizzarlo per "
 "discriminare se un chiamante sia un cliente in regola con i pagamenti o no."
 msgstr ""
+"The typical example of using Call Query Routing is to use it to discriminate "
+"whether a caller is a regular customer with payments or not."
 
 #: ../../advanced_config.rst:25
 msgid ""
@@ -62,6 +76,12 @@ msgid ""
 "chiamata verrà dirottata verso gli interni dell'amministrazione e magari se "
 "si tratta di un potenziale cliente la chiamata verrà girata ai commerciali."
 msgstr ""
+"The |product| will ask this information to the database of a external "
+"software and obtained the answer will behave accordingly, for example if it "
+"is a customer in good standing the call will be forwarded to the assistance "
+"queue while if it is an insolvent customer the call will be diverted to the "
+"interior of the administration and maybe if it is a potential customer the "
+"call will be turned to the commercials."
 
 #: ../../advanced_config.rst:27
 msgid ""
@@ -69,6 +89,9 @@ msgid ""
 "da parte del |product| ai database da interrogare e l'impostazione della "
 "query per fare l'interrogazione, di competenza di chi conosce il database."
 msgstr ""
+"The only conditions necessary for Call Query Routing are the accessibility "
+"of the |product| to the databases to be queried and the query setting to be "
+"interrogated, in the competence of those who know the database."
 
 #: ../../advanced_config.rst:29
 msgid ""
@@ -79,10 +102,16 @@ msgid ""
 "codice cliente è possibile avere come backup la richiesta di inserimento "
 "manuale del codice cliente."
 msgstr ""
+"It is possible with the caller's number to immediately consult a database to "
+"obtain the customer's status, or always starting from the calling number "
+"first to obtain the caller's customer code and then use it in the customer "
+"database. In case of failure of the procedure to discover the customer code, "
+"it is possible to have as a backup the request to manually enter the "
+"customer code."
 
 #: ../../advanced_config.rst:32
 msgid "Configurazione"
-msgstr ""
+msgstr "Configuration"
 
 #: ../../advanced_config.rst:34
 msgid ""
@@ -91,32 +120,37 @@ msgid ""
 "Centralizzata <http://nethserver.docs.nethesis.it/it/latest/phonebook-mysql."
 "html#configurazione-odbc>`_"
 msgstr ""
+"To connect to an MSSQL database it is necessary to first configure the ODBC "
+"connection, see the documentation `Centralized Phonebook <http://nethserver."
+"docs.nethesis.it/it/latest/phonebook-mysql.html#configurazione-odbc>` _"
 
 #: ../../advanced_config.rst:38
 msgid "Nome CQR"
-msgstr ""
+msgstr "CQR Name"
 
 #: ../../advanced_config.rst:40
 msgid ""
 "Nome del CQR che poi verrà utilizzato da |product| nelle destinazioni dei "
 "vari moduli."
 msgstr ""
+"Name of the CQR which will then be used by |product| in the destinations of "
+"the various modules."
 
 #: ../../advanced_config.rst:43
 msgid "Descrizione CQR"
-msgstr ""
+msgstr "CQR Description"
 
 #: ../../advanced_config.rst:45
 msgid "Descrizione del CQR."
-msgstr ""
+msgstr "Description of the CQR."
 
 #: ../../advanced_config.rst:48
 msgid "Risoluzione Codice Cliente"
-msgstr ""
+msgstr "Customer Code Resolution"
 
 #: ../../advanced_config.rst:51
 msgid "Usa Codice Cliente"
-msgstr ""
+msgstr "Use Customer Code"
 
 #: ../../advanced_config.rst:53
 msgid ""
@@ -125,83 +159,99 @@ msgid ""
 "nel caso la procedura non desse risultati e fosse stata abilita la voce "
 "Codice Cliente Manuale verrà chiesto dal |product| l'inserimento del codice."
 msgstr ""
+"If enabled, the CQR is activated for the customer code search. The Customer "
+"Code is obtained from the caller's number through the appropriate query, if "
+"the procedure does not give results and the manual Customer Code item has "
+"been enabled, it will be requested by the |product| entering the code."
 
 #: ../../advanced_config.rst:56
 msgid "Tipo Db Codice Cliente"
-msgstr ""
+msgstr "Type Customer Code Db"
 
 #: ../../advanced_config.rst:58
 msgid "Tipo di database dove effettuare la query per il codice cliente."
-msgstr ""
+msgstr "Type of database where to query for the client code."
 
 #: ../../advanced_config.rst:61
 msgid "URL db codice cliente"
-msgstr ""
+msgstr "URL customer code db"
 
 #: ../../advanced_config.rst:63
 msgid ""
 "URL per collegarsi al database per effettuare la query per ricavare il "
 "codice cliente."
 msgstr ""
+"URL to connect to the database to make the query to obtain the customer code."
+""
 
 #: ../../advanced_config.rst:66
 msgid "Nome db codice cliente"
-msgstr ""
+msgstr "Customer code db name"
 
 #: ../../advanced_config.rst:68
 msgid ""
 "Nome del database dove effettuare la query codice cliente, nel caso di "
 "sorgente MSSQL nome configurato nella connessione ODBC(nomeDSN)."
 msgstr ""
+"Name of the database where to execute the customer code query, in the case "
+"of MSSQL source name configured in the ODBC connection (name NSN)."
 
 #: ../../advanced_config.rst:71
 msgid "Username db codice cliente"
-msgstr ""
+msgstr "Username customer code db"
 
 #: ../../advanced_config.rst:73
 msgid ""
 "Username per il collegamento al database per la query codice cliente. "
 "Accertarsi che abbia i permessi d'accesso."
 msgstr ""
+"Username for connecting to the database for the customer code query. Make "
+"sure you have access permissions."
 
 #: ../../advanced_config.rst:77
 msgid "Password db codice cliente"
-msgstr ""
+msgstr "Password customer code db"
 
 #: ../../advanced_config.rst:79
 #: ../../advanced_config.rst:158
 msgid "Password dell'utente per accedere al database."
-msgstr ""
+msgstr "User password to access the database."
 
 #: ../../advanced_config.rst:82
 msgid "Query codice cliente"
-msgstr ""
+msgstr "Customer code query"
 
 #: ../../advanced_config.rst:84
 msgid ""
 "Query per ottenere il codice cliente partendo dal numero chiamante. %CID% "
 "verrà sostituito con il numero chiamante."
 msgstr ""
+"Query to get the customer code starting from the calling number. %CID% will "
+"be replaced with the calling number."
 
 #: ../../advanced_config.rst:87
 msgid ""
 "Ad esempio: SELECT\\` customer\\_code\\` FROM \\`phonebook\\` WHERE "
 "\\`caller\\_id\\` = '%CID%'"
 msgstr ""
+"For example: SELECT \\`customer\\ _code \\`FROM \\`phonebook\\` WHERE "
+"\\`caller\\ _id\\` = '%CID%'"
 
 #: ../../advanced_config.rst:90
 msgid "Codice Cliente Manuale"
-msgstr ""
+msgstr "Manual Customer Code "
 
 #: ../../advanced_config.rst:92
 msgid ""
 "Se abilitato nel caso la query del codice cliente non dia risultati viene "
 "richiesto l'inserimento manuale del codice cliente."
 msgstr ""
+"If enabled, if the customer code query does not give results, the manual "
+"entry of the customer code is requested."
 
 #: ../../advanced_config.rst:95
 msgid "Annuncio Codice Cliente"
-msgstr ""
+msgstr "Customer Code Announcement"
 
 #: ../../advanced_config.rst:97
 msgid ""
@@ -209,51 +259,59 @@ msgid ""
 "manualmente. Viene proposto l'elenco delle Registrazioni di Sistema già "
 "caricate."
 msgstr ""
+"Announcement to be reproduced to request the insertion of the customer code "
+"manually. The list of already loaded System Recordings is proposed."
 
 #: ../../advanced_config.rst:100
 msgid "Annuncio Errore Codice Cliente"
-msgstr ""
+msgstr "Announcement Error Customer Code"
 
 #: ../../advanced_config.rst:102
 msgid ""
 "Annuncio da riprodurre in caso di errore nell'inserimento del codice cliente."
 " Viene proposto l'elenco delle Registrazioni di Sistema già caricate."
 msgstr ""
+"Announcement to be reproduced in the event of an error in entering the "
+"customer code. The list of already loaded System Recordings is proposed."
 
 #: ../../advanced_config.rst:105
 msgid "Lunghezza Codice Cliente"
-msgstr ""
+msgstr "Customer Code Length"
 
 #: ../../advanced_config.rst:107
 msgid ""
 "Lunghezza del codice cliente nel caso si arrivi all'inserimento manuale."
-msgstr ""
+msgstr "Length of the customer code in case of manual entry."
 
 #: ../../advanced_config.rst:110
 msgid "Numero Tentativi"
-msgstr ""
+msgstr "Number of attempts"
 
 #: ../../advanced_config.rst:112
 msgid ""
 "Numero di tentativi disponibile per inserire un codice cliente valido "
 "manualmente."
-msgstr ""
+msgstr "Number of attempts available to enter a valid customer code manually."
 
 #: ../../advanced_config.rst:115
 msgid "Query Controllo Codice Cliente"
-msgstr ""
+msgstr "Customer Code Control Query"
 
 #: ../../advanced_config.rst:117
 msgid ""
 "Query da effettuare dopo l'inserimento del codice cliente manualmente per "
 "controllarle la validità."
 msgstr ""
+"Query to be made after entering the customer code manually to check its "
+"validity."
 
 #: ../../advanced_config.rst:119
 msgid ""
 "I parametri di collegamento utilizzati sono quelli indicati per la Query "
 "Codice Cliente."
 msgstr ""
+"The connection parameters used are those indicated for the Customer Code "
+"Query."
 
 #: ../../advanced_config.rst:121
 msgid ""
@@ -261,24 +319,29 @@ msgid ""
 "di codice cliente corretto, mentre non devono ritornare risultati in caso di "
 "codice cliente errato."
 msgstr ""
+"Format the query to return any results in the case of a correct customer "
+"code, while it does not have to return results in case of incorrect customer "
+"code."
 
 #: ../../advanced_config.rst:123
 msgid "%CODCLI% verrà sostituito con il codice cliente inserito."
-msgstr ""
+msgstr "%CODCLI% will be replaced with the customer number entered."
 
 #: ../../advanced_config.rst:125
 msgid ""
 "Ad esempio: SELECT \\`customer\\_code\\` FROM \\`phonebook\\` WHERE "
 "\\`customer\\_code\\` = '%CODCLI%'"
 msgstr ""
+"For example:  SELECT \\`customer\\_code\\` FROM \\`phonebook\\` WHERE "
+"\\`customer\\_code\\` = '%CODCLI%'"
 
 #: ../../advanced_config.rst:128
 msgid "Opzioni CQR"
-msgstr ""
+msgstr "CQR options"
 
 #: ../../advanced_config.rst:131
 msgid "Annuncio"
-msgstr ""
+msgstr "Announcement"
 
 #: ../../advanced_config.rst:133
 msgid ""
@@ -286,59 +349,72 @@ msgid ""
 "Deve essere almeno della durata delle interrogazioni in modo da dare al "
 "|product| il tempo di effettuarle."
 msgstr ""
+"The message that is played back to the caller while the CQR is used. It must "
+"be at least the duration of the queries in order to give the |product| the "
+"time to make them."
 
 #: ../../advanced_config.rst:136
 msgid "Tipo di database"
-msgstr ""
+msgstr "Type of database"
 
 #: ../../advanced_config.rst:138
 msgid ""
 "Tipo di database dove effettuare la query per ottenere un risultato sul "
 "quale basare come il |product| debba proseguire il flusso della chiamata."
 msgstr ""
+"Type of database where to perform the query to obtain a result on which to "
+"base as the |product| should continue the flow of the call."
 
 #: ../../advanced_config.rst:141
 msgid "URL Datatbase"
-msgstr ""
+msgstr "Database URL"
 
 #: ../../advanced_config.rst:143
 msgid ""
 "URL per collegarsi al database per effettuare la query. In caso del "
 "|product| stesso inserire localhost."
 msgstr ""
+"URL to connect to the database to perform the query. In the case of the "
+"|product| itself enter localhost."
 
 #: ../../advanced_config.rst:146
 msgid "Nome Database"
-msgstr ""
+msgstr "Database name"
 
 #: ../../advanced_config.rst:148
 msgid ""
 "Nome del database al quale collegarsi, nel caso di sorgente MSSQL nome "
 "configurato nella connessione ODBC(nomeDSN)."
 msgstr ""
+"Name of the database to connect to, in the case of MSSQL source name "
+"configured in the ODBC connection (DSN name)."
 
 #: ../../advanced_config.rst:151
 msgid "Username"
-msgstr ""
+msgstr "Username"
 
 #: ../../advanced_config.rst:153
 msgid ""
 "Username per il collegamento al database. Accertarsi che l'utente abbia i "
 "permessi di accesso."
 msgstr ""
+"Username for connecting to the database. Make sure the user has access "
+"permissions."
 
 #: ../../advanced_config.rst:156
 msgid "Password"
-msgstr ""
+msgstr "Password"
 
 #: ../../advanced_config.rst:160
 msgid "Query Query ~~~~~"
-msgstr ""
+msgstr "Query Query ~~~~~"
 
 #: ../../advanced_config.rst:164
 msgid ""
 "Query da effettuare una volta avvenuto il collegamento con il database."
 msgstr ""
+"Query to be performed once the connection with the database has been "
+"completed."
 
 #: ../../advanced_config.rst:166
 msgid ""
@@ -346,6 +422,9 @@ msgid ""
 "richiesta di codice cliente o direttamente sul codice cliente ricavato dalla "
 "query del codice cliente da configurare successivamente."
 msgstr ""
+"The query will be based on the calling number if the customer code request "
+"is not enabled or directly on the customer code obtained from the customer "
+"code query to be configured later."
 
 #: ../../advanced_config.rst:168
 msgid ""
@@ -353,6 +432,8 @@ msgid ""
 "chiamante nel primo caso o %CUSTOMERCODE% nel caso di utilizzo del codice "
 "cliente."
 msgstr ""
+"%CID% is to be inserted in the query and will be replaced with the caller's "
+"number in the first case, %CUSTOMERCODE% if the customer code is used."
 
 #: ../../advanced_config.rst:170
 msgid ""
@@ -360,10 +441,13 @@ msgid ""
 "'%CID%' o SELECT \\`name\\` FROM \\`phonebook\\` WHERE \\`customercode\\` = "
 "'%CUSTOMERCODE%'"
 msgstr ""
+"For example: SELECT \\`name\\` FROM \\`phonebook\\` WHERE \\`workphone\\`= "
+"'%CID%' o SELECT \\`name\\` FROM \\`phonebook\\` WHERE \\`customercode\\` = "
+"'%CUSTOMERCODE%'"
 
 #: ../../advanced_config.rst:173
 msgid "Destinazione di default"
-msgstr ""
+msgstr "Default destination"
 
 #: ../../advanced_config.rst:175
 msgid ""
@@ -372,50 +456,57 @@ msgid ""
 "chiamata in caso di un qualsiasi errore, sia esso di connessione al database "
 "o nell'effettuare la query."
 msgstr ""
+"Call destination for each condition not specified later, usually the most "
+"probable. It is also the destination of the call in case of any error, "
+"whether it is connected to the database or in the query."
 
 #: ../../advanced_config.rst:178
 msgid "Voci NethCQR"
-msgstr ""
+msgstr "NethCQR entries"
 
 #: ../../advanced_config.rst:181
 msgid "Posizione"
-msgstr ""
+msgstr "Position"
 
 #: ../../advanced_config.rst:183
 msgid ""
 "La posizione indica l'ordine con il quale il |product| valuterà il risultato "
 "che ha ritornato la query."
 msgstr ""
+"The position indicates the order in which the |product| will evaluate the "
+"result that returned the query."
 
 #: ../../advanced_config.rst:186
 msgid "Condizione"
-msgstr ""
+msgstr "Condition"
 
 #: ../../advanced_config.rst:188
 msgid "Inserire qui i possibili risultati della query, uno per riga."
-msgstr ""
+msgstr "Enter the possible results of the query here, one per line."
 
 #: ../../advanced_config.rst:191
 msgid "Destinazione"
-msgstr ""
+msgstr "Destination"
 
 #: ../../advanced_config.rst:193
 msgid ""
 "Destinazione della chiamata se il risultato della query coincide con la "
 "condizione inserita."
 msgstr ""
+"Destination of the call if the query result coincides with the entered "
+"condition."
 
 #: ../../advanced_config.rst:196
 msgid "Elimina"
-msgstr ""
+msgstr "Delete"
 
 #: ../../advanced_config.rst:198
 msgid "Cancella una riga errata o non più necessaria."
-msgstr ""
+msgstr "Deletes a wrong or no longer needed line."
 
 #: ../../advanced_config.rst:202
 msgid "|product|: installazione codec g729"
-msgstr "|product|:installation codec g729"
+msgstr "|product|: installation codec g729"
 
 #: ../../advanced_config.rst:204
 msgid ""
