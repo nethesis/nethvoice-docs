@@ -139,7 +139,7 @@ Tipo di database dove effettuare la query per ottenere un risultato sul quale ba
 URL Database
 ~~~~~~~~~~~~~
 
-URL per collegarsi al database per effettuare la query. In caso del |product| stesso inserire localhost.
+URL per collegarsi al database per effettuare la query. In caso del |product| stesso inserire ``localhost``.
 
 Nome Database
 ~~~~~~~~~~~~~
@@ -205,7 +205,7 @@ Cancella una riga errata o non più necessaria.
 |product|: installazione codec g729
 ===================================
 
-Per installare ed attivare il codec g729 opensource ecco la procedura (comporta il riavvio di asterisk e quindi l'eventuale caduta di chiamate in corso):
+Per installare ed attivare il codec g729 Open Source ecco la procedura (comporta il riavvio di Asterisk e quindi l'eventuale caduta di chiamate in corso):
 
 .. code-block:: bash
 
@@ -215,10 +215,39 @@ Per installare ed attivare il codec g729 opensource ecco la procedura (comporta 
   chmod 755 codec_g729.so
   systemctl restart asterisk
 
-Il codec g729 opensource non è compatibile con la versione a pagamento di Digium, che si può installare seguendo la procedura che vi forniranno con l'acquisto.
+Il codec g729 Open Source non è compatibile con la versione a pagamento di Digium, che si può installare seguendo la procedura che vi forniranno con l'acquisto.
 
-E' possibile, quindi, utilizzare contemporaneamente solo una delle due versioni di g729, opensource o Digium.
+E' possibile, quindi, utilizzare contemporaneamente solo una delle due versioni di g729, Open Source o Digium.
 
+|product|: configurazione dell'IP locale
+========================================
+
+In fase di provisioning, l'IP usato come IP del centralino è l'IP della prima rete ``green`` (rete locale). 
+Questo può essere modificato da linea di comando, per esempio se si hanno :index:`reti green multiple`.
+Se si desidera forzare un determinato indirizzo IP, esempio ``192.168.123.11``, utilizzare i seguenti comandi: ::
+
+  config setprop nethvoice LocalIP 192.168.123.11
+  signal-event nethserver-nethvoice14-update
+
+|product|: configurazione del transport PJSIP
+=============================================
+
+In |product| il modulo `chan_pjsip` di Asterisk è configurato per stare in ascolto su tutti gli indirizzi di tutte le reti green.
+È possibile che sia necessario cambiare questa configurazione in situazioni particolari.
+Se si desidera che chan_pjsip stia in ascolto anche sulle RED ed i loro alias, eseguire i comandi: ::
+
+  config setprop nethvoice PJSIPBind all
+  signal-event nethserver-nethvoice14-update
+
+Se invece si desidera fare delle personalizzazioni maggiori, come ad esempio escludere una rete green, è possibile farlo dall'interfaccia di FreePBX:
+:menuselection:`Asterisk SIP Settings --> Chan PJSIP Settings`.
+Sarà poi necessario abilitare le configurazioni avanzate :guilabel:`Show Advanced Settings` e fare le opportune modifiche. 
+
+
+.. note::
+
+   Se la visualizzazione delle configurazioni avanzate è abilitata, le impostazioni di transport **non** 
+   verranno più sovrascritte in caso di aggiornamento o modifica delle interfacce di rete.
 
 |product_cti|: attivazione debug
 ================================
@@ -344,3 +373,5 @@ Nel caso si utilizzi un centralino in cloud dietro NAT, è necessario configurar
   config setprop janus-gateway NatMode 1:1
   config setprop janus-gateway PublicIP <DOMAIN OR PUBLIC IP>
   signal-event nethserver-janus-update
+
+
