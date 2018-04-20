@@ -239,7 +239,7 @@ Se si desidera che chan_pjsip stia in ascolto anche sulle RED ed i loro alias, e
   config setprop nethvoice PJSIPBind all
   signal-event nethserver-nethvoice14-update
 
-Se invece si desidera fare delle personalizzazioni maggiori, come ad esempio escludere una rete green, è possibile farlo dall'interfaccia di FreePBX:
+Se invece si desidera fare delle personalizzazioni maggiori, come ad esempio escludere una rete green, è possibile farlo dall'interfaccia della configurazione avanzata:
 :menuselection:`Asterisk SIP Settings --> Chan PJSIP Settings`.
 Sarà poi necessario abilitare le configurazioni avanzate :guilabel:`Show Advanced Settings` e fare le opportune modifiche. 
 
