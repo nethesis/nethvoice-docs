@@ -45,13 +45,13 @@ E' possibile ora inserire gli interni relativi per ogni utente:
 Importazione utenti da csv
 ..........................
 
-Nei centralini **Legacy**, è possibile importare gli utenti con un file CSV.
+Nei centralini che non usano un provider utenti esterno, è possibile importare gli utenti con un file CSV.
 
 Creare un file di testo, con un utente per riga e il formato 
 
 :: 
 
-  <NOME UTENTE>,<NOME COMPLETO>[,INTERNO[,PASSWORD]]
+  <NOME UTENTE>,<NOME COMPLETO>,[INTERNO],[PASSWORD],[CELLULARE],[VOICEMAIL],[INTERNO WEBRTC],[GRUPPI CTI],[PROFILO CTI]
 
 Per esempio:
 
@@ -60,6 +60,8 @@ Per esempio:
   mario,Mario Rossi
   paolo,Paolo Bianchi,200
   carlo201,Carlo Neri,201,Carlo1@.!
+  francesco,Francesco Verdi,202,,33312312343,FALSE,TRUE,Sviluppo|Assistenza|Tecnici,Advanced
+  andrea,Andrea Rossi,203,Andrea1234,,TRUE,TRUE,Commerciali,Standard
 
 Cliccare su :guilabel:`Importa` e selezionare il file creato.
 
@@ -72,6 +74,8 @@ Se il campo *password* non viene compilato, la password sarà generata casualmen
 E' possibile utilizzare la funzione anche per assegnare gli interni ad utenti già creati, ma senza interno assegnato. 
 
 In questo caso, il campo *password* verrà ignorato.
+
+Il tasto esporta consente di scaricare un modello di CSV con gli attuali utenti da modificare per poi importare nuovamente. Le righe precedute da # verranno considerate commenti. I gruppi CTI, una lista separata da pipe `|` verranno creati automaticamente. Il profilo CTI deve essere scelto tra quelli già creati
 
 Gruppi
 ------
