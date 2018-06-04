@@ -87,7 +87,7 @@ E' possibile creare dei gruppi utente che poi saranno visibili e utilizzabili ne
 
 Profili
 -------
-Il centralino prevede di specificare determinate funzionalità per ogni utente e queste funzionalità vengono raggrupate in dei profili.
+Il centralino prevede di specificare determinate funzionalità per ogni utente e queste funzionalità vengono raggruppate in dei profili.
 
 Con l'installazione, vengono creati di default 4 profili che contengono l'abilitazione o meno a certe funzionalità.
 
@@ -119,7 +119,7 @@ Configurazioni
 Lo step finale della sezione Utenti, prevede di raggruppare tutte le impostazioni create e definite nei passi precedenti.
 La lista degli utenti mostra quelli a cui è stato associato un interno nel primo step. Selezionando un utente è possibile:
 
-- Creare un dispositivo personalizzato per collegare all'utente un appararto telefonico non supportato (ad esempio softphone)
+- Creare un dispositivo personalizzato per collegare all'utente un apparato telefonico non supportato (ad esempio softphone)
 - Associare un telefono di quelli precedentemente configurati (effettuando il provisioning automatico)
 - Inserire un numero di cellulare
 - Abilitare la voicemail
@@ -135,7 +135,7 @@ Nella sezione fasci è possibile configurare i gateway per gestire le linee fisi
 
 Fisici
 ------
-Come per i dispositivi, questa sezione scansiona la vostra rete e cerca dei gateway dispobili, una volta individuati è possible specificare, selezionandone uno, due impostazioni:
+Come per i dispositivi, questa sezione scansiona la vostra rete e cerca dei gateway disponibili, una volta individuati è possibile specificare, selezionandone uno, due impostazioni:
 
 - Modello: specificare il modello del gateway
 - Impostazioni dinamiche in base al modello:
@@ -150,7 +150,7 @@ Il gateway prende la configurazione e si riavvia, vengono inoltre creati i fasci
 
 VoIP
 ----
-E' possible creare dei fasci VoIP selezionando uno dei provider supportati, e inserendo le informazioni necessarie.
+E' possibile creare dei fasci VoIP selezionando uno dei provider supportati, e inserendo le informazioni necessarie.
 
 Premere "Crea" per creare la configurazione relativa per quel fascio VoIP.
 
@@ -172,7 +172,7 @@ In questa sezione è presente la lista delle rotte in uscita presenti, la prima 
 
 E' possibile inoltre specificare l'ordine con cui usare i fasci, precedentemente creati, e regolare così in maniera personalizzata il percorso delle chiamate in uscita.
 
-Premendo il tasto "Salva" la configurazione viene scritta nel centralino e da quel momento è possibile effeturare chiamate verso l'esterno (avendo oppurtunamente configurato i fasci negli step precedenti).
+Premendo il tasto "Salva" la configurazione viene scritta nel centralino e da quel momento è possibile effettuare chiamate verso l'esterno (avendo opportunamente configurato i fasci negli step precedenti).
 
 Applicazioni
 ============
@@ -183,7 +183,7 @@ Ad esempio le schede cliente, nel wizard, vengono configurate per accedere al da
 Schede cliente
 --------------
 
-La sezione schede cliente, permette di raggrupare le informazioni presenti su database esterni al centralino e mostrarle in fase di chiamata. Ad esempio, sulla chiamata di un certo cliente, prendere le infomazioni sul database relative alle sue fatture o ad eventuali insoluti e valutare ad esempio, se fornire assistenza o meno. Per generare una nuova scheda cliente i passi sono i seguenti
+La sezione schede cliente, permette di raggruppare le informazioni presenti su database esterni al centralino e mostrarle in fase di chiamata. Ad esempio, sulla chiamata di un certo cliente, prendere le informazioni sul database relative alle sue fatture o ad eventuali insoluti e valutare ad esempio, se fornire assistenza o meno. Per generare una nuova scheda cliente i passi sono i seguenti
 
 Sorgenti
 ........
@@ -194,8 +194,8 @@ Cliccare sul bottone "Crea nuova sorgente" e compilare il form che si presenta:
 - Indirizzo database: specificare l'indirizzo per collegarsi al database (localhost, socket o IP esterni)
 - Porta database: specificare un porta del db diversa da quella di default proposta
 - Utente database: specificare l'utente usato per connettersi al database
-- Password database: speficare la password per collegarsi al database
-- Connessione: premere il pulsante "Verifica" per testare che le informazioni insertite siano corrette per la connessione
+- Password database: specificare la password per collegarsi al database
+- Connessione: premere il pulsante "Verifica" per testare che le informazioni inserite siano corrette per la connessione
 
 Premere "Salva" per aggiungere la sorgente database. La sorgente appena creata apparirà tra la lista di quelle disponibili
 
@@ -206,7 +206,7 @@ I template sono il fac-simile per le vostre schede cliente. Utilizzano il motore
 
 Cliccare sul bottone "Crea nuovo template" per iniziare il processo di creazione:
 - Nome: specificare il nome del template
-- Results: contiene l'output della vostra query in formato JSON, utilizzate il campo di testo per effetuare delle prove e vedere come il vostro template HTML risulterà essere con i vostri dati.
+- Results: contiene l'output della vostra query in formato JSON, utilizzate il campo di testo per effettuare delle prove e vedere come il vostro template HTML risulterà essere con i vostri dati.
 - Codice (ejs): in questo campo di testo, inserite il codice del vostro template, che rispetta la sintassi `ejs`, utilizzando i valori sopra indicati (che non sono altro che le colonne di risultato della vostra query)
 - Anteprima: combinando i risultati e il codice `ejs` vedrete l'output relativo HTML che sarà la vostra scheda cliente.
 
@@ -219,7 +219,7 @@ Una volta creata la sorgente e il template della vostra scheda, in questa sessio
 - Nome: nome della scheda cliente
 - Sorgente: specificare la sorgente di database precedentemente creata
 - Template: specificare il template da associare a quello precedentemente creato
-- Profilo: scegliare il tipo di profilo utente a cui far vedere la scheda cliente che state creando
+- Profilo: scegliere il tipo di profilo utente a cui far vedere la scheda cliente che state creando
 - Query: inserite la query che vi restituirà le informazioni relative
 - Render: premendo il pulsante, la **query** verrà eseguita sulla **sorgente** specificata e i dati verranno inseriti nel **template** selezionato, producendo l'output desiderato.
 
@@ -237,7 +237,7 @@ dovrà diventare così:
 
 `select * from phonebook where homephone like '%$NUMBER' or workphone like '%$NUMBER' or cellphone like '%$NUMBER' or fax like '%$NUMBER'`
 
-La variable `$NUMBER` non è altro che il numero chiamante del centralino a cui la scheda cliente fa riferimento per effettuare la raccolta dei dati da mostrare.
+La variabile `$NUMBER` non è altro che il numero chiamante del centralino a cui la scheda cliente fa riferimento per effettuare la raccolta dei dati da mostrare.
 
 Sorgenti video
 --------------
@@ -246,11 +246,31 @@ In questa sezione è possibile configurare le sorgenti video o telecamere IP. Cl
 - Nome: specificare il nome da dare alla sorgente
 - Extension: specificare l'interno relativo alla sorgente video (precedentemente creata nella sezione "Utenti")
 - URL: specificare l'URL di collegamento in cui prendere i frame video da mostrare
-- Codice d'apertura: inserire il tono DTMF relativo per un eventale codice d'apertura (se la telecamera è collegata ad un cancello ad esempio)
-- Profilo: specificare il profilo da assegnare alla sorgente per filtare la tipologia di utente che ha accesso alla sorgente video
+- Codice d'apertura: inserire il tono DTMF relativo per un eventuale codice d'apertura (se la telecamera è collegata ad un cancello ad esempio)
+- Profilo: specificare il profilo da assegnare alla sorgente per filtrare la tipologia di utente che ha accesso alla sorgente video
 - Connessione: premere il bottone "Verifica" e verificare che l'URL inserito sia corretto, testando la connessione e ottenendo il frame video relativo.
 
-Una volta completata la compilazione del form premere "Salva" per salvare le infomazioni e creare una nuova sorgente video.
+Una volta completata la compilazione del form premere "Salva" per salvare le informazioni e creare una nuova sorgente video.
+
+URL parametrizzati
+------------------
+
+Consentono all'utente finale di poter invocare un URL parametrizzato in corrispondenza della ricezione di una chiamata.
+L'URL sarà parametrizzato coi dati del chiamante e potrà essere "aperto" in uno dei seguenti quattro scenari:
+
+1) mai
+2) quando la chiamata in ingresso sta squillando
+3) quando la chiamata in ingresso è stata risposta
+4) cliccando il pulsante apposito nel box di gestione chiamata
+
+Per la creazione di un URL sono necessarie due informazioni:
+
+- l'url stesso
+- la scelta di un profilo utente
+
+Tutti gli utenti che hanno quel profilo saranno abilitati all'utilizzo dell'URL appena creato.
+
+.. note:: Ad un profilo può essere associato un solo URL.
 
 Gestione Multipla
 -----------------
