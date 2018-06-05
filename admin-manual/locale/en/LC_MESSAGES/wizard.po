@@ -5,11 +5,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: NethVoice 14\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-06-04 16:18+0200\n"
+"POT-Creation-Date: 2018-06-05 16:30+0200\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2018-06-04 02:24+0000\n"
+"PO-Revision-Date: 2018-06-05 02:32+0000\n"
 "Last-Translator: Polidori Alessandro <alessandro.polidori@gmail.com>\n"
 "Language-Team: English (United States)\n"
 "Language: en_US\n"
@@ -777,62 +777,70 @@ msgstr ""
 "All users who have that profile will be enabled to use the newly created URL."
 ""
 
-#: ../../wizard.rst:277
+#: ../../wizard.rst:279
 msgid "Ad un profilo può essere associato un solo URL."
 msgstr "Only one URL can be associated with a profile."
 
 #: ../../wizard.rst:280
+msgid ""
+"Affinché l'URL possa essere invocato è necessario che l'utente finale abbia "
+"abilitato la visualizzazione dei popups nel proprio browser !"
+msgstr ""
+"In order for the URL to be invoked it is necessary that the end user has "
+"enabled the display of the popups in his browser!"
+
+#: ../../wizard.rst:283
 msgid "Gestione Multipla"
 msgstr ""
 
-#: ../../wizard.rst:282
+#: ../../wizard.rst:285
 msgid ""
 "L'applicazione *Gestione Multipla Interni* consente di modificare "
 "massivamente gruppi di utenti."
 msgstr ""
 
-#: ../../wizard.rst:284
+#: ../../wizard.rst:287
 msgid ""
 "E' possibile selezionare gli interni che si desidera modificare utilizzando "
 "la lista \"Seleziona\" o le checkbox accanto agli utenti elencati."
 msgstr ""
 
-#: ../../wizard.rst:286
+#: ../../wizard.rst:289
 msgid ""
 "Cliccando poi sul tasto :guilabel:`Modifica`, verrà visualizzata una "
 "finestra con le impostazioni che possono essere modificate."
 msgstr ""
 
-#: ../../wizard.rst:288
+#: ../../wizard.rst:291
 msgid ""
 "Il contenuto dei campi viene mostrato solo se gli interni selezionati hanno "
 "tutti lo stesso valore per quel campo, altrimenti rimane vuoto."
 msgstr ""
 
-#: ../../wizard.rst:290
+#: ../../wizard.rst:293
 msgid ""
 "L'icona :guilabel:`lucchetto` chiuso alla destra del campo indica che il "
 "campo non verrà modificato."
 msgstr ""
 
-#: ../../wizard.rst:292
+#: ../../wizard.rst:295
 msgid ""
 "Per esempio, se gli interni 201 e 202 hanno un valore differente per il "
 "gruppo di chiamata, il campo sarà vuoto, ma se il :guilabel:`lucchetto` è "
 "chiuso, il valore non verrà sovrascritto."
 msgstr ""
 
-#: ../../wizard.rst:294
+#: ../../wizard.rst:297
 msgid ""
 "Se invece si clicca sul :guilabel:`lucchetto` in modo che sia aperto e si "
 "salva, il gruppo di chiamata verrà sovrascritto con il valore del campo."
 msgstr ""
 
-#: ../../wizard.rst:297
+#: ../../wizard.rst:300
 msgid "Amministratore"
 msgstr "Administrator"
 
-#: ../../wizard.rst:299
+#: ../../wizard.rst:302
 msgid ""
 "La sezione \"Amministratore\" raggruppa le azioni che possono essere fatte "
 "dall'amministratore del centralino"
@@ -840,21 +848,21 @@ msgstr ""
 "The \"Administrator\" section groups actions that can be made by the PBX "
 "Administrator"
 
-#: ../../wizard.rst:302
+#: ../../wizard.rst:305
 msgid "Impostazioni"
 msgstr "Settings"
 
-#: ../../wizard.rst:303
+#: ../../wizard.rst:306
 msgid ""
 "Nella parte \"Impostazioni\", è possibile cambiare la password dell'utente "
 "admin."
 msgstr "From the \"Settings\" section, you can change the admin user password."
 
-#: ../../wizard.rst:306
+#: ../../wizard.rst:309
 msgid "Report"
 msgstr "Report"
 
-#: ../../wizard.rst:307
+#: ../../wizard.rst:310
 msgid ""
 "La sezione \"Report\" riporta l'elenco completo degli utenti del centralino "
 "specificando il loro:"
@@ -862,27 +870,27 @@ msgstr ""
 "The \"Report\" section lists the complete list of switchboard users by "
 "specifying their:"
 
-#: ../../wizard.rst:309
+#: ../../wizard.rst:312
 msgid "Interno"
 msgstr "Extension"
 
-#: ../../wizard.rst:310
+#: ../../wizard.rst:313
 msgid "Username"
 msgstr "Username"
 
-#: ../../wizard.rst:311
+#: ../../wizard.rst:314
 msgid "Nome e Cognome"
 msgstr "Name and Surname"
 
-#: ../../wizard.rst:312
+#: ../../wizard.rst:315
 msgid "Password Voicemail"
 msgstr "Voicemail Password"
 
-#: ../../wizard.rst:313
+#: ../../wizard.rst:316
 msgid "Password utente (se si è in modalità Legacy)"
 msgstr "User password (if Legacy mode is used)"
 
-#: ../../wizard.rst:315
+#: ../../wizard.rst:318
 msgid ""
 "E' presente anche la possibilità di stampare l'elenco in formato PDF "
 "cliccando sul bottone \"Stampa report PDF\""
