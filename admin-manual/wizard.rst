@@ -264,7 +264,10 @@ Per la creazione di un URL sono necessarie due informazioni:
 
 Tutti gli utenti che hanno quel profilo saranno abilitati all'utilizzo dell'URL appena creato.
 
-.. note:: Ad un profilo può essere associato un solo URL.
+.. note::
+
+    1. Ad un profilo può essere associato un solo URL.
+    2. Affinché l'URL possa essere invocato è necessario che l'utente finale abbia abilitato la visualizzazione dei popups nel proprio browser !
 
 Gestione Multipla
 -----------------
