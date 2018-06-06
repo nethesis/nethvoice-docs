@@ -45,7 +45,7 @@ E' possibile ora inserire gli interni relativi per ogni utente:
 Importazione utenti da csv
 ..........................
 
-Nei centralini che non usano un provider utenti esterno, è possibile importare gli utenti con un file CSV.
+Nei centralini che non usano un account provider esterno, è possibile importare gli utenti con un file CSV.
 
 Creare un file di testo, con un utente per riga e il formato 
 
