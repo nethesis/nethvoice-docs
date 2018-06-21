@@ -164,12 +164,28 @@ The source language is Italian. To build the English manual: ::
 
    make -e SPHINXOPTS="-D language='en'" html
 
+Requirements::
+
+   pip install sphinx sphinx_rtd_theme sphinx_bootstrap_theme
+
 Localization
 ============
 
 The localization workflow is based on Zanata.
 
 https://translate.zanata.org/project/view/nethvoice-docs
+
+Install client
+--------------
+
+On Fedora: ::
+
+  dnf install zanata-client
+
+To configure the client for the first time see: http://docs.zanata.org/en/release/client/configuration/
+
+Workflow
+--------
 
 The source language is Italian. To build the ``.pot`` files under
 ``_bulid/locale`` run ::
@@ -188,6 +204,3 @@ Download tranlations from Zanata: ::
 
     Remember to commit the downloaded translations!
 
-Requirements::
-
-   pip install sphinx sphinx_rtd_theme sphinx_bootstrap_theme
