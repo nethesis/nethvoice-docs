@@ -16,10 +16,8 @@ Cambiamenti significativi dalla release 11:
 
 Funzioni non ancora disponibili:
 
-* Numeri Brevi
 * Analisi costi
 * Integrazione FIAS
-* Creazione modifica interni in modalità bulk
 * Annunci e registrazioni TTS
 * Fasci Virtuali
 * Failover geografico e HA
