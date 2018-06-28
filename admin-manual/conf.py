@@ -11,6 +11,7 @@
 # serve to show the default.
 
 import sys, os
+import sphinx_rtd_theme
 
 # If extensions (or modules to document with autodoc) are in another directory,
 # add these directories to sys.path here. If the directory is relative to the
@@ -89,14 +90,23 @@ pygments_style = 'sphinx'
 
 # -- Options for HTML output ---------------------------------------------------
 
-# The theme to use for HTML and HTML Help pages.  See the documentation for
-# a list of builtin themes.
-html_theme = 'default'
+html_theme = 'sphinx_rtd_theme'
+html_theme_options = {
+    'canonical_url': '',
+    'analytics_id': 'UA-37499928-5',
+    'logo_only': False,
+    'display_version': True,
+    'prev_next_buttons_location': 'bottom',
+    'style_external_links': False,
+    # 'vcs_pageview_mode': '',
 
-# Theme options are theme-specific and customize the look and feel of a theme
-# further.  For a list of options available for each theme, see the
-# documentation.
-#html_theme_options = {}
+    # Toc options
+    'collapse_navigation': True,
+    'sticky_navigation': True,
+    'navigation_depth': 4,
+    'includehidden': True,
+    'titles_only': False
+}
 
 # Add any paths that contain custom themes here, relative to this directory.
 #html_theme_path = []
@@ -244,3 +254,17 @@ texinfo_documents = [
 if os.path.exists('rst_prolog'):
     with open('rst_prolog') as fid:
         rst_prolog = fid.read()
+
+
+#
+# Define context default values for HTML templates
+#
+context = {
+    'current_version': 'def',
+}
+
+if 'html_context' in globals():
+    for key in context:
+        html_context.setdefault(k, context[k])
+else:
+    html_context = context
