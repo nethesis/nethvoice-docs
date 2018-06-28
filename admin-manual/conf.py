@@ -107,6 +107,8 @@ html_theme_options = {
         'navbar_fixed_top': "false",
         'source_link_position': "none",
         'bootswatch_theme': "cerulean",
+        'bootstrap_version': "3",
+        'nosidebar': "1",
 }
 
 html_favicon = '_static/favicon.ico' 
