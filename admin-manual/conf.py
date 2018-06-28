@@ -256,3 +256,21 @@ texinfo_documents = [
 if os.path.exists('rst_prolog'):
     with open('rst_prolog') as fid:
         rst_prolog = fid.read()
+
+
+#
+# Define context default values for HTML templates
+#
+context = {
+    'alt_languages': 'it,en,es',
+    'alt_versions': 'v14,v11,dev',
+    'current_version': 'def',
+    'user_analytics_code': 'UA-37499928-5',
+    'global_analytics_code': 'UA-17997319-2',
+}
+
+if 'html_context' in globals():
+    for key in context:
+        html_context.setdefault(k, context[k])
+else:
+    html_context = context
