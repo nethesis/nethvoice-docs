@@ -260,7 +260,6 @@ context = {
     'alt_versions': 'v14,v11,dev',
     'current_version': 'def',
     'user_analytics_code': 'UA-37499928-5',
-    'global_analytics_code': 'UA-17997319-2',
 }
 
 if 'html_context' in globals():
