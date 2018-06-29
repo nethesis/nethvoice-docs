@@ -1,0 +1,27 @@
+---
+language: python
+python:
+    - "2.7"
+
+env:
+    global:
+        - SSH_RSYNC="sshpass -e ssh -oStrictHostKeyChecking=no -oUserKnownHostsFile=/dev/null"
+        - BUILD_DIR=admin-manual
+        - TARGET_DIR=${TRAVIS_PULL_REQUEST_BRANCH:-${TRAVIS_TAG:-${TRAVIS_BRANCH}}}
+        - SPHINX_OPTS="-b html -A current_version=${TARGET_DIR}"
+
+install:
+    - sudo apt-get install sshpass
+    - pip install -r ${BUILD_DIR}/requirements.txt sphinx==1.7.4
+
+script:
+    - pushd ${BUILD_DIR}/
+    - sphinx-build -D language=it ${SPHINX_OPTS} -d _build/doctrees/it . _build/webroot/it/${TARGET_DIR}
+    - popd
+
+deploy:
+    provider: script
+    skip_cleanup: true
+    script: rsync -ai --no-super --filter="+ /*/${TARGET_DIR}/**" --filter='-r *' --delete-after -e "${SSH_RSYNC}" ${BUILD_DIR}/_build/webroot/* nethvoice@docs1.nethserver.com:.
+    on:
+        all_branches: true
