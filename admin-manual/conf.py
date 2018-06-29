@@ -10,13 +10,8 @@
 # All configuration values have a default; values that are commented out
 # serve to show the default.
 
-import sys, os
-
-try:
-    import sphinx_rtd_theme
-    import sphinx_bootstrap_theme
-except ImportError:
-    pass
+import os
+import sphinx_bootstrap_theme
 
 # If extensions (or modules to document with autodoc) are in another directory,
 # add these directories to sys.path here. If the directory is relative to the
@@ -97,7 +92,6 @@ pygments_style = 'sphinx'
 
 html_theme = 'bootstrap'
 html_theme_path = sphinx_bootstrap_theme.get_html_theme_path()
-
 html_theme_options = {
         'navbar_title': 'NethVoice',
         'navbar_pagenav': True,
@@ -107,6 +101,8 @@ html_theme_options = {
         'navbar_fixed_top': "false",
         'source_link_position': "none",
         'bootswatch_theme': "cerulean",
+        'bootstrap_version': "3",
+        'nosidebar': "1",
 }
 
 html_favicon = '_static/favicon.ico' 
@@ -254,3 +250,20 @@ texinfo_documents = [
 if os.path.exists('rst_prolog'):
     with open('rst_prolog') as fid:
         rst_prolog = fid.read()
+
+
+#
+# Define context default values for HTML templates
+#
+context = {
+    'alt_languages': 'it,en,es',
+    'alt_versions': 'v14,v11,dev',
+    'current_version': 'def',
+    'user_analytics_code': 'UA-37499928-5',
+}
+
+if 'html_context' in globals():
+    for key in context:
+        html_context.setdefault(k, context[k])
+else:
+    html_context = context
