@@ -73,9 +73,10 @@ Moduli Aggiuntivi
 .. toctree::
    :maxdepth: 2
 
-   queue_report
-   inbound_report
    hotel
+   inbound_report
+   queue_report
+   rapid_code
 
 
 |product_cti|: Guida Sviluppatori
