@@ -26,10 +26,10 @@ Non è necessario applicare i cambiamenti dopo aver aggiunto un codice, questo s
 Importazione da CSV
 --------------------
 
-Sempre dall'interfaccia, è possibile importare i codici da un file CSV. Ogni riga del file CSV deve avere questo formato: <Nome>,<Numero>,<codice>
+Sempre dall'interfaccia, è possibile importare i codici da un file CSV. Ogni riga del file CSV deve avere questo formato: ``<NOME>,<NUMERO>,<CODICE>``
 per esempio: ::
 
-    Mario Rossi, 33312341234, 1
+    Mario Rossi,33312341234,1
 
 In questo caso, componendo \*991 verrà composto il numero 33312341234.
 
