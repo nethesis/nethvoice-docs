@@ -220,6 +220,9 @@ footer .pull-right a {
 footer .pull-right a:hover {
     background-color: #ddd;
 }
+.menuselection {
+    font-style: oblique;
+}
 
 /* -- Media queries ------------------------------------------------------- */
 
