@@ -292,14 +292,25 @@ Per esempio, se gli interni 201 e 202 hanno un valore differente per il gruppo d
 
 Se invece si clicca sul :guilabel:`lucchetto` in modo che sia aperto e si salva, il gruppo di chiamata verrà sovrascritto con il valore del campo.
 
-Amministratore
+Amministrazione
 ==============
 
 La sezione "Amministratore" raggruppa le azioni che possono essere fatte dall'amministratore del centralino
 
+Lingue
+------
+
+Nel menù Lingue è possibile impostare la lingua di sistema del |product| impostandola come quella di default e installare anche altri pacchetti lingua aggiuntivi.
+
 Impostazioni
 ------------
 Nella parte "Impostazioni", è possibile cambiare la password dell'utente admin.
+
+Avanzate
+--------
+
+La sezione Avanzate consente l'accesso diretto all'interfaccia avanzata di |product|.
+
 
 Report
 ------
