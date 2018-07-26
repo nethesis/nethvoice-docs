@@ -132,7 +132,7 @@ L'esempio seguente mostra come eseguire una richiesta rest tramite `cURL <http:/
 
 .. code-block:: bash
 
- curl --insecure -i -X POST -d "username=my_user&password=my_password" https://192.168.5.226/webrest/authentication/login
+ curl --insecure -i -X POST -d 'username=my_user&password=my_password' https://192.168.5.226/webrest/authentication/login
 
 L'autenticazione ha successo e il server risponde con:
 
