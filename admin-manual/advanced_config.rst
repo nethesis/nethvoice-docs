@@ -271,20 +271,38 @@ Per ripristinare il livello di default:
   signal-event nethcti-server3-update
 
 
-|product_cti|: disattivazione della modalità di Click2Call automatico
+|product_cti|: telefoni con modalità Click2Call automatico
 =====================================================================
 
-Necessità di sollevare la cornetta telefonica.
+Quando si utilizza |product_cti| con associato un telefono fisico, è
+necessario sollevare la cornetta quando si effettuano chiamate.
+La modalità *"Click2Call automatico"* consente di bypassare l'uso della
+cornetta sfruttando ad esempio il vivavoce del telefono o delle cuffie
+audio direttamente indossate dall'utente.
 
-In alcuni scenari potrebbe essere utile disattivare la funzionalità, ad esempio nel caso in cui
-il centralino telefonico è in cloud ed i telefoni siano in LAN dietro NAT. Per disattivare:
+La modalità è attiva di default e questa è la lista dei telefoni
+supportati:
+
+- Yealink
+- Snom
+- Sangoma
+- Alcatel
+
+
+Disattivazione della modalità Click2Call automatico
+---------------------------------------------------
+
+In alcuni scenari potrebbe essere utile disattivare la funzionalità,
+ad esempio nel caso in cui il centralino telefonico fosse in cloud
+e i telefoni siano in LAN dietro NAT. Per la disattivazione eseguire
+i comandi:
 
 .. code-block:: bash
 
   config setprop nethcti-server AutoC2C disabled
   signal-event nethcti-server3-update
 
-Per ripristinare il valore di default:
+Per la riattivazione:
 
 .. code-block:: bash
 
