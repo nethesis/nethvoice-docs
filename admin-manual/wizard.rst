@@ -105,9 +105,7 @@ Dispositivi
 -----------
 In questa sezione è possibile scansionare la propria rete e il wizard troverà in automatico i telefoni che sono collegati alla vostra rete, individuando, dove è possibile, marco e modello e vi fornisce inoltre l'indirizzo IP e il MAC address.
 
-Le marche telefoniche al momento supportate sono *Sangoma, Yealink, Snom, Alcatel*.
-
-Se in alcuni telefoni non è stato possibile trovare automaticamente il modello, servirsi del menù a tendina per specificarlo.
+Se per alcuni telefoni non è stato possibile trovare automaticamente il modello, servirsi del menù a tendina per specificarlo.
 
 Per rieseguire la scansione della rete, premere il pulsante *Scan*
 
