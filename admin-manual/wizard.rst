@@ -89,7 +89,7 @@ Profili
 -------
 Il centralino prevede di specificare determinate funzionalità per ogni utente e queste funzionalità vengono raggruppate in dei profili.
 
-Con l'installazione, vengono creati di default 4 profili che contengono l'abilitazione o meno a certe funzionalità.
+Con l'installazione, vengono creati di default 3 profili che contengono l'abilitazione o meno a certe funzionalità.
 
 - Base: funzionalità minime per l'utente
 - Standard: funzionalità di gestione classiche per l'utente
