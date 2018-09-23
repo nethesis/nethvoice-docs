@@ -94,7 +94,6 @@ Con l'installazione, vengono creati di default 4 profili che contengono l'abilit
 - Base: funzionalità minime per l'utente
 - Standard: funzionalità di gestione classiche per l'utente
 - Avanzato: quasi tutte le funzionalità sono sbloccate, per l'utente Avanzato
-- Tutto: ogni funzionalità presente è abilitata, utilizzata per gli utenti amministratori
 
 E' possibile creare anche nuovi profili, duplicando uno esistente o creandone di nuovi e specificando le varie funzionalità
 
