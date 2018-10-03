@@ -45,6 +45,189 @@ Sarà poi necessario abilitare le configurazioni avanzate :guilabel:`Show Advanc
    Se la visualizzazione delle configurazioni avanzate è abilitata, le impostazioni di transport **non** 
    verranno più sovrascritte in caso di aggiornamento o modifica delle interfacce di rete.
 
+
+|product|: configurazione rubrica
+=================================
+
+La rubrica di |product| è la Rubrica Centralizzata di |product_service|. Vedere nella documentazione di |product_service| come popolarla e integrarla con la rubrica del |product_cti| e i :ref:`Numeri Rapidi <rapidcode-ref-label>`.
+
+I telefoni vengono collegati alla rubrica di |product| automaticamente se configurati tramite il provisioning, altrimenti per i modelli che lo supportano è possibile configurare una rubrica di tipo LDAP.
+I parametri da utilizzare per i vari modelli sono:
+
+Parametri comuni
+----------------
+
+Indirizzo del server:
+  ``Indirizzo IP o nome centralino``
+
+Base:
+  ``dc=phonebook,dc=nh``
+
+Attributi nome LDAP:
+  ``cn o``
+
+Attributi numero LDAP:
+  ``telephoneNumber mobile homePhone``
+
+Porta:
+  ``389`` per |parent_product| 6
+
+  ``10389`` per |parent_product| 7
+
+Filtro ricerca nomi LDAP:
+  ``(&(telephoneNumber=*)(sn=%))`` per |parent_product| 6
+
+  ``(|(cn=%)(o=%))`` per |parent_product| 7
+
+Filtro ricerca numeri LDAP:
+  ``(&(telephoneNumber=%)(sn=*))`` per |parent_product| 6
+
+  ``(|(telephoneNumber=%)(mobile=%)(homePhone=%))`` per |parent_product| 7
+
+Protocollo:
+  ``Version3``
+
+
+Sangoma
+-------
+
+Parametri aggiuntivi:
+
+* Ricerca LDAP per chiamate in ingresso: Off
+* Risultati di ordinamento LDAP: On
+
+Snom
+----
+
+Parametri aggiuntivi:
+
+* LDAP su TLS: off
+* Ordina Risultati: on
+* Predici Testo: on
+* Fai una query iniziale: on
+
+Yealink
+-------
+
+Parametri aggiuntivi:
+
+* Battute massime (1-32000): 50
+* Mostra nome LDAP: %cn %o
+* Ricerca LDAP per chiamate in ingresso: Disabilitato
+* Ricerca LDAP in uscita: Disabilitato
+* Risultati di ordinamento LDAP: Abilitato
+
+
+
+
+
+|product|: collegamenti remoti
+==============================
+
+Due o più |product| remoti, cioè non nella stessa rete posso essere collegati tra di loro tramite dei fasci iax.  Si utilizza il protocollo IAX sia per le sue caratteristiche di semplicità, richiede solo la porta 4569 UDP, sia per il brillante comportamento in caso di nat, sia per le performance su chiamate multiple.
+
+Se possibile è sempre indicato collegare le varie sedi remote con vpn tra di loro, in modo da far passare il traffico voce su di esse.
+
+Configurazione Fasci IAX
+------------------------
+
+Avendo permesso, tramite o la vpn e/o l'eventuale configurazione delle reti fidate, il traffico tra i due |product|, bisogna a questo punto configurare i fasci iax. In pratica i centralini per interfacciarsi devono scambiarsi uno username e password che autorizza il collegamento.
+
+.. warning:: L'utente è univoco, deve essere utilizzato per un solo collegamento, in caso di collegamento tra diversi |product| utilizzare username diversi per ogni fascio IAX.
+
+Ecco un esempio pratico:
+
+.. note:: Nel caso la VPN sia instaurata direttamente dal |product|, sul centralino remoto può essere necessario indicare l'ip del punto punto della vpn e non l'indirizzo della rete green.
+
+Esempio configurazione fasci IAX per connessione tra due |product|
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Sede A
+^^^^^^
+
+Impostazioni in Uscita
+''''''''''''''''''''''
+::
+
+  Nome fascio: SedeA
+
+  Dettagli PEER:
+
+  host=IP_SEDE_B
+  username=utenteB
+  secret=passwordB
+  type=peer
+  qualify=60000
+
+Impostazioni in Ingresso
+''''''''''''''''''''''''
+::
+
+  Contesto UTENTE: utenteA
+
+  Dettagli UTENTE:
+
+  secret=passwordA
+  type=user 
+  context=from-intracompany
+
+Sede B
+^^^^^^
+
+Impostazioni in Uscita
+''''''''''''''''''''''
+::
+
+  Nome fascio: SedeB
+
+  Dettagli PEER:
+
+  host=IP_SEDE_A
+  username=utenteA
+  secret=passwordA
+  type=peer
+  qualify=60000
+
+Impostazioni in Ingresso
+''''''''''''''''''''''''
+::
+
+  Contesto UTENTE: utenteB
+
+  Dettagli UTENTE:
+
+  secret=passwordB
+  type=user 
+  context=from-intracompany
+
+Configurazione Rotte in Uscita
+------------------------------
+
+L'ultima configurazione da effettuare è nelle rotte in uscita. Quello che dobbiamo fare è indicare al |product| come raggiungere gli interni remoti.
+
+Le possibilità possono essere anche qui due:
+
+Interni delle due sedi sovrapposti
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Se i due |product| hanno la numerazione di interni sovrapposta, stessi interni in entrambi i centralini, si deve creare una rotta in uscita con il pattern di chiamata che includa gli interni remoti e un prefisso.
+
+Il prefisso fa instradare la chiamata non per l'interno locale ma per l'interno remoto.
+
+Ovviamente l'unico fascio da utilizzare sarà quello IAX precedentemente creato per il collegamento infra sede.
+
+Ricordarsi di spuntare **Rotta Intra-Aziendale** se si vuole inviare al centralino remoto anche il nome del chiamante oltre che il numero, in modo che il chiamato sul display del telefono lo visualizzi.
+
+Interni delle due sedi non sovrapposti
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Nel caso che gli interni dei due |product| collegati siano ben distinti, non ci si deve preoccupare di distinguere con un prefisso la rotta in uscita.
+
+E' necessario quindi creare una rotta con il pattern degli interni remoti e indicare il fascio iax di collegamento precedentemente creato.
+
+Ricordarsi di spuntare **Rotta Intra-Aziendale** se si vuole inviare al centralino remoto anche il nome del chiamante oltre che il numero, in modo che il chiamato sul display del telefono lo visualizzi.
+
+
 |product_cti|: attivazione debug
 ================================
 
