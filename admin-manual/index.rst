@@ -65,7 +65,20 @@ Configurazione Avanzata
 .. toctree::
    :maxdepth: 2
 
-   advanced_config
+   nethcqr
+   rapid_code
+   returnonblindtransfer
+   directdid
+   queueexit
+   queuemetrics
+
+HowTo
+-----------------------
+
+.. toctree::
+   :maxdepth: 2
+
+   howto
 
 Moduli Aggiuntivi
 -----------------
@@ -76,7 +89,6 @@ Moduli Aggiuntivi
    hotel
    inbound_report
    queue_report
-   rapid_code
 
 
 |product_cti|: Guida Sviluppatori
