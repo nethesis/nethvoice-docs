@@ -2,6 +2,8 @@
 Codici rapidi di chiamata (Rapid Code)
 =======================================
 
+.. _rapidcode-ref-label:
+
 Il modulo :index:`Codici rapidi di chiamata`, consente di configurare un numero breve per effettuare una chiamata.
 
 Sostituisce il vecchio modulo Speed Dial ed è installato di default con |product|.

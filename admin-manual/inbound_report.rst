@@ -2,6 +2,8 @@
 Report Chiamate Entranti
 ========================
 
+.. _inboundreport-ref-label:
+
 Il Report delle Chiamate Entranti è un modulo di |product| che consente di avere un'analisi statistica e dei grafici dedicati a tutte le chiamate entranti.
 
 L’accesso al Report Chiamate Entranti è consentito di default all’utente admin.
