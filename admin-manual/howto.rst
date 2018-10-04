@@ -372,3 +372,24 @@ Nel caso si utilizzi un centralino in cloud dietro NAT, è necessario configurar
   signal-event nethserver-janus-update
 
 
+|product_cti|: disattivazione della gestione eventi dei fasci
+=============================================================
+
+È possibile disabilitare la gestione degli eventi dei fasci all'interno di |product_cti| Server come segue:
+
+.. code-block:: bash
+
+  config setprop nethcti-server TrunksEvents "disabled"
+  signal-event nethcti-server3-update
+
+Per riabilitarli:
+
+.. code-block:: bash
+
+  config setprop nethcti-server TrunksEvents "enabled"
+  signal-event nethcti-server3-update
+
+.. note::
+  I fasci rimangono pienamente funzionanti: la disattivazione riguarda solamente |product_cti| Server.
+
+  Tale disattivazione comporta solamente la non visualizzazione delle chiamate nella schermata dei "fasci" lato |product_cti| Client.
