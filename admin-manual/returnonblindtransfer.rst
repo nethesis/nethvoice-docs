@@ -12,7 +12,7 @@ Configurazione
 Attivato
 ~~~~~~~~
 
-Attivare o disattivare il ritorno du trasferimento non cunsultativo.
+Attivare o disattivare il ritorno su trasferimento non cunsultativo.
 
 
 Timeout
