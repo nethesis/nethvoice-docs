@@ -3,26 +3,70 @@ msgid ""
 msgstr ""
 "Project-Id-Version: NethVoice 14\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-04-09 09:59+0200\n"
+"POT-Creation-Date: 2018-10-04 15:40+0200\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2018-04-09 06:36-0400\n"
+"PO-Revision-Date: 2018-04-09 06:36+0000\n"
 "Last-Translator: Alejandro Moreno <alejandro.martinez@nethesis.it>\n"
 "Language-Team: Spanish (Spain)\n"
-"Language: es-ES\n"
-"X-Generator: Zanata 3.9.6\n"
+"Language: es_ES\n"
+"X-Generator: Zanata 4.6.2\n"
 "Plural-Forms: nplurals=2; plural=(n != 1)\n"
 
-#: ../../provisioning_gateway.rst:13
+#: ../../provisioning_gateway.rst:3
 msgid "Provisioning dei gateway"
 msgstr "Aprovisionamiento de gateway"
 
-#: ../../provisioning_gateway.rst:15
+#: ../../provisioning_gateway.rst:6
+msgid "Gateway supportati"
+msgstr ""
+
+#: ../../provisioning_gateway.rst:9
+msgid "SANGOMA"
+msgstr ""
+
+#: ../../provisioning_gateway.rst:11
+msgid "Vega 60 2 BRI, 4 BRI 4 FXO"
+msgstr ""
+
+#: ../../provisioning_gateway.rst:12
+msgid "Vega 100G"
+msgstr ""
+
+#: ../../provisioning_gateway.rst:16
+msgid "PATTON"
+msgstr ""
+
+#: ../../provisioning_gateway.rst:18
+msgid "Modelli BRI SmartNode e Trinity"
+msgstr ""
+
+#: ../../provisioning_gateway.rst:19
+msgid "Modelli PRI SmartNode e Trinity"
+msgstr ""
+
+#: ../../provisioning_gateway.rst:20
+msgid "Modelli FXO SmartNode"
+msgstr ""
+
+#: ../../provisioning_gateway.rst:23
+msgid "MEDIATRIX"
+msgstr ""
+
+#: ../../provisioning_gateway.rst:25
+msgid "Serie 4400"
+msgstr ""
+
+#: ../../provisioning_gateway.rst:28
+msgid "Provisioning"
+msgstr ""
+
+#: ../../provisioning_gateway.rst:30
 msgid "La configurazione dei gateway avviene nel Wizard."
 msgstr "La configuración de los gateway se realiza en el Asistente."
 
-#: ../../provisioning_gateway.rst:17
+#: ../../provisioning_gateway.rst:32
 msgid ""
 "Il provisioning per i gateway segue le stesse regole di quello per i "
 "telefoni con una fondamentale differenza:"
@@ -30,7 +74,7 @@ msgstr ""
 "El aprovisionamiento para los gateway sigue las mismas reglas  que para los "
 "teléfonos con una diferencia fundamental:"
 
-#: ../../provisioning_gateway.rst:19
+#: ../../provisioning_gateway.rst:34
 msgid ""
 "al contrario dei telefoni, il |product| si collega in telnet direttamente al "
 "gateway per caricare la configurazione senza che siano loro che la debbano "
@@ -40,7 +84,7 @@ msgstr ""
 "directamente al gateway para cargar la configuración sin que sean ellos "
 "quien la deban recuperar."
 
-#: ../../provisioning_gateway.rst:21
+#: ../../provisioning_gateway.rst:36
 msgid ""
 "La configurazione dei gateway avviene con il gateway online, di default i "
 "gateway si avviano in DHCP."
@@ -48,21 +92,18 @@ msgstr ""
 "La configuración de los gateway se produce con el gateway online, por "
 "defecto los gateway se inician in DHCP."
 
-#: ../../provisioning_gateway.rst:23
+#: ../../provisioning_gateway.rst:38
 msgid ""
-"E’ comunque possibile cliccando su Aggiungi Gateway creare una "
+"E’ comunque possibile cliccando su :guilabel:`Aggiungi Gateway` creare una "
 "configurazione per un gateway non ancora collegato per poi configurarlo "
 "caricando il file dall'interfaccia web del gateway."
 msgstr ""
-"De todos modos en posible haciendo clic en Añadir Gateway crear una "
-"configuración para un gateway todavía no conectado para después configurarlo "
-"cargando el archivo desde la interfaz web del gateway."
 
-#: ../../provisioning_gateway.rst:26
+#: ../../provisioning_gateway.rst:41
 msgid "Configurazione dei gateway in rete"
 msgstr "Configuración de los gateway en red"
 
-#: ../../provisioning_gateway.rst:28
+#: ../../provisioning_gateway.rst:43
 msgid ""
 "Effettuare la scansione delle reti locali nel Wizard in :ref:`Fasci Fisici "
 "<fisici>`."
@@ -70,7 +111,7 @@ msgstr ""
 "Efectuar el escaneo de las redes locales en el Asistente en:ref:`Conexiones "
 "Físicas <fisici>`."
 
-#: ../../provisioning_gateway.rst:30
+#: ../../provisioning_gateway.rst:45
 msgid ""
 "Una volta trovato in rete il gateway che si vuole configurare è necessario "
 "specificare i pochi parametri di configurazione necessari:"
@@ -78,29 +119,26 @@ msgstr ""
 "Una vez encontrado en red el gateway que se quiere configurar es necesario "
 "especificar los pocos parámetros de configuración necesarios:"
 
-#: ../../provisioning_gateway.rst:32
+#: ../../provisioning_gateway.rst:47
 msgid ""
-"Ip del dispositivo, la configurazione del gateway richiede un ip statico"
+"IP del dispositivo, la configurazione del gateway richiede un IP statico"
 msgstr ""
-"IP del dispositivo, la configuración del gateway necesita una IP estática"
 
-#: ../../provisioning_gateway.rst:33
+#: ../../provisioning_gateway.rst:48
 msgid "Maschera di rete"
 msgstr "Máscara de red"
 
-#: ../../provisioning_gateway.rst:34
+#: ../../provisioning_gateway.rst:49
 msgid "Gateway di rete"
 msgstr "Gateway de red"
 
-#: ../../provisioning_gateway.rst:35
+#: ../../provisioning_gateway.rst:50
 msgid ""
-"Ip del |product|, in alcuni scenari d'installazione il gateway può "
-"raggiungere il |product| non tramite il suo ip locale"
+"IP del |product|, in alcuni scenari d'installazione il gateway può "
+"raggiungere il |product| non tramite il suo IP locale"
 msgstr ""
-"IP del |product|, en algunos escenarios de instalación el gateway puede "
-"alcanzar el |product| no a través de su ip local "
 
-#: ../../provisioning_gateway.rst:36
+#: ../../provisioning_gateway.rst:51
 msgid ""
 "Eventuali caratteristiche necessarie alla configurazione delle linee "
 "collegate (per linee ISDN la modalità della borchia, per linee analogiche il "
@@ -110,19 +148,15 @@ msgstr ""
 "conectadas (para lineas ISDN la modalidad de la principal, para lineas "
 "analógicas el número llamado de la línea)"
 
-#: ../../provisioning_gateway.rst:38
+#: ../../provisioning_gateway.rst:53
 msgid ""
-"Dopo aver salvato la configurazione è possibile cliccando sul pulsante "
-"*Carica* consentire al |product| di collegarsi in telnet al gateway per "
-"caricare e/o indicare dove recuperare (a seconda della marca) la "
+"Dopo aver salvato la configurazione è possibile cliccando sul pulsante :"
+"guilabel:`Carica` consentire al |product| di collegarsi in telnet al gateway "
+"per caricare e/o indicare dove recuperare (a seconda della marca) la "
 "configurazione."
 msgstr ""
-"Después de haber salvado la configuración es posible haciendo clic en el "
-"botón *Cargar* permitir al |product| conectarse en telnet al gateway para "
-"cargar y/o indicar dónde recuperar (dependiendo de la marca) la "
-"configuración."
 
-#: ../../provisioning_gateway.rst:40
+#: ../../provisioning_gateway.rst:55
 msgid ""
 "C'è anche la possibilità di scaricare la configurazione del gateway per "
 "caricarla tramite l’interfaccia web nel caso il gateway non sia "

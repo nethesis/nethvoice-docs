@@ -3,51 +3,51 @@ msgid ""
 msgstr ""
 "Project-Id-Version: NethVoice 14\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-04-09 09:59+0200\n"
+"POT-Creation-Date: 2018-10-04 15:40+0200\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2018-04-09 06:14-0400\n"
+"PO-Revision-Date: 2018-04-09 06:14+0000\n"
 "Last-Translator: Alejandro Moreno <alejandro.martinez@nethesis.it>\n"
 "Language-Team: Spanish (Spain)\n"
-"Language: es-ES\n"
-"X-Generator: Zanata 3.9.6\n"
+"Language: es_ES\n"
+"X-Generator: Zanata 4.6.2\n"
 "Plural-Forms: nplurals=2; plural=(n != 1)\n"
 
-#: ../../license.rst:13
+#: ../../license.rst:3
 msgid "License"
 msgstr ""
 
-#: ../../license.rst:15
+#: ../../license.rst:5
 msgid ""
 "This documentation is distributed under the terms of **Creative Commons - "
 "Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0)** "
 "license."
 msgstr ""
 
-#: ../../license.rst:23
+#: ../../license.rst:13
 msgid "You are free to:"
 msgstr ""
 
-#: ../../license.rst:25
+#: ../../license.rst:15
 msgid "**Share** — copy and redistribute the material in any medium or format"
 msgstr ""
 
-#: ../../license.rst:26
+#: ../../license.rst:16
 msgid "**Adapt** — remix, transform, and build upon the material"
 msgstr ""
 
-#: ../../license.rst:28
+#: ../../license.rst:18
 msgid ""
 "The licensor cannot revoke these freedoms as long as you follow the license "
 "terms."
 msgstr ""
 
-#: ../../license.rst:30
+#: ../../license.rst:20
 msgid "Under the following terms:"
 msgstr ""
 
-#: ../../license.rst:32
+#: ../../license.rst:22
 msgid ""
 "**Attribution** — You must give appropriate credit, provide a link to the "
 "license, and indicate if changes were made. You may do so in any reasonable "
@@ -55,25 +55,25 @@ msgid ""
 "use."
 msgstr ""
 
-#: ../../license.rst:34
+#: ../../license.rst:24
 msgid ""
 "**NonCommercial** — You may not use the material for commercial purposes."
 msgstr ""
 
-#: ../../license.rst:35
+#: ../../license.rst:25
 msgid ""
 "**ShareAlike** — If you remix, transform, or build upon the material, you "
 "must distribute your contributions under the same license as the original."
 msgstr ""
 
-#: ../../license.rst:37
+#: ../../license.rst:27
 msgid ""
 "*No additional restrictions* — You may not apply legal terms or "
 "technological measures that legally restrict others from doing anything the "
 "license permits."
 msgstr ""
 
-#: ../../license.rst:39
+#: ../../license.rst:29
 msgid ""
 "This is a human-readable summary of (and not a substitute for) the full "
 "license available at: http://creativecommons.org/licenses/by-nc-sa/4.0/"

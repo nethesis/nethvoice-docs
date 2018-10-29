@@ -3,22 +3,22 @@ msgid ""
 msgstr ""
 "Project-Id-Version: NethVoice 14\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-04-09 10:00+0200\n"
+"POT-Creation-Date: 2018-10-04 15:40+0200\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2018-04-09 06:14-0400\n"
+"PO-Revision-Date: 2018-04-09 06:14+0000\n"
 "Last-Translator: Alejandro Moreno <alejandro.martinez@nethesis.it>\n"
 "Language-Team: Spanish (Spain)\n"
-"Language: es-ES\n"
-"X-Generator: Zanata 3.9.6\n"
+"Language: es_ES\n"
+"X-Generator: Zanata 4.6.2\n"
 "Plural-Forms: nplurals=2; plural=(n != 1)\n"
 
-#: ../../app_mobile.rst:13
+#: ../../app_mobile.rst:3
 msgid "App mobile"
 msgstr "App móvil"
 
-#: ../../app_mobile.rst:17
+#: ../../app_mobile.rst:7
 msgid ""
 "L'applicazione Scan&Play è disponibile su smartphone e permette di "
 "scansionare i MAC address dei telefoni per velocizzare la configurazione e "
@@ -28,27 +28,27 @@ msgstr ""
 "las direcciones MAC de los teléfonos para hacer más rápida la configuración "
 "y el provisioning."
 
-#: ../../app_mobile.rst:20
+#: ../../app_mobile.rst:10
 msgid "Requisiti"
 msgstr "Requisitos"
 
-#: ../../app_mobile.rst:22
+#: ../../app_mobile.rst:12
 msgid "Presenza di un certificato valido sul server"
 msgstr "Presencia de un certificado válido en el servidor"
 
-#: ../../app_mobile.rst:23
+#: ../../app_mobile.rst:13
 msgid "Raggiungibilità della porta HTTPS 443 dall'esterno"
 msgstr "Accesibilidad de la puerta HTTPS 443 desde el exterior"
 
-#: ../../app_mobile.rst:26
+#: ../../app_mobile.rst:16
 msgid "Installazione"
 msgstr "Instalación"
 
-#: ../../app_mobile.rst:28
+#: ../../app_mobile.rst:18
 msgid "L'applicazione è disponibile ai seguenti link:"
 msgstr "La aplicación está disponible en el siguiente link:"
 
-#: ../../app_mobile.rst:30
+#: ../../app_mobile.rst:20
 msgid ""
 "Android: https://play.google.com/store/apps/details?id=it.nethesis."
 "scanplay14"
@@ -56,7 +56,7 @@ msgstr ""
 "Android: https://play.google.com/store/apps/details?id=it.nethesis."
 "scanplay14"
 
-#: ../../app_mobile.rst:31
+#: ../../app_mobile.rst:21
 msgid ""
 "iOS: https://itunes.apple.com/us/app/nethvoice-scan-play-14/id1277558637?ls="
 "1&mt=8"
@@ -64,7 +64,7 @@ msgstr ""
 "iOS: https://itunes.apple.com/us/app/nethvoice-scan-play-14/id1277558637?ls="
 "1&mt=8"
 
-#: ../../app_mobile.rst:33
+#: ../../app_mobile.rst:23
 msgid ""
 "E' possibile comunque cercare la parola **macscan** nei diversi store e "
 "installarla senza il link diretto."
@@ -72,16 +72,16 @@ msgstr ""
 "Es posible buscar la palabra **macscan** en las diferentes tiendas de "
 "aplicaciones e instalarla sin el link directo."
 
-#: ../../app_mobile.rst:36
+#: ../../app_mobile.rst:26
 msgid "Utilizzo"
 msgstr "Uso"
 
-#: ../../app_mobile.rst:38
+#: ../../app_mobile.rst:28
 msgid "Appena avviata l'applicazione vi chiede le infomazioni di login:"
 msgstr ""
 "Inmediatamente iniciada la aplicación os solicita la información de login:"
 
-#: ../../app_mobile.rst:40
+#: ../../app_mobile.rst:30
 msgid ""
 "Username: l'username dell'utente amministratore del centralino con cui "
 "collegarsi (che è `admin`)"
@@ -89,11 +89,11 @@ msgstr ""
 "Nombre usuario: el nombre de usuario administrador de la centralita con la "
 "que conectarse (que es `admin`)"
 
-#: ../../app_mobile.rst:41
+#: ../../app_mobile.rst:31
 msgid "Password: la password dell'utente admin con cui collegarsi"
 msgstr "Contraseña: la contraseña del usuario admin con el que conectarse"
 
-#: ../../app_mobile.rst:42
+#: ../../app_mobile.rst:32
 msgid ""
 "Hostname: il nome o l'indirizzo IP del server (server in cui è installato il "
 "centralino)"
@@ -101,37 +101,37 @@ msgstr ""
 "Hostname: el nombre o la dirección IP del servidor (sevirdor en el que está "
 "instalado la centralita)"
 
-#: ../../app_mobile.rst:44
+#: ../../app_mobile.rst:34
 msgid "Una volta effettuato il login:"
 msgstr "Una vez efectuado el login:"
 
-#: ../../app_mobile.rst:46
+#: ../../app_mobile.rst:36
 msgid "Premere il pulsante \"Scan\" per avviare la fotocamera dello smartphone"
 msgstr "Pulsar el botón \"Escanear\" para iniciar la cámara del smartphone"
 
-#: ../../app_mobile.rst:47
+#: ../../app_mobile.rst:37
 msgid "Avvicinarsi al MAC address del telefono o della scatola del telefono"
 msgstr "Acercarse a la dirección MAC del teléfono o de la caja del teléfono"
 
-#: ../../app_mobile.rst:48
+#: ../../app_mobile.rst:38
 msgid ""
 "L'applicazione riconosce il MAC address e ricava il fornitore del telefono"
 msgstr ""
 "La aplicación reconoce la dirección MAC y obtiene el proveedor del teléfono"
 
-#: ../../app_mobile.rst:49
+#: ../../app_mobile.rst:39
 msgid "Selezionare il modello di telefono"
 msgstr "Seleccionar el modelo de teléfono"
 
-#: ../../app_mobile.rst:50
+#: ../../app_mobile.rst:40
 msgid "Selezionare l'utente del centralino a cui associare il telefono"
 msgstr "Seleccionar el usuario de la centralita al que asociar el teléfono"
 
-#: ../../app_mobile.rst:51
+#: ../../app_mobile.rst:41
 msgid "Premere il pulsante \"Salva\" per salvare la configurazione"
 msgstr "Pulsar el botón \"Guardar\" para guardar la configuración"
 
-#: ../../app_mobile.rst:53
+#: ../../app_mobile.rst:43
 msgid ""
 "Collegare il telefono nella stessa rete del centralino e verificare che "
 "venga effettuato correttamente il provisioning del telefono."
