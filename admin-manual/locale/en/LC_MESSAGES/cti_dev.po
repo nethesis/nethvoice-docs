@@ -8,8 +8,8 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2018-06-07 07:18+0000\n"
-"Last-Translator: \n"
+"PO-Revision-Date: 2018-10-29 05:00+0000\n"
+"Last-Translator: Polidori Alessandro <alessandro.polidori@gmail.com>\n"
 "Language-Team: English (United States)\n"
 "Language: en_US\n"
 "X-Generator: Zanata 4.6.2\n"
@@ -28,9 +28,9 @@ msgid ""
 "WebSocket."
 msgstr ""
 "This section of the documentation aims to start the developer to create a "
-"real application that exploits the REST API of | product_cti |. Topics "
-"covered are authentication, REST API usage and bidirectional communication "
-"via WebSocket."
+"real application that exploits the REST API of |product_cti|. Topics covered "
+"are authentication, REST API usage and bidirectional communication via "
+"WebSocket."
 
 #: ../../cti_dev.rst:9
 msgid ""
@@ -117,7 +117,7 @@ msgid ""
 "Le REST API sono dei Web Services che consentono l'interazione con il server "
 "|product_cti|. È uno strumento molto utile per l'integrazione e lo sviluppo."
 msgstr ""
-"REST APIs are Web Services that allow interaction with the | product_cti | "
+"REST APIs are Web Services that allow interaction with the |product_cti| "
 "server. It is a very useful tool for integration and development."
 
 #: ../../cti_dev.rst:76
@@ -184,7 +184,7 @@ msgstr ""
 msgid ""
 "Ogni richiesta viene *autenticata* e *autorizzata* del server |product_cti|."
 msgstr ""
-"Each request is * authenticated * and * authorized * by the | product_cti | "
+"Each request is * authenticated * and * authorized * by the |product_cti| "
 "server."
 
 #: ../../cti_dev.rst:110
@@ -224,8 +224,8 @@ msgid ""
 "|parent_product|."
 msgstr ""
 "Each REST API request is authorized by the server that controls the user "
-"permissions configured by the administrator through the interface of | "
-"parent_product |."
+"permissions configured by the administrator through the interface of "
+"|parent_product|."
 
 #: ../../cti_dev.rst:127
 msgid "Esempio d'uso con cURL"
@@ -363,8 +363,8 @@ msgid ""
 msgstr ""
 "The WebSocket connection is used by the server to communicate in real time "
 "with all connected clients (for example to notify the Asterisk server "
-"events). To establish a WebSocket connection with the | product_cti | server "
-"a first authentication stage is required."
+"events). To establish a WebSocket connection with the |product_cti| server a "
+"first authentication stage is required."
 
 #: ../../cti_dev.rst:241
 msgid ""
@@ -493,7 +493,7 @@ msgstr "`wsClientLoggedIn`_"
 
 #: ../../cti_dev.rst:286
 msgid "Un utente ha effettuato il login a |product_cti|"
-msgstr "A user has logged in to | product_cti |"
+msgstr "A user has logged in to |product_cti|"
 
 #: ../../cti_dev.rst:287
 msgid "*allWsClientDisonnection*"
