@@ -3,22 +3,22 @@ msgid ""
 msgstr ""
 "Project-Id-Version: NethVoice 14\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-04-09 09:59+0200\n"
+"POT-Creation-Date: 2018-10-04 15:40+0200\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2018-04-05 09:07-0400\n"
+"PO-Revision-Date: 2018-04-09 10:36+0000\n"
 "Last-Translator: Polidori Alessandro <alessandro.polidori@gmail.com>\n"
 "Language-Team: English (United States)\n"
-"Language: en-US\n"
-"X-Generator: Zanata 3.9.6\n"
+"Language: en_US\n"
+"X-Generator: Zanata 4.6.2\n"
 "Plural-Forms: nplurals=2; plural=(n != 1)\n"
 
-#: ../../nethifier.rst:13
+#: ../../nethifier.rst:3
 msgid "|product_nethifier|"
 msgstr "|product_nethifier|"
 
-#: ../../nethifier.rst:15
+#: ../../nethifier.rst:5
 msgid ""
 "|product_nethifier| Windows Integration è l'applicazione per Microsoft "
 "Windows che consente l'integrazione di |product| con il desktop Windows. In "
@@ -31,13 +31,13 @@ msgstr ""
 "In particular, it allows the display of notification popup on the desktop in "
 "front of incoming calls directed to any telephone extension of the user."
 
-#: ../../nethifier.rst:20
+#: ../../nethifier.rst:10
 msgid ""
 "Versioni di Windows compatibili: Windows 7 (64 bit), Windows 8 e Windows 10."
 msgstr ""
 "Compatible Windows versions: Windows 7 (64 bit), Windows 8 and Windows 10."
 
-#: ../../nethifier.rst:22
+#: ../../nethifier.rst:12
 msgid ""
 "Per la personalizzazione dei popup seguire la :ref:`documentazione <custom-"
 "nethifier-label>`."
@@ -45,19 +45,19 @@ msgstr ""
 "For the customization of popup follow the: ref: `documentation <custom-"
 "nethifier-label>`."
 
-#: ../../nethifier.rst:25
+#: ../../nethifier.rst:15
 msgid "Requisiti"
 msgstr "Requirements"
 
-#: ../../nethifier.rst:27
+#: ../../nethifier.rst:17
 msgid ".NET Framework 4.5."
 msgstr ".NET Framework 4.5."
 
-#: ../../nethifier.rst:28
+#: ../../nethifier.rst:18
 msgid "Server |product| 3.x."
 msgstr "Server |product| 3.x."
 
-#: ../../nethifier.rst:29
+#: ../../nethifier.rst:19
 msgid ""
 "Il pc su cui è in esecuzione |product_nethifier| deve risolvere l'indirizzo "
 "``nomenethvoice.dominio``."
@@ -65,16 +65,16 @@ msgstr ""
 "The PC on which |product_nethifier| is running must resolve the "
 "``nethvoicename.domain`` address."
 
-#: ../../nethifier.rst:31
+#: ../../nethifier.rst:21
 msgid ""
 "Per ottenere il nome di dominio si può utilizzare il comando ``hostname -f``"
 msgstr "To obtain the domain name you can use the command ``hostname -f``"
 
-#: ../../nethifier.rst:34
+#: ../../nethifier.rst:24
 msgid "Download"
 msgstr "Download"
 
-#: ../../nethifier.rst:36
+#: ../../nethifier.rst:26
 msgid ""
 "Il download è disponibile `nell'area relativa <http://helpdesk.nethesis.it/"
 "solution/folders/3000014059)>`_."
@@ -82,11 +82,11 @@ msgstr ""
 "The download is available `in the related area <http://helpdesk.nethesis.it/"
 "solution/folders/3000014059)>`_."
 
-#: ../../nethifier.rst:39
+#: ../../nethifier.rst:29
 msgid "Installazione"
 msgstr "Installation"
 
-#: ../../nethifier.rst:41
+#: ../../nethifier.rst:31
 msgid ""
 "È sufficiente effettuare il download dell'installer ed eseguirlo. Terminata "
 "la fase d'installazione il programma verrà avviato automaticamente."
@@ -94,33 +94,47 @@ msgstr ""
 "Simply download the installer and run it. Once the installation is complete, "
 "the program will be started automatically."
 
-#: ../../nethifier.rst:45
+#: ../../nethifier.rst:35
 msgid ""
 "Per poter essere eseguito |product_nethifier| necessita di privilegi "
 "amministrativi perciò è necessario ricordarsi di installarlo utilizzando "
-"l'opzione \"*Esegui come amministratore*\"."
+"l'opzione \"Esegui come amministratore\"."
 msgstr ""
-"In order to be able to run |product_nethifier| you need the administrative "
-"privileges so you need to remember to install it using the \"*Run as "
-"administrator*\" option."
+"In order to be able to run |product_nethifier|, administrator needs to have "
+"privileges so you need to remember to install it using the \"Run as "
+"administrator\" option."
 
-#: ../../nethifier.rst:48
+#: ../../nethifier.rst:37
+msgid ""
+"Durante l'installazione su Windows 10 verrà mostrato un avviso di sicurezza "
+"di Windows Defender SmartScreen. È sufficiente cliccare la voce \"Esegui "
+"comunque\" e continuare nelle fasi successive. Qua maggiori `informazioni "
+"<https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-"
+"defender-smartscreen/windows-defender-smartscreen-set-individual-device>`_."
+msgstr ""
+"During the installation on Windows 10 will be shown a security warning of "
+"Windows Defender SmartScreen. Simply click on \"Run anyway\" and continue in "
+"the next steps. Here's more `information <https://docs.microsoft.com/en-us/"
+"windows/security/threat-protection/windows-defender-smartscreen/windows-"
+"defender-smartscreen-set-individual-device>`_."
+
+#: ../../nethifier.rst:40
 msgid "Configurazione"
 msgstr "Configuration"
 
-#: ../../nethifier.rst:50
+#: ../../nethifier.rst:42
 msgid "È necessaria solamente la prima volta. I dati da inserire sono:"
 msgstr "It is only necessary the first time. The data to be inserted are:"
 
-#: ../../nethifier.rst:52
+#: ../../nethifier.rst:44
 msgid "indirizzo del server (nome o IP)"
 msgstr "Server address (name or IP)"
 
-#: ../../nethifier.rst:53
+#: ../../nethifier.rst:45
 msgid "credenziali dell'utente"
 msgstr "User credentials"
 
-#: ../../nethifier.rst:55
+#: ../../nethifier.rst:47
 msgid ""
 "È necessario salvare i dati cliccando il pulsante apposito in maniera tale "
 "da non doverli più reinserire agli avvii successivi. È anche possibile "
@@ -131,11 +145,11 @@ msgstr ""
 "to avoid having to re-enter it at the next start-up. You can also activate "
 "the automatic execution of |product_nethifier| when Windows starts."
 
-#: ../../nethifier.rst:60
+#: ../../nethifier.rst:51
 msgid "Combinazione tasti chiamata"
 msgstr "Call key combination"
 
-#: ../../nethifier.rst:62
+#: ../../nethifier.rst:53
 msgid ""
 "È possibile personalizzare la combinazione di tasti usati per effettuare una "
 "chiamata o per ricomporre l'ultimo numero, tramite la scheda \"Dialer "
@@ -144,11 +158,11 @@ msgstr ""
 "You can customize the key combination used to make a call or to redial the "
 "last number via the \"Dialer Hotkey\" options tab."
 
-#: ../../nethifier.rst:65
+#: ../../nethifier.rst:56
 msgid "Rimozione"
 msgstr "Remove"
 
-#: ../../nethifier.rst:67
+#: ../../nethifier.rst:58
 msgid ""
 "È sufficiente aprire il menu *Programmi* di Windows e cliccare la voce "
 "\"|product_nethifier| -> Uninstall\"."
@@ -156,11 +170,11 @@ msgstr ""
 "Simply open the Windows *Programs* menu and click on \"|product_nethifier| -"
 "> Uninstall\"."
 
-#: ../../nethifier.rst:73
+#: ../../nethifier.rst:64
 msgid "Personalizzazione"
 msgstr "Customization"
 
-#: ../../nethifier.rst:75
+#: ../../nethifier.rst:66
 msgid ""
 "I popup possono essere personalizzati sia nella *grafica*, sia nel "
 "*contenuto* attraverso i seguenti template HTML: ::"
@@ -168,7 +182,7 @@ msgstr ""
 "Pop-ups can be customized in both *graphics* and *content* through the "
 "following HTML templates: ::"
 
-#: ../../nethifier.rst:81
+#: ../../nethifier.rst:72
 msgid ""
 "Il primo serve a mostrare i dati di una chiamata generica, mentre il secondo "
 "quelli di una sorgente video, quale ad esempio un videocitofono."
@@ -176,16 +190,16 @@ msgstr ""
 "The first one is used to show the data of a generic call, while the second "
 "one is for a video source, such as a video door phone."
 
-#: ../../nethifier.rst:84
+#: ../../nethifier.rst:75
 msgid ""
 "Conoscenze richieste: linguaggi di programmazione HTML, CSS e Javascript."
 msgstr "Required knowledge: HTML, CSS and Javascript programming languages."
 
-#: ../../nethifier.rst:87
+#: ../../nethifier.rst:78
 msgid "Personalizzazione della grafica"
 msgstr "Graphic customization"
 
-#: ../../nethifier.rst:89
+#: ../../nethifier.rst:80
 msgid ""
 "È sufficiente personalizzare il codice HTML e/o CSS dei template indicati. "
 "Supponiamo ad esempio di voler modificare il colore del **nome e numero "
@@ -198,11 +212,11 @@ msgstr ""
 "number** in green in the ``call.html`` template: just add the css rule "
 "``color: green`` in the ``contact-info selector``, which will become:"
 
-#: ../../nethifier.rst:104
+#: ../../nethifier.rst:95
 msgid "Personalizzazione del contenuto"
 msgstr "Content customization"
 
-#: ../../nethifier.rst:106
+#: ../../nethifier.rst:97
 msgid ""
 "È possibile estendere le funzionalità presenti all'interno dei popup con "
 "nuovi comandi da eseguire."
@@ -210,15 +224,15 @@ msgstr ""
 "It is possible to extend the functions present in the popups with new "
 "commands to be executed."
 
-#: ../../nethifier.rst:108
+#: ../../nethifier.rst:99
 msgid "Creare il template custom `win_popup.json`:"
 msgstr "Create the custom `win_popup.json` template:"
 
-#: ../../nethifier.rst:115
+#: ../../nethifier.rst:106
 msgid "Aprire il template appena creato con un editor di testi:"
 msgstr "Open the newly created template with a text editor:"
 
-#: ../../nethifier.rst:121
+#: ../../nethifier.rst:112
 msgid ""
 "3. Aggiungere il nuovo comando all'interno dell'oggetto JSON `\"commands\"`, "
 "specificando il percorso del programma eseguibile di Windows che si "
@@ -227,7 +241,7 @@ msgstr ""
 "3. Add the new command within the JSON ``\"commands\"`object, specifying the "
 "path of the Windows executable program that you want to run: ::"
 
-#: ../../nethifier.rst:129
+#: ../../nethifier.rst:120
 msgid ""
 "Se ad esempio il nuovo comando si chiama **\"gestionale\"** e il programma "
 "da eseguire è **\"c:\\\\windows\\\\notepad.exe\"**, la sezione da inserire "
@@ -236,11 +250,11 @@ msgstr ""
 "For example, if the new command is called **\"crm\"** and the program to run "
 "is **\"c:\\\\windows\\\\notepad.exe\"**, the section to insert will be: ::"
 
-#: ../../nethifier.rst:138
+#: ../../nethifier.rst:129
 msgid "e quindi il template custom diventerà: ::"
 msgstr "and then the custom template will become: ::"
 
-#: ../../nethifier.rst:167
+#: ../../nethifier.rst:158
 msgid ""
 "Il percorso dell'eseguibile di Windows deve utilizzare la stringa "
 "\"\\\\\\\\\\\\\" come separatore."
@@ -248,7 +262,7 @@ msgstr ""
 "The path of the Windows executable must use the string \"\\\\\\\\\\\\\" as a "
 "separator."
 
-#: ../../nethifier.rst:169
+#: ../../nethifier.rst:160
 msgid ""
 "4. Adattare l'altezza del popup che si intende modificare, in base "
 "all'elemento grafico da aggiungere. Se ad esempio si vuole inserire un nuovo "
@@ -259,15 +273,15 @@ msgstr ""
 "graphic element to be added. For example, if you want to insert a new button "
 "in the `\"call.html \"` template, a height of 175px may be suffice:"
 
-#: ../../nethifier.rst:179
+#: ../../nethifier.rst:170
 msgid "Salvare la configurazione e uscire dall'editor di testi."
 msgstr "Save the configuration and exit from text editor."
 
-#: ../../nethifier.rst:181
+#: ../../nethifier.rst:172
 msgid "Eseguire il comando: ::"
 msgstr "Run the command: ::"
 
-#: ../../nethifier.rst:185
+#: ../../nethifier.rst:176
 msgid ""
 "7. Personalizzare uno o entrambi i template HTML in base alle proprie "
 "necessità: è necessario inserire un **elemento grafico** e **un'azione da "
@@ -280,14 +294,14 @@ msgstr ""
 "For example, suppose you want to insert a new button in the *\"call.html\"* "
 "template by clicking on it to execute the new \"crm\" command."
 
-#: ../../nethifier.rst:191
+#: ../../nethifier.rst:182
 msgid ""
 "Il codice HTML del nuovo pulsante grafico da inserire in *call.html* sarà:"
 msgstr ""
 "The HTML code of the new graphic button to be inserted in *call.html* will "
 "be:"
 
-#: ../../nethifier.rst:199
+#: ../../nethifier.rst:190
 msgid ""
 "8. **Opzionale:** se si desidera passare l'identificativo del chiamante come "
 "parametro al programma di Windows, è necessario aggiungere il seguente "
@@ -297,11 +311,11 @@ msgstr ""
 "to the Windows program, you need to add the following javascript code at the "
 "end of the `window.onload` function:"
 
-#: ../../nethifier.rst:207
+#: ../../nethifier.rst:198
 msgid "Eseguire |product_nethifier| in Windows e connettersi al server cti."
 msgstr "Run |product_nethifier| in Windows and connect to the cti server."
 
-#: ../../nethifier.rst:209
+#: ../../nethifier.rst:200
 msgid ""
 "Da questo momento alla ricezione di una chiamata generica nel popup sarà "
 "presente un nuovo pulsante di nome \"Gestionale\", cliccando il quale si "
@@ -311,7 +325,7 @@ msgstr ""
 "present with a new button called \"crm\" and clicking it will open the "
 "Windows notepad."
 
-#: ../../nethifier.rst:212
+#: ../../nethifier.rst:203
 msgid ""
 "Ogni client |product_nethifier| può inoltre personalizzare i path dei "
 "programmi da eseguire:"
@@ -319,7 +333,7 @@ msgstr ""
 "Every client |product_nethifier| it can also customize the paths of the "
 "programs to be executed:"
 
-#: ../../nethifier.rst:214
+#: ../../nethifier.rst:205
 msgid ""
 "aprire l'interfaccia grafica |product_nethifier| attraverso la voce "
 "\"Visualizza\" del menù contestuale dell'icona nella system tray di Windows"
@@ -327,23 +341,23 @@ msgstr ""
 "open the graphical interface |product_nethifier| through the \"View\" item "
 "of the context menu of the icon in the Windows system tray"
 
-#: ../../nethifier.rst:215
+#: ../../nethifier.rst:206
 msgid "selezionare il tab \"Esegui\""
 msgstr "select the \"Execute\" tab"
 
-#: ../../nethifier.rst:216
+#: ../../nethifier.rst:207
 msgid "personalizzare i path"
 msgstr "customized paths"
 
-#: ../../nethifier.rst:217
+#: ../../nethifier.rst:208
 msgid "salvare la configurazione"
 msgstr "save the configuration"
 
-#: ../../nethifier.rst:220
+#: ../../nethifier.rst:211
 msgid "Personalizzazione del protocollo"
 msgstr "Customize the protocol"
 
-#: ../../nethifier.rst:222
+#: ../../nethifier.rst:213
 msgid ""
 "È possibili modificare il protocollo con cui aprire |product| tramite il "
 "click sul popup. Eseguire: ::"
@@ -351,15 +365,15 @@ msgstr ""
 "It is possible to modify the protocol used to open |product| by clicking on "
 "the popup. To execute: ::"
 
-#: ../../nethifier.rst:228
+#: ../../nethifier.rst:219
 msgid "dove <PROTO> può assumere i valori *http* o *https*."
 msgstr "where <PROTO> can take the values *http* or *https*."
 
-#: ../../nethifier.rst:231
+#: ../../nethifier.rst:222
 msgid "Backup"
 msgstr "Backup"
 
-#: ../../nethifier.rst:233
+#: ../../nethifier.rst:224
 msgid ""
 "Una volta effettuata una personalizzazione, ricordarsi di aggiungere i file "
 "alla lista dei backup seguendo le istruzioni `qui riportate <http://docs."

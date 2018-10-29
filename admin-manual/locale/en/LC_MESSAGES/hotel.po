@@ -4,22 +4,22 @@ msgid ""
 msgstr ""
 "Project-Id-Version: NethVoice 14\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-04-09 09:59+0200\n"
+"POT-Creation-Date: 2018-10-04 15:40+0200\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2018-04-09 05:24-0400\n"
+"PO-Revision-Date: 2018-04-09 05:24+0000\n"
 "Last-Translator: Andrea Marchionni <andrea.marchionni@nethesis.it>\n"
 "Language-Team: English (United States)\n"
-"Language: en-US\n"
-"X-Generator: Zanata 3.9.6\n"
+"Language: en_US\n"
+"X-Generator: Zanata 4.6.2\n"
 "Plural-Forms: nplurals=2; plural=(n != 1)\n"
 
-#: ../../hotel.rst:13
+#: ../../hotel.rst:3
 msgid "|product_hotel|"
 msgstr "|product_hotel|"
 
-#: ../../hotel.rst:15
+#: ../../hotel.rst:5
 msgid ""
 "|product_hotel| è un modulo di |product| che permette di gestire degli "
 "interni opportunamente configurati come camere di un hotel."
@@ -27,53 +27,53 @@ msgstr ""
 "|Product_hotel| is a module of |product| which allows the management of "
 "interiors appropriately configured as rooms of a hotel."
 
-#: ../../hotel.rst:17
+#: ../../hotel.rst:7
 msgid "L’accesso al |product_hotel| è consentito di default all’utente admin."
 msgstr ""
 "Access to the |product_hotel| it is allowed by default to the admin user."
 
-#: ../../hotel.rst:19
+#: ../../hotel.rst:9
 msgid "Caratteristiche principali:"
 msgstr "Main features:"
 
-#: ../../hotel.rst:21
+#: ../../hotel.rst:11
 msgid "Check-in/Check-out camere"
 msgstr "Check-in/Check-out rooms"
 
-#: ../../hotel.rst:22
-#: ../../hotel.rst:64
+#: ../../hotel.rst:12
+#: ../../hotel.rst:54
 msgid "Sveglia"
 msgstr "Alarm"
 
-#: ../../hotel.rst:23
+#: ../../hotel.rst:13
 msgid "Sveglia di gruppo"
 msgstr "Group alarm "
 
-#: ../../hotel.rst:24
+#: ../../hotel.rst:14
 msgid "Report chiamate"
 msgstr "Call Report"
 
-#: ../../hotel.rst:25
+#: ../../hotel.rst:15
 msgid "Personalizzazione Tariffe"
 msgstr "Customization Rates"
 
-#: ../../hotel.rst:26
+#: ../../hotel.rst:16
 msgid "Numeri brevi"
 msgstr "Short numbers"
 
-#: ../../hotel.rst:27
+#: ../../hotel.rst:17
 msgid "Storico chiamate"
 msgstr "Call history"
 
-#: ../../hotel.rst:28
+#: ../../hotel.rst:18
 msgid "Abilitazione/Disabilitazione chiamate fra camere"
 msgstr "Enabling / disabling calls between rooms"
 
-#: ../../hotel.rst:31
+#: ../../hotel.rst:21
 msgid "Configurazione |product|"
 msgstr "Configuration |product|"
 
-#: ../../hotel.rst:33
+#: ../../hotel.rst:23
 msgid ""
 "Dopo aver installato il modulo |product_hotel| dal sofware center di "
 "|parent_product|, sono necessarie alcune configurazioni lato |product|:"
@@ -81,7 +81,7 @@ msgstr ""
 "After installing the |product hotel| module from the |parent_product| "
 "software center, some configurations are required on the |product| side:"
 
-#: ../../hotel.rst:35
+#: ../../hotel.rst:25
 msgid ""
 "nell'interfaccia avanzata di |product| sezione Connettività -> Rotte in "
 "Uscita, creare una Rotta in Uscita dedicata per le camere che preveda "
@@ -93,7 +93,7 @@ msgstr ""
 "usually 0, leaving it as last in the list of routes, make Save and Apply the "
 "Configurations."
 
-#: ../../hotel.rst:36
+#: ../../hotel.rst:26
 msgid ""
 "nell'interfaccia avanzata di |product| accedere al contesto personalizzato "
 "per gli interni delle camere, sezione Connettività -> Contesti Custom -> "
@@ -106,7 +106,7 @@ msgstr ""
 "section, and enable the newly created Outgoing Route to allow room "
 "extensions to make external calls, make Save and Apply Configurations."
 
-#: ../../hotel.rst:37
+#: ../../hotel.rst:27
 msgid ""
 "Aggiungere gli interni creati per le camere al contesto **hotel** tramite il "
 "modulo **Gestione camere** nel pannello di configurazione di |product|, "
@@ -116,7 +116,7 @@ msgstr ""
 "Manager ** module in the configuration panel of |product|, Applications -> "
 "Room Management, Save and Apply Configurations."
 
-#: ../../hotel.rst:39
+#: ../../hotel.rst:29
 msgid ""
 "Tutti gli interni che fanno parte del contesto **hotel** entrano a far parte "
 "della gestione |product_hotel|."
@@ -124,15 +124,15 @@ msgstr ""
 "All the extensions that are part of the ** hotel ** context become part of "
 "the management |product_hotel|."
 
-#: ../../hotel.rst:42
+#: ../../hotel.rst:32
 msgid "Come configurare il centralino"
 msgstr "How to configure the switchboard"
 
-#: ../../hotel.rst:43
+#: ../../hotel.rst:33
 msgid "Consigliamo di configurare il centralino in questo modo:"
 msgstr "We recommend configuring the switchboard in this way:"
 
-#: ../../hotel.rst:45
+#: ../../hotel.rst:35
 msgid ""
 "tutti gli interni delle camere devono essere aggiunti al contesto hotel sul "
 "pannello di gestione del centralino in Gestione Camere"
@@ -140,7 +140,7 @@ msgstr ""
 "all the extensions of the rooms must be added to the hotel context on the "
 "management panel of the switchboard in Room Management"
 
-#: ../../hotel.rst:46
+#: ../../hotel.rst:36
 msgid ""
 "gli interni di servizio, come ad esempio la reception, non devono essere "
 "aggiunti al contesto hotel e devono essere configurati con interni standard, "
@@ -158,7 +158,7 @@ msgstr ""
 "to configure a short number, instead service extensions between them will "
 "have to call directly."
 
-#: ../../hotel.rst:47
+#: ../../hotel.rst:37
 msgid ""
 "è consigliabile utilizzare per gli interni di servizio una Rotta in Uscita "
 "senza prefisso diversa da quella per gli interni delle camere"
@@ -166,11 +166,11 @@ msgstr ""
 "it is advisable to use an Outgoing Route for the service extensions without "
 "a prefix different from that for the extensions of the rooms"
 
-#: ../../hotel.rst:50
+#: ../../hotel.rst:40
 msgid "Codici funzioni da telefono"
 msgstr "Function codes from phone"
 
-#: ../../hotel.rst:51
+#: ../../hotel.rst:41
 msgid ""
 "Nell'interfaccia di gestione del centralino |product| in Codici Servizi si "
 "trovano i codici per utilizzare le funzionalità del |product_hotel| dai "
@@ -180,15 +180,15 @@ msgstr ""
 "Codes are the codes to use the features of the |product_hotel| from the "
 "phones."
 
-#: ../../hotel.rst:53
+#: ../../hotel.rst:43
 msgid "Ad esempio per aggiungere un extra per una camera dovrò chiamare ::"
 msgstr "For example, to add an extra for a room I will have to call ::"
 
-#: ../../hotel.rst:58
+#: ../../hotel.rst:48
 msgid "Gestione camere"
 msgstr "Room management"
 
-#: ../../hotel.rst:60
+#: ../../hotel.rst:50
 msgid ""
 "Nella pagina principale sono elencate tutte gli interni configurati. Le "
 "camere vengono divise in tab a seconda del valore numerico del campo "
@@ -203,7 +203,7 @@ msgstr ""
 "marked by green, those that have already checked by red, those to be cleaned "
 "by yellow."
 
-#: ../../hotel.rst:62
+#: ../../hotel.rst:52
 msgid ""
 "Tutte le funzioni disponibili sono presentate direttamente nel riquadro "
 "della camere. E' possibile anche utilizzare il menu contestuale con il tasto "
@@ -212,7 +212,7 @@ msgstr ""
 "All available functions are presented directly in the room pane. It is also "
 "possible to use the context menu with the right mouse button."
 
-#: ../../hotel.rst:66
+#: ../../hotel.rst:56
 msgid ""
 "La sveglia può essere programmata una tantum oppure reiterata su più giorni. "
 "Ogni cliente può configurare la sveglia della propria camera componendo il "
@@ -222,11 +222,11 @@ msgstr ""
 "customer can configure the alarm clock of their room by dialing the number ::"
 ""
 
-#: ../../hotel.rst:72
+#: ../../hotel.rst:62
 msgid "Gruppi"
 msgstr "Groups"
 
-#: ../../hotel.rst:74
+#: ../../hotel.rst:64
 msgid ""
 "E' possibile raggruppare più camere in un unico gruppo. Questo consente "
 "effettuare operazioni su tutte le camere membre del gruppo (checkin, "
@@ -241,19 +241,19 @@ msgstr ""
 "settings (enabling calls between rooms, enabling calls between all rooms, "
 "enabling calls external)."
 
-#: ../../hotel.rst:78
+#: ../../hotel.rst:68
 msgid "Aggiungere un Extra"
 msgstr "Add an Extra"
 
-#: ../../hotel.rst:80
+#: ../../hotel.rst:70
 msgid "Per aggiungere un extra ad una camera cliccare sulla relativa icona."
 msgstr "To add an extra to a room click on its icon."
 
-#: ../../hotel.rst:84
+#: ../../hotel.rst:74
 msgid "Report"
 msgstr "Report"
 
-#: ../../hotel.rst:86
+#: ../../hotel.rst:76
 msgid ""
 "Per ottenere il report del conto delle camere attualmente occupate è "
 "sufficiente cliccare sulla relativa icona. Il report riporta il dettaglio di "
@@ -265,11 +265,11 @@ msgstr ""
 "extra, at the bottom there is a summary that displays the total bill in real "
 "time."
 
-#: ../../hotel.rst:90
+#: ../../hotel.rst:80
 msgid "Tariffe"
 msgstr "Rates"
 
-#: ../../hotel.rst:92
+#: ../../hotel.rst:82
 msgid ""
 "All'interno di |product_hotel| è presente un set predefinito di tariffe che "
 "variano in base al tipo di chiamata (es. cellulari, locali, ecc). E' "
@@ -281,11 +281,11 @@ msgstr ""
 "possible to modify existing tariffs or create new ones. It is also possible "
 "to enable / disable calls to particular numbers."
 
-#: ../../hotel.rst:97
+#: ../../hotel.rst:87
 msgid "Extra"
 msgstr "Extra"
 
-#: ../../hotel.rst:99
+#: ../../hotel.rst:89
 msgid ""
 "E' possibile configurare degli extra. E' possibile poi assegnarli alle varie "
 "camere sia da interfaccia web e sia da telefono (ad esempio basta chiamare "
@@ -295,55 +295,55 @@ msgstr ""
 "the various rooms both from a web interface and from a telephone (for "
 "example, just call the ::"
 
-#: ../../hotel.rst:105
+#: ../../hotel.rst:95
 msgid "Opzioni"
 msgstr "Options"
 
-#: ../../hotel.rst:107
+#: ../../hotel.rst:97
 msgid "Le opzioni generali comprendono:"
 msgstr "The general options include:"
 
-#: ../../hotel.rst:109
+#: ../../hotel.rst:99
 msgid "Configurazione del prefisso per effettuare chiamate esterne"
 msgstr "Prefix configuration for making external calls"
 
-#: ../../hotel.rst:110
+#: ../../hotel.rst:100
 msgid "Formato interni"
 msgstr "Extension format"
 
-#: ../../hotel.rst:111
+#: ../../hotel.rst:101
 msgid "Abilitazione/disabilitazione delle chiamate fra camere"
 msgstr "Enabling / disabling calls between rooms"
 
-#: ../../hotel.rst:112
+#: ../../hotel.rst:102
 msgid ""
 "Abilitazione/disabilitazione delle chiamate fra camere appartenenti allo "
 "stesso gruppo"
 msgstr "Enabling / disabling calls between rooms belonging to the same group"
 
-#: ../../hotel.rst:113
+#: ../../hotel.rst:103
 msgid "Abilitazione/disabilitazione delle chiamate esterne"
 msgstr "Enabling / disabling external calls"
 
-#: ../../hotel.rst:114
+#: ../../hotel.rst:104
 msgid ""
 "Abilitazione/disabilitazione delle chiamate fra camere che non hanno "
 "eseguito il check-in"
 msgstr "Enabling / disabling calls between rooms that have not checked in"
 
-#: ../../hotel.rst:115
+#: ../../hotel.rst:105
 msgid "Interno da contattare per allarmi sveglia non risposta"
 msgstr "Extension to call for alarm not answered"
 
-#: ../../hotel.rst:116
+#: ../../hotel.rst:106
 msgid "Abilitazione della funzione Pulizia Camere"
 msgstr "Enabling the Room Cleaning function"
 
-#: ../../hotel.rst:117
+#: ../../hotel.rst:107
 msgid "Abilitare il codice per la Pulizia Camere"
 msgstr "Enable the code for Room Cleaning"
 
-#: ../../hotel.rst:118
+#: ../../hotel.rst:108
 msgid ""
 "Lingua per i messaggi dell'interno della Reception, funzionerà anche come "
 "fallback per le camere senza impostazioni."
@@ -351,11 +351,11 @@ msgstr ""
 "Language for Reception message, will also function as a fallback for rooms "
 "without settings."
 
-#: ../../hotel.rst:122
+#: ../../hotel.rst:112
 msgid "Numeri Brevi"
 msgstr "Short numbers"
 
-#: ../../hotel.rst:124
+#: ../../hotel.rst:114
 msgid ""
 "La sezione Numeri Brevi consente di specificare delle scorciatoie per "
 "chiamare interni predefiniti, ad esempio 9 per contattare la reception. E' "
@@ -371,11 +371,11 @@ msgstr ""
 "destinations for the call, if the time condition is respected in "
 "Destination, if it is not in Otherwise."
 
-#: ../../hotel.rst:128
+#: ../../hotel.rst:118
 msgid "Storico"
 msgstr "History"
 
-#: ../../hotel.rst:130
+#: ../../hotel.rst:120
 msgid ""
 "Qualora sia necessario consultare uno storico di tutte le chiamate "
 "effettuate dalle camere è possibile utilizzare la sezione **Storico**. Lo "

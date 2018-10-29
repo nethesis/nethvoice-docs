@@ -3,114 +3,106 @@ msgid ""
 msgstr ""
 "Project-Id-Version: NethVoice 14\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-04-09 09:59+0200\n"
+"POT-Creation-Date: 2018-10-04 15:40+0200\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2018-04-09 06:10-0400\n"
+"PO-Revision-Date: 2018-10-02 01:52+0000\n"
 "Last-Translator: Andrea Marchionni <andrea.marchionni@nethesis.it>\n"
 "Language-Team: English (United States)\n"
-"Language: en-US\n"
-"X-Generator: Zanata 3.9.6\n"
+"Language: en_US\n"
+"X-Generator: Zanata 4.6.2\n"
 "Plural-Forms: nplurals=2; plural=(n != 1)\n"
 
-#: ../../provisioning_phone.rst:13
+#: ../../provisioning_phone.rst:3
 msgid "Provisioning dei telefoni"
 msgstr "Phones Provisioning"
 
-#: ../../provisioning_phone.rst:16
+#: ../../provisioning_phone.rst:6
 msgid "Telefoni supportati"
 msgstr "Supported Phones"
 
-#: ../../provisioning_phone.rst:19
+#: ../../provisioning_phone.rst:9
 msgid "SANGOMA"
 msgstr "SANGOMA"
 
-#: ../../provisioning_phone.rst:20
+#: ../../provisioning_phone.rst:10
 msgid "S205"
 msgstr "S205"
 
-#: ../../provisioning_phone.rst:21
+#: ../../provisioning_phone.rst:11
 msgid "S300"
 msgstr "S300"
 
-#: ../../provisioning_phone.rst:22
+#: ../../provisioning_phone.rst:12
 msgid "S400, S405"
 msgstr "S400, S405"
 
-#: ../../provisioning_phone.rst:23
+#: ../../provisioning_phone.rst:13
 msgid "S500"
 msgstr "S500"
 
-#: ../../provisioning_phone.rst:24
+#: ../../provisioning_phone.rst:14
 msgid "S700, S705"
 msgstr "S700, S705"
 
-#: ../../provisioning_phone.rst:27
+#: ../../provisioning_phone.rst:17
 msgid "YEALINK"
 msgstr "YEALINK"
 
-#: ../../provisioning_phone.rst:29
+#: ../../provisioning_phone.rst:19
 msgid "T19(P) E2, T21(P) E2, T23G, T27G, T29G"
 msgstr "T19(P) E2, T21(P) E2, T23G, T27G, T29G"
 
-#: ../../provisioning_phone.rst:30
+#: ../../provisioning_phone.rst:20
 msgid "T40P/G, T41P/S, T42G/S, T46G/S, T48G/S, T49G"
 msgstr "T40P/G, T41P/S, T42G/S, T46G/S, T48G/S, T49G"
 
-#: ../../provisioning_phone.rst:31
+#: ../../provisioning_phone.rst:21
 msgid "T52S, T54S, T56A, T58A, T58V"
 msgstr "T52S, T54S, T56A, T58A, T58V"
 
-#: ../../provisioning_phone.rst:34
+#: ../../provisioning_phone.rst:24
 msgid "SNOM"
 msgstr "SNOM"
 
-#: ../../provisioning_phone.rst:36
+#: ../../provisioning_phone.rst:26
 msgid "D120"
 msgstr "D120"
 
-#: ../../provisioning_phone.rst:37
+#: ../../provisioning_phone.rst:27
 msgid "D305, D315, D345, D375"
 msgstr "D305, D315, D345, D375"
 
-#: ../../provisioning_phone.rst:38
+#: ../../provisioning_phone.rst:28
 msgid "D710, D721, D715, D725, D745, D765, D785"
 msgstr "D710, D721, D715, D725, D745, D765, D785"
 
-#: ../../provisioning_phone.rst:41
+#: ../../provisioning_phone.rst:31
 msgid "ALCATEL"
 msgstr "ALCATEL"
 
-#: ../../provisioning_phone.rst:43
+#: ../../provisioning_phone.rst:33
 msgid "IP150, IP251, IP301, IP701"
 msgstr "IP150, IP251, IP301, IP701"
 
-#: ../../provisioning_phone.rst:46
+#: ../../provisioning_phone.rst:36
 msgid "GIGASET"
 msgstr "GIGASET"
 
-#: ../../provisioning_phone.rst:48
+#: ../../provisioning_phone.rst:38
 msgid "Maxwell basic, Maxwell 2, Maxwell 3"
 msgstr "Maxwell basic, Maxwell 2, Maxwell 3"
 
-#: ../../provisioning_phone.rst:50
-msgid ""
-"Alcuni modelli non più in produzione vengono comunque supportati per "
-"retrocompatibilità."
-msgstr ""
-"Some models no longer in production are still supported for backwards "
-"compatibility."
-
-#: ../../provisioning_phone.rst:53
+#: ../../provisioning_phone.rst:41
 msgid "Provisioning"
 msgstr "Provisioning"
 
-#: ../../provisioning_phone.rst:55
+#: ../../provisioning_phone.rst:43
 msgid "Cosa significa **Provisioning**?"
 msgstr "What does **Provisioning** mean?"
 
-#: ../../provisioning_phone.rst:57
+#: ../../provisioning_phone.rst:45
 msgid ""
 "**Provisioning** è configurare i telefoni in modalità automatica limitando "
 "al massimo le operazioni necessarie."
@@ -118,59 +110,59 @@ msgstr ""
 "**Provisioning** is to configure the phones in automatic mode, limiting as "
 "much as necessary actions to do."
 
-#: ../../provisioning_phone.rst:59
+#: ../../provisioning_phone.rst:47
 msgid "Il **Provisioning** si svolge in diversi passi:"
 msgstr "**Provisioning** takes place in several steps:"
 
-#: ../../provisioning_phone.rst:61
+#: ../../provisioning_phone.rst:49
 msgid "Ricerca dei telefoni da configurare"
 msgstr "Search for the phones to be configured"
 
-#: ../../provisioning_phone.rst:62
+#: ../../provisioning_phone.rst:50
 msgid "Creazione dei file necessari alla configurazione dei telefoni"
 msgstr "Creating the files necessary for configuring the phones"
 
-#: ../../provisioning_phone.rst:63
+#: ../../provisioning_phone.rst:51
 msgid "Pubblicazione dei file di configurazione"
 msgstr "Publishing configuration files"
 
-#: ../../provisioning_phone.rst:64
+#: ../../provisioning_phone.rst:52
 msgid "Aggiornamento del firmware dei telefoni"
 msgstr "Updating the firmware of the phones"
 
-#: ../../provisioning_phone.rst:65
+#: ../../provisioning_phone.rst:53
 msgid ""
 "Indicare ai telefoni dove e come possono trovare i file di configurazione"
 msgstr "Tell the phones where and how they can find the configuration files"
 
-#: ../../provisioning_phone.rst:66
-#: ../../provisioning_phone.rst:167
+#: ../../provisioning_phone.rst:54
+#: ../../provisioning_phone.rst:150
 msgid "Riavvio dei telefoni"
 msgstr "Restarting the phones"
 
-#: ../../provisioning_phone.rst:67
+#: ../../provisioning_phone.rst:55
 msgid "Scambio file tra |product| e i telefoni"
 msgstr "File exchange between |product| and phones"
 
-#: ../../provisioning_phone.rst:71
+#: ../../provisioning_phone.rst:59
 msgid "Ricerca dei telefoni"
 msgstr "Search for phones"
 
-#: ../../provisioning_phone.rst:73
+#: ../../provisioning_phone.rst:61
 msgid ""
-"|product| deve recuperare i mac-address dei telefoni da configurare, il mac-"
+"|product| deve recuperare i MAC address dei telefoni da configurare, il MAC "
 "address è alla base del **Provisioning** in quanto strumento univoco di "
 "identificazione dei telefoni."
 msgstr ""
-"|product| must recover the mac-addresses of the phones to be configured, the "
-"mac-address is at the basis of **Provisioning** as a unique device "
+"|product| must recover the MAC addresses of the phones to be configured, the "
+"MAC address is at the basis of **Provisioning** as a unique device "
 "identification tool."
 
-#: ../../provisioning_phone.rst:75
+#: ../../provisioning_phone.rst:63
 msgid "Due modalità possibili:"
 msgstr "Two possible ways:"
 
-#: ../../provisioning_phone.rst:77
+#: ../../provisioning_phone.rst:65
 msgid ""
 "Scansione delle reti locali alla ricerca di apparati telefonici supportati "
 "già online come documentato :ref:`qui <telefoni_fisici_supportati>`"
@@ -178,20 +170,20 @@ msgstr ""
 "Scanning of local networks searching for supported phone devices already "
 "online as documented :ref:`here <telefoni_fisici_supportati>`"
 
-#: ../../provisioning_phone.rst:78
+#: ../../provisioning_phone.rst:66
 msgid ""
-"Scansione del codice a barre del mac-address del telefono tramite l’app :ref:"
+"Scansione del codice a barre del MAC address del telefono tramite l’app :ref:"
 "`Scan & Play 14 <app_mobile>` in questo caso il telefono può essere ancora "
 "inscatolato"
 msgstr ""
-"Scan the barcode of the mac-address of the phone via the app :ref:`Scan & "
+"Scan the barcode of the MAC address of the phone via the app:ref:`Scan & "
 "Play 14 <app_mobile>` in this case the phone can still be boxed"
 
-#: ../../provisioning_phone.rst:81
+#: ../../provisioning_phone.rst:69
 msgid "Creazione della configurazione"
 msgstr "Creating the configuration"
 
-#: ../../provisioning_phone.rst:82
+#: ../../provisioning_phone.rst:70
 msgid ""
 "La configurazione dei telefoni viene creata tramite l’associazione del "
 "telefono all’utente nel :ref:`Wizard di configurazione <configurazioni>`."
@@ -199,7 +191,7 @@ msgstr ""
 "The configuration of the telephones is created by associating the phone with "
 "the user in the :ref:`Configuration wizard <configurazioni>`."
 
-#: ../../provisioning_phone.rst:84
+#: ../../provisioning_phone.rst:72
 msgid ""
 "Ad ogni utente possono essere associati al massimo 8 device telefonici che "
 "verranno configurati a partire dall’interno principale associato all’utente "
@@ -209,44 +201,44 @@ msgstr ""
 "configured starting from the main extension associated to the user and to "
 "follow in the mode:"
 
-#: ../../provisioning_phone.rst:86
+#: ../../provisioning_phone.rst:74
 msgid "Interno Principale"
 msgstr "Main extension"
 
-#: ../../provisioning_phone.rst:87
+#: ../../provisioning_phone.rst:75
 msgid "91+Interno Principale"
 msgstr "91+Main extension"
 
-#: ../../provisioning_phone.rst:88
+#: ../../provisioning_phone.rst:76
 msgid "92+Interno Principale"
 msgstr "92+Main extension"
 
-#: ../../provisioning_phone.rst:89
+#: ../../provisioning_phone.rst:77
 msgid "93+Interno Principale"
 msgstr "93+Main extension"
 
-#: ../../provisioning_phone.rst:90
+#: ../../provisioning_phone.rst:78
 msgid "\\.\\.\\.\\.\\.\\.\\.\\."
 msgstr "\\.\\.\\.\\.\\.\\.\\.\\."
 
-#: ../../provisioning_phone.rst:93
+#: ../../provisioning_phone.rst:81
 msgid "Pubblicazione della configurazione"
 msgstr "Publication of the configuration"
 
-#: ../../provisioning_phone.rst:95
+#: ../../provisioning_phone.rst:83
 msgid ""
 "La pubblicazione dei file di configurazione avviene quando viene premuto il "
-"pulsante Configura e Riavvia nel :ref:`Wizard di configurazione "
+"pulsante :guilabel:`Configura e Riavvia` nel :ref:`Wizard di configurazione "
 "<configurazioni>`."
 msgstr ""
-"The configuration files are published when the Configure and Restart button "
-"is pressed in :ref:`Configuration Wizard <configurazioni>`."
+"The configuration files are published when the :guilabel:`Configure and "
+"Restart` button is pressed in :ref:`Configuration wizard <configurations>`."
 
-#: ../../provisioning_phone.rst:98
+#: ../../provisioning_phone.rst:86
 msgid "Aggiornamento firmware"
 msgstr "Firmware update"
 
-#: ../../provisioning_phone.rst:100
+#: ../../provisioning_phone.rst:88
 msgid ""
 "Contemporaneamente alla configurazione dei telefoni è possibile anche "
 "aggiornare il firmware."
@@ -254,15 +246,15 @@ msgstr ""
 "Simultaneously with the configuration of the phones it is also possible to "
 "update the firmware."
 
-#: ../../provisioning_phone.rst:102
-msgid "Per farlo è necessario caricare il firmware nella directory"
-msgstr "To do this it is necessary to load the firmware in the directory"
+#: ../../provisioning_phone.rst:90
+msgid ""
+"Per farlo è necessario caricare il firmware nella directory :file:`/var/lib/"
+"tftpboot/`"
+msgstr ""
+"To do this it is necessary to load the firmware in the directory :file:`/ "
+"var / lib / tftpboot /`"
 
-#: ../../provisioning_phone.rst:104
-msgid "/var/lib/tftpboot/"
-msgstr "/var/lib/tftpboot/"
-
-#: ../../provisioning_phone.rst:106
+#: ../../provisioning_phone.rst:92
 msgid ""
 "Il file deve essere nominato seguendo le specifiche del produttore del "
 "telefono, di solito lo schema è **Modello.estensione**"
@@ -270,35 +262,11 @@ msgstr ""
 "The file must be named according to the specifications of the phone "
 "manufacturer, usually the pattern is **Model.extension**"
 
-#: ../../provisioning_phone.rst:108
+#: ../../provisioning_phone.rst:94
 msgid "Ad esempio:"
 msgstr "For example:"
 
-#: ../../provisioning_phone.rst:110
-msgid "fw500.rom   per Sangoma 500"
-msgstr "fw500.rom for Sangoma 500"
-
-#: ../../provisioning_phone.rst:112
-msgid "T27P.rom    per Yealink T27P"
-msgstr "T27P.rom    for Yealink T27P"
-
-#: ../../provisioning_phone.rst:114
-msgid "D745.bin    per Snom D745"
-msgstr "D745.bin    for Snom D745"
-
-#: ../../provisioning_phone.rst:116
-msgid "725.bin     per Snom D725"
-msgstr "725.bin     for Snom D725"
-
-#: ../../provisioning_phone.rst:118
-msgid "IP701G.img  per Alcatel IP701G"
-msgstr "IP701G.img  for Alcatel IP701G"
-
-#: ../../provisioning_phone.rst:120
-msgid "maxwell.bin per Gigaset Maxwell Basic/2/3"
-msgstr "maxwell.bin for Gigaset Maxwell Basic/2/3"
-
-#: ../../provisioning_phone.rst:123
+#: ../../provisioning_phone.rst:106
 msgid ""
 "I telefoni SNOM richiedono necessariamente il firmware per un corretto avvio "
 "del telefono, se non presente il telefono mostrerà un errore a schermo "
@@ -308,35 +276,35 @@ msgstr ""
 "phone, if not present the phone will show a screen fault that can only be "
 "overcome by pressing a key."
 
-#: ../../provisioning_phone.rst:127
+#: ../../provisioning_phone.rst:110
 msgid "Dove e come trovare i file di configurazione"
 msgstr "Where and how to find the configuration files"
 
-#: ../../provisioning_phone.rst:129
+#: ../../provisioning_phone.rst:112
 msgid ""
 "I telefoni necessitano di conoscere dove si trova la configurazione a loro "
 "dedicata."
 msgstr "The phones need to know where the configuration dedicated to them is."
 
-#: ../../provisioning_phone.rst:131
+#: ../../provisioning_phone.rst:114
 msgid "I metodi principali per farlo sono:"
 msgstr "The main methods for doing this are:"
 
-#: ../../provisioning_phone.rst:133
-#: ../../provisioning_phone.rst:139
+#: ../../provisioning_phone.rst:116
+#: ../../provisioning_phone.rst:122
 msgid "DHCP"
 msgstr "DHCP"
 
-#: ../../provisioning_phone.rst:134
-#: ../../provisioning_phone.rst:149
-msgid "Plug & Play"
-msgstr "Plug & Play"
+#: ../../provisioning_phone.rst:117
+#: ../../provisioning_phone.rst:132
+msgid "Plug & Play(PNP)"
+msgstr "Plug & Play(PNP)"
 
-#: ../../provisioning_phone.rst:135
+#: ../../provisioning_phone.rst:118
 msgid "Interfaccia web"
 msgstr "Web interface"
 
-#: ../../provisioning_phone.rst:141
+#: ../../provisioning_phone.rst:124
 msgid ""
 "L’opzione 66 (114 per i telefoni Gigaset) del DHCP è quella che viene "
 "utilizzata dai telefoni per sapere dove si trova il server in grado di "
@@ -346,7 +314,7 @@ msgstr ""
 "phones to know where the server is located that can send them the "
 "configuration."
 
-#: ../../provisioning_phone.rst:143
+#: ../../provisioning_phone.rst:126
 msgid ""
 "Il DHCP di |product| configura automaticamente questa opzione, quindi se è "
 "|product| a dare l’IP al telefono è tutto pronto."
@@ -354,7 +322,7 @@ msgstr ""
 "The DHCP of |product| configure this option automatically, so if it is "
 "|product| to give the IP on the phone the configuration is ready."
 
-#: ../../provisioning_phone.rst:145
+#: ../../provisioning_phone.rst:128
 msgid ""
 "Se invece è un altro server a dare l’IP ai telefoni è necessario configurare "
 "l’opzione necessaria con l’IP del |product|."
@@ -362,7 +330,7 @@ msgstr ""
 "If, on the other hand, another server gives the IP to the phones, the "
 "necessary option must be configured with the IP of the |product|."
 
-#: ../../provisioning_phone.rst:151
+#: ../../provisioning_phone.rst:134
 msgid ""
 "Il servizio Plug & Play che molti modelli supportano consente ai telefoni di "
 "autonomamente cercare in rete un server in grado di configurarli."
@@ -370,7 +338,7 @@ msgstr ""
 "The Plug & Play service that many models support allows phones to "
 "autonomously search the network for a server that can configure them."
 
-#: ../../provisioning_phone.rst:153
+#: ../../provisioning_phone.rst:136
 msgid ""
 "I telefoni effettuano traffico multicast alla ricerca del server della "
 "configurazione, |product| risponde a queste connessioni proponendosi."
@@ -378,7 +346,7 @@ msgstr ""
 "Phones carry out multicast traffic looking for the configuration server, "
 "|product| it responds to these connections by proposing itself."
 
-#: ../../provisioning_phone.rst:155
+#: ../../provisioning_phone.rst:138
 msgid ""
 "Data la natura del protocollo, il successo del Plug & Play dipende molto "
 "dalla rete in cui viene utilizzato, switch, hub, virtualizzazione possono "
@@ -387,11 +355,11 @@ msgstr ""
 "The success of Plug & Play depends heavily on the network in which it is "
 "used, switches, hubs, virtualization can block requests."
 
-#: ../../provisioning_phone.rst:159
+#: ../../provisioning_phone.rst:142
 msgid "Interfaccia Web"
 msgstr "Web Interface"
 
-#: ../../provisioning_phone.rst:161
+#: ../../provisioning_phone.rst:144
 msgid ""
 "Come ultima possibilità, è possibile collegarsi all’interfaccia web del "
 "telefono e indicare dove il telefono deve collegarsi per ottenere la "
@@ -400,14 +368,13 @@ msgstr ""
 "As a last resort, you can connect to the phone's web interface and indicate "
 "where the phone should connect to get the configuration."
 
-#: ../../provisioning_phone.rst:163
+#: ../../provisioning_phone.rst:146
 msgid ""
 "Ricordarsi di disattivare le modalità automatiche se non utilizzate, DHCP e "
-"PNP(Plug & Play)."
-msgstr ""
-"Remember to disable automatic modes if not used, DHCP and PNP (Plug & Play)."
+"PNP."
+msgstr "Remember to disable automatic modes if not used, DHCP and PNP."
 
-#: ../../provisioning_phone.rst:169
+#: ../../provisioning_phone.rst:152
 msgid ""
 "Una volta creata la configurazione e stabilito che il telefono saprà dove "
 "collegarsi per recuperarla, è ovviamente necessario riavviare il telefono se "
@@ -417,7 +384,7 @@ msgstr ""
 "know where to connect to recover it, it is obviously necessary to restart "
 "the phone if already online."
 
-#: ../../provisioning_phone.rst:171
+#: ../../provisioning_phone.rst:154
 msgid ""
 "Per riavviarlo utilizzare la funzionalità nel :ref:`Wizard di configurazione "
 "<configurazioni>`."
@@ -425,35 +392,28 @@ msgstr ""
 "To restart it use the functionality in the :ref: `Configuration Wizard "
 "<configurazioni>`."
 
-#: ../../provisioning_phone.rst:175
+#: ../../provisioning_phone.rst:158
 msgid "Scambio file"
 msgstr "File exchange"
 
-#: ../../provisioning_phone.rst:177
+#: ../../provisioning_phone.rst:160
 msgid ""
 "|product| e i telefoni supportati per lo scambio dei files di configurazione "
-"ed eventualmente del firmware utilizzano il protocollo:"
+"ed eventualmente del firmware utilizzano il protocollo **TFTP** sulla porta "
+"69 UDP"
 msgstr ""
-"|product| and the supported phones for the exchange of configuration files "
-"and eventually firmware use the protocol:"
+"|product| and the supported telephones for the exchange of configuration "
+"files and eventually firmware use the ** TFTP ** protocol on port 69 UDP"
 
-#: ../../provisioning_phone.rst:179
-msgid "TFTP"
-msgstr "TFTP"
-
-#: ../../provisioning_phone.rst:181
-msgid "Che utilizza la porta 69 UDP"
-msgstr "Which uses port 69 UDP"
-
-#: ../../provisioning_phone.rst:185
+#: ../../provisioning_phone.rst:164
 msgid "Template"
 msgstr "Template"
 
-#: ../../provisioning_phone.rst:187
+#: ../../provisioning_phone.rst:166
 msgid "Qual è la configurazione che viene creata dal Wizard per i telefoni?"
 msgstr "What configuration is created by the Phone Wizard?"
 
-#: ../../provisioning_phone.rst:189
+#: ../../provisioning_phone.rst:168
 msgid ""
 "Viene utilizzato un template di configurazione che va ad impostare i "
 "parametri per adattarli al meglio all’utilizzo del telefono con |product|."
@@ -461,7 +421,7 @@ msgstr ""
 "A configuration template is used that sets the parameters to best suit the "
 "use of the phone with |product|."
 
-#: ../../provisioning_phone.rst:191
+#: ../../provisioning_phone.rst:170
 msgid ""
 "Tutti gli aspetti generici e necessari vengono configurati, da quelli basici "
 "(interno, password,..) a quelli funzionali (rubrica LDAP, function keys, "
@@ -471,11 +431,11 @@ msgstr ""
 "(internal, password, ..) to the functional ones (LDAP address book, function "
 "keys, soft keys, ...)"
 
-#: ../../provisioning_phone.rst:195
+#: ../../provisioning_phone.rst:174
 msgid "Modifica Template"
 msgstr "Edit Template"
 
-#: ../../provisioning_phone.rst:197
+#: ../../provisioning_phone.rst:176
 msgid ""
 "Se si vuole modificare o personalizzare le impostazioni di telefoni "
 "configurati tramite il provisioning, NON bisogna intervenire "
@@ -485,7 +445,7 @@ msgstr ""
 "provisioning, you do NOT have to intervene on the interface of the "
 "individual phones."
 
-#: ../../provisioning_phone.rst:199
+#: ../../provisioning_phone.rst:178
 msgid ""
 "Infatti, ad ogni riavvio del telefono, quelle impostazioni non verranno "
 "mantenute, e il telefono riprenderà le configurazioni di default del "
@@ -494,7 +454,7 @@ msgstr ""
 "In fact, each time the phone is rebooted, those settings will not be "
 "retained, and the phone will resume the default provisioning configurations."
 
-#: ../../provisioning_phone.rst:201
+#: ../../provisioning_phone.rst:180
 msgid ""
 "Bisogna invece intervenire direttamente sull'interfaccia avanzata di "
 "|product|, modificando i template del provisioning."
@@ -502,20 +462,80 @@ msgstr ""
 "Instead, it is necessary to intervene directly on the advanced interface of "
 "|product|, modifying the provisioning templates."
 
-#: ../../provisioning_phone.rst:203
+#: ../../provisioning_phone.rst:182
+msgid "I valori modificabili sono:"
+msgstr "The values that can be changed are:"
+
+#: ../../provisioning_phone.rst:184
+msgid "Lingua"
+msgstr "Language"
+
+#: ../../provisioning_phone.rst:185
+msgid "Fuso orario"
+msgstr "Time zone"
+
+#: ../../provisioning_phone.rst:186
+msgid "Formato data/ora"
+msgstr "Date/time format"
+
+#: ../../provisioning_phone.rst:187
+msgid "Toni"
+msgstr "Tones"
+
+#: ../../provisioning_phone.rst:188
+msgid "Password utente admin"
+msgstr "Admin password"
+
+#: ../../provisioning_phone.rst:189
+msgid "Avviso di chiamata"
+msgstr "Call waiting"
+
+#: ../../provisioning_phone.rst:190
+msgid "Suoneria"
+msgstr "Ringtone"
+
+#: ../../provisioning_phone.rst:191
+msgid "Modalità di trasferimento"
+msgstr "Transfer mode"
+
+#: ../../provisioning_phone.rst:192
+msgid "Rubrica LDAP"
+msgstr "LDAP directory"
+
+#: ../../provisioning_phone.rst:193
+msgid "VLAN"
+msgstr "VLAN"
+
+#: ../../provisioning_phone.rst:194
+msgid "Soft keys (Tasti del telefono sotto lo schermo)"
+msgstr "Soft keys (Phone keys below the screen)"
+
+#: ../../provisioning_phone.rst:195
+msgid "Line keys (Tasti linea)"
+msgstr "Line keys"
+
+#: ../../provisioning_phone.rst:196
+msgid "Exp keys  (Tasti linea dei moduli di espansione)"
+msgstr "Exp keys"
+
+#: ../../provisioning_phone.rst:197
+msgid "Screen Saver e Sfondo (Sangomai, Yealink)"
+msgstr "Screen Saver and Background (Sangoma, Yealink)"
+
+#: ../../provisioning_phone.rst:199
 msgid "Le possibilità sono due:"
 msgstr "The possibilities are two:"
 
-#: ../../provisioning_phone.rst:205
-#: ../../provisioning_phone.rst:211
+#: ../../provisioning_phone.rst:201
+#: ../../provisioning_phone.rst:207
 msgid "Personalizzare singolo telefono"
 msgstr "Customize single phone"
 
-#: ../../provisioning_phone.rst:207
+#: ../../provisioning_phone.rst:203
 msgid "Personalizzare singolo modello (tutti i Sangoma S500 ad esempio)"
 msgstr "Customize single model (all Sangoma S500 for example)"
 
-#: ../../provisioning_phone.rst:213
+#: ../../provisioning_phone.rst:209
 msgid ""
 "Può emergere l’esigenza di cambiare la configurazione di un singolo "
 "telefono, ad esempio per utilizzare i tasti BLF, o variare una "
@@ -526,7 +546,7 @@ msgstr ""
 "example to use the BLF keys, or to change a default configuration for a "
 "particular need, such as disabling call waiting."
 
-#: ../../provisioning_phone.rst:215
+#: ../../provisioning_phone.rst:211
 msgid ""
 "Queste operazioni possono essere effettuate nell’interfaccia avanzata di "
 "|product|, ma lavoreremo per integrare queste funzionalità direttamente nel "
@@ -535,12 +555,16 @@ msgstr ""
 "These operations can be performed in the advanced |product| interface, but "
 "we will work to integrate these features directly into the Wizard."
 
-#: ../../provisioning_phone.rst:217
-#: ../../provisioning_phone.rst:255
-msgid "Nel menù scegliere Connettività -> OSS Endpoint Template Manager"
-msgstr "In the menu choose Connectivity -> OSS Endpoint Template Manager"
+#: ../../provisioning_phone.rst:213
+#: ../../provisioning_phone.rst:233
+msgid ""
+"Nel menù scegliere :guilabel:`Connettività -> OSS Endpoint Template Manager`."
+""
+msgstr ""
+"In the menu choose :guilabel:`Connectivity -> OSS Endpoint Template Manager`."
+""
 
-#: ../../provisioning_phone.rst:219
+#: ../../provisioning_phone.rst:215
 msgid ""
 "In questa parte si trovano tutte le configurazioni create dal provisioning "
 "di |product|."
@@ -548,93 +572,19 @@ msgstr ""
 "This part contains all the configurations created by the provisioning of "
 "|product|."
 
-#: ../../provisioning_phone.rst:221
+#: ../../provisioning_phone.rst:217
 msgid ""
-"La chiave per individuare il telefono da modificare è il **mac-address**."
-msgstr "The key to locate the phone to be changed is the **mac-address**."
+"La chiave per individuare il telefono da modificare è il **MAC address**."
+msgstr "The key to locate the phone to be changed is the **MAC address**."
 
-#: ../../provisioning_phone.rst:223
+#: ../../provisioning_phone.rst:219
 msgid ""
 "Entrando in modifica del telefono scelto, vengono mostrati i parametri che è "
 "possibile variare."
 msgstr ""
 "Modify  selected phone change, the parameters that can be changed are shown."
 
-#: ../../provisioning_phone.rst:225
-msgid "Per i telefoni supportati sono:"
-msgstr "For supported phones are:"
-
-#: ../../provisioning_phone.rst:227
-#: ../../provisioning_phone.rst:264
-msgid "Lingua"
-msgstr "Language"
-
-#: ../../provisioning_phone.rst:228
-#: ../../provisioning_phone.rst:265
-msgid "Fuso orario"
-msgstr "Time zone"
-
-#: ../../provisioning_phone.rst:229
-#: ../../provisioning_phone.rst:266
-msgid "Formato data/ora"
-msgstr "Date/time format"
-
-#: ../../provisioning_phone.rst:230
-#: ../../provisioning_phone.rst:267
-msgid "Toni"
-msgstr "Tones"
-
-#: ../../provisioning_phone.rst:231
-#: ../../provisioning_phone.rst:268
-msgid "Password utente admin"
-msgstr "Admin password"
-
-#: ../../provisioning_phone.rst:232
-#: ../../provisioning_phone.rst:269
-msgid "Avviso di chiamata"
-msgstr "Call waiting"
-
-#: ../../provisioning_phone.rst:233
-#: ../../provisioning_phone.rst:270
-msgid "Suoneria"
-msgstr "Ringtone"
-
-#: ../../provisioning_phone.rst:234
-#: ../../provisioning_phone.rst:271
-msgid "Modalità di trasferimento"
-msgstr "Transfer mode"
-
-#: ../../provisioning_phone.rst:235
-#: ../../provisioning_phone.rst:272
-msgid "Rubrica LDAP"
-msgstr "LDAP directory"
-
-#: ../../provisioning_phone.rst:236
-#: ../../provisioning_phone.rst:273
-msgid "VLAN"
-msgstr "VLAN"
-
-#: ../../provisioning_phone.rst:237
-#: ../../provisioning_phone.rst:274
-msgid "Soft keys"
-msgstr "Soft keys"
-
-#: ../../provisioning_phone.rst:238
-#: ../../provisioning_phone.rst:275
-msgid "Line keys"
-msgstr "Line keys"
-
-#: ../../provisioning_phone.rst:239
-#: ../../provisioning_phone.rst:276
-msgid "Exp keys"
-msgstr "Exp keys"
-
-#: ../../provisioning_phone.rst:240
-#: ../../provisioning_phone.rst:277
-msgid "Screen Saver e Sfondo (Sangomai, Yealink)"
-msgstr "Screen Saver and Background (Sangoma, Yealink)"
-
-#: ../../provisioning_phone.rst:243
+#: ../../provisioning_phone.rst:221
 msgid ""
 "Dopo aver salvato i cambiamenti, per pubblicare la configurazione modificata "
 "è necessario applicare i cambiamenti."
@@ -642,45 +592,46 @@ msgstr ""
 "After saving the changes, changes must be applied to publish the modified "
 "configuration."
 
-#: ../../provisioning_phone.rst:245
+#: ../../provisioning_phone.rst:223
 msgid ""
 "Rimane il riavvio del dispositivo per consentire al telefono di recuperare "
 "la nuova configurazione, da effettuare con le modalità solite nel :ref:"
-"`Wizard di configurazione <configurazioni>` o da Connettività -> OSS "
-"Endpoint Device List."
+"`Wizard di configurazione <configurazioni>` o da :guilabel:`Connettività -> "
+"OSS Endpoint Device List`."
 msgstr ""
 "Remains the restart of the device to allow the phone to recover the new "
-"configuration, to be done with the usual methods in :ref: `Configuration "
-"Wizard <configurazioni>` or from Connectivity -> OSS Endpoint Device List."
+"configuration, to be done with the usual methods in the :ref:`Configuration "
+"Wizard <configurations>` or from :guilabel:`Connectivity -> OSS Endpoint "
+"Device List`."
 
-#: ../../provisioning_phone.rst:249
+#: ../../provisioning_phone.rst:227
 msgid "Personalizzare singolo modello"
 msgstr "Customize single model"
 
-#: ../../provisioning_phone.rst:251
+#: ../../provisioning_phone.rst:229
 msgid ""
 "Se l’esigenza invece quella di modificare la configurazione non di un "
 "singolo telefono ma quella di tutti i telefoni dello stesso modello, ad "
 "esempio tutti i telefoni Sangoma 500, non agiremo su una configurazione "
-"legata ad un mac-address ma dovremo creare un template ad hoc."
+"legata ad un MAC address ma dovremo creare un template ad hoc."
 msgstr ""
-"If instead the need to change the configuration not of a single phone but "
+"If instead the need to modify the configuration not of a single phone but "
 "that of all the phones of the same model, for example all the Sangoma 500 "
-"phones, we will not act on a configuration linked to a mac-address but we "
-"will have to create a template on purpose."
+"phones, we will not act on a configuration linked to a MAC address but we "
+"will have to create an ad hoc template."
 
-#: ../../provisioning_phone.rst:253
+#: ../../provisioning_phone.rst:231
 msgid ""
 "Queste operazioni possono essere effettuate nell’interfaccia avanzata di "
 "|product|."
 msgstr ""
 "These operations can be performed in the advanced interface of |product|."
 
-#: ../../provisioning_phone.rst:257
-msgid "Cliccare in Aggiungi Nuovo Template."
-msgstr "Click  Add New Template."
+#: ../../provisioning_phone.rst:235
+msgid "Cliccare in :guilabel:`Aggiungi Nuovo Template`."
+msgstr "Click in :guilabel:`Add New Template`."
 
-#: ../../provisioning_phone.rst:259
+#: ../../provisioning_phone.rst:237
 msgid ""
 "Indicare il template che verrà utilizzato come base per la nuova "
 "configurazione."
@@ -688,25 +639,27 @@ msgstr ""
 "Indicate the template that will be used as the basis for the new "
 "configuration."
 
-#: ../../provisioning_phone.rst:262
-msgid "Variare i parametri come si desidera per i telefoni supportati sono:"
-msgstr "Changing the parameters as you wish for the supported phones are:"
+#: ../../provisioning_phone.rst:239
+msgid "Variare i parametri come si desidera per i telefoni."
+msgstr "Change the parameters as you wish for the phones."
 
-#: ../../provisioning_phone.rst:280
+#: ../../provisioning_phone.rst:241
 msgid ""
-"Dopo aver creato un nuovo template per un modello specifico di telefono, "
-"dovremo indicare a |product| per quali dei telefoni che sono stati già "
+"Dopo aver creato un nuovo template per un modello specifico di telefono, è "
+"necessario segnalare a |product| per quali dei telefoni che sono stati già "
 "configurati utilizzarlo in sostituzione di quello standard."
 msgstr ""
-"After creating a new template for a specific phone model, we will have to "
-"indicate to |product| for which of the telephones that have already been "
-"configured, use it instead of the standard one."
+"After creating a new template for a specific phone model, you need to report "
+"to |product| for which of the telephones that have already been configured, "
+"use it instead of the standard one."
 
-#: ../../provisioning_phone.rst:282
-msgid "Nel menù scegliere Connettività -> OSS Endpoint Device List"
-msgstr "In the menu choose Connectivity -> OSS Endpoint Device List"
+#: ../../provisioning_phone.rst:243
+msgid ""
+"Nel menù scegliere :guilabel:`Connettività -> OSS Endpoint Device List`."
+msgstr ""
+"In the menu choose :guilabel:`Connectivity -> OSS Endpoint Device List`."
 
-#: ../../provisioning_phone.rst:284
+#: ../../provisioning_phone.rst:245
 msgid ""
 "Se si desidera utilizzare il template creato per diversi telefoni del "
 "modello scelto ma non per la loro totalità:"
@@ -714,33 +667,33 @@ msgstr ""
 "If you want to use the template created for different phones of the chosen "
 "model but not for their totality:"
 
-#: ../../provisioning_phone.rst:286
+#: ../../provisioning_phone.rst:247
 msgid ""
 "selezionare il primo telefono a cui applicare il template appena creato"
 msgstr ""
 "select the first phone to which the newly created template is to be applied"
 
-#: ../../provisioning_phone.rst:287
+#: ../../provisioning_phone.rst:248
 msgid ""
-"fare clic su Edit (il simbolo della matita): il telefono apparirà nella "
-"parte alta della pagina, nella sezione Edit device"
+"fare clic su :guilabel:`Edit` (il simbolo della matita): il telefono "
+"apparirà nella parte alta della pagina, nella sezione Edit device"
 msgstr ""
-"click on Edit (the pencil symbol): the phone will appear at the top of the "
-"page, in the Edit device section"
+"click on :guilabel:`Edit` (the pencil symbol): the phone will appear at the "
+"top of the page, in the Edit device section"
 
-#: ../../provisioning_phone.rst:288
+#: ../../provisioning_phone.rst:249
 msgid "nella voce Template, selezionare il template appena creato"
 msgstr "in the Template entry, select the newly created template"
 
-#: ../../provisioning_phone.rst:289
+#: ../../provisioning_phone.rst:250
 msgid "salvare il template"
 msgstr "save the template"
 
-#: ../../provisioning_phone.rst:290
+#: ../../provisioning_phone.rst:251
 msgid "applicare i cambiamenti"
 msgstr "apply the changes"
 
-#: ../../provisioning_phone.rst:291
+#: ../../provisioning_phone.rst:252
 msgid ""
 "riavviare il telefono (al riavvio, il telefono verrà configurato sulla base "
 "del template appena creato) con le modalità solite nel :ref:`Wizard di "
@@ -752,11 +705,11 @@ msgstr ""
 "wizard <configurazioni>` or taking advantage of the features in the global "
 "options at the bottom of the page"
 
-#: ../../provisioning_phone.rst:292
+#: ../../provisioning_phone.rst:253
 msgid "ripetere i passi per ogni telefono"
 msgstr "repeat the steps for each phone"
 
-#: ../../provisioning_phone.rst:295
+#: ../../provisioning_phone.rst:256
 msgid ""
 "Se invece si desidera variare la totalità dei telefoni del modello per cui è "
 "stato creato il template personalizzato è sufficiente utilizzare le opzioni "

@@ -4,22 +4,22 @@ msgid ""
 msgstr ""
 "Project-Id-Version: NethVoice 14\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-04-09 09:59+0200\n"
+"POT-Creation-Date: 2018-10-04 15:40+0200\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2018-04-09 05:28-0400\n"
+"PO-Revision-Date: 2018-04-09 05:28+0000\n"
 "Last-Translator: Andrea Marchionni <andrea.marchionni@nethesis.it>\n"
 "Language-Team: English (United States)\n"
-"Language: en-US\n"
-"X-Generator: Zanata 3.9.6\n"
+"Language: en_US\n"
+"X-Generator: Zanata 4.6.2\n"
 "Plural-Forms: nplurals=2; plural=(n != 1)\n"
 
-#: ../../inbound_report.rst:13
+#: ../../inbound_report.rst:3
 msgid "Report Chiamate Entranti"
 msgstr "Incoming Call Report"
 
-#: ../../inbound_report.rst:15
+#: ../../inbound_report.rst:7
 msgid ""
 "Il Report delle Chiamate Entranti è un modulo di |product| che consente di "
 "avere un'analisi statistica e dei grafici dedicati a tutte le chiamate "
@@ -28,14 +28,14 @@ msgstr ""
 "The Incoming Call Report is a module of | product | which allows you to have "
 "a statistical analysis and charts dedicated to all incoming calls."
 
-#: ../../inbound_report.rst:17
+#: ../../inbound_report.rst:9
 msgid ""
 "L’accesso al Report Chiamate Entranti è consentito di default all’utente "
 "admin."
 msgstr ""
 "Access to the Incoming Call Report is allowed by default to the admin user."
 
-#: ../../inbound_report.rst:19
+#: ../../inbound_report.rst:11
 msgid ""
 "Il modulo si divide in due sezioni principalmente, quelle Generale e "
 "Distribuzione dove vengono racconti i dati statistici, e quella dei Grafici "
@@ -46,7 +46,7 @@ msgstr ""
 "where the statistical data are collected, and that of the Charts where these "
 "data are used to produce graphs that simplify data analysis."
 
-#: ../../inbound_report.rst:21
+#: ../../inbound_report.rst:13
 msgid ""
 "Accedendo al modulo si entra nella Dashboard che riepiloga i grafici più "
 "significativi."
@@ -54,15 +54,15 @@ msgstr ""
 "By accessing the module you enter the Dashboard which summarizes the most "
 "significant graphs."
 
-#: ../../inbound_report.rst:24
+#: ../../inbound_report.rst:16
 msgid "Generale"
 msgstr "General"
 
-#: ../../inbound_report.rst:27
+#: ../../inbound_report.rst:19
 msgid "Rotte In Entrata"
 msgstr "Incoming Routes"
 
-#: ../../inbound_report.rst:29
+#: ../../inbound_report.rst:21
 msgid ""
 "In questa sezione si trovano le chiamate ricevute per ogni Rotta in Entrata "
 "configurata in |product| suddivise in riposte, perse, occupate e fallite e "
@@ -72,13 +72,13 @@ msgstr ""
 "in | product | divided into answers, lost, busy and failed and total talk "
 "time."
 
+#: ../../inbound_report.rst:23
 #: ../../inbound_report.rst:31
 #: ../../inbound_report.rst:39
 #: ../../inbound_report.rst:47
 #: ../../inbound_report.rst:55
-#: ../../inbound_report.rst:63
+#: ../../inbound_report.rst:80
 #: ../../inbound_report.rst:88
-#: ../../inbound_report.rst:96
 msgid ""
 "E' possibile utilizzare il filtro per creare una ricerca più "
 "particolareggiata nel tempo o per singola Rotta in Entrata ed esportare il "
@@ -87,11 +87,11 @@ msgstr ""
 "It is possible to use the filter to create a more detailed search over time "
 "or for a single Incoming Route and export the result in a .xls file"
 
-#: ../../inbound_report.rst:35
+#: ../../inbound_report.rst:27
 msgid "Gruppi di Chiamata"
 msgstr "Calling Groups"
 
-#: ../../inbound_report.rst:37
+#: ../../inbound_report.rst:29
 msgid ""
 "In questa sezione si trovano le chiamate che hanno avuto come destinazione "
 "un Gruppo di Chiamata configurato in |product|, viene visualizzata la Rotta "
@@ -103,11 +103,11 @@ msgstr ""
 "number, the total number of calls received and the total duration are "
 "displayed."
 
-#: ../../inbound_report.rst:43
+#: ../../inbound_report.rst:35
 msgid "Code"
 msgstr "Tails"
 
-#: ../../inbound_report.rst:45
+#: ../../inbound_report.rst:37
 msgid ""
 "In questa sezione si trovano le chiamate che hanno avuto come destinazione "
 "una Coda configurata in |product|, viene visualizzata la Rotta in entrata di "
@@ -118,11 +118,11 @@ msgstr ""
 "configured in | product |, the arrival inbound Route, the Queue number, the "
 "total number of calls received and the total duration are displayed."
 
-#: ../../inbound_report.rst:51
+#: ../../inbound_report.rst:43
 msgid "Caselle Vocali"
 msgstr "Voicemail"
 
-#: ../../inbound_report.rst:53
+#: ../../inbound_report.rst:45
 msgid ""
 "In questa sezione si trovano le chiamate che hanno avuto come destinazione "
 "una Casella Vocale configurata in |product|, viene visualizzata la Rotta in "
@@ -135,11 +135,11 @@ msgstr ""
 "the Voice Mailbox number and the type (\"b\" busy, \"u\" unavailable, \" s "
 "\"no message\" the total number of calls received and the total duration."
 
-#: ../../inbound_report.rst:59
+#: ../../inbound_report.rst:51
 msgid "IVR"
 msgstr "IVR"
 
-#: ../../inbound_report.rst:61
+#: ../../inbound_report.rst:53
 msgid ""
 "In questa sezione si trovano le chiamate che hanno avuto come destinazione "
 "un IVR configurato in |product|, viene visualizzata  il nome dell'IVR, la "
@@ -149,11 +149,11 @@ msgstr ""
 "product |, the name of the IVR is displayed, the choice made by the calls "
 "and the total of the calls."
 
-#: ../../inbound_report.rst:67
+#: ../../inbound_report.rst:59
 msgid "Per Chiamante"
 msgstr "For Caller"
 
-#: ../../inbound_report.rst:69
+#: ../../inbound_report.rst:61
 msgid ""
 "In questa sezione si trovano tutte le chiamate ricevute dal |product| e "
 "viene mostrato il numero, nome, azienda, periodo, rotta in entrata "
@@ -164,7 +164,7 @@ msgstr ""
 "the number, name, company, period, incoming route used, number of calls "
 "answered, missed, busy, failed, waiting time and talk time."
 
-#: ../../inbound_report.rst:71
+#: ../../inbound_report.rst:63
 msgid ""
 "E' possibile utilizzare il filtro per creare una ricerca più "
 "particolareggiata nel tempo o per singola Rotta in Entrata, nel campo "
@@ -176,7 +176,7 @@ msgstr ""
 "calling number, the name or the company, and export the result in a .xls "
 "file"
 
-#: ../../inbound_report.rst:73
+#: ../../inbound_report.rst:65
 msgid ""
 "L'associazione nome azienda numero viene fatta da |product| attingendo alla "
 "Rubrica Centralizzata al momento della ricezione della chiamata ma è "
@@ -189,15 +189,15 @@ msgstr ""
 "activate a weekly process that will reverse it in order to use contacts "
 "inserted, perhaps after receiving the call. To activate it ::"
 
-#: ../../inbound_report.rst:80
+#: ../../inbound_report.rst:72
 msgid "Distribuzione"
 msgstr "Distribution"
 
-#: ../../inbound_report.rst:84
+#: ../../inbound_report.rst:76
 msgid "Oraria"
 msgstr "Hourly"
 
-#: ../../inbound_report.rst:86
+#: ../../inbound_report.rst:78
 msgid ""
 "In questa sezione le chiamate entranti vengono distribuite nell'arco "
 "temporale giornaliero per ogni Rotta in Entrata e suddivise per esito ( "
@@ -207,11 +207,11 @@ msgstr ""
 "for each Incoming Route and divided by outcome (\"R\" answers, \"N\" no "
 "answers, \"O\" busy, \"F\" failed)."
 
-#: ../../inbound_report.rst:92
+#: ../../inbound_report.rst:84
 msgid "Geografica"
 msgstr "Geographical"
 
-#: ../../inbound_report.rst:94
+#: ../../inbound_report.rst:86
 msgid ""
 "In questa sezione le chiamate entranti vengono raggruppate per zona "
 "geografica e possono essere divise per Regione, Provincia o Prefisso."
@@ -219,15 +219,15 @@ msgstr ""
 "In this section, incoming calls are grouped by geographical area and can be "
 "divided by Region, Province or Prefix."
 
-#: ../../inbound_report.rst:100
+#: ../../inbound_report.rst:92
 msgid "Grafici"
 msgstr "Charts"
 
-#: ../../inbound_report.rst:103
+#: ../../inbound_report.rst:95
 msgid "Carico"
 msgstr "Load"
 
-#: ../../inbound_report.rst:105
+#: ../../inbound_report.rst:97
 msgid ""
 "In questa sezione vengono mostrati i grafici per la distribuzione del totale "
 "delle chiamate entranti suddivise nelle varie Rotte in Entrata nella sezione "
@@ -238,11 +238,11 @@ msgstr ""
 "calls divided into the various incoming Routes in the chosen section of time "
 "and then divided by the geographical area of ​​origin chosen."
 
-#: ../../inbound_report.rst:109
+#: ../../inbound_report.rst:101
 msgid "Per ora"
 msgstr "Hourly"
 
-#: ../../inbound_report.rst:111
+#: ../../inbound_report.rst:103
 msgid ""
 "In questa sezione vengono mostrati i grafici per la distribuzione oraria del "
 "totale delle chiamate entranti suddivise nelle varie Rotte in Entrata nella "
@@ -252,11 +252,11 @@ msgstr ""
 "incoming calls divided into the various Inbound Routes in the chosen time "
 "section."
 
-#: ../../inbound_report.rst:115
+#: ../../inbound_report.rst:107
 msgid "Per Rotta in Entrata"
 msgstr "For Incoming route"
 
-#: ../../inbound_report.rst:117
+#: ../../inbound_report.rst:109
 msgid ""
 "In questa sezione vengono mostrati i grafici per il totale delle chiamate "
 "entranti suddivise nelle varie Rotte in Entrata nella sezione di tempo "
@@ -265,11 +265,11 @@ msgstr ""
 "This section shows the graphs for the total of incoming calls divided into "
 "the various Inbound Routes in the chosen time section."
 
-#: ../../inbound_report.rst:121
+#: ../../inbound_report.rst:113
 msgid "Per zona"
 msgstr "By area"
 
-#: ../../inbound_report.rst:123
+#: ../../inbound_report.rst:115
 msgid ""
 "In questa sezione vengono mostrati i grafici per il totale delle chiamate "
 "entranti suddivise nelle varie Rotte in Entrata nella sezione di tempo "
@@ -279,11 +279,11 @@ msgstr ""
 "into the various Inbound Routes in the selected time section based on the "
 "geographical area of ​​origin."
 
-#: ../../inbound_report.rst:127
+#: ../../inbound_report.rst:119
 msgid "Durata media"
 msgstr "Average duration"
 
-#: ../../inbound_report.rst:129
+#: ../../inbound_report.rst:121
 msgid ""
 "In questa sezione vengono mostrati i grafici per la durata media delle "
 "chiamate entranti suddivise nelle varie Rotte in Entrata nella sezione di "

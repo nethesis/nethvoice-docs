@@ -1,26 +1,27 @@
 # Polidori Alessandro <alessandro.polidori@gmail.com>, 2017. #zanata
+# Andrea Marchionni <andrea.marchionni@nethesis.it>, 2018. #zanata
 # Polidori Alessandro <alessandro.polidori@gmail.com>, 2018. #zanata
 # Youssef <mehniyoussef@gmail.com>, 2018. #zanata
 msgid ""
 msgstr ""
 "Project-Id-Version: NethVoice 14\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-06-05 16:30+0200\n"
+"POT-Creation-Date: 2018-10-04 15:40+0200\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2018-06-05 02:32+0000\n"
-"Last-Translator: Polidori Alessandro <alessandro.polidori@gmail.com>\n"
+"PO-Revision-Date: 2018-10-04 03:02+0000\n"
+"Last-Translator: Andrea Marchionni <andrea.marchionni@nethesis.it>\n"
 "Language-Team: English (United States)\n"
 "Language: en_US\n"
-"X-Generator: Zanata 4.4.5\n"
+"X-Generator: Zanata 4.6.2\n"
 "Plural-Forms: nplurals=2; plural=(n != 1)\n"
 
-#: ../../wizard.rst:13
+#: ../../wizard.rst:3
 msgid "Wizard prima configurazione"
 msgstr "First configuration wizard"
 
-#: ../../wizard.rst:15
+#: ../../wizard.rst:5
 msgid ""
 "Il wizard di prima configurazione consente di installare e configurare "
 "agevolmente tutte le componenti di un centralino."
@@ -28,39 +29,39 @@ msgstr ""
 "The first configuration wizard allows you to easily install and configure "
 "all the components of a switchboard."
 
-#: ../../wizard.rst:17
+#: ../../wizard.rst:7
 msgid "Visitando:"
 msgstr "Visiting:"
 
-#: ../../wizard.rst:19
+#: ../../wizard.rst:9
 msgid "`https://IP_DEL_SERVER/NOME_PRODOTTO`"
 msgstr "`https://SERVER_IP/PRODUCT_NAME`"
 
-#: ../../wizard.rst:21
+#: ../../wizard.rst:11
 msgid "`https://IP_DEL_SERVER/freepbx/admin`"
 msgstr "`https://SERVER_IP/freepbx/admin`"
 
-#: ../../wizard.rst:23
+#: ../../wizard.rst:13
 msgid "è possibile raggiungere l'applicazione web."
 msgstr "You can reach the web application."
 
-#: ../../wizard.rst:25
+#: ../../wizard.rst:15
 msgid "Le credenziali per il login sono le seguenti:"
 msgstr "The credentials login are the following:"
 
-#: ../../wizard.rst:27
+#: ../../wizard.rst:17
 msgid "`username: admin`"
 msgstr "`username: admin`"
 
-#: ../../wizard.rst:29
+#: ../../wizard.rst:19
 msgid "`password: Nethesis,1234`"
 msgstr "`username: admin`"
 
-#: ../../wizard.rst:32
+#: ../../wizard.rst:22
 msgid "Modalità centralino"
 msgstr "PBX mode"
 
-#: ../../wizard.rst:33
+#: ../../wizard.rst:23
 msgid ""
 "Una volta effettuato il login, vi viene subito proposto di scegliere che "
 "tipologia di centralino intendete installare:"
@@ -68,7 +69,7 @@ msgstr ""
 "Once logged in, you are immediately offered to choose what type of "
 "switchboard you want to install:"
 
-#: ../../wizard.rst:35
+#: ../../wizard.rst:25
 msgid ""
 "*Legacy*: il centralino diventa anche la base per creare i vostri utenti, "
 "quindi al vostro server verrà installata una base LDAP su cui creare i "
@@ -77,7 +78,7 @@ msgstr ""
 "*Legacy*: the switchboard also becomes the basis for creating your users, so "
 "your server will install an LDAP base on which to create your own users"
 
-#: ../../wizard.rst:36
+#: ../../wizard.rst:26
 msgid ""
 "*Unified*: il centralino utilizza la base utenti già presente nel vostro "
 "server (LDAP o Active Directory)"
@@ -85,16 +86,16 @@ msgstr ""
 "*Unified*: the switchboard uses the user base already present on your server "
 "(LDAP or Active Directory)"
 
-#: ../../wizard.rst:38
+#: ../../wizard.rst:28
 msgid ""
 "Una volta scelta la modalità, si procede alla configurazione degli utenti"
 msgstr "Once the mode is selected, users must be configured"
 
-#: ../../wizard.rst:41
+#: ../../wizard.rst:31
 msgid "Utenti"
 msgstr "Users"
 
-#: ../../wizard.rst:42
+#: ../../wizard.rst:32
 msgid ""
 "Una volta scelta la modalità del centralino, vedrete una lista vuota (nel "
 "caso di Legacy) o la lista degli utenti già presenti nel server (nel caso di "
@@ -104,7 +105,7 @@ msgstr ""
 "of Legacy) or the list of users already present on the server (in the case "
 "of Unified)."
 
-#: ../../wizard.rst:44
+#: ../../wizard.rst:34
 msgid ""
 "Se siete in modalità Legacy create il vostro primo utente, scegliendo un "
 "username e il nome completo."
@@ -112,15 +113,15 @@ msgstr ""
 "If you are in legacy mode create your first user, choosing a username and "
 "full name."
 
-#: ../../wizard.rst:48
+#: ../../wizard.rst:38
 msgid "Interni"
 msgstr "Extensions"
 
-#: ../../wizard.rst:49
+#: ../../wizard.rst:39
 msgid "E' possibile ora inserire gli interni relativi per ogni utente:"
 msgstr "It is now possible to enter the extensions for each user:"
 
-#: ../../wizard.rst:51
+#: ../../wizard.rst:41
 msgid ""
 "Inserire il numero dell'interno (consigliato a partire dal numero 200) nel "
 "campo di testo"
@@ -128,11 +129,11 @@ msgstr ""
 "Enter the extension number (recommended starting at number 200) in the text "
 "field"
 
-#: ../../wizard.rst:52
+#: ../../wizard.rst:42
 msgid "Cliccare su Inserisci"
 msgstr "Click on Insert"
 
-#: ../../wizard.rst:53
+#: ../../wizard.rst:43
 msgid ""
 "L'utente si evidenzia e una spunta verde compare se tutto è andato a buon "
 "fine"
@@ -140,58 +141,80 @@ msgstr ""
 "The user is highlighted and a green check appears if everything is "
 "successful"
 
-#: ../../wizard.rst:56
+#: ../../wizard.rst:46
 msgid "Importazione utenti da csv"
-msgstr ""
+msgstr "Importing users from csv"
 
-#: ../../wizard.rst:58
+#: ../../wizard.rst:48
 msgid ""
-"Nei centralini **Legacy**, è possibile importare gli utenti con un file CSV."
+"Nei centralini che non usano un account provider esterno, è possibile "
+"importare gli utenti con un file CSV."
 msgstr ""
+"In switchboards that do not use an external provider account, you can import "
+"users with a CSV file."
 
-#: ../../wizard.rst:60
+#: ../../wizard.rst:50
 msgid "Creare un file di testo, con un utente per riga e il formato"
-msgstr ""
+msgstr "Create a text file, with one user per line and format"
+
+#: ../../wizard.rst:56
+msgid "Per esempio:"
+msgstr "For example:"
 
 #: ../../wizard.rst:66
-msgid "Per esempio:"
-msgstr ""
-
-#: ../../wizard.rst:74
 msgid "Cliccare su :guilabel:`Importa` e selezionare il file creato."
-msgstr ""
+msgstr "Click on :guilabel:`Import` and select the file created."
 
-#: ../../wizard.rst:76
+#: ../../wizard.rst:68
 msgid ""
 "Nella finestra che si aprirà, fare click su :guilabel:`Importa` e attendere "
 "che gli utenti vengano creati."
 msgstr ""
+"In the window that will open, click on :guilabel:`Import` and wait for users "
+"to be created."
 
-#: ../../wizard.rst:78
+#: ../../wizard.rst:70
 msgid "Se viene omesso l'interno, verranno creati solo gli utenti."
-msgstr ""
+msgstr "If the extension is omitted, only users will be created."
 
-#: ../../wizard.rst:80
+#: ../../wizard.rst:72
 msgid ""
 "Se il campo *password* non viene compilato, la password sarà generata "
 "casualmente."
 msgstr ""
+"If the *password* field is not filled in, the password will be generated "
+"randomly."
 
-#: ../../wizard.rst:82
+#: ../../wizard.rst:74
 msgid ""
 "E' possibile utilizzare la funzione anche per assegnare gli interni ad "
 "utenti già creati, ma senza interno assegnato."
 msgstr ""
+"The function can also be used to assign extensions to already created users, "
+"but without assigned extensions."
 
-#: ../../wizard.rst:84
+#: ../../wizard.rst:76
 msgid "In questo caso, il campo *password* verrà ignorato."
-msgstr ""
+msgstr "In this case, the *password* field will be ignored."
 
-#: ../../wizard.rst:87
+#: ../../wizard.rst:78
+msgid ""
+"Il tasto esporta consente di scaricare un modello di CSV con gli attuali "
+"utenti da modificare per poi importare nuovamente. Le righe precedute da # "
+"verranno considerate commenti. I gruppi CTI, una lista separata da pipe `|` "
+"verranno creati automaticamente. Il profilo CTI deve essere scelto tra "
+"quelli già creati"
+msgstr ""
+"The export button allows you to download a CSV template with the current "
+"users to be modified and then imported again. Lines preceded by # will be "
+"considered comments. CTI groups, a separate `|` pipe list will be created "
+"automatically. The CTI profile must be chosen from those already created"
+
+#: ../../wizard.rst:81
 msgid "Gruppi"
 msgstr "Groups"
 
-#: ../../wizard.rst:88
+#: ../../wizard.rst:82
 msgid ""
 "E' possibile creare dei gruppi utente che poi saranno visibili e "
 "utilizzabili nelle applicazioni, come ad esempio nel |product_cti|"
@@ -199,57 +222,52 @@ msgstr ""
 "It is possible to create user groups that will then be visible and usable in "
 "applications, like the example in the |product_cti|"
 
-#: ../../wizard.rst:90
+#: ../../wizard.rst:84
 msgid "Cliccare il bottone \"Crea nuovo gruppo\""
 msgstr "Click the \"Create New Group\" button"
 
-#: ../../wizard.rst:91
+#: ../../wizard.rst:85
 msgid "Specificare un nome e salvare"
 msgstr "Specify a name and save it"
 
-#: ../../wizard.rst:92
+#: ../../wizard.rst:86
 msgid "Il gruppo compare tra la lista"
 msgstr "The group appears in the list"
 
-#: ../../wizard.rst:95
+#: ../../wizard.rst:89
 msgid "Profili"
 msgstr "Profiles"
 
-#: ../../wizard.rst:96
+#: ../../wizard.rst:90
 msgid ""
 "Il centralino prevede di specificare determinate funzionalità per ogni "
 "utente e queste funzionalità vengono raggruppate in dei profili."
 msgstr ""
+"The switchboard plans to specify certain features for each user and these "
+"features are grouped into profiles."
 
-#: ../../wizard.rst:98
+#: ../../wizard.rst:92
 msgid ""
-"Con l'installazione, vengono creati di default 4 profili che contengono "
+"Con l'installazione, vengono creati di default 3 profili che contengono "
 "l'abilitazione o meno a certe funzionalità."
 msgstr ""
-"During the installation, 4 default profiles are created that contain the "
-"ability to enable or disable certain features"
+"With the installation, 3 profiles are created by default that contains "
+"enabled or not features."
 
-#: ../../wizard.rst:100
+#: ../../wizard.rst:94
 msgid "Base: funzionalità minime per l'utente"
 msgstr "Base: minimal user capabilities"
 
-#: ../../wizard.rst:101
+#: ../../wizard.rst:95
 msgid "Standard: funzionalità di gestione classiche per l'utente"
 msgstr "Standard: classic management features for the user"
 
-#: ../../wizard.rst:102
+#: ../../wizard.rst:96
 msgid ""
 "Avanzato: quasi tutte le funzionalità sono sbloccate, per l'utente Avanzato"
 msgstr "Advanced: almost all features are unlocked, for Advanced user"
 
-#: ../../wizard.rst:103
-msgid ""
-"Tutto: ogni funzionalità presente è abilitata, utilizzata per gli utenti "
-"amministratori"
-msgstr ""
-"Everything: every feature present is enabled, used for administrator users"
-
-#: ../../wizard.rst:105
+#: ../../wizard.rst:98
 msgid ""
 "E' possibile creare anche nuovi profili, duplicando uno esistente o "
 "creandone di nuovi e specificando le varie funzionalità"
@@ -257,7 +275,7 @@ msgstr ""
 "You can also create new profiles, duplicate an existing one or create new "
 "ones and specify the various features"
 
-#: ../../wizard.rst:107
+#: ../../wizard.rst:100
 msgid ""
 "Ricordarsi di abilitare sui profili dove necessario l'accesso ai gruppi "
 "utente precedentemente creati."
@@ -265,11 +283,11 @@ msgstr ""
 "Remember to enable on the profiles where necessary the access to the user "
 "groups previously created."
 
-#: ../../wizard.rst:112
+#: ../../wizard.rst:105
 msgid "Dispositivi"
 msgstr "Devices"
 
-#: ../../wizard.rst:113
+#: ../../wizard.rst:106
 msgid ""
 "In questa sezione è possibile scansionare la propria rete e il wizard "
 "troverà in automatico i telefoni che sono collegati alla vostra rete, "
@@ -281,7 +299,7 @@ msgstr ""
 "possible, brand and model and also provides you with the IP address and MAC "
 "address."
 
-#: ../../wizard.rst:115
+#: ../../wizard.rst:108
 msgid ""
 "Se in alcuni telefoni non è stato possibile trovare automaticamente il "
 "modello, servirsi del menù a tendina per specificarlo."
@@ -289,15 +307,15 @@ msgstr ""
 "If some model phone has not been found automatically, use the drop-down menu "
 "to specify it."
 
-#: ../../wizard.rst:117
+#: ../../wizard.rst:110
 msgid "Per rieseguire la scansione della rete, premere il pulsante *Scan*"
 msgstr "To scan the network again, press the *Scan* button"
 
-#: ../../wizard.rst:122
+#: ../../wizard.rst:115
 msgid "Configurazioni"
 msgstr "Configurations"
 
-#: ../../wizard.rst:123
+#: ../../wizard.rst:116
 msgid ""
 "Lo step finale della sezione Utenti, prevede di raggruppare tutte le "
 "impostazioni create e definite nei passi precedenti. La lista degli utenti "
@@ -309,13 +327,15 @@ msgstr ""
 "extension has been associated in the first step. By selecting a user you can:"
 ""
 
-#: ../../wizard.rst:126
+#: ../../wizard.rst:119
 msgid ""
 "Creare un dispositivo personalizzato per collegare all'utente un apparato "
 "telefonico non supportato (ad esempio softphone)"
 msgstr ""
+"Create a custom device to connect an unsupported telephone device to the "
+"user (eg softphone)"
 
-#: ../../wizard.rst:127
+#: ../../wizard.rst:120
 msgid ""
 "Associare un telefono di quelli precedentemente configurati (effettuando il "
 "provisioning automatico)"
@@ -323,33 +343,33 @@ msgstr ""
 "Associate a phone with those previously configured (by doing automatic "
 "provisioning)"
 
-#: ../../wizard.rst:128
+#: ../../wizard.rst:121
 msgid "Inserire un numero di cellulare"
 msgstr "Insert a cellphone number"
 
-#: ../../wizard.rst:129
+#: ../../wizard.rst:122
 msgid "Abilitare la voicemail"
 msgstr "Enable the voicemail"
 
-#: ../../wizard.rst:130
+#: ../../wizard.rst:123
 msgid "Abilitare il client WebRTC"
 msgstr "Enable the WebRTC client"
 
-#: ../../wizard.rst:131
+#: ../../wizard.rst:124
 msgid ""
 "Scegliere il profilo da destinare all'utente (uno di quelli definiti allo "
 "step 3)"
 msgstr "Choose the profile to be assigned to the user (one defined in step 3)"
 
-#: ../../wizard.rst:132
+#: ../../wizard.rst:125
 msgid "Scegliere un gruppo a cui far parte (uno di quelli creati allo step 2)"
 msgstr "Choose a group to join (one created in step 2)"
 
-#: ../../wizard.rst:135
+#: ../../wizard.rst:128
 msgid "Fasci"
 msgstr "Trunks"
 
-#: ../../wizard.rst:136
+#: ../../wizard.rst:129
 msgid ""
 "Nella sezione fasci è possibile configurare i gateway per gestire le linee "
 "fisiche o creare fascio VoIP specificando le credenziali dei vostri provider"
@@ -357,34 +377,36 @@ msgstr ""
 "In the trunks section, you can configure gateways to manage physical lines "
 "or create VoIP trunk by specifying your provider's credentials"
 
-#: ../../wizard.rst:141
+#: ../../wizard.rst:134
 msgid "Fisici"
 msgstr "Physical"
 
-#: ../../wizard.rst:142
+#: ../../wizard.rst:135
 msgid ""
 "Come per i dispositivi, questa sezione scansiona la vostra rete e cerca dei "
 "gateway disponibili, una volta individuati è possibile specificare, "
 "selezionandone uno, due impostazioni:"
 msgstr ""
+"As for the devices, this section scans your network and looks for available "
+"gateways, once identified you can specify, by selecting one, two settings:"
 
-#: ../../wizard.rst:144
+#: ../../wizard.rst:137
 msgid "Modello: specificare il modello del gateway"
 msgstr "Model: specify the gateway model"
 
-#: ../../wizard.rst:145
+#: ../../wizard.rst:138
 msgid "Impostazioni dinamiche in base al modello:"
 msgstr "Dynamic settings based on model:"
 
-#: ../../wizard.rst:147
+#: ../../wizard.rst:140
 msgid "ISDN (Specificare per la linea se è Point-Point or Point-MultiPoint)"
 msgstr "ISDN (Specify for the line if it is Point-Point or Point-MultiPoint)"
 
-#: ../../wizard.rst:148
+#: ../../wizard.rst:141
 msgid "PRI"
 msgstr "PRI"
 
-#: ../../wizard.rst:149
+#: ../../wizard.rst:142
 msgid ""
 "FXS (Specificare per ogni porta, l'interno da assegnare scegliendo un utente "
 "precedentemente configurato)"
@@ -392,11 +414,11 @@ msgstr ""
 "FXS (Specify for each port, the extension to be assigned by choosing a "
 "previously configured user)"
 
-#: ../../wizard.rst:150
+#: ../../wizard.rst:143
 msgid "FXO (Specificare direttamente il numero, nel campo di testo)"
 msgstr "FXO (Specify the number directly in the text field)"
 
-#: ../../wizard.rst:152
+#: ../../wizard.rst:145
 msgid ""
 "Una volta salvate le impostazioni è possibile caricare la configurazione sul "
 "gateway tramite il bottone \"Carica\" Il gateway prende la configurazione e "
@@ -406,11 +428,11 @@ msgstr ""
 "via the \"Load\" button. The gateway takes the configuration and restarts, "
 "and the related trunks are also created."
 
-#: ../../wizard.rst:156
+#: ../../wizard.rst:149
 msgid "VoIP"
 msgstr "VoIP"
 
-#: ../../wizard.rst:157
+#: ../../wizard.rst:150
 msgid ""
 "E' possibile creare dei fasci VoIP selezionando uno dei provider supportati, "
 "e inserendo le informazioni necessarie."
@@ -418,17 +440,17 @@ msgstr ""
 "You can create VoIP trunk by selecting one of the supported providers and "
 "entering the necessary information"
 
-#: ../../wizard.rst:159
+#: ../../wizard.rst:152
 msgid ""
 "Premere \"Crea\" per creare la configurazione relativa per quel fascio VoIP."
 msgstr ""
 "Press \"Create\" to create the relative configuration for that VoIP trunk."
 
-#: ../../wizard.rst:162
+#: ../../wizard.rst:155
 msgid "Rotte"
 msgstr "Routes"
 
-#: ../../wizard.rst:163
+#: ../../wizard.rst:156
 msgid ""
 "Nella sezione rotte è possibile configurare le rotte in entrata e in uscita "
 "per il vostro centralino"
@@ -436,11 +458,11 @@ msgstr ""
 "In the routes section you can configure the inbound and outbound routes for "
 "your switchboard"
 
-#: ../../wizard.rst:166
+#: ../../wizard.rst:159
 msgid "In entrata"
 msgstr "Incoming"
 
-#: ../../wizard.rst:167
+#: ../../wizard.rst:160
 msgid ""
 "Una volta in questa sezione, vi si presenta la lista delle rotte già "
 "configurate, con la possibilità di modificarle o eliminarle."
@@ -448,7 +470,7 @@ msgstr ""
 "Once in this section, you will see the list of already configured routes, "
 "with the option to edit or delete them."
 
-#: ../../wizard.rst:169
+#: ../../wizard.rst:162
 msgid ""
 "Premendo sul bottone \"Crea nuova rotta\" si apre una differente "
 "applicazione il Visual Plan, che vi consente di creare, modificare e "
@@ -459,7 +481,7 @@ msgstr ""
 "the Visual Plan, which allows you to create, modify and link the various "
 "components to better manage the flow of the call on a given input number."
 
-#: ../../wizard.rst:171
+#: ../../wizard.rst:164
 msgid ""
 "Premendo il simbolo di spunta nell'applicazione Visual Plan, la "
 "configurazione della vostra rotta verrà salvata e da quel momento potrete "
@@ -469,11 +491,11 @@ msgstr ""
 "of your route will be saved and from that time you can receive calls and "
 "direct the flow depending on your choice."
 
-#: ../../wizard.rst:174
+#: ../../wizard.rst:167
 msgid "In uscita"
 msgstr "Outgoing"
 
-#: ../../wizard.rst:175
+#: ../../wizard.rst:168
 msgid ""
 "In questa sezione è presente la lista delle rotte in uscita presenti, la "
 "prima volta che questa pagina viene visitata, il wizard vi propone delle "
@@ -484,7 +506,7 @@ msgstr ""
 "this page is visited, the wizard will propose default outbound routes with "
 "call-specific patterns for different languages."
 
-#: ../../wizard.rst:177
+#: ../../wizard.rst:170
 msgid ""
 "E' possibile inoltre specificare l'ordine con cui usare i fasci, "
 "precedentemente creati, e regolare così in maniera personalizzata il "
@@ -493,18 +515,21 @@ msgstr ""
 "You can also specify the order to use the previously created trunks and "
 "customize the route of outgoing calls in a custom way."
 
-#: ../../wizard.rst:179
+#: ../../wizard.rst:172
 msgid ""
 "Premendo il tasto \"Salva\" la configurazione viene scritta nel centralino e "
 "da quel momento è possibile effettuare chiamate verso l'esterno (avendo "
 "opportunamente configurato i fasci negli step precedenti)."
 msgstr ""
+"By pressing the \"Save\" button the configuration is written to the "
+"switchboard and from that time you can make outgoing calls (having "
+"previously configured the trunks in the previous steps)."
 
-#: ../../wizard.rst:182
+#: ../../wizard.rst:175
 msgid "Applicazioni"
 msgstr "Applications"
 
-#: ../../wizard.rst:183
+#: ../../wizard.rst:176
 msgid ""
 "La sezione \"Applicazioni\" consente di creare, modificare o eliminare "
 "determinate funzionalità del centralino, che nel wizard vengono solo create "
@@ -514,7 +539,7 @@ msgstr ""
 "switchboard features that are only created and configured in the wizard, but "
 "are then used in the CTI."
 
-#: ../../wizard.rst:185
+#: ../../wizard.rst:178
 msgid ""
 "Ad esempio le schede cliente, nel wizard, vengono configurate per accedere "
 "al database e per mostrare in maniera pratica le informazioni ottenute, ma "
@@ -525,11 +550,11 @@ msgstr ""
 "database and to show the information in a practical way, but actual use will "
 "be inside the CTI, during calls or while searching for certain information."
 
-#: ../../wizard.rst:188
+#: ../../wizard.rst:181
 msgid "Schede cliente"
 msgstr "Customer cards"
 
-#: ../../wizard.rst:190
+#: ../../wizard.rst:183
 msgid ""
 "La sezione schede cliente, permette di raggruppare le informazioni presenti "
 "su database esterni al centralino e mostrarle in fase di chiamata. Ad "
@@ -538,12 +563,17 @@ msgid ""
 "esempio, se fornire assistenza o meno. Per generare una nuova scheda cliente "
 "i passi sono i seguenti"
 msgstr ""
+"The customer card section allows you to combine the information on external "
+"databases to the switchboard and display them at an incoming call. For "
+"example, on an incoming call, get information about its invoices or any "
+"unused payments and consider, for example, whether to provide assistance or "
+"not. To generate a new customer card, the steps are as follows"
 
-#: ../../wizard.rst:193
+#: ../../wizard.rst:186
 msgid "Sorgenti"
 msgstr "Sources"
 
-#: ../../wizard.rst:195
+#: ../../wizard.rst:188
 msgid ""
 "Cliccare sul bottone \"Crea nuova sorgente\" e compilare il form che si "
 "presenta: - Tipo database: specificare la tipologia di database su cui "
@@ -556,8 +586,16 @@ msgid ""
 "premere il pulsante \"Verifica\" per testare che le informazioni inserite "
 "siano corrette per la connessione"
 msgstr ""
+"Click on the \"Create new source\" button and fill in the form: - Database "
+"type: specify the database type to which you want to get the information - "
+"Database name: specify the name of the database to connect to - Database "
+"address: specify the database server address (localhost, socket or external "
+"IP) - Database port: specify a port of the db  - Database user: specify the "
+"user used to connect to the database - Database password: specify the "
+"password for connect to the database - Connection: press the \"Verify\" "
+"button to test that the inserted information is correct for the connection"
 
-#: ../../wizard.rst:204
+#: ../../wizard.rst:197
 msgid ""
 "Premere \"Salva\" per aggiungere la sorgente database. La sorgente appena "
 "creata apparirà tra la lista di quelle disponibili"
@@ -565,11 +603,11 @@ msgstr ""
 "Press \"Save\" to add the database source. The newly created source will "
 "appear in the list of available ones"
 
-#: ../../wizard.rst:207
+#: ../../wizard.rst:200
 msgid "Template"
 msgstr "Template"
 
-#: ../../wizard.rst:209
+#: ../../wizard.rst:202
 msgid ""
 "I template sono il fac-simile per le vostre schede cliente. Utilizzano il "
 "motore `ejs`, che ha una sintassi *JavaScript-like*, che vi permette di "
@@ -581,7 +619,7 @@ msgstr ""
 "code using specific guidelines that you can find at https://github.com/tj/"
 "ejs."
 
-#: ../../wizard.rst:211
+#: ../../wizard.rst:204
 msgid ""
 "Cliccare sul bottone \"Crea nuovo template\" per iniziare il processo di "
 "creazione: - Nome: specificare il nome del template - Results: contiene "
@@ -593,8 +631,16 @@ msgid ""
 "vostra query) - Anteprima: combinando i risultati e il codice `ejs` vedrete "
 "l'output relativo HTML che sarà la vostra scheda cliente."
 msgstr ""
+"Click the \"Create new template\" button to begin the creation process: - "
+"Name: specify template name - Results: contains the output of your query in "
+"JSON format, use the text field to run the tests and see how your HTML "
+"template will appear with your data. - Code (ejs): in this text field, enter "
+"the code of your template that respects the `ejs` syntax, using the above "
+"values (which are the columns result of your query) - Preview: combining the "
+"results and the `ejs` code you will see the relevant HTML output that will "
+"be your customer card."
 
-#: ../../wizard.rst:217
+#: ../../wizard.rst:210
 msgid ""
 "Il centralino prevede giù dei template predefiniti con codice HTML già "
 "scritto, che potete duplicare e modificare cambiando colore."
@@ -602,11 +648,11 @@ msgstr ""
 "The switchboard provides some predefined templates with HTML code already "
 "written, which you can duplicate and edit by changing color."
 
-#: ../../wizard.rst:220
+#: ../../wizard.rst:213
 msgid "Schede"
 msgstr "Tabs"
 
-#: ../../wizard.rst:222
+#: ../../wizard.rst:215
 msgid ""
 "Una volta creata la sorgente e il template della vostra scheda, in questa "
 "sessione dovrete unire le due informazioni per far si che la scheda venga "
@@ -620,12 +666,22 @@ msgid ""
 "**sorgente** specificata e i dati verranno inseriti nel **template** "
 "selezionato, producendo l'output desiderato."
 msgstr ""
+"Once you've created the source and template of your card, in this session, "
+"you'll need to merge the two information to make sure the card is created "
+"correctly. Click on the \"Create new tab\" button and fill in the form: - "
+"Name: customer card name - Source: specify the previously created database "
+"source - Template: specify the template to be associated with the one "
+"previously created - Profile: choose the user profile to show the customer "
+"card you are creating - Query: enter the query that will return the related "
+"information - Render: by pressing the button, the **query** will be executed "
+"on the **source** specified and the data will be entered into the selected "
+"**Template**, producing the desired output."
 
-#: ../../wizard.rst:230
+#: ../../wizard.rst:223
 msgid "Premere il tasto \"Salva\" per salvare la vostra scheda cliente."
 msgstr "Press the \"Save\" button to save your customer card."
 
-#: ../../wizard.rst:232
+#: ../../wizard.rst:225
 msgid ""
 "Una volta creata la query e la scheda e verificato che il tutto funziona, "
 "utilizzare la variabile `$NUMBER` per sostituire i parametri numerici di "
@@ -634,15 +690,15 @@ msgstr ""
 "Once you've created the query and the card and verified that everything "
 "works, use the `$NUMBER` variable to replace your query's search parameters."
 
-#: ../../wizard.rst:234
+#: ../../wizard.rst:227
 msgid "*Esempio*:"
 msgstr "*Example*:"
 
-#: ../../wizard.rst:236
+#: ../../wizard.rst:229
 msgid "Se la vostra query è di questo tipo:"
 msgstr "If your query is of this type:"
 
-#: ../../wizard.rst:238
+#: ../../wizard.rst:231
 msgid ""
 "`select * from phonebook where homephone like '%150' or workphone like "
 "'%850' or cellphone like '%150' or fax like '%850'`"
@@ -650,11 +706,11 @@ msgstr ""
 "`select * from phonebook where homephone like '%150' or workphone like "
 "'%850' or cellphone like '%150' or fax like '%850'`"
 
-#: ../../wizard.rst:240
+#: ../../wizard.rst:233
 msgid "dovrà diventare così:"
 msgstr "it will have to be like this:"
 
-#: ../../wizard.rst:242
+#: ../../wizard.rst:235
 msgid ""
 "`select * from phonebook where homephone like '%$NUMBER' or workphone like "
 "'%$NUMBER' or cellphone like '%$NUMBER' or fax like '%$NUMBER'`"
@@ -662,18 +718,20 @@ msgstr ""
 "`select * from phonebook where homephone like '%$NUMBER' or workphone like "
 "'%$NUMBER' or cellphone like '%$NUMBER' or fax like '%$NUMBER'`"
 
-#: ../../wizard.rst:244
+#: ../../wizard.rst:237
 msgid ""
 "La variabile `$NUMBER` non è altro che il numero chiamante del centralino a "
 "cui la scheda cliente fa riferimento per effettuare la raccolta dei dati da "
 "mostrare."
 msgstr ""
+"The `$NUMBER` variable is the caller phone number to which the customer card "
+"refers to collect the data to be displayed."
 
-#: ../../wizard.rst:247
+#: ../../wizard.rst:240
 msgid "Sorgenti video"
 msgstr "Video sources"
 
-#: ../../wizard.rst:248
+#: ../../wizard.rst:241
 msgid ""
 "In questa sezione è possibile configurare le sorgenti video o telecamere IP. "
 "Cliccando sul bottone \"Crea nuova sorgente\" è possibile compilare un form "
@@ -682,11 +740,11 @@ msgstr ""
 "In this section you can configure video sources or IP cameras. By clicking "
 "on the \"Create new source\" button you can fill out a form for creation:"
 
-#: ../../wizard.rst:250
+#: ../../wizard.rst:243
 msgid "Nome: specificare il nome da dare alla sorgente"
 msgstr "Name: specify the name to give to the source"
 
-#: ../../wizard.rst:251
+#: ../../wizard.rst:244
 msgid ""
 "Extension: specificare l'interno relativo alla sorgente video "
 "(precedentemente creata nella sezione \"Utenti\")"
@@ -694,25 +752,29 @@ msgstr ""
 "Extension: specify the extension for the video source (previously created in "
 "the \"Users\" section)"
 
-#: ../../wizard.rst:252
+#: ../../wizard.rst:245
 msgid ""
 "URL: specificare l'URL di collegamento in cui prendere i frame video da "
 "mostrare"
 msgstr "URL: specify the URL link where you want the video frames to show"
 
-#: ../../wizard.rst:253
+#: ../../wizard.rst:246
 msgid ""
 "Codice d'apertura: inserire il tono DTMF relativo per un eventuale codice "
 "d'apertura (se la telecamera è collegata ad un cancello ad esempio)"
 msgstr ""
+"Opening Code: enter the DTMF tone for an opening code event (for example if "
+"the camera is connected to a gate)"
 
-#: ../../wizard.rst:254
+#: ../../wizard.rst:247
 msgid ""
 "Profilo: specificare il profilo da assegnare alla sorgente per filtrare la "
 "tipologia di utente che ha accesso alla sorgente video"
 msgstr ""
+"Profile: specify the profile to be assigned to the source to filter out the "
+"users that have access to the video source"
 
-#: ../../wizard.rst:255
+#: ../../wizard.rst:248
 msgid ""
 "Connessione: premere il bottone \"Verifica\" e verificare che l'URL inserito "
 "sia corretto, testando la connessione e ottenendo il frame video relativo."
@@ -720,17 +782,19 @@ msgstr ""
 "Connection: press the \"Verify\" button and verify that the entered URL is "
 "correct, testing the connection and getting the related video frame."
 
-#: ../../wizard.rst:257
+#: ../../wizard.rst:250
 msgid ""
 "Una volta completata la compilazione del form premere \"Salva\" per salvare "
 "le informazioni e creare una nuova sorgente video."
 msgstr ""
+"Once the form is completed, press \"Save\" to save the information and "
+"create a new video source."
 
-#: ../../wizard.rst:260
+#: ../../wizard.rst:253
 msgid "URL parametrizzati"
 msgstr "Parameterized URLs"
 
-#: ../../wizard.rst:262
+#: ../../wizard.rst:255
 msgid ""
 "Consentono all'utente finale di poter invocare un URL parametrizzato in "
 "corrispondenza della ricezione di una chiamata. L'URL sarà parametrizzato "
@@ -741,35 +805,35 @@ msgstr ""
 "received. The URL will be parameterized with the caller's data and can be "
 "\"opened\" in one of the following four scenarios:"
 
-#: ../../wizard.rst:265
+#: ../../wizard.rst:258
 msgid "mai"
 msgstr "never"
 
-#: ../../wizard.rst:266
+#: ../../wizard.rst:259
 msgid "quando la chiamata in ingresso sta squillando"
 msgstr "when the incoming call is ringing"
 
-#: ../../wizard.rst:267
+#: ../../wizard.rst:260
 msgid "quando la chiamata in ingresso è stata risposta"
 msgstr "when the incoming call has been answered"
 
-#: ../../wizard.rst:268
+#: ../../wizard.rst:261
 msgid "cliccando il pulsante apposito nel box di gestione chiamata"
 msgstr "by clicking the appropriate button in the call management box"
 
-#: ../../wizard.rst:270
+#: ../../wizard.rst:263
 msgid "Per la creazione di un URL sono necessarie due informazioni:"
 msgstr "To create a URL, you need two information:"
 
-#: ../../wizard.rst:272
+#: ../../wizard.rst:265
 msgid "l'url stesso"
 msgstr "the url itself"
 
-#: ../../wizard.rst:273
+#: ../../wizard.rst:266
 msgid "la scelta di un profilo utente"
 msgstr "the choice of a user profile"
 
-#: ../../wizard.rst:275
+#: ../../wizard.rst:268
 msgid ""
 "Tutti gli utenti che hanno quel profilo saranno abilitati all'utilizzo "
 "dell'URL appena creato."
@@ -777,11 +841,11 @@ msgstr ""
 "All users who have that profile will be enabled to use the newly created URL."
 ""
 
-#: ../../wizard.rst:279
+#: ../../wizard.rst:272
 msgid "Ad un profilo può essere associato un solo URL."
 msgstr "Only one URL can be associated with a profile."
 
-#: ../../wizard.rst:280
+#: ../../wizard.rst:273
 msgid ""
 "Affinché l'URL possa essere invocato è necessario che l'utente finale abbia "
 "abilitato la visualizzazione dei popups nel proprio browser !"
@@ -789,58 +853,73 @@ msgstr ""
 "In order for the URL to be invoked it is necessary that the end user has "
 "enabled the display of the popups in his browser!"
 
-#: ../../wizard.rst:283
+#: ../../wizard.rst:276
 msgid "Gestione Multipla"
-msgstr ""
+msgstr "Bulk Extensions"
 
-#: ../../wizard.rst:285
+#: ../../wizard.rst:278
 msgid ""
 "L'applicazione *Gestione Multipla Interni* consente di modificare "
 "massivamente gruppi di utenti."
 msgstr ""
+"The *Bulk Extensions* application allows you to change user groups massively."
+""
 
-#: ../../wizard.rst:287
+#: ../../wizard.rst:280
 msgid ""
 "E' possibile selezionare gli interni che si desidera modificare utilizzando "
 "la lista \"Seleziona\" o le checkbox accanto agli utenti elencati."
 msgstr ""
+"You can select the extensions you want to modify using the \"Select\" list "
+"or the checkboxes next to the listed users."
 
-#: ../../wizard.rst:289
+#: ../../wizard.rst:282
 msgid ""
 "Cliccando poi sul tasto :guilabel:`Modifica`, verrà visualizzata una "
 "finestra con le impostazioni che possono essere modificate."
 msgstr ""
+"Then clicking on the key :guilabel:`Modify`, a window will appear with the "
+"settings that can be changed."
 
-#: ../../wizard.rst:291
+#: ../../wizard.rst:284
 msgid ""
 "Il contenuto dei campi viene mostrato solo se gli interni selezionati hanno "
 "tutti lo stesso valore per quel campo, altrimenti rimane vuoto."
 msgstr ""
+"The contents of the fields are shown only if the selected extensions all "
+"have the same value for that field, otherwise, it remains empty."
 
-#: ../../wizard.rst:293
+#: ../../wizard.rst:286
 msgid ""
 "L'icona :guilabel:`lucchetto` chiuso alla destra del campo indica che il "
 "campo non verrà modificato."
 msgstr ""
+"The icon :guilabel:`padlock` closed to the right of the field indicates that "
+"the field will not be changed."
 
-#: ../../wizard.rst:295
+#: ../../wizard.rst:288
 msgid ""
 "Per esempio, se gli interni 201 e 202 hanno un valore differente per il "
 "gruppo di chiamata, il campo sarà vuoto, ma se il :guilabel:`lucchetto` è "
 "chiuso, il valore non verrà sovrascritto."
 msgstr ""
+"For example, if extensions 201 and 202 have a different value for the call "
+"group, the field will be empty, but if the :guilabel:`padlock` is closed, "
+"the value will not be overwritten."
 
-#: ../../wizard.rst:297
+#: ../../wizard.rst:290
 msgid ""
 "Se invece si clicca sul :guilabel:`lucchetto` in modo che sia aperto e si "
 "salva, il gruppo di chiamata verrà sovrascritto con il valore del campo."
 msgstr ""
+"If instead, you click on the :guilabel:`padlock` so that it is open and "
+"saved, the call group will be overwritten with the value of the field."
 
-#: ../../wizard.rst:300
-msgid "Amministratore"
-msgstr "Administrator"
+#: ../../wizard.rst:293
+msgid "Amministrazione"
+msgstr "Admin"
 
-#: ../../wizard.rst:302
+#: ../../wizard.rst:295
 msgid ""
 "La sezione \"Amministratore\" raggruppa le azioni che possono essere fatte "
 "dall'amministratore del centralino"
@@ -848,21 +927,46 @@ msgstr ""
 "The \"Administrator\" section groups actions that can be made by the PBX "
 "Administrator"
 
-#: ../../wizard.rst:305
+#: ../../wizard.rst:298
+msgid "Lingue"
+msgstr "Languages"
+
+#: ../../wizard.rst:300
+msgid ""
+"Nel menù Lingue è possibile impostare la lingua di sistema del |product| "
+"impostandola come quella di default e installare anche altri pacchetti "
+"lingua aggiuntivi."
+msgstr ""
+"In the Languages menu, you can set the system language of the |product| set "
+"it as the default one and also install other additional language packs."
+
+#: ../../wizard.rst:303
 msgid "Impostazioni"
 msgstr "Settings"
 
-#: ../../wizard.rst:306
+#: ../../wizard.rst:304
 msgid ""
 "Nella parte \"Impostazioni\", è possibile cambiare la password dell'utente "
 "admin."
 msgstr "From the \"Settings\" section, you can change the admin user password."
 
+#: ../../wizard.rst:307
+msgid "Avanzate"
+msgstr "Advanced"
+
 #: ../../wizard.rst:309
+msgid ""
+"La sezione Avanzate consente l'accesso diretto all'interfaccia avanzata di "
+"|product|."
+msgstr ""
+"The Advanced section allows direct access to the |product| advanced "
+"interface."
+
+#: ../../wizard.rst:313
 msgid "Report"
 msgstr "Report"
 
-#: ../../wizard.rst:310
+#: ../../wizard.rst:314
 msgid ""
 "La sezione \"Report\" riporta l'elenco completo degli utenti del centralino "
 "specificando il loro:"
@@ -870,27 +974,27 @@ msgstr ""
 "The \"Report\" section lists the complete list of switchboard users by "
 "specifying their:"
 
-#: ../../wizard.rst:312
+#: ../../wizard.rst:316
 msgid "Interno"
 msgstr "Extension"
 
-#: ../../wizard.rst:313
+#: ../../wizard.rst:317
 msgid "Username"
 msgstr "Username"
 
-#: ../../wizard.rst:314
+#: ../../wizard.rst:318
 msgid "Nome e Cognome"
 msgstr "Name and Surname"
 
-#: ../../wizard.rst:315
+#: ../../wizard.rst:319
 msgid "Password Voicemail"
 msgstr "Voicemail Password"
 
-#: ../../wizard.rst:316
+#: ../../wizard.rst:320
 msgid "Password utente (se si è in modalità Legacy)"
 msgstr "User password (if Legacy mode is used)"
 
-#: ../../wizard.rst:318
+#: ../../wizard.rst:322
 msgid ""
 "E' presente anche la possibilità di stampare l'elenco in formato PDF "
 "cliccando sul bottone \"Stampa report PDF\""

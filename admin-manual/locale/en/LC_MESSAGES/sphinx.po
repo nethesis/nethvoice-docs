@@ -1,27 +1,36 @@
 # Edoardo Spadoni <edoardo.spadoni@nethesis.it>, 2017. #zanata
+# Andrea Marchionni <andrea.marchionni@nethesis.it>, 2018. #zanata
 msgid ""
 msgstr ""
 "Project-Id-Version: NethVoice 14\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-04-09 09:59+0200\n"
+"POT-Creation-Date: 2018-10-04 15:40+0200\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2017-08-24 11:29-0400\n"
-"Last-Translator: Edoardo Spadoni <edoardo.spadoni@nethesis.it>\n"
+"PO-Revision-Date: 2018-10-04 02:55+0000\n"
+"Last-Translator: Andrea Marchionni <andrea.marchionni@nethesis.it>\n"
 "Language-Team: English (United States)\n"
-"Language: en-US\n"
-"X-Generator: Zanata 3.9.6\n"
+"Language: en_US\n"
+"X-Generator: Zanata 4.6.2\n"
 "Plural-Forms: nplurals=2; plural=(n != 1)\n"
-
-#: ../../_templates/navbarsearchbox.html:4
-msgid "Search"
-msgstr "Cerca"
 
 #: ../../_templates/navbar.html:26
 msgid "Index"
 msgstr "Indice"
 
-#: ../../_templates/navbar.html:27
+#: ../../_templates/navbar.html:28
+msgid "Languages"
+msgstr "Languages"
+
+#: ../../_templates/navbar.html:36
+msgid "Versions"
+msgstr "Versions"
+
+#: ../../_templates/navbar.html:43
 msgid "Support"
-msgstr "Supporto"
+msgstr "Support"
+
+#: ../../_templates/navbarsearchbox.html:4
+msgid "Search"
+msgstr "Search"

@@ -1,0 +1,91 @@
+# Andrea Marchionni <andrea.marchionni@nethesis.it>, 2018. #zanata
+msgid ""
+msgstr ""
+"Project-Id-Version: NethVoice 14\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-10-04 15:40+0200\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2018-10-04 03:07+0000\n"
+"Last-Translator: Andrea Marchionni <andrea.marchionni@nethesis.it>\n"
+"Language-Team: English (United States)\n"
+"Language: en_US\n"
+"X-Generator: Zanata 4.6.2\n"
+"Plural-Forms: nplurals=2; plural=(n != 1)\n"
+
+#: ../../returnonblindtransfer.rst:2
+msgid "Ritorno da trasferimento Cieco"
+msgstr "Blind transfer callback on busy"
+
+#: ../../returnonblindtransfer.rst:4
+msgid ""
+"Il modulo gestisce il ritorno della chiamata trasferita in modo non "
+"cunsultativo all'interno autore del trasferimento se il destinatario del "
+"trasferimento non risponde per qualsiasi ragione, ad esempio interno "
+"occupato, non disponibile, etc."
+msgstr ""
+"The module handles the return of the transferred call in a non-consultative "
+"manner within the author of the transfer if the recipient of the transfer is "
+"not responsible for any reason, for example, internal busy, unavailable, etc."
+""
+
+#: ../../returnonblindtransfer.rst:6
+msgid ""
+"E' possibile modificare il tempo di squillo del destinatario del "
+"trasferimento, e nell'eventuale ritorno della chiamata all'autore del "
+"tentato trasferimento cambiare il nome chiamante e la suoneria del telefono."
+msgstr ""
+"It is possible to change the ringing time of the transfer recipient, and in "
+"the eventual return of the call to the author of the attempted transfer, "
+"change the calling name and the telephone ringtone."
+
+#: ../../returnonblindtransfer.rst:10
+msgid "Configurazione"
+msgstr "Configuration"
+
+#: ../../returnonblindtransfer.rst:13
+msgid "Attivato"
+msgstr "Activated"
+
+#: ../../returnonblindtransfer.rst:15
+msgid "Attivare o disattivare il ritorno du trasferimento non cunsultativo."
+msgstr "Activate or deactivate the return on blind transfer."
+
+#: ../../returnonblindtransfer.rst:19
+msgid "Timeout"
+msgstr "Timeout"
+
+#: ../../returnonblindtransfer.rst:21
+msgid "Tempo di squillo del tentativo di trasferimento non cunsultativo."
+msgstr "Ringing time of the blind transfer attempt."
+
+#: ../../returnonblindtransfer.rst:24
+msgid "Caller ID"
+msgstr "Caller ID"
+
+#: ../../returnonblindtransfer.rst:26
+msgid ""
+"Impostare il Nome Chiamante per la chiamata di ritorno dal trasferimento "
+"fallito, è possibile usare *${xfer_exten}* che verrà sostituito con "
+"l'interno del destinatario del trasferimento e *${CALLERID(name)}* che verrà "
+"sostituito con il nome del chiamante originario."
+msgstr ""
+"Setting the Caller Name for the return call from the failed transfer, you "
+"can use *${xfer_exten}* which will be replaced with the transfer recipient's "
+"extension and *${CALLERID (name)}* which will be replaced with the name of "
+"the transfer original caller."
+
+#: ../../returnonblindtransfer.rst:30
+msgid "Alertinfo"
+msgstr "Alertinfo"
+
+#: ../../returnonblindtransfer.rst:32
+msgid ""
+"Inserire la stringa di alert info per variare la suoneria del telefono che "
+"riceve il ritorno dal trasferimento fallito, ad esempio *<http://www."
+"notused>\\;info=ring2*"
+msgstr ""
+"Enter the alert info string to change the ringtone of the phone that "
+"receives the return from the failed transfer, for example, *<http: //www."
+"notused>\\;info=ring2*"

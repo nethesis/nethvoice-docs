@@ -1,0 +1,137 @@
+# Andrea Marchionni <andrea.marchionni@nethesis.it>, 2018. #zanata
+msgid ""
+msgstr ""
+"Project-Id-Version: NethVoice 14\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-10-04 15:40+0200\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2018-10-04 02:54+0000\n"
+"Last-Translator: Andrea Marchionni <andrea.marchionni@nethesis.it>\n"
+"Language-Team: English (United States)\n"
+"Language: en_US\n"
+"X-Generator: Zanata 4.6.2\n"
+"Plural-Forms: nplurals=2; plural=(n != 1)\n"
+
+#: ../../directdid.rst:2
+msgid "Selezioni Passanti"
+msgstr "Bulk DIDs"
+
+#: ../../directdid.rst:4
+msgid ""
+"Il modulo Selezioni Passanti consente di attivare una selezione passante "
+"multinumero in entrata su |product|."
+msgstr ""
+"The Bulk DIDs module allows you to activate a multinumber inbound route on "
+"|product|."
+
+#: ../../directdid.rst:6
+msgid ""
+"Facendo transistare la chiamata entrante in questo modulo, ad esempio da una "
+"rotta in entrata con numero chiamanto variabile che comprenda tutta la "
+"selezione passante, la destinazione sarà automaticamente l'interno di "
+"riferimento della numerazione chiamata."
+msgstr ""
+"By transiting the incoming call in this module, for example from an incoming "
+"route with a variable called number that includes all the inbound DID, the "
+"destination will automatically be the reference extension of the called "
+"number."
+
+#: ../../directdid.rst:8
+msgid ""
+"Sarà poi possibile gestire il tempo di squillo e l'eventuale fallimento "
+"della chiamata per non risposta, destinazione occupata o non disponibile."
+msgstr ""
+"It will then be possible to manage the ring time and the possible failure of "
+"the call for non-answer, destination busy or not available."
+
+#: ../../directdid.rst:12
+msgid "Configurazione"
+msgstr "Configuration"
+
+#: ../../directdid.rst:15
+msgid "Radice selezione passante"
+msgstr "Inbound DID root"
+
+#: ../../directdid.rst:17
+msgid ""
+"Inserire la parte numerica della selezione passante che non è variabile, ad "
+"esempio con selezione passante 07214055XX inserire 07214055."
+msgstr ""
+"Enter the numerical part of the Inbound DID that is not variable, for "
+"example with pass-by selection 07214055XX enter 07214055."
+
+#: ../../directdid.rst:21
+msgid "Numero cifre variabili"
+msgstr "Number of variable digits"
+
+#: ../../directdid.rst:23
+msgid ""
+"Inserire il numero di cifre della selezione passante che è variabile, ad "
+"esempio con selezione passante 07214055XX inserire 2."
+msgstr ""
+"Enter the number of digits of inbound DID that is variable, for example with "
+"inbound DID  07214055XX enter 2."
+
+#: ../../directdid.rst:27
+msgid "Prefisso interni"
+msgstr "Extensions prefix"
+
+#: ../../directdid.rst:29
+msgid ""
+"Inserire un eventuale prefisso da aggiungere alle cifre variabile per "
+"ottenere l'interno a cui destinare la chiamata entrante, ad esempio con "
+"selezione passante 07214055XX e interni 2XX, inserire 2."
+msgstr ""
+"Enter any prefix to be added to the variable digits to obtain the extension "
+"to which the incoming call will be assigned, for example with inbound DID "
+"07214055XX and extensions 2XX, insert 2."
+
+#: ../../directdid.rst:33
+msgid "Timeout"
+msgstr "Timeout"
+
+#: ../../directdid.rst:35
+msgid ""
+"Inserire il tempo di squillo massimo dopo il quale considerare l'interno da "
+"contattare non raggiungibile."
+msgstr ""
+"Enter the maximum ring time after which the extension to be contacted can "
+"not be reached."
+
+#: ../../directdid.rst:39
+msgid "Destinazione se timeout"
+msgstr "Destination if timeout"
+
+#: ../../directdid.rst:41
+msgid ""
+"Inserire la destinazione della chiamata entrante se l'interno di "
+"destinazione non ha risposto entro il tempo di Timeout."
+msgstr ""
+"Enter the destination of the incoming call if the destination extension did "
+"not respond within the timeout period."
+
+#: ../../directdid.rst:44
+msgid "Destinazione se occupato"
+msgstr "Destination if busy"
+
+#: ../../directdid.rst:46
+msgid ""
+"Inserire la destinazione della chiamata entrante se l'interno di "
+"destinazione è occupato."
+msgstr ""
+"Enter the destination of the incoming call if the destination extension is "
+"busy."
+
+#: ../../directdid.rst:49
+msgid "Destinazione se non disponibile"
+msgstr "Destination if not available"
+
+#: ../../directdid.rst:51
+msgid ""
+"Inserire la destinazione della chiamata entrante se l'interno di "
+"destinazione non è disponibile, ad esempio spento."
+msgstr ""
+"Enter the destination of the incoming call if the destination extension is "
+"not available, for example, the phone is off."

@@ -1,0 +1,123 @@
+# Andrea Marchionni <andrea.marchionni@nethesis.it>, 2018. #zanata
+msgid ""
+msgstr ""
+"Project-Id-Version: NethVoice 14\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-10-04 15:40+0200\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2018-10-04 03:15+0000\n"
+"Last-Translator: Andrea Marchionni <andrea.marchionni@nethesis.it>\n"
+"Language-Team: English (United States)\n"
+"Language: en_US\n"
+"X-Generator: Zanata 4.6.2\n"
+"Plural-Forms: nplurals=2; plural=(n != 1)\n"
+
+#: ../../rapid_code.rst:3
+msgid "Codici rapidi di chiamata (Rapid Code)"
+msgstr "Rapid Code"
+
+#: ../../rapid_code.rst:7
+msgid ""
+"Il modulo :index:`Codici rapidi di chiamata`, consente di configurare un "
+"numero breve per effettuare una chiamata."
+msgstr ""
+"The Rapid Code module allows you to configure a short number to make a call."
+
+#: ../../rapid_code.rst:9
+msgid ""
+"Sostituisce il vecchio modulo Speed Dial ed è installato di default con "
+"|product|."
+msgstr ""
+"Replaces the old Speed Dial module and is installed by default with "
+"|product|."
+
+#: ../../rapid_code.rst:11
+msgid ""
+"I codici di chiamata vengono inoltre inseriti nella rubrica centralizzata, "
+"l'etichetta verrà utilizzata come nome."
+msgstr ""
+"The call codes are also entered in the |product| phonebook, the label will "
+"be used as a name."
+
+#: ../../rapid_code.rst:14
+msgid "Configurazione"
+msgstr "Configuration"
+
+#: ../../rapid_code.rst:16
+msgid ""
+"Per aggiungere un nuovo codice rapido, andare nell'interfaccia avanzata di "
+"|product|, poi nel menù :menuselection:`Applicazioni -> Codice Rapido di "
+"Chiamata`."
+msgstr ""
+"To add a new quick code, go to the advanced |product| interface, then to the "
+"menu :menuselection:`Applications -> Quick Call Code`."
+
+#: ../../rapid_code.rst:18
+msgid ""
+"Facendo click su :guilabel:`+ Aggiungi codice rapido di chiamata` verrà "
+"visualizzato un form in cui inserire un'\"etichetta\" cioè un nome da "
+"assegnare a questo codice, il numero di telefono da chiamare e il codice "
+"rapido da usare."
+msgstr ""
+"By clicking on :guilabel:`+ Add Quick Call Code` a form will be displayed in "
+"which to insert a \"label\", a name to be assigned to this code, the "
+"telephone number to call and the quick code to be used."
+
+#: ../../rapid_code.rst:20
+msgid ""
+"Per comporre il numero, sarà sufficiente digitare il codice di questa "
+"applicazione (\\*99 di default) seguito dal codice assegnato."
+msgstr ""
+"To dial the number, simply enter the code of this application (\\* 99 by "
+"default) followed by the assigned code."
+
+#: ../../rapid_code.rst:22
+msgid ""
+"Per esempio, se assegno il codice 1 al numero 1234567890, digitando da un "
+"telefono \\*991 verrà composto il numero 1234567890."
+msgstr ""
+"For example, if I assign code 1 to 1234567890, dialing 1234567890 will be "
+"dialed from a \\* 991 phone."
+
+#: ../../rapid_code.rst:24
+msgid ""
+"Non è necessario applicare i cambiamenti dopo aver aggiunto un codice, "
+"questo sarà subito operativo."
+msgstr ""
+"It is not necessary to apply the changes after adding a code, this will be "
+"immediately operational."
+
+#: ../../rapid_code.rst:29
+msgid "Importazione da CSV"
+msgstr "CSV Import"
+
+#: ../../rapid_code.rst:31
+msgid ""
+"Sempre dall'interfaccia, è possibile importare i codici da un file CSV. Ogni "
+"riga del file CSV deve avere questo formato: ``<NOME>,<NUMERO>,<CODICE>`` "
+"per esempio: ::"
+msgstr ""
+"Also from the interface, you can import the codes from a CSV file. Each line "
+"of the CSV file must have this format: ``<NAME>, <NUMBER>, <CODE>`` for "
+"example: ::"
+
+#: ../../rapid_code.rst:36
+msgid "In questo caso, componendo \\*991 verrà composto il numero 33312341234."
+msgstr "In this case, by dialing \\*991 the number 33312341234 will be dialed."
+
+#: ../../rapid_code.rst:40
+msgid "Modificare il codice applicazione"
+msgstr "Change the application code"
+
+#: ../../rapid_code.rst:42
+msgid ""
+"Per utilizzare un codice diverso da quello di default (\\*99), è possibile "
+"scegliere un altro codice dal modulo :guilabel:`Codici servizi` che si trova "
+"nell'interfaccia avanzata, :menuselection:`Amministrazione -> Codici "
+"servizi`"
+msgstr ""
+"To use a code other than the default code (\\*99), you can choose another "
+"code from the module: guilabel:`Service codes` located in the advanced "
+"interface, :menuselection:` Administration -> Service codes`"
