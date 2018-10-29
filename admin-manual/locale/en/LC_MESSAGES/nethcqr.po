@@ -1,0 +1,483 @@
+# Andrea Marchionni <andrea.marchionni@nethesis.it>, 2018. #zanata
+msgid ""
+msgstr ""
+"Project-Id-Version: NethVoice 14\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-10-04 15:40+0200\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2018-10-04 04:06+0000\n"
+"Last-Translator: Andrea Marchionni <andrea.marchionni@nethesis.it>\n"
+"Language-Team: English (United States)\n"
+"Language: en_US\n"
+"X-Generator: Zanata 4.6.2\n"
+"Plural-Forms: nplurals=2; plural=(n != 1)\n"
+
+#: ../../nethcqr.rst:2
+msgid "Call Query Routing"
+msgstr "Call Query Routing"
+
+#: ../../nethcqr.rst:5
+msgid "Descrizione"
+msgstr "Description"
+
+#: ../../nethcqr.rst:7
+msgid ""
+"Il Call Query Routing di |product| ribalta il concetto di IVR tradizionale "
+"spostando dal chiamante allo stesso |product| la decisione di come trattare "
+"la chiamata in ingresso e quindi verso che destinazione sul centralino deve "
+"proseguire."
+msgstr ""
+"The Call Query Routing of |product| reverses the concept of traditional IVR "
+"by shifting from the caller to the same |product| the decision of how to "
+"handle the incoming call and then to which destination on the switchboard "
+"must continue."
+
+#: ../../nethcqr.rst:9
+msgid ""
+"Riconoscendo il chiamante, grazie al numero telefonico o alla richiesta di "
+"un codice cliente, il |product| può interrogare database sia esterni che "
+"interni (MYSQL o MSSQL) chiedendo dei dati relativi al chiamante e in base "
+"alla risposta può poi comportarsi come configurato."
+msgstr ""
+"Recognizing the caller, thanks to the telephone number or the request for a "
+"customer code, the |product| it can query both external and internal "
+"databases (MYSQL or MSSQL) asking for data on the caller and based on the "
+"response can then behave as configured."
+
+#: ../../nethcqr.rst:11
+msgid ""
+"Si tratta quindi di uno strumento flessibile, che in tempo reale ottiene "
+"informazioni e poi si comporta in base a queste, ma queste informazioni "
+"possono variare nel tempo variando di conseguenza in comportamento del "
+"|product|."
+msgstr ""
+"It is, therefore, a flexible tool, which in real time obtains information "
+"and then behaves according to these, but this information may vary over "
+"time, consequently changing in the behavior of the |product|."
+
+#: ../../nethcqr.rst:13
+msgid ""
+"L'esempio tipico di utilizzo del Call Query Routing è utilizzarlo per "
+"discriminare se un chiamante sia un cliente in regola con i pagamenti o no."
+msgstr ""
+"The typical example of using Call Query Routing is to use it to discriminate "
+"whether a caller is a regular customer with payments or not."
+
+#: ../../nethcqr.rst:15
+msgid ""
+"Il |product| chiederà questa informazione al database del software "
+"gestionale ed ottenuta la risposta si comporterà di conseguenza, ad esempio "
+"se si tratta di un cliente in regola la chiamata verrà fatta proseguire "
+"verso la coda di assistenza mentre se si tratta di un cliente insolvente la "
+"chiamata verrà dirottata verso gli interni dell'amministrazione e magari se "
+"si tratta di un potenziale cliente la chiamata verrà girata ai commerciali."
+msgstr ""
+"The |product| will ask this information to the database of a external "
+"software and obtained the answer will behave accordingly, for example if it "
+"is a customer in good standing the call will be forwarded to the assistance "
+"queue while if it is an insolvent customer the call will be diverted to the "
+"interior of the administration and maybe if it is a potential customer the "
+"call will be turned to the commercials."
+
+#: ../../nethcqr.rst:17
+msgid ""
+"Le uniche condizioni necessarie al Call Query Routing sono l'accessibilità "
+"da parte del |product| ai database da interrogare e l'impostazione della "
+"query per fare l'interrogazione, di competenza di chi conosce il database."
+msgstr ""
+"The only conditions necessary for Call Query Routing are the accessibility "
+"of the |product| to the databases to be queried and the query setting to be "
+"interrogated, in the competence of those who know the database."
+
+#: ../../nethcqr.rst:19
+msgid ""
+"E' possibile con il numero del chiamante consultare subito un database per "
+"ottenere lo stato del cliente, oppure sempre partendo dal numero chiamante "
+"prima ricavare il codice cliente del chiamante per poi utilizzarlo nel "
+"database clienti. In caso di fallimento della procedura di scoperta del "
+"codice cliente è possibile avere come backup la richiesta di inserimento "
+"manuale del codice cliente."
+msgstr ""
+"It is possible with the caller's number to immediately consult a database to "
+"obtain the customer's status, or always starting from the calling number "
+"first to obtain the caller's customer code and then use it in the customer "
+"database. In case of failure of the procedure to discover the customer code, "
+"it is possible to have as a backup the request to manually enter the "
+"customer code."
+
+#: ../../nethcqr.rst:22
+msgid "Configurazione"
+msgstr "Configuration"
+
+#: ../../nethcqr.rst:24
+msgid ""
+"Per il collegamento ad un database MSSQL è necessario preliminarmente "
+"configurare il collegamento ODBC, vedi nella documentazione `Rubrica "
+"Centralizzata <http://nethserver.docs.nethesis.it/it/latest/phonebook-mysql."
+"html#configurazione-odbc>`_"
+msgstr ""
+"To connect to an MSSQL database it is necessary to first configure the ODBC "
+"connection, see the documentation `Centralized Phonebook <http://nethserver."
+"docs.nethesis.it/it/latest/phonebook-mysql.html#configurazione-odbc>` _"
+
+#: ../../nethcqr.rst:28
+msgid "Nome CQR"
+msgstr "CQR Name"
+
+#: ../../nethcqr.rst:30
+msgid ""
+"Nome del CQR che poi verrà utilizzato da |product| nelle destinazioni dei "
+"vari moduli."
+msgstr ""
+"Name of the CQR which will then be used by |product| in the destinations of "
+"the various modules."
+
+#: ../../nethcqr.rst:33
+msgid "Descrizione CQR"
+msgstr "CQR Description"
+
+#: ../../nethcqr.rst:35
+msgid "Descrizione del CQR."
+msgstr "Description of the CQR."
+
+#: ../../nethcqr.rst:38
+msgid "Risoluzione Codice Cliente"
+msgstr "Customer Code Resolution"
+
+#: ../../nethcqr.rst:41
+msgid "Usa Codice Cliente"
+msgstr "Use Customer Code"
+
+#: ../../nethcqr.rst:43
+msgid ""
+"Se abilitato, il CQR è attivato per la ricerca del codice cliente. Il Codice "
+"cliente viene ricavato dal numero del chiamante tramite la query apposita, "
+"nel caso la procedura non desse risultati e fosse stata abilita la voce "
+"Codice Cliente Manuale verrà chiesto dal |product| l'inserimento del codice."
+msgstr ""
+"If enabled, the CQR is activated for the customer code search. The Customer "
+"Code is obtained from the caller's number through the appropriate query, if "
+"the procedure does not give results and the manual Customer Code item has "
+"been enabled, it will be requested by the |product| entering the code."
+
+#: ../../nethcqr.rst:46
+msgid "Tipo Db Codice Cliente"
+msgstr "Type Customer Code Db"
+
+#: ../../nethcqr.rst:48
+msgid "Tipo di database dove effettuare la query per il codice cliente."
+msgstr "Type of database where to query for the client code."
+
+#: ../../nethcqr.rst:51
+msgid "URL db codice cliente"
+msgstr "URL customer code db"
+
+#: ../../nethcqr.rst:53
+msgid ""
+"URL per collegarsi al database per effettuare la query per ricavare il "
+"codice cliente."
+msgstr ""
+"URL to connect to the database to make the query to obtain the customer code."
+""
+
+#: ../../nethcqr.rst:56
+msgid "Nome db codice cliente"
+msgstr "Customer code db name"
+
+#: ../../nethcqr.rst:58
+msgid ""
+"Nome del database dove effettuare la query codice cliente, nel caso di "
+"sorgente MSSQL nome configurato nella connessione ODBC(nomeDSN)."
+msgstr ""
+"Name of the database where to execute the customer code query, in the case "
+"of MSSQL source name configured in the ODBC connection (name NSN)."
+
+#: ../../nethcqr.rst:61
+msgid "Username db codice cliente"
+msgstr "Username customer code db"
+
+#: ../../nethcqr.rst:63
+msgid ""
+"Username per il collegamento al database per la query codice cliente. "
+"Accertarsi che abbia i permessi d'accesso."
+msgstr ""
+"Username for connecting to the database for the customer code query. Make "
+"sure you have access permissions."
+
+#: ../../nethcqr.rst:67
+msgid "Password db codice cliente"
+msgstr "Password customer code db"
+
+#: ../../nethcqr.rst:69
+#: ../../nethcqr.rst:157
+msgid "Password dell'utente per accedere al database."
+msgstr "User password to access the database."
+
+#: ../../nethcqr.rst:72
+msgid "Query codice cliente"
+msgstr "Customer code query"
+
+#: ../../nethcqr.rst:74
+msgid ""
+"Query per ottenere il codice cliente partendo dal numero chiamante. %CID% "
+"verrà sostituito con il numero chiamante."
+msgstr ""
+"Query to get the customer code starting from the calling number. %CID% will "
+"be replaced with the calling number."
+
+#: ../../nethcqr.rst:77
+#: ../../nethcqr.rst:120
+#: ../../nethcqr.rst:168
+msgid "Ad esempio:"
+msgstr "For example:"
+
+#: ../../nethcqr.rst:85
+msgid "Codice Cliente Manuale"
+msgstr "Manual Customer Code "
+
+#: ../../nethcqr.rst:87
+msgid ""
+"Se abilitato nel caso la query del codice cliente non dia risultati viene "
+"richiesto l'inserimento manuale del codice cliente."
+msgstr ""
+"If enabled, if the customer code query does not give results, the manual "
+"entry of the customer code is requested."
+
+#: ../../nethcqr.rst:90
+msgid "Annuncio Codice Cliente"
+msgstr "Customer Code Announcement"
+
+#: ../../nethcqr.rst:92
+msgid ""
+"Annuncio da riprodurre per richiedere l'inserimento del codice cliente "
+"manualmente. Viene proposto l'elenco delle Registrazioni di Sistema già "
+"caricate."
+msgstr ""
+"Announcement to be reproduced to request the insertion of the customer code "
+"manually. The list of already loaded System Recordings is proposed."
+
+#: ../../nethcqr.rst:95
+msgid "Annuncio Errore Codice Cliente"
+msgstr "Announcement Error Customer Code"
+
+#: ../../nethcqr.rst:97
+msgid ""
+"Annuncio da riprodurre in caso di errore nell'inserimento del codice cliente."
+" Viene proposto l'elenco delle Registrazioni di Sistema già caricate."
+msgstr ""
+"Announcement to be reproduced in the event of an error in entering the "
+"customer code. The list of already loaded System Recordings is proposed."
+
+#: ../../nethcqr.rst:100
+msgid "Lunghezza Codice Cliente"
+msgstr "Customer Code Length"
+
+#: ../../nethcqr.rst:102
+msgid ""
+"Lunghezza del codice cliente nel caso si arrivi all'inserimento manuale."
+msgstr "Length of the customer code in case of manual entry."
+
+#: ../../nethcqr.rst:105
+msgid "Numero Tentativi"
+msgstr "Number of attempts"
+
+#: ../../nethcqr.rst:107
+msgid ""
+"Numero di tentativi disponibile per inserire un codice cliente valido "
+"manualmente."
+msgstr "Number of attempts available to enter a valid customer code manually."
+
+#: ../../nethcqr.rst:110
+msgid "Query Controllo Codice Cliente"
+msgstr "Customer Code Control Query"
+
+#: ../../nethcqr.rst:112
+msgid ""
+"Query da effettuare dopo l'inserimento del codice cliente manualmente per "
+"controllarle la validità."
+msgstr ""
+"Query to be made after entering the customer code manually to check its "
+"validity."
+
+#: ../../nethcqr.rst:114
+msgid ""
+"I parametri di collegamento utilizzati sono quelli indicati per la Query "
+"Codice Cliente."
+msgstr ""
+"The connection parameters used are those indicated for the Customer Code "
+"Query."
+
+#: ../../nethcqr.rst:116
+msgid ""
+"Formattare la query in modo da far ritornare un qualsiasi risultato in caso "
+"di codice cliente corretto, mentre non devono ritornare risultati in caso di "
+"codice cliente errato."
+msgstr ""
+"Format the query to return any results in the case of a correct customer "
+"code, while it does not have to return results in case of incorrect customer "
+"code."
+
+#: ../../nethcqr.rst:118
+msgid "%CODCLI% verrà sostituito con il codice cliente inserito."
+msgstr "%CODCLI% will be replaced with the customer number entered."
+
+#: ../../nethcqr.rst:127
+msgid "Opzioni CQR"
+msgstr "CQR options"
+
+#: ../../nethcqr.rst:130
+msgid "Annuncio"
+msgstr "Announcement"
+
+#: ../../nethcqr.rst:132
+msgid ""
+"Messaggio che viene riprodotto al chiamante mentre il CQR viene utilizzato. "
+"Deve essere almeno della durata delle interrogazioni in modo da dare al "
+"|product| il tempo di effettuarle."
+msgstr ""
+"The message that is played back to the caller while the CQR is used. It must "
+"be at least the duration of the queries in order to give the |product| the "
+"time to make them."
+
+#: ../../nethcqr.rst:135
+msgid "Tipo di database"
+msgstr "Type of database"
+
+#: ../../nethcqr.rst:137
+msgid ""
+"Tipo di database dove effettuare la query per ottenere un risultato sul "
+"quale basare come il |product| debba proseguire il flusso della chiamata."
+msgstr ""
+"Type of database where to perform the query to obtain a result on which to "
+"base as the |product| should continue the flow of the call."
+
+#: ../../nethcqr.rst:140
+msgid "URL Database"
+msgstr "URL Database"
+
+#: ../../nethcqr.rst:142
+msgid ""
+"URL per collegarsi al database per effettuare la query. In caso del "
+"|product| stesso inserire ``localhost``."
+msgstr ""
+"URL to connect to the database to perform the query. In the case of the "
+"|product| itself enter \"` localhost``."
+
+#: ../../nethcqr.rst:145
+msgid "Nome Database"
+msgstr "Database name"
+
+#: ../../nethcqr.rst:147
+msgid ""
+"Nome del database al quale collegarsi, nel caso di sorgente MSSQL nome "
+"configurato nella connessione ODBC(nomeDSN)."
+msgstr ""
+"Name of the database to connect to, in the case of MSSQL source name "
+"configured in the ODBC connection (DSN name)."
+
+#: ../../nethcqr.rst:150
+msgid "Username"
+msgstr "Username"
+
+#: ../../nethcqr.rst:152
+msgid ""
+"Username per il collegamento al database. Accertarsi che l'utente abbia i "
+"permessi di accesso."
+msgstr ""
+"Username for connecting to the database. Make sure the user has access "
+"permissions."
+
+#: ../../nethcqr.rst:155
+msgid "Password"
+msgstr "Password"
+
+#: ../../nethcqr.rst:160
+msgid "Query"
+msgstr "Query"
+
+#: ../../nethcqr.rst:162
+msgid ""
+"Query da effettuare una volta avvenuto il collegamento con il database."
+msgstr ""
+"Query to be performed once the connection with the database has been "
+"completed."
+
+#: ../../nethcqr.rst:164
+msgid ""
+"La query si baserà sul numero chiamante nel caso non sia abilitata la "
+"richiesta di codice cliente o direttamente sul codice cliente ricavato dalla "
+"query del codice cliente da configurare successivamente."
+msgstr ""
+"The query will be based on the calling number if the customer code request "
+"is not enabled or directly on the customer code obtained from the customer "
+"code query to be configured later."
+
+#: ../../nethcqr.rst:166
+msgid ""
+"Sono da inserire nella query %CID% che verrà sostituito con il numero del "
+"chiamante nel primo caso o %CUSTOMERCODE% nel caso di utilizzo del codice "
+"cliente."
+msgstr ""
+"%CID% is to be inserted in the query and will be replaced with the caller's "
+"number in the first case, %CUSTOMERCODE% if the customer code is used."
+
+#: ../../nethcqr.rst:177
+msgid "Destinazione di default"
+msgstr "Default destination"
+
+#: ../../nethcqr.rst:179
+msgid ""
+"Destinazione della chiamata per ogni condizione non specificata "
+"successivamente, di solito la più probabile. E' anche la destinazione della "
+"chiamata in caso di un qualsiasi errore, sia esso di connessione al database "
+"o nell'effettuare la query."
+msgstr ""
+"Call destination for each condition not specified later, usually the most "
+"probable. It is also the destination of the call in case of any error, "
+"whether it is connected to the database or in the query."
+
+#: ../../nethcqr.rst:182
+msgid "Voci NethCQR"
+msgstr "NethCQR entries"
+
+#: ../../nethcqr.rst:185
+msgid "Posizione"
+msgstr "Position"
+
+#: ../../nethcqr.rst:187
+msgid ""
+"La posizione indica l'ordine con il quale il |product| valuterà il risultato "
+"che ha ritornato la query."
+msgstr ""
+"The position indicates the order in which the |product| will evaluate the "
+"result that returned the query."
+
+#: ../../nethcqr.rst:190
+msgid "Condizione"
+msgstr "Condition"
+
+#: ../../nethcqr.rst:192
+msgid "Inserire qui i possibili risultati della query, uno per riga."
+msgstr "Enter the possible results of the query here, one per line."
+
+#: ../../nethcqr.rst:195
+msgid "Destinazione"
+msgstr "Destination"
+
+#: ../../nethcqr.rst:197
+msgid ""
+"Destinazione della chiamata se il risultato della query coincide con la "
+"condizione inserita."
+msgstr ""
+"Destination of the call if the query result coincides with the entered "
+"condition."
+
+#: ../../nethcqr.rst:200
+msgid "Elimina"
+msgstr "Delete"
+
+#: ../../nethcqr.rst:202
+msgid "Cancella una riga errata o non più necessaria."
+msgstr "Deletes a wrong or no longer needed line."
