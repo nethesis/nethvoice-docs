@@ -123,8 +123,8 @@ Autorizzazione
 Ogni richiesta REST API viene autorizzata dal server che controlla i permessi utente configurati dall'amministratore attraverso l'interfaccia di |parent_product|.
 
 
-Esempio d'uso con cURL
-----------------------
+Esempio d'uso
+-------------
 
 L'esempio seguente mostra come eseguire una richiesta rest tramite `cURL <http://curl.haxx.se/>`_. Lo strumento si può rivelare utile per eseguire dei test e per comprendere il meccanismo delle chiamate con maggior dettaglio.
 
