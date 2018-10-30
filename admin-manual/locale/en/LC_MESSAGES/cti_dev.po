@@ -4,11 +4,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: NethVoice 14\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-10-30 09:25+0100\n"
+"POT-Creation-Date: 2018-10-30 09:38+0100\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2018-10-30 08:27+0000\n"
+"PO-Revision-Date: 2018-10-30 08:41+0000\n"
 "Last-Translator: Polidori Alessandro <alessandro.polidori@gmail.com>\n"
 "Language-Team: English (United States)\n"
 "Language: en_US\n"
@@ -57,7 +57,7 @@ msgstr ""
 "create a permanent connection (WebSocket or TCP)."
 
 #: ../../cti_dev.rst:23
-#: ../../cti_dev.rst:239
+#: ../../cti_dev.rst:219
 msgid "Eseguire il login"
 msgstr "Login"
 
@@ -274,87 +274,22 @@ msgid "Il server invia la risposta in format JSON con i dati richiesti:"
 msgstr "The server sends the answer in JSON format with the requested data:"
 
 #: ../../cti_dev.rst:208
-msgid "Elenco delle API |product_cti|"
-msgstr "List of APIs |product_cti|"
+msgid "Elenco delle API"
+msgstr "API list"
 
-#: ../../cti_dev.rst:220
-msgid "Path"
-msgstr "Path"
+#: ../../cti_dev.rst:210
+msgid ""
+"Qui la lista `lista completa <https://documenter.getpostman.com/view/56173/"
+"RWgxuF5i>`_."
+msgstr ""
+"Here the `complete list <https://documenter.getpostman.com/view/56173/"
+"RWgxuF5i>`_."
 
-#: ../../cti_dev.rst:220
-#: ../../cti_dev.rst:276
-msgid "Descrizione"
-msgstr "Description"
-
-#: ../../cti_dev.rst:222
-msgid "`/astproxy`_"
-msgstr "`/astproxy`_"
-
-#: ../../cti_dev.rst:222
-msgid "Interazione con il server Asterisk"
-msgstr "Interaction with the Asterisk server"
-
-#: ../../cti_dev.rst:223
-msgid "`/authentication`_"
-msgstr "`/authentication`_"
-
-#: ../../cti_dev.rst:223
-msgid "Funzionalità d'autenticazione"
-msgstr "Authentication features"
-
-#: ../../cti_dev.rst:224
-msgid "`/custcard`_"
-msgstr "`/custcard`_"
-
-#: ../../cti_dev.rst:224
-msgid "Funzionalità relative alle schede clienti"
-msgstr "Features related to customer cards"
-
-#: ../../cti_dev.rst:225
-msgid "`/historycall`_"
-msgstr "`/historycall`_"
-
-#: ../../cti_dev.rst:225
-msgid "Storico delle chiamate del proprio utente"
-msgstr "Call history of your user"
-
-#: ../../cti_dev.rst:226
-msgid "`/histcallswitch`_"
-msgstr "`/histcallswitch`_"
-
-#: ../../cti_dev.rst:226
-msgid "Storico delle chiamate di tutti gli utenti del sistema"
-msgstr "Call history of all system users"
-
-#: ../../cti_dev.rst:227
-msgid "`/phonebook`_"
-msgstr "`/phonebook`_"
-
-#: ../../cti_dev.rst:227
-msgid "Funzionalità relative alle rubriche"
-msgstr "Features related to the phonebooks"
-
-#: ../../cti_dev.rst:228
-msgid "`/streaming`_"
-msgstr "`/streaming`_"
-
-#: ../../cti_dev.rst:228
-msgid "Funzionalità sulle sorgenti video"
-msgstr "Functionality on video sources"
-
-#: ../../cti_dev.rst:229
-msgid "`/voicemail`_"
-msgstr "`/voicemail`_"
-
-#: ../../cti_dev.rst:229
-msgid "Funzionalità relative alle voicemail"
-msgstr "Functionality on Functionality on video sources and video sources"
-
-#: ../../cti_dev.rst:233
+#: ../../cti_dev.rst:213
 msgid "WebSocket"
 msgstr "WebSocket"
 
-#: ../../cti_dev.rst:235
+#: ../../cti_dev.rst:215
 msgid ""
 "La connessione WebSocket viene utilizzata dal server per comunicare in tempo "
 "reale con tutti i client connessi (ad esempio per notificare gli eventi del "
@@ -366,7 +301,7 @@ msgstr ""
 "events). To establish a WebSocket connection with the |product_cti| server a "
 "first authentication stage is required."
 
-#: ../../cti_dev.rst:241
+#: ../../cti_dev.rst:221
 msgid ""
 "Il client esegue il login e crea un nuovo token d'autenticazione come "
 "descritto :ref:`qui <authentication-ref-label>`"
@@ -374,14 +309,14 @@ msgstr ""
 "The client login and creates a new authentication token as described :ref:"
 "`here <authentication-ref-label>`"
 
-#: ../../cti_dev.rst:242
+#: ../../cti_dev.rst:222
 msgid ""
 "Il client stabilisce una connessione websocket con il server sulla porta "
 "HTTPS 443:"
 msgstr ""
 "The client makes a websocket connection with the server on HTTPS port 443:"
 
-#: ../../cti_dev.rst:253
+#: ../../cti_dev.rst:233
 msgid ""
 "Il client invia il messaggio *login* al server attraverso la connessione "
 "websocket specificando *username* e *token* in formato JSON:"
@@ -389,7 +324,7 @@ msgstr ""
 "The client sends the * login * message to the server through the websocket "
 "connection specifying * username * and * token * in JSON format:"
 
-#: ../../cti_dev.rst:259
+#: ../../cti_dev.rst:239
 msgid ""
 "Se il login ha avuto successo il client riceve il messaggio *authe_ok*, "
 "altrimenti il messaggio *401* e il client viene disconnesso."
@@ -397,7 +332,7 @@ msgstr ""
 "If the login is successful, the client receives the * authe_ok * message, "
 "otherwise the message * 401 * and the client is disconnected."
 
-#: ../../cti_dev.rst:261
+#: ../../cti_dev.rst:241
 msgid ""
 "**Una volta completato il login con successo, il token ha validità infinita "
 "fino al riavvio del server.**"
@@ -405,125 +340,129 @@ msgstr ""
 "** Once the login is completed successfully, the token has infinite validity "
 "until the server is restarted. **"
 
-#: ../../cti_dev.rst:264
+#: ../../cti_dev.rst:244
 msgid "Sottoscrizione eventi"
 msgstr "Event subscription"
 
-#: ../../cti_dev.rst:266
+#: ../../cti_dev.rst:246
 msgid "Attraverso la connessione WebSocket vengono emessi i seguenti eventi:"
 msgstr "The following events are output via the WebSocket connection:"
 
-#: ../../cti_dev.rst:276
+#: ../../cti_dev.rst:256
 msgid "Evento"
 msgstr "Event"
 
-#: ../../cti_dev.rst:278
+#: ../../cti_dev.rst:256
+msgid "Descrizione"
+msgstr "Description"
+
+#: ../../cti_dev.rst:258
 msgid "`extenUpdate`_"
 msgstr "`extenUpdate`_"
 
-#: ../../cti_dev.rst:278
+#: ../../cti_dev.rst:258
 msgid "Aggiornamento di stato di un interno telefonico"
 msgstr "Status update of a telephone extension"
 
-#: ../../cti_dev.rst:279
+#: ../../cti_dev.rst:259
 msgid "*updateNewVoiceMessages*"
 msgstr "*updateNewVoiceMessages*"
 
-#: ../../cti_dev.rst:279
+#: ../../cti_dev.rst:259
 msgid ""
 "Invia tutti i nuovi messaggi vocali in corrispondenza dell'arrivo di uno "
 "nuovo"
 msgstr "Send all new voice messages when a new one arrives"
 
-#: ../../cti_dev.rst:280
+#: ../../cti_dev.rst:260
 msgid "*newVoiceMessageCounter*"
 msgstr "*newVoiceMessageCounter*"
 
-#: ../../cti_dev.rst:280
+#: ../../cti_dev.rst:260
 msgid ""
 "Invia il numero di nuovi messaggi vocali in corrispondenza dell'arrivo di "
 "uno nuovo"
 msgstr "Send the number of new voice messages at the arrival of a new one"
 
-#: ../../cti_dev.rst:281
+#: ../../cti_dev.rst:261
 msgid "`queueMemberUpdate`_"
 msgstr "`queueMemberUpdate`_"
 
-#: ../../cti_dev.rst:281
+#: ../../cti_dev.rst:261
 msgid "Aggiornamento di stato di un agente di una coda"
 msgstr "Updating the status of an agent in a queue"
 
-#: ../../cti_dev.rst:282
+#: ../../cti_dev.rst:262
 msgid "`trunkUpdate`_"
 msgstr "`trunkUpdate`_"
 
-#: ../../cti_dev.rst:282
+#: ../../cti_dev.rst:262
 msgid "Aggiornamento di stato di un fascio"
 msgstr "Update the status of a trunk "
 
-#: ../../cti_dev.rst:283
+#: ../../cti_dev.rst:263
 msgid "*extenRinging*"
 msgstr "*extenRinging*"
 
-#: ../../cti_dev.rst:283
+#: ../../cti_dev.rst:263
 msgid ""
 "Notifica che un interno sta squillando e riporta l'identificativo del "
 "chiamante"
 msgstr "Notifying an extension is ringing and reporting the caller's ID"
 
-#: ../../cti_dev.rst:284
+#: ../../cti_dev.rst:264
 msgid "`queueUpdate`_"
 msgstr "`queueUpdate`_"
 
-#: ../../cti_dev.rst:284
+#: ../../cti_dev.rst:264
 msgid "Aggiornamento di stato di una coda"
 msgstr "Update status of a queue"
 
-#: ../../cti_dev.rst:285
+#: ../../cti_dev.rst:265
 msgid "`parkingUpdate`_"
 msgstr "`parkingUpdate`_"
 
-#: ../../cti_dev.rst:285
+#: ../../cti_dev.rst:265
 msgid "Aggiornamento di stato di un parcheggio"
 msgstr "Parking status update"
 
-#: ../../cti_dev.rst:286
+#: ../../cti_dev.rst:266
 msgid "`wsClientLoggedIn`_"
 msgstr "`wsClientLoggedIn`_"
 
-#: ../../cti_dev.rst:286
+#: ../../cti_dev.rst:266
 msgid "Un utente ha effettuato il login a |product_cti|"
 msgstr "A user has logged in to |product_cti|"
 
-#: ../../cti_dev.rst:287
+#: ../../cti_dev.rst:267
 msgid "*allWsClientDisonnection*"
 msgstr "*allWsClientDisonnection*"
 
-#: ../../cti_dev.rst:287
+#: ../../cti_dev.rst:267
 msgid "Un utente non ha più nessuna connessione WebSocket attiva"
 msgstr "A user no longer has any active WebSocket connections"
 
-#: ../../cti_dev.rst:288
+#: ../../cti_dev.rst:268
 msgid "*401*"
 msgstr "*401*"
 
-#: ../../cti_dev.rst:288
+#: ../../cti_dev.rst:268
 msgid "L'autenticazione è fallita"
 msgstr "Authentication has failed"
 
-#: ../../cti_dev.rst:289
+#: ../../cti_dev.rst:269
 msgid "*authe_ok*"
 msgstr "*authe_ok*"
 
-#: ../../cti_dev.rst:289
+#: ../../cti_dev.rst:269
 msgid "L'autenticazione è avvenuta con successo"
 msgstr "Authentication has been successful"
 
-#: ../../cti_dev.rst:292
+#: ../../cti_dev.rst:272
 msgid "Ogni evento fornisce i dati relativi in formato JSON."
 msgstr "Each event provides the related data in JSON format."
 
-#: ../../cti_dev.rst:294
+#: ../../cti_dev.rst:274
 msgid ""
 "È possibile sottoscrivere un ascoltatore per ciascuno degli eventi. Un "
 "esempio è il seguente:"
