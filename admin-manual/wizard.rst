@@ -290,7 +290,7 @@ Per esempio, se gli interni 201 e 202 hanno un valore differente per il gruppo d
 Se invece si clicca sul :guilabel:`lucchetto` in modo che sia aperto e si salva, il gruppo di chiamata verrà sovrascritto con il valore del campo.
 
 Amministrazione
-==============
+===============
 
 La sezione "Amministratore" raggruppa le azioni che possono essere fatte dall'amministratore del centralino
 
