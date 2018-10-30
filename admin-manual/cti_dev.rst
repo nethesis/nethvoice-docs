@@ -204,30 +204,10 @@ L'autenticazione ha successo e il server risponde con:
     "nethcti": []
  }
 
-Elenco delle API |product_cti|
-------------------------------
+Elenco delle API
+----------------
 
-.. _/astproxy: http://api.nethesis.it/nethcti-v3/classes/plugin_rest_astproxy.html
-.. _/authentication: http://api.nethesis.it/nethcti-v3/classes/plugin_rest_authentication.html
-.. _/custcard: http://api.nethesis.it/nethcti-v3/classes/plugin_rest_custcard.html
-.. _/historycall: http://api.nethesis.it/nethcti-v3/classes/plugin_rest_historycall.html
-.. _/histcallswitch: http://api.nethesis.it/nethcti-v3/classes/plugin_rest_histcallswitch.html
-.. _/phonebook: http://api.nethesis.it/nethcti-v3/classes/plugin_rest_phonebook.html
-.. _/streaming: http://api.nethesis.it/nethcti-v3/classes/plugin_rest_streaming.html
-.. _/voicemail: http://api.nethesis.it/nethcti-v3/classes/plugin_rest_voicemail.html
-
-====================== ==================================================================================
-Path                   Descrizione
-====================== ==================================================================================
-`/astproxy`_           Interazione con il server Asterisk
-`/authentication`_     Funzionalità d'autenticazione
-`/custcard`_           Funzionalità relative alle schede clienti
-`/historycall`_        Storico delle chiamate del proprio utente
-`/histcallswitch`_     Storico delle chiamate di tutti gli utenti del sistema
-`/phonebook`_          Funzionalità relative alle rubriche
-`/streaming`_          Funzionalità sulle sorgenti video
-`/voicemail`_          Funzionalità relative alle voicemail
-====================== ==================================================================================
+Qui la lista `lista completa <https://documenter.getpostman.com/view/56173/RWgxuF5i>`_.
 
 WebSocket
 =========
