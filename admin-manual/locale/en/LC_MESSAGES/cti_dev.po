@@ -8,7 +8,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2018-10-30 08:41+0000\n"
+"PO-Revision-Date: 2018-10-30 04:37+0000\n"
 "Last-Translator: Polidori Alessandro <alessandro.polidori@gmail.com>\n"
 "Language-Team: English (United States)\n"
 "Language: en_US\n"
@@ -68,7 +68,7 @@ msgstr "The client sends an HTTPS (POST) request to the following rest api:"
 
 #: ../../cti_dev.rst:31
 msgid "specificando lo *username* e *password* in formato JSON:"
-msgstr "specifying the username and passowrd in JSON format:"
+msgstr "specifying the username and password in JSON format:"
 
 #: ../../cti_dev.rst:37
 msgid ""
