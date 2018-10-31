@@ -393,3 +393,34 @@ Per riabilitarli:
   I fasci rimangono pienamente funzionanti: la disattivazione riguarda solamente |product_cti| Server.
 
   Tale disattivazione comporta solamente la non visualizzazione delle chiamate nella schermata dei "fasci" lato |product_cti| Client.
+
+|product_cti|: effettuare chiamate in maniera non autenticata
+=============================================================
+
+|product_cti| offre la possibilità di fare telefonate invocando una particolare API senza autenticazione.
+
+**Questa funzionalità è disabilitata di default per motivi di sicurezza.**
+
+Per l'attivazione eseguire:
+
+.. code-block:: bash
+
+  config setprop nethcti-server UnautheCall enabled
+  signal-event nethcti-server3-update
+
+per disabilitarla:
+
+.. code-block:: bash
+
+  config setprop nethcti-server UnautheCall disabled
+  signal-event nethcti-server3-update
+
+Una volta attivata è possibile effettuare una telefonata invocando la REST API `astproxy/unauthe_call. <https://nethvoice.docs.nethesis.it/en/v14/cti_dev.html#elenco-delle-api>`_
+
+Di default solamente gli indirizzi appartenenti alle "Trusted Networks" sono abilitati all'utilizzo della API.
+È comunque possibile personalizzare tale lista eseguendo:
+
+.. code-block:: bash
+
+  config setprop nethcti-server UnautheCallAddress "192.168.5.60,192.168.5.61,..."
+  signal-event nethcti-server3-update
