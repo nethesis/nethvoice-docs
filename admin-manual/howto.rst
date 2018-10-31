@@ -424,3 +424,5 @@ Di default solamente gli indirizzi appartenenti alle "Trusted Networks" sono abi
 
   config setprop nethcti-server UnautheCallAddress "192.168.5.60,192.168.5.61,..."
   signal-event nethcti-server3-update
+
+.. warning:: Se la funzionalità viene abilitata, chiunque potrà eseguire telefonate da qualsiasi interno verso qualsiasi destinazione tramite richieste HTTP POST, ma solo dagli indirizzi indicati nella lista ottenuta col seguente comando `"config getprop nethcti-server UnautheCallAddress".`
