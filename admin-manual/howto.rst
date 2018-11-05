@@ -422,7 +422,7 @@ Di default solamente gli indirizzi appartenenti alle "Trusted Networks" sono abi
 
 .. code-block:: bash
 
-  config setprop nethcti-server UnautheCallAddress "192.168.5.60 192.168.5.61,..."
+  config setprop nethcti-server UnautheCallAddress "192.168.5.60 192.168.6.60/255.255.255.0 192.168.4.0/24"
   signal-event nethcti-server3-update
 
 È consentito l'inserimento di campi multipli separati da uno spazio vuoto, è possibile specificare un singolo indirizzo
