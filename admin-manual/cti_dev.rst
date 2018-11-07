@@ -246,6 +246,7 @@ Sottoscrizione eventi
 Attraverso la connessione WebSocket vengono emessi i seguenti eventi:
 
 .. _extenUpdate: http://api.nethesis.it/nethcti-v3/classes/com_nethcti_ws.html#event_extenUpdate
+.. _extenConnected: http://api.nethesis.it/nethcti-v3/classes/com_nethcti_ws.html#event_extenConnected
 .. _queueMemberUpdate: http://api.nethesis.it/nethcti-v3/classes/com_nethcti_ws.html#event_queueMemberUpdate
 .. _trunkUpdate: http://api.nethesis.it/nethcti-v3/classes/com_nethcti_ws.html#event_trunkUpdate
 .. _queueUpdate: http://api.nethesis.it/nethcti-v3/classes/com_nethcti_ws.html#event_queueUpdate
@@ -256,6 +257,7 @@ Attraverso la connessione WebSocket vengono emessi i seguenti eventi:
 Evento                    Descrizione
 ========================= ===================================================================================
 `extenUpdate`_            Aggiornamento di stato di un interno telefonico
+`extenConnected`_         Aggiornamento di stato di una chiamata connessa
 *updateNewVoiceMessages*  Invia tutti i nuovi messaggi vocali in corrispondenza dell'arrivo di uno nuovo
 *newVoiceMessageCounter*  Invia il numero di nuovi messaggi vocali in corrispondenza dell'arrivo di uno nuovo
 `queueMemberUpdate`_      Aggiornamento di stato di un agente di una coda
