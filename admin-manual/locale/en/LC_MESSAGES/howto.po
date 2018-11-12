@@ -4,11 +4,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: NethVoice 14\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-10-30 09:25+0100\n"
+"POT-Creation-Date: 2018-11-12 09:22+0100\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2018-10-31 04:44+0000\n"
+"PO-Revision-Date: 2018-11-12 09:02+0000\n"
 "Last-Translator: Polidori Alessandro <alessandro.polidori@gmail.com>\n"
 "Language-Team: English (United States)\n"
 "Language: en_US\n"
@@ -672,3 +672,70 @@ msgid ""
 msgstr ""
 "This deactivation only involves not displaying the calls in the \"trunks\" "
 "screen on the side |product_cti| Client."
+
+#: ../../howto.rst:398
+msgid "|product_cti|: effettuare chiamate in maniera non autenticata"
+msgstr "|product_cti|: make unauthenticated calls"
+
+#: ../../howto.rst:400
+msgid ""
+"|product_cti| offre la possibilità di fare telefonate invocando una "
+"particolare API senza autenticazione: :code:`astproxy/unauthe_call.`"
+msgstr ""
+"|product_cti| offers the possibility of making phone calls by invoking a "
+"particular API without authentication: :code:`astproxy/unauthe_call.`"
+
+#: ../../howto.rst:402
+msgid ""
+"**Questa funzionalità è disabilitata di default per motivi di sicurezza.**"
+msgstr "**This feature is disabled by default for security reasons.**"
+
+#: ../../howto.rst:404
+msgid "Per l'attivazione eseguire:"
+msgstr "To activate:"
+
+#: ../../howto.rst:411
+msgid "per disabilitarla:"
+msgstr "to disable it:"
+
+#: ../../howto.rst:418
+msgid ""
+"Una volta attivata è possibile effettuare una telefonata invocando la REST "
+"API `astproxy/unauthe_call. <https://nethvoice.docs.nethesis.it/en/v14/"
+"cti_dev.html#elenco-delle-api>`_"
+msgstr ""
+"Once activated you can make a phone call invoking the REST API `astproxy/"
+"unauthe_call. <Https://nethvoice.docs.nethesis.it/en/v14/cti_dev.html#elenco-"
+"delle-api>`_"
+
+#: ../../howto.rst:420
+msgid ""
+"Di default solamente gli indirizzi appartenenti alle \"Trusted Networks\" "
+"sono abilitati all'utilizzo della API. È comunque possibile personalizzare "
+"tale lista eseguendo:"
+msgstr ""
+"Only the addresses belonging to the \"Trusted Networks\" are enabled by "
+"default to use the API. It is however possible to customize this list by "
+"executing:"
+
+#: ../../howto.rst:428
+msgid ""
+"È consentito l'inserimento di campi multipli separati da uno spazio vuoto, è "
+"possibile specificare un singolo indirizzo IP o un range, sia tramite "
+"netmask sia utilizzando la notazione CIDR."
+msgstr ""
+"You can enter multiple fields separated by a blank space, you can specify a "
+"single IP address or a range, either through netmask or using the CIDR "
+"notation."
+
+#: ../../howto.rst:431
+msgid ""
+"Se la funzionalità viene abilitata, chiunque potrà eseguire telefonate da "
+"qualsiasi interno verso qualsiasi destinazione tramite richieste HTTP POST, "
+"ma solo dagli indirizzi indicati nella lista ottenuta col seguente comando :"
+"code:`\"config getprop nethcti-server UnautheCallAddress\".`"
+msgstr ""
+"If the feature is enabled, anyone can make phone calls from any extension to "
+"any destination through HTTP POST requests, but only from the addresses "
+"listed in the list obtained with the following command: code: `\"config "
+"getprop nethcti-server UnautheCallAddress\".`"

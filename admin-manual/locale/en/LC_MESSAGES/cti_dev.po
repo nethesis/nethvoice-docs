@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: NethVoice 14\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-10-30 09:38+0100\n"
+"POT-Creation-Date: 2018-11-12 09:22+0100\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -348,121 +348,129 @@ msgstr "Event subscription"
 msgid "Attraverso la connessione WebSocket vengono emessi i seguenti eventi:"
 msgstr "The following events are output via the WebSocket connection:"
 
-#: ../../cti_dev.rst:256
+#: ../../cti_dev.rst:257
 msgid "Evento"
 msgstr "Event"
 
-#: ../../cti_dev.rst:256
+#: ../../cti_dev.rst:257
 msgid "Descrizione"
 msgstr "Description"
 
-#: ../../cti_dev.rst:258
+#: ../../cti_dev.rst:259
 msgid "`extenUpdate`_"
 msgstr "`extenUpdate`_"
 
-#: ../../cti_dev.rst:258
+#: ../../cti_dev.rst:259
 msgid "Aggiornamento di stato di un interno telefonico"
 msgstr "Status update of a telephone extension"
 
-#: ../../cti_dev.rst:259
+#: ../../cti_dev.rst:260
+msgid "`extenConnected`_"
+msgstr ""
+
+#: ../../cti_dev.rst:260
+msgid "Aggiornamento di stato di una chiamata connessa"
+msgstr ""
+
+#: ../../cti_dev.rst:261
 msgid "*updateNewVoiceMessages*"
 msgstr "*updateNewVoiceMessages*"
 
-#: ../../cti_dev.rst:259
+#: ../../cti_dev.rst:261
 msgid ""
 "Invia tutti i nuovi messaggi vocali in corrispondenza dell'arrivo di uno "
 "nuovo"
 msgstr "Send all new voice messages when a new one arrives"
 
-#: ../../cti_dev.rst:260
+#: ../../cti_dev.rst:262
 msgid "*newVoiceMessageCounter*"
 msgstr "*newVoiceMessageCounter*"
 
-#: ../../cti_dev.rst:260
+#: ../../cti_dev.rst:262
 msgid ""
 "Invia il numero di nuovi messaggi vocali in corrispondenza dell'arrivo di "
 "uno nuovo"
 msgstr "Send the number of new voice messages at the arrival of a new one"
 
-#: ../../cti_dev.rst:261
+#: ../../cti_dev.rst:263
 msgid "`queueMemberUpdate`_"
 msgstr "`queueMemberUpdate`_"
 
-#: ../../cti_dev.rst:261
+#: ../../cti_dev.rst:263
 msgid "Aggiornamento di stato di un agente di una coda"
 msgstr "Updating the status of an agent in a queue"
 
-#: ../../cti_dev.rst:262
+#: ../../cti_dev.rst:264
 msgid "`trunkUpdate`_"
 msgstr "`trunkUpdate`_"
 
-#: ../../cti_dev.rst:262
+#: ../../cti_dev.rst:264
 msgid "Aggiornamento di stato di un fascio"
 msgstr "Update the status of a trunk "
 
-#: ../../cti_dev.rst:263
+#: ../../cti_dev.rst:265
 msgid "*extenRinging*"
 msgstr "*extenRinging*"
 
-#: ../../cti_dev.rst:263
+#: ../../cti_dev.rst:265
 msgid ""
 "Notifica che un interno sta squillando e riporta l'identificativo del "
 "chiamante"
 msgstr "Notifying an extension is ringing and reporting the caller's ID"
 
-#: ../../cti_dev.rst:264
+#: ../../cti_dev.rst:266
 msgid "`queueUpdate`_"
 msgstr "`queueUpdate`_"
 
-#: ../../cti_dev.rst:264
+#: ../../cti_dev.rst:266
 msgid "Aggiornamento di stato di una coda"
 msgstr "Update status of a queue"
 
-#: ../../cti_dev.rst:265
+#: ../../cti_dev.rst:267
 msgid "`parkingUpdate`_"
 msgstr "`parkingUpdate`_"
 
-#: ../../cti_dev.rst:265
+#: ../../cti_dev.rst:267
 msgid "Aggiornamento di stato di un parcheggio"
 msgstr "Parking status update"
 
-#: ../../cti_dev.rst:266
+#: ../../cti_dev.rst:268
 msgid "`wsClientLoggedIn`_"
 msgstr "`wsClientLoggedIn`_"
 
-#: ../../cti_dev.rst:266
+#: ../../cti_dev.rst:268
 msgid "Un utente ha effettuato il login a |product_cti|"
 msgstr "A user has logged in to |product_cti|"
 
-#: ../../cti_dev.rst:267
+#: ../../cti_dev.rst:269
 msgid "*allWsClientDisonnection*"
 msgstr "*allWsClientDisonnection*"
 
-#: ../../cti_dev.rst:267
+#: ../../cti_dev.rst:269
 msgid "Un utente non ha più nessuna connessione WebSocket attiva"
 msgstr "A user no longer has any active WebSocket connections"
 
-#: ../../cti_dev.rst:268
+#: ../../cti_dev.rst:270
 msgid "*401*"
 msgstr "*401*"
 
-#: ../../cti_dev.rst:268
+#: ../../cti_dev.rst:270
 msgid "L'autenticazione è fallita"
 msgstr "Authentication has failed"
 
-#: ../../cti_dev.rst:269
+#: ../../cti_dev.rst:271
 msgid "*authe_ok*"
 msgstr "*authe_ok*"
 
-#: ../../cti_dev.rst:269
+#: ../../cti_dev.rst:271
 msgid "L'autenticazione è avvenuta con successo"
 msgstr "Authentication has been successful"
 
-#: ../../cti_dev.rst:272
+#: ../../cti_dev.rst:274
 msgid "Ogni evento fornisce i dati relativi in formato JSON."
 msgstr "Each event provides the related data in JSON format."
 
-#: ../../cti_dev.rst:274
+#: ../../cti_dev.rst:276
 msgid ""
 "È possibile sottoscrivere un ascoltatore per ciascuno degli eventi. Un "
 "esempio è il seguente:"
