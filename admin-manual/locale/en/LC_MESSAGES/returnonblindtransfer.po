@@ -7,7 +7,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2018-10-04 03:07+0000\n"
+"PO-Revision-Date: 2018-11-08 03:54+0000\n"
 "Last-Translator: Andrea Marchionni <andrea.marchionni@nethesis.it>\n"
 "Language-Team: English (United States)\n"
 "Language: en_US\n"
@@ -50,7 +50,7 @@ msgstr "Activated"
 
 #: ../../returnonblindtransfer.rst:15
 msgid "Attivare o disattivare il ritorno su trasferimento non cunsultativo."
-msgstr ""
+msgstr "Activate or deactivate the return on blind transfer."
 
 #: ../../returnonblindtransfer.rst:19
 msgid "Timeout"
