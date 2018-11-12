@@ -33,3 +33,10 @@ Inserire nel campo "testo" il messaggio che verrà convertito in audio.
 
 Cliccando su conferma, il messaggio verrà registrato e si verrà rediretti alla pagina della registrazione. Da qui è possibile riascoltare il messaggio, convertirlo in un diverso formato o eliminarlo.
 
+
+Utilizzo del TTS Google da VisualPlan
+=====================================
+
+E' possibile utilizzare il TTS da VisualPlan ovunque sia possibile inserire una registrazione (Annunci, IVR, CQR).
+Nel dialog di aggiunta della registrazione sarà possibile inserire l'API key di google se non è ancora stato fatto.
+Se invece è già stata inserita un'API key, verranno mostrate due select, una per la lingua e una per la voce da utilizzare, ed il campo di testo dove digitare il messaggio che verrà letto dal TTS. Dopo aver compilato questi tre campi, sarà possibile ascotare il messaggio premendo sul tasto con l'icona dell'altoparlante. Infine, dopo aver ascoltato la registrazione, sarà possibile inserire un nome ed una descrizione per salvarla come registrazione di sistema.
