@@ -71,6 +71,7 @@ Configurazione Avanzata
    directdid
    queueexit
    queuemetrics
+   googletts
 
 HowTo
 -----------------------
