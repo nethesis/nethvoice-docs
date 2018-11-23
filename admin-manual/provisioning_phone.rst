@@ -37,6 +37,12 @@ GIGASET
 
 * Maxwell basic, Maxwell 2, Maxwell 3
    
+FANVIL
+------
+
+* X3, X4, X5, X6
+
+
 Provisioning
 ============
 
@@ -104,6 +110,17 @@ Ad esempio:  
 
 
 I telefoni SNOM richiedono necessariamente il firmware per un corretto avvio del telefono, se non presente il telefono mostrerà un errore a schermo superabile solo con la pressione di un tasto.
+
+I telefoni GIGASET richiedono la creazione di un file ulteriore file oltre al caricamento del firmware, che dovrà essere nominato **firmware.xml** e contenere:
+
+.. code-block:: bash
+
+ <?xml version="1.0" encoding="UTF-8"?>
+    <firmware version="1.0" productID="mx3b">
+            <file version="VERSIONE" url="tftp://IP PBX/maxwell.bin" flags="FORCE_ACCEPT"/>
+ </firmware>
+
+Sostituire VERSIONE con la versione del firmware da caricare, ad esempio 2.24.12, e IP PBX con l'ip del |product|.
 
 
 Dove e come trovare i file di configurazione
@@ -194,7 +211,7 @@ I valori modificabili sono:
 * Soft keys (Tasti del telefono sotto lo schermo)                                                    
 * Line keys (Tasti linea)
 * Exp keys  (Tasti linea dei moduli di espansione)                                                                                                                 
-* Screen Saver e Sfondo (Sangomai, Yealink)
+* Screen Saver e Sfondo (Sangoma, Yealink)
 
 Le possibilità sono due:
 
