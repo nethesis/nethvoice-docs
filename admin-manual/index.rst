@@ -63,7 +63,7 @@ Configurazione Avanzata
 -----------------------
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 1
 
    nethcqr
    rapid_code
@@ -77,7 +77,7 @@ HowTo
 -----------------------
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 1
 
    howto
 
@@ -96,7 +96,7 @@ Moduli Aggiuntivi
 ---------------------------------
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 1
 
    cti_dev
 
