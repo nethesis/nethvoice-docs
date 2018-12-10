@@ -18,7 +18,6 @@ Funzioni non ancora disponibili:
 
 * Analisi costi
 * Integrazione FIAS
-* Annunci e registrazioni TTS
 * Fasci Virtuali
 * Failover geografico e HA
 
