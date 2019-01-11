@@ -18,21 +18,23 @@ Le credenziali per il login sono le seguenti:
 
 `password: Nethesis,1234`
 
-Modalità centralino
-===================
-Una volta effettuato il login, vi viene subito proposto di scegliere che tipologia di centralino intendete installare:
+Modalità utenti per il centralino
+=================================
+Una volta effettuato il login, se non è ancora stato configurato un account provider sulla macchina, l'interfaccia mostrerà la possibilità di scegliere se installare un account provider LDAP locale o configurarlo manualmente. 
 
-- *Legacy*: il centralino diventa anche la base per creare i vostri utenti, quindi al vostro server verrà installata una base LDAP su cui creare i vostri utenti
-- *Unified*: il centralino utilizza la base utenti già presente nel vostro server (LDAP o Active Directory)
+Nel primo caso, non verranno richieste ulteriori configurazioni, mentre nel secondo si verrà rediretti all'interfaccia di |parent_product|, dove sarà possibile configurare il provider degli utenti. 
 
-Una volta scelta la modalità, si procede alla configurazione degli utenti
+Se il provider scelto non è locale, non sarà possibile creare gli utenti, che dovranno essere quindi creati manualmente sul provider stesso prima di procedere con la configurazione, con un provider locale invece sarà possibile creare gli utenti direttamente in |product|.
+
+Una volta scelta la modalità, si procede alla configurazione degli utenti.
 
 Utenti
 ======
-Una volta scelta la modalità del centralino, vedrete una lista vuota (nel caso di Legacy) o la lista degli utenti già presenti nel server (nel caso di Unified).
+Il primo passo nella configurazione di |product| è definire la lista di utenti e l'abbinamento con il loro interno telefonico.
 
-Se siete in modalità Legacy create il vostro primo utente, scegliendo un username e il nome completo.
+In caso di account provider remoto in questa sezione comparirà l'elenco degli utenti che |parent_product| recupera remotamente.
 
+In caso di account provider locale in questa sezione comparirà invece l'elenco degli utenti l'elenco delgi utenti di |parent_product| e ci sarà la possibilità di crearne direttamente da qui di nuovi scegliendo username e il nome completo.
 
 Interni
 -------
@@ -317,6 +319,6 @@ La sezione "Report" riporta l'elenco completo degli utenti del centralino specif
 - Username
 - Nome e Cognome
 - Password Voicemail
-- Password utente (se si è in modalità Legacy)
+- Password utente (se l'utente è stato creato da |product|)
 
 E' presente anche la possibilità di stampare l'elenco in formato PDF cliccando sul bottone "Stampa report PDF"
