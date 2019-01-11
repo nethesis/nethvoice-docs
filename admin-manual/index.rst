@@ -48,6 +48,7 @@ Configurazione Base
    :maxdepth: 2
 
    wizard
+   dashboard
    app_mobile
 
 Provisioning
