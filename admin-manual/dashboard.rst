@@ -6,13 +6,13 @@ Dashboard
 
 La dashboard diventa la pagina iniziale di |product| dopo la prima configurazione.
 
-Permette di avere una visione degli oggetti coivolti nel funzionamento di |product|.
+Permette di avere una visione degli oggetti coinvolti nel funzionamento di |product|.
 
 
 Utenti
 ======
 
-Vengono mostrati gli utenti coinvolti nella configurazione di |product| con lo stato della presence e dei loro device telefonici.
+Vengono mostrati gli utenti utilizzati nella configurazione di |product| con lo stato della presence e dei loro device telefonici.
 
 Nel caso in cui la configurazione della presence dell'utente non sia a default (Disponibile), viene data la possibilità di resettarla riportandola allo stato normale cliccando sul simbolo della gomma.
 
