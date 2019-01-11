@@ -73,6 +73,14 @@ Configurazione Avanzata
    queuemetrics
    googletts
 
+Migrazione da |product| 11 a |product| 14
+-----------------------------------------
+
+.. toctree::
+   :maxdepth: 2
+
+   migrazione
+
 HowTo
 -----------------------
 
