@@ -7,13 +7,13 @@ App mobile
 Wave
 ====
 
-L'applicazione Wave integra un interno in sui dispositivi mobile, è installabile su base Android o iOS.
+L'applicazione Wave integra un interno sui dispositivi mobile, è installabile su base Android o iOS.
 
 
 .. note:: Ricordarsi di rendere accessibile da internet il |product| tramite il protocollo SIP TLS per un utilizzo da remoto
 
 
-Porte su cui  è necessario raggiungere |product| per un utilizzo da remoto:
+Porte su cui è necessario raggiungere |product| per un utilizzo da remoto:
 
 - 5061 TCP (SIP TLS)
 - da 10000 a 20000 UDP (Audio)
