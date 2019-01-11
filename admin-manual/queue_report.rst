@@ -28,10 +28,27 @@ In questa sezione si trovano le attività degli agenti delle varie code mostrand
 
 E' possibile utilizzare il filtro per creare una ricerca più particolareggiata nel tempo o per singolo Agente e/o Coda ed esportare il risultato in un file .xls
 
+
+Per sessione
+------------
+
+In questa sessione di trovano le sessioni lavorative e di pausa degli agenti delle code, viene mostrato coda, agente, il tipo di sessione, l'inizio e la fine, la durata e la motivazione della pausa se si tratta di una sessione di questo tipo.
+
+E' possibile utilizzare il filtro per creare una ricerca più particolareggiata nel tempo o per singolo Agente e/o Coda ed esportare il risultato in un file .xls
+
+
 Per chiamante
 -------------
 
 In questa sezione si trovano i dati relativi alle chiamate entrate nelle code raggruppate per numero chiamante.
+
+E' possibile utilizzare il filtro per creare una ricerca più particolareggiata nel tempo o per singola Coda o numero chiamante ed esportare il risultato in un file .xls
+
+
+Per chiamata
+------------
+
+In questa sezione si trovano i dati relativi alle chiamate entrate nelle code, lo scopo principale è mostrarne l'esito. Vengono visualizzati la data, il chiamante, la coda chiamata, se si tratta di una chiamata gestita l'agente, la posizione in coda, il tempo di attesa, la durata e l'esito.
 
 E' possibile utilizzare il filtro per creare una ricerca più particolareggiata nel tempo o per singola Coda o numero chiamante ed esportare il risultato in un file .xls
 
@@ -43,7 +60,7 @@ In questa sezione si trovano le chiamate che hanno avuto come destinazione un IV
 
 E' possibile utilizzare il filtro per creare una ricerca più particolareggiata nel tempo o per singola Rotta in Entrata ed esportare il risultato in un file .xls
 
-
+ 
 Performance
 -----------
 
@@ -53,7 +70,7 @@ Viene anche mostrata la qualità del servizio offerta della code raggruppando le
 
 E' possibile utilizzare il filtro per creare una ricerca più particolareggiata nel tempo o per singola Coda ed esportare il risultato in un file .xls
 
-
+ 
 Distribuzione
 =============
 
