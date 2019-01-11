@@ -1,6 +1,6 @@
-=======================================
-Migrazione da |product|11 a |product|14
-=======================================
+=========================================
+Migrazione da |product| 11 a |product| 14
+=========================================
 
 La migrazione consente di configurare |product| 14 partendo dalla configurazione di un |product| 11.
 
