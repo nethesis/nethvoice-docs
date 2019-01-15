@@ -18,7 +18,7 @@ Riepilogo
 
 In questa sezione si trovano le chiamate ricevute per ogni Coda configurata in |product| suddivise in evase con totale, attesa massima minima e media, durata massima minima e media, posizione massima e media di entrata in coda; e chiamate fallite con totale, attesa attesa massima minima e media, posizione massima media di entrata e di uscita.
 
-E' possibile utilizzare il filtro per creare una ricerca più particolareggiata nel tempo o per singola Coda ed esportare il risultato in un file .xls
+É possibile utilizzare il filtro per creare una ricerca più particolareggiata nel tempo o per singola Coda ed esportare il risultato in un file .xls
 
 
 Per agente
@@ -26,19 +26,15 @@ Per agente
 
 In questa sezione si trovano le attività degli agenti delle varie code mostrando tempo di lavoro, di pausa ed effettivo, chiamate risposte, non risposte, totale di conversazione, chiamate all'ora, percentuale di occupazione, durata massima, minima e media delle chiamate.
 
-E' possibile utilizzare il filtro per creare una ricerca più particolareggiata nel tempo o per singolo Agente e/o Coda ed esportare il risultato in un file .xls
+É possibile utilizzare il filtro per creare una ricerca più particolareggiata nel tempo o per singolo Agente e/o Coda ed esportare il risultato in un file .xls
 
 
 Per sessione
 ------------
 
-<<<<<<< HEAD
-In questa sessione di trovano le sessioni lavorative e di pausa degli agenti delle code, vengono mostrati coda, agente, il tipo di sessione, l'inizio e la fine, la durata e la motivazione della pausa se si tratta di una sessione di questo tipo.
-=======
-In questa sessione di trovano le sessioni lavorative e di pausa degli agenti delle code, viene mostrato coda, agente, il tipo di sessione, l'inizio e la fine, la durata e la motivazione della pausa se si tratta di una sessione di questo tipo.
->>>>>>> Add #5550
+In questa sezione si trovano le sessioni lavorative e di pausa degli agenti delle code, vengono mostrati coda, agente, il tipo di sessione, l'inizio e la fine, la durata e la motivazione della pausa se si tratta di una sessione di questo tipo.
 
-E' possibile utilizzare il filtro per creare una ricerca più particolareggiata nel tempo o per singolo Agente e/o Coda ed esportare il risultato in un file .xls
+É possibile utilizzare il filtro per creare una ricerca più particolareggiata nel tempo o per singolo Agente e/o Coda ed esportare il risultato in un file .xls
 
 
 Per chiamante
@@ -46,7 +42,7 @@ Per chiamante
 
 In questa sezione si trovano i dati relativi alle chiamate entrate nelle code raggruppate per numero chiamante.
 
-E' possibile utilizzare il filtro per creare una ricerca più particolareggiata nel tempo o per singola Coda o numero chiamante ed esportare il risultato in un file .xls
+É possibile utilizzare il filtro per creare una ricerca più particolareggiata nel tempo o per singola Coda o numero chiamante ed esportare il risultato in un file .xls
 
 
 Per chiamata
@@ -54,7 +50,7 @@ Per chiamata
 
 In questa sezione si trovano i dati relativi alle chiamate entrate nelle code, lo scopo principale è mostrarne l'esito. Vengono visualizzati la data, il chiamante, la coda chiamata, se si tratta di una chiamata gestita l'agente, la posizione in coda, il tempo di attesa, la durata e l'esito.
 
-E' possibile utilizzare il filtro per creare una ricerca più particolareggiata nel tempo o per singola Coda o numero chiamante ed esportare il risultato in un file .xls
+É possibile utilizzare il filtro per creare una ricerca più particolareggiata nel tempo o per singola Coda o numero chiamante ed esportare il risultato in un file .xls
 
 
 IVR
@@ -72,7 +68,7 @@ In questa sezione vengono riassunte le performance delle varie code mostrando i 
 
 Viene anche mostrata la qualità del servizio offerta della code raggruppando le chiamate per tempo di attesa.
 
-E' possibile utilizzare il filtro per creare una ricerca più particolareggiata nel tempo o per singola Coda ed esportare il risultato in un file .xls
+É possibile utilizzare il filtro per creare una ricerca più particolareggiata nel tempo o per singola Coda ed esportare il risultato in un file .xls
 
  
 Distribuzione
@@ -83,7 +79,7 @@ Oraria
 
 In questa sezione le chiamate entranti nelle code vengono distribuite nell'arco temporale giornaliero e suddivise anche per chiamate evase ed inevase.
 
-E' possibile utilizzare il filtro per creare una ricerca più particolareggiata nel tempo o per singola Coda ed esportare il risultato in un file .xls
+É possibile utilizzare il filtro per creare una ricerca più particolareggiata nel tempo o per singola Coda ed esportare il risultato in un file .xls
 
 
 Geografica
@@ -91,7 +87,7 @@ Geografica
 
 In questa sezione le chiamate entranti nelle Code vengono raggruppate per zona geografica e possono essere divise per Regione, Provincia o Prefisso.
 
-E' possibile utilizzare il filtro per creare una ricerca più particolareggiata nel tempo o per singola Coda ed esportare il risultato in un file .xls
+É possibile utilizzare il filtro per creare una ricerca più particolareggiata nel tempo o per singola Coda ed esportare il risultato in un file .xls
 
 
 Grafici
