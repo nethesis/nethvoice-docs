@@ -10,7 +10,7 @@ Wave
 L'applicazione Wave integra un interno sui dispositivi mobile, è installabile su base Android o iOS.
 
 
-.. note:: Ricordarsi di rendere accessibile da internet il |product| tramite il protocollo SIP TLS per un utilizzo da remoto
+.. note:: Ricordarsi di rendere accessibile da internet |product| tramite il protocollo SIP TLS per un utilizzo da remoto
 
 
 Porte su cui è necessario raggiungere |product| per un utilizzo da remoto:
@@ -46,7 +46,7 @@ Aprire il wizard di |product|, andare sulla pagina "Dispositivi" ed effettuare u
 
 Nella sezione Utenti -> Configurazioni del wizard associare il device all'utente voluto e cliccare su Configura e riavvia per pubblicare la configurazione.
 
-Forzare il provisioning di nuovo con la procedura precedente Impostazioni -> Provisioning Settings -> Start Provisioning per configurare l'applicazione.
+Forzare il provisioning di nuovo con la procedura precedente per configurare l'applicazione: Impostazioni -> Provisioning Settings -> Start Provisioning
 
 .. note:: Per consentire l'accesso da remoto alla rubrica di |product| ricordarsi di abilitare l'accesso da reti esterne alla rubrica centralizzata in |parent_product|
 
