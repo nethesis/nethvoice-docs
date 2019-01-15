@@ -23,7 +23,7 @@ Porte su cui è necessario raggiungere |product| per un utilizzo da remoto:
 Configurazione
 --------------
 
-E' possibile configurare l'applicazione tramite il provisioning di |product|.
+É possibile configurare l'applicazione tramite il provisioning di |product|.
 
 Per farlo collegare lo smartphone alla rete locale del |product| e andare in Impostazioni -> Provisioning Settings.
 
@@ -36,7 +36,7 @@ Cliccare su Start Provisioning.
 
 Questa operazione permetterà di aggiungere il Mac-Address dello smartphone a quelli dei device configurabili.
 
-E' utile conoscere il MAC Address dello smartphone che si vuole configurare, è possibile verificarlo nel momento della richiesta TFTP in /var/log/messages: ::
+É utile conoscere il MAC Address dello smartphone che si vuole configurare, è possibile verificarlo nel momento della richiesta TFTP in /var/log/messages: ::
 
     Jan 10 15:26:44 nethvoice dnsmasq-tftp[16179]: file /var/lib/tftpboot/cfgDC0B34CED538.xml not found
 
@@ -84,7 +84,7 @@ L'applicazione è disponibile ai seguenti link:
 - Android: https://play.google.com/store/apps/details?id=it.nethesis.scanplay14
 - iOS: https://itunes.apple.com/us/app/nethvoice-scan-play-14/id1277558637?ls=1&mt=8
 
-E' possibile comunque cercare la parola **macscan** nei diversi store e installarla senza il link diretto.
+É possibile comunque cercare la parola **macscan** nei diversi store e installarla senza il link diretto.
 
 Utilizzo
 --------
