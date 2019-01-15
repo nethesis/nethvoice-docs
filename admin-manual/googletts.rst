@@ -23,11 +23,11 @@ Creare una nuova registrazione TTS dal modulo FreePBX
 =====================================================
 
 Dopo aver configurato l'API key, il modulo presenterà l'interfaccia per creare una nuova registrazione TTS.
-E' necessario inserire il nome e la descrizione per la registrazione. Questi verranno poi usati per identificare la registrazione tra le altre. Il nome deve essere univoco e inserendone uno uguale ad un altro già presente, questo verrà sovrascritto.
+É necessario inserire il nome e la descrizione per la registrazione. Questi verranno poi usati per identificare la registrazione tra le altre. Il nome deve essere univoco e inserendone uno uguale ad un altro già presente, questo verrà sovrascritto.
 
 Le lingue disponibili sono quelle installate nel centralino.
 
-E' possibile scegliere tra più voci tra quelle che Google mette a disposizione. Si consiglia di utilizzare le voci "wavenet" in quanto più naturali di quelle "standard", tenendo comunque presente che sono più care https://cloud.google.com/text-to-speech/
+É possibile scegliere tra più voci tra quelle che Google mette a disposizione. Si consiglia di utilizzare le voci "wavenet" in quanto più naturali di quelle "standard", tenendo comunque presente che sono più care https://cloud.google.com/text-to-speech/
 
 Inserire nel campo "testo" il messaggio che verrà convertito in audio.
 
@@ -37,6 +37,6 @@ Cliccando su conferma, il messaggio verrà registrato e si verrà rediretti alla
 Utilizzo del TTS Google da VisualPlan
 =====================================
 
-E' possibile utilizzare il TTS da VisualPlan ovunque sia possibile inserire una registrazione (Annunci, IVR, CQR).
+É possibile utilizzare il TTS da VisualPlan ovunque sia possibile inserire una registrazione (Annunci, IVR, CQR).
 Nel dialog di aggiunta della registrazione sarà possibile inserire l'API key di Google se non è ancora stato fatto.
 Se invece è già stata inserita un'API key, verranno mostrate due opzioni, una per la lingua e una per la voce da utilizzare, ed il campo di testo dove digitare il messaggio che verrà letto dal TTS. Dopo aver compilato questi tre campi, sarà possibile ascotare il messaggio premendo sul tasto con l'icona dell'altoparlante. Infine, dopo aver ascoltato la registrazione, sarà possibile inserire un nome ed una descrizione per salvarla come registrazione di sistema.
