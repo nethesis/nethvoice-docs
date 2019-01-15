@@ -49,7 +49,7 @@ Gestione camere
 
 Nella pagina principale sono elencate tutte gli interni configurati. Le camere vengono divise in tab a seconda del valore numerico del campo callgroup dell'interno telefonico, configurabile dall'interfaccia di |product|. Le camere libere sono contraddistinte dal colore verde, quelle che hanno già effettuato il check-in invece dal colore rosso, quelle da pulire dal colore giallo.
 
-Tutte le funzioni disponibili sono presentate direttamente nel riquadro della camere. E' possibile anche utilizzare il menu contestuale con il tasto destro del mouse.
+Tutte le funzioni disponibili sono presentate direttamente nel riquadro della camere. É possibile anche utilizzare il menu contestuale con il tasto destro del mouse.
 
 Sveglia
 
@@ -61,7 +61,7 @@ Ogni cliente può configurare la sveglia della propria camera componendo il nume
 Gruppi
 ======
 
-E' possibile raggruppare più camere in un unico gruppo. Questo consente effettuare operazioni su tutte le camere membre del gruppo (checkin, checkout, sveglia) e avere delle politiche sulle chiamate dedicate alle camere che fanno parte del gruppo nelle impostazioni(abilitazione chiamate tra le camere, abilitazione chiamate tra tutte le camere, abilitazione chiamate esterne).
+É possibile raggruppare più camere in un unico gruppo. Questo consente effettuare operazioni su tutte le camere membre del gruppo (checkin, checkout, sveglia) e avere delle politiche sulle chiamate dedicate alle camere che fanno parte del gruppo nelle impostazioni(abilitazione chiamate tra le camere, abilitazione chiamate tra tutte le camere, abilitazione chiamate esterne).
 
 
 Aggiungere un Extra
@@ -80,13 +80,13 @@ Tariffe
 =======
 
 All'interno di |product_hotel| è presente un set predefinito di tariffe che variano in base al tipo di chiamata (es. cellulari, locali, ecc).
-E' possibile modificare le tariffe esistenti o crearne di nuove. E' anche possibile abilitare/disabilitare le chiamate verso particolari numerazioni.
+É possibile modificare le tariffe esistenti o crearne di nuove. É anche possibile abilitare/disabilitare le chiamate verso particolari numerazioni.
 
 
 Extra
 =====
 
-E' possibile configurare degli extra. E' possibile poi assegnarli alle varie camere sia da interfaccia web e sia da telefono (ad esempio basta chiamare il ::
+É possibile configurare degli extra. É possibile poi assegnarli alle varie camere sia da interfaccia web e sia da telefono (ad esempio basta chiamare il ::
 
  *33201#99#3 per addebitare alla camera 201 tre volte l'extra che ha codice 99).  
 
@@ -111,7 +111,7 @@ Le opzioni generali comprendono:
 Numeri Brevi
 ============
 
-La sezione Numeri Brevi consente di specificare delle scorciatoie per chiamare interni predefiniti, ad esempio 9 per contattare la reception. E' possibile associare ad un numero breve uno dei gruppi temporali caricati nell'interfaccia di gestione del centralino |product|. Questo consente di configurare le due destinazioni per la chiamata, se la condizione temporale viene rispettata in Destinazione, se non lo è in Altrimenti.
+La sezione Numeri Brevi consente di specificare delle scorciatoie per chiamare interni predefiniti, ad esempio 9 per contattare la reception. É possibile associare ad un numero breve uno dei gruppi temporali caricati nell'interfaccia di gestione del centralino |product|. Questo consente di configurare le due destinazioni per la chiamata, se la condizione temporale viene rispettata in Destinazione, se non lo è in Altrimenti.
 
 
 Storico
