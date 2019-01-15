@@ -3,7 +3,7 @@ Ritorno da trasferimento Cieco
 
 Il modulo gestisce il ritorno della chiamata trasferita in modo non cunsultativo all'interno autore del trasferimento se il destinatario del trasferimento non risponde per qualsiasi ragione, ad esempio interno occupato, non disponibile, etc.
 
-E' possibile modificare il tempo di squillo del destinatario del trasferimento, e nell'eventuale ritorno della chiamata all'autore del tentato trasferimento cambiare il nome chiamante e la suoneria del telefono.
+É possibile modificare il tempo di squillo del destinatario del trasferimento, e nell'eventuale ritorno della chiamata all'autore del tentato trasferimento cambiare il nome chiamante e la suoneria del telefono.
 
 
 Configurazione

@@ -20,7 +20,7 @@ Rotte In Entrata
 
 In questa sezione si trovano le chiamate ricevute per ogni Rotta in Entrata configurata in |product| suddivise in riposte, perse, occupate e fallite e il tempo di conversazione totale.
 
-E' possibile utilizzare il filtro per creare una ricerca più particolareggiata nel tempo o per singola Rotta in Entrata ed esportare il risultato in un file .xls
+É possibile utilizzare il filtro per creare una ricerca più particolareggiata nel tempo o per singola Rotta in Entrata ed esportare il risultato in un file .xls
 
 
 Gruppi di Chiamata
@@ -28,7 +28,7 @@ Gruppi di Chiamata
 
 In questa sezione si trovano le chiamate che hanno avuto come destinazione un Gruppo di Chiamata configurato in |product|, viene visualizzata la Rotta in entrata di arrivo, il numero del Gruppo di Chiamata, il totale delle chiamate ricevute e la durata totale.
 
-E' possibile utilizzare il filtro per creare una ricerca più particolareggiata nel tempo o per singola Rotta in Entrata ed esportare il risultato in un file .xls
+É possibile utilizzare il filtro per creare una ricerca più particolareggiata nel tempo o per singola Rotta in Entrata ed esportare il risultato in un file .xls
 
 
 Code
@@ -36,7 +36,7 @@ Code
 
 In questa sezione si trovano le chiamate che hanno avuto come destinazione una Coda configurata in |product|, viene visualizzata la Rotta in entrata di arrivo, il numero della Coda, il totale delle chiamate ricevute e la durata totale.
 
-E' possibile utilizzare il filtro per creare una ricerca più particolareggiata nel tempo o per singola Rotta in Entrata ed esportare il risultato in un file .xls
+É possibile utilizzare il filtro per creare una ricerca più particolareggiata nel tempo o per singola Rotta in Entrata ed esportare il risultato in un file .xls
 
 
 Caselle Vocali
@@ -44,7 +44,7 @@ Caselle Vocali
 
 In questa sezione si trovano le chiamate che hanno avuto come destinazione una Casella Vocale configurata in |product|, viene visualizzata la Rotta in entrata di arrivo, il numero della Casella Vocale e il tipo ("b" busy , "u" unavailable, "s" no message) il totale delle chiamate ricevute e la durata totale.
 
-E' possibile utilizzare il filtro per creare una ricerca più particolareggiata nel tempo o per singola Rotta in Entrata ed esportare il risultato in un file .xls
+É possibile utilizzare il filtro per creare una ricerca più particolareggiata nel tempo o per singola Rotta in Entrata ed esportare il risultato in un file .xls
 
 
 IVR
@@ -52,7 +52,7 @@ IVR
 
 In questa sezione si trovano le chiamate che hanno avuto come destinazione un IVR configurato in |product|, viene visualizzata  il nome dell'IVR, la scelta effettuata dal chiamate e il totale delle chiamate.
 
-E' possibile utilizzare il filtro per creare una ricerca più particolareggiata nel tempo o per singola Rotta in Entrata ed esportare il risultato in un file .xls
+É possibile utilizzare il filtro per creare una ricerca più particolareggiata nel tempo o per singola Rotta in Entrata ed esportare il risultato in un file .xls
 
 
 Per Chiamante
@@ -60,7 +60,7 @@ Per Chiamante
 
 In questa sezione si trovano tutte le chiamate ricevute dal |product| e viene mostrato il numero, nome, azienda, periodo, rotta in entrata utilizzata, numero chiamate risposte, perse, occupate, fallite, tempo di attesa e tempo di conversazione.
 
-E' possibile utilizzare il filtro per creare una ricerca più particolareggiata nel tempo o per singola Rotta in Entrata, nel campo Chiamante si può indicare sia il numero chiamante, il nome o l'azienda, ed esportare il risultato in un file .xls
+É possibile utilizzare il filtro per creare una ricerca più particolareggiata nel tempo o per singola Rotta in Entrata, nel campo Chiamante si può indicare sia il numero chiamante, il nome o l'azienda, ed esportare il risultato in un file .xls
 
 L'associazione nome azienda numero viene fatta da |product| attingendo alla Rubrica Centralizzata al momento della ricezione della chiamata ma è possibile attivare un processo settimanale che lo faccia a ritroso per utilizzare contatti inseriti magari successivamente alla ricezione della chiamata.
 Per attivarlo::
@@ -77,7 +77,7 @@ Oraria
 
 In questa sezione le chiamate entranti vengono distribuite nell'arco temporale giornaliero per ogni Rotta in Entrata e suddivise per esito ( "R" risposte, "N" non risposte, "O" occupate, "F" fallite).
 
-E' possibile utilizzare il filtro per creare una ricerca più particolareggiata nel tempo o per singola Rotta in Entrata ed esportare il risultato in un file .xls
+É possibile utilizzare il filtro per creare una ricerca più particolareggiata nel tempo o per singola Rotta in Entrata ed esportare il risultato in un file .xls
 
 
 Geografica
@@ -85,7 +85,7 @@ Geografica
 
 In questa sezione le chiamate entranti vengono raggruppate per zona geografica e possono essere divise per Regione, Provincia o Prefisso.
 
-E' possibile utilizzare il filtro per creare una ricerca più particolareggiata nel tempo o per singola Rotta in Entrata ed esportare il risultato in un file .xls
+É possibile utilizzare il filtro per creare una ricerca più particolareggiata nel tempo o per singola Rotta in Entrata ed esportare il risultato in un file .xls
 
 
 Grafici
