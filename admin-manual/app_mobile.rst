@@ -7,7 +7,7 @@ App mobile
 Wave
 ====
 
-L'applicazione Wave integra un interno sui dispositivi mobile, è installabile su base Android o iOS.
+L'applicazione Wave integra un interno sui dispositivi mobili, è installabile su base Android o iOS.
 
 
 .. note:: Ricordarsi di rendere accessibile da internet |product| tramite il protocollo SIP TLS per un utilizzo da remoto
