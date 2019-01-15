@@ -32,7 +32,7 @@ E' possibile utilizzare il filtro per creare una ricerca più particolareggiata 
 Per sessione
 ------------
 
-In questa sessione di trovano le sessioni lavorative e di pausa degli agenti delle code, vengono mostrati coda, agente, il tipo di sessione, l'inizio e la fine, la durata e la motivazione della pausa se si tratta di una sessione di questo tipo.
+In questa sezione si trovano le sessioni lavorative e di pausa degli agenti delle code, vengono mostrati coda, agente, il tipo di sessione, l'inizio e la fine, la durata e la motivazione della pausa se si tratta di una sessione di questo tipo.
 
 E' possibile utilizzare il filtro per creare una ricerca più particolareggiata nel tempo o per singolo Agente e/o Coda ed esportare il risultato in un file .xls
 
