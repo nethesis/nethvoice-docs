@@ -48,6 +48,7 @@ Configurazione Base
    :maxdepth: 2
 
    wizard
+   dashboard
    app_mobile
 
 Provisioning
@@ -72,6 +73,14 @@ Configurazione Avanzata
    queueexit
    queuemetrics
    googletts
+
+Migrazione da |product| 11 a |product| 14
+-----------------------------------------
+
+.. toctree::
+   :maxdepth: 2
+
+   migrazione
 
 HowTo
 -----------------------

@@ -429,3 +429,26 @@ Di default solamente gli indirizzi appartenenti alle "Trusted Networks" sono abi
 IP o un range, sia tramite netmask sia utilizzando la notazione CIDR.
 
 .. warning:: Se la funzionalità viene abilitata, chiunque potrà eseguire telefonate da qualsiasi interno verso qualsiasi destinazione tramite richieste HTTP POST, ma solo dagli indirizzi indicati nella lista ottenuta col seguente comando :code:`"config getprop nethcti-server UnautheCallAddress".`
+
+|product_cti|: disabilitare l'autenticazione
+============================================
+
+.. warning:: L'autenticazione è ABILITATA di default. Una volta disabilitata, sarà possibile eseguire il login a |product_cti| inserendo solamente il nome utente!
+
+È possibile disabilitare l'autenticazione nella seguente maniera:
+
+.. code-block:: bash
+
+  config setprop nethcti AuthenticationEnabled false
+  config setprop nethcti-server AuthenticationEnabled false
+  signal-event nethcti3-update
+  signal-event nethcti-server3-update
+
+per riabilitarla:
+
+.. code-block:: bash
+
+  config setprop nethcti AuthenticationEnabled true
+  config setprop nethcti-server AuthenticationEnabled true
+  signal-event nethcti3-update
+  signal-event nethcti-server3-update
