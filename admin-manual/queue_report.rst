@@ -58,7 +58,7 @@ IVR
 
 In questa sezione si trovano le chiamate che hanno avuto come destinazione un IVR configurato in |product|, viene visualizzata  il nome dell'IVR, la scelta effettuata dal chiamate e il totale delle chiamate.
 
-E' possibile utilizzare il filtro per creare una ricerca più particolareggiata nel tempo o per singola Rotta in Entrata ed esportare il risultato in un file .xls
+É possibile utilizzare il filtro per creare una ricerca più particolareggiata nel tempo o per singola Rotta in Entrata ed esportare il risultato in un file .xls
 
  
 Performance

@@ -13,7 +13,7 @@ Per installare ed attivare il codec g729 Open Source ecco la procedura (comporta
 
 Il codec g729 Open Source non è compatibile con la versione a pagamento di Digium, che si può installare seguendo la procedura che vi forniranno con l'acquisto.
 
-E' possibile, quindi, utilizzare contemporaneamente solo una delle due versioni di g729, Open Source o Digium.
+É possibile, quindi, utilizzare contemporaneamente solo una delle due versioni di g729, Open Source o Digium.
 
 |product|: configurazione dell'IP locale
 ========================================
@@ -223,7 +223,7 @@ Interni delle due sedi non sovrapposti
 
 Nel caso che gli interni dei due |product| collegati siano ben distinti, non ci si deve preoccupare di distinguere con un prefisso la rotta in uscita.
 
-E' necessario quindi creare una rotta con il pattern degli interni remoti e indicare il fascio iax di collegamento precedentemente creato.
+É necessario quindi creare una rotta con il pattern degli interni remoti e indicare il fascio iax di collegamento precedentemente creato.
 
 Ricordarsi di spuntare **Rotta Intra-Aziendale** se si vuole inviare al centralino remoto anche il nome del chiamante oltre che il numero, in modo che il chiamato sul display del telefono lo visualizzi.
 

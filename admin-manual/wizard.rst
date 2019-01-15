@@ -38,7 +38,7 @@ In caso di account provider locale in questa sezione comparirà invece l'elenco 
 
 Interni
 -------
-E' possibile ora inserire gli interni relativi per ogni utente:
+É possibile ora inserire gli interni relativi per ogni utente:
 
 - Inserire il numero dell'interno (consigliato a partire dal numero 200) nel campo di testo
 - Cliccare su Inserisci
@@ -73,7 +73,7 @@ Se viene omesso l'interno, verranno creati solo gli utenti.
 
 Se il campo *password* non viene compilato, la password sarà generata casualmente.
 
-E' possibile utilizzare la funzione anche per assegnare gli interni ad utenti già creati, ma senza interno assegnato. 
+É possibile utilizzare la funzione anche per assegnare gli interni ad utenti già creati, ma senza interno assegnato. 
 
 In questo caso, il campo *password* verrà ignorato.
 
@@ -81,7 +81,7 @@ Il tasto esporta consente di scaricare un modello di CSV con gli attuali utenti 
 
 Gruppi
 ------
-E' possibile creare dei gruppi utente che poi saranno visibili e utilizzabili nelle applicazioni, come ad esempio nel |product_cti| 
+É possibile creare dei gruppi utente che poi saranno visibili e utilizzabili nelle applicazioni, come ad esempio nel |product_cti| 
 
 - Cliccare il bottone "Crea nuovo gruppo"
 - Specificare un nome e salvare
@@ -97,7 +97,7 @@ Con l'installazione, vengono creati di default 3 profili che contengono l'abilit
 - Standard: funzionalità di gestione classiche per l'utente
 - Avanzato: quasi tutte le funzionalità sono sbloccate, per l'utente Avanzato
 
-E' possibile creare anche nuovi profili, duplicando uno esistente o creandone di nuovi e specificando le varie funzionalità
+É possibile creare anche nuovi profili, duplicando uno esistente o creandone di nuovi e specificando le varie funzionalità
 
 .. note:: Ricordarsi di abilitare sui profili dove necessario l'accesso ai gruppi utente precedentemente creati.
 
@@ -149,7 +149,7 @@ Il gateway prende la configurazione e si riavvia, vengono inoltre creati i fasci
 
 VoIP
 ----
-E' possibile creare dei fasci VoIP selezionando uno dei provider supportati, e inserendo le informazioni necessarie.
+É possibile creare dei fasci VoIP selezionando uno dei provider supportati, e inserendo le informazioni necessarie.
 
 Premere "Crea" per creare la configurazione relativa per quel fascio VoIP.
 
@@ -169,7 +169,7 @@ In uscita
 ---------
 In questa sezione è presente la lista delle rotte in uscita presenti, la prima volta che questa pagina viene visitata, il wizard vi propone delle rotte in uscita di default con i pattern di chiamate specifici per le diverse lingue.
 
-E' possibile inoltre specificare l'ordine con cui usare i fasci, precedentemente creati, e regolare così in maniera personalizzata il percorso delle chiamate in uscita.
+É possibile inoltre specificare l'ordine con cui usare i fasci, precedentemente creati, e regolare così in maniera personalizzata il percorso delle chiamate in uscita.
 
 Premendo il tasto "Salva" la configurazione viene scritta nel centralino e da quel momento è possibile effettuare chiamate verso l'esterno (avendo opportunamente configurato i fasci negli step precedenti).
 
@@ -279,7 +279,7 @@ Gestione Multipla
 
 L'applicazione *Gestione Multipla Interni* consente di modificare massivamente gruppi di utenti.
 
-E' possibile selezionare gli interni che si desidera modificare utilizzando la lista "Seleziona" o le checkbox accanto agli utenti elencati.
+É possibile selezionare gli interni che si desidera modificare utilizzando la lista "Seleziona" o le checkbox accanto agli utenti elencati.
 
 Cliccando poi sul tasto :guilabel:`Modifica`, verrà visualizzata una finestra con le impostazioni che possono essere modificate.
 
@@ -321,4 +321,4 @@ La sezione "Report" riporta l'elenco completo degli utenti del centralino specif
 - Password Voicemail
 - Password utente (se l'utente è stato creato da |product|)
 
-E' presente anche la possibilità di stampare l'elenco in formato PDF cliccando sul bottone "Stampa report PDF"
+É presente anche la possibilità di stampare l'elenco in formato PDF cliccando sul bottone "Stampa report PDF"

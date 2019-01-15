@@ -16,7 +16,7 @@ Il |product| chiederà questa informazione al database del software gestionale e
 
 Le uniche condizioni necessarie al Call Query Routing sono l'accessibilità da parte del |product| ai database da interrogare e l'impostazione della query per fare l'interrogazione, di competenza di chi conosce il database.
 
-E' possibile con il numero del chiamante consultare subito un database per ottenere lo stato del cliente, oppure sempre partendo dal numero chiamante prima ricavare il codice cliente del chiamante per poi utilizzarlo nel database clienti. In caso di fallimento della procedura di scoperta del codice cliente è possibile avere come backup la richiesta di inserimento manuale del codice cliente.
+É possibile con il numero del chiamante consultare subito un database per ottenere lo stato del cliente, oppure sempre partendo dal numero chiamante prima ricavare il codice cliente del chiamante per poi utilizzarlo nel database clienti. In caso di fallimento della procedura di scoperta del codice cliente è possibile avere come backup la richiesta di inserimento manuale del codice cliente.
 
 Configurazione
 --------------
@@ -176,7 +176,7 @@ Ad esempio:
 Destinazione di default
 ~~~~~~~~~~~~~~~~~~~~~~~
 
-Destinazione della chiamata per ogni condizione non specificata successivamente, di solito la più probabile. E' anche la destinazione della chiamata in caso di un qualsiasi errore, sia esso di connessione al database o nell'effettuare la query.
+Destinazione della chiamata per ogni condizione non specificata successivamente, di solito la più probabile. É anche la destinazione della chiamata in caso di un qualsiasi errore, sia esso di connessione al database o nell'effettuare la query.
 
 Voci NethCQR
 ------------
