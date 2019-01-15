@@ -23,4 +23,4 @@ Funzioni non ancora disponibili:
 Aggiornamento
 =============
 
-E' possibile seguire la procedura di migrazione dalla versione 11 come descritto :ref:`qui <migrazione-ref-label>`.
+É possibile seguire la procedura di migrazione dalla versione 11 come descritto :ref:`qui <migrazione-ref-label>`.

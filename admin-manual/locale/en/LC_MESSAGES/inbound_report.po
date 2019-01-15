@@ -1,14 +1,15 @@
 # Andrea Marchionni <andrea.marchionni@nethesis.it>, 2018. #zanata
 # Youssef <mehniyoussef@gmail.com>, 2018. #zanata
+# Andrea Marchionni <andrea.marchionni@nethesis.it>, 2019. #zanata
 msgid ""
 msgstr ""
 "Project-Id-Version: NethVoice 14\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-10-30 09:25+0100\n"
+"POT-Creation-Date: 2019-01-15 15:01+0100\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2018-04-09 05:28+0000\n"
+"PO-Revision-Date: 2019-01-15 02:25+0000\n"
 "Last-Translator: Andrea Marchionni <andrea.marchionni@nethesis.it>\n"
 "Language-Team: English (United States)\n"
 "Language: en_US\n"
@@ -80,7 +81,7 @@ msgstr ""
 #: ../../inbound_report.rst:80
 #: ../../inbound_report.rst:88
 msgid ""
-"E' possibile utilizzare il filtro per creare una ricerca più "
+"É possibile utilizzare il filtro per creare una ricerca più "
 "particolareggiata nel tempo o per singola Rotta in Entrata ed esportare il "
 "risultato in un file .xls"
 msgstr ""
@@ -166,7 +167,7 @@ msgstr ""
 
 #: ../../inbound_report.rst:63
 msgid ""
-"E' possibile utilizzare il filtro per creare una ricerca più "
+"É possibile utilizzare il filtro per creare una ricerca più "
 "particolareggiata nel tempo o per singola Rotta in Entrata, nel campo "
 "Chiamante si può indicare sia il numero chiamante, il nome o l'azienda, ed "
 "esportare il risultato in un file .xls"

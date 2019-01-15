@@ -1,0 +1,106 @@
+# Andrea Marchionni <andrea.marchionni@nethesis.it>, 2019. #zanata
+msgid ""
+msgstr ""
+"Project-Id-Version: NethVoice 14\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-01-15 15:01+0100\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2019-01-15 02:30+0000\n"
+"Last-Translator: Andrea Marchionni <andrea.marchionni@nethesis.it>\n"
+"Language-Team: English (United States)\n"
+"Language: en_US\n"
+"X-Generator: Zanata 4.6.2\n"
+"Plural-Forms: nplurals=2; plural=(n != 1)\n"
+
+#: ../../dashboard.rst:3
+msgid "Dashboard"
+msgstr "Dashboard"
+
+#: ../../dashboard.rst:7
+msgid ""
+"La dashboard diventa la pagina iniziale di |product| dopo la prima "
+"configurazione."
+msgstr ""
+"The dashboard becomes the start page of |product| after the first "
+"configuration."
+
+#: ../../dashboard.rst:9
+msgid ""
+"Permette di avere una visione degli oggetti coinvolti nel funzionamento di "
+"|product|."
+msgstr ""
+"It allows having a vision of the objects involved in the operation of "
+"|product|."
+
+#: ../../dashboard.rst:13
+msgid "Utenti"
+msgstr "Users"
+
+#: ../../dashboard.rst:15
+msgid ""
+"Vengono mostrati gli utenti utilizzati nella configurazione di |product| con "
+"lo stato della presence e dei loro device telefonici."
+msgstr ""
+"The users used in the configuration of |product| are shown with the state of "
+"presence and their devices"
+
+#: ../../dashboard.rst:17
+msgid ""
+"Nel caso in cui la configurazione della presence dell'utente non sia a "
+"default (Disponibile), viene data la possibilità di resettarla riportandola "
+"allo stato normale cliccando sul simbolo della gomma."
+msgstr ""
+"In the event that the configuration of the user presence is not default "
+"(Available), it is possible to reset it by returning it to the normal state "
+"by clicking on the rubber symbol."
+
+#: ../../dashboard.rst:19
+msgid ""
+"Cliccando per aprire le informazioni sul singolo device vengono mostrate i "
+"dati del dispositivo telefonico:"
+msgstr ""
+"By clicking to open the information on the single device, the data of the "
+"telephone device is shown:"
+
+#: ../../dashboard.rst:21
+msgid "Nome"
+msgstr "Name"
+
+#: ../../dashboard.rst:22
+msgid "Modello"
+msgstr "Model"
+
+#: ../../dashboard.rst:23
+msgid "Indirizzo IP, cliccando è possibile collegarsi da rete locale"
+msgstr ""
+"IP address, by clicking it is possible to connect from the local network"
+
+#: ../../dashboard.rst:24
+msgid "Porta SIP"
+msgstr "SIP Port"
+
+#: ../../dashboard.rst:25
+msgid "Codec utilizzati"
+msgstr "Used codec"
+
+#: ../../dashboard.rst:26
+msgid "DND (Do Not Disturb)"
+msgstr "DND (Do Not Disturb)"
+
+#: ../../dashboard.rst:27
+msgid "Call Forward"
+msgstr "Call Forward"
+
+#: ../../dashboard.rst:31
+msgid "Fasci"
+msgstr "Trunks"
+
+#: ../../dashboard.rst:33
+msgid ""
+"Vengono mostrati i fasci configurati in |product| e il loro stato, mostrando "
+"tecnologia, IP, porta, stato e Codec."
+msgstr ""
+"The trunks configured in |product| are shown and their state, showing "
+"technology, IP, port, status and Codec."
