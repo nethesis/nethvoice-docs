@@ -1,15 +1,16 @@
 # Giovanni Bezicheri <giovanni.bezicheri@nethesis.it>, 2017. #zanata
 # Youssef <mehniyoussef@gmail.com>, 2018. #zanata
+# Andrea Marchionni <andrea.marchionni@nethesis.it>, 2019. #zanata
 msgid ""
 msgstr ""
 "Project-Id-Version: NethVoice 14\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-10-30 09:25+0100\n"
+"POT-Creation-Date: 2019-01-15 15:01+0100\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2018-02-15 06:14+0000\n"
-"Last-Translator: Youssef <mehniyoussef@gmail.com>\n"
+"PO-Revision-Date: 2019-01-15 02:18+0000\n"
+"Last-Translator: Andrea Marchionni <andrea.marchionni@nethesis.it>\n"
 "Language-Team: English (United States)\n"
 "Language: en_US\n"
 "X-Generator: Zanata 4.6.2\n"
@@ -58,33 +59,25 @@ msgid "Funzioni non ancora disponibili:"
 msgstr "Functions not yet available:"
 
 #: ../../release_notes.rst:19
-msgid "Analisi costi"
-msgstr "Cost analysis\n"
-
-#: ../../release_notes.rst:20
 msgid "Integrazione FIAS"
 msgstr "FIAS integration"
 
-#: ../../release_notes.rst:21
-msgid "Annunci e registrazioni TTS"
-msgstr "TTS announcements and registrations\n"
-
-#: ../../release_notes.rst:22
+#: ../../release_notes.rst:20
 msgid "Fasci Virtuali"
 msgstr "Virtual beams"
 
-#: ../../release_notes.rst:23
+#: ../../release_notes.rst:21
 msgid "Failover geografico e HA"
 msgstr "Geographical Failover and HA"
 
-#: ../../release_notes.rst:26
+#: ../../release_notes.rst:24
 msgid "Aggiornamento"
 msgstr "Update"
 
-#: ../../release_notes.rst:28
+#: ../../release_notes.rst:26
 msgid ""
-"L'aggiornamento da versioni precedenti non è attualmente supportato, ma sarà "
-"disponibile a breve."
+"E' possibile seguire la procedura di migrazione dalla versione 11 come "
+"descritto :ref:`qui <migrazione-ref-label>`."
 msgstr ""
-"Upgrading from previous versions is not currently supported, but will be "
-"available soon."
+"It is possible to follow the migration procedure from version 11 as "
+"described: ref:`here <migration-ref-label>`."
