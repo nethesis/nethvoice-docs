@@ -10,7 +10,7 @@ Wave
 L'applicazione Wave integra un interno sui dispositivi mobile, è installabile su base Android o iOS.
 
 
-.. note:: Ricordarsi di rendere accessibile da internet il |product| tramite il protocollo SIP TLS per un utilizzo da remoto
+.. note:: Ricordarsi di rendere accessibile da internet |product| tramite il protocollo SIP TLS per un utilizzo da remoto
 
 
 Porte su cui è necessario raggiungere |product| per un utilizzo da remoto:
@@ -25,7 +25,7 @@ Configurazione
 
 E' possibile configurare l'applicazione tramite il provisioning di |product|.
 
-Per farlo collegare lo smatphone alla rete locale del |product| e andare in Impostazioni -> Provisioning Settings.
+Per farlo collegare lo smartphone alla rete locale del |product| e andare in Impostazioni -> Provisioning Settings.
 
 Impostare:
 
@@ -36,9 +36,17 @@ Cliccare su Start Provisioning.
 
 Questa operazione permetterà di aggiungere il Mac-Address dello smartphone a quelli dei device configurabili.
 
-Tramite il wizard di |product| nella sezione Utenti -> Configurazioni associare il device all'utente voluto e cliccare su Configura e riavvia per pubblicare la configurazione.
+E' utile conoscere il MAC Address dello smartphone che si vuole configurare, è possibile verificarlo nel momento della richiesta TFTP in /var/log/messages: ::
 
-Forzare il provisioning di nuovo con la procedura precedente Impostazioni -> Provisioning Settings -> Start Provisioning per configurare l'applicazione.
+    Jan 10 15:26:44 nethvoice dnsmasq-tftp[16179]: file /var/lib/tftpboot/cfgDC0B34CED538.xml not found
+
+il MAC Address dello smartphone in questo caso è DC:0B:34:CE:D5:38
+
+Aprire il wizard di |product|, andare sulla pagina "Dispositivi" ed effettuare una nuova scansione, sarà presente una riga con "CTI App" come marca e GS Wave come modello.
+
+Nella sezione Utenti -> Configurazioni del wizard associare il device all'utente voluto e cliccare su Configura e riavvia per pubblicare la configurazione.
+
+Forzare il provisioning di nuovo con la procedura precedente per configurare l'applicazione: Impostazioni -> Provisioning Settings -> Start Provisioning
 
 .. note:: Per consentire l'accesso da remoto alla rubrica di |product| ricordarsi di abilitare l'accesso da reti esterne alla rubrica centralizzata in |parent_product|
 
