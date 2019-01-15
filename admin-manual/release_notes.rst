@@ -16,7 +16,6 @@ Cambiamenti significativi dalla release 11:
 
 Funzioni non ancora disponibili:
 
-* Analisi costi
 * Integrazione FIAS
 * Fasci Virtuali
 * Failover geografico e HA
@@ -24,5 +23,4 @@ Funzioni non ancora disponibili:
 Aggiornamento
 =============
 
-L'aggiornamento da versioni precedenti non è attualmente supportato,
-ma sarà disponibile a breve.
+E' possibile seguire la procedura di migrazione dalla versione 11 come descritto :ref:`qui <migrazione-ref-label>`.
