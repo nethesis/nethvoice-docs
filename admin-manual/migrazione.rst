@@ -2,6 +2,8 @@
 Migrazione da |product| 11 a |product| 14
 =========================================
 
+.. _migrazione-ref-label:
+
 La migrazione consente di configurare |product| 14 partendo dalla configurazione di un |product| 11.
 
 Ci sono due scenari possibili:
