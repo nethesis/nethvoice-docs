@@ -1,0 +1,136 @@
+# Andrea Marchionni <andrea.marchionni@nethesis.it>, 2019. #zanata
+msgid ""
+msgstr ""
+"Project-Id-Version: NethVoice 14\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-01-15 15:01+0100\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2019-01-15 02:26+0000\n"
+"Last-Translator: Andrea Marchionni <andrea.marchionni@nethesis.it>\n"
+"Language-Team: English (United States)\n"
+"Language: en_US\n"
+"X-Generator: Zanata 4.6.2\n"
+"Plural-Forms: nplurals=2; plural=(n != 1)\n"
+
+#: ../../googletts.rst:3
+msgid "Google TTS"
+msgstr "Google TTS"
+
+#: ../../googletts.rst:7
+msgid "Descrizione"
+msgstr "Description"
+
+#: ../../googletts.rst:9
+msgid ""
+"Il modulo Google TTS consente di generare le registrazioni di sistema "
+"utilizzando il Text To Speech di Google."
+msgstr ""
+"The Google TTS  module allows you to create a system recording using Google "
+"TTS."
+
+#: ../../googletts.rst:11
+msgid ""
+"Questo modulo è installato automaticamente in |product|, ma è necessario "
+"configurare l'API key di Google per poterlo utilizzare. L'API Key è una "
+"stringa alfanumerica che consente a Google di identificare chi usufruisce "
+"del servizio e addebitargli il costo. Per questo motivo va custodita "
+"adeguatamente."
+msgstr ""
+"This module is automatically installed in |product|, but you need to "
+"configure the Google API key to use it. The Key API is an alphanumeric "
+"string that allows Google to identify who uses the service and debit the "
+"cost. For this reason, it must be properly guarded."
+
+#: ../../googletts.rst:15
+msgid "Configurazione"
+msgstr "Configuration"
+
+#: ../../googletts.rst:17
+msgid ""
+"Accedendo alla pagina del modulo dall'interfaccia di configurazione avanzata "
+"per la prima volta, viene mostrata la pagina per configurare l'API key di "
+"Google. Per ottenere l'API key, seguire questa guida https://cloud.google."
+"com/docs/authentication/api-keys#creating_an_api_key"
+msgstr ""
+"By accessing the module page from the advanced configuration interface for "
+"the first time, the page to configure the Google API key is shown. To get "
+"the API key, follow this guide https://cloud.google.com/docs/authentication/"
+"api-keys#creating_an_api_key"
+
+#: ../../googletts.rst:23
+msgid "Creare una nuova registrazione TTS dal modulo FreePBX"
+msgstr "Create a new TTS recording from the FreePBX module"
+
+#: ../../googletts.rst:25
+msgid ""
+"Dopo aver configurato l'API key, il modulo presenterà l'interfaccia per "
+"creare una nuova registrazione TTS. É necessario inserire il nome e la "
+"descrizione per la registrazione. Questi verranno poi usati per identificare "
+"la registrazione tra le altre. Il nome deve essere univoco e inserendone uno "
+"uguale ad un altro già presente, questo verrà sovrascritto."
+msgstr ""
+"After configuring the API key, the module will present the interface to "
+"create a new TTS recording. It is necessary to enter the name and "
+"description for recording. These will then be used to identify the recording "
+"among others. The name must be unique and inserting one that is the same as "
+"another already present, this will be overwritten."
+
+#: ../../googletts.rst:28
+msgid "Le lingue disponibili sono quelle installate nel centralino."
+msgstr "The languages available are those installed in the switchboard."
+
+#: ../../googletts.rst:30
+msgid ""
+"É possibile scegliere tra più voci tra quelle che Google mette a "
+"disposizione. Si consiglia di utilizzare le voci \"wavenet\" in quanto più "
+"naturali di quelle \"standard\", tenendo comunque presente che sono più care "
+"https://cloud.google.com/text-to-speech/"
+msgstr ""
+"You can choose from multiple entries among those that Google makes available."
+" We recommend using the \"wavenet\" entries because they are more natural "
+"than the \"standard\" ones, bearing in mind that they are more expensive "
+"https://cloud.google.com/text-to-speech/"
+
+#: ../../googletts.rst:32
+msgid "Inserire nel campo \"testo\" il messaggio che verrà convertito in audio."
+msgstr ""
+"Enter the message that will be converted into audio in the \"text\" field."
+
+#: ../../googletts.rst:34
+msgid ""
+"Cliccando su conferma, il messaggio verrà registrato e si verrà rediretti "
+"alla pagina della registrazione. Da qui è possibile riascoltare il "
+"messaggio, convertirlo in un diverso formato o eliminarlo."
+msgstr ""
+"By clicking on confirm, the message will be recorded and you will be "
+"redirected to the recording page. From here you can replay the message, "
+"convert it to a different format or delete it."
+
+#: ../../googletts.rst:38
+msgid "Utilizzo del TTS Google da VisualPlan"
+msgstr "Use of Google TTS from VisualPlan"
+
+#: ../../googletts.rst:40
+msgid ""
+"É possibile utilizzare il TTS da VisualPlan ovunque sia possibile inserire "
+"una registrazione (Annunci, IVR, CQR). Nel dialog di aggiunta della "
+"registrazione sarà possibile inserire l'API key di Google se non è ancora "
+"stato fatto. Se invece è già stata inserita un'API key, verranno mostrate "
+"due opzioni, una per la lingua e una per la voce da utilizzare, ed il campo "
+"di testo dove digitare il messaggio che verrà letto dal TTS. Dopo aver "
+"compilato questi tre campi, sarà possibile ascotare il messaggio premendo "
+"sul tasto con l'icona dell'altoparlante. Infine, dopo aver ascoltato la "
+"registrazione, sarà possibile inserire un nome ed una descrizione per "
+"salvarla come registrazione di sistema."
+msgstr ""
+"It is possible to use the TTS from VisualPlan wherever it is possible to "
+"insert a recording (Announcements, IVR, CQR). In the dialog of adding the "
+"recording it will be possible to insert the Google API key if it has not "
+"been done yet. If an API has already been entered, two options will be "
+"shown, one for the language and one for the voice to be used, and the text "
+"field where to type the message to be read by the TTS. After completing "
+"these three fields, you can listen to the message by pressing the button "
+"with the speaker icon. Finally, after listening to the recording, you can "
+"enter a name and a description to save it as a system recording."
