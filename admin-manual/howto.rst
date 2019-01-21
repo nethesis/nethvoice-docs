@@ -265,7 +265,7 @@ supportati:
 - Yealink
 - Snom
 - Sangoma
-- Alcatel
+- Fanvil
 
 
 Disattivazione della modalità Click2Call automatico
