@@ -9,20 +9,25 @@ Wave
 
 L'applicazione Wave integra un interno sui dispositivi mobili, è installabile su base Android o iOS.
 
-L'app accede in SIP TLS al |product| che va abilitato sia lato firewall che nella configurazione di |product|
+L'app accede in SIP TLS al |product| che va abilitato sia lato firewall che nella configurazione di |product|.
 
 Per prima cosa, sul Server Manager (porta 980), nella sezione Accesso Centralino -> Accesso Esterno abilitare il servizio SIP TLS.
 
-Fatto questo, accedere all'interfaccia avanzata di |product|, andare su Settings -> Asterisk SIP Settings:
+Fatto questo, accedere all'interfaccia avanzata di |product|, andare in Impostazioni  -> Impostazioni Asterisk SIP:
 
-- aprire il tab Genaral Settings ed impostare la sezione NAT Settings.
+- aprire il tab Impostazioni Generali ed impostare la sezione Impostazioni NAT.
 
-- aprire il tab Chan PJSIP Settings, e configurare la sezione TLS/SSL/SRTP Settings con Certificate Manager -> NethServer, SSL Method -> tlsv1, Verify Client -> No, Verify Server -> No.
+- aprire il tab Impostazioni PJSIP e configurare la sezione Impostazioni TLS/SSL/SRTP:
+
+   * Certificate Manager -> NethServer
+   * SSL Method -> tlsv1  
+   * Verify Client -> No
+   * Verify Server -> No
 
 
-Fatto questo, fare clic su Submit in fondo alla pagina.
+Fatto questo, fare clic su Salva in fondo alla pagina.
 
-A questo punto, fare clic sul pulsante arancione Apply Config in alto a destra, e da ultimo riavviare Asterisk con il comando: asterisk -rx "core restart now".
+A questo punto, fare clic sul pulsante arancione Applica Cambiamenti in alto a destra, e da ultimo riavviare Asterisk con il comando: asterisk -rx "core restart now".
 
 Porte su cui è necessario raggiungere |product| per un utilizzo da remoto:
 
