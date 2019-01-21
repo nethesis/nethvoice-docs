@@ -27,11 +27,6 @@ SNOM  
 * D305, D315, D345, D375
 * D710, D721, D715, D725, D745, D765, D785
 
-ALCATEL 
--------
-
-* IP150, IP251, IP301, IP701
-
 GIGASET 
 -------
 
@@ -105,7 +100,6 @@ Ad esempio:  
  T27P.rom    per Yealink T27P
  D745.bin    per Snom D745
  725.bin     per Snom D725
- IP701G.img  per Alcatel IP701G
  maxwell.bin per Gigaset Maxwell Basic/2/3  
 
 
