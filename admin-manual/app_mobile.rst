@@ -27,7 +27,9 @@ Fatto questo, accedere all'interfaccia avanzata di |product|, andare in Impostaz
 
 Fatto questo, fare clic su Salva in fondo alla pagina.
 
-A questo punto, fare clic sul pulsante arancione Applica Cambiamenti in alto a destra, e da ultimo riavviare Asterisk con il comando: asterisk -rx "core restart now".
+A questo punto, fare clic sul pulsante arancione Applica Cambiamenti in alto a destra, e da ultimo riavviare Asterisk con il comando: ::
+
+  asterisk -rx "core restart now".
 
 Porte su cui è necessario raggiungere |product| per un utilizzo da remoto:
 
