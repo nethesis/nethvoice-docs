@@ -17,12 +17,12 @@ Fatto questo, accedere all'interfaccia avanzata di |product|, andare in Impostaz
 
 - aprire il tab :guilabel:`Impostazioni Generali` ed impostare la sezione :guilabel:`Impostazioni NAT`.
 
-- aprire il tab :guilabel:`Impostazioni PJSIP` e configurare la sezione :guilabel:`Impostazioni TLS/SSL/SRTP`:
+- aprire il tab :guilabel:`Impostazioni PJSIP` e configurare la sezione :guilabel:`Impostazioni TLS/SSL/SRTP` come segue:
 
-   * Certificate Manager -> NethServer
-   * SSL Method -> tlsv1  
-   * Verify Client -> No
-   * Verify Server -> No
+   * :guilabel:`Certificate Manager -> NethServer`
+   * :guilabel:`SSL Method -> tlsv1` 
+   * :guilabel:`Verify Client -> No`
+   * :guilabel:`Verify Server -> No`
 
 
 Fatto questo, fare clic su Salva in fondo alla pagina.
@@ -43,7 +43,7 @@ Configurazione
 
 É possibile configurare l'applicazione tramite il provisioning di |product|, per il momento solo per la versione su base Android.
 
-Per farlo collegare lo smartphone alla rete locale del |product| e andare in Impostazioni -> Provisioning Settings.
+Per farlo collegare lo smartphone alla rete locale del |product| e andare in :guilabel:`Impostazioni -> Provisioning Settings`.
 
 Impostare:
 
@@ -64,7 +64,7 @@ Aprire il wizard di |product|, andare sulla pagina "Dispositivi" ed effettuare u
 
 Nella sezione Utenti -> Configurazioni del wizard associare il device all'utente voluto e cliccare su Configura e riavvia per pubblicare la configurazione.
 
-Forzare il provisioning di nuovo con la procedura precedente per configurare l'applicazione: Impostazioni -> Provisioning Settings -> Start Provisioning
+Forzare il provisioning di nuovo con la procedura precedente per configurare l'applicazione: :guilabel:`Impostazioni -> Provisioning Settings -> Start Provisioning`
 
 .. note:: Per consentire l'accesso da remoto alla rubrica di |product| ricordarsi di abilitare l'accesso da reti esterne alla rubrica centralizzata in |parent_product|
 
@@ -74,9 +74,9 @@ BLF
 
 Per configurare i BLF e monitorare altri interni di |product| seguire questa procedura:
 
-- In Contatti -> SIP creare i contatti necessari specificando il Nome, Cognome e l'interno SIP
-- In Impostazioni -> Impostazioni Avanzate -> Impostazioni Aggiuntive attivare i BLF
-- In Impostazioni -> Impostazioni Avanzate -> Impostazioni Aggiuntive -> Elenco BLF selezionare i contatti da utilizzare come BLF
+- In :guilabel:`Contatti -> SIP` creare i contatti necessari specificando il Nome, Cognome e l'interno SIP
+- In :guilabel:`Impostazioni -> Impostazioni Avanzate -> Impostazioni Aggiuntive` attivare i BLF
+- In :guilabel:`Impostazioni -> Impostazioni Avanzate -> Impostazioni Aggiuntive -> Elenco BLF` selezionare i contatti da utilizzare come BLF
 
 I BLF verranno mostrati in Contatti -> SIP
 
