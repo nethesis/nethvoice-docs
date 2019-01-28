@@ -15,9 +15,9 @@ Per prima cosa, sul Server Manager (porta 980), nella sezione :menuselection:`Ac
 
 Fatto questo, accedere all'interfaccia avanzata di |product|, andare in Impostazioni  -> Impostazioni Asterisk SIP:
 
-- aprire il tab Impostazioni Generali ed impostare la sezione Impostazioni NAT.
+- aprire il tab :guilabel:`Impostazioni Generali` ed impostare la sezione :guilabel:`Impostazioni NAT`.
 
-- aprire il tab Impostazioni PJSIP e configurare la sezione Impostazioni TLS/SSL/SRTP:
+- aprire il tab :guilabel:`Impostazioni PJSIP` e configurare la sezione :guilabel:`Impostazioni TLS/SSL/SRTP`:
 
    * Certificate Manager -> NethServer
    * SSL Method -> tlsv1  
