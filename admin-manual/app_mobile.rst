@@ -41,6 +41,8 @@ Configurazione
 
 É possibile configurare l'applicazione tramite il provisioning di |product|, per il momento solo per la versione su base Android.
 
+.. note:: Di default |product| risponde alle richieste di provisioning solo da reti considerate fidate
+
 Per farlo collegare lo smartphone alla rete locale del |product| e andare in Impostazioni -> Provisioning Settings.
 
 Impostare:
