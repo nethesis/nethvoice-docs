@@ -11,7 +11,7 @@ L'applicazione Wave integra un interno sui dispositivi mobili, è installabile s
 
 L'app accede in SIP TLS al |product| che va abilitato sia lato firewall che nella configurazione di |product|.
 
-Per prima cosa, sul Server Manager (porta 980), nella sezione Accesso Centralino -> Accesso Esterno abilitare il servizio SIP TLS.
+Per prima cosa, sul Server Manager (porta 980), nella sezione :menuselection:`Accesso Centralino -> Accesso Esterno` abilitare il servizio SIP TLS.
 
 Fatto questo, accedere all'interfaccia avanzata di |product|, andare in Impostazioni  -> Impostazioni Asterisk SIP:
 
