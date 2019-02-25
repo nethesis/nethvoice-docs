@@ -13,7 +13,7 @@ L'app accede in SIP TLS al |product| che va abilitato sia lato firewall che nell
 
 Per prima cosa, sul Server Manager (porta 980), nella sezione :menuselection:`Accesso Centralino -> Accesso Esterno` abilitare il servizio SIP TLS.
 
-Fatto questo, accedere all'interfaccia avanzata di |product|, andare in Impostazioni  -> Impostazioni Asterisk SIP:
+Fatto questo, accedere all'interfaccia avanzata di |product|, andare in :menuselection:`Impostazioni  -> Impostazioni Asterisk SIP`:
 
 - aprire il tab :guilabel:`Impostazioni Generali` ed impostare la sezione :guilabel:`Impostazioni NAT`.
 
@@ -60,11 +60,11 @@ Questa operazione permetterà di aggiungere il Mac-Address dello smartphone a qu
 
 il MAC Address dello smartphone in questo caso è DC:0B:34:CE:D5:38
 
-Aprire il wizard di |product|, andare sulla pagina "Dispositivi" ed effettuare una nuova scansione, sarà presente una riga con "CTI App" come marca e GS Wave come modello.
+Aprire il wizard di |product|, andare sulla pagina :menuselection:`Dispositivi` ed effettuare una nuova scansione, sarà presente una riga con "CTI App" come marca e GS Wave come modello.
 
-Nella sezione Utenti -> Configurazioni del wizard associare il device all'utente voluto e cliccare su Configura e riavvia per pubblicare la configurazione.
+Nella sezione :menuselection:`Utenti -> Configurazioni` del wizard associare il device all'utente voluto e cliccare su Configura e riavvia per pubblicare la configurazione.
 
-Forzare il provisioning di nuovo con la procedura precedente per configurare l'applicazione: :guilabel:`Impostazioni -> Provisioning Settings -> Start Provisioning`
+Forzare il provisioning di nuovo con la procedura precedente per configurare l'applicazione: :menuselection:`Impostazioni -> Provisioning Settings -> Start Provisioning`
 
 .. note:: Per consentire l'accesso da remoto alla rubrica di |product| ricordarsi di abilitare l'accesso da reti esterne alla rubrica centralizzata in |parent_product|
 
