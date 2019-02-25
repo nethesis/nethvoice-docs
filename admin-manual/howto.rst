@@ -452,3 +452,31 @@ per riabilitarla:
   config setprop nethcti-server AuthenticationEnabled true
   signal-event nethcti3-update
   signal-event nethcti-server3-update
+
+|product_cti|: personalizzare il messaggio di fallito login per utenti non configurati
+======================================================================================
+
+Un utente non configurato **non** ha il permesso di accedere a |product_cti|.
+In questo caso è possibile personalizzare il messaggio di warning visualizzato dopo un tentativo di login.
+Procedere nella seguente maniera:
+
+1. creare il template custom del file `/usr/share/cti/customizable/login-user-noconfig.html`:
+
+.. code-block:: bash
+
+  mkdir -p /etc/e-smith/templates-custom/usr/share/cti/customizable/login-user-noconfig.html
+  cp /etc/e-smith/templates/usr/share/cti/customizable/login-user-noconfig.html/10base /etc/e-smith/templates-custom/usr/share/cti/customizable/login-user-noconfig.html/
+
+2. personalizzare il contenuto del template custom `/etc/e-smith/templates-custom/usr/share/cti/customizable/login-user-noconfig.html/10base`
+3. eseguire l'evento `nethcti3-update`
+
+.. code-block:: bash
+
+  signal-event nethcti3-update
+
+Per ripristinare il messaggio originale:
+
+.. code-block:: bash
+
+  rm -f /etc/e-smith/templates-custom/usr/share/cti/customizable/login-user-noconfig.html/10base
+  signal-event nethcti3-update
