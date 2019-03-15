@@ -9,20 +9,27 @@ Wave
 
 L'applicazione Wave integra un interno sui dispositivi mobili, è installabile su base Android o iOS.
 
-L'app accede in SIP TLS al |product| che va abilitato sia lato firewall che nella configurazione di |product|
+L'app accede in SIP TLS al |product| che va abilitato sia lato firewall che nella configurazione di |product|.
 
-Per prima cosa, sul Server Manager (porta 980), nella sezione Accesso Centralino -> Accesso Esterno abilitare il servizio SIP TLS.
+Per prima cosa, sul Server Manager (porta 980), nella sezione :menuselection:`Accesso Centralino -> Accesso Esterno` abilitare il servizio SIP TLS.
 
-Fatto questo, accedere all'interfaccia avanzata di |product|, andare su Settings -> Asterisk SIP Settings:
+Fatto questo, accedere all'interfaccia avanzata di |product|, andare in :menuselection:`Impostazioni  -> Impostazioni Asterisk SIP`:
 
-- aprire il tab Genaral Settings ed impostare la sezione NAT Settings.
+- aprire il tab :guilabel:`Impostazioni Generali` ed impostare la sezione :guilabel:`Impostazioni NAT`.
 
-- aprire il tab Chan PJSIP Settings, e configurare la sezione TLS/SSL/SRTP Settings con Certificate Manager -> NethServer, SSL Method -> tlsv1, Verify Client -> No, Verify Server -> No.
+- aprire il tab :guilabel:`Impostazioni PJSIP` e configurare la sezione :guilabel:`Impostazioni TLS/SSL/SRTP` come segue:
+
+   * :guilabel:`Certificate Manager -> NethServer`
+   * :guilabel:`SSL Method -> tlsv1` 
+   * :guilabel:`Verify Client -> No`
+   * :guilabel:`Verify Server -> No`
 
 
-Fatto questo, fare clic su Submit in fondo alla pagina.
+Fatto questo, fare clic su Salva in fondo alla pagina.
 
-A questo punto, fare clic sul pulsante arancione Apply Config in alto a destra, e da ultimo riavviare Asterisk con il comando: asterisk -rx "core restart now".
+A questo punto, fare clic sul pulsante arancione Applica Cambiamenti in alto a destra, e da ultimo riavviare Asterisk con il comando: ::
+
+  asterisk -rx "core restart now"
 
 Porte su cui è necessario raggiungere |product| per un utilizzo da remoto:
 
@@ -36,7 +43,7 @@ Configurazione
 
 É possibile configurare l'applicazione tramite il provisioning di |product|, per il momento solo per la versione su base Android.
 
-Per farlo collegare lo smartphone alla rete locale del |product| e andare in Impostazioni -> Provisioning Settings.
+Per farlo collegare lo smartphone alla rete locale del |product| e andare in :guilabel:`Impostazioni -> Provisioning Settings`.
 
 Impostare:
 
@@ -53,11 +60,11 @@ Questa operazione permetterà di aggiungere il Mac-Address dello smartphone a qu
 
 il MAC Address dello smartphone in questo caso è DC:0B:34:CE:D5:38
 
-Aprire il wizard di |product|, andare sulla pagina "Dispositivi" ed effettuare una nuova scansione, sarà presente una riga con "CTI App" come marca e GS Wave come modello.
+Aprire il wizard di |product|, andare sulla pagina :menuselection:`Dispositivi` ed effettuare una nuova scansione, sarà presente una riga con "CTI App" come marca e GS Wave come modello.
 
-Nella sezione Utenti -> Configurazioni del wizard associare il device all'utente voluto e cliccare su Configura e riavvia per pubblicare la configurazione.
+Nella sezione :menuselection:`Utenti -> Configurazioni` del wizard associare il device all'utente voluto e cliccare su Configura e riavvia per pubblicare la configurazione.
 
-Forzare il provisioning di nuovo con la procedura precedente per configurare l'applicazione: Impostazioni -> Provisioning Settings -> Start Provisioning
+Forzare il provisioning di nuovo con la procedura precedente per configurare l'applicazione: :menuselection:`Impostazioni -> Provisioning Settings -> Start Provisioning`
 
 .. note:: Per consentire l'accesso da remoto alla rubrica di |product| ricordarsi di abilitare l'accesso da reti esterne alla rubrica centralizzata in |parent_product|
 
@@ -67,9 +74,9 @@ BLF
 
 Per configurare i BLF e monitorare altri interni di |product| seguire questa procedura:
 
-- In Contatti -> SIP creare i contatti necessari specificando il Nome, Cognome e l'interno SIP
-- In Impostazioni -> Impostazioni Avanzate -> Impostazioni Aggiuntive attivare i BLF
-- In Impostazioni -> Impostazioni Avanzate -> Impostazioni Aggiuntive -> Elenco BLF selezionare i contatti da utilizzare come BLF
+- In :guilabel:`Contatti -> SIP` creare i contatti necessari specificando il Nome, Cognome e l'interno SIP
+- In :guilabel:`Impostazioni -> Impostazioni Avanzate -> Impostazioni Aggiuntive` attivare i BLF
+- In :guilabel:`Impostazioni -> Impostazioni Avanzate -> Impostazioni Aggiuntive -> Elenco BLF` selezionare i contatti da utilizzare come BLF
 
 I BLF verranno mostrati in Contatti -> SIP
 
