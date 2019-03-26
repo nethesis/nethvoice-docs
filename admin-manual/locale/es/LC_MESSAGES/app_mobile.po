@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: NethVoice 14\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-15 15:01+0100\n"
+"POT-Creation-Date: 2019-03-26 12:10+0100\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -28,141 +28,193 @@ msgid ""
 "installabile su base Android o iOS."
 msgstr ""
 
-#: ../../app_mobile.rst:13
+#: ../../app_mobile.rst:12
 msgid ""
-"Ricordarsi di rendere accessibile da internet |product| tramite il "
-"protocollo SIP TLS per un utilizzo da remoto"
+"L'app accede in SIP TLS al |product| che va abilitato sia lato firewall che "
+"nella configurazione di |product|."
+msgstr ""
+
+#: ../../app_mobile.rst:14
+msgid ""
+"Per prima cosa, sul Server Manager (porta 980), nella sezione :menuselection:"
+"`Accesso Centralino -> Accesso Esterno` abilitare il servizio SIP TLS."
 msgstr ""
 
 #: ../../app_mobile.rst:16
 msgid ""
-"Porte su cui è necessario raggiungere |product| per un utilizzo da remoto:"
+"Fatto questo, accedere all'interfaccia avanzata di |product|, andare in :"
+"menuselection:`Impostazioni  -> Impostazioni Asterisk SIP`:"
 msgstr ""
 
 #: ../../app_mobile.rst:18
-msgid "5061 TCP (SIP TLS)"
-msgstr ""
-
-#: ../../app_mobile.rst:19
-msgid "da 10000 a 20000 UDP (Audio)"
+msgid ""
+"aprire il tab :guilabel:`Impostazioni Generali` ed impostare la sezione :"
+"guilabel:`Impostazioni NAT`."
 msgstr ""
 
 #: ../../app_mobile.rst:20
-msgid "10389 TCP (Rubrica)"
+msgid ""
+"aprire il tab :guilabel:`Impostazioni PJSIP` e configurare la sezione :"
+"guilabel:`Impostazioni TLS/SSL/SRTP` come segue:"
+msgstr ""
+
+#: ../../app_mobile.rst:22
+msgid ":guilabel:`Certificate Manager -> NethServer`"
+msgstr ""
+
+#: ../../app_mobile.rst:23
+msgid ":guilabel:`SSL Method -> tlsv1`"
 msgstr ""
 
 #: ../../app_mobile.rst:24
-msgid "Configurazione"
+msgid ":guilabel:`Verify Client -> No`"
 msgstr ""
 
-#: ../../app_mobile.rst:26
-msgid ""
-"É possibile configurare l'applicazione tramite il provisioning di |product|."
+#: ../../app_mobile.rst:25
+msgid ":guilabel:`Verify Server -> No`"
 msgstr ""
 
 #: ../../app_mobile.rst:28
-msgid ""
-"Per farlo collegare lo smartphone alla rete locale del |product| e andare in "
-"Impostazioni -> Provisioning Settings."
+msgid "Fatto questo, fare clic su Salva in fondo alla pagina."
 msgstr ""
 
 #: ../../app_mobile.rst:30
-msgid "Impostare:"
+msgid ""
+"A questo punto, fare clic sul pulsante arancione Applica Cambiamenti in alto "
+"a destra, e da ultimo riavviare Asterisk con il comando: ::"
 msgstr ""
 
-#: ../../app_mobile.rst:32
-msgid "Config Upgrade Via: TFTP"
+#: ../../app_mobile.rst:34
+msgid ""
+"Porte su cui è necessario raggiungere |product| per un utilizzo da remoto:"
 msgstr ""
 
-#: ../../app_mobile.rst:33
-msgid "Config percorso server : ip locale di |product|"
-msgstr ""
-
-#: ../../app_mobile.rst:35
-msgid "Cliccare su Start Provisioning."
+#: ../../app_mobile.rst:36
+msgid "5061 TCP (SIP TLS)"
 msgstr ""
 
 #: ../../app_mobile.rst:37
+msgid "da 10000 a 20000 UDP (Audio)"
+msgstr ""
+
+#: ../../app_mobile.rst:38
+msgid "10389 TCP (Rubrica)"
+msgstr ""
+
+#: ../../app_mobile.rst:42
+msgid "Configurazione"
+msgstr ""
+
+#: ../../app_mobile.rst:44
+msgid ""
+"É possibile configurare l'applicazione tramite il provisioning di |product|, "
+"per il momento solo per la versione su base Android."
+msgstr ""
+
+#: ../../app_mobile.rst:46
+msgid ""
+"Per farlo collegare lo smartphone alla rete locale del |product| e andare in "
+":guilabel:`Impostazioni -> Provisioning Settings`."
+msgstr ""
+
+#: ../../app_mobile.rst:48
+msgid "Impostare:"
+msgstr ""
+
+#: ../../app_mobile.rst:50
+msgid "Config Upgrade Via: TFTP"
+msgstr ""
+
+#: ../../app_mobile.rst:51
+msgid "Config percorso server : ip locale di |product|"
+msgstr ""
+
+#: ../../app_mobile.rst:53
+msgid "Cliccare su Start Provisioning."
+msgstr ""
+
+#: ../../app_mobile.rst:55
 msgid ""
 "Questa operazione permetterà di aggiungere il Mac-Address dello smartphone a "
 "quelli dei device configurabili."
 msgstr ""
 
-#: ../../app_mobile.rst:39
+#: ../../app_mobile.rst:57
 msgid ""
 "É utile conoscere il MAC Address dello smartphone che si vuole configurare, "
 "è possibile verificarlo nel momento della richiesta TFTP in /var/log/"
 "messages: ::"
 msgstr ""
 
-#: ../../app_mobile.rst:43
+#: ../../app_mobile.rst:61
 msgid "il MAC Address dello smartphone in questo caso è DC:0B:34:CE:D5:38"
 msgstr ""
 
-#: ../../app_mobile.rst:45
+#: ../../app_mobile.rst:63
 msgid ""
-"Aprire il wizard di |product|, andare sulla pagina \"Dispositivi\" ed "
-"effettuare una nuova scansione, sarà presente una riga con \"CTI App\" come "
-"marca e GS Wave come modello."
+"Aprire il wizard di |product|, andare sulla pagina :menuselection:"
+"`Dispositivi` ed effettuare una nuova scansione, sarà presente una riga con "
+"\"CTI App\" come marca e GS Wave come modello."
 msgstr ""
 
-#: ../../app_mobile.rst:47
+#: ../../app_mobile.rst:65
 msgid ""
-"Nella sezione Utenti -> Configurazioni del wizard associare il device "
-"all'utente voluto e cliccare su Configura e riavvia per pubblicare la "
-"configurazione."
+"Nella sezione :menuselection:`Utenti -> Configurazioni` del wizard associare "
+"il device all'utente voluto e cliccare su Configura e riavvia per pubblicare "
+"la configurazione."
 msgstr ""
 
-#: ../../app_mobile.rst:49
+#: ../../app_mobile.rst:67
 msgid ""
 "Forzare il provisioning di nuovo con la procedura precedente per configurare "
-"l'applicazione: Impostazioni -> Provisioning Settings -> Start Provisioning"
+"l'applicazione: :menuselection:`Impostazioni -> Provisioning Settings -> "
+"Start Provisioning`"
 msgstr ""
 
-#: ../../app_mobile.rst:51
+#: ../../app_mobile.rst:69
 msgid ""
 "Per consentire l'accesso da remoto alla rubrica di |product| ricordarsi di "
 "abilitare l'accesso da reti esterne alla rubrica centralizzata in "
 "|parent_product|"
 msgstr ""
 
-#: ../../app_mobile.rst:55
+#: ../../app_mobile.rst:73
 msgid "BLF"
 msgstr ""
 
-#: ../../app_mobile.rst:57
+#: ../../app_mobile.rst:75
 msgid ""
 "Per configurare i BLF e monitorare altri interni di |product| seguire questa "
 "procedura:"
 msgstr ""
 
-#: ../../app_mobile.rst:59
+#: ../../app_mobile.rst:77
 msgid ""
-"In Contatti -> SIP creare i contatti necessari specificando il Nome, Cognome "
-"e l'interno SIP"
+"In :guilabel:`Contatti -> SIP` creare i contatti necessari specificando il "
+"Nome, Cognome e l'interno SIP"
 msgstr ""
 
-#: ../../app_mobile.rst:60
+#: ../../app_mobile.rst:78
 msgid ""
-"In Impostazioni -> Impostazioni Avanzate -> Impostazioni Aggiuntive attivare "
-"i BLF"
+"In :guilabel:`Impostazioni -> Impostazioni Avanzate -> Impostazioni "
+"Aggiuntive` attivare i BLF"
 msgstr ""
 
-#: ../../app_mobile.rst:61
+#: ../../app_mobile.rst:79
 msgid ""
-"In Impostazioni -> Impostazioni Avanzate -> Impostazioni Aggiuntive -> "
-"Elenco BLF selezionare i contatti da utilizzare come BLF"
+"In :guilabel:`Impostazioni -> Impostazioni Avanzate -> Impostazioni "
+"Aggiuntive -> Elenco BLF` selezionare i contatti da utilizzare come BLF"
 msgstr ""
 
-#: ../../app_mobile.rst:63
+#: ../../app_mobile.rst:81
 msgid "I BLF verranno mostrati in Contatti -> SIP"
 msgstr ""
 
-#: ../../app_mobile.rst:67
+#: ../../app_mobile.rst:85
 msgid "Scan&Play"
 msgstr ""
 
-#: ../../app_mobile.rst:71
+#: ../../app_mobile.rst:89
 msgid ""
 "L'applicazione Scan&Play è disponibile su smartphone e permette di "
 "scansionare i MAC address dei telefoni per velocizzare la configurazione e "
@@ -172,27 +224,27 @@ msgstr ""
 "las direcciones MAC de los teléfonos para hacer más rápida la configuración "
 "y el provisioning."
 
-#: ../../app_mobile.rst:74
+#: ../../app_mobile.rst:92
 msgid "Requisiti"
 msgstr "Requisitos"
 
-#: ../../app_mobile.rst:76
+#: ../../app_mobile.rst:94
 msgid "Presenza di un certificato valido sul server"
 msgstr "Presencia de un certificado válido en el servidor"
 
-#: ../../app_mobile.rst:77
+#: ../../app_mobile.rst:95
 msgid "Raggiungibilità della porta HTTPS 443 dall'esterno"
 msgstr "Accesibilidad de la puerta HTTPS 443 desde el exterior"
 
-#: ../../app_mobile.rst:80
+#: ../../app_mobile.rst:98
 msgid "Installazione"
 msgstr "Instalación"
 
-#: ../../app_mobile.rst:82
+#: ../../app_mobile.rst:100
 msgid "L'applicazione è disponibile ai seguenti link:"
 msgstr "La aplicación está disponible en el siguiente link:"
 
-#: ../../app_mobile.rst:84
+#: ../../app_mobile.rst:102
 msgid ""
 "Android: https://play.google.com/store/apps/details?id=it.nethesis."
 "scanplay14"
@@ -200,7 +252,7 @@ msgstr ""
 "Android: https://play.google.com/store/apps/details?id=it.nethesis."
 "scanplay14"
 
-#: ../../app_mobile.rst:85
+#: ../../app_mobile.rst:103
 msgid ""
 "iOS: https://itunes.apple.com/us/app/nethvoice-scan-play-14/id1277558637?ls="
 "1&mt=8"
@@ -208,22 +260,22 @@ msgstr ""
 "iOS: https://itunes.apple.com/us/app/nethvoice-scan-play-14/id1277558637?ls="
 "1&mt=8"
 
-#: ../../app_mobile.rst:87
+#: ../../app_mobile.rst:105
 msgid ""
 "É possibile comunque cercare la parola **macscan** nei diversi store e "
 "installarla senza il link diretto."
 msgstr ""
 
-#: ../../app_mobile.rst:90
+#: ../../app_mobile.rst:108
 msgid "Utilizzo"
 msgstr "Uso"
 
-#: ../../app_mobile.rst:92
+#: ../../app_mobile.rst:110
 msgid "Appena avviata l'applicazione vi chiede le infomazioni di login:"
 msgstr ""
 "Inmediatamente iniciada la aplicación os solicita la información de login:"
 
-#: ../../app_mobile.rst:94
+#: ../../app_mobile.rst:112
 msgid ""
 "Username: l'username dell'utente amministratore del centralino con cui "
 "collegarsi (che è `admin`)"
@@ -231,11 +283,11 @@ msgstr ""
 "Nombre usuario: el nombre de usuario administrador de la centralita con la "
 "que conectarse (que es `admin`)"
 
-#: ../../app_mobile.rst:95
+#: ../../app_mobile.rst:113
 msgid "Password: la password dell'utente admin con cui collegarsi"
 msgstr "Contraseña: la contraseña del usuario admin con el que conectarse"
 
-#: ../../app_mobile.rst:96
+#: ../../app_mobile.rst:114
 msgid ""
 "Hostname: il nome o l'indirizzo IP del server (server in cui è installato il "
 "centralino)"
@@ -243,37 +295,37 @@ msgstr ""
 "Hostname: el nombre o la dirección IP del servidor (sevirdor en el que está "
 "instalado la centralita)"
 
-#: ../../app_mobile.rst:98
+#: ../../app_mobile.rst:116
 msgid "Una volta effettuato il login:"
 msgstr "Una vez efectuado el login:"
 
-#: ../../app_mobile.rst:100
+#: ../../app_mobile.rst:118
 msgid "Premere il pulsante \"Scan\" per avviare la fotocamera dello smartphone"
 msgstr "Pulsar el botón \"Escanear\" para iniciar la cámara del smartphone"
 
-#: ../../app_mobile.rst:101
+#: ../../app_mobile.rst:119
 msgid "Avvicinarsi al MAC address del telefono o della scatola del telefono"
 msgstr "Acercarse a la dirección MAC del teléfono o de la caja del teléfono"
 
-#: ../../app_mobile.rst:102
+#: ../../app_mobile.rst:120
 msgid ""
 "L'applicazione riconosce il MAC address e ricava il fornitore del telefono"
 msgstr ""
 "La aplicación reconoce la dirección MAC y obtiene el proveedor del teléfono"
 
-#: ../../app_mobile.rst:103
+#: ../../app_mobile.rst:121
 msgid "Selezionare il modello di telefono"
 msgstr "Seleccionar el modelo de teléfono"
 
-#: ../../app_mobile.rst:104
+#: ../../app_mobile.rst:122
 msgid "Selezionare l'utente del centralino a cui associare il telefono"
 msgstr "Seleccionar el usuario de la centralita al que asociar el teléfono"
 
-#: ../../app_mobile.rst:105
+#: ../../app_mobile.rst:123
 msgid "Premere il pulsante \"Salva\" per salvare la configurazione"
 msgstr "Pulsar el botón \"Guardar\" para guardar la configuración"
 
-#: ../../app_mobile.rst:107
+#: ../../app_mobile.rst:125
 msgid ""
 "Collegare il telefono nella stessa rete del centralino e verificare che "
 "venga effettuato correttamente il provisioning del telefono."
