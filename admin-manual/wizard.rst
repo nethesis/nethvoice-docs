@@ -312,7 +312,7 @@ Al momento l'integrazione riguarda sorgenti di tipo MySQL e per ognuna di esse √
 
 - *nome rubrica:* un qualsiasi nome significativo univoco che verr√† utilizzato per identificare i dati importati nella rubrica centralizzata
 - *dati di accesso al db*: tipo database, indirizzo e porta server, utente e password
-- *query*: query utilizzata per prelevare i dati da importare nella rubrica centralizzata
+- *query*: query utilizzata per prelevare i dati da importare nella rubrica centralizzata. Dal valore presente di default, sostituire la parola ``[table]`` con il nome della tabella da utilizzare
 
 Il pulsante "Esegui" consente la visualizzazione dell'anteprima dei dati prelevati dalla sorgente.
 
