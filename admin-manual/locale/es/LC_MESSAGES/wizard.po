@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: NethVoice 14\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-15 15:01+0100\n"
+"POT-Creation-Date: 2019-03-26 12:10+0100\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -838,10 +838,146 @@ msgid ""
 msgstr ""
 
 #: ../../wizard.rst:295
-msgid "Amministrazione"
+msgid "Aggiunta di rubriche esterne"
 msgstr ""
 
 #: ../../wizard.rst:297
+msgid ""
+"È possibile aggiungere rubriche esterne a quella di |product| per integrarla "
+"con contatti aggiuntivi residenti su database esterni."
+msgstr ""
+
+#: ../../wizard.rst:299
+msgid ""
+"Per accedere al servizio è sufficiente selezionare il menù :menuselection:"
+"`Applicazioni -> Sorgenti rubrica`."
+msgstr ""
+
+#: ../../wizard.rst:301
+msgid ""
+"L'integrazione viene eseguita creando una nuova sorgente da cui verranno "
+"prelevati i dati da sincronizzare con la rubrica centralizzata (tabella "
+"``phonebook`` del database ``phonebook``) in maniera schedulata."
+msgstr ""
+
+#: ../../wizard.rst:303
+msgid "Per creare una nuova sorgente sono necessari tre passaggi:"
+msgstr ""
+
+#: ../../wizard.rst:305
+msgid "**Sorgente:** creazione nuova sorgente"
+msgstr ""
+
+#: ../../wizard.rst:306
+msgid ""
+"**Mappa:** configurazione del mapping tra i campi del database sorgente e i "
+"campi del database destinatario (rubrica centralizzata ``phonebook."
+"phonebook``)"
+msgstr ""
+
+#: ../../wizard.rst:307
+msgid "**Impostazioni:** scelta dell'intervallo di sincronizzazione"
+msgstr ""
+
+#: ../../wizard.rst:309
+msgid "**1. Sorgente**"
+msgstr ""
+
+#: ../../wizard.rst:311
+msgid ""
+"Al momento l'integrazione riguarda sorgenti di tipo MySQL e per ognuna di "
+"esse è sufficiente inserire:"
+msgstr ""
+
+#: ../../wizard.rst:313
+msgid ""
+"*nome rubrica:* un qualsiasi nome significativo univoco che verrà utilizzato "
+"per identificare i dati importati nella rubrica centralizzata"
+msgstr ""
+
+#: ../../wizard.rst:314
+msgid ""
+"*dati di accesso al db*: tipo database, indirizzo e porta server, utente e "
+"password"
+msgstr ""
+
+#: ../../wizard.rst:315
+msgid ""
+"*query*: query utilizzata per prelevare i dati da importare nella rubrica "
+"centralizzata. Dal valore presente di default, sostituire la parola "
+"``[table]`` con il nome della tabella da utilizzare"
+msgstr ""
+
+#: ../../wizard.rst:317
+msgid ""
+"Il pulsante \"Esegui\" consente la visualizzazione dell'anteprima dei dati "
+"prelevati dalla sorgente."
+msgstr ""
+
+#: ../../wizard.rst:319
+msgid "**2. Mappa**"
+msgstr ""
+
+#: ../../wizard.rst:321
+msgid ""
+"In questo passaggio è necessario stabilire la corrispondenza tra i campi del "
+"database sorgente e quelli destinatari della rubrica centralizzata."
+msgstr ""
+
+#: ../../wizard.rst:323
+msgid ""
+"Per esempio, si potrebbe associare il campo ``phone`` sorgente con quello "
+"destinatario ``workphone``."
+msgstr ""
+
+#: ../../wizard.rst:325
+msgid "**3. Impostazioni**"
+msgstr ""
+
+#: ../../wizard.rst:327
+msgid ""
+"È possibile scegliere l'intervallo di sincronizzazione dei contatti tra:"
+msgstr ""
+
+#: ../../wizard.rst:329
+msgid "15 minuti"
+msgstr ""
+
+#: ../../wizard.rst:330
+msgid "30 minuti"
+msgstr ""
+
+#: ../../wizard.rst:331
+msgid "1 ora"
+msgstr ""
+
+#: ../../wizard.rst:332
+msgid "6 ore"
+msgstr ""
+
+#: ../../wizard.rst:333
+msgid "24 ore"
+msgstr ""
+
+#: ../../wizard.rst:335
+msgid "Una volta creata la sorgente, è possibile:"
+msgstr ""
+
+#: ../../wizard.rst:337
+msgid ""
+"eseguire subito la sincronizzazione tramite il pulsante :guilabel:"
+"`Sincronizza`"
+msgstr ""
+
+#: ../../wizard.rst:338
+msgid "abilitare/disabilitare la sincronizzazione"
+msgstr ""
+
+#: ../../wizard.rst:341
+msgid "Amministrazione"
+msgstr ""
+
+#: ../../wizard.rst:343
 msgid ""
 "La sezione \"Amministratore\" raggruppa le azioni che possono essere fatte "
 "dall'amministratore del centralino"
@@ -849,43 +985,43 @@ msgstr ""
 "La sección \"Administrador\" reagrupa las acciones que pueden ser realizadas "
 "por el administrador de la centralita"
 
-#: ../../wizard.rst:300
+#: ../../wizard.rst:346
 msgid "Lingue"
 msgstr ""
 
-#: ../../wizard.rst:302
+#: ../../wizard.rst:348
 msgid ""
 "Nel menù Lingue è possibile impostare la lingua di sistema del |product| "
 "impostandola come quella di default e installare anche altri pacchetti "
 "lingua aggiuntivi."
 msgstr ""
 
-#: ../../wizard.rst:305
+#: ../../wizard.rst:351
 msgid "Impostazioni"
 msgstr "Ajustes"
 
-#: ../../wizard.rst:306
+#: ../../wizard.rst:352
 msgid ""
 "Nella parte \"Impostazioni\", è possibile cambiare la password dell'utente "
 "admin."
 msgstr ""
 "En la parte \"Ajustes\", es posible cambiar la contraseña del usuario admin."
 
-#: ../../wizard.rst:309
+#: ../../wizard.rst:355
 msgid "Avanzate"
 msgstr ""
 
-#: ../../wizard.rst:311
+#: ../../wizard.rst:357
 msgid ""
 "La sezione Avanzate consente l'accesso diretto all'interfaccia avanzata di "
 "|product|."
 msgstr ""
 
-#: ../../wizard.rst:315
+#: ../../wizard.rst:361
 msgid "Report"
 msgstr "Informe"
 
-#: ../../wizard.rst:316
+#: ../../wizard.rst:362
 msgid ""
 "La sezione \"Report\" riporta l'elenco completo degli utenti del centralino "
 "specificando il loro:"
@@ -893,27 +1029,27 @@ msgstr ""
 "La sección \"Informe\" reporta la lista completa de los usuarios de la "
 "centralita especificando:"
 
-#: ../../wizard.rst:318
+#: ../../wizard.rst:364
 msgid "Interno"
 msgstr "Interno"
 
-#: ../../wizard.rst:319
+#: ../../wizard.rst:365
 msgid "Username"
 msgstr "Usuario"
 
-#: ../../wizard.rst:320
+#: ../../wizard.rst:366
 msgid "Nome e Cognome"
 msgstr "Nombre y Apellido"
 
-#: ../../wizard.rst:321
+#: ../../wizard.rst:367
 msgid "Password Voicemail"
 msgstr "Password Voicemail"
 
-#: ../../wizard.rst:322
+#: ../../wizard.rst:368
 msgid "Password utente (se l'utente è stato creato da |product|)"
 msgstr ""
 
-#: ../../wizard.rst:324
+#: ../../wizard.rst:370
 msgid ""
 "É presente anche la possibilità di stampare l'elenco in formato PDF "
 "cliccando sul bottone \"Stampa report PDF\""

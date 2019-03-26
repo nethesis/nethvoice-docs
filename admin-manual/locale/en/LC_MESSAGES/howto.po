@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: NethVoice 14\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-01-15 15:01+0100\n"
+"POT-Creation-Date: 2019-03-26 12:10+0100\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -495,8 +495,8 @@ msgstr ""
 "The mode is active by default and this is the list of supported phones:"
 
 #: ../../howto.rst:268
-msgid "Alcatel"
-msgstr "Alcatel"
+msgid "Fanvil"
+msgstr ""
 
 #: ../../howto.rst:272
 msgid "Disattivazione della modalità Click2Call automatico"
@@ -761,3 +761,36 @@ msgstr "Authentication can be disabled as follows:"
 #: ../../howto.rst:447
 msgid "per riabilitarla:"
 msgstr "to rehabilitate it:"
+
+#: ../../howto.rst:457
+msgid ""
+"|product_cti|: personalizzare il messaggio di fallito login per utenti non "
+"configurati"
+msgstr ""
+
+#: ../../howto.rst:459
+msgid ""
+"Un utente non configurato **non** ha il permesso di accedere a |product_cti|."
+" In questo caso è possibile personalizzare il messaggio di warning "
+"visualizzato dopo un tentativo di login. Procedere nella seguente maniera:"
+msgstr ""
+
+#: ../../howto.rst:463
+msgid ""
+"creare il template custom del file `/usr/share/cti/customizable/login-user-"
+"noconfig.html`:"
+msgstr ""
+
+#: ../../howto.rst:470
+msgid ""
+"personalizzare il contenuto del template custom `/etc/e-smith/templates-"
+"custom/usr/share/cti/customizable/login-user-noconfig.html/10base`"
+msgstr ""
+
+#: ../../howto.rst:471
+msgid "eseguire l'evento `nethcti3-update`"
+msgstr ""
+
+#: ../../howto.rst:477
+msgid "Per ripristinare il messaggio originale:"
+msgstr ""
