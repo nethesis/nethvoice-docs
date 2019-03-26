@@ -296,31 +296,31 @@ Aggiunta di rubriche esterne
 
 È possibile aggiungere rubriche esterne a quella di |product| per integrarla con contatti aggiuntivi residenti su database esterni.
 
-Per accedere al servizio è sufficiente selezionare il menù "Applicazioni" -> "Sorgenti rubrica".
+Per accedere al servizio è sufficiente selezionare il menù :menuselection:`Applicazioni -> Sorgenti rubrica`.
 
-L'integrazione viene eseguita creando una nuova sorgente da cui verranno prelevati i dati da sincronizzare con la rubrica centralizzata (tabella `"phonebook"` del database `"phonebook"`) in maniera schedulata.
+L'integrazione viene eseguita creando una nuova sorgente da cui verranno prelevati i dati da sincronizzare con la rubrica centralizzata (tabella ``phonebook`` del database ``phonebook``) in maniera schedulata.
 
 Per creare una nuova sorgente sono necessari tre passaggi:
 
 1. **Sorgente:** creazione nuova sorgente
-2. **Mappa:** configurazione del mapping tra i campi del db sorgente e i campi del db destinatario (rubrica centralizzata `"phonebook.phonebook"`)
+2. **Mappa:** configurazione del mapping tra i campi del database sorgente e i campi del database destinatario (rubrica centralizzata ``phonebook.phonebook``)
 3. **Impostazioni:** scelta dell'intervallo di sincronizzazione
 
 **1. Sorgente**
 
 Al momento l'integrazione riguarda sorgenti di tipo MySQL e per ognuna di esse è sufficiente inserire:
 
-- *nome rubrica:* un qualsiasi nome significativo che verrà utilizzato per completare la colonna `"sid_imported"` della rubrica centralizzata
+- *nome rubrica:* un qualsiasi nome significativo univoco che verrà utilizzato per identificare i dati importati nella rubrica centralizzata
 - *dati di accesso al db*: tipo database, indirizzo e porta server, utente e password
-- *query*: è la query che andrà a prelevare i dati da importare nella rubrica centralizzata `"phonebook.phonebook"`
+- *query*: query utilizzata per prelevare i dati da importare nella rubrica centralizzata
 
 Il pulsante "Esegui" consente la visualizzazione dell'anteprima dei dati prelevati dalla sorgente.
 
 **2. Mappa**
 
-In questo passaggio è necessario stabilire il mapping tra i campi del database sorgente e quelli destinatari della rubrica centralizzata.
+In questo passaggio è necessario stabilire la corrispondenza tra i campi del database sorgente e quelli destinatari della rubrica centralizzata.
 
-Per esempio si potrebbe associare il campo `"phone"` sorgente con quello destinatario `"workphone"`.
+Per esempio, si potrebbe associare il campo ``phone`` sorgente con quello destinatario ``workphone``.
 
 **3. Impostazioni**
 
@@ -334,7 +334,7 @@ Per esempio si potrebbe associare il campo `"phone"` sorgente con quello destina
 
 Una volta creata la sorgente, è possibile:
 
-- eseguire subito la sincronizzazione tramite il pulsante `"Sincronizza"`
+- eseguire subito la sincronizzazione tramite il pulsante :guilabel:`Sincronizza`
 - abilitare/disabilitare la sincronizzazione
 
 Amministrazione
