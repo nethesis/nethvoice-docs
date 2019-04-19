@@ -480,3 +480,39 @@ Per ripristinare il messaggio originale:
 
   rm -f /etc/e-smith/templates-custom/usr/share/cti/customizable/login-user-noconfig.html/10base
   signal-event nethcti3-update
+
+
+|product_cti|: eseguire uno script al termine di una chiamata
+=============================================================
+
+È possibile configurare NethCTI Server per eseguire uno script al termine di ogni chiamata.
+Lo script verrà invocato tramite i seguenti parametri così come ricevuti da Asterisk stesso:
+
+.. code-block:: bash
+
+  "source, channel, endtime, duration, amaflags, uniqueid, callerid, starttime, answertime, destination, disposition, lastapplication, billableseconds, destinationcontext, destinationchannel"
+
+Esempio:
+
+.. code-block:: bash
+  
+  ./<SCRIPT_PATH> '200' 'PJSIP/200-00000000' '2019-01-17 18:05:13' '10' 'DOCUMENTATION' '1547744703.0' '"Alessandro Polidori" <200>' '2019-01-17 18:05:03' '2019-01-17 18:05:09' '201' 'ANSWERED' 'Dial' '3' 'ext-local' 'PJSIP/201-00000001' 
+
+
+Per attivare l'esecuzione di uno script eseguire:
+
+.. code-block:: bash
+
+  config setprop nethcti-server CdrScript <SCRIPT_PATH>
+  config setprop nethcti-server CdrScriptTimeout 5000
+  signal-event nethcti-server3-update
+
+Il secondo comando è opzionale e consente di stabilire un timeout (espresso in msec) per l'esecuzione dello script: il default è 5 secondi.
+
+Per disattivarlo eseguire:
+
+.. code-block:: bash
+
+  config setprop nethcti-server CdrScript ""
+  config setprop nethcti-server CdrScriptTimeout 5000
+  signal-event nethcti-server3-update
