@@ -516,3 +516,6 @@ Per disattivarlo eseguire:
   config setprop nethcti-server CdrScript ""
   config setprop nethcti-server CdrScriptTimeout 5000
   signal-event nethcti-server3-update
+
+
+.. note:: Lo script deve essere eseguibile dall'utente "asterisk" e si consiglia di configurare opportunamente i permessi del file.
