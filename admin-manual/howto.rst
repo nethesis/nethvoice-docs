@@ -519,3 +519,57 @@ Per disattivarlo eseguire:
 
 
 .. note:: Lo script deve essere eseguibile dall'utente "asterisk" e si consiglia di configurare opportunamente i permessi del file.
+
+|product_cti|: personalizzare le soglie degli allarmi
+=====================================================
+
+|product_cti| è in grado di visualizzare degli allarmi attraverso la dashboard del servizio QManager (Supervisore delle code).
+Gli allarmi generati sono:
+
+- numero di agenti insufficiente nella coda: la notifica viene inviata se ci sono più di *MaxCallPerOp* (default 2) chiamate per ogni operatore
+- tempo di attesa medio elevato sulla coda: la notifica viene inviata se il tempo medio di attesa in coda è maggiore di *MaxHoldtime* (default 120s)
+- carico elevato sulla coda: la notifica viene inviata se ci sono più di *MaxCalls* (default 10) chiamate in attesa e il tempo media di attesa in coda è maggiore di *MaxHoldtime.*
+- numero elevato di chiamate in attesa nella coda: la notifica viene inviata se ci sono più di *MaxCalls* chiamate in attesa e il tempo di attesa della prima chiamata è maggiore di *CallersMaxWait* (default 250s).
+
+È possibile personalizzare i valori delle soglie di ciascun allarme creando il template custom:
+
+.. code-block:: bash
+
+  etc/e-smith/templates/etc/collectd.d/asterisk_monitor.conf/10base
+
+il cui contenuto è:
+
+.. code-block:: bash
+
+  {
+      use NethServer::Password;
+      my $nethcti_pwd = NethServer::Password::store('NethctiManagerPasswd') || die('Could not generate Nethcti manager password!');
+
+      $OUT .= "LoadPlugin python\n\n";
+      $OUT .= "<Plugin python>\n";
+      $OUT .= "    Import asterisk_monitor\n";
+      $OUT .= "    <Module asterisk_monitor>\n";
+      $OUT .= "        Host \"localhost\"\n";
+      $OUT .= "        Port \"5038\"\n";
+      $OUT .= "        Username \"proxycti\"\n";
+      $OUT .= "        Secret \"$nethcti_pwd\"\n";
+      $OUT .= "        EnableGraphs \"False\"\n";
+      $OUT .= "        MaxCallPerOp 2\n";
+      $OUT .= "        MaxCalls 10\n";
+      $OUT .= "        MaxHoldtime 120\n";
+      $OUT .= "        CallersMaxWait 250\n";
+      $OUT .= "        Debug: False\n";
+      $OUT .= "    </Module>\n";
+      $OUT .= "</Plugin>\n\n";
+  }
+
+
+Tramite la chiave *Debug* è possibile abilitare il logging su syslog.
+
+Dopo aver personalizzato le soglie eseguire il comando seguente:
+
+.. code-block:: bash
+
+  signal-event nethserver-nethvoice14-update
+
+Gli stessi allarmi vengono sincronizzati in cloud sulla piattaforma `my.nethesis.it` da cui è possibile visualizzarli senza accedere a |product_cti|.
