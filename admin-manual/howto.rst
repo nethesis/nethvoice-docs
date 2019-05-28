@@ -480,3 +480,96 @@ Per ripristinare il messaggio originale:
 
   rm -f /etc/e-smith/templates-custom/usr/share/cti/customizable/login-user-noconfig.html/10base
   signal-event nethcti3-update
+
+
+|product_cti|: eseguire uno script al termine di una chiamata
+=============================================================
+
+È possibile configurare NethCTI Server per eseguire uno script al termine di ogni chiamata.
+Lo script verrà invocato tramite i seguenti parametri così come ricevuti da Asterisk stesso:
+
+.. code-block:: bash
+
+  "source, channel, endtime, duration, amaflags, uniqueid, callerid, starttime, answertime, destination, disposition, lastapplication, billableseconds, destinationcontext, destinationchannel"
+
+Esempio:
+
+.. code-block:: bash
+  
+  ./<SCRIPT_PATH> '200' 'PJSIP/200-00000000' '2019-01-17 18:05:13' '10' 'DOCUMENTATION' '1547744703.0' '"Alessandro Polidori" <200>' '2019-01-17 18:05:03' '2019-01-17 18:05:09' '201' 'ANSWERED' 'Dial' '3' 'ext-local' 'PJSIP/201-00000001' 
+
+
+Per attivare l'esecuzione di uno script eseguire:
+
+.. code-block:: bash
+
+  config setprop nethcti-server CdrScript <SCRIPT_PATH>
+  config setprop nethcti-server CdrScriptTimeout 5000
+  signal-event nethcti-server3-update
+
+Il secondo comando è opzionale e consente di stabilire un timeout (espresso in msec) per l'esecuzione dello script: il default è 5 secondi.
+
+Per disattivarlo eseguire:
+
+.. code-block:: bash
+
+  config setprop nethcti-server CdrScript ""
+  config setprop nethcti-server CdrScriptTimeout 5000
+  signal-event nethcti-server3-update
+
+
+.. note:: Lo script deve essere eseguibile dall'utente "asterisk" e si consiglia di configurare opportunamente i permessi del file.
+
+|product_cti|: personalizzare le soglie degli allarmi
+=====================================================
+
+|product_cti| è in grado di visualizzare degli allarmi attraverso la dashboard del servizio QManager (Supervisore delle code).
+Gli allarmi generati sono:
+
+- numero di agenti insufficiente nella coda: la notifica viene inviata se ci sono più di *MaxCallPerOp* (default 2) chiamate per ogni operatore
+- tempo di attesa medio elevato sulla coda: la notifica viene inviata se il tempo medio di attesa in coda è maggiore di *MaxHoldtime* (default 120s)
+- carico elevato sulla coda: la notifica viene inviata se ci sono più di *MaxCalls* (default 10) chiamate in attesa e il tempo media di attesa in coda è maggiore di *MaxHoldtime.*
+- numero elevato di chiamate in attesa nella coda: la notifica viene inviata se ci sono più di *MaxCalls* chiamate in attesa e il tempo di attesa della prima chiamata è maggiore di *CallersMaxWait* (default 250s).
+
+È possibile personalizzare i valori delle soglie di ciascun allarme creando il template custom:
+
+.. code-block:: bash
+
+  etc/e-smith/templates/etc/collectd.d/asterisk_monitor.conf/10base
+
+il cui contenuto è:
+
+.. code-block:: bash
+
+  {
+      use NethServer::Password;
+      my $nethcti_pwd = NethServer::Password::store('NethctiManagerPasswd') || die('Could not generate Nethcti manager password!');
+
+      $OUT .= "LoadPlugin python\n\n";
+      $OUT .= "<Plugin python>\n";
+      $OUT .= "    Import asterisk_monitor\n";
+      $OUT .= "    <Module asterisk_monitor>\n";
+      $OUT .= "        Host \"localhost\"\n";
+      $OUT .= "        Port \"5038\"\n";
+      $OUT .= "        Username \"proxycti\"\n";
+      $OUT .= "        Secret \"$nethcti_pwd\"\n";
+      $OUT .= "        EnableGraphs \"False\"\n";
+      $OUT .= "        MaxCallPerOp 2\n";
+      $OUT .= "        MaxCalls 10\n";
+      $OUT .= "        MaxHoldtime 120\n";
+      $OUT .= "        CallersMaxWait 250\n";
+      $OUT .= "        Debug: False\n";
+      $OUT .= "    </Module>\n";
+      $OUT .= "</Plugin>\n\n";
+  }
+
+
+Tramite la chiave *Debug* è possibile abilitare il logging su syslog.
+
+Dopo aver personalizzato le soglie eseguire il comando seguente:
+
+.. code-block:: bash
+
+  signal-event nethserver-nethvoice14-update
+
+Gli stessi allarmi vengono sincronizzati in cloud sulla piattaforma `my.nethesis.it` da cui è possibile visualizzarli senza accedere a |product_cti|.
