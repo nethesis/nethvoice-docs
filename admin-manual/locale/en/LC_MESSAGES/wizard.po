@@ -57,7 +57,7 @@ msgstr "`username: admin`"
 
 #: ../../wizard.rst:19
 msgid "`password: Nethesis,1234`"
-msgstr "`username: admin`"
+msgstr "`password: Nethesis,1234`"
 
 #: ../../wizard.rst:22
 msgid "Modalità utenti per il centralino"
