@@ -12,8 +12,8 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2019-03-26 11:23+0000\n"
-"Last-Translator: Polidori Alessandro <alessandro.polidori@gmail.com>\n"
+"PO-Revision-Date: 2019-06-07 04:08+0000\n"
+"Last-Translator: Andrea Marchionni <andrea.marchionni@nethesis.it>\n"
 "Language-Team: English (United States)\n"
 "Language: en_US\n"
 "X-Generator: Zanata 4.6.2\n"
@@ -57,7 +57,7 @@ msgstr "`username: admin`"
 
 #: ../../wizard.rst:19
 msgid "`password: Nethesis,1234`"
-msgstr "`username: admin`"
+msgstr "`password: Nethesis,1234`"
 
 #: ../../wizard.rst:22
 msgid "Modalità utenti per il centralino"

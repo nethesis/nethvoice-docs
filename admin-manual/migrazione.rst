@@ -77,6 +77,12 @@ Verranno ora migrati:
 
 Il principale modulo della versione 11 che non sarà migrato è il Servizio Notte.
 
+Le seguenti configurazioni che non verranno riportate sono:
+
+1. Callgroup e Pickupgroup degli interni
+2. Outbound CID (Numero in uscita per le chiamate esterne) per interni e fasci
+3. Agenti dinamici delle code
+
 Andando avanti, si inizierà la migrazione del CDR, che contiene lo storico chiamate, i dati delle code, le caselle vocali. Questa può richiedere molto tempo, per cui verrà avviata in background.
 
 Verrà mostrato ora il riepilogo di errori e warning, scaricabile anche come PDF.
