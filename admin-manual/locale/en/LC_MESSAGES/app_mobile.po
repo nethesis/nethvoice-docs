@@ -10,7 +10,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2019-01-15 02:13+0000\n"
+"PO-Revision-Date: 2019-06-07 04:26+0000\n"
 "Last-Translator: Andrea Marchionni <andrea.marchionni@nethesis.it>\n"
 "Language-Team: English (United States)\n"
 "Language: en_US\n"
@@ -38,56 +38,68 @@ msgid ""
 "L'app accede in SIP TLS al |product| che va abilitato sia lato firewall che "
 "nella configurazione di |product|."
 msgstr ""
+"The app accesses in SIP TLS the |product| that must be enabled both on the "
+"firewall side and in the |product| configuration."
 
 #: ../../app_mobile.rst:14
 msgid ""
 "Per prima cosa, sul Server Manager (porta 980), nella sezione :menuselection:"
 "`Accesso Centralino -> Accesso Esterno` abilitare il servizio SIP TLS."
 msgstr ""
+"First, on the Server Manager (port 980), in the section :menuselection:"
+"`Switchboard Access -> External Access` enable the SIP TLS service."
 
 #: ../../app_mobile.rst:16
 msgid ""
 "Fatto questo, accedere all'interfaccia avanzata di |product|, andare in :"
 "menuselection:`Impostazioni  -> Impostazioni Asterisk SIP`:"
 msgstr ""
+"Once this is done, access the advanced interface of |product|, go to :"
+"menuselection:`Settings -> SIP Asterisk Settings`:"
 
 #: ../../app_mobile.rst:18
 msgid ""
 "aprire il tab :guilabel:`Impostazioni Generali` ed impostare la sezione :"
 "guilabel:`Impostazioni NAT`."
 msgstr ""
+"open the tab :guilabel:`General Settings` and set the section :guilabel:` "
+"NAT settings`."
 
 #: ../../app_mobile.rst:20
 msgid ""
 "aprire il tab :guilabel:`Impostazioni PJSIP` e configurare la sezione :"
 "guilabel:`Impostazioni TLS/SSL/SRTP` come segue:"
 msgstr ""
+"open the tab :guilabel:`PJSIP settings` and configure the section :guilabel:"
+"`TLS / SSL / SRTP settings` as follows:"
 
 #: ../../app_mobile.rst:22
 msgid ":guilabel:`Certificate Manager -> NethServer`"
-msgstr ""
+msgstr ":guilabel:`Certificate Manager -> NethServer`"
 
 #: ../../app_mobile.rst:23
 msgid ":guilabel:`SSL Method -> tlsv1`"
-msgstr ""
+msgstr ":guilabel:`SSL Method -> tlsv1`"
 
 #: ../../app_mobile.rst:24
 msgid ":guilabel:`Verify Client -> No`"
-msgstr ""
+msgstr ":guilabel:`Verify Client -> No`"
 
 #: ../../app_mobile.rst:25
 msgid ":guilabel:`Verify Server -> No`"
-msgstr ""
+msgstr ":guilabel:`Verify Server -> No`"
 
 #: ../../app_mobile.rst:28
 msgid "Fatto questo, fare clic su Salva in fondo alla pagina."
-msgstr ""
+msgstr "After that, click on Save at the bottom of the page."
 
 #: ../../app_mobile.rst:30
 msgid ""
 "A questo punto, fare clic sul pulsante arancione Applica Cambiamenti in alto "
 "a destra, e da ultimo riavviare Asterisk con il comando: ::"
 msgstr ""
+"At this point, click on the orange Apply Changes button at the top right, "
+"and finally restart Asterisk with the command: ::"
 
 #: ../../app_mobile.rst:34
 msgid ""
@@ -115,12 +127,16 @@ msgid ""
 "É possibile configurare l'applicazione tramite il provisioning di |product|, "
 "per il momento solo per la versione su base Android."
 msgstr ""
+"It is possible to configure the application through the provisioning of "
+"|product|, for the moment only for the Android-based version."
 
 #: ../../app_mobile.rst:46
 msgid ""
 "Per farlo collegare lo smartphone alla rete locale del |product| e andare in "
 ":guilabel:`Impostazioni -> Provisioning Settings`."
 msgstr ""
+"To do this, connect your smartphone to the product's local network and go to "
+":guilabel:`Settings -> Provisioning Settings`."
 
 #: ../../app_mobile.rst:48
 msgid "Impostare:"
@@ -167,6 +183,9 @@ msgid ""
 "`Dispositivi` ed effettuare una nuova scansione, sarà presente una riga con "
 "\"CTI App\" come marca e GS Wave come modello."
 msgstr ""
+"Open the |product| wizard, go to the page :menuselection:`Devices` and run a "
+"new scan, there will be a line with\" CTI App \"as a brand and GS Wave as a "
+"model."
 
 #: ../../app_mobile.rst:65
 msgid ""
@@ -174,6 +193,9 @@ msgid ""
 "il device all'utente voluto e cliccare su Configura e riavvia per pubblicare "
 "la configurazione."
 msgstr ""
+"In the section :menuselection:`Users -> Configurations` of the wizard "
+"associate the device with the desired user and click on Configure and "
+"restart to publish the configuration."
 
 #: ../../app_mobile.rst:67
 msgid ""
@@ -181,6 +203,9 @@ msgid ""
 "l'applicazione: :menuselection:`Impostazioni -> Provisioning Settings -> "
 "Start Provisioning`"
 msgstr ""
+"Force provisioning again with the previous procedure to configure the "
+"application: :menuselection:`Settings -> Provisioning Settings -> Start "
+"Provisioning`"
 
 #: ../../app_mobile.rst:69
 msgid ""
@@ -208,18 +233,24 @@ msgid ""
 "In :guilabel:`Contatti -> SIP` creare i contatti necessari specificando il "
 "Nome, Cognome e l'interno SIP"
 msgstr ""
+"In :guilabel:`Contacts -> SIP` create the necessary contacts specifying the "
+"Name, Surname and SIP extension"
 
 #: ../../app_mobile.rst:78
 msgid ""
 "In :guilabel:`Impostazioni -> Impostazioni Avanzate -> Impostazioni "
 "Aggiuntive` attivare i BLF"
 msgstr ""
+"In  :guilabel:`Settings -> Advanced Settings -> Additional Settings` to "
+"activate the BLFs"
 
 #: ../../app_mobile.rst:79
 msgid ""
 "In :guilabel:`Impostazioni -> Impostazioni Avanzate -> Impostazioni "
 "Aggiuntive -> Elenco BLF` selezionare i contatti da utilizzare come BLF"
 msgstr ""
+"In :guilabel:`Settings -> Advanced Settings -> Additional Settings -> BLF "
+"List` select the contacts to be used as BLF"
 
 #: ../../app_mobile.rst:81
 msgid "I BLF verranno mostrati in Contatti -> SIP"

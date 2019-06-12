@@ -8,7 +8,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2019-01-15 02:20+0000\n"
+"PO-Revision-Date: 2019-06-07 04:11+0000\n"
 "Last-Translator: Andrea Marchionni <andrea.marchionni@nethesis.it>\n"
 "Language-Team: English (United States)\n"
 "Language: en_US\n"
@@ -61,7 +61,7 @@ msgstr "T40P/G, T41P/S, T42G/S, T46G/S, T48G/S, T49G"
 
 #: ../../provisioning_phone.rst:21
 msgid "T53, T54, T56, T57, T58"
-msgstr ""
+msgstr "T53, T54, T56, T57, T58"
 
 #: ../../provisioning_phone.rst:24
 msgid "SNOM"
@@ -73,11 +73,11 @@ msgstr "D120"
 
 #: ../../provisioning_phone.rst:27
 msgid "D305, D315, D345, D375, D385"
-msgstr ""
+msgstr "D305, D315, D345, D375, D385"
 
 #: ../../provisioning_phone.rst:28
 msgid "D710, D712, D715, D725, D735, D745, D765, D785"
-msgstr ""
+msgstr "D710, D712, D715, D725, D735, D745, D765, D785"
 
 #: ../../provisioning_phone.rst:31
 msgid "GIGASET"
