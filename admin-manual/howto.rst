@@ -545,7 +545,7 @@ Gli allarmi generati sono:
 
 I parametri modificabili sono:
 
-CheckInterval: secondi di intervallo tra I controlli alle code. Default 10
+CheckInterval: secondi di intervallo tra i controlli alle code. Default 10
 
 Debug: se impostato a True, aumenta la verbosità del log su syslog (/var/log/messages). Default: False
 
