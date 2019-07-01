@@ -523,53 +523,43 @@ Per disattivarlo eseguire:
 |product_cti|: personalizzare le soglie degli allarmi
 =====================================================
 
-|product_cti| è in grado di visualizzare degli allarmi attraverso la dashboard del servizio QManager (Supervisore delle code).
+|product| include un demone che controlla lo stato delle code e lancia un allarme se alcuni parametri escono da valori predefiniti. Questi allarmi sono rivolti al manager del call center, che potrà così essere notificato tempestivamente nel caso in cui ci sia un calo della qualità del servizio.
+
+Di default, le notifiche vengono mostrate nella dashboard del QManager (Supervisore delle code) di |product_cti|, ma è possibile anche riceverle via email
+
 Gli allarmi generati sono:
 
-- numero di agenti insufficiente nella coda: la notifica viene inviata se ci sono più di *MaxCallPerOp* (default 2) chiamate per ogni operatore
-- tempo di attesa medio elevato sulla coda: la notifica viene inviata se il tempo medio di attesa in coda è maggiore di *MaxHoldtime* (default 120s)
+- numero di agenti insufficiente nella coda: la notifica viene inviata se ci sono più di *MaxCallPerOp* (default 3) chiamate per ogni operatore
+- tempo di attesa medio elevato sulla coda: la notifica viene inviata se il tempo medio di attesa in coda è maggiore di *MaxHoldtime* (default 360s)
 - carico elevato sulla coda: la notifica viene inviata se ci sono più di *MaxCalls* (default 10) chiamate in attesa e il tempo media di attesa in coda è maggiore di *MaxHoldtime.*
-- numero elevato di chiamate in attesa nella coda: la notifica viene inviata se ci sono più di *MaxCalls* chiamate in attesa e il tempo di attesa della prima chiamata è maggiore di *CallersMaxWait* (default 250s).
+- numero elevato di chiamate in attesa nella coda: la notifica viene inviata se ci sono più di *MaxCalls* chiamate in attesa e il tempo di attesa della prima chiamata è maggiore di *CallersMaxWait* (default 360s).
 
-È possibile personalizzare i valori delle soglie di ciascun allarme creando il template custom:
-
-.. code-block:: bash
-
-  etc/e-smith/templates/etc/collectd.d/asterisk_monitor.conf/10base
-
-il cui contenuto è:
+È possibile personalizzare i valori delle soglie di ciascun allarme modificando i valori nel DB di configurazione con i comandi:
 
 .. code-block:: bash
 
-  {
-      use NethServer::Password;
-      my $nethcti_pwd = NethServer::Password::store('NethctiManagerPasswd') || die('Could not generate Nethcti manager password!');
-
-      $OUT .= "LoadPlugin python\n\n";
-      $OUT .= "<Plugin python>\n";
-      $OUT .= "    Import asterisk_monitor\n";
-      $OUT .= "    <Module asterisk_monitor>\n";
-      $OUT .= "        Host \"localhost\"\n";
-      $OUT .= "        Port \"5038\"\n";
-      $OUT .= "        Username \"proxycti\"\n";
-      $OUT .= "        Secret \"$nethcti_pwd\"\n";
-      $OUT .= "        EnableGraphs \"False\"\n";
-      $OUT .= "        MaxCallPerOp 2\n";
-      $OUT .= "        MaxCalls 10\n";
-      $OUT .= "        MaxHoldtime 120\n";
-      $OUT .= "        CallersMaxWait 250\n";
-      $OUT .= "        Debug: False\n";
-      $OUT .= "    </Module>\n";
-      $OUT .= "</Plugin>\n\n";
-  }
+  config setprop <PROP> <VALUE>
+  expand-template /etc/nethvoice-alerts.cfg
+  systemctl restart nethvoice-alerts
 
 
-Tramite la chiave *Debug* è possibile abilitare il logging su syslog.
+I parametri modificabili sono:
 
-Dopo aver personalizzato le soglie eseguire il comando seguente:
+CheckInterval: secondi di intervallo tra I controlli alle code. Default 10
 
-.. code-block:: bash
+Debug: se impostato a True, aumenta la verbosità del log su syslog (/var/log/messages). Default: False
 
-  signal-event nethserver-nethvoice14-update
+EnableEmail: se impostato a True, abilita la notifica via email. Default False
 
-Gli stessi allarmi vengono sincronizzati in cloud sulla piattaforma `my.nethesis.it` da cui è possibile visualizzarli senza accedere a |product_cti|.
+EmailDestination: email di destinazione degli allarmi. Se vuota, le email sono inviate a voicemanages@DOMAIN. Vuota di default.
+
+MaxCallPerOp: chiamate massime per ogni operatore. Default 3.
+
+MaxCalls: chiamate massime. Default 10.
+
+MaxHoldtime: attesa media massima della coda. Default 360 secondi.
+
+CallersMaxWait: attesa massima del primo chiamante in coda. Default 360 secondi.
+
+status: stato del servizio. Default enabled.
+
