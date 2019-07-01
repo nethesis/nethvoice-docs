@@ -538,7 +538,7 @@ Gli allarmi generati sono:
 
 .. code-block:: bash
 
-  config setprop <PROP> <VALUE>
+  config setprop nethvoice-alerts <PROP> <VALUE>
   expand-template /etc/nethvoice-alerts.cfg
   systemctl restart nethvoice-alerts
 
