@@ -2,16 +2,17 @@
 # Polidori Alessandro <alessandro.polidori@gmail.com>, 2018. #zanata
 # Andrea Marchionni <andrea.marchionni@nethesis.it>, 2019. #zanata
 # Polidori Alessandro <alessandro.polidori@gmail.com>, 2019. #zanata
+# Stefano Fancello <stefano.fancello@nethesis.it>, 2019. #zanata
 msgid ""
 msgstr ""
 "Project-Id-Version: NethVoice 14\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-05-27 11:57+0200\n"
+"POT-Creation-Date: 2019-07-01 11:49+0200\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2019-05-27 10:03+0000\n"
-"Last-Translator: Polidori Alessandro <alessandro.polidori@gmail.com>\n"
+"PO-Revision-Date: 2019-07-01 10:11+0000\n"
+"Last-Translator: Stefano Fancello <stefano.fancello@nethesis.it>\n"
 "Language-Team: English (United States)\n"
 "Language: en_US\n"
 "X-Generator: Zanata 4.6.2\n"
@@ -852,30 +853,48 @@ msgstr "|product_cti|: customize the thresholds of the alarms"
 
 #: ../../howto.rst:526
 msgid ""
-"|product_cti| è in grado di visualizzare degli allarmi attraverso la "
-"dashboard del servizio QManager (Supervisore delle code). Gli allarmi "
-"generati sono:"
+"|product| include un demone che controlla lo stato delle code e lancia un "
+"allarme se alcuni parametri escono da valori predefiniti. Questi allarmi "
+"sono rivolti al manager del call center, che potrà così essere notificato "
+"tempestivamente nel caso in cui ci sia un calo della qualità del servizio."
 msgstr ""
-"|product_cti| is able to display alarms through the QManager service "
-"dashboard (Queue Supervisor). The alarms generated are:"
+"|product| includes a daemon that checks the status of the queues and "
+"launches an alarm if some parameters come out of predefined boundaries. "
+"These alarms are addressed to the call center manager, who can thus be "
+"promptly notified if there is a dip in the quality of the service."
 
-#: ../../howto.rst:529
+#: ../../howto.rst:528
 msgid ""
-"numero di agenti insufficiente nella coda: la notifica viene inviata se ci "
-"sono più di *MaxCallPerOp* (default 2) chiamate per ogni operatore"
+"Di default, le notifiche vengono mostrate nella dashboard del QManager "
+"(Supervisore delle code) di |product_cti|, ma è possibile anche riceverle "
+"via email"
 msgstr ""
-"Insufficient number of agents for queue: the notification is sent if there "
-"are more than *MaxCallPerOp* (default 2) calls for each agent"
+"By default, notifications are shown on QManager interface (Queue Supervisor) "
+"of |product_cti|, but is also possible to be notified by email"
 
 #: ../../howto.rst:530
+msgid "Gli allarmi generati sono:"
+msgstr "Generated alarms are:"
+
+#: ../../howto.rst:532
+msgid ""
+"numero di agenti insufficiente nella coda: la notifica viene inviata se ci "
+"sono più di *MaxCallPerOp* (default 3) chiamate per ogni operatore"
+msgstr ""
+"The ratio between the number of calls waiting and the number of agents: "
+"notification is sent if there are more than *MaxCallPerOp* (default 3) calls "
+"for each operator"
+
+#: ../../howto.rst:533
 msgid ""
 "tempo di attesa medio elevato sulla coda: la notifica viene inviata se il "
-"tempo medio di attesa in coda è maggiore di *MaxHoldtime* (default 120s)"
+"tempo medio di attesa in coda è maggiore di *MaxHoldtime* (default 360s)"
 msgstr ""
-"high waiting time on queue: the notification is sent if the average waiting "
-"time in the queue is greater than * MaxHoldtime * (default 120s)"
+"The average waiting time has exceeded the alarm threshold: notification is "
+"sent if average waiting time inthe queue is more than *MaxHoldtime* (default "
+"360s)"
 
-#: ../../howto.rst:531
+#: ../../howto.rst:534
 msgid ""
 "carico elevato sulla coda: la notifica viene inviata se ci sono più di "
 "*MaxCalls* (default 10) chiamate in attesa e il tempo media di attesa in "
@@ -885,42 +904,77 @@ msgstr ""
 "*MaxCalls* (default 10) calls on hold and the average waiting time in the "
 "queue is greater than *MaxHoldtime.*"
 
-#: ../../howto.rst:532
+#: ../../howto.rst:535
 msgid ""
 "numero elevato di chiamate in attesa nella coda: la notifica viene inviata "
 "se ci sono più di *MaxCalls* chiamate in attesa e il tempo di attesa della "
-"prima chiamata è maggiore di *CallersMaxWait* (default 250s)."
+"prima chiamata è maggiore di *CallersMaxWait* (default 360s)."
 msgstr ""
-"high number of waiting calls in queue: the notification is sent if there are "
-"more than *MaxCalls* calls on hold and the waiting time for the first call "
-"is greater than *CallersMaxWait* (default 250s)."
+"There are many calls waiting and the average waiting time has exceeded the "
+"alarm threshold: notification is sent if there are more than *MaxCalls* "
+"(default 10) calls waiting and the waiting time of the first call is more "
+"than *CallersMaxWait* (default 360s)."
 
-#: ../../howto.rst:534
+#: ../../howto.rst:537
 msgid ""
-"È possibile personalizzare i valori delle soglie di ciascun allarme creando "
-"il template custom:"
+"È possibile personalizzare i valori delle soglie di ciascun allarme "
+"modificando i valori nel DB di configurazione con i comandi:"
 msgstr ""
-"It is possible to customize the threshold values of each alarm by creating "
-"the custom template:"
+"It is possible to customize the threshold values of each alarm by modifying "
+"the values in the configuration DB with the commands:"
 
-#: ../../howto.rst:540
-msgid "il cui contenuto è:"
-msgstr "whose content is:"
+#: ../../howto.rst:546
+msgid "I parametri modificabili sono:"
+msgstr "The parameters that can be changed are:"
 
-#: ../../howto.rst:567
-msgid "Tramite la chiave *Debug* è possibile abilitare il logging su syslog."
-msgstr "Using the *Debug* key it is possible to enable logging on syslog."
-
-#: ../../howto.rst:569
-msgid "Dopo aver personalizzato le soglie eseguire il comando seguente:"
-msgstr "After customizing the thresholds execute the following command:"
-
-#: ../../howto.rst:575
+#: ../../howto.rst:548
 msgid ""
-"Gli stessi allarmi vengono sincronizzati in cloud sulla piattaforma `my."
-"nethesis.it` da cui è possibile visualizzarli senza accedere a |product_cti|."
-""
+"CheckInterval: secondi di intervallo tra I controlli alle code. Default 10"
 msgstr ""
-"The same alarms are synchronized into the cloud on the `my.nethesis.it` "
-"platform from which it is possible to view them without accessing "
-"|product_cti|."
+"CheckInterval: seconds between each check on queues status. Default 10"
+
+#: ../../howto.rst:550
+msgid ""
+"Debug: se impostato a True, aumenta la verbosità del log su syslog (/var/log/"
+"messages). Default: False"
+msgstr ""
+"Debug: if True, enable debug verbosity log on syslog (/var/log/messages) "
+"Default: False"
+
+#: ../../howto.rst:552
+msgid ""
+"EnableEmail: se impostato a True, abilita la notifica via email. Default "
+"False"
+msgstr "EnableEmail: enable email notifications. Default False"
+
+#: ../../howto.rst:554
+msgid ""
+"EmailDestination: email di destinazione degli allarmi. Se vuota, le email "
+"sono inviate a voicemanages@DOMAIN. Vuota di default."
+msgstr ""
+"EmailDestination: email destination of alerts. If empty, email are sent to "
+"voicemanages@DOMAIN. Default is empty."
+
+#: ../../howto.rst:556
+msgid "MaxCallPerOp: chiamate massime per ogni operatore. Default 3."
+msgstr "MaxCallPerOp: maximum calls for each operator. Default 3."
+
+#: ../../howto.rst:558
+msgid "MaxCalls: chiamate massime. Default 10."
+msgstr "MaxCalls: maximum calls. Default 10."
+
+#: ../../howto.rst:560
+msgid "MaxHoldtime: attesa media massima della coda. Default 360 secondi."
+msgstr "MaxHoldtime: maximum average waiting. Default is 360 seconds."
+
+#: ../../howto.rst:562
+msgid ""
+"CallersMaxWait: attesa massima del primo chiamante in coda. Default 360 "
+"secondi."
+msgstr ""
+"CallersMaxWait: maximum waiting time of the first call in queue. Default is "
+"360 seconds."
+
+#: ../../howto.rst:564
+msgid "status: stato del servizio. Default enabled."
+msgstr "status: service state. Default enabled."
