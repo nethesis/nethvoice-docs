@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: NethVoice 14\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-04-19 09:18+0200\n"
+"POT-Creation-Date: 2019-07-01 11:49+0200\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -471,6 +471,23 @@ msgstr ""
 ""
 
 #: ../../migrazione.rst:80
+msgid "Le seguenti configurazioni che non verranno riportate sono:"
+msgstr ""
+
+#: ../../migrazione.rst:82
+msgid "Callgroup e Pickupgroup degli interni"
+msgstr ""
+
+#: ../../migrazione.rst:83
+msgid ""
+"Outbound CID (Numero in uscita per le chiamate esterne) per interni e fasci"
+msgstr ""
+
+#: ../../migrazione.rst:84
+msgid "Agenti dinamici delle code"
+msgstr ""
+
+#: ../../migrazione.rst:86
 msgid ""
 "Andando avanti, si inizierà la migrazione del CDR, che contiene lo storico "
 "chiamate, i dati delle code, le caselle vocali. Questa può richiedere molto "
@@ -480,7 +497,7 @@ msgstr ""
 "call history, the data of the queues, the mailboxes. This can take a long "
 "time, so it will start in the background."
 
-#: ../../migrazione.rst:82
+#: ../../migrazione.rst:88
 msgid ""
 "Verrà mostrato ora il riepilogo di errori e warning, scaricabile anche come "
 "PDF."
@@ -488,7 +505,7 @@ msgstr ""
 "The error and warning summary will now be shown, which can also be "
 "downloaded as a PDF."
 
-#: ../../migrazione.rst:84
+#: ../../migrazione.rst:90
 msgid ""
 "Arrivati a questo punto, la migrazione è terminata e viene mostrata la "
 "pagina del wizard di |product| 14. Si potrà ora seguire il wizard, "
@@ -501,7 +518,7 @@ msgstr ""
 "migration has correctly created the dialplan and creating by hand any "
 "destinations that have not been migrated and are therefore on the report."
 
-#: ../../migrazione.rst:86
+#: ../../migrazione.rst:92
 msgid ""
 "I vecchi interni verranno ricreati come interni custom, in modo che sia già "
 "possibile utilizzarli, ma andranno eliminati e i device telefonici dovranno "
