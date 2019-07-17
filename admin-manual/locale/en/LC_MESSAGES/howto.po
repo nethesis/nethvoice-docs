@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: NethVoice 14\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-07-01 11:49+0200\n"
+"POT-Creation-Date: 2019-07-17 16:03+0200\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -929,9 +929,8 @@ msgstr "The parameters that can be changed are:"
 
 #: ../../howto.rst:548
 msgid ""
-"CheckInterval: secondi di intervallo tra I controlli alle code. Default 10"
+"CheckInterval: secondi di intervallo tra i controlli alle code. Default 10"
 msgstr ""
-"CheckInterval: seconds between each check on queues status. Default 10"
 
 #: ../../howto.rst:550
 msgid ""
@@ -949,11 +948,10 @@ msgstr "EnableEmail: enable email notifications. Default False"
 
 #: ../../howto.rst:554
 msgid ""
-"EmailDestination: email di destinazione degli allarmi. Se vuota, le email "
-"sono inviate a voicemanages@DOMAIN. Vuota di default."
+"EmailDestination: email di destinazione degli allarmi. È possibile "
+"specificare un solo indirizzo. Se vuota, le email sono inviate a "
+"voicemanages@DOMAIN. Vuota di default."
 msgstr ""
-"EmailDestination: email destination of alerts. If empty, email are sent to "
-"voicemanages@DOMAIN. Default is empty."
 
 #: ../../howto.rst:556
 msgid "MaxCallPerOp: chiamate massime per ogni operatore. Default 3."
