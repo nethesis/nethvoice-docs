@@ -73,6 +73,7 @@ Configurazione Avanzata
    queueexit
    queuemetrics
    googletts
+   pin
 
 Migrazione da |product| 11 a |product| 14
 -----------------------------------------
