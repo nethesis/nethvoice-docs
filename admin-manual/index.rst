@@ -72,6 +72,7 @@ Configurazione Avanzata
    directdid
    queueexit
    queuemetrics
+   queueoptions
    googletts
    pin
 
