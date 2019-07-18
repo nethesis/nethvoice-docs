@@ -551,7 +551,7 @@ Debug: se impostato a True, aumenta la verbosità del log su syslog (/var/log/me
 
 EnableEmail: se impostato a True, abilita la notifica via email. Default False
 
-EmailDestination: email di destinazione degli allarmi. È possibile specificare un solo indirizzo. Se vuota, le email sono inviate a voicemanages@DOMAIN. Vuota di default.
+EmailDestination: email di destinazione degli allarmi. È possibile specificare un solo indirizzo. Se vuota, le email sono inviate a voicemanagers@DOMAIN. Vuota di default.
 
 MaxCallPerOp: chiamate massime per ogni operatore. Default 3.
 
