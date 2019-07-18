@@ -125,7 +125,7 @@ I telefoni necessitano di conoscere dove si trova la configurazione a loro dedic
 I metodi principali per farlo sono:
 
 * DHCP
-* Plug & Play(PNP)
+.. * Plug & Play(PNP)
 * Interfaccia web
 
 
@@ -139,14 +139,14 @@ Il DHCP di |product| configura automaticamente questa opzione, quindi se è |pro
 Se invece è un altro server a dare l’IP ai telefoni è necessario configurare l’opzione necessaria con l’IP del |product|.
 
 
-Plug & Play(PNP)
-~~~~~~~~~~~~~~~~
+.. Plug & Play(PNP)
+.. ~~~~~~~~~~~~~~~~
 
-Il servizio Plug & Play che molti modelli supportano consente ai telefoni di autonomamente cercare in rete un server in grado di configurarli.
+.. Il servizio Plug & Play che molti modelli supportano consente ai telefoni di autonomamente cercare in rete un server in grado di configurarli.
 
-I telefoni effettuano traffico multicast alla ricerca del server della configurazione, |product| risponde a queste connessioni proponendosi.
+.. I telefoni effettuano traffico multicast alla ricerca del server della configurazione, |product| risponde a queste connessioni proponendosi.
 
-Data la natura del protocollo, il successo del Plug & Play dipende molto dalla rete in cui viene utilizzato, switch, hub, virtualizzazione possono bloccare le richieste.
+.. Data la natura del protocollo, il successo del Plug & Play dipende molto dalla rete in cui viene utilizzato, switch, hub, virtualizzazione possono bloccare le richieste.
 
 
 Interfaccia Web
