@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: NethVoice 14\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-07-01 11:49+0200\n"
+"POT-Creation-Date: 2019-07-17 16:03+0200\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -61,38 +61,38 @@ msgstr "Provisioning"
 msgid "Configurazione Avanzata"
 msgstr "Advanced Configuration"
 
-#: ../../index.rst:78
+#: ../../index.rst:80
 msgid "Migrazione da |product| 11 a |product| 14"
 msgstr "Migration from |product| 11 a |product| 14"
 
-#: ../../index.rst:86
+#: ../../index.rst:88
 msgid "HowTo"
 msgstr "HowTo"
 
-#: ../../index.rst:94
+#: ../../index.rst:96
 msgid "Moduli Aggiuntivi"
 msgstr "Additional Forms"
 
-#: ../../index.rst:105
+#: ../../index.rst:107
 msgid "|product_cti|: Guida Sviluppatori"
 msgstr "|product_cti|: Developer Guide"
 
-#: ../../index.rst:113
+#: ../../index.rst:115
 msgid "|product_nethifier|"
 msgstr "|product_nethifier|"
 
-#: ../../index.rst:121
+#: ../../index.rst:123
 msgid "Appendice"
 msgstr "Appendix"
 
-#: ../../index.rst:127
+#: ../../index.rst:129
 msgid "Indici"
 msgstr "Index"
 
-#: ../../index.rst:129
+#: ../../index.rst:131
 msgid ":ref:`genindex`"
 msgstr ":ref:`genindex`"
 
-#: ../../index.rst:130
+#: ../../index.rst:132
 msgid ":ref:`search`"
 msgstr ":ref:`search`"
