@@ -371,6 +371,28 @@ Nel caso si utilizzi un centralino in cloud dietro NAT, è necessario configurar
   config setprop janus-gateway PublicIP <DOMAIN OR PUBLIC IP>
   signal-event nethserver-janus-update
 
+Configurazione interfacce per STUN e ICE
+****************************************
+
+È possibile scegliere quale interfaccia di rete utilizzare per l'utilizzo dei candidati ICE. Come comportamento di default Janus cerca di utilizzare tutte le interfacce di rete, tranne:
+
+- **vmnet*:** utilizzata da VMware
+- **tun* e tap*:** usate per le VPN
+- **virb*:** usata per KVM
+- **vb-*:** usata dal container di NethServer AD
+
+È possibile modificare il comportamento di default elencando esplicitamente le interfacce da usare o quelle da escludere. È possibile farlo tramite le seguenti due proprietà:
+
+- **ICEEnforceList:** lista dei nomi delle interacce separati da virgola da usare per l'ICE gathering. Per esempio "e0,e1"
+- **ICEIgnoreList:** lista dei nomi delle interacce separati da virgola da escludere dall'ICE gathering. Janus userà tutte le altre interfacce eccetto queste. Per esempio "e3,vmnet,10.0.0".
+
+Esempio di configurazione:
+
+.. code-block:: bash
+
+  config setprop janus-gateway ICEIgnoreList "e3,vmnet,10.0.0"
+  signal-event nethserver-janus-update
+
 
 |product_cti|: disattivazione della gestione eventi dei fasci
 =============================================================
