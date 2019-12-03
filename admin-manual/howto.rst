@@ -371,8 +371,8 @@ Nel caso si utilizzi un centralino in cloud dietro NAT, è necessario configurar
   config setprop janus-gateway PublicIP <DOMAIN OR PUBLIC IP>
   signal-event nethserver-janus-update
 
-Configurazione interfacce per STUN e ICE
-****************************************
+
+**Configurazione interfacce per STUN e ICE**
 
 È possibile scegliere quale interfaccia di rete utilizzare per l'utilizzo dei candidati ICE. Come comportamento di default Janus cerca di utilizzare tutte le interfacce di rete, tranne:
 
