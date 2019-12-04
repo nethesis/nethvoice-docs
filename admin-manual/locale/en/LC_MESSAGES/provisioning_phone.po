@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: NethVoice 14\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-07-01 11:49+0200\n"
+"POT-Creation-Date: 2019-07-17 16:03+0200\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -28,20 +28,20 @@ msgid "SANGOMA"
 msgstr "SANGOMA"
 
 #: ../../provisioning_phone.rst:10
-msgid "S205"
-msgstr "S205"
+msgid "S205, S206"
+msgstr ""
 
 #: ../../provisioning_phone.rst:11
-msgid "S300"
-msgstr "S300"
+msgid "S300, S305"
+msgstr ""
 
 #: ../../provisioning_phone.rst:12
-msgid "S400, S405"
-msgstr "S400, S405"
+msgid "S400, S405, S406"
+msgstr ""
 
 #: ../../provisioning_phone.rst:13
-msgid "S500"
-msgstr "S500"
+msgid "S500, S505"
+msgstr ""
 
 #: ../../provisioning_phone.rst:14
 msgid "S700, S705"
@@ -60,8 +60,8 @@ msgid "T40P/G, T41P/S, T42G/S, T46G/S, T48G/S, T49G"
 msgstr "T40P/G, T41P/S, T42G/S, T46G/S, T48G/S, T49G"
 
 #: ../../provisioning_phone.rst:21
-msgid "T53, T54, T56, T57, T58"
-msgstr "T53, T54, T56, T57, T58"
+msgid "T53, T54, T56, T57, T58, VP59"
+msgstr ""
 
 #: ../../provisioning_phone.rst:24
 msgid "SNOM"
@@ -76,8 +76,8 @@ msgid "D305, D315, D345, D375, D385"
 msgstr "D305, D315, D345, D375, D385"
 
 #: ../../provisioning_phone.rst:28
-msgid "D710, D712, D715, D725, D735, D745, D765, D785"
-msgstr "D710, D712, D715, D725, D735, D745, D765, D785"
+msgid "D710, D712, D715, D717, D725, D735, D745, D765, D785"
+msgstr ""
 
 #: ../../provisioning_phone.rst:31
 msgid "GIGASET"
