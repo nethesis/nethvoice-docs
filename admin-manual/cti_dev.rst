@@ -209,6 +209,20 @@ Elenco delle API
 
 Qui la lista `lista completa <https://documenter.getpostman.com/view/56173/RWgxuF5i>`_.
 
+Utilizzo delle API del progetto Tancredi e Corbera
+--------------------------------------------------
+
+|product_cti| supporta anche le redirezione di alcune chiamate rest api ai progetti Tancredi e Corbera in maniera autenticata.
+Ogni richiesta sarà autenticata tramite il metodo consueto (vedi la sezione apposita sopra) e sarà possibile invocare le api postponendo la keyword "tancredi" o "corbera" a quella "webrest", per esempio per interagire con l'api https://nethesis.github.io/tancredi/phonesMacGet:
+
+.. code-block:: bash
+
+ https://<SERVER>/webrest/tancredi/api/v1/phones/<MAC_ADDRESS>
+
+I metodi supportati sono GET e PATCH.
+
+Qua la documentazione relativa alle API tancredi e corbera: http://api.nethesis.it/
+
 WebSocket
 =========
 
