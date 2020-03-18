@@ -124,13 +124,17 @@ Il metodo **DHCP** si basa sulla configurazione di OPTION 66 del protocollo
 DHCP (Dynamic Host Configuration Protocol) in maniera specifica per ogni marca
 di telefono. Se |product| svolge il ruolo di DHCP server della rete a cui sono
 collegati i telefoni le impostazioni necessarie per raggiungere l'URL di
-provisioning sono già configurate. In caso contrarioe qualora **RPS** non sia
+provisioning sono già configurate. In caso contrario e qualora **RPS** non sia
 utilizzabile è necessario configurare il server DHCP di rete in maniera
 opportuna.
 
 Nel caso né RPS né DHCP funzionino è possibile accedere all'interfaccia web di
 amministrazione del telefono ed immettere l'URL di provisioning manualmente. 
 Ricordarsi di disattivare le altre modalità di provisioning, come DHCP e PNP.
+
+L'URL di provisioning è visualizzato nell'interfacci di amministrazione di
+|product| per ogni telefono, tramite il pulsante :guilabel:`Info` alla pagina
+:guilabel:`Dispositivi > Telefoni`.
 
 In ogni caso, una volta ottenuto l'URL di provisioning, il telefono utilizza
 sempre questo per accedere alla propria configurazione su |product|.
@@ -192,8 +196,7 @@ Aggiornamenti automatici
 ------------------------
 
 Il telefono contatta tutte le notti |product| per scaricare la configurazione.
-È possibile stabilire in alternativa un giorno della settimana fisso, o
-disabilitare del tutto l'aggiornamento automatico.
+È possibile disabilitare del tutto l'aggiornamento automatico.
 
 In ogni caso il telefono scarica la configurazione tutte le volte che viene
 riavviato.
@@ -233,7 +236,7 @@ Snom
 Gigaset
 -------
 
-* Maxwell Basic, Maxwell 2, Maxwell 3
+* Maxwell Basic, Maxwell 2, Maxwell 3, Maxwell 4
    
 Sangoma
 -------
