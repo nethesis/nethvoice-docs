@@ -2,6 +2,12 @@
 Provisioning dei telefoni
 =========================
 
+.. note::
+
+   Il nuovo sistema di provisioning basato sul progetto Tancredi è descritto in
+   :ref:`provisioning-phone2-section`
+
+
 Telefoni supportati
 ===================
 
