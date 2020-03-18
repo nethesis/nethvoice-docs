@@ -208,6 +208,9 @@ img[alt="|product|"] {
 .table>tbody>tr>td, .table>tfoot>tr>td {
     word-break: break-word;
 }
+table.align-default {
+    text-align: left;
+}
 footer p {
     margin-top: 20px;
 }

@@ -254,19 +254,31 @@ Compatibilità provisioning
 La seguente tabella risassume i metodi di provisioning utilizzati da ogni
 produttore al primo avvio del telefono.
 
-============ ============= ============
-Produttore   Metodo di provisioning
------------- --------------------------
-.            Primario      Secondario
-============ ============= ============
-Fanvil       RPS           DHCP
-Yealink      RPS           DHCP
-Snom         RPS           DHCP
-Gigaset      DHCP [#f1]_   RPS
-Sangoma      RPS [#f2]_    DHCP
-============ ============= ============
+.. list-table:: Metodi di provisioning per produttore
+    :widths: 25 25 25
+    :header-rows: 1
 
-.. [#f1] (Gigaset) assicurarsi che il server DHCP di rete, se diverso da |product| non fornisca OPTION 66
+    * - Produttore
+      - Metodo primario
+      - Metodo secondario
+    * - Fanvil
+      - RPS
+      - DHCP
+    * - Yealink
+      - RPS
+      - DHCP
+    * - Snom
+      - RPS
+      - DHCP
+    * - Gigaset
+      - DHCP [#f1]_
+      - RPS
+    * - Sangoma
+      - RPS [#f2]_
+      - DHCP
 
-.. [#f2] Il servizio RPS di Sangoma non consente l'inserimento dell'URL di provisioning da |product|. Inserire l'URL di provisioning manualmente tramite il portale di Sangoma, o utilizzare il metodo DHCP.
+.. [#f1] (Gigaset) assicurarsi che il server DHCP di rete, se diverso da
+         |product| non fornisca OPTION 66
 
+.. [#f2] Il servizio RPS di Sangoma non consente l'inserimento dell'URL di 
+         provisioning da |product|. Inserire l'URL di provisioning manualmente tramite il portale di Sangoma, o utilizzare il metodo DHCP.
