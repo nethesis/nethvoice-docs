@@ -5,11 +5,10 @@
 Provisioning dei telefoni (beta)
 ================================
 
-.. note::
-
-   Questo capitolo fa riferimento al nuovo sistema di provisioning
-   basato sul progetto Tancredi e alternativo al sistema di provisioning
-   integrato in FreePBX.
+.. warning::
+    
+    Le funzioni descritte in questa pagina sono disponibili in anteprima solo
+    ai membri del |product| Quality Team
 
 
 Cosa significa **Provisioning**? Provisioning è configurare i telefoni in
