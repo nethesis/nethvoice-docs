@@ -131,7 +131,7 @@ Nel caso né RPS né DHCP funzionino è possibile accedere all'interfaccia web d
 amministrazione del telefono ed immettere l'URL di provisioning manualmente. 
 Ricordarsi di disattivare le altre modalità di provisioning, come DHCP e PNP.
 
-L'URL di provisioning è visualizzato nell'interfacci di amministrazione di
+L'URL di provisioning è visualizzato nell'interfaccia di amministrazione di
 |product| per ogni telefono, tramite il pulsante :guilabel:`Info` alla pagina
 :guilabel:`Dispositivi > Telefoni`.
 
