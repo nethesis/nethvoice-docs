@@ -10,9 +10,10 @@ Wizard prima configurazione (beta)
     ai membri del |product| Quality Team. Fare riferimento a
     :ref:`wizard-section` per la versione stabile.
 
-In questa sezione sono descritte le nuove funzionalità introdotte dal sistema di
-provisioning basato sul progetto Tancredi. Le differenze rispetto
-all'interfaccia precedente riguardano le seguenti pagine:
+In questa sezione sono descritte le nuove funzionalità introdotte dal
+:ref:`nuovo sistema di provisioning <provisioning-phone2-section>` basato sul
+progetto Tancredi. Le differenze rispetto all'interfaccia precedente riguardano
+le seguenti pagine:
 
 - :guilabel:`Dispositivi` è stata spostata in una sezione del menù a sé stante,
   composta dalle voci :guilabel:`Telefoni` e :guilabel:`Modelli`.
