@@ -90,6 +90,11 @@ L'unica azione da compiere in questi casi è collegare il cavo Ethernet con PoE
 (Power over Ethernet) al telefono. Qualora PoE non fosse disponibile sarà
 necessario collegare anche il cavo di alimentazione del telefono.
 
+.. warning::
+
+    Verificare la compatibilità dei telefoni con i metodi di provisioning
+    supportati. Leggere attentamente le sezioni seguenti
+
 Nel caso un telefono sia già usato è possibile predisporlo all'associazione con
 |product| tramite le procedure di **aggiornamento del firmware** e di
 **ripristino dei valori di fabbrica**. Entrambe le procedure sono disponibili
@@ -138,8 +143,10 @@ L'URL di provisioning è visualizzato nell'interfaccia di amministrazione di
 In ogni caso, una volta ottenuto l'URL di provisioning, il telefono utilizza
 sempre questo per accedere alla propria configurazione su |product|.
 
-Fare riferimento alla sezione :ref:`provisioning-support-section` per ulteriori
-informazioni sul supporto dei produttori a RPS e DHCP.
+.. warning::
+
+    Fare riferimento alla sezione :ref:`provisioning-support-section` per
+    ulteriori informazioni sul supporto dei produttori a RPS e DHCP
 
 Specifiche della configurazione dei telefoni
 ============================================
@@ -166,6 +173,7 @@ I parametri modificabili comprendono:
 * Exp keys  (Tasti linea dei moduli di espansione)
 * Screen Saver e Sfondo
 
+Fare riferimento a :ref:`wizard2-section` per maggiori informazioni.
 
 .. warning:: 
 
@@ -182,11 +190,12 @@ Nelle sezioni successive sono descritte alcune impostazioni fornite da |product|
 Password di admin
 -----------------
 
-L'interfaccia web di amministrazione del telefono è accessbile con nome utente
+L'interfaccia web di amministrazione del telefono è accessibile con nome utente
 ``admin`` e password generata casualmente durante l'installazione di |product|.
 
-La password è disponibile nell'interfaccia di amministrazione di |product|,
-alla pagina :guilabel:`Defaults` o eseguendo il seguento comando da shell: ::
+La password è disponibile nell'interfaccia di amministrazione di |product|, alla
+pagina :guilabel:`Modelli > Impostazioni di default` o eseguendo il seguento
+comando da shell: ::
 
     grep -R ^adminpw /var/lib/tancredi/data
 
@@ -194,8 +203,9 @@ alla pagina :guilabel:`Defaults` o eseguendo il seguento comando da shell: ::
 Aggiornamenti automatici
 ------------------------
 
-Il telefono contatta tutte le notti |product| per scaricare la configurazione.
-È possibile disabilitare del tutto l'aggiornamento automatico.
+Il telefono contatta automaticamente tutte le notti |product| per aggiornare la
+propria configurazione. È possibile disabilitare del tutto l'aggiornamento
+automatico.
 
 In ogni caso il telefono scarica la configurazione tutte le volte che viene
 riavviato.
@@ -276,8 +286,9 @@ produttore al primo avvio del telefono.
       - RPS [#f2]_
       - DHCP
 
-.. [#f1] (Gigaset) assicurarsi che il server DHCP di rete, se diverso da
-         |product| non fornisca OPTION 66
+.. [#f1] Per i telefoni Gigaset assicurarsi che il server DHCP di rete, se 
+         diverso da |product|, non fornisca OPTION 66
 
 .. [#f2] Il servizio RPS di Sangoma non consente l'inserimento dell'URL di 
-         provisioning da |product|. Inserire l'URL di provisioning manualmente tramite il portale di Sangoma, o utilizzare il metodo DHCP.
+         provisioning da |product|. Inserire l'URL di provisioning manualmente 
+         tramite il portale di Sangoma, o utilizzare il metodo DHCP.
