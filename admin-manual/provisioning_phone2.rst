@@ -200,6 +200,8 @@ comando da shell: ::
     grep -R ^adminpw /var/lib/tancredi/data
 
 
+.. _provisioning2-aggiornamenti-automatici:
+
 Aggiornamenti automatici
 ------------------------
 
