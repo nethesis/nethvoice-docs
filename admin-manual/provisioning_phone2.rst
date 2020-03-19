@@ -30,14 +30,14 @@ Operazioni da compiere su |product|:
 Identificazione dei telefoni
 ----------------------------
 
-Il MAC address è alla base del **Provisioning** di |product| in quanto
+L'indirizzo MAC è alla base del **Provisioning** di |product| in quanto
 identifica il telefono in maniera univoca.
 
-L'inserimento del MAC address dei telefoni non richiede il collegamento
+L'inserimento dell'indirizzo MAC dei telefoni non richiede il collegamento
 del telefono alla rete. È infatti possibile inserire i MAC
 address di telefoni ancora imballati.
 
-In ogni caso l'inserimento dei MAC address dei telefoni può avvenire con
+In ogni caso l'inserimento degli indirizzi MAC dei telefoni può avvenire con
 le seguenti modalità:
 
 * Digitare o copiare l'indirizzo MAC da un foglio di
@@ -46,7 +46,7 @@ le seguenti modalità:
 * Scansionare le reti locali alla ricerca di apparati telefonici
   supportati, già accesi e collegati in rete
 
-* Scansionare il codice a barre del MAC address del telefono tramite app
+* Scansionare il codice a barre dell'indirizzo MAC del telefono tramite app
   per smartphone "Scan & Play"
  
 
