@@ -1,3 +1,5 @@
+.. _provisioning-section:
+
 =========================
 Provisioning dei telefoni
 =========================
@@ -271,4 +273,3 @@ Se si desidera utilizzare il template creato per diversi telefoni del modello sc
 
 
 Se invece si desidera variare la totalità dei telefoni del modello per cui è stato creato il template personalizzato è sufficiente utilizzare le opzioni globali a fondo pagina.
-

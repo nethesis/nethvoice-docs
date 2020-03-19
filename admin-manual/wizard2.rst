@@ -7,7 +7,8 @@ Wizard prima configurazione (beta)
 .. warning::
     
     Le funzioni descritte in questa sezione sono disponibili in anteprima solo
-    ai membri del |product| Quality Team
+    ai membri del |product| Quality Team. Fare riferimento a
+    :ref:`wizard-section` per la versione stabile.
 
 In questa sezione sono descritte le nuove funzionalità introdotte dal sistema di
 provisioning basato sul progetto Tancredi. Le differenze rispetto

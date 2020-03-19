@@ -7,8 +7,9 @@ Provisioning dei telefoni (beta)
 
 .. warning::
     
-    Le funzioni descritte in questa pagina sono disponibili in anteprima solo
-    ai membri del |product| Quality Team
+    Le funzioni descritte in questa pagina sono disponibili in anteprima solo ai
+    membri del |product| Quality Team. Fare riferimento a
+    :ref:`provisioning-section` per la versione stabile
 
 
 Cosa significa **Provisioning**? Provisioning è configurare i telefoni in

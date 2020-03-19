@@ -1,3 +1,5 @@
+.. _wizard-section:
+
 ===========================
 Wizard prima configurazione
 ===========================
