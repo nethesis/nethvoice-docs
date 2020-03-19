@@ -143,7 +143,7 @@ pubblica (WAN) è richiesta l'attivazione della crittografia.
     del sistema sia valido e contenga il nome del centralino, altrimenti i
     telefoni non possono stabilire la connessione TLS.
 
-.. _wizard2-telefoni-multi:
+.. _wizard2-telefoni-multipli:
 
 Gestione multipla telefoni
 ==========================
