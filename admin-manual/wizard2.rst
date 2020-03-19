@@ -35,12 +35,12 @@ richiesta la conferma di alcune impostazioni fondamentali (pulsante
 :guilabel:`Modifica impostazioni di default`).
 
 - :guilabel:`Crittografia` per funzionare correttamente richiede che il sistema
-  disponga di un certificato X509 valido per il nome host inserito in
+  disponga di un certificato SSL/TLS valido per il nome host inserito in
   :guilabel:`Indirizzo centralino`.
 
 - :guilabel:`Indirizzo centralino` può essere l'indirizzo IP o il nome 
   dell'host di |product|, se correttamente inserito nel DNS utilizzato
-  dai telefoni e nel certificato X509 utilizzato dal sistema.
+  dai telefoni e nel certificato SSL/TLS utilizzato dal sistema.
 
 La scelta delle precedenti impostazioni dipende da come i telefoni dovranno
 raggiungere il centralino.
@@ -55,7 +55,7 @@ raggiungere il centralino.
   centralino` deve contenere il nome completo e presente nel DNS pubblico.
 
 In ogni caso è possibile scegliere su ogni singolo telefono se la crittografia è
-utilizzata o meno, a patto che il certificato X509 del sistema sia valido. A
+utilizzata o meno, a patto che il certificato SSL/TLS del sistema sia valido. A
 questo proposito fare riferimento a :ref:`wizard2-configurazioni`.
 
 Si tenga però presente che il centralino non consente connessioni senza
@@ -138,7 +138,7 @@ pubblica (WAN) è richiesta l'attivazione della crittografia.
 
 .. warning::
 
-    Se :guilabel:`Crittografia` è abilitata assicurarsi che il certificato X509
+    Se :guilabel:`Crittografia` è abilitata assicurarsi che il certificato SSL/TLS
     del sistema sia valido e contenga il nome del centralino, altrimenti i
     telefoni non possono stabilire la connessione TLS.
 
