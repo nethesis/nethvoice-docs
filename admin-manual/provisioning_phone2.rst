@@ -195,10 +195,7 @@ L'interfaccia web di amministrazione del telefono è accessibile con nome utente
 ``admin`` e password generata casualmente durante l'installazione di |product|.
 
 La password è disponibile nell'interfaccia di amministrazione di |product|, alla
-pagina :guilabel:`Modelli > Impostazioni di default` o eseguendo il seguento
-comando da shell: ::
-
-    grep -R ^adminpw /var/lib/tancredi/data
+pagina :guilabel:`Modelli > Impostazioni di default`.
 
 
 .. _provisioning2-aggiornamenti-automatici:
