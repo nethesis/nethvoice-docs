@@ -1,6 +1,14 @@
+.. _provisioning-section:
+
 =========================
 Provisioning dei telefoni
 =========================
+
+.. note::
+
+   Il nuovo sistema di provisioning basato sul progetto Tancredi è descritto in
+   :ref:`provisioning-phone2-section`
+
 
 Telefoni supportati
 ===================
@@ -265,4 +273,3 @@ Se si desidera utilizzare il template creato per diversi telefoni del modello sc
 
 
 Se invece si desidera variare la totalità dei telefoni del modello per cui è stato creato il template personalizzato è sufficiente utilizzare le opzioni globali a fondo pagina.
-

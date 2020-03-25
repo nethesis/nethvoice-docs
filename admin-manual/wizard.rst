@@ -1,6 +1,13 @@
+.. _wizard-section:
+
 ===========================
 Wizard prima configurazione
 ===========================
+
+.. note::
+
+   Il nuovo sistema di provisioning basato sul progetto Tancredi è descritto in
+   :ref:`wizard2-section`
 
 Il wizard di prima configurazione consente di installare e configurare agevolmente tutte le componenti di un centralino.
 
