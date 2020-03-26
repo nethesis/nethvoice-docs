@@ -2,12 +2,13 @@
 App mobile
 ==========
 
-.. _wave_mobile:
 
-Wave
-====
+.. _nethcti_mobile:
 
-L'applicazione Wave integra un interno sui dispositivi mobili, è installabile su base Android o iOS.
+NethCTI
+=======
+
+L'applicazione mobile del NethCTI è disponibile per iOS e Android ed è scaricabile dai rispettivi App Store.
 
 L'app accede in SIP TLS al |product| che va abilitato sia lato firewall che nella configurazione di |product|.
 
@@ -37,13 +38,47 @@ Porte su cui è necessario raggiungere |product| per un utilizzo da remoto:
 - da 10000 a 20000 UDP (Audio)
 - 10389 TCP (Rubrica)
 
+Configurazione
+--------------
+
+Per configurare l'applicazione è necessario abilitare il campo :guilabel:`Mobile App` relativo all'utente desiderato nella pagina Configurationi del |product|.
+
+Automaticamente verrà creato un nuovo interno SIP per l'utente selezionato necessario al funzionamento dell'applicazione.
+
+Sarà poi sufficiente eseguire il login nell'applicazione e automaticamente verrà configurata utilizzando l'interno SIP a lei dedicato.
+
+Per eseguire il login nell'applicazione sarà necessario dal menù di sinistra selezionare la voce :guilabel:`Login` per accedere alla sezione dalla quale eseguire l'azione necessaria.
+
+Dalla sezione :guilabel:`Login` dell'applicazione è possibile accede in due modi:
+
+- Inserendo l'indirizzo FQDN del server e le credenziali nome utente e password dell'utente
+- Scansionando il QRCode dalla sezione :guilabel:`dispositivi` nelle Impostazioni dell'interfaccia web del NethCTI cliccando su genera QRcode nella card relativa alla App Mobile
+
+L'applicazione mobile NethCTI eseguirà l'autenticazione sul server nethcti e sarà quindi possibile consultare il log nethcti in caso di errore.
+
+Una volta eseguito l'accesso l'applicazione riceverà le chiamate in arrivo anche durante il funzionamento in background e sarà possibile eseguire chiamate in uscita.
+
+Nel caso in cui il comportamento dell'applicazione all'arrivo di una chiamata non sia come desiderato sarà possibile gestirlo dalle impostazioni avanzate del telefono relative all'applicazione NethCTI.
+
+
+.. _wave_mobile:
+
+Wave
+====
+
+L'applicazione Wave integra un interno sui dispositivi mobili ed è installabile su base Android o iOS.
+
+Come l'app del NethCTI anche Wave accede in SIP TLS al |product| di conseguenza per permettere il corretto funzionamento dell'applicazione è necessario seguire i passi iniziali indicati nella sezione superiore per l'applicazione mobile del NethCTI.
+
+Una volta adattata la configurazione lato Server Manager e interfaccia avanzata è necessario configurare l'applicazione Wave in modo da garantire il corretto funzionamento del provisioning sul |product|.
+
 
 Configurazione
 --------------
 
 É possibile configurare l'applicazione tramite il provisioning di |product|.
 
-Per farlo collegare lo smartphone alla rete locale del |product| e andare in :guilabel:`Impostazioni -> Provisioning Settings`.
+Per prima cosa collegare lo smartphone alla rete locale del |product| e andare in :guilabel:`Impostazioni -> Provisioning Settings`.
 
 Impostare:
 
