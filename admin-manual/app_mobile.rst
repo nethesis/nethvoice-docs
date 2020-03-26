@@ -21,7 +21,7 @@ Fatto questo, accedere all'interfaccia avanzata di |product|, andare in :menusel
 - aprire il tab :guilabel:`Impostazioni PJSIP` e configurare la sezione :guilabel:`Impostazioni TLS/SSL/SRTP` come segue:
 
    * :guilabel:`Certificate Manager -> NethServer`
-   * :guilabel:`SSL Method -> tlsv1` 
+   * :guilabel:`SSL Method -> Default` 
    * :guilabel:`Verify Client -> No`
    * :guilabel:`Verify Server -> No`
 
