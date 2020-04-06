@@ -7,6 +7,16 @@ Note di rilascio |version|
 Questa release è basata su `Asterisk 13 <https://wiki.asterisk.org/wiki/display/AST/New+in+13>`_
 e `FreePBX 14 <https://www.freepbx.org/freepbx-14-release-candidate/>`_:
 
+
+Cambiamenti principali al 2019-03-18
+====================================
+
+* Nuova gestione del Provisioning: :ref:`provisioning-phone2-section`, :ref:`wizard2-section`
+* Gestione tasti linea per l'utente di |product_cti|
+
+Cambiamenti principali al 2017-08-31
+====================================
+
 Cambiamenti significativi dalla release 11:
 
 * Wizard per la configurazione

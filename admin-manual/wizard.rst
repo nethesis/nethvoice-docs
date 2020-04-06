@@ -1,6 +1,13 @@
+.. _wizard-section:
+
 ===========================
 Wizard prima configurazione
 ===========================
+
+.. note::
+
+   Il nuovo sistema di provisioning basato sul progetto Tancredi è descritto in
+   :ref:`wizard2-section`
 
 Il wizard di prima configurazione consente di installare e configurare agevolmente tutte le componenti di un centralino.
 
@@ -123,6 +130,7 @@ La lista degli utenti mostra quelli a cui è stato associato un interno nel prim
 - Inserire un numero di cellulare
 - Abilitare la voicemail
 - Abilitare il client WebRTC
+- Abilitare l'app Mobile
 - Scegliere il profilo da destinare all'utente (uno di quelli definiti allo step 3)
 - Scegliere un gruppo a cui far parte (uno di quelli creati allo step 2)
 
