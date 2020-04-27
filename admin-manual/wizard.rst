@@ -373,8 +373,13 @@ La pagina delle Impostazioni permette di gestire diversi aspetti della configura
 * :guilabel:`Impostazioni Rubrica`: in questa sezione è possibile abilitare l'esporazione della rubrica di |product| in LDAP per consentire di solito ai telefoni di accedervi in sola lettura. 
   La rubrica può essere pubblicata in LDAP in due modalità (la configurazione data ai telefoni sarà completa di tutti i parametri necessari):
 
-  1) LDAP che comporta una pubblicazione LDAP in chiaro senza credenziali di autenticazione per accedere, indicata di solito per telefoni nella stessa rete di |product|
-  2) LDAPS che comporta una pubblicazione LDAPS criptata con credenziali di autenticazione per accedere, indicata di solito per telefoni che si collegano a |product| da reti esterne
+  1) **LDAP**, che comporta una pubblicazione in chiaro e ad accesso anonimo (senza cioè la necessità di credenziali di autenticazione); questa modalità è indicata se tutti i telefoni sono nella stessa rete di |product|
+  2) **LDAPS**, che utilizza la crittografia e richiede delle credenziali di autenticazione per accedere; questa modalità è indicata in presenza di telefoni che si collegano a |product| da reti esterne
+
+.. warning:: 
+
+    Per ridurre l'uso di memoria del sistema è consigliato attivare una sola delle precedenti modalità di pubblicazione della rubrica LDAP
+
 
 
 Avanzate
