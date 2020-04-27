@@ -72,20 +72,20 @@ Altre impostazioni da poter variare:
 
 - :guilabel:`Preferenze` per impostare i parametri di default per:
 
-  1) Lingua dei telefoni
-  2) Pianificazione del provisioning, la scelta :guilabel:`Solo all'avvio` rinnoverà la 
+  1) :guilabel:`Lingua dei telefoni`
+  2) :guilabel:`Pianificazione del provisioning`, la scelta :guilabel:`Solo all'avvio` rinnoverà la 
      configurazione del telefono solo alla sua accensione, ogni giorno invece 
      consentirà al |product| di riavviare i telefoni ogni notte per rinnovare la 
      configurazione
-  3) Toni di chiamata
-  4) Fuso orario
+  3) :guilabel:`Toni di chiamata`
+  4) :guilabel:`Fuso orario`
 
 - :guilabel:`Rubrica LDAP` per scegliere la configurazione della rubrica da 
   dare ai telefoni tra:
  
-  1) Rubrica LDAPS di |product|
-  2) Rubrica LDAP di |product|
-  3) Rubrica personalizzata, impostare i campi necessari per la configurazione
+  1) :guilabel:`Rubrica LDAPS` di |product|
+  2) :guilabel:`Rubrica LDAP` di |product|
+  3) :guilabel:`Rubrica personalizzata`, impostare i campi necessari per la configurazione
 
 
 Una volta salvate le impostazioni, sarà possibile modificarle di nuovo
