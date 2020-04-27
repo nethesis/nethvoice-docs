@@ -73,7 +73,7 @@ Altre impostazioni da poter variare:
 - :guilabel:`Preferenze` per impostare i parametri di default per:
 
   1) Lingua dei telefoni
-  2) Pianificazione del provisioning, la scelta solo all'avvio rinnoverà la 
+  2) Pianificazione del provisioning, la scelta :guilabel:`Solo all'avvio` rinnoverà la 
      configurazione del telefono solo alla sua accensione, ogni giorno invece 
      consentirà al |product| di riavviare i telefoni ogni notte per rinnovare la 
      configurazione
