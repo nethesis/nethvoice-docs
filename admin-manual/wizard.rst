@@ -357,7 +357,25 @@ Nel menù Lingue è possibile impostare la lingua di sistema del |product| impos
 
 Impostazioni
 ------------
-Nella parte "Impostazioni", è possibile cambiare la password dell'utente admin.
+
+La pagina delle Impostazioni permette di gestire diversi aspetti della configurazione.
+
+* :guilabel:`Password`: è possibile cambiare la password dell'utente admin dedicato all'accesso all'interfaccia web di |product|.
+
+* :guilabel:`Impostazioni NAT`: per gestire correttamente il NAT nel protocollo SIP, |product| ha necessità di conoscere l'indirizzo che utilizzerà presentandosi all'esterno e le reti da considerare locali, per le quali non dovrà tenere conto del NAT e delle sue impostazioni: 
+
+  1) Inserire in Indirizzo Esterno l'IP pubblico con il quale |product| effettuerà connessioni esterne alla propria rete. 
+  2) Inserire in Reti Locali tutte le reti in formato CIDR dalle quali |product| si deve aspettare connessioni dirette senza considerare quindi il NAT.
+
+* :guilabel:`Impostazioni Firewall`: il firewall di |product| nella configurazione di partenza non accetta connessioni da rete esterne per il protocollo SIP TLS (porta 5061 tcp e porte da 10000 a 20000 udp). 
+  In questa sezione è possibile configurare il firewall per accettare traffico SIP TLS anche da reti non locali abilitando il SIPS esterno.
+
+* :guilabel:`Impostazioni Rubrica`: in questa sezione è possibile abilitare l'esporazione della rubrica di |product| in LDAP per consentire di solito ai telefoni di accedervi in sola lettura. 
+  La rubrica può essere pubblicata in LDAP in due modalità (la configurazione data ai telefoni sarà completa di tutti i parametri necessari):
+
+  1) LDAP che comporta una pubblicazione LDAP in chiaro senza credenziali di autenticazione per accedere, indicata di solito per telefoni nella stessa rete di |product|
+  2) LDAPS che comporta una pubblicazione LDAPS criptata con credenziali di autenticazione per accedere, indicata di solito per telefoni che si collegano a |product| da reti esterne
+
 
 Avanzate
 --------
