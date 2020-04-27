@@ -364,7 +364,7 @@ La pagina delle Impostazioni permette di gestire diversi aspetti della configura
 
 * :guilabel:`Impostazioni NAT`: per gestire correttamente il NAT nel protocollo SIP, |product| ha necessità di conoscere l'indirizzo che utilizzerà presentandosi all'esterno e le reti da considerare locali, per le quali non dovrà tenere conto del NAT e delle sue impostazioni: 
 
-  1) Inserire in Indirizzo Esterno l'IP pubblico con il quale |product| effettuerà connessioni esterne alla propria rete. 
+  1) Inserire in :guilabel:`Indirizzo Esterno` l'IP pubblico con il quale |product| effettuerà connessioni esterne alla propria rete. 
   2) Inserire in Reti Locali tutte le reti in formato CIDR dalle quali |product| si deve aspettare connessioni dirette senza considerare quindi il NAT.
 
 * :guilabel:`Impostazioni Firewall`: il firewall di |product| nella configurazione di partenza non accetta connessioni da rete esterne per il protocollo SIP TLS (porta 5061 tcp e porte da 10000 a 20000 udp). 
