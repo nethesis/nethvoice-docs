@@ -168,7 +168,7 @@ Per ogni dispositivo fisico viene mostrato:
   configurazione tra quelli proposti.
 - :guilabel:`Modifica Configurazione` È possibile modificare la configurazione del
   singolo telefono inserendo modifiche valide solo per questo dispositivo.
-- :guilabel:`Mac-Address` Viene mostrato il Mac-Address del dispostivo associato.
+- :guilabel:`Mac-Address` Viene mostrato l'indirizzo MAC del dispostivo associato.
 - :guilabel:`Mostra password` per i dispositivi personalizzati. Viene mostrata la
   password SIP che insieme all'interno e all'indirizzo del |product| è possibile
   utilizzare per configurare manualmente il dispositivo personalizzato.
