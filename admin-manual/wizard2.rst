@@ -154,7 +154,7 @@ personalizzato.
 Per ogni dispositivo fisico viene mostrato:
 
 - :guilabel:`Crittografia` abilitata o meno. L'impostazione iniziale dipende dalla 
-  configurazione del |product| effettuata durante la procedura di prima configurazione
+  configurazione di |product| effettuata durante la procedura di prima configurazione
   (vedi :ref:`wizard2-dispositivi`). Se il centralino viene raggiunto tramite rete 
   pubblica (WAN) è richiesta l'attivazione della crittografia.
 
