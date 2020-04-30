@@ -43,8 +43,14 @@ richiesta la conferma di alcune impostazioni fondamentali (pulsante
   dell'host di |product|, se correttamente inserito nel DNS utilizzato
   dai telefoni e nel certificato SSL/TLS utilizzato dal sistema.
 
-La scelta delle precedenti impostazioni dipende da come i telefoni dovranno
-raggiungere il centralino.
+- :guilabel:`Password admin` sarà la password per accedere all'interfaccia web 
+  dei telefoni configurati con l'utente amministratore.
+
+- :guilabel:`Password utente` sarà la password per accedere all'interfaccia web 
+  dei telefoni configurati con l'utente senza privilegi amministrativi.
+
+La scelta delle precedenti impostazioni di Crittografia e Indirizzo Centralino
+dipende da come i telefoni dovranno raggiungere il centralino.
 
 - Se i telefoni sono tutti nella stessa rete del centralino (LAN),
   :guilabel:`Crittografia` può essere disabilitata e :guilabel:`Indirizzo
@@ -61,6 +67,26 @@ questo proposito fare riferimento a :ref:`wizard2-configurazioni`.
 
 Si tenga però presente che il centralino non consente connessioni senza
 crittografia provenienti da rete pubblica (WAN).
+
+Altre impostazioni da poter variare:
+
+- :guilabel:`Preferenze` per impostare i parametri di default per:
+
+  1) :guilabel:`Lingua dei telefoni`
+  2) :guilabel:`Pianificazione del provisioning`, la scelta :guilabel:`Solo all'avvio` rinnoverà la 
+     configurazione del telefono solo alla sua accensione, ogni giorno invece 
+     consentirà al |product| di riavviare i telefoni ogni notte per rinnovare la 
+     configurazione
+  3) :guilabel:`Toni di chiamata`
+  4) :guilabel:`Fuso orario`
+
+- :guilabel:`Rubrica LDAP` per scegliere la configurazione della rubrica da 
+  dare ai telefoni tra:
+ 
+  1) :guilabel:`Rubrica LDAPS` di |product|
+  2) :guilabel:`Rubrica LDAP` di |product|
+  3) :guilabel:`Rubrica personalizzata`, impostare i campi necessari per la configurazione
+
 
 Una volta salvate le impostazioni, sarà possibile modificarle di nuovo
 dalla pagina :guilabel:`Dispositivi > Modelli`, pulsante :guilabel:`Impostazioni
