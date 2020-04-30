@@ -13,7 +13,7 @@ Cambiamenti principali al 2020-03-18
 
 * Nuova gestione del Provisioning: :ref:`provisioning-phone2-section`, :ref:`wizard2-section`
 * Gestione tasti linea per l'utente di |product_cti|
-* Rilasciata niova app mobile |product_cti|
+* Rilasciata nuova App Mobile |product_cti|
 
 
 Cambiamenti principali al 2019-09-15
