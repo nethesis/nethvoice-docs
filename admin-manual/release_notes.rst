@@ -19,7 +19,7 @@ Cambiamenti principali al 2020-03-18
 Cambiamenti principali al 2019-09-15
 ====================================
 
-* Nuova App Post Operatore avanzato per |product_cti|
+* Nuova App Posto Operatore avanzato per |product_cti|
 * Qmanager Dashboard
 * Condivione desktop per |product_cti|
 * Statistiche personali agenti code in |product_cti|
