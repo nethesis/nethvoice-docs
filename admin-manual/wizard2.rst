@@ -179,7 +179,7 @@ Priorità configurazioni telefoni
 --------------------------------
 
 La configurazione creata dal provisioning di |product| per i dispositivi telefonici 
-viene ricavata unendo le impostazioni proveniente da:
+viene ricavata unendo le impostazioni provenienti da:
 
 - :guilabel:`Impostazioni Default`: si trovano nella pagina :ref:`wizard2-modelli`.
 - :guilabel:`Impostazioni Modello`: vengono presi i parametri dalla configurazione del 
