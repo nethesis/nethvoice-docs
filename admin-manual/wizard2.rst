@@ -127,7 +127,7 @@ impostazioni personali e i dispositivi associati.
   distribuzione delle configurazioni mediante :ref:`wizard2-telefoni-multipli`,
 
 - :guilabel:`Cellulare`, consente di associare un numero di cellulare all'utente da 
-  mostrare nel pannello operateore del |product_cti| e da utilizzare nella gestione
+  mostrare nel pannello operatore del |product_cti| e da utilizzare nella gestione
   dello stato di presence
 
 - :guilabel:`Casella Vocale`, consente di attivare la casella vocale per l'utente come
