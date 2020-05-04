@@ -43,8 +43,14 @@ richiesta la conferma di alcune impostazioni fondamentali (pulsante
   dell'host di |product|, se correttamente inserito nel DNS utilizzato
   dai telefoni e nel certificato SSL/TLS utilizzato dal sistema.
 
-La scelta delle precedenti impostazioni dipende da come i telefoni dovranno
-raggiungere il centralino.
+- :guilabel:`Password admin` sarà la password per accedere all'interfaccia web 
+  dei telefoni configurati con l'utente amministratore.
+
+- :guilabel:`Password utente` sarà la password per accedere all'interfaccia web 
+  dei telefoni configurati con l'utente senza privilegi amministrativi.
+
+La scelta delle precedenti impostazioni di Crittografia e Indirizzo Centralino
+dipende da come i telefoni dovranno raggiungere il centralino.
 
 - Se i telefoni sono tutti nella stessa rete del centralino (LAN),
   :guilabel:`Crittografia` può essere disabilitata e :guilabel:`Indirizzo
@@ -61,6 +67,26 @@ questo proposito fare riferimento a :ref:`wizard2-configurazioni`.
 
 Si tenga però presente che il centralino non consente connessioni senza
 crittografia provenienti da rete pubblica (WAN).
+
+Altre impostazioni da poter variare:
+
+- :guilabel:`Preferenze` per impostare i parametri di default per:
+
+  1) :guilabel:`Lingua dei telefoni`
+  2) :guilabel:`Pianificazione del provisioning`, la scelta :guilabel:`Solo all'avvio` rinnoverà la 
+     configurazione del telefono solo alla sua accensione, ogni giorno invece 
+     consentirà al |product| di riavviare i telefoni ogni notte per rinnovare la 
+     configurazione
+  3) :guilabel:`Toni di chiamata`
+  4) :guilabel:`Fuso orario`
+
+- :guilabel:`Rubrica LDAP` per scegliere la configurazione della rubrica da 
+  dare ai telefoni tra:
+ 
+  1) :guilabel:`Rubrica LDAPS` di |product|
+  2) :guilabel:`Rubrica LDAP` di |product|
+  3) :guilabel:`Rubrica personalizzata`, impostare i campi necessari per la configurazione
+
 
 Una volta salvate le impostazioni, sarà possibile modificarle di nuovo
 dalla pagina :guilabel:`Dispositivi > Modelli`, pulsante :guilabel:`Impostazioni
@@ -126,22 +152,77 @@ impostazioni personali e i dispositivi associati.
 - :guilabel:`Gruppo`, consente di raggruppare gli utenti per facilitare la
   distribuzione delle configurazioni mediante :ref:`wizard2-telefoni-multipli`,
 
-- :guilabel:`Associa dispositivo`, consente di selezionare un telefono non
-  ancora associato e assegnarlo all'utente. È possibile anche immettere
-  l'indirizzo MAC di un dispositivo non supportato dal provisioning: in tal caso
-  è necessario configurare il dispositivo manualmente.
+- :guilabel:`Cellulare`, consente di associare un numero di cellulare all'utente da 
+  mostrare nel pannello operatore del |product_cti| e da utilizzare nella gestione
+  dello stato di presence
 
-Per ogni dispositivo è possibile selezionare se la :guilabel:`Crittografia` è
-abilitata o meno. L'impostazione iniziale dipende dalla configurazione del
-centralino effettuata durante la procedura di prima configurazione (vedi
-:ref:`wizard2-dispositivi`). Se il centralino viene raggiunto tramite rete
-pubblica (WAN) è richiesta l'attivazione della crittografia.
+- :guilabel:`Casella Vocale`, consente di attivare la casella vocale per l'utente come
+  destinazione di ogni fallimento di chiamate al suo interno
+
+- :guilabel:`Associa dispositivo`, consente di selezionare un telefono non
+  ancora associato e assegnarlo all'utente tra quelli gestiti con il provisioning.
+  È possibile creare delle credenziali da utilizzare su di un dispositivo non supportato 
+  dal provisioning: in tal caso è necessario utilizzare un dispositivo personalizzato.
+
+Vengono poi mostrati i dispositivi associati all'utente.
+I dispostivi possono essere di due tipologie, software (Web Phone e Mobile App) o 
+fisici, legati ad un telefono configurato con il provisioning o ad un dispositivo 
+personalizzato.
+
+È possibile associare ad ogni utente fino a 9 dispostivi:
+
+- :guilabel:`Web Phone` attiva il client telefonico del |product_cti| per gestire le 
+  chiamate direttamente al suo interno senza necessità di avere telefoni fisici.
+
+- :guilabel:`Mobile App` attiva la possibilità di configurare sullo smartphone un
+  dispositivo vedi :ref:`qui <nethcti_mobile>`.
+
+Per ogni dispositivo fisico viene mostrato:
+
+- :guilabel:`Crittografia` abilitata o meno. L'impostazione iniziale dipende dalla 
+  configurazione di |product| effettuata durante la procedura di prima configurazione
+  (vedi :ref:`wizard2-dispositivi`). Se il centralino viene raggiunto tramite rete 
+  pubblica (WAN) è richiesta l'attivazione della crittografia.
 
 .. warning::
 
     Se :guilabel:`Crittografia` è abilitata assicurarsi che il certificato SSL/TLS
     del sistema sia valido e contenga il nome del centralino, altrimenti i
     telefoni non possono stabilire la connessione TLS.
+
+- :guilabel:`Modello di Configurazione` scelto. È possibile variare il modello di 
+  configurazione tra quelli proposti.
+- :guilabel:`Modifica Configurazione` È possibile modificare la configurazione del
+  singolo telefono inserendo modifiche valide solo per questo dispositivo.
+- :guilabel:`Mac-Address` Viene mostrato l'indirizzo MAC del dispostivo associato.
+- :guilabel:`Mostra password` per i dispositivi personalizzati. Viene mostrata la
+  password SIP che insieme all'interno e all'indirizzo del |product| è possibile
+  utilizzare per configurare manualmente il dispositivo personalizzato.
+- :guilabel:`Riavvia` Se il dispositivo è registrato allora è possibile riavviarlo.
+- :guilabel:`Disassocia` È possibile disassociare il dispositivo dall'utente.
+
+Priorità configurazioni telefoni
+--------------------------------
+
+La configurazione creata dal provisioning di |product| per i dispositivi telefonici 
+viene ricavata unendo le impostazioni provenienti da:
+
+- :guilabel:`Impostazioni Default`: si trovano nella pagina :ref:`wizard2-modelli`.
+- :guilabel:`Impostazioni Modello`: vengono presi i parametri dalla configurazione del 
+  modello associato al dispositivo, la configurazione si trova nella pagina 
+  :ref:`wizard2-modelli`.
+- :guilabel:`Impostazione Telefono`: vengono presi i parametri della configurazione
+  del singolo telefono che si trovano nella pagina :ref:`wizard2-configurazioni`.
+- Impostazioni |product_cti| dove è possibile configurare 
+  parametri del telefono fisico associato all'utente.
+
+Nel caso in cui ci sia un parametro con una configurazione non omogenea nelle varie 
+sezioni sopra elencate questo è l'ordine di priorità decrescente che verrà seguito:
+
+- :guilabel:`Impostazione telefono` e Impostazioni |product_cti| sono 
+  le impostazioni con la priorità massima, tra le due vale l'ultima effettuata.
+- :guilabel:`Impostazioni Modello`
+- :guilabel:`Impostazioni di Default`
 
 .. _wizard2-telefoni-multipli:
 
