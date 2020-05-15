@@ -18,7 +18,7 @@ I requisiti per utillizzare l'app sono:
 - porta HTTPS raggiungibile
 
 .. note:: In alternativa al FQDN del |product| è possibile usare un nome host e dominio configurato come alias per il server con gli stessi requisiti.
-   Per usarlo al posto del FQDN utilizzare questi comandi sostituendo ad ALIAS il nome host seguito dal dominio (ad esempio host.dominio.com):
+   Per usarlo al posto del FQDN utilizzare questi comandi sostituendo ad ALIAS il nome host seguito dal dominio (ad esempio host.dominio.com): ::
 
         config setprop nethvoice PublicHost ALIAS
 
