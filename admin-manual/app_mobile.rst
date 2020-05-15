@@ -6,16 +6,24 @@ App mobile
 .. _nethcti_mobile:
 
 |product_cti|
-=======
+=============
 
 L'applicazione mobile del |product_cti| è disponibile per iOS e Android ed è scaricabile dai rispettivi App Store.
 
 I requisiti per utillizzare l'app sono:
 
 - certificato valido installato sul |product|
-- indirizzo FQDN del |product| raggiungibile
+- indirizzo FQDN del |product| raggiungibile e utilizzato nella configurazione dell'app (manualmente o nel |product_cti|)
 - protocollo SIP TLS raggiungibile
 - porta HTTPS raggiungibile
+
+.. note:: In alternativa al FQDN del |product| è possibile usare un nome host e dominio configurato come alias per il server con gli stessi requisiti.
+   Per usarlo al posto del FQDN utilizzare questi comandi sostituendo ad ALIAS il nome host seguito dal dominio (ad esempio host.dominio.com): ::
+
+        config setprop nethvoice PublicHost ALIAS
+
+        expand-template /etc/asterisk/nethcti_push_configuration.json
+
 
 L'app accede in SIP TLS al |product| che va abilitato sia lato firewall che nella configurazione di |product|.
 
@@ -57,7 +65,7 @@ Per eseguire il login nell'applicazione sarà necessario dal menù di sinistra s
 
 Dalla sezione :guilabel:`Login` dell'applicazione è possibile accede in due modi:
 
-- Inserendo l'indirizzo FQDN del server e le credenziali nome utente e password dell'utente
+- Inserendo l'indirizzo FQDN(o l'alias configurato come specificato sopra) del server e le credenziali nome utente e password dell'utente
 - Scansionando il QRCode dalla sezione :guilabel:`dispositivi` nelle Impostazioni dell'interfaccia web del |product_cti| cliccando su genera QRcode nella card relativa alla App Mobile
 
 L'applicazione mobile |product_cti| eseguirà l'autenticazione sul server nethcti e sarà quindi possibile consultare il log nethcti in caso di errore.
