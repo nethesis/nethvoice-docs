@@ -530,12 +530,52 @@ Per attivare l'esecuzione di uno script eseguire:
   signal-event nethcti-server3-update
 
 Il secondo comando è opzionale e consente di stabilire un timeout (espresso in msec) per l'esecuzione dello script: il default è 5 secondi.
+Inoltre è lo stesso parametro che influenzerà anche lo script eseguito per ogni chiamata in ingresso dall'esterno (vedi sotto).
 
 Per disattivarlo eseguire:
 
 .. code-block:: bash
 
   config setprop nethcti-server CdrScript ""
+  config setprop nethcti-server CdrScriptTimeout 5000
+  signal-event nethcti-server3-update
+
+
+.. note:: Lo script deve essere eseguibile dall'utente "asterisk" e si consiglia di configurare opportunamente i permessi del file.
+
+|product_cti|: eseguire uno script per ogni chiamata in ingresso dall'esterno
+=============================================================================
+
+È possibile configurare NethCTI Server per eseguire uno script per ogni chiamata in ingresso dall'esterno.
+Lo script verrà invocato tramite i seguenti parametri così come ricevuti da Asterisk stesso:
+
+.. code-block:: bash
+
+  "callerNum, uniqueId"
+
+Esempio:
+
+.. code-block:: bash
+
+  ./<SCRIPT_PATH> '3331234567' '1532343425.123'
+
+
+Per attivare l'esecuzione di uno script eseguire:
+
+.. code-block:: bash
+
+  config setprop nethcti-server CdrScriptCallIn <SCRIPT_PATH>
+  config setprop nethcti-server CdrScriptTimeout 5000
+  signal-event nethcti-server3-update
+
+Il secondo comando è opzionale e consente di stabilire un timeout (espresso in msec) per l'esecuzione dello script: il default è 5 secondi.
+Inoltre è lo stesso parametro che influenzerà anche lo script eseguito al termine di una chiamata (vedi sopra).
+
+Per disattivarlo eseguire:
+
+.. code-block:: bash
+
+  config setprop nethcti-server CdrScriptCallIn ""
   config setprop nethcti-server CdrScriptTimeout 5000
   signal-event nethcti-server3-update
 
