@@ -273,15 +273,13 @@ supportati:
 - Snom
 - Sangoma
 - Fanvil
-
+- Gigaset
 
 Disattivazione della modalità Click2Call automatico
 ---------------------------------------------------
 
-In alcuni scenari potrebbe essere utile disattivare la funzionalità,
-ad esempio nel caso in cui il centralino telefonico fosse in cloud
-e i telefoni siano in LAN dietro NAT. Per la disattivazione eseguire
-i comandi:
+In alcuni scenari potrebbe essere utile disattivare la funzionalità.
+Per la disattivazione eseguire i comandi:
 
 .. code-block:: bash
 
@@ -289,6 +287,30 @@ i comandi:
   signal-event nethcti-server3-update
 
 Per la riattivazione:
+
+.. code-block:: bash
+
+  config setprop nethcti-server AutoC2C enabled
+  signal-event nethcti-server3-update
+
+
+Attivazione della modalità Click2Call automatico su Cloud
+---------------------------------------------------------
+
+Nel caso in cui il centralino telefonico fosse in una rete
+differente dai telefoni e comunichi con loro attraversando
+dei servizi di NAT, ad esempio centralino in cloud e telefoni
+in LAN dietro NAT, mentre il pc con il quale si accede al
+|product_cti| comunica direttamente con il telefono, ad esempio
+si trova nella stessa LAN dei telefoni, per poter utilizzare la
+modalità Click2Call automatico è necessario eseguire i comandi:
+
+.. code-block:: bash
+
+  config setprop nethcti-server AutoC2C cloud
+  signal-event nethcti-server3-update
+
+Per la riattivazione in caso di centralino in locale sulla stessa rete dei telefoni:
 
 .. code-block:: bash
 
