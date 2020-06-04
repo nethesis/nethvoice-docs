@@ -224,7 +224,7 @@ di amministrazione di |product| rispettivamente in
 :guilabel:`Configurazione > Dispositivi associati > Modifica >
 Preferenze`.
 
-Il nome del file può contenere solo lettere, numeri e i simboli ``_-()``.
+Il nome del file può contenere solo lettere, numeri e i simboli ``._-()``.
 
 I telefoni recepiscono l'aggiornamento secondo i tempi indicati
 in :ref:`provisioning2-aggiornamenti-automatici`.
