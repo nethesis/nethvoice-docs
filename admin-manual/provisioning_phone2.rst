@@ -214,7 +214,7 @@ Aggiornamento firmware
 ----------------------
 
 Il costruttore del telefono pubblica periodicamente nel proprio sito
-web gli aggiornamenti al firmware per i telefoni dello stesso modello.
+web gli aggiornamenti al firmware per i vari modelli dei propri telefoni.
 
 È possibile distribuire il firmware aggiornato a tutti i telefoni di
 uno stesso modello oppure ad un singolo telefono. Il file del firmware
