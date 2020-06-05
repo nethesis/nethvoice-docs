@@ -213,8 +213,35 @@ riavviato.
 Aggiornamento firmware
 ----------------------
 
-Al momento il firmware del telefono non viene mai aggiornato. Nei futuri
-rilasci è prevista la gestione da interfaccia di amministrazione di |product|.
+Il costruttore del telefono pubblica periodicamente nel proprio sito
+web gli aggiornamenti al firmware per i vari modelli dei propri telefoni.
+
+È possibile distribuire il firmware aggiornato a tutti i telefoni di
+uno stesso modello oppure ad un singolo telefono. Il file del firmware
+ottenuto dal sito del costruttore va caricato tramite l'interfaccia
+di amministrazione di |product| rispettivamente in
+:guilabel:`Modelli > Preferenze > Firmware` oppure in
+:guilabel:`Configurazione > Dispositivi associati > Modifica >
+Preferenze`.
+
+Il nome del file può contenere solo lettere, numeri e i simboli ``._-()``.
+
+I telefoni recepiscono l'aggiornamento secondo i tempi indicati
+in :ref:`provisioning2-aggiornamenti-automatici`.
+
+.. hint::
+
+    Quando i telefoni hanno recepito l'aggiornamento, deselezionare
+    il file del firmware nell'interfaccia di |product| per ridurre
+    il traffico di rete.
+
+Elenco delle pagine web per il download del firmware:
+
+- `Yealink <http://support.yealink.com/documentFront/forwardToDocumentFrontDisplayPage>`_
+- `Snom <https://service.snom.com/display/wiki/Firmware+Update+Center>`_
+- `Fanvil <https://fanvil.com/Support/download.html>`_
+- `Gigaset <https://teamwork.gigaset.com/gigawiki/pages/viewpage.action?pageId=37486876>`_
+- `Sangoma <https://wiki.sangoma.com/display/PHON/Phone+Firmware+Release+Notes>`_
 
 
 Telefoni supportati
