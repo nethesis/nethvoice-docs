@@ -281,7 +281,7 @@ Per ogni dispositivo fisico viene mostrato:
   configurazione tra quelli proposti.
 - :guilabel:`Modifica Configurazione` È possibile modificare la configurazione del
   singolo telefono inserendo modifiche valide solo per questo dispositivo.
-  Il singolo telefono ha di base la configurazione dal modello e dalle impostazioni
+  Il singolo telefono ha di base la configurazione del modello e delle impostazioni
   di default. Fare riferimento a :ref:`wizard2-modelli` per maggiori dettagli.
 - :guilabel:`Mac-Address` Viene mostrato l'indirizzo MAC del dispostivo associato.
 - :guilabel:`Mostra password` per i dispositivi personalizzati. Viene mostrata la
