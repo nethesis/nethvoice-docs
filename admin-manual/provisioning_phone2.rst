@@ -101,6 +101,7 @@ Nel caso un telefono sia già usato è possibile predisporlo all'associazione co
 **ripristino dei valori di fabbrica**. Entrambe le procedure sono disponibili
 tramite l'interfaccia web di amministrazione del telefono.
 
+.. _provisioning-methods:
 
 Metodi di provisioning
 ======================
@@ -209,6 +210,8 @@ automatico.
 
 In ogni caso il telefono scarica la configurazione tutte le volte che viene
 riavviato.
+
+.. _provisioning2-firmware-upgrade:
 
 Aggiornamento firmware
 ----------------------

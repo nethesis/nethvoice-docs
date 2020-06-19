@@ -70,8 +70,8 @@ crittografia provenienti da rete pubblica (WAN).
 
 Altre impostazioni da poter variare:
 
-* :ref:`Preferenze <model-preferences>`
-* :ref:`Rubrica LDAP <model-phonebook>`
+* :ref:`Preferenze <panel-preferences>`
+* :ref:`Rubrica LDAP <panel-phonebook>`
 
 Una volta salvate le impostazioni, sarà possibile modificarle di nuovo
 dalla pagina :guilabel:`Dispositivi > Modelli`, pulsante :guilabel:`Impostazioni
@@ -125,106 +125,8 @@ centralino`, già impostati dalla procedura di prima configurazione come spiegat
 in :ref:`wizard2-dispositivi`.
 
 A seconda delle funzionalità proprie del modello, possono essere disponibili
-i pannelli e le opzioni descritti nelle seguenti sezioni.
+i pannelli e le opzioni descritti in :ref:`wizard2-provisioning-section`.
 
-.. _model-softkeys:
-
-Soft key
-^^^^^^^^
-
-I *soft key* sono tasti del telefono programmabili specifici per
-richiamare delle funzioni del telefono.
-
-Qualora il telefono renda disponibili più tasti di quanti ne sono visualizzati
-nell'interfaccia di amministrazione di |product|, è presente un pulsante
-:guilabel:`Mostra altri` per aggiungerne di ulteriori.
-
-In base al :guilabel:`Tipo` potrebbero doversi valorizzare anche i campi
-:guilabel:`Valore` e :guilabel:`Etichetta`, secondo quanto indicato nella
-tabella sottostante.
-
-.. _model-linekeys:
-
-Line key
-^^^^^^^^
-
-I *line key* sono tasti del telefono programmabili più specifici
-per la gestione delle chiamate e il monitoraggio degli altri interni.
-
-Qualora il telefono renda disponibili più tasti di quanti ne sono visualizzati
-nell'interfaccia di amministrazione di |product|, è presente un pulsante
-:guilabel:`Mostra altri` per aggiungerne di ulteriori.
-
-In base al :guilabel:`Tipo` potrebbero doversi valorizzare anche i campi
-:guilabel:`Valore` e :guilabel:`Etichetta`, secondo quanto indicato nella
-tabella sottostante.
-
-.. _model-expkeys:
-
-Exp key
-^^^^^^^
-
-Gli *expansion key* sono i tasti programmabili presenti sui *moduli di espansione*,
-dispositivi collegabili al telefono che ne aumentano la quantità di tasti disponibili.
-
-Qualora il modulo di espansione renda disponibili più tasti di quanti ne sono visualizzati
-nell'interfaccia di amministrazione di |product|, è presente un pulsante
-:guilabel:`Mostra altri` per aggiungerne di ulteriori.
-
-Questo tipo di tasti si configura come i :ref:`model-linekeys`.
-
-.. _model-display:
-
-Schermo e suoneria
-^^^^^^^^^^^^^^^^^^
-
-* :guilabel:`Selezione suoneria` Ogni telefono ha alcune suonerie predefinite che possono essere
-  selezionate in base al numero progressivo. Laddove supportata è possibile scegliere la suoneria
-  personalizzata, che va poi caricata nel controllo descritto di seguito.
-
-* :guilabel:`Gestione suoneria personalizzata` Seleziona un file audio per la suoneria personalizzata
-  caricato in precedenza, o ne carica uno nuovo aprendo l'apposito modulo di gestione. Il formato
-  audio deve essere compatibile con le specifiche del produttore del telefono.
-
-* :guilabel:`Immagine di sfondo` :guilabel:`Immagine screensaver` Seleziona un file immagine
-  rispettivamente per lo sfondo dello schermo del telefono e per lo screensaver, oppure ne carica
-  una nuova aprendo l'apposito pannello di gestione. Il formato immagine deve
-  essere compatibile con le specifiche del produttore del telefono.
-
-* :guilabel:`Avvio screensaver` Intervallo di tempo dopo il quale viene avviato il salvaschermo.
-
-* :guilabel:`Spegnimento illuminazione` Intervallo di tempo dopo il quale lo schermo abbassa la luminosità
-  o spegne la retroilluminazione dello schermo.
-
-* :guilabel:`Luminosità schermo` :guilabel:`Contrasto schermo` Selezionano il livello di luminosità
-  e contrasto dello schermo.
-
-.. _model-preferences:
-
-Preferenze
-^^^^^^^^^^
-
-* :guilabel:`Lingua dei telefoni`
-* :guilabel:`Pianificazione del provisioning`, la scelta :guilabel:`Solo all'avvio` rinnoverà la
-    configurazione del telefono solo alla sua accensione, ogni giorno invece
-    consentirà al |product| di riavviare i telefoni ogni notte per rinnovare la
-    configurazione
-* :guilabel:`Toni di chiamata`
-* :guilabel:`Fuso orario`
-
-.. _model-phonebook:
-
-Rubrica LDAP
-^^^^^^^^^^^^
-
-* :guilabel:`Rubrica LDAPS` di |product|
-* :guilabel:`Rubrica LDAP` di |product|
-* :guilabel:`Rubrica personalizzata`, impostare i campi necessari per la configurazione
-
-.. _model-network:
-
-Rete
-^^^^
 
 .. _wizard2-configurazioni:
 
@@ -290,8 +192,10 @@ Per ogni dispositivo fisico viene mostrato:
 - :guilabel:`Riavvia` Se il dispositivo è registrato allora è possibile riavviarlo.
 - :guilabel:`Disassocia` È possibile disassociare il dispositivo dall'utente.
 
+.. _provisioning-scopes-priority:
+
 Priorità configurazioni telefoni
---------------------------------
+================================
 
 La configurazione creata dal provisioning di |product| per i dispositivi telefonici 
 viene ricavata unendo le impostazioni provenienti da:
