@@ -16,10 +16,10 @@ pannelli dell'interfaccia di amminstrazione di |product| e descritti nelle segue
 Non tutti i modelli di telefono dispongono delle medesime funzioni, quindi alcuni 
 parametri o interi pannelli potrebbero non essere visualizzati.
 
-In generale lasciare un campo vuoto o selezionare l'opzione ``-`` (segno meno) indica 
-il valore ereditato dal contesto con priorità inferiore; in ordine di priorità decrescente:
-*telefono*, *modello*, *default*. Fare riferimento a  :ref:`provisioning-scopes-priority`
-per ulteriori informazioni.
+In generale lasciare un campo vuoto o selezionare l'opzione ``-`` (segno meno) indicano
+il valore ereditato dal contesto con priorità inferiore; la priorità massima è per le impostazioni
+del *telefono* e a seguire in ordine decrescente *modello* e *default*.
+Fare riferimento a :ref:`provisioning-scopes-priority` per ulteriori informazioni.
 
 .. _panel-softkeys:
 
@@ -101,10 +101,10 @@ Preferenze
 * :guilabel:`Indirizzo server NTP` Il nome host o l'indirizzo IP del server 
   NTP (Network Time Protocol) per impostare automaticamente e correttamente l'orario del telefono.
 
-* :guilabel:`Pianificazione del provisioning`, la scelta **Solo all'avvio** rinnoverà la
-  configurazione del telefono solo alla sua accensione, **Ogni giorno** invece
-  consentirà al |product| di riavviare i telefoni ogni notte per rinnovare la configurazione.
-  Vedere anche :ref:`provisioning2-aggiornamenti-automatici`.
+* :guilabel:`Pianificazione del provisioning` Selezionando **Solo all'avvio** i telefoni
+  rinnovano la propria configurazione dopo l'accensione o il riavvio. Invece Selezionando
+  **Ogni giorno** i telefoni rinnovano la configurazione in maniera autonoma ad un orario
+  casuale della notte. Vedere anche :ref:`provisioning2-aggiornamenti-automatici`.
 
 * :guilabel:`Modalità di trasferimento per i line key` Specifica il modo in cui i line key 
   trasferiscono la chiamata in corso ad un altro interno.
@@ -119,7 +119,7 @@ Preferenze
   
 * :guilabel:`Lingua telefono` Lingua utilizzata dallo schermo del telefono e dalla sua interfaccia web.
  
-* :guilabel:`Fuso orario` Imposta il fuso orario del telefono, necessario anche per calcolare l'ora legale.
+* :guilabel:`Fuso orario` Imposta il fuso orario del telefono, necessario il passaggio all'ora legale.
 
 * :guilabel:`Toni di chiamata` Sono specifici di ogni nazione e indicano lo stato della chiamata mediante
   un segnale acustico: squillo libero, occupato, riagganciato...
