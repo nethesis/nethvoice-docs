@@ -29,7 +29,7 @@ Soft key
 I *soft key* sono tasti del telefono programmabili specifici per
 richiamare delle funzioni del telefono.
 
-Qualora il telefono renda disponibili più tasti di quanti ne sono visualizzati
+Qualora il telefono renda disponibili più tasti di quanti ne siano visualizzati
 nell'interfaccia di amministrazione di |product|, è presente un pulsante
 :guilabel:`Mostra altri` per aggiungerne di ulteriori.
 
@@ -115,9 +115,9 @@ Line key
 ========
 
 I *line key* sono tasti del telefono programmabili simili ai *soft key* ma
-più specifici per la gestione delle chiamate e il monitoraggio degli altri interni.
+più specifici per la gestione delle chiamate e il monitoraggio dello stato degli interni.
 
-Qualora il telefono renda disponibili più tasti di quanti ne sono visualizzati
+Qualora il telefono renda disponibili più tasti di quanti ne siano visualizzati
 nell'interfaccia di amministrazione di |product|, è presente un pulsante
 :guilabel:`Mostra altri` per aggiungerne di ulteriori.
 
@@ -255,7 +255,7 @@ Exp key
 Gli *expansion key* sono i tasti programmabili presenti sui *moduli di espansione*,
 dispositivi collegabili al telefono che ne aumentano la quantità di tasti disponibili.
 
-Qualora il modulo di espansione renda disponibili più tasti di quanti ne sono visualizzati
+Qualora il modulo di espansione renda disponibili più tasti di quanti ne siano visualizzati
 nell'interfaccia di amministrazione di |product|, è presente un pulsante
 :guilabel:`Mostra altri` per aggiungerne di ulteriori.
 
@@ -268,7 +268,7 @@ Schermo e suoneria
 
 * :guilabel:`Selezione suoneria` Ogni telefono ha alcune suonerie predefinite che possono essere
   selezionate in base al numero progressivo. Laddove supportata è possibile scegliere la suoneria
-  personalizzata, che va poi caricata nel controllo descritto di seguito.
+  personalizzata, che va poi caricata nel campo descritto di seguito.
 
 * :guilabel:`Gestione suoneria personalizzata` Seleziona un file audio per la suoneria personalizzata
   caricato in precedenza, o ne carica uno nuovo aprendo l'apposito modulo di gestione. Il formato
@@ -296,7 +296,7 @@ Preferenze
   NTP (Network Time Protocol) per impostare automaticamente e correttamente l'orario del telefono.
 
 * :guilabel:`Pianificazione del provisioning` Selezionando **Solo all'avvio** i telefoni
-  rinnovano la propria configurazione dopo l'accensione o il riavvio. Invece Selezionando
+  rinnovano la propria configurazione dopo l'accensione o il riavvio. Invece selezionando
   **Ogni giorno** i telefoni rinnovano la configurazione in maniera autonoma ad un orario
   casuale della notte. Vedere anche :ref:`provisioning2-aggiornamenti-automatici`.
 
