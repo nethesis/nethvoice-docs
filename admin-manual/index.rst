@@ -47,7 +47,8 @@ Configurazione Base
 .. toctree::
    :maxdepth: 2
 
-   wizard
+   wizard2
+   wizard2_provisioning
    dashboard
    app_mobile
 
@@ -57,9 +58,9 @@ Provisioning
 .. toctree::
    :maxdepth: 2
 
-   provisioning_phone
+   provisioning_phone2
+   provisioning_migration
    provisioning_gateway
-   wizard2_provisioning
 
 Configurazione Avanzata
 -----------------------

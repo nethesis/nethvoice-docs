@@ -1,10 +1,10 @@
 .. _wizard-section:
 
-===========================
-Wizard prima configurazione
-===========================
+======================================
+Wizard prima configurazione (obsoleto)
+======================================
 
-.. note::
+.. warning::
 
    Il nuovo sistema di provisioning basato sul progetto Tancredi è descritto in
    :ref:`wizard2-section`
