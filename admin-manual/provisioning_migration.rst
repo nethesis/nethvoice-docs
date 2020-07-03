@@ -27,7 +27,7 @@ Precondizioni
 
 1.  La procedura è pensata per essere eseguita in un |product| con gli
     ultimi aggiornamenti installati, con attivo il sistema di provisioning
-    basato su Endpoint Manager di FreePBX.
+    basato su Endpoint Manager di FreePBX (vedere :ref:`provisioning2-check`)
 
 2.  Eseguire un backup completo del sistema
     prima di eseguire la migrazione.
@@ -44,8 +44,7 @@ Procedura di migrazione
     Prestare attenzione ai messaggi generati dallo script e ad eventuali errori.
     I messaggi vengono scritti oltre che sul terminale anche in :file:`/var/log/tancredi/tancredi.log`.
 
-    Per evitare perdite di dati lo script può essere lanciato una sola volta.
-    Tuttavia aggiungendo l'argomento ``-f`` (force) ogni dato esistente nel DB
+    Aggiungendo l'argomento ``-f`` (force) ogni dato esistente nel DB
     di Tancredi viene eliminato e l'importazione da FreePBX eseguita nuovamente.
 
 2.  Accedere all'interfaccia di amministrazione di |product| e verificare
@@ -59,7 +58,7 @@ Procedura di migrazione
     * l'associazione degli utenti/interni con i dispositivi 
       alla pagina :ref:`Configurazioni <wizard2-configurazioni>`.
 
-3.  Se in rete il server DHCP non è |product| assicurarsi che la sua configurazione
+3.  Se in rete il server DHCP non è |product|, assicurarsi che la sua configurazione
     è :ref:`compatibile con il provisioning dei telefoni <provisioning-support-section>`.
 
 4.  Eseguire la procedura di *factory default* su ogni telefono
@@ -98,13 +97,18 @@ In questo caso il comando è ::
 
   tancredi-migration-helper -d
 
-Quale sistema di provisioning è attivo?
-=======================================
+.. _provisioning2-check:
+
+Verificare il provisioning attivo
+=================================
 
 Per verificare il sistema di provisioning configurato
 su |product| eseguire il seguente comando ::
 
   config getprop nethvoice ProvisioningEngine
+
+I valori possibili stampati sul terminale sono
+``tancredi`` o ``freepbx``.
 
 Help in linea
 =============
