@@ -175,7 +175,7 @@ personalizzato.
   chiamate direttamente al suo interno senza necessità di avere telefoni fisici.
 
 - :guilabel:`Mobile App` attiva la possibilità di configurare sullo smartphone un
-  dispositivo vedi :ref:`qui <nethcti_mobile>`.
+  dispositivo (vedere :ref:`nethcti_mobile`).
 
 Per ogni dispositivo fisico viene mostrato:
 
