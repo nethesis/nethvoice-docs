@@ -37,6 +37,78 @@ In base al :guilabel:`Tipo` potrebbero doversi valorizzare anche i campi
 :guilabel:`Valore` e :guilabel:`Etichetta`, secondo quanto indicato nella
 tabella sottostante.
 
+
+Nella colonna Etichetta la dicitura *predefinita* indica che lasciando vuoto
+il campo :guilabel:`Etichetta` il telefono assegnerà al soft key un'etichetta
+predefinita.
+
+.. list-table:: Configurazione dei soft key
+    :widths: 5 20 10 10 
+    :header-rows: 1
+
+    * - Tipo
+      - Descrizione
+      - Valore
+      - Etichetta
+
+    * - Forward
+      - Abilita/disabilita lo stato di *forward* (inoltro incondizionato). Se abilitato
+        tutte le chiamate in entrata sono inoltrate al numero specificato
+      - Numero di telefono o interno
+      - Sì (predefinita)
+
+    * - DND
+      - Abilita/disabilita lo stato di *do not disturb* (non disturbare). Se abilitato
+        tutte le chiamate in entrata sono rifiutate
+      - No
+      - No
+
+    * - Recall
+      - Chiama nuovamente l'ultimo numero chiamato
+      - No
+      - Sì (predefinita)
+
+    * - Pick up
+      - Rispondi ad una chiamata in corso all'interno specificato
+      - Numero di interno
+      - Sì
+
+    * - Speed dial
+      - Chiama il numero dato premendo il tasto
+      - Numero di telefono
+      - Sì
+
+    * - Group pickup
+      - Rispondi ad una chiamata in corso al gruppo di pickup configurato
+      - No (il gruppo è configurato)
+      - No
+
+    * - History
+      - Mostra la schermata dello storico delle chiamate
+      - No
+      - Sì (predefinita)
+
+    * - Menu
+      - Mostra il menù di configurazione del telefono
+      - No
+      - Sì (predefinita)
+
+    * - Stato
+      - Mostra le informazioni di stato del telefono 
+        (es.: versione del firmware, stato di registrazione ...)
+      - No
+      - Sì (predefinita)
+
+    * - Prefix
+      - Aggiungi le cifre specificate al numero digitato
+      - Le cifre del prefisso
+      - Sì (predefinita)
+
+    * - LDAP
+      - Mostra la rubrica LDAP configurata sul telefono
+      - No
+      - Sì (predefinita)
+
 .. _panel-linekeys:
 
 Line key
@@ -52,6 +124,128 @@ nell'interfaccia di amministrazione di |product|, è presente un pulsante
 In base al :guilabel:`Tipo` potrebbero doversi valorizzare anche i campi
 :guilabel:`Valore` e :guilabel:`Etichetta`, secondo quanto indicato nella
 tabella sottostante.
+
+
+Nella colonna Etichetta la dicitura *predefinita* indica che lasciando vuoto
+il campo :guilabel:`Etichetta` il telefono assegnerà al line key un'etichetta
+predefinita.
+
+.. list-table:: Configurazione dei line key
+    :widths: 5 20 10 10 
+    :header-rows: 1
+
+    * - Tipo
+      - Descrizione
+      - Valore
+      - Etichetta
+
+    * - Conferenza
+      - Le chiamate attive vengono unite in una conferenza in cui ogni partecipante
+        può ascoltare e parlare con gli altri simultaneamente
+      - No
+      - Sì (predefinita)
+
+    * - Forward
+      - Abilita/disabilita lo stato di *forward* (inoltro incondizionato). Se abilitato
+        tutte le chiamate in entrata sono inoltrate al numero specificato
+      - Numero di telefono o interno
+      - Sì (predefinita)
+
+    * - Trasferimento di chiamata
+      - Trasferisce la chiamata in corso al numero selezionato o ad un altro numero digitato
+        al momento
+      - Numero di telefono o interno
+      - Sì
+
+    * - Hold
+      - Mette in attesa la chiamata corrente
+      - No
+      - Sì (predefinita)
+
+    * - DND
+      - Abilita/disabilita lo stato di *do not disturb* (non disturbare). Se abilitato
+        tutte le chiamate in entrata sono rifiutate
+      - No
+      - No
+
+    * - Recall
+      - Chiama nuovamente l'ultimo numero chiamato
+      - No
+      - Sì (predefinita)
+
+    * - Pick up
+      - Rispondi ad una chiamata in corso all'interno specificato
+      - Numero di interno
+      - Sì
+
+    * - DTMF
+      - Esegue una sequenza di toni di chiamata (DTMF)
+      - Sequenza di simboli o numeri
+      - Sì
+
+    * - Login/logout agente dinamico
+      - Entra/esci dalla coda di chiamata
+      - No
+      - Sì
+
+    * - Voice mail
+      - Consulta la casella vocale
+      - No
+      - Sì (predefinita)
+
+    * - Speed dial
+      - Chiama il numero dato premendo il tasto
+      - Numero di telefono
+      - Sì
+
+    * - Linea
+      - Seleziona un'altra linea
+      - No
+      - Sì (predefinita)
+
+    * - BLF
+      - Traccia lo stato dell'interno selezionato, e a seconda 
+        dello stato di quest'ultimo esegue un *pick up* o *speed dial*
+        quando premuto
+      - Numero di interno
+      - Sì
+
+    * - URL
+      - Esegui una richiesta HTTP GET all'indirizzo web specificato
+      - Indirizzo web (URL)
+      - Sì
+
+    * - Group pickup
+      - Rispondi ad una chiamata in corso al gruppo di pickup configurato
+      - No (il gruppo è configurato)
+      - No
+
+    * - Multicast paging
+      - Invia l'audio direttamente all'interno configurato per il multicast paging
+      - Numero di interno
+      - Sì (predefinita)
+
+    * - Record
+      - Inizia la registrazione audio della chiamata attiva
+      - No
+      - Sì (predefinita)
+
+    * - Prefix
+      - Aggiungi le cifre specificate al numero digitato
+      - Le cifre del prefisso
+      - Sì (predefinita)
+
+    * - Phone lock
+      - Attiva il blocco dei tasti e dell'interfaccia del telefono. La
+        sequenza di sblocco va configurata secondo la documentazione del
+        telefono stesso
+      - No 
+      - Sì (predefinita)
+
+    * - LDAP
+      - Mostra la rubrica LDAP configurata sul telefono
+      - No
+      - Sì (predefinita)
 
 .. _panel-expkeys:
 
