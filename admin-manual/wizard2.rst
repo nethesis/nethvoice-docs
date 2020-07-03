@@ -70,23 +70,8 @@ crittografia provenienti da rete pubblica (WAN).
 
 Altre impostazioni da poter variare:
 
-- :guilabel:`Preferenze` per impostare i parametri di default per:
-
-  1) :guilabel:`Lingua dei telefoni`
-  2) :guilabel:`Pianificazione del provisioning`, la scelta :guilabel:`Solo all'avvio` rinnoverà la 
-     configurazione del telefono solo alla sua accensione, ogni giorno invece 
-     consentirà al |product| di riavviare i telefoni ogni notte per rinnovare la 
-     configurazione
-  3) :guilabel:`Toni di chiamata`
-  4) :guilabel:`Fuso orario`
-
-- :guilabel:`Rubrica LDAP` per scegliere la configurazione della rubrica da 
-  dare ai telefoni tra:
- 
-  1) :guilabel:`Rubrica LDAPS` di |product|
-  2) :guilabel:`Rubrica LDAP` di |product|
-  3) :guilabel:`Rubrica personalizzata`, impostare i campi necessari per la configurazione
-
+* :ref:`Preferenze <panel-preferences>`
+* :ref:`Rubrica LDAP <panel-phonebook>`
 
 Una volta salvate le impostazioni, sarà possibile modificarle di nuovo
 dalla pagina :guilabel:`Dispositivi > Modelli`, pulsante :guilabel:`Impostazioni
@@ -138,6 +123,10 @@ modelli, tramite il pulsante :guilabel:`Impostazioni di default`. Questi
 parametri comprendono :guilabel:`Crittografia` e :guilabel:`Indirizzo
 centralino`, già impostati dalla procedura di prima configurazione come spiegato
 in :ref:`wizard2-dispositivi`.
+
+A seconda delle funzionalità proprie del modello, possono essere disponibili
+i pannelli e le opzioni descritti in :ref:`wizard2-provisioning-section`.
+
 
 .. _wizard2-configurazioni:
 
@@ -194,6 +183,8 @@ Per ogni dispositivo fisico viene mostrato:
   configurazione tra quelli proposti.
 - :guilabel:`Modifica Configurazione` È possibile modificare la configurazione del
   singolo telefono inserendo modifiche valide solo per questo dispositivo.
+  Il singolo telefono ha di base la configurazione del modello e delle impostazioni
+  di default. Fare riferimento a :ref:`wizard2-modelli` per maggiori dettagli.
 - :guilabel:`Mac-Address` Viene mostrato l'indirizzo MAC del dispostivo associato.
 - :guilabel:`Mostra password` per i dispositivi personalizzati. Viene mostrata la
   password SIP che insieme all'interno e all'indirizzo del |product| è possibile
@@ -201,8 +192,10 @@ Per ogni dispositivo fisico viene mostrato:
 - :guilabel:`Riavvia` Se il dispositivo è registrato allora è possibile riavviarlo.
 - :guilabel:`Disassocia` È possibile disassociare il dispositivo dall'utente.
 
+.. _provisioning-scopes-priority:
+
 Priorità configurazioni telefoni
---------------------------------
+================================
 
 La configurazione creata dal provisioning di |product| per i dispositivi telefonici 
 viene ricavata unendo le impostazioni provenienti da:

@@ -59,6 +59,7 @@ Provisioning
 
    provisioning_phone
    provisioning_gateway
+   wizard2_provisioning
 
 Configurazione Avanzata
 -----------------------

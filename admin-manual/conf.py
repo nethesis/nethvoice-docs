@@ -267,3 +267,5 @@ if 'html_context' in globals():
         html_context.setdefault(k, context[k])
 else:
     html_context = context
+
+smartquotes = False
