@@ -67,7 +67,7 @@ Procedura di migrazione
 Problemi noti
 =============
 
-I seguenti messaggi possono comparire in :file:`/var/log/tancredi/tancredi.log` ::
+I seguenti messaggi possono comparire in :file:`/var/log/tancredi/tancredi.log`.
 
 Error adding 0C-38-3E-XX-XX-XX phone to RPS
 -------------------------------------------
