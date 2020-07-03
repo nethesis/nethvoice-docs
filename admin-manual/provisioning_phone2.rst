@@ -294,27 +294,39 @@ La seguente tabella risassume i metodi di provisioning utilizzati da ogni
 produttore al primo avvio del telefono.
 
 .. list-table:: Metodi di provisioning per produttore
-    :widths: 25 25 25
+    :widths: 5 5 5 5 10
     :header-rows: 1
 
     * - Produttore
       - Metodo primario
       - Metodo secondario
+      - DHCP option
+      - DHCP option value
     * - Fanvil
       - RPS
       - DHCP
+      - 66
+      - ``http://IP_CENTRALINO/provisioning/$mac.cfg``
     * - Yealink
       - RPS
       - DHCP
+      - 66
+      - ``http://IP_CENTRALINO/provisioning/$MAC.cfg``
     * - Snom
       - RPS
       - DHCP
+      - 66 e 67
+      - ``http://IP_CENTRALINO`` e ``provisioning/{mac}.xml``
     * - Gigaset
       - DHCP [#f1]_
       - RPS
+      - 114
+      - ``http://IP_CENTRALINO/provisioning/%MACD.xml``
     * - Sangoma
       - RPS [#f2]_
       - DHCP
+      - 66
+      - ``http://IP_CENTRALINO/provisioning``
 
 .. [#f1] Per i telefoni Gigaset assicurarsi che il server DHCP di rete, se 
          diverso da |product|, non fornisca OPTION 66
