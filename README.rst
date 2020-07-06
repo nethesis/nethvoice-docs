@@ -178,9 +178,10 @@ https://translate.zanata.org/project/view/nethvoice-docs
 Install client
 --------------
 
-On Fedora: ::
+On Fedora 31+: ::
 
-  dnf install zanata-client
+  sudo dnf install python3-zanata-client
+
 
 To configure the client for the first time see: http://docs.zanata.org/en/release/client/configuration/
 
@@ -194,11 +195,11 @@ The source language is Italian. To build the ``.pot`` files under
 
 Upload ``.pot`` files to Zanata: ::
 
-    zanata-cli push --src-lang it
+    zanata push --push-type source
 
 Download tranlations from Zanata: ::
 
-    zanata-cli pull
+    zanata pull
 
 .. warning::
 

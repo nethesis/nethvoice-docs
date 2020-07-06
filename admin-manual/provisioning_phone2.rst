@@ -1,15 +1,14 @@
 
 .. _provisioning-phone2-section:
 
-================================
-Provisioning dei telefoni (beta)
-================================
+=========================
+Provisioning dei telefoni
+=========================
 
-.. warning::
+.. hint::
     
-    Le funzioni descritte in questa pagina sono disponibili in anteprima solo ai
-    membri del |product| Quality Team. Fare riferimento a
-    :ref:`provisioning-section` per la versione stabile
+    Fare riferimento a :ref:`provisioning-migration-section` e a
+    :ref:`provisioning-section` per la versione precedente.
 
 
 Cosa significa **Provisioning**? Provisioning è configurare i telefoni in
@@ -101,6 +100,7 @@ Nel caso un telefono sia già usato è possibile predisporlo all'associazione co
 **ripristino dei valori di fabbrica**. Entrambe le procedure sono disponibili
 tramite l'interfaccia web di amministrazione del telefono.
 
+.. _provisioning-methods:
 
 Metodi di provisioning
 ======================
@@ -210,6 +210,8 @@ automatico.
 In ogni caso il telefono scarica la configurazione tutte le volte che viene
 riavviato.
 
+.. _provisioning2-firmware-upgrade:
+
 Aggiornamento firmware
 ----------------------
 
@@ -291,27 +293,39 @@ La seguente tabella risassume i metodi di provisioning utilizzati da ogni
 produttore al primo avvio del telefono.
 
 .. list-table:: Metodi di provisioning per produttore
-    :widths: 25 25 25
+    :widths: 5 5 5 5 10
     :header-rows: 1
 
     * - Produttore
       - Metodo primario
       - Metodo secondario
+      - DHCP option
+      - DHCP option value
     * - Fanvil
       - RPS
       - DHCP
+      - 66
+      - ``http://IP_CENTRALINO/provisioning/$mac.cfg``
     * - Yealink
       - RPS
       - DHCP
+      - 66
+      - ``http://IP_CENTRALINO/provisioning/$MAC.cfg``
     * - Snom
       - RPS
       - DHCP
+      - 66 e 67
+      - ``http://IP_CENTRALINO`` e ``provisioning/{mac}.xml``
     * - Gigaset
       - DHCP [#f1]_
       - RPS
+      - 114
+      - ``http://IP_CENTRALINO/provisioning/%MACD.xml``
     * - Sangoma
       - RPS [#f2]_
       - DHCP
+      - 66
+      - ``http://IP_CENTRALINO/provisioning``
 
 .. [#f1] Per i telefoni Gigaset assicurarsi che il server DHCP di rete, se 
          diverso da |product|, non fornisca OPTION 66

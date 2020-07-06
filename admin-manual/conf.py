@@ -256,7 +256,7 @@ if os.path.exists('rst_prolog'):
 # Define context default values for HTML templates
 #
 context = {
-    'alt_languages': 'it,en,es',
+    'alt_languages': 'it,en',
     'alt_versions': 'v14,v11,dev',
     'current_version': 'def',
     'user_analytics_code': 'UA-37499928-5',
@@ -267,3 +267,5 @@ if 'html_context' in globals():
         html_context.setdefault(k, context[k])
 else:
     html_context = context
+
+smartquotes = False

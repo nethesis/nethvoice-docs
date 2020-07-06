@@ -1,13 +1,14 @@
 .. _provisioning-section:
 
-=========================
-Provisioning dei telefoni
-=========================
+====================================
+Provisioning dei telefoni (obsoleto)
+====================================
 
-.. note::
+.. warning::
 
    Il nuovo sistema di provisioning basato sul progetto Tancredi è descritto in
-   :ref:`provisioning-phone2-section`
+   :ref:`provisioning-phone2-section`. Per la procedura di migrazione consultare
+   :ref:`provisioning-migration-section`.
 
 
 Telefoni supportati

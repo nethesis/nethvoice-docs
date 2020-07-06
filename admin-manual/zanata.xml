@@ -7,6 +7,6 @@
   <src-dir>_build/locale</src-dir>
   <trans-dir>locale</trans-dir>
   <rules>
-      <rule pattern="_build/locale/*.pot">{locale}/LC_MESSAGES/{filename}.po</rule>
+      <rule pattern="*.pot">{locale}/LC_MESSAGES/{filename}.po</rule>
   </rules>
 </config>
