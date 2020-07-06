@@ -4,7 +4,7 @@
 Wizard prima configurazione
 ===========================
 
-.. warning::
+.. hint::
     
     Fare riferimento a :ref:`wizard-section` per la versione precedente
 
