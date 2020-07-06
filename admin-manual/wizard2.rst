@@ -1,14 +1,12 @@
 .. _wizard2-section:
 
-==================================
-Wizard prima configurazione (beta)
-==================================
+===========================
+Wizard prima configurazione
+===========================
 
-.. warning::
+.. hint::
     
-    Le funzioni descritte in questa sezione sono disponibili in anteprima solo
-    ai membri del |product| Quality Team. Fare riferimento a
-    :ref:`wizard-section` per la versione stabile.
+    Fare riferimento a :ref:`wizard-section` per la versione precedente
 
 In questa sezione sono descritte le nuove funzionalità introdotte dal
 :ref:`nuovo sistema di provisioning <provisioning-phone2-section>` basato sul

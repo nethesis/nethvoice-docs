@@ -1,14 +1,12 @@
 .. _wizard2-provisioning-section:
 
-=========================================
-Guida ai parametri di provisioning (beta)
-=========================================
+==================================
+Guida ai parametri di provisioning
+==================================
 
-.. warning::
+.. hint::
     
-    Le funzioni descritte in questa sezione sono disponibili in anteprima solo
-    ai membri del |product| Quality Team. Fare riferimento a
-    :ref:`wizard-section` per la versione stabile.
+    Fare riferimento a :ref:`wizard-section` per la versione precedente
 
 Le funzioni dei telefoni configurabili mediante provisioning sono raccolte nei
 pannelli dell'interfaccia di amminstrazione di |product| e descritti nelle seguenti sezioni.
