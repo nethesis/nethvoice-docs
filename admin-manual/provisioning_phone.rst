@@ -134,7 +134,9 @@ I telefoni necessitano di conoscere dove si trova la configurazione a loro dedic
 I metodi principali per farlo sono:
 
 * DHCP
+
 .. * Plug & Play(PNP)
+
 * Interfaccia web
 
 

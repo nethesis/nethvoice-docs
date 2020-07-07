@@ -145,7 +145,7 @@ Fasci
 =====
 Nella sezione fasci è possibile configurare i gateway per gestire le linee fisiche o creare fascio VoIP specificando le credenziali dei vostri provider
 
-.. _fisici:
+.. _fisiciold:
 
 Fisici
 ------
