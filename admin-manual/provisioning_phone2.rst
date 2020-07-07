@@ -253,19 +253,28 @@ Telefoni supportati
 Fanvil
 ------
 
-* X3, X4 
-* X5, X6
+**Versione FIRMWARE 2.0 o superiore**
+
+* X210
+* X3, X3S, X3SP, X3G, X3SG, X3U
+* X4, X4G, X4SG, X4U
+* X5S, X5U
+* X6, X6U
 
 
 Yealink 
 -------
 
-* T19(P) E2, T21(P) E2, T23G, T27G, T29G
-* T40P/G, T41P/S, T42G/S, T46G/S, T48G/S, T49G
-* T53, T54, T56, T57, T58, VP59
+**Versione FIRMWARE 0.84 o superiore**
+
+* T19(P) E2, T21(P) E2, T23P/G, T27P/G, T29G
+* T40P/G, T41P/S/U, T42G/S/U, T43U, T46G/S/U, T48G/S/U, T49G
+* T52S, T53/W, T54S/W, T56A, T57W, T58V/A, VP59
 
 Snom 
 ----
+
+**Versione FIRMWARE 8.7.5 o superiore**
 
 * D120
 * D305, D315, D345, D375, D385
@@ -274,10 +283,15 @@ Snom
 Gigaset
 -------
 
+**Versione FIRMWARE 3.15.9 o superiore**
+
 * Maxwell Basic, Maxwell 2, Maxwell 3, Maxwell 4
    
 Sangoma
 -------
+
+**Versione FIRMWARE X.0.4.67 o superiore**
+
 * S205, S206
 * S300, S305
 * S400, S405, S406 
