@@ -20,7 +20,7 @@ le seguenti pagine:
   stante.
 
 - :guilabel:`Gestione multipla telefoni` è stata aggiunta sotto la sezione
-  :guilabel:`Applicazioni`.
+  :ref:`Applicazioni<wizard2-telefoni-multipli>`.
 
 
 Il wizard di prima configurazione consente di installare e configurare agevolmente tutte le componenti di un centralino.
