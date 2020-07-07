@@ -50,6 +50,7 @@ Configurazione Base
    wizard2
    wizard2_provisioning
    dashboard
+   wizard2_others
    app_mobile
 
 Provisioning
