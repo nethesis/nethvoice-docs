@@ -25,19 +25,18 @@ le seguenti pagine:
 
 Il wizard di prima configurazione consente di installare e configurare agevolmente tutte le componenti di un centralino.
 
-Visitando:
+È possibile raggiungere l'applicazione web agli indirizzi
 
-- `https://IP_DEL_SERVER/NOME_PRODOTTO`
+- ``https://IP_DEL_SERVER/NOME_PRODOTTO`` (es.: \https://192.168.1.1/|product_command|)
 
-- `https://IP_DEL_SERVER/freepbx/admin`
+- ``https://IP_DEL_SERVER/freepbx/admin``
 
-è possibile raggiungere l'applicazione web.
+Per l'accesso iniziale utilizzare le credenziali
 
-Le credenziali per il login sono le seguenti:
+- nome utente ``admin``
 
-`username: admin`
+- password ``Nethesis,1234``
 
-`password: Nethesis,1234`
 
 Modalità utenti per il centralino
 =================================
