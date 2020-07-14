@@ -14,6 +14,7 @@ Sorgenti
 ........
 
 Cliccare sul bottone "Crea nuova sorgente" e compilare il form che si presenta:
+
 - Tipo database: specificare la tipologia di database su cui andare a prendere le informazioni
 - Nome database: specificare il nome del database a cui connettersi
 - Indirizzo database: specificare l'indirizzo per collegarsi al database (localhost, socket o IP esterni)
@@ -27,9 +28,10 @@ Premere "Salva" per aggiungere la sorgente database. La sorgente appena creata a
 Template
 ........
 
-I template sono il fac-simile per le vostre schede cliente. Utilizzano il motore `ejs`, che ha una sintassi *JavaScript-like*, che vi permette di scrivere codice html utilizzando specifiche direttive che potete trovare nel sito https://github.com/tj/ejs.
+I template sono il fac-simile per le vostre schede cliente. Utilizzano il motore `ejs`, che ha una sintassi *JavaScript-like*, che vi permette di scrivere codice HTML utilizzando specifiche direttive che potete trovare nel sito https://github.com/tj/ejs.
 
 Cliccare sul bottone "Crea nuovo template" per iniziare il processo di creazione:
+
 - Nome: specificare il nome del template
 - Results: contiene l'output della vostra query in formato JSON, utilizzate il campo di testo per effettuare delle prove e vedere come il vostro template HTML risulterà essere con i vostri dati.
 - Codice (ejs): in questo campo di testo, inserite il codice del vostro template, che rispetta la sintassi `ejs`, utilizzando i valori sopra indicati (che non sono altro che le colonne di risultato della vostra query)
@@ -41,6 +43,7 @@ Schede
 ......
 
 Una volta creata la sorgente e il template della vostra scheda, in questa sessione dovrete unire le due informazioni per far si che la scheda venga creata correttamente. Cliccare sul bottone "Crea nuova scheda" e compilare il form:
+
 - Nome: nome della scheda cliente
 - Sorgente: specificare la sorgente di database precedentemente creata
 - Template: specificare il template da associare a quello precedentemente creato
@@ -54,13 +57,13 @@ Premere il tasto "Salva" per salvare la vostra scheda cliente.
 
 *Esempio*:
 
-Se la vostra query è di questo tipo:
+Se la vostra query è di questo tipo: ::
 
-`select * from phonebook where homephone like '%150' or workphone like '%850' or cellphone like '%150' or fax like '%850'`
+  select * from phonebook where homephone like '%150' or workphone like '%850' or cellphone like '%150' or fax like '%850'
 
-dovrà diventare così:
+dovrà diventare così: ::
 
-`select * from phonebook where homephone like '%$NUMBER' or workphone like '%$NUMBER' or cellphone like '%$NUMBER' or fax like '%$NUMBER'`
+ select * from phonebook where homephone like '%$NUMBER' or workphone like '%$NUMBER' or cellphone like '%$NUMBER' or fax like '%$NUMBER'
 
 La variabile `$NUMBER` non è altro che il numero chiamante del centralino a cui la scheda cliente fa riferimento per effettuare la raccolta dei dati da mostrare.
 
