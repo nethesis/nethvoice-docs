@@ -8,20 +8,103 @@ Wizard prima configurazione
     
     Fare riferimento a :ref:`wizard-section` per la versione precedente
 
-In questa sezione sono descritte le nuove funzionalità introdotte dal
-:ref:`nuovo sistema di provisioning <provisioning-phone2-section>` basato sul
-progetto Tancredi. Le differenze rispetto all'interfaccia precedente riguardano
-le seguenti pagine:
+Il wizard di prima configurazione consente di installare e configurare agevolmente tutte le componenti di un centralino.
 
-- :guilabel:`Dispositivi` è stata spostata in una sezione del menù a sé stante,
-  composta dalle voci :guilabel:`Telefoni` e :guilabel:`Modelli`.
+È possibile raggiungere l'applicazione web agli indirizzi
 
-- :guilabel:`Configurazioni` è stata spostata in una sezione del menù a sé
-  stante.
+- ``https://IP_DEL_SERVER/NOME_PRODOTTO`` (es.: \https://192.168.1.1/|product_command|)
 
-- :guilabel:`Gestione multipla telefoni` è stata aggiunta sotto la sezione
-  :ref:`Applicazioni<wizard2-telefoni-multipli>`.
+- ``https://IP_DEL_SERVER/freepbx/admin``
 
+Per l'accesso iniziale utilizzare le credenziali
+
+- nome utente ``admin``
+
+- password ``Nethesis,1234``
+
+
+Modalità utenti per il centralino
+=================================
+Una volta effettuato il login, se non è ancora stato configurato un account provider sulla macchina, l'interfaccia mostrerà la possibilità di scegliere se installare un account provider LDAP locale o configurarlo manualmente.
+
+Nel primo caso, non verranno richieste ulteriori configurazioni, mentre nel secondo si verrà rediretti all'interfaccia di |parent_product|, dove sarà possibile configurare il provider degli utenti.
+
+Se il provider scelto non è locale, non sarà possibile creare gli utenti, che dovranno essere quindi creati manualmente sul provider stesso prima di procedere con la configurazione, con un provider locale invece sarà possibile creare gli utenti direttamente in |product|.
+
+Una volta scelta la modalità, si procede alla configurazione degli utenti.
+
+Utenti
+======
+Il primo passo nella configurazione di |product| è definire la lista di utenti e l'abbinamento con il loro interno telefonico.
+
+In caso di account provider remoto in questa sezione comparirà l'elenco degli utenti che |parent_product| recupera remotamente.
+
+In caso di account provider locale in questa sezione comparirà invece l'elenco degli utenti l'elenco delgi utenti di |parent_product| e ci sarà la possibilità di crearne direttamente da qui di nuovi scegliendo username e il nome completo.
+
+Interni
+-------
+È possibile ora inserire gli interni relativi per ogni utente:
+
+- Inserire il numero dell'interno (consigliato a partire dal numero 200) nel campo di testo
+- Cliccare su Inserisci
+- L'utente si evidenzia e una spunta verde compare se tutto è andato a buon fine
+
+Importazione utenti da csv
+..........................
+
+Nei centralini che non usano un account provider esterno, è possibile importare gli utenti con un file CSV.
+
+Creare un file di testo, con un utente per riga e il formato
+
+::
+
+  <NOME UTENTE>,<NOME COMPLETO>,[INTERNO],[PASSWORD UTENTE],[CELLULARE],[VOICEMAIL],[INTERNO WEBRTC],[GRUPPI CTI],[PROFILO CTI]
+
+Per esempio:
+
+::
+
+  mario,Mario Rossi
+  paolo,Paolo Bianchi,200
+  carlo201,Carlo Neri,201,Carlo1@.!
+  francesco,Francesco Verdi,202,,33312312343,FALSE,TRUE,Sviluppo|Assistenza|Tecnici,Advanced
+  andrea,Andrea Rossi,203,Andrea1234,,TRUE,TRUE,Commerciali,Standard
+
+Cliccare su :guilabel:`Importa` e selezionare il file creato.
+
+Nella finestra che si aprirà, fare click su :guilabel:`Importa` e attendere che gli utenti vengano creati.
+
+Se viene omesso l'interno, verranno creati solo gli utenti.
+
+Se il campo *password* non viene compilato, la password sarà generata casualmente.
+
+È possibile utilizzare la funzione anche per assegnare gli interni ad utenti già creati, ma senza interno assegnato.
+
+In questo caso, il campo *password* verrà ignorato.
+
+Il tasto esporta consente di scaricare un modello di CSV con gli attuali utenti da modificare per poi importare nuovamente. Le righe precedute da # verranno considerate commenti. I gruppi CTI, una lista separata da pipe `|` verranno creati automaticamente. Il profilo CTI deve essere scelto tra quelli già creati
+
+Gruppi
+------
+È possibile creare dei gruppi utente che poi saranno visibili e utilizzabili nelle applicazioni, come ad esempio nel |product_cti|
+
+- Cliccare il bottone "Crea nuovo gruppo"
+- Specificare un nome e salvare
+- Il gruppo compare tra la lista
+
+Profili
+-------
+Il centralino prevede di specificare determinate funzionalità per ogni utente e queste funzionalità vengono raggruppate in dei profili.
+
+Con l'installazione, vengono creati di default 3 profili che contengono l'abilitazione o meno a certe funzionalità.
+
+- Base: funzionalità minime per l'utente
+- Standard: funzionalità di gestione classiche per l'utente
+- Avanzato: quasi tutte le funzionalità sono sbloccate, per l'utente Avanzato
+
+È possibile creare anche nuovi profili, duplicando uno esistente o creandone di nuovi e specificando le varie funzionalità
+
+.. note:: Ricordarsi di abilitare sui profili dove necessario l'accesso ai gruppi utente precedentemente creati.
 
 Il wizard di prima configurazione consente di installare e configurare agevolmente tutte le componenti di un centralino.
 
@@ -328,17 +411,17 @@ Come per i dispositivi, questa sezione scansiona la vostra rete e cerca dei gate
 - Modello: specificare il modello del gateway
 - Impostazioni dinamiche in base al modello:
 
- - ISDN (Specificare per la linea se è Point-Point or Point-MultiPoint)
- - PRI
- - FXS (Specificare per ogni porta, l'interno da assegnare scegliendo un utente precedentemente configurato)
- - FXO (Specificare direttamente il numero, nel campo di testo)
+  * ISDN (Specificare per la linea se è Point-Point or Point-MultiPoint)
+  * PRI
+  * FXS (Specificare per ogni porta, l'interno da assegnare scegliendo un utente precedentemente configurato)
+  * FXO (Specificare direttamente il numero, nel campo di testo)
 
 Una volta salvate le impostazioni è possibile caricare la configurazione sul gateway tramite il bottone "Carica"
 Il gateway prende la configurazione e si riavvia, vengono inoltre creati i fasci relativi.
 
 VoIP
 ----
-É possibile creare dei fasci VoIP selezionando uno dei provider supportati, e inserendo le informazioni necessarie.
+È possibile creare dei fasci VoIP selezionando uno dei provider supportati, e inserendo le informazioni necessarie.
 
 Premere "Crea" per creare la configurazione relativa per quel fascio VoIP.
 
@@ -358,7 +441,7 @@ In uscita
 ---------
 In questa sezione è presente la lista delle rotte in uscita presenti, la prima volta che questa pagina viene visitata, il wizard vi propone delle rotte in uscita di default con i pattern di chiamate specifici per le diverse lingue.
 
-É possibile inoltre specificare l'ordine con cui usare i fasci, precedentemente creati, e regolare così in maniera personalizzata il percorso delle chiamate in uscita.
+È possibile inoltre specificare l'ordine con cui usare i fasci, precedentemente creati, e regolare così in maniera personalizzata il percorso delle chiamate in uscita.
 
 Premendo il tasto "Salva" la configurazione viene scritta nel centralino e da quel momento è possibile effettuare chiamate verso l'esterno (avendo opportunamente configurato i fasci negli step precedenti).
 
@@ -411,5 +494,5 @@ La sezione "Report" riporta l'elenco completo degli utenti del centralino specif
 - Password Voicemail
 - Password utente (se l'utente è stato creato da |product|)
 
-É presente anche la possibilità di stampare l'elenco in formato PDF cliccando sul bottone "Stampa report PDF"
+È presente anche la possibilità di stampare l'elenco in formato PDF cliccando sul bottone "Stampa report PDF"
 

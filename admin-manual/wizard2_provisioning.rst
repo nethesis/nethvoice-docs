@@ -291,7 +291,7 @@ Preferenze
 ==========
 
 * :guilabel:`Indirizzo server NTP` Il nome host o l'indirizzo IP del server 
-  NTP (Network Time Protocol) per impostare automaticamente e correttamente l'orario del telefono.
+  NTP (Network Time Protocol) per impostare automaticamente l'orario del telefono.
 
 * :guilabel:`Pianificazione del provisioning` Selezionando **Solo all'avvio** i telefoni
   rinnovano la propria configurazione dopo l'accensione o il riavvio. Invece selezionando
@@ -311,7 +311,7 @@ Preferenze
   
 * :guilabel:`Lingua telefono` Lingua utilizzata dallo schermo del telefono e dalla sua interfaccia web.
  
-* :guilabel:`Fuso orario` Imposta il fuso orario del telefono, necessario il passaggio all'ora legale.
+* :guilabel:`Fuso orario` Imposta il fuso orario del telefono, necessario per il passaggio all'ora legale.
 
 * :guilabel:`Toni di chiamata` Sono specifici di ogni nazione e indicano lo stato della chiamata mediante
   un segnale acustico: squillo libero, occupato, riagganciato...

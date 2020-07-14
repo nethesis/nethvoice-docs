@@ -7,6 +7,23 @@ Note di rilascio |version|
 Questa release è basata su `Asterisk 13 <https://wiki.asterisk.org/wiki/display/AST/New+in+13>`_
 e `FreePBX 14 <https://www.freepbx.org/freepbx-14-release-candidate/>`_:
 
+Cambiamenti principali al 2020-07-06
+=====================================
+
+Le nuove installazioni di |product| utilizzano il
+:ref:`nuovo sistema di provisioning <provisioning-phone2-section>` basato sul
+progetto Tancredi. Le differenze rispetto all'interfaccia di amministrazione precedente
+(Wizard di prima configurazione) riguardano le seguenti pagine:
+
+* :guilabel:`Dispositivi` è stata spostata in una sezione del menù a sé stante,
+  composta dalle voci :guilabel:`Telefoni` e :guilabel:`Modelli`.
+* :guilabel:`Configurazioni` è stata spostata in una sezione del menù a sé
+  stante.
+* :guilabel:`Gestione multipla telefoni` è stata aggiunta sotto la sezione
+  :ref:`Applicazioni<wizard2-telefoni-multipli>`.
+
+Le installazioni di |product| esistenti possono migrare al nuovo sistema di provisioning come
+spiegato in :ref:`provisioning-migration-section`.
 
 Cambiamenti principali al 2020-03-18
 ====================================
