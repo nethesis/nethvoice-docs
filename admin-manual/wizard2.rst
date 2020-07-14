@@ -8,21 +8,6 @@ Wizard prima configurazione
     
     Fare riferimento a :ref:`wizard-section` per la versione precedente
 
-In questa sezione sono descritte le nuove funzionalità introdotte dal
-:ref:`nuovo sistema di provisioning <provisioning-phone2-section>` basato sul
-progetto Tancredi. Le differenze rispetto all'interfaccia precedente riguardano
-le seguenti pagine:
-
-- :guilabel:`Dispositivi` è stata spostata in una sezione del menù a sé stante,
-  composta dalle voci :guilabel:`Telefoni` e :guilabel:`Modelli`.
-
-- :guilabel:`Configurazioni` è stata spostata in una sezione del menù a sé
-  stante.
-
-- :guilabel:`Gestione multipla telefoni` è stata aggiunta sotto la sezione
-  :ref:`Applicazioni<wizard2-telefoni-multipli>`.
-
-
 Il wizard di prima configurazione consente di installare e configurare agevolmente tutte le componenti di un centralino.
 
 È possibile raggiungere l'applicazione web agli indirizzi
