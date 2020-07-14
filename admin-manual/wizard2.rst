@@ -327,10 +327,10 @@ Come per i dispositivi, questa sezione scansiona la vostra rete e cerca dei gate
 - Modello: specificare il modello del gateway
 - Impostazioni dinamiche in base al modello:
 
- - ISDN (Specificare per la linea se è Point-Point or Point-MultiPoint)
- - PRI
- - FXS (Specificare per ogni porta, l'interno da assegnare scegliendo un utente precedentemente configurato)
- - FXO (Specificare direttamente il numero, nel campo di testo)
+  * ISDN (Specificare per la linea se è Point-Point or Point-MultiPoint)
+  * PRI
+  * FXS (Specificare per ogni porta, l'interno da assegnare scegliendo un utente precedentemente configurato)
+  * FXO (Specificare direttamente il numero, nel campo di testo)
 
 Una volta salvate le impostazioni è possibile caricare la configurazione sul gateway tramite il bottone "Carica"
 Il gateway prende la configurazione e si riavvia, vengono inoltre creati i fasci relativi.
