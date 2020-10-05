@@ -255,6 +255,7 @@ Fanvil
 
 **Versione FIRMWARE 2.0 o superiore**
 
+* X1S, X1SP
 * X210
 * X3, X3S, X3SP, X3G, X3SG, X3U
 * X4, X4G, X4SG, X4U
