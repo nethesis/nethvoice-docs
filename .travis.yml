@@ -17,8 +17,6 @@ install:
 script:
     - pushd ${BUILD_DIR}/
     - sphinx-build -D language=it ${SPHINX_OPTS} -d _build/doctrees/it . _build/webroot/it/${TARGET_DIR}
-    - sphinx-build -D language=en ${SPHINX_OPTS} -d _build/doctrees/en . _build/webroot/en/${TARGET_DIR}
-    - sphinx-build -D language=es ${SPHINX_OPTS} -d _build/doctrees/es . _build/webroot/es/${TARGET_DIR}
     - popd
 
 deploy:
