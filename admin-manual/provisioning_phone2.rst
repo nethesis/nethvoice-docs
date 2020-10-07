@@ -255,6 +255,7 @@ Fanvil
 
 **Versione FIRMWARE 2.0 o superiore**
 
+* X1S, X1SP
 * X210
 * X3, X3S, X3SP, X3G, X3SG, X3U
 * X4, X4G, X4SG, X4U
@@ -268,6 +269,7 @@ Yealink
 **Versione FIRMWARE 0.84 o superiore**
 
 * T19(P) E2, T21(P) E2, T23P/G, T27P/G, T29G
+* T30/P, T31/P/G, T33P/G
 * T40P/G, T41P/S/U, T42G/S/U, T43U, T46G/S/U, T48G/S/U, T49G
 * T52S, T53/W, T54S/W, T56A, T57W, T58V/A, VP59
 
