@@ -22,7 +22,6 @@ I requisiti per utillizzare l'app sono:
 
         config setprop nethvoice PublicHost ALIAS
         expand-template /etc/asterisk/nethcti_push_configuration.json
-
         expand-template /etc/nethcti/nethcti.json
 
         systemctl reload nethcti-server
