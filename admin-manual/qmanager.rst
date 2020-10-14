@@ -25,7 +25,7 @@ Personalizzare le soglie degli allarmi
 
 |product| include un demone che controlla lo stato delle code e scatena un allarme se alcuni parametri escono da valori predefiniti. Questi allarmi sono rivolti al manager del call center, che potrà così essere notificato tempestivamente nel caso in cui si verifichi un calo della qualità del servizio.
 
-Di default, le notifiche vengono mostrate nella dashboard del QManager (Supervisore delle code) di |product_cti|, ma è possibile anche riceverle via email
+Di default, le notifiche vengono mostrate nella dashboard del QManager (Supervisore delle code) di |product_cti|, ma è possibile anche riceverle via email.
 
 Gli allarmi generati sono:
 
