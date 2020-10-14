@@ -32,7 +32,7 @@ Gli allarmi generati sono:
 - numero di agenti insufficiente nella coda: la notifica viene inviata se ci sono più di *MaxCallPerOp* (default 3) chiamate per ogni operatore
 - tempo di attesa medio elevato sulla coda: la notifica viene inviata se il tempo medio di attesa in coda è maggiore di *MaxHoldtime* (default 360s)
 - carico elevato sulla coda: la notifica viene inviata se ci sono più di ``MaxCalls`` (default 10) chiamate in attesa e il tempo media di attesa in coda è maggiore di ``MaxHoldtime``
-- numero elevato di chiamate in attesa nella coda: la notifica viene inviata se ci sono più di *MaxCalls* chiamate in attesa e il tempo di attesa della prima chiamata è maggiore di *CallersMaxWait* (default 360s).
+- numero elevato di chiamate in attesa nella coda: la notifica viene inviata se ci sono più di ``MaxCalls`` chiamate in attesa e il tempo di attesa della prima chiamata è maggiore di ``CallersMaxWait`` (default 360s)
 
 È possibile personalizzare i valori delle soglie di ciascun allarme modificando i valori nel DB di configurazione con i comandi:
 
