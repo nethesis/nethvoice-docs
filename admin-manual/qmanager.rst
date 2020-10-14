@@ -6,7 +6,7 @@ QManager (Supervisore delle Code)
 
 QManager è l’applicazione sviluppata per il **«Supervisore delle Code»** e consente una gestione completa di tutte le code del |product|.
 
-Per abilitarlo è necessario installare nel software center di |parent_product| la relativa applicazione.
+Per abilitarlo è necessario installare la relativa applicazione dal Software Center di |parent_product|.
 
 Il QManager nasce per:
 
