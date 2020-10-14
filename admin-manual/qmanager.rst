@@ -49,7 +49,7 @@ I parametri modificabili sono:
 
 * ``Debug``: se impostato a ``True``, aumenta la verbosità del log su syslog (:file:`/var/log/messages`). Default: ``False``
 
-EnableEmail: se impostato a True, abilita la notifica via email. Default False
+* ``EnableEmail``: se impostato a ``True``, abilita la notifica via email. Default: ``False``
 
 * ``EmailDestination``: email di destinazione degli allarmi. È possibile specificare un solo indirizzo. Se vuota, le email sono inviate a ``voicemanagers@DOMAIN``. Default: vuoto
 
