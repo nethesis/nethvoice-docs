@@ -1,5 +1,5 @@
 =================================
-QManager (Supervisore delle Code)
+QManager - Supervisore delle code
 =================================
 
 .. _qmanager-ref-label:
