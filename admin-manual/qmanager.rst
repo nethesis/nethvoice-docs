@@ -12,7 +12,7 @@ Il QManager nasce per:
 
 - avere in tempo reale i dati delle code monitorate
 
-- essere avvisato in tempo reale di situazioni critiche (troppe chiamate, pochi agenti, attese elevate, etc.)
+- essere avvisati in tempo reale di situazioni critiche (troppe chiamate, pochi agenti, attese elevate, etc.)
 
 - interagire con lo stato degli agenti
 
