@@ -55,7 +55,7 @@ EmailDestination: email di destinazione degli allarmi. È possibile specificare 
 
 MaxCallPerOp: chiamate massime per ogni operatore. Default 3.
 
-MaxCalls: chiamate massime. Default 10.
+* ``MaxCalls``: chiamate massime. Default: ``10``.
 
 * ``MaxHoldtime``: attesa media massima della coda, espressa in secondi. Default: ``360``
 
