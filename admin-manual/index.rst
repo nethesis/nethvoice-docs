@@ -101,6 +101,7 @@ Moduli Aggiuntivi
 .. toctree::
    :maxdepth: 2
 
+   qmanager
    hotel
    inbound_report
    queue_report
