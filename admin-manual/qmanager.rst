@@ -61,4 +61,4 @@ MaxHoldtime: attesa media massima della coda. Default 360 secondi.
 
 CallersMaxWait: attesa massima del primo chiamante in coda. Default 360 secondi.
 
-status: stato del servizio. Default enabled.
+* ``status``: stato del servizio. Default: ``enabled.``
