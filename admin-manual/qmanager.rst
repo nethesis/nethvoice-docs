@@ -47,7 +47,7 @@ I parametri modificabili sono:
 
 CheckInterval: secondi di intervallo tra i controlli alle code. Default 10
 
-Debug: se impostato a True, aumenta la verbosità del log su syslog (/var/log/messages). Default: False
+* ``Debug``: se impostato a ``True``, aumenta la verbosità del log su syslog (:file:`/var/log/messages`). Default: ``False``
 
 EnableEmail: se impostato a True, abilita la notifica via email. Default False
 
