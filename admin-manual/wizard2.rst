@@ -10,9 +10,11 @@ Wizard prima configurazione
 
 Il wizard di prima configurazione consente di installare e configurare agevolmente tutte le componenti di un centralino.
 
-È possibile raggiungere l'applicazione web agli indirizzi
+È possibile raggiungere l'applicazione web all'indirizzo
 
 - ``https://IP_DEL_SERVER/NOME_PRODOTTO`` (es.: \https://192.168.1.1/|product_command|)
+
+Mentre l'interfaccia per la configurazione avanzata, da utilizzare se necessaria solo dopo aver completato il wizard di prima configurazione, è possibile raggiungerla all'indirizzo web 
 
 - ``https://IP_DEL_SERVER/freepbx/admin``
 
