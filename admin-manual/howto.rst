@@ -1,19 +1,26 @@
 |product|: installazione codec g729
 ===================================
 
-Per installare ed attivare il codec g729 Open Source ecco la procedura (comporta il riavvio di Asterisk e quindi l'eventuale caduta di chiamate in corso):
+Se è già installato in |product| un codec g729, il seguente comando deve stampare ``INSTALLED``: ::
 
-.. code-block:: bash
+  asterisk -rx 'core show translation' | grep -q g729 && echo INSTALLED
 
-  cd /usr/lib64/asterisk/modules/
-  wget http://asterisk.hosting.lv/bin/codec_g729-ast130-gcc4-glibc-x86_64-pentium4.so
-  mv codec_g729-ast130-gcc4-glibc-x86_64-pentium4.so codec_g729.so
-  chmod 755 codec_g729.so
+.. warning::
+
+  Il riavvio del servizio ``asterisk`` causa la caduta delle chiamate in corso
+
+Per installare ed attivare il codec g729 di Intel eseguire i seguenti comandi: ::
+
+  yum install -y asterisk-codecs-g729
   systemctl restart asterisk
 
-Il codec g729 Open Source non è compatibile con la versione a pagamento di Digium, che si può installare seguendo la procedura che vi forniranno con l'acquisto.
+Il codec g729 di Intel non è compatibile con la versione a pagamento di Digium, 
+che si può installare seguendo la procedura che vi forniranno con l'acquisto,
+dopo aver disintallato il pacchetto ``asterisk-codecs-g729`` con il comando: ::
 
-É possibile, quindi, utilizzare contemporaneamente solo una delle due versioni di g729, Open Source o Digium.
+  yum remove -y asterisk-codecs-g729
+  systemctl restart asterisk
+
 
 |product|: configurazione dell'IP locale
 ========================================
