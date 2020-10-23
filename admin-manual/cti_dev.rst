@@ -157,7 +157,7 @@ L'autenticazione ha successo e il server risponde con:
  tohash = "my_user:my_password:f4700adb35ad29ee16afe6c03c0196dfc74ec3b1"
  token  = HMAC-SHA1("my_user:my_password:f4700adb35ad29ee16afe6c03c0196dfc74ec3b1", "my_password") = "1d8062d1c85a8fe6983745a1ee318d1cd9b8bde1"
 
- $ echo -n "my_user:my_password:f4700adb35ad29ee16afe6c03c0196dfc74ec3b1" | openssl dgst -sha1 -hmac "my_password"
+ $ echo -n 'my_user:my_password:f4700adb35ad29ee16afe6c03c0196dfc74ec3b1' | openssl dgst -sha1 -hmac 'my_password'
  (stdin)= 1d8062d1c85a8fe6983745a1ee318d1cd9b8bde1
 
 4. Chiamiamo la rest api *phonebook/search*:
