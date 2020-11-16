@@ -15,6 +15,7 @@ Il nuovo report unificato di |product| consente di utilizzare un'unica interfacc
 Il report è accessibile all'indirizzo ``https://<server_name>/pbx-report``.
 Ogni utente può accedere con le stesse credenziali utilizzate all'interno del |product_cti|.
 Le tabelle e i grafici visualizzati saranno filtrati in base al profilo |product_cti| associato all'utente.
+Accedendo con l'utente ``admin`` di |product|, sarà possibile visualizzare sempre tutti i dati.
 
 Il report consente l'accesso solo ai dati storicizzati a partire dal giorno precedente, indietro fino alla data di primo
 utilizzo del centralino. Tutte le notti un processo elabora gli eventi della giornata e li rende disponibili per visualizzare
