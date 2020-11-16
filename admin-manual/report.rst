@@ -1,10 +1,10 @@
 =============
-Report (Beta)
+Report (beta)
 =============
 
 .. warning::
 
-   Il nuovo report è una Beta, ovvero il software non è in versione definitiva.
+   Il nuovo report è una **beta**, ovvero il software non è in versione definitiva.
    Pertanto può contenere bug e funzionalità implementate solo in parte.
 
 Il nuovo report unificato di |product| consente di utilizzare un'unica interfaccia web per consultare:
