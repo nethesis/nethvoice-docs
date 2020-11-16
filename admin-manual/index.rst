@@ -105,6 +105,7 @@ Moduli Aggiuntivi
    hotel
    inbound_report
    queue_report
+   report
 
 
 |product_cti|: Guida Sviluppatori
