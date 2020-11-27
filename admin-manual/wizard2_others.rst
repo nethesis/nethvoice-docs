@@ -83,19 +83,19 @@ Una volta completata la compilazione del form premere "Salva" per salvare le inf
 Aggiunta di rubriche esterne
 ----------------------------
 
-È possibile aggiungere rubriche esterne a quella di |product| per integrarla con contatti aggiuntivi residenti su database esterni.
+Dal menù :menuselection:`Applicazioni -> Sorgenti rubrica` è possibile definire sorgenti di
+rubriche esterne a quella di |product| per integrarla con contatti residenti su database esterni.
 
-Per accedere al servizio è sufficiente selezionare il menù :menuselection:`Applicazioni -> Sorgenti rubrica`.
+Per configurare una nuova sorgente sono necessari tre passaggi:
 
-L'integrazione viene eseguita creando una nuova sorgente da cui verranno prelevati i dati da sincronizzare con la rubrica centralizzata (tabella ``phonebook`` del database ``phonebook``) in maniera schedulata.
+1. **Sorgente:** configurazione dell'accesso al database sorgente dei contatti
 
-Per creare una nuova sorgente sono necessari tre passaggi:
+2. **Mappa:** associazione dei campi del database sorgente a quelli della rubrica di |product|
 
-1. **Sorgente:** creazione nuova sorgente
-2. **Mappa:** configurazione del mapping tra i campi del database sorgente e i campi del database destinatario (rubrica centralizzata ``phonebook.phonebook``)
 3. **Impostazioni:** scelta dell'intervallo di sincronizzazione
 
-**1. Sorgente**
+Sorgente
+........
 
 Al momento l'integrazione riguarda sorgenti di tipo MySQL e per ognuna di esse è sufficiente inserire:
 
@@ -105,13 +105,15 @@ Al momento l'integrazione riguarda sorgenti di tipo MySQL e per ognuna di esse �
 
 Il pulsante "Esegui" consente la visualizzazione dell'anteprima dei dati prelevati dalla sorgente.
 
-**2. Mappa**
+Mappa
+.....
 
 In questo passaggio è necessario stabilire la corrispondenza tra i campi del database sorgente e quelli destinatari della rubrica centralizzata.
 
 Per esempio, si potrebbe associare il campo ``phone`` sorgente con quello destinatario ``workphone``.
 
-**3. Impostazioni**
+Impostazioni
+............
 
 È possibile scegliere l'intervallo di sincronizzazione dei contatti tra:
 
