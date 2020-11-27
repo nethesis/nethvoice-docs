@@ -115,8 +115,7 @@ MySQL
 CSV
 
   Nel campo :guilabel:`URL` si può indicare l'indirizzo web di un file in formato CSV
-  (*Comma-Separated Values*, valori separati da virgola). Sono accettati indirizzi
-  che iniziano con ``http://`` e ``https://``.
+  (*Comma-Separated Values*, valori separati da virgola e doppie virgolette "" come qualificatori di testo, obbligatorio se il campo contiene una virgola o uno spazio). Sono accettati indirizzi che iniziano con ``http://`` e ``https://``.
 
   In alternativa è possibile caricare tramite il pulsante a destra dello stesso
   campo di testo un file in formato CSV. In questo caso il campo :guilabel:`URL` sarà
