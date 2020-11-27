@@ -94,21 +94,42 @@ Per configurare una nuova sorgente sono necessari tre passaggi:
 
 3. **Impostazioni:** scelta dell'intervallo di sincronizzazione
 
-Sorgente
-........
+Sorgente rubrica
+................
 
-Al momento l'integrazione riguarda sorgenti di tipo MySQL e per ognuna di esse è sufficiente inserire:
+Alla sorgente va assegnato un :guilabel:`Nome rubrica` che deve essere
+univoco, per poter distinguere l'origine dei contatti importati nella rubrica di |product|.
 
-- *nome rubrica:* un qualsiasi nome significativo univoco che verrà utilizzato per identificare i dati importati nella rubrica centralizzata
-- *dati di accesso al db*: tipo database, indirizzo e porta server, utente e password
-- *query*: query utilizzata per prelevare i dati da importare nella rubrica centralizzata. Dal valore presente di default, sostituire la parola ``[table]`` con il nome della tabella da utilizzare
+In base al :guilabel:`Tipo sorgente` vanno poi specificati ulteriori attributi:
 
-Il pulsante "Esegui" consente la visualizzazione dell'anteprima dei dati prelevati dalla sorgente.
+MySQL
+
+  Sono necessari nome database, indirizzo/porta server, nome utente e password del database
+  sorgente.
+
+  Inoltre nell'area di testo :guilabel:`Select query` va inserita l'interrogazione
+  in linguaggio SQL utilizzata per prelevare i dati da importare nella rubrica centralizzata.
+  Se presente nell'area di testo, sostituire la parola ``[table]`` con il nome della
+  tabella sorgente.
+
+CSV
+
+  Nel campo :guilabel:`URL` si può indicare l'indirizzo web di un file in formato CSV
+  (*Comma-Separated Values*, valori separati da virgola). Sono accettati indirizzi
+  che iniziano con ``http://`` e ``https://``.
+
+  In alternativa è possibile caricare tramite il pulsante a destra dello stesso
+  campo di testo un file in formato CSV. In questo caso il campo :guilabel:`URL` sarà
+  valorizzato automaticamente.
+
+  Il file CSV deve essere in codifica UTF-8 e contenere i nomi delle colonne sulla prima riga.
+
+Il pulsante :guilabel:`Verifica` consente la visualizzazione dell'anteprima dei dati prelevati dalla sorgente.
 
 Mappa
 .....
 
-In questo passaggio è necessario stabilire la corrispondenza tra i campi del database sorgente e quelli destinatari della rubrica centralizzata.
+In questo passaggio è necessario stabilire la corrispondenza tra i campi del database sorgente e quelli destinatari della rubrica di |product|.
 
 Per esempio, si potrebbe associare il campo ``phone`` sorgente con quello destinatario ``workphone``.
 
