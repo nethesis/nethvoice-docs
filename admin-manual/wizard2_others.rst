@@ -128,6 +128,10 @@ Una volta creata la sorgente, è possibile:
 - eseguire subito la sincronizzazione tramite il pulsante :guilabel:`Sincronizza`
 - abilitare/disabilitare la sincronizzazione
 
+Per ulteriori informazioni sulla rubrica di |product| e su come integare altri tipi
+di sorgenti, come database ODBC o script personalizzati, consultare
+`Rubrica Centralizzata <http://nethserver.docs.nethesis.it/it/v7/phonebook-mysql.html>`_.
+
 URL parametrizzati
 ------------------
 
