@@ -5,6 +5,9 @@ body {
     font-size: 15px;
     line-height: 24px;
 }
+blockquote {
+    font-size: inherit;
+}
 .container {
     background-color: #fff;
     border-radius: 6px;

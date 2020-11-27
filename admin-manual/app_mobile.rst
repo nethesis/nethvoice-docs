@@ -90,6 +90,9 @@ Una volta adattata la configurazione lato Server Manager e interfaccia avanzata 
 Configurazione
 --------------
 
+.. note:: La configurazione tramite provisioning è possibile solo utilizzando la precedente versione fare riferimento a
+          :ref:`provisioning-section` e a :ref:`provisioning-migration-section`. 
+
 É possibile configurare l'applicazione tramite il provisioning di |product|.
 
 Per prima cosa collegare lo smartphone alla rete locale del |product| e andare in :guilabel:`Impostazioni -> Provisioning Settings`.

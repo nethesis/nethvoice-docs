@@ -83,35 +83,57 @@ Una volta completata la compilazione del form premere "Salva" per salvare le inf
 Aggiunta di rubriche esterne
 ----------------------------
 
-È possibile aggiungere rubriche esterne a quella di |product| per integrarla con contatti aggiuntivi residenti su database esterni.
+Dal menù :menuselection:`Applicazioni -> Sorgenti rubrica` è possibile definire sorgenti di
+rubriche esterne a quella di |product| per integrarla con contatti residenti su database esterni.
 
-Per accedere al servizio è sufficiente selezionare il menù :menuselection:`Applicazioni -> Sorgenti rubrica`.
+Per configurare una nuova sorgente sono necessari tre passaggi:
 
-L'integrazione viene eseguita creando una nuova sorgente da cui verranno prelevati i dati da sincronizzare con la rubrica centralizzata (tabella ``phonebook`` del database ``phonebook``) in maniera schedulata.
+1. **Sorgente:** configurazione dell'accesso al database sorgente dei contatti
 
-Per creare una nuova sorgente sono necessari tre passaggi:
+2. **Mappa:** associazione dei campi del database sorgente a quelli della rubrica di |product|
 
-1. **Sorgente:** creazione nuova sorgente
-2. **Mappa:** configurazione del mapping tra i campi del database sorgente e i campi del database destinatario (rubrica centralizzata ``phonebook.phonebook``)
 3. **Impostazioni:** scelta dell'intervallo di sincronizzazione
 
-**1. Sorgente**
+Sorgente rubrica
+................
 
-Al momento l'integrazione riguarda sorgenti di tipo MySQL e per ognuna di esse è sufficiente inserire:
+Alla sorgente va assegnato un :guilabel:`Nome rubrica` che deve essere
+univoco, per poter distinguere l'origine dei contatti importati nella rubrica di |product|.
 
-- *nome rubrica:* un qualsiasi nome significativo univoco che verrà utilizzato per identificare i dati importati nella rubrica centralizzata
-- *dati di accesso al db*: tipo database, indirizzo e porta server, utente e password
-- *query*: query utilizzata per prelevare i dati da importare nella rubrica centralizzata. Dal valore presente di default, sostituire la parola ``[table]`` con il nome della tabella da utilizzare
+In base al :guilabel:`Tipo sorgente` vanno poi specificati ulteriori attributi:
 
-Il pulsante "Esegui" consente la visualizzazione dell'anteprima dei dati prelevati dalla sorgente.
+MySQL
 
-**2. Mappa**
+  Sono necessari nome database, indirizzo/porta server, nome utente e password del database
+  sorgente.
 
-In questo passaggio è necessario stabilire la corrispondenza tra i campi del database sorgente e quelli destinatari della rubrica centralizzata.
+  Inoltre nell'area di testo :guilabel:`Select query` va inserita l'interrogazione
+  in linguaggio SQL utilizzata per prelevare i dati da importare nella rubrica centralizzata.
+  Se presente nell'area di testo, sostituire la parola ``[table]`` con il nome della
+  tabella sorgente.
+
+CSV
+
+  Nel campo :guilabel:`URL` si può indicare l'indirizzo web di un file in formato CSV
+  (*Comma-Separated Values*, valori separati da virgola e doppie virgolette "" come qualificatori di testo, obbligatorio se il campo contiene una virgola o uno spazio). Sono accettati indirizzi che iniziano con ``http://`` e ``https://``.
+
+  In alternativa è possibile caricare tramite il pulsante a destra dello stesso
+  campo di testo un file in formato CSV. In questo caso il campo :guilabel:`URL` sarà
+  valorizzato automaticamente.
+
+  Il file CSV deve essere in codifica UTF-8 e contenere i nomi delle colonne sulla prima riga.
+
+Il pulsante :guilabel:`Verifica` consente la visualizzazione dell'anteprima dei dati prelevati dalla sorgente.
+
+Mappa
+.....
+
+In questo passaggio è necessario stabilire la corrispondenza tra i campi del database sorgente e quelli destinatari della rubrica di |product|.
 
 Per esempio, si potrebbe associare il campo ``phone`` sorgente con quello destinatario ``workphone``.
 
-**3. Impostazioni**
+Impostazioni
+............
 
 È possibile scegliere l'intervallo di sincronizzazione dei contatti tra:
 
@@ -125,6 +147,10 @@ Una volta creata la sorgente, è possibile:
 
 - eseguire subito la sincronizzazione tramite il pulsante :guilabel:`Sincronizza`
 - abilitare/disabilitare la sincronizzazione
+
+Per ulteriori informazioni sulla rubrica di |product| e su come integare altri tipi
+di sorgenti, come database ODBC o script personalizzati, consultare
+`Rubrica Centralizzata <http://nethserver.docs.nethesis.it/it/v7/phonebook-mysql.html>`_.
 
 URL parametrizzati
 ------------------
