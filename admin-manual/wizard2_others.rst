@@ -132,6 +132,87 @@ In questo passaggio è necessario stabilire la corrispondenza tra i campi del da
 
 Per esempio, si potrebbe associare il campo ``phone`` sorgente con quello destinatario ``workphone``.
 
+Ecco la mappa dei campi della Rubrica Centralizzata e di come vengono usati:
+
+.. list-table:: Campi Rubrica Centralizzata
+    :widths: 10 10
+    :header-rows: 1
+
+    * - owner_id
+      - Proprietario del contatto
+
+    * - type
+      - Sorgente di provenienza
+
+    * - homeemail
+      - Indirizzo email domicilio
+
+    * - workemail
+      - Indirizzo email lavorativo
+
+    * - homephone
+      - Numero telefonico domicilio
+
+    * - workphone
+      - Numero telefonico lavorativo
+
+    * - cellphone
+      - Numero cellulare
+
+    * - fax
+      - Numero fax
+
+    * - title
+      - Mansione
+
+    * - company
+      - Azienda
+
+    * - notes
+      - Note
+
+    * - name
+      - Nome e cognome
+
+    * - homestreet
+      - Indirizzo domicilio
+
+    * - homepob
+      - Casella postale domicilio
+
+    * - homecity
+      - Città domicilio
+
+    * - homeprovince
+      - Provincia domicilio
+
+    * - homepostalcode
+      - Codice postale domicilio
+
+    * - homecountry
+      - Stato/regione domicilio
+
+    * - workstreet
+      - Indirizzo lavorativo
+
+    * - workpob
+      - Casella postale lavoro
+
+    * - workcity
+      - Città lavorativa
+
+    * - workprovince
+      - Provincia lavorativa
+
+    * - workpostalcode
+      - Codice postale lavorativo
+
+    * - workcountry
+      - Stato/Regione lavorativa
+
+    * - url
+      -  Indirizzo WEB
+
 Impostazioni
 ............
 
