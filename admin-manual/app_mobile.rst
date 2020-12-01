@@ -90,7 +90,7 @@ Una volta adattata la configurazione lato Server Manager e interfaccia avanzata 
 Configurazione
 --------------
 
-.. note:: La configurazione tramite provisioning è possibile solo utilizzando la precedente versione fare riferimento a
+.. note:: La configurazione tramite provisioning è possibile solo utilizzando la precedente versione, fare riferimento a
           :ref:`provisioning-section` e a :ref:`provisioning-migration-section`. 
 
 É possibile configurare l'applicazione tramite il provisioning di |product|.
@@ -139,6 +139,9 @@ Scan&Play
 .. _app_mobile:
 
 L'applicazione Scan&Play è disponibile su smartphone e permette di scansionare i MAC address dei telefoni per velocizzare la configurazione e il provisioning.
+
+.. note:: E' possibile usare l'app Scan & Play solo con la precedente versione, fare riferimento a
+          :ref:`provisioning-section` e a :ref:`provisioning-migration-section`. 
 
 Requisiti
 ---------
