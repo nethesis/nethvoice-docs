@@ -376,6 +376,12 @@ La pagina delle Impostazioni permette di gestire diversi aspetti della configura
 
   1) **LDAP**, che comporta una pubblicazione in chiaro e ad accesso anonimo (senza cioè la necessità di credenziali di autenticazione); questa modalità è indicata se tutti i telefoni sono nella stessa rete di |product|
   2) **LDAPS**, che utilizza la crittografia e richiede delle credenziali di autenticazione per accedere; questa modalità è indicata in presenza di telefoni che si collegano a |product| da reti esterne
+  
+* :guilabel:`Sorgenti Rubrica`: in questa sezione è possibile abilitare/disabilitare le sorgenti di default da inserire nella rubrica di |product|.
+
+  1) **Numeri brevi Centralino**, gestibili tramite la sezione :menuselection:`Amministrazione -> Avanzate -> Applicazioni -> Codice Rapido di Chiamata`
+  2) **Interni Centralino**, gestibili tramite la sezione :menuselection:`Utenti -> Interni`
+  3) **Contatti condivisi del CTI**, si riferisce ai contatti pubblici aggiunti tramite la rubrica del |product_cti|
 
 .. warning::
 
