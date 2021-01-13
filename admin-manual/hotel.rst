@@ -120,4 +120,17 @@ Storico
 Qualora sia necessario consultare uno storico di tutte le chiamate effettuate dalle camere è possibile utilizzare la sezione **Storico**. Lo storico delle chiamate è filtrabile per data e numero di camera.
 
 
+FIAS
+====
+
+È possibile collegare |product_hotel| ad un gestionale alberghiero Oracle Opera, o a qualunque sia compatibile con il protocollo di scambio dati FIAS. |product| è certificato Oracle. Collegando |product_hotel| ad un PMS compatibile, sarà possibile controllare direttamente dall'interfaccia del PMS le seguenti funzionalità:
+
+* Check in, con abilitazione del telefono della camera
+* Check out
+* Impostazione ed esito della sveglia
+* addebito delle chiamate effettuate dalla camera
+* addebito di minibar ed extra, anche tramite codici telefonici
+* lingua dei messaggi audio per l'ospite in base alla lingua della prenotazione
+
+Per l'installazione e la configurazione, rivolgersi al supporto.
 
