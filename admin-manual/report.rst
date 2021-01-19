@@ -80,5 +80,5 @@ Grafici
 
 L'area dei grafici costituisce quella di maggior interesse per l'utente e costituisce il corpo del report della vista corrente.
 Ciascun grafico può essere esportato in almeno uno dei seguenti formati: CSV, PNG e PDF.
-Per motivi di leggibilità alcuni grafici mostrano soltanto i dati più rilevanti: il pulsante :guilabel:`Mostra dettagli` è possibile accedere al set completo dei dati del grafico.
+Per motivi di leggibilità, alcuni grafici mostrano soltanto i dati più rilevanti: attraverso il pulsante :guilabel:`Mostra dettagli` è possibile accedere al set completo dei dati del grafico.
 Alcuni tipologie di grafico consentono di nascondere uno o più set di dati che si vuole temporaneamente trascurare: per farlo è sufficiente cliccare sul relativo nome nella legenda del grafico.
