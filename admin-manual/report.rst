@@ -10,7 +10,7 @@ Report (beta)
 Il nuovo report unificato di |product| consente di utilizzare un'unica interfaccia web per consultare:
 
 - report code
-- report chiamate e costi (CDR, *call detail record*)
+- report chiamate e costi (CDR, Call Detail Record)
 
 Il report è accessibile all'indirizzo ``https://<server_name>/pbx-report``.
 Ogni utente può accedere con le stesse credenziali utilizzate all'interno del |product_cti|.
