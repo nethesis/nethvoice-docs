@@ -36,6 +36,11 @@ Report chiamate & costi (CDR)
 =============================
 
 Il report CDR mostra informazioni aggregate e di dettaglio relative al registro chiamate.
+Oltre alla sezione :guilabel:`Dashboard`, che presenta alcuni grafici riepilogativi, sono presenti le seguenti sezioni:
+
+- :guilabel:`Dati centralino`: informazioni sulle chiamate in ingresso, in uscita e interne al centralino
+- :guilabel:`Dati personali`: informazioni sulle chiamate interne, ricevute, o effettuate dall'utente loggato
+
 I grafici delle sezioni :guilabel:`Dati centralino` e :guilabel:`Dati personali` presentano la stessa struttura, mostrando:
 
 - un grafico riepilogativo espandibile che mostra dati sui totali e le durate delle chiamate
