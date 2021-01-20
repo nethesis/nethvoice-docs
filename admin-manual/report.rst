@@ -48,6 +48,8 @@ I grafici delle sezioni :guilabel:`Dati centralino` e :guilabel:`Dati personali`
 
 Una parte dei dati di questo report è consultabile anche sul :ref:`vecchio report chiamate <inboundreport-ref-label>` e da |product_cti|.
 
+La prima volta che si accede al report CDR, viene mostrata una finestra di dialogo che suggerisce di configurare i costi delle chiamate al fine di includerli nel report. Per ulteriori informazioni riguardo i costi delle chiamate si veda la sezione :ref:`Impostazioni <report-settings-ref-label>`.
+
 Interfaccia utente
 ==================
 
@@ -77,7 +79,7 @@ Nell'angolo in alto a destra dell'area filtri sono presenti i seguenti pulsanti,
 
 * nascondere/mostrare il pannello dei filtri
 * selezionare lo schema di colori utilizzato dai grafici
-* accedere alle impostazioni dei report. Questa funzionalità è disponibile soltanto se è stato effettuato l'accesso con l'utenza ``admin``
+* accedere alle impostazioni dei report; questa funzionalità è disponibile soltanto se è stato effettuato l'accesso con l'utenza ``admin``. Per ulteriori informazioni si veda la sezione :ref:`Impostazioni <report-settings-ref-label>`
 * eseguire il logout
 
 Grafici
@@ -87,3 +89,74 @@ L'area dei grafici costituisce quella di maggior interesse per l'utente e costit
 Ciascun grafico può essere esportato in almeno uno dei seguenti formati: CSV, PNG e PDF.
 Per motivi di leggibilità, alcuni grafici mostrano soltanto i dati più rilevanti: attraverso il pulsante :guilabel:`Mostra dettagli` è possibile accedere al set completo dei dati del grafico.
 Alcuni tipologie di grafico consentono di nascondere uno o più set di dati che si vuole temporaneamente trascurare: per farlo è sufficiente cliccare sul relativo nome nella legenda del grafico.
+
+.. _report-settings-ref-label:
+
+Impostazioni
+============
+
+Le impostazioni dei report sono accessibili cliccando il pulsante con l'icona di ingranaggio nella barra degli strumenti in alto a destra.
+Il pulsante è visibile soltanto se è stato effettuato il login con l'utenza ``admin``.
+
+le impostazioni sono organizzate nelle seguenti sezioni:
+
+- Generali
+- Destinazioni
+- Costi
+- Ripristina impostazioni
+
+Generali
+--------
+
+In questa sezione è possibile configurare le seguenti impostazioni:
+
+- :guilabel:`Inizio/fine orario lavorativo`: utilizzato per generare i grafici. Alcuni grafici mostrano i dati solamente durante l'orario di ufficio
+- :guilabel:`Numero massimo di risultati`: indica quanti risultati possono essere mostrati da un grafico tabellare. Se questo limite viene raggiunto, appare un'icona di avvertimento di fianco al titolo del grafico
+- :guilabel:`Durata chiamate nulle`: le chiamate con durata minore o uguale a questo valore sono considerate nulle
+- :guilabel:`Valuta`: usata per visualizzare il costo delle chiamate
+
+Destinazioni
+------------
+
+Le destinazioni sono utilizzate per calcolare i costi delle chiamate. La configurazione predefinita prevede le seguenti destinazioni:
+
+- `National`: numerazioni nazionali
+- `Mobile`: numerazioni cellulari
+- `International`: numerazioni estere
+- `Emergency`: numerazioni di emergenza
+- `PayNumber`: numerazioni a tariffa maggiorata
+
+È possibile aggiungere nuove destinazioni così come rimuovere quelle esistenti.
+
+Espandendo la voce :guilabel:`Configura i prefissi di destinazione` è possibile configurare la destinazione di una chiamata tramite il prefisso del numero di telefono composto. Siccome ogni prefisso definito può avere lunghezza variabile e sono quindi possibili sovrapposizioni, la destinazione di una numerazione telefonica è stabilita selezionando il prefisso più specifico (ovvero il più *lungo*). 
+Ad esempio, supponendo di associare il prefisso `0039` alla destinazione `National`, e il prefisso `00393` alla destinazione `Mobile`, una chiamata in uscita con numerazione `00393401234567` avrà come destinazione `Mobile`, poiché il prefisso `00393` è più specifico rispetto al prefisso `0039`.
+
+Costi
+-----
+
+Dopo aver configurato le destinazioni delle chiamate e i prefissi di destinazione, è possibile configurare i costi delle chiamate.
+Il costo di una telefonata è determinato dal fascio PBX e dalla destinazione della chiamata.
+Per configurare un nuovo costo, quindi, è sufficiente specificare il fascio, la destinazione e la relativa tariffa al secondo.
+
+Esempio di configurazione di un nuovo costo
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Si supponga di avere attivato su un fascio PBX di nome `trunk_1` un contratto telefonico secondo il quale le chiamate verso la Spagna hanno una tariffazione di 0.01 EUR al secondo. Per far sì che il costo di queste chiamate sia calcolato e mostrato nel report, è necessario seguire i seguenti passi:
+
+- Accedere al report con utenza `admin`
+- Accedere alle impostazioni
+- Definire una nuova destinazione, denominandola ad esempio `Spagna`
+- Configurare un nuovo prefisso di destinazione, indicando il prefisso nazionale spagnolo (`0034` oppure `+34`, in funzione di come è stato configurato il centralino) e selezionando `Spagna` come destinazione
+- Configurare un nuovo costo, selezionando il fascio `trunk_1`, la destinazione `Spagna` e indicando `0.01 EUR` come costo al secondo
+
+Da questo momento, ogni notte un processo elaborerà i costi delle chiamate effettuate dal fascio `trunk_1` verso la Spagna.
+I costi delle chiamate sono quindi disponibili dal giorno successivo alla configurazione.
+
+Ripristina impostazioni
+-----------------------
+
+.. warning::
+
+   Il ripristino delle impostazioni è irreversibile
+
+In questa sezione è presente un pulsante per ripristinare tutte le impostazioni ai loro valori predefiniti. Cliccando il pulsante e confermando la scelta saranno ripristinate tutte le impostazioni contenute nella sezione :guilabel:`Generali`, tutte le destinazioni, i prefissi di destinazione e saranno eliminate tutte le configurazioni dei costi.
