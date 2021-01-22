@@ -9,42 +9,36 @@ Manuale amministratore |product| |release|
 .. rubric::
    |product| è una nuova soluzione telefonica aperta ed integrata con l'intero sistema informativo aziendale, in grado di fornire tutti i servizi di comunicazione e collaborazione: dati, voce e video.
 
-Note di rilascio
-----------------
+.. sidebar:: Vedi anche
+
+  * `NethVoice 11  <https://nethvoice.docs.nethesis.it/it/v11>`_
 
 .. toctree::
+   :caption: Note di rilascio
    :maxdepth: 2
 
    release_notes
 
-Introduzione
-------------
-
 .. toctree::
+   :caption: Introduzione
    :maxdepth: 2
 
    introduzione
 
-Installazione
--------------
-
 .. toctree::
+   :caption: Installazione
    :maxdepth: 2
 
    installazione
 
-Backup & Restore
-----------------
-
 .. toctree::
+   :caption: Backup & Restore
    :maxdepth: 2
 
    backup_restore
 
-Configurazione Base
--------------------
-
 .. toctree::
+   :caption: Configurazione Base
    :maxdepth: 2
 
    wizard2
@@ -53,20 +47,16 @@ Configurazione Base
    wizard2_others
    app_mobile
 
-Provisioning
-------------
-
 .. toctree::
+   :caption: Provisioning
    :maxdepth: 2
 
    provisioning_phone2
    provisioning_migration
    provisioning_gateway
 
-Configurazione Avanzata
------------------------
-
 .. toctree::
+   :caption:Configurazione Avanzata
    :maxdepth: 1
 
    nethcqr
@@ -79,26 +69,20 @@ Configurazione Avanzata
    googletts
    pin
 
-Migrazione da |product| 11 a |product| 14
------------------------------------------
-
 .. toctree::
+   :caption: Migrazione
    :maxdepth: 2
 
    migrazione
 
-HowTo
------------------------
-
 .. toctree::
+   :caption: HowTo
    :maxdepth: 1
 
    howto
 
-Moduli Aggiuntivi
------------------
-
 .. toctree::
+   :caption: Moduli Aggiuntivi
    :maxdepth: 2
 
    qmanager
@@ -108,26 +92,20 @@ Moduli Aggiuntivi
    report
 
 
-|product_cti|: Guida Sviluppatori
----------------------------------
-
 .. toctree::
+   :caption: CTI: Guida Sviluppatori
    :maxdepth: 1
 
    cti_dev
 
-|product_nethifier|
--------------------
-
 .. toctree::
+   :caption: Nethifier
    :maxdepth: 2
 
    nethifier
 
-Appendice
----------
-
 .. toctree::
+   :caption: Appendice
    license
 
 Indici
