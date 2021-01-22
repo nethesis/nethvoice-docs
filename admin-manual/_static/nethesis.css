@@ -378,4 +378,8 @@ footer .pull-right a:hover {
 .wy-menu-vertical li.current {
     background: #c9c9c9 !important;
     }
+.wy-side-nav-search {
+    background-color:#343131;
+    }
+
 
