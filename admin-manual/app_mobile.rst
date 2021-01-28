@@ -16,6 +16,7 @@ I requisiti per utillizzare l'app sono:
 - indirizzo FQDN del |product| raggiungibile e utilizzato nella configurazione dell'app (manualmente o nel |product_cti|)
 - protocollo SIP TLS raggiungibile
 - porta HTTPS raggiungibile
+- porta 6061 TCP raggiungibile
 
 .. note:: In alternativa al FQDN del |product| è possibile usare un nome host e dominio configurato come alias per il server con gli stessi requisiti.
    Per usarlo al posto del FQDN utilizzare questi comandi sostituendo ad ALIAS il nome host seguito dal dominio (ad esempio host.dominio.com): ::
