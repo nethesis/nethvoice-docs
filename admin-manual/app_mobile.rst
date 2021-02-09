@@ -24,6 +24,8 @@ I requisiti per utillizzare l'app sono:
         config setprop nethvoice PublicHost ALIAS
         expand-template /etc/asterisk/nethcti_push_configuration.json
         expand-template /etc/nethcti/nethcti.json
+        expand-template /etc/flexisip/flexisip.conf
+        systemctl restart flexisip-proxy
         systemctl reload nethcti-server
 
 L'app accede in SIP TLS al |product| che va abilitato sia lato firewall che nella configurazione di |product|.
