@@ -16,14 +16,14 @@ I requisiti per utillizzare l'app sono:
 - indirizzo FQDN del |product| raggiungibile e utilizzato nella configurazione dell'app (manualmente o nel |product_cti|)
 - protocollo SIP TLS raggiungibile
 - porta HTTPS raggiungibile
+- porta 6061 TCP raggiungibile
 
 .. note:: In alternativa al FQDN del |product| è possibile usare un nome host e dominio configurato come alias per il server con gli stessi requisiti.
    Per usarlo al posto del FQDN utilizzare questi comandi sostituendo ad ALIAS il nome host seguito dal dominio (ad esempio host.dominio.com): ::
 
         config setprop nethvoice PublicHost ALIAS
-        expand-template /etc/asterisk/nethcti_push_configuration.json
-        expand-template /etc/nethcti/nethcti.json
-        systemctl reload nethcti-server
+        signal-event nethserver-nethvoice14-update
+        signal-event nethcti-server3-update
 
 L'app accede in SIP TLS al |product| che va abilitato sia lato firewall che nella configurazione di |product|.
 
