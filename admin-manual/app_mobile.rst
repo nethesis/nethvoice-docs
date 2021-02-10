@@ -22,11 +22,8 @@ I requisiti per utillizzare l'app sono:
    Per usarlo al posto del FQDN utilizzare questi comandi sostituendo ad ALIAS il nome host seguito dal dominio (ad esempio host.dominio.com): ::
 
         config setprop nethvoice PublicHost ALIAS
-        expand-template /etc/asterisk/nethcti_push_configuration.json
-        expand-template /etc/nethcti/nethcti.json
-        expand-template /etc/flexisip/flexisip.conf
-        systemctl restart flexisip-proxy
-        systemctl reload nethcti-server
+        signal-event nethserver-nethvoice14-update
+        signal-event nethcti-server3-update
 
 L'app accede in SIP TLS al |product| che va abilitato sia lato firewall che nella configurazione di |product|.
 
