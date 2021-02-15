@@ -261,6 +261,7 @@ Fanvil
 * X4, X4G, X4SG, X4U
 * X5S, X5U
 * X6, X6U
+* X7C
 
 
 Yealink 
