@@ -25,33 +25,6 @@ I requisiti per utillizzare l'app sono:
         signal-event nethserver-nethvoice14-update
         signal-event nethcti-server3-update
 
-L'app accede in SIP TLS al |product| che va abilitato sia lato firewall che nella configurazione di |product|.
-
-Per prima cosa, sul Server Manager (porta 980), nella sezione :menuselection:`Accesso Centralino -> Accesso Esterno` abilitare il servizio SIP TLS.
-
-Fatto questo, accedere all'interfaccia avanzata di |product|, andare in :menuselection:`Impostazioni  -> Impostazioni Asterisk SIP`:
-
-- aprire il tab :guilabel:`Impostazioni Generali` ed impostare la sezione :guilabel:`Impostazioni NAT`.
-
-- aprire il tab :guilabel:`Impostazioni PJSIP` e configurare la sezione :guilabel:`Impostazioni TLS/SSL/SRTP` come segue:
-
-   * :guilabel:`Certificate Manager -> NethServer`
-   * :guilabel:`SSL Method -> Default` 
-   * :guilabel:`Verify Client -> No`
-   * :guilabel:`Verify Server -> No`
-
-
-Fatto questo, fare clic su Salva in fondo alla pagina.
-
-A questo punto, fare clic sul pulsante arancione Applica Cambiamenti in alto a destra, e da ultimo riavviare Asterisk con il comando: ::
-
-  asterisk -rx "core restart now"
-
-Porte su cui è necessario raggiungere |product| per un utilizzo da remoto:
-
-- 5061 TCP (SIP TLS)
-- da 10000 a 20000 UDP (Audio)
-
 Configurazione
 --------------
 
