@@ -123,14 +123,33 @@ Qualora sia necessario consultare uno storico di tutte le chiamate effettuate da
 FIAS
 ====
 
-È possibile collegare |product_hotel| ad un gestionale alberghiero Oracle Opera, o a qualunque sia compatibile con il protocollo di scambio dati FIAS. |product| è certificato Oracle. Collegando |product_hotel| ad un PMS compatibile, sarà possibile controllare direttamente dall'interfaccia del PMS le seguenti funzionalità:
+È possibile collegare |product_hotel| ad un gestionale alberghiero **Oracle Opera**, o a qualunque sia compatibile con il protocollo di scambio dati **FIAS**. |product| è **certificato Oracle**. Collegando |product_hotel| ad un PMS compatibile, sarà possibile controllare direttamente dall'interfaccia del PMS le seguenti funzionalità:
 
 * Check in, con abilitazione del telefono della camera
 * Check out
 * Impostazione ed esito della sveglia
-* addebito delle chiamate effettuate dalla camera
-* addebito di minibar ed extra, anche tramite codici telefonici
-* lingua dei messaggi audio per l'ospite in base alla lingua della prenotazione
+* Addebito delle chiamate effettuate dalla camera
+* Addebito di minibar ed extra, anche tramite codici telefonici
+* Lingua dei messaggi audio per l'ospite in base alla lingua della prenotazione
 
 Per l'installazione e la configurazione, rivolgersi al supporto.
+
+Versioni **Oracle** e **FIAS**
+
+* Oracle Hospitality OPERA 5.5
+• Oracle Hospitality Interface IFC8 8.14.7.0
+• Fidelio Interface Application Specification (FIAS) 2.20.23
+
+Versioni minime necessarie del **PMS Oracle** (versioni superiori sono compatibili):
+
+* Opera 5 PMS
+* V5.0.03.03 E43
+* V5.0.04.01 E24
+* V5.0.04.02 E17
+* V5.0.04.03 E10
+* V5.5.0
+
+
+
+
 
