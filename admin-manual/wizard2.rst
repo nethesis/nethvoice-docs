@@ -370,6 +370,7 @@ La pagina delle Impostazioni permette di gestire diversi aspetti della configura
 
 * :guilabel:`Impostazioni Firewall`: il firewall di |product| nella configurazione di partenza non accetta connessioni da reti esterne per il protocollo SIP TLS (porta 5061 tcp e porte da 10000 a 20000 udp).
   In questa sezione è possibile configurare il firewall per accettare traffico SIP TLS anche da reti non locali abilitando il SIPS esterno.
+  Abilitando l'accesso SIPS esterno, si concede anche l'accesso in TLS al proxy Flexisip sulla porta 6061, che consente l'uso dell'App mobile.
 
 * :guilabel:`Impostazioni Rubrica`: in questa sezione è possibile abilitare l'esporazione della rubrica di |product| in LDAP per consentire di solito ai telefoni di accedervi in sola lettura.
   La rubrica può essere pubblicata in LDAP in due modalità (la configurazione data ai telefoni sarà completa di tutti i parametri necessari):
