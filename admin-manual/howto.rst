@@ -588,3 +588,19 @@ Per disattivarlo eseguire:
 
 
 .. note:: Lo script deve essere eseguibile dall'utente "asterisk" e si consiglia di configurare opportunamente i permessi del file.
+
+|product_cti|: configurazione della video conferenza
+====================================================
+
+Il servizio di video conferenza si integra con una qualsiasi installazione della piattaforma `Jitsi. <https://meet.jit.si>`_
+
+La configurazione della video conferenza di |product_cti| riguarda il pacchetto `nethserver-conference <https://github.com/nethserver/nethserver-conference>`_.
+
+È sufficiente quindi specificare l'URL di una piattaforma Jitsi nel seguente modo:
+
+.. code-block:: bash
+
+  config setprop conference JitsiUrl https://jitsi.example.com
+  signal-event nethserver-conference-save
+
+È inoltre necessario abilitare il permesso specifico all'interno dei profili di autorizzazione di |product_cti|.
