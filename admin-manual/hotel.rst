@@ -137,8 +137,8 @@ Per l'installazione e la configurazione, rivolgersi al supporto.
 Versioni **Oracle** e **FIAS**
 
 * Oracle Hospitality OPERA 5.5
-• Oracle Hospitality Interface IFC8 8.14.7.0
-• Fidelio Interface Application Specification (FIAS) 2.20.23
+* Oracle Hospitality Interface IFC8 8.14.7.0
+* Fidelio Interface Application Specification (FIAS) 2.20.23
 
 Versioni minime necessarie del **PMS Oracle** (versioni superiori sono compatibili):
 
