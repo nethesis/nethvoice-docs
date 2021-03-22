@@ -27,7 +27,7 @@ Il report code mostra molteplici informazioni associate alle code del centralino
 Il modulo si divide in varie sezioni che ricalcano in parte quelle presenti nel :ref:`vecchio report code <queuereport-ref-label>`.
 Ulteriori sezioni sono accessibili dal menu laterale.
 
-Le varie sezioni sono dotate di documentazione inline per specificare le varie funzionalità.
+Le varie sezioni sono dotate di documentazione inline per spiegare le varie funzionalità.
 
 Report chiamate & costi (CDR)
 =============================
@@ -47,7 +47,7 @@ Una parte dei dati di questo report è consultabile anche sul :ref:`vecchio repo
 
 La prima volta che si accede al report CDR, viene mostrata una finestra di dialogo che suggerisce di configurare i costi delle chiamate al fine di includerli nel report. Per ulteriori informazioni riguardo i costi delle chiamate si veda la sezione :ref:`Impostazioni <report-settings-ref-label>`.
 
-Le varie sezioni sono dotate di documentazione inline per specificare le varie funzionalità.
+Le varie sezioni sono dotate di documentazione inline per spiegare le varie funzionalità.
 
 Interfaccia utente
 ==================
