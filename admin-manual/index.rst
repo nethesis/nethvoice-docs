@@ -88,8 +88,8 @@ Manuale amministratore |product| |release|
    qmanager
    hotel
    inbound_report
-   queue_report
    report
+   queue_report
 
 
 .. toctree::
