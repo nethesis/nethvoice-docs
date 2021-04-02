@@ -56,7 +56,7 @@ Manuale amministratore |product| |release|
    provisioning_gateway
 
 .. toctree::
-   :caption:Configurazione Avanzata
+   :caption: Configurazione Avanzata
    :maxdepth: 1
 
    nethcqr
@@ -106,6 +106,7 @@ Manuale amministratore |product| |release|
 
 .. toctree::
    :caption: Appendice
+
    license
 
 Indici
