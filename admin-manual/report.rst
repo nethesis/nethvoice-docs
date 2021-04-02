@@ -135,18 +135,18 @@ Costi
 
 Dopo aver configurato le destinazioni delle chiamate e i prefissi di destinazione, è possibile configurare i costi delle chiamate.
 Il costo di una telefonata è determinato dal fascio PBX e dalla destinazione della chiamata.
-Per configurare un nuovo costo, quindi, è sufficiente specificare il fascio, la destinazione e la relativa tariffa al secondo.
+Per configurare un nuovo costo, quindi, è sufficiente specificare il fascio, la destinazione e la relativa tariffa al minuto.
 
 Esempio di configurazione di un nuovo costo
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Si supponga di avere attivato su un fascio PBX di nome ``trunk_1`` un contratto telefonico secondo il quale le chiamate verso la Spagna hanno una tariffazione di 0.01 EUR al secondo. Per far sì che il costo di queste chiamate sia calcolato e mostrato nel report, è necessario seguire i seguenti passi:
+Si supponga di avere attivato su un fascio PBX di nome ``trunk_1`` un contratto telefonico secondo il quale le chiamate verso la Spagna hanno una tariffazione di 0.01 EUR al minuto. Per far sì che il costo di queste chiamate sia calcolato e mostrato nel report, è necessario seguire i seguenti passi:
 
 - Accedere al report con utenza ``admin``
 - Accedere alle impostazioni
 - Definire una nuova destinazione, denominandola ad esempio ``Spagna``
 - Configurare un nuovo prefisso di destinazione, indicando il prefisso nazionale spagnolo (``0034`` oppure ``+34``, in funzione di come è stato configurato il centralino) e selezionando ``Spagna`` come destinazione
-- Configurare un nuovo costo, selezionando il fascio ``trunk_1``, la destinazione ``Spagna`` e indicando ``0.01 EUR`` come costo al secondo
+- Configurare un nuovo costo, selezionando il fascio ``trunk_1``, la destinazione ``Spagna`` e indicando ``0.01 EUR`` come costo al minuto
 
 Da questo momento, ogni notte un processo elaborerà i costi delle chiamate effettuate dal fascio ``trunk_1`` verso la Spagna.
 I costi delle chiamate sono quindi disponibili dal giorno successivo alla configurazione.
