@@ -256,6 +256,14 @@ Elenco delle pagine web per il download del firmware:
 Telefoni supportati
 ===================
 
+NethPhone
+---------
+
+**Versione FIRMWARE 2.0 o superiore**
+
+* NP-X3
+* NP-X5
+
 
 Fanvil
 ------
@@ -325,6 +333,11 @@ produttore al primo avvio del telefono.
       - Metodo secondario
       - DHCP option
       - DHCP option value
+    * - NethPhone
+      - RPS
+      - DHCP
+      - 66
+      - ``http://IP_CENTRALINO/provisioning/$mac.cfg``
     * - Fanvil
       - RPS
       - DHCP
