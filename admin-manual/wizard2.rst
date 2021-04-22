@@ -363,6 +363,8 @@ La pagina delle Impostazioni permette di gestire diversi aspetti della configura
 
 * :guilabel:`Password`: è possibile cambiare la password dell'utente admin dedicato all'accesso all'interfaccia web di |product|.
 
+* :guilabel:`Videoconferenza`: indicare l'URL del Sistema di Conferenza fornita dal fornitore. È possibile in alternativa inserire l'URL di un qualsiasi server Jitsi pubblico verificando le condizioni di utilizzo, la compatibilità con le proprie direttive privacy e necessità di continuità di servizio.
+
 * :guilabel:`Impostazioni NAT`: per gestire correttamente il NAT nel protocollo SIP, |product| ha necessità di conoscere l'indirizzo che utilizzerà presentandosi all'esterno e le reti da considerare locali, per le quali non dovrà tenere conto del NAT e delle sue impostazioni:
 
   1) Inserire in :guilabel:`Indirizzo Esterno` l'IP pubblico con il quale |product| effettuerà connessioni esterne alla propria rete.
