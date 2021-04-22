@@ -187,6 +187,13 @@ andranno perse.
 
 Nelle sezioni successive sono descritte alcune impostazioni fornite da |product|.
 
+I telefoni provisionati aggiorneranno la loro configurazione automaticamente anche 
+ad ogni cambio di stato (Disponibile, Non Disturbare, etc.) in |product_cti| della 
+utenza collegata per mantenere l'uniformità dello stato su tutti i dispositivi.
+
+Questo aggironamento della configurazione non comporta alcun disservizio o riavvio 
+del telefono.
+
 
 Password di admin
 -----------------
