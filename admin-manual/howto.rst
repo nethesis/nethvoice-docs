@@ -257,43 +257,82 @@ Per ripristinare il livello di default:
   signal-event nethcti-server3-update
 
 
-|product_cti|: telefoni con modalità Click2Call automatico
-=====================================================================
+|product_cti|: telefoni con modalità Click2Call
+===============================================
 
-Quando si utilizza |product_cti| con associato un telefono fisico, è
-necessario sollevare la cornetta quando si effettuano chiamate.
-La modalità *"Click2Call automatico"* consente di bypassare l'uso della
-cornetta sfruttando ad esempio il vivavoce del telefono o delle cuffie
-audio direttamente indossate dall'utente.
+La modalità "Click2Call" di |product_cti| consente un utilizzo semplificato
+dei telefoni fisici. In generale, quando si utilizza |product_cti| con associato
+un telefono fisico, é necessario sollevare la cornetta quando si effettuano chiamate.
 
-La modalità è attiva di default e questa è la lista dei telefoni
-supportati:
+Esistone tre diverse modalità di Click2Call, di seguito elencate e i telefoni supportati sono:
 
+- NethPhone
 - Yealink
 - Snom
 - Sangoma
 - Fanvil
 
+Modalità "Click2Call manuale"
+-----------------------------
 
-Disattivazione della modalità Click2Call automatico
----------------------------------------------------
+É la modalità base utilizzata con qualsiasi telefono fisico non supportato. Quando l'utente finale effettua una chiamata, come prima operazione dovrà sollevare la cornetta del dispositivo telefonico e successivamente verrà messo in comunicazione con la destinazione.
 
-In alcuni scenari potrebbe essere utile disattivare la funzionalità,
-ad esempio nel caso in cui il centralino telefonico fosse in cloud
-e i telefoni siano in LAN dietro NAT. Per la disattivazione eseguire
-i comandi:
+Attivazione:
 
 .. code-block:: bash
 
   config setprop nethcti-server AutoC2C disabled
   signal-event nethcti-server3-update
 
-Per la riattivazione:
+Modalità "Click2Call automatico"
+--------------------------------
+
+É la modalità che semplifica l'utilizzo del telefono fisico. Consente di bypassare l'uso della cornetta sfruttando ad esempio il vivavoce del telefono o delle cuffie audio direttamente indossate dall'utente. La modalità "automatica" è attiva di default e prevede che il centralino telefonico e i telefoni fisici siano presenti all'interno della stessa rete LAN aziendale e che possano comunicare direttamente tramite il protocollo HTTP.
+
+La modalità è attiva di default.
+
+Disattivazione:
 
 .. code-block:: bash
 
-  config setprop nethcti-server AutoC2C enabled
+  config setprop nethcti-server AutoC2C disabled
   signal-event nethcti-server3-update
+
+Riattivazione:
+
+.. code-block:: bash
+
+  config setprop nethcti-server AutoC2C auto
+  signal-event nethcti-server3-update
+
+Modalità "Click2Call cloud"
+---------------------------
+
+La modalità *"Click2Call cloud"* è uguale alla modalità click2call automatico, con l'unica differenza che deve essere abilitato nel caso in cui il centralino telefonico è stato installato in qualche piattaforma cloud esterna all'azienda, mentre i telefoni fisici sono presenti nella propria rete LAN aziendale. In questo scenario il centralino non è in grado di comunicare direttamente con i telefoni e quindi viene richiesta l'attivazione della modalità "cloud".
+
+In questo modo, anche se il centralino è esterno alla rete aziendale, l'utente finale potrà gestire il proprio telefono fisico presente in locale tramite |product_cti|. Questa funzionalità è realizzata grazie a un terzo componente: Nethifier.
+
+Le due modalità "click2call automatico" e "click2call cloud" sono mutuamente esclusive.
+
+La modalità "click2call cloud" è disabilitata di default.
+
+.. note::
+  La modalità "Click2Call cloud" prevede obbligatoriamente l'uso dell'applicazione Nethifier (vedi sezione apposita)
+
+Attivazione:
+
+.. code-block:: bash
+
+  config setprop nethcti-server AutoC2C cloud
+  signal-event nethcti-server3-update
+
+Disattivazione:
+
+.. code-block:: bash
+
+  config setprop nethcti-server AutoC2C disabled
+  signal-event nethcti-server3-update
+
 
 
 |product_cti|: utilizzo di un server chat esterno
@@ -588,19 +627,3 @@ Per disattivarlo eseguire:
 
 
 .. note:: Lo script deve essere eseguibile dall'utente "asterisk" e si consiglia di configurare opportunamente i permessi del file.
-
-|product_cti|: configurazione della video conferenza
-====================================================
-
-Il servizio di video conferenza si integra con una qualsiasi installazione della piattaforma `Jitsi. <https://meet.jit.si>`_
-
-La configurazione della video conferenza di |product_cti| riguarda il pacchetto `nethserver-conference <https://github.com/nethserver/nethserver-conference>`_.
-
-È sufficiente quindi specificare l'URL di una piattaforma Jitsi nel seguente modo:
-
-.. code-block:: bash
-
-  config setprop conference JitsiUrl https://jitsi.example.com
-  signal-event nethserver-conference-save
-
-È inoltre necessario abilitare il permesso specifico all'interno dei profili di autorizzazione di |product_cti|.
