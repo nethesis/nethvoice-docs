@@ -187,6 +187,13 @@ andranno perse.
 
 Nelle sezioni successive sono descritte alcune impostazioni fornite da |product|.
 
+I telefoni provisionati aggiorneranno la loro configurazione automaticamente anche 
+ad ogni cambio di stato (Disponibile, Non Disturbare, etc.) in |product_cti| della 
+utenza collegata per mantenere l'uniformità dello stato su tutti i dispositivi.
+
+Questo aggironamento della configurazione non comporta alcun disservizio o riavvio 
+del telefono.
+
 
 Password di admin
 -----------------
@@ -249,6 +256,14 @@ Elenco delle pagine web per il download del firmware:
 Telefoni supportati
 ===================
 
+NethPhone
+---------
+
+**Versione FIRMWARE 2.0 o superiore**
+
+* NP-X3
+* NP-X5
+
 
 Fanvil
 ------
@@ -269,7 +284,7 @@ Yealink
 
 **Versione FIRMWARE 0.84 o superiore**
 
-* T19(P) E2, T21(P) E2, T23P/G, T27P/G, T29G
+* T19(P) E2, T21(P) E2, T23P/G, T27G, T29G
 * T30/P, T31/P/G, T33P/G
 * T40P/G, T41P/S/U, T42G/S/U, T43U, T46G/S/U, T48G/S/U, T49G
 * T52S, T53/W/C, T54S/W, T56A, T57W, T58V/A/W, VP59
@@ -318,6 +333,11 @@ produttore al primo avvio del telefono.
       - Metodo secondario
       - DHCP option
       - DHCP option value
+    * - NethPhone
+      - RPS
+      - DHCP
+      - 66
+      - ``http://IP_CENTRALINO/provisioning/$mac.cfg``
     * - Fanvil
       - RPS
       - DHCP
