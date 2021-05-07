@@ -207,7 +207,7 @@ L'autenticazione ha successo e il server risponde con:
 Elenco delle API
 ----------------
 
-Qui la lista `lista completa <https://documenter.getpostman.com/view/56173/RWgxuF5i>`_.
+Qui la lista `lista completa <https://documenter.getpostman.com/view/15699632/TzRRC88p>`_.
 
 Utilizzo delle API del progetto Tancredi e Corbera
 --------------------------------------------------
