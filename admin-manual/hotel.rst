@@ -127,7 +127,7 @@ Tono di chiamata alla digitazione del prefisso
 
 Si può modificare questo comportamento con una piccola personalizzazione.
 
-Aggiungere al file /etc/asterisk/extensions_custom.conf (potrebbe essere vuoto)
+Aggiungere al file :file:`/etc/asterisk/extensions_custom.conf` (potrebbe essere vuoto)
 il seguente contenuto e sostituendo **XXX** (5 sostituzioni da fare) con il prefisso impostato nell’interfaccia del |product_hotel| ::
 
  ;-----     Inizio Configurazione NethHotel -------
@@ -182,7 +182,6 @@ Versioni minime necessarie del **PMS Oracle** (versioni superiori sono compatibi
 * V5.0.04.02 E17
 * V5.0.04.03 E10
 * V5.5.0
-
 
 
 
