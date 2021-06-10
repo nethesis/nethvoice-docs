@@ -22,4 +22,4 @@ Disaster recovery
 
 Per il ripristino completo di un server dove era installato |product| vedere la documentazione relativa di |parent_product|: `Disaster recovery <http://nethserver.docs.nethesis.it/it/latest/backup.html>`_.
 
-.. note:: Dopo il restore, le app non riceveranno più le notifiche push finché non si registreranno di nuovo, ovvero finchè non verranno aperte dall'utente.
+.. warning:: Dopo il restore, le app non riceveranno più le notifiche push finché non si registreranno di nuovo, ovvero finchè non verranno aperte dall'utente.
