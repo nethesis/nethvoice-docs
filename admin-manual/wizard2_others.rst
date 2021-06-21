@@ -249,6 +249,16 @@ Per la creazione di un URL sono necessarie due informazioni:
 - l'url stesso
 - la scelta di un profilo utente
 
+La composizione della URL può essere fatta utilizzando questi parametri valorizzati per ogni chiamata:
+
+- `$CALLER_NUMBER` (Numero Chiamante)
+- `$CALLER_NAME` (Nome associato da |product| al numero chiamante)
+- `$CALLED` (Numero Chiamato)
+- `$UNIQUEID` (Identificativo univoco della chiamata)
+
+
+E' possibile abilitare l'opzione `Solo chiamate su code` per attivare la URL parametrizzata solo per chiamate che suonano in una coda.
+
 Tutti gli utenti che hanno quel profilo saranno abilitati all'utilizzo dell'URL appena creato.
 
 .. note::
