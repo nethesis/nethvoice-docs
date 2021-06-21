@@ -120,6 +120,40 @@ Storico
 Qualora sia necessario consultare uno storico di tutte le chiamate effettuate dalle camere è possibile utilizzare la sezione **Storico**. Lo storico delle chiamate è filtrabile per data e numero di camera.
 
 
+Tono di chiamata alla digitazione del prefisso
+==============================================
+
+|product| non crea un tono di chiamata automaticamente con la digitazione del solo prefisso, ma aspetta l’intera digitazione del numero da chiamare.
+
+Si può modificare questo comportamento con una piccola personalizzazione.
+
+Aggiungere al file :file:`/etc/asterisk/extensions_custom.conf` (potrebbe essere vuoto)
+il seguente contenuto e sostituendo **XXX** (5 sostituzioni da fare) con il prefisso impostato nell’interfaccia del |product_hotel| ::
+
+ ;-----     Inizio Configurazione NethHotel -------
+
+ [camere]
+ exten => XXX,1,Noop(Chiamata Esterna)
+ exten => XXX,n,Set(TIMEOUT(digit)=5)
+ exten => XXX,n,Set(TIMEOUT(response)=10)
+ exten => XXX,n,DISA(no-password,camere-disa,${CALLERID(number)})
+ 
+ [camere-disa]
+ exten => _[*#0-9].,1,Set(NETH_HOTEL_EXTEN=XXX${EXTEN})
+ exten => _[*#0-9].,n,Noop(${NETH_HOTEL_EXTEN})
+ exten => _[*#0-9].,n,agi(set-room-lang.php,${CALLERID(number)})
+ exten => _[*#0-9].,n,agi(camere.php,${CALLERID(number)},${NETH_HOTEL_EXTEN})
+
+ ;-----     Fine Configurazione NethHotel -------
+
+
+Dopo aver salvato il file appena modificato dare il comando ::
+
+ asterisk -rx "dialplan reload"
+
+.. note:: Configurare il timeout di digitazione sui vari telefoni utilizzati dalle camere del |product_hotel| a valori bassi per facilitare il comportamento voluto
+
+
 FIAS
 ====
 
@@ -148,7 +182,6 @@ Versioni minime necessarie del **PMS Oracle** (versioni superiori sono compatibi
 * V5.0.04.02 E17
 * V5.0.04.03 E10
 * V5.5.0
-
 
 
 
