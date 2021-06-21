@@ -24,16 +24,16 @@ Dopo aver installato il modulo |product_hotel| dal sofware center di |parent_pro
 
 * nell'interfaccia avanzata di |product| sezione Connettività -> Rotte in Uscita, creare una Rotta in Uscita dedicata per le camere che preveda l'utilizzo di un prefisso, di solito 0, lasciandola come ultima nell'elenco delle rotte, fare Salva e Applicare le Configurazioni.
 * nell'interfaccia avanzata di |product| accedere al contesto personalizzato per gli interni delle camere, sezione Connettività -> Contesti Custom -> Hotel Room Context, e abilitare la Rotta in Uscita appena creata per consentire agli interni delle camere di effettuare chiamate esterne, fare Salva e Applicare le Configurazioni.
-* Aggiungere gli interni creati per le camere al contesto **hotel** tramite il modulo **Gestione camere** nel pannello di configurazione di |product|, Applicazioni -> Gestione Camere, fare Salva e Applicare le Configurazioni.
+* Aggiungere gli interni creati per le camere al profilo  **hotel** nel pannello di configurazione di |product| o nell'applicazione `Gestione Multipla Interni`.
 
-Tutti gli interni che fanno parte del contesto **hotel** entrano a far parte della gestione |product_hotel|.
+Tutti gli interni che fanno parte del profilo **hotel** entrano a far parte della gestione |product_hotel|.
 
 Come configurare il centralino
 ==============================
 Consigliamo di configurare il centralino in questo modo:
 
-* tutti gli interni delle camere devono essere aggiunti al contesto hotel sul pannello di gestione del centralino in Gestione Camere
-* gli interni di servizio, come ad esempio la reception, non devono essere aggiunti al contesto hotel e devono essere configurati con interni standard, seguendo la normale politica dell'hotel. Ad esempio se le camere avranno come range di interni dal 201 al 299, l'interno della reception dovrà essere sempre a 3 cifre, ad esempio 200 o 300. Per consentire alle camere di chiamare la reception bisognerà configurare un numero breve, invece gli interni di servizio tra di loro si dovranno chiamare direttamente.
+* tutti gli interni delle camere devono essere aggiunti al profilo hotel dalla sezione `Configurazioni` o utilizzando l'applicazione `Gestione Multipla Interni`
+* gli interni di servizio, come ad esempio la reception, non devono essere aggiunti al profilo hotel e devono essere configurati come interni standard, seguendo la normale politica dell'hotel. Ad esempio se le camere avranno come range di interni dal 201 al 299, l'interno della reception dovrà essere sempre a 3 cifre, ad esempio 200 o 300. Per consentire alle camere di chiamare la reception bisognerà configurare un numero breve, invece gli interni di servizio tra di loro si potranno chiamare direttamente.
 * è consigliabile utilizzare per gli interni di servizio una Rotta in Uscita senza prefisso diversa da quella per gli interni delle camere
 
 Codici funzioni da telefono
@@ -120,6 +120,40 @@ Storico
 Qualora sia necessario consultare uno storico di tutte le chiamate effettuate dalle camere è possibile utilizzare la sezione **Storico**. Lo storico delle chiamate è filtrabile per data e numero di camera.
 
 
+Tono di chiamata alla digitazione del prefisso
+==============================================
+
+|product| non crea un tono di chiamata automaticamente con la digitazione del solo prefisso, ma aspetta l’intera digitazione del numero da chiamare.
+
+Si può modificare questo comportamento con una piccola personalizzazione.
+
+Aggiungere al file :file:`/etc/asterisk/extensions_custom.conf` (potrebbe essere vuoto)
+il seguente contenuto e sostituendo **XXX** (5 sostituzioni da fare) con il prefisso impostato nell’interfaccia del |product_hotel| ::
+
+ ;-----     Inizio Configurazione NethHotel -------
+
+ [camere]
+ exten => XXX,1,Noop(Chiamata Esterna)
+ exten => XXX,n,Set(TIMEOUT(digit)=5)
+ exten => XXX,n,Set(TIMEOUT(response)=10)
+ exten => XXX,n,DISA(no-password,camere-disa,${CALLERID(number)})
+ 
+ [camere-disa]
+ exten => _[*#0-9].,1,Set(NETH_HOTEL_EXTEN=XXX${EXTEN})
+ exten => _[*#0-9].,n,Noop(${NETH_HOTEL_EXTEN})
+ exten => _[*#0-9].,n,agi(set-room-lang.php,${CALLERID(number)})
+ exten => _[*#0-9].,n,agi(camere.php,${CALLERID(number)},${NETH_HOTEL_EXTEN})
+
+ ;-----     Fine Configurazione NethHotel -------
+
+
+Dopo aver salvato il file appena modificato dare il comando ::
+
+ asterisk -rx "dialplan reload"
+
+.. note:: Configurare il timeout di digitazione sui vari telefoni utilizzati dalle camere del |product_hotel| a valori bassi per facilitare il comportamento voluto
+
+
 FIAS
 ====
 
@@ -148,7 +182,6 @@ Versioni minime necessarie del **PMS Oracle** (versioni superiori sono compatibi
 * V5.0.04.02 E17
 * V5.0.04.03 E10
 * V5.5.0
-
 
 
 

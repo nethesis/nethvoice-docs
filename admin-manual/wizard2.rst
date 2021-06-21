@@ -303,7 +303,9 @@ sezioni sopra elencate questo è l'ordine di priorità decrescente che verrà se
 
 Fasci
 =====
-Nella sezione fasci è possibile configurare i gateway per gestire le linee fisiche o creare fascio VoIP specificando le credenziali dei vostri provider
+Nella sezione fasci è possibile configurare i gateway per gestire le linee fisiche o creare fascio VoIP specificando le credenziali delle linee SIP date dal provider.
+
+I fasci, per collegare i gateway o le linee VoIP, vengono creati utilizzando la libreria PJSIP.
 
 .. _fisici:
 
