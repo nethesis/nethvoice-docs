@@ -24,16 +24,16 @@ Dopo aver installato il modulo |product_hotel| dal sofware center di |parent_pro
 
 * nell'interfaccia avanzata di |product| sezione Connettività -> Rotte in Uscita, creare una Rotta in Uscita dedicata per le camere che preveda l'utilizzo di un prefisso, di solito 0, lasciandola come ultima nell'elenco delle rotte, fare Salva e Applicare le Configurazioni.
 * nell'interfaccia avanzata di |product| accedere al contesto personalizzato per gli interni delle camere, sezione Connettività -> Contesti Custom -> Hotel Room Context, e abilitare la Rotta in Uscita appena creata per consentire agli interni delle camere di effettuare chiamate esterne, fare Salva e Applicare le Configurazioni.
-* Aggiungere gli interni creati per le camere al contesto **hotel** tramite il modulo **Gestione camere** nel pannello di configurazione di |product|, Applicazioni -> Gestione Camere, fare Salva e Applicare le Configurazioni.
+* Aggiungere gli interni creati per le camere al profilo  **hotel** nel pannello di configurazione di |product| o nell'applicazione `Gestione Multipla Interni`.
 
-Tutti gli interni che fanno parte del contesto **hotel** entrano a far parte della gestione |product_hotel|.
+Tutti gli interni che fanno parte del profilo **hotel** entrano a far parte della gestione |product_hotel|.
 
 Come configurare il centralino
 ==============================
 Consigliamo di configurare il centralino in questo modo:
 
-* tutti gli interni delle camere devono essere aggiunti al contesto hotel sul pannello di gestione del centralino in Gestione Camere
-* gli interni di servizio, come ad esempio la reception, non devono essere aggiunti al contesto hotel e devono essere configurati con interni standard, seguendo la normale politica dell'hotel. Ad esempio se le camere avranno come range di interni dal 201 al 299, l'interno della reception dovrà essere sempre a 3 cifre, ad esempio 200 o 300. Per consentire alle camere di chiamare la reception bisognerà configurare un numero breve, invece gli interni di servizio tra di loro si dovranno chiamare direttamente.
+* tutti gli interni delle camere devono essere aggiunti al profilo hotel dalla sezione `Configurazioni` o utilizzando l'applicazione `Gestione Multipla Interni`
+* gli interni di servizio, come ad esempio la reception, non devono essere aggiunti al profilo hotel e devono essere configurati come interni standard, seguendo la normale politica dell'hotel. Ad esempio se le camere avranno come range di interni dal 201 al 299, l'interno della reception dovrà essere sempre a 3 cifre, ad esempio 200 o 300. Per consentire alle camere di chiamare la reception bisognerà configurare un numero breve, invece gli interni di servizio tra di loro si potranno chiamare direttamente.
 * è consigliabile utilizzare per gli interni di servizio una Rotta in Uscita senza prefisso diversa da quella per gli interni delle camere
 
 Codici funzioni da telefono

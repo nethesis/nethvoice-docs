@@ -104,7 +104,10 @@ Con l'installazione, vengono creati di default 3 profili che contengono l'abilit
 - Standard: funzionalità di gestione classiche per l'utente
 - Avanzato: quasi tutte le funzionalità sono sbloccate, per l'utente Avanzato
 
-É possibile creare anche nuovi profili, duplicando uno esistente o creandone di nuovi e specificando le varie funzionalità
+É possibile creare anche nuovi profili, duplicando uno esistente o creandone di nuovi e specificando le varie funzionalità.
+
+Il profilo serve a stabilire le funzionalità abilitate per ogni utente a cui viene assegnato ed è valido per tutti i dispositivi dell'utente, sia per i telefoni fisici che per il dispositivo web utilizzato dal |product_cti| e la App mobile.
+
 
 .. note:: Ricordarsi di abilitare sui profili dove necessario l'accesso ai gruppi utente precedentemente creati.
 
