@@ -302,7 +302,7 @@ Riattivazione:
 
 .. code-block:: bash
 
-  config setprop nethcti-server AutoC2C auto
+  config setprop nethcti-server AutoC2C enabled
   signal-event nethcti-server3-update
 
 Modalità "Click2Call cloud"
