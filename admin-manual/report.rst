@@ -17,7 +17,7 @@ utilizzo del centralino. Tutte le notti un processo elabora gli eventi della gio
 grafici e tabelle.
 Quindi, al termine della prima installazione, è necessario attendere il giorno successivo per consultare il report.
 
-È possibile installare il report direttamente dal :guilabel:`Software Center` selezionando il modulo chiamato ``Nethvoice report (beta)``.
+È possibile installare il report direttamente dal :guilabel:`Software Center`.
 
 Report code
 ===========

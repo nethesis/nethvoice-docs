@@ -61,6 +61,7 @@ Manuale amministratore |product| |release|
 
    nethcqr
    rapid_code
+   recallonbusy
    returnonblindtransfer
    directdid
    queueexit
