@@ -1,7 +1,7 @@
-Ritorno da trasferimento Cieco
-==============================
+Richiama su Occupato
+====================
 
-Questa funzione consente di prenotare la richiamata quando si tenta di chiamare un interno di |product| e questo è impegnato in un'altra conversazione. 
+Questa funzione consente di prenotare la richiamata quando si tenta di chiamare un interno di |product| impegnato in un'altra conversazione. 
 
 
 Configurazione
