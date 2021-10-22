@@ -17,7 +17,7 @@ In questo caso, si configura il comportamento dell'interno che deve utilizzare i
 Le impostazioni lato interno hanno priorità rispetto all'impostazione generale.
 
 Quando un interno con il richiama su occupato chiama un altro interno impegnato in una conversazione, viene chiesto all'utente di premere il tasto 5 (modificabile) per prenotare la richiamata. 
-Se l'utente preme il tasto, quando l'interno chiamato tornerà disponibile partirà una chiamata prima verso il chi ha richiesto il servizio e alla risposta verso l'interno con cui si desiderava parlare.
+Se l'utente preme il tasto, quando l'interno chiamato tornerà disponibile partirà una chiamata prima verso l'utente che ha richiesto il servizio e alla sua risposta verso l'interno su cui ha prenotato la richiamata.
 
 Se le richieste di richiamata saranno di diversi utenti, verranno accodate ed eseguite nell'ordine di creazione.
 
