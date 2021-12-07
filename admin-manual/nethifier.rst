@@ -7,7 +7,7 @@ l'integrazione di |product| con il desktop Windows. In particolare consente la v
 di popup di notifica nel desktop in corrispondenza della ricezione di telefonate dirette a un
 qualsiasi interno telefonico dell'utente.
 
-Versioni di Windows compatibili: Windows 7 (64 bit), Windows 8 e Windows 10.
+Versioni di Windows compatibili: Windows 7 (64 bit), Windows 8, Windows 10, Windows 11.
 
 Per la personalizzazione dei popup seguire la :ref:`documentazione <custom-nethifier-label>`.
 
@@ -71,6 +71,10 @@ attraverso i seguenti template HTML: ::
 
 Il primo serve a mostrare i dati di una chiamata generica, mentre il secondo quelli di una sorgente video,
 quale ad esempio un videocitofono.
+
+Se personalizzati tali template andranno copiati e poi modificati nel seguente percorso: ::
+
+ /var/lib/nethserver/nethcti/static/templates/notification_popup/
 
 .. note:: Conoscenze richieste: linguaggi di programmazione HTML, CSS e Javascript.
 
