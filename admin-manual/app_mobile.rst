@@ -8,7 +8,7 @@ App mobile
 |product_cti|
 =============
 
-L'applicazione mobile del |product_cti| è disponibile per iOS e Android ed è scaricabile dai rispettivi App Store.
+L'applicazione mobile del |product_cti| è disponibile per iOS e Android ed è scaricabile dai rispettivi App Store (controllare la versione di software minima richiesta nelle specifiche dell'App negli store).
 
 I requisiti per utillizzare l'app sono:
 
@@ -49,64 +49,6 @@ L'applicazione mobile |product_cti| eseguirà l'autenticazione sul server nethct
 Una volta eseguito l'accesso l'applicazione riceverà le chiamate in arrivo anche durante il funzionamento in background e sarà possibile eseguire chiamate in uscita.
 
 Nel caso in cui il comportamento dell'applicazione all'arrivo di una chiamata non sia come desiderato sarà possibile gestirlo dalle impostazioni avanzate del telefono relative all'applicazione |product_cti|.
-
-
-.. _wave_mobile:
-
-Wave
-====
-
-L'applicazione Wave integra un interno sui dispositivi mobili ed è installabile su base Android o iOS.
-
-Come l'app del |product_cti| anche Wave accede in SIP TLS al |product| di conseguenza per permettere il corretto funzionamento dell'applicazione è necessario seguire i passi iniziali indicati nella sezione superiore per l'applicazione mobile del |product_cti|.
-
-Una volta adattata la configurazione lato Server Manager e interfaccia avanzata è necessario configurare l'applicazione Wave in modo da garantire il corretto funzionamento del provisioning sul |product|.
-
-
-Configurazione
---------------
-
-.. note:: La configurazione tramite provisioning è possibile solo utilizzando la precedente versione, fare riferimento a
-          :ref:`provisioning-section` e a :ref:`provisioning-migration-section`. 
-
-É possibile configurare l'applicazione tramite il provisioning di |product|.
-
-Per prima cosa collegare lo smartphone alla rete locale del |product| e andare in :guilabel:`Impostazioni -> Provisioning Settings`.
-
-Impostare:
-
-- Config Upgrade Via: TFTP
-- Config percorso server : ip locale di |product|
-
-Cliccare su Start Provisioning.
-
-Questa operazione permetterà di aggiungere il Mac-Address dello smartphone a quelli dei device configurabili.
-
-É utile conoscere il MAC Address dello smartphone che si vuole configurare, è possibile verificarlo nel momento della richiesta TFTP in /var/log/messages: ::
-
-    Jan 10 15:26:44 nethvoice dnsmasq-tftp[16179]: file /var/lib/tftpboot/cfgDC0B34CED538.xml not found
-
-il MAC Address dello smartphone in questo caso è DC:0B:34:CE:D5:38
-
-Aprire il wizard di |product|, andare sulla pagina :menuselection:`Dispositivi` ed effettuare una nuova scansione, sarà presente una riga con "CTI App" come marca e GS Wave come modello.
-
-Nella sezione :menuselection:`Utenti -> Configurazioni` del wizard associare il device all'utente voluto e cliccare su Configura e riavvia per pubblicare la configurazione.
-
-Forzare il provisioning di nuovo con la procedura precedente per configurare l'applicazione: :menuselection:`Impostazioni -> Provisioning Settings -> Start Provisioning`
-
-.. note:: Per consentire l'accesso da remoto alla rubrica di |product| ricordarsi di abilitare l'accesso da reti esterne alla rubrica centralizzata in |parent_product|
-
-
-BLF
-...
-
-Per configurare i BLF e monitorare altri interni di |product| seguire questa procedura:
-
-- In :guilabel:`Contatti -> SIP` creare i contatti necessari specificando il Nome, Cognome e l'interno SIP
-- In :guilabel:`Impostazioni -> Impostazioni Avanzate -> Impostazioni Aggiuntive` attivare i BLF
-- In :guilabel:`Impostazioni -> Impostazioni Avanzate -> Impostazioni Aggiuntive -> Elenco BLF` selezionare i contatti da utilizzare come BLF
-
-I BLF verranno mostrati in Contatti -> SIP
 
 
 Scan&Play
