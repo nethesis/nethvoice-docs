@@ -352,7 +352,7 @@ produttore al primo avvio del telefono.
       - RPS
       - DHCP
       - 66 e 67
-      - ``http://IP_CENTRALINO`` e ``provisioning/{mac}.xml``
+      - ``http://IP_CENTRALINO/provisioning/{mac}.xml``
     * - Gigaset
       - DHCP [#f1]_
       - RPS
