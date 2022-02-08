@@ -352,12 +352,12 @@ produttore al primo avvio del telefono.
       - RPS
       - DHCP
       - 66 e 67
-      - ``http://ip_centralino/provisioning/{mac}.xml``
+      - ``http://IP_CENTRALINO/provisioning/{mac}.xml``
     * - Gigaset
       - DHCP [#f1]_
       - RPS
       - 114
-      - ``http://IP_CENTRALINO/provisioning/MAC.xml``
+      - ``http://IP_CENTRALINO/provisioning/%MACD.xml``
     * - Sangoma
       - RPS [#f2]_
       - DHCP
