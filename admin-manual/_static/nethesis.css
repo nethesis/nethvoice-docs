@@ -381,3 +381,7 @@ footer .pull-right a:hover {
 .wy-side-nav-search {
     background-color:#343131;
     }
+
+.hint {
+    padding: 50px !important;
+}
