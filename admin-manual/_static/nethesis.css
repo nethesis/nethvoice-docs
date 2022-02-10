@@ -119,7 +119,7 @@ pre, blockquote {
 }
 .section li {
     line-height: 28px;
-    font-size: 15;  
+    font-size: 15px;
 }
 .navbar-default .navbar-nav>li {
     border-right: #cccccc 1px solid !important;
@@ -381,7 +381,3 @@ footer .pull-right a:hover {
 .wy-side-nav-search {
     background-color:#343131;
     }
-
-.hint {
-    padding: 50px !important;
-}
