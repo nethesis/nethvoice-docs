@@ -35,16 +35,14 @@ Se il provider scelto non è locale, non sarà possibile creare gli utenti, che 
 
 Una volta scelta la modalità, si procede alla configurazione degli utenti.
 
-Utenti
-======
+Interni
+=======
 Il primo passo nella configurazione di |product| è definire la lista di utenti e l'abbinamento con il loro interno telefonico.
 
 In caso di account provider remoto in questa sezione comparirà l'elenco degli utenti che |parent_product| recupera remotamente.
 
 In caso di account provider locale in questa sezione comparirà invece l'elenco degli utenti l'elenco delgi utenti di |parent_product| e ci sarà la possibilità di crearne direttamente da qui di nuovi scegliendo username e il nome completo.
 
-Interni
--------
 È possibile ora inserire gli interni relativi per ogni utente:
 
 - Inserire il numero dell'interno (consigliato a partire dal numero 200) nel campo di testo
@@ -86,27 +84,54 @@ In questo caso, il campo *password* verrà ignorato.
 
 Il tasto esporta consente di scaricare un modello di CSV con gli attuali utenti da modificare per poi importare nuovamente. Le righe precedute da # verranno considerate commenti. I gruppi CTI, una lista separata da pipe `|` verranno creati automaticamente. Il profilo CTI deve essere scelto tra quelli già creati
 
-Gruppi
+Fasci
+=====
+Nella sezione fasci è possibile configurare i gateway per gestire le linee fisiche o creare fascio VoIP specificando le credenziali delle linee SIP date dal provider.
+
+I fasci, per collegare i gateway o le linee VoIP, vengono creati utilizzando la libreria PJSIP.
+
+.. _fisici:
+
+Fisici
 ------
-È possibile creare dei gruppi utente che poi saranno visibili e utilizzabili nelle applicazioni, come ad esempio nel |product_cti|
+Come per i dispositivi, questa sezione scansiona la vostra rete e cerca dei gateway disponibili, una volta individuati è possibile specificare, selezionandone uno, due impostazioni:
 
-- Cliccare il bottone "Crea nuovo gruppo"
-- Specificare un nome e salvare
-- Il gruppo compare tra la lista
+- Modello: specificare il modello del gateway
+- Impostazioni dinamiche in base al modello:
 
-Profili
--------
-Il centralino prevede di specificare determinate funzionalità per ogni utente e queste funzionalità vengono raggruppate in dei profili.
+  * ISDN (Specificare per la linea se è Point-Point or Point-MultiPoint)
+  * PRI
+  * FXS (Specificare per ogni porta, l'interno da assegnare scegliendo un utente precedentemente configurato)
+  * FXO (Specificare direttamente il numero, nel campo di testo)
 
-Con l'installazione, vengono creati di default 3 profili che contengono l'abilitazione o meno a certe funzionalità.
+Una volta salvate le impostazioni è possibile caricare la configurazione sul gateway tramite il bottone "Carica"
+Il gateway prende la configurazione e si riavvia, vengono inoltre creati i fasci relativi.
 
-- Base: funzionalità minime per l'utente
-- Standard: funzionalità di gestione classiche per l'utente
-- Avanzato: quasi tutte le funzionalità sono sbloccate, per l'utente Avanzato
+VoIP
+----
+È possibile creare dei fasci VoIP selezionando uno dei provider supportati, e inserendo le informazioni necessarie.
 
-È possibile creare anche nuovi profili, duplicando uno esistente o creandone di nuovi e specificando le varie funzionalità
+Premere "Crea" per creare la configurazione relativa per quel fascio VoIP.
 
-.. note:: Ricordarsi di abilitare sui profili dove necessario l'accesso ai gruppi utente precedentemente creati.
+Rotte
+=====
+Nella sezione rotte è possibile configurare le rotte in entrata e in uscita per il vostro centralino
+
+In entrata
+----------
+Una volta in questa sezione, vi si presenta la lista delle rotte già configurate, con la possibilità di modificarle o eliminarle.
+
+Premendo sul bottone "Crea nuova rotta" si apre una differente applicazione il Visual Plan, che vi consente di creare, modificare e collegare le varie componenti per gestire al meglio il flusso della chiamata su un determinato numero in ingresso.
+
+Premendo il simbolo di spunta nell'applicazione Visual Plan, la configurazione della vostra rotta verrà salvata e da quel momento potrete ricevere chiamate e indirizzare il flusso a seconda della vostra scelta.
+
+In uscita
+---------
+In questa sezione è presente la lista delle rotte in uscita presenti, la prima volta che questa pagina viene visitata, il wizard vi propone delle rotte in uscita di default con i pattern di chiamate specifici per le diverse lingue.
+
+È possibile inoltre specificare l'ordine con cui usare i fasci, precedentemente creati, e regolare così in maniera personalizzata il percorso delle chiamate in uscita.
+
+Premendo il tasto "Salva" la configurazione viene scritta nel centralino e da quel momento è possibile effettuare chiamate verso l'esterno (avendo opportunamente configurato i fasci negli step precedenti).
 
 .. _wizard2-dispositivi:
 
@@ -216,7 +241,31 @@ i pannelli e le opzioni descritti in :ref:`wizard2-provisioning-section`.
 Configurazioni
 ==============
 
-La pagina :guilabel:`Configurazioni` stabilisce per ogni singolo utente le
+Gruppi
+------
+È possibile creare dei gruppi utente che poi saranno visibili e utilizzabili nelle applicazioni, come ad esempio nel |product_cti|
+
+- Cliccare il bottone "Crea nuovo gruppo"
+- Specificare un nome e salvare
+- Il gruppo compare tra la lista
+
+Profili
+-------
+Il centralino prevede di specificare determinate funzionalità per ogni utente e queste funzionalità vengono raggruppate in dei profili.
+
+Con l'installazione, vengono creati di default 3 profili che contengono l'abilitazione o meno a certe funzionalità.
+
+- Base: funzionalità minime per l'utente
+- Standard: funzionalità di gestione classiche per l'utente
+- Avanzato: quasi tutte le funzionalità sono sbloccate, per l'utente Avanzato
+
+È possibile creare anche nuovi profili, duplicando uno esistente o creandone di nuovi e specificando le varie funzionalità
+
+.. note:: Ricordarsi di abilitare sui profili dove necessario l'accesso ai gruppi utente precedentemente creati.
+
+Utenti
+------
+La pagina :guilabel:`Utenti` stabilisce per ogni singolo utente le
 impostazioni personali e i dispositivi associati.
 
 - :guilabel:`Profilo`, decide di quali permessi l'utente dispone, 
@@ -300,55 +349,6 @@ sezioni sopra elencate questo è l'ordine di priorità decrescente che verrà se
 - :guilabel:`Impostazioni Modello`
 - :guilabel:`Impostazioni di Default`
 
-
-Fasci
-=====
-Nella sezione fasci è possibile configurare i gateway per gestire le linee fisiche o creare fascio VoIP specificando le credenziali delle linee SIP date dal provider.
-
-I fasci, per collegare i gateway o le linee VoIP, vengono creati utilizzando la libreria PJSIP.
-
-.. _fisici:
-
-Fisici
-------
-Come per i dispositivi, questa sezione scansiona la vostra rete e cerca dei gateway disponibili, una volta individuati è possibile specificare, selezionandone uno, due impostazioni:
-
-- Modello: specificare il modello del gateway
-- Impostazioni dinamiche in base al modello:
-
-  * ISDN (Specificare per la linea se è Point-Point or Point-MultiPoint)
-  * PRI
-  * FXS (Specificare per ogni porta, l'interno da assegnare scegliendo un utente precedentemente configurato)
-  * FXO (Specificare direttamente il numero, nel campo di testo)
-
-Una volta salvate le impostazioni è possibile caricare la configurazione sul gateway tramite il bottone "Carica"
-Il gateway prende la configurazione e si riavvia, vengono inoltre creati i fasci relativi.
-
-VoIP
-----
-È possibile creare dei fasci VoIP selezionando uno dei provider supportati, e inserendo le informazioni necessarie.
-
-Premere "Crea" per creare la configurazione relativa per quel fascio VoIP.
-
-Rotte
-=====
-Nella sezione rotte è possibile configurare le rotte in entrata e in uscita per il vostro centralino
-
-In entrata
-----------
-Una volta in questa sezione, vi si presenta la lista delle rotte già configurate, con la possibilità di modificarle o eliminarle.
-
-Premendo sul bottone "Crea nuova rotta" si apre una differente applicazione il Visual Plan, che vi consente di creare, modificare e collegare le varie componenti per gestire al meglio il flusso della chiamata su un determinato numero in ingresso.
-
-Premendo il simbolo di spunta nell'applicazione Visual Plan, la configurazione della vostra rotta verrà salvata e da quel momento potrete ricevere chiamate e indirizzare il flusso a seconda della vostra scelta.
-
-In uscita
----------
-In questa sezione è presente la lista delle rotte in uscita presenti, la prima volta che questa pagina viene visitata, il wizard vi propone delle rotte in uscita di default con i pattern di chiamate specifici per le diverse lingue.
-
-È possibile inoltre specificare l'ordine con cui usare i fasci, precedentemente creati, e regolare così in maniera personalizzata il percorso delle chiamate in uscita.
-
-Premendo il tasto "Salva" la configurazione viene scritta nel centralino e da quel momento è possibile effettuare chiamate verso l'esterno (avendo opportunamente configurato i fasci negli step precedenti).
 
 Amministrazione
 ===============
