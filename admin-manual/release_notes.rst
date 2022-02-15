@@ -7,8 +7,93 @@ Note di rilascio |version|
 Questa release è basata su `Asterisk 13 <https://wiki.asterisk.org/wiki/display/AST/New+in+13>`_
 e `FreePBX 14 <https://www.freepbx.org/freepbx-14-release-candidate/>`_:
 
+Cambiamenti principali al 2022-02-21
+====================================
+
+* Refactor Chiamate Rapide |product_cti|
+* Aggiunto controllo rotte in uscita nei profili di |product|
+* Variato ordine sezioni wizard |product|
+
+Cambiamenti principali al 2021-10-22
+====================================
+
+* Richiama su Occupato: la funzionalità consente di prenotare la chiamata con un altro utente che è impegnato al telefono.
+* Infinite Scrolling
+
+Cambiamenti principali al 2021-07-24
+====================================
+
+* Nuova visualizzazione dello stato dei trunk (Dashboard e sezione Fasci VoIP) con vista su registrazione e stato provider su |product|
+* Gestione Multipla Interni non cambia più il contesto ma il profilo (cambiando il profilo si cambia automaticamente anche il contesto)
+* Migliorato il tono di disconnessione per i Patton analogici
+* Corretto il pickup da tasto BLF per i telefoni Gigaset Maxwell
+* Corretta la visualizzazione dati nella rubrica |product_cti| in modalità azienda
+* Corretto il funzionamento del trasferimento di chiamata utilizzando il pannello operatore in |product_cti|
+* Corretto il problema del conflitto di registrazione tra Janus e App Mobile in |product_cti|
+* Corretto la visualizzazione del tempo di conversazione nel pannello operatore di |product_cti|
+* Aggiunto nuovo indice alla tabella della rubrica di |product_cti| per migliorarne l’efficienza
+
+Cambiamenti principali al 2021-06-21
+====================================
+
+* I profili diventano anche dei contesti Asterisk per tutti i dispositivi dei utenti.
+* Creazione dei Trunk Voip usando la modalità PJSIP invece delle precedente SIP, solo i nuovi trunk saranno configurati in PJSIP 
+* Spiegazione per la configurazione dei dispositivi personalizzati per le varie modalità possibili
+* Spiegazione dei campi della rubrica nella applicazione Sorgenti Rubrica 
+* Codici Login/Logout e Pausa (di default \*45 e \*46) generalizzati per l’interno principale, usando il codice da un qualsiasi dispositivo sarà sempre riferito all’interno principale
+* Aggiunta opzione per URL parametrizzata solo da chiamate provenienti dalle code
+* Sistemazione delle traduzioni nell’interfaccia di |product|
+* Corretta la configurazione del modulo di espansione dei telefoni Yealink
+
+Cambiamenti principali al 2021-06-24
+====================================
+
+* Correzione del problema dell’aggiornamento del nome/numero chiamante in caso di trasferimento semi consultativo e trasferimento cieco ad una coda.
+* Risoluzione del malfunzionamento del pickup diretto per chiamate che suonano in un gruppo di chiamata su interni in contesti diversi da quello di default.
+
+Cambiamenti principali al 2021-04-23
+====================================
+
+Nuova funzionalità Videoconferenza
+È ora possibile avviare delle riunioni direttamente da |product_cti|.
+
+Al momento le modalità supportate sono:
+
+* nuova riunione e link di invito via email
+* avvio di una nuova riunione
+
+
+Cambiamenti principali al 2021-03-26
+====================================
+
+* Rilasciata Rubrica |product| per nuova App Mobile |product_cti|
+
+
+Cambiamenti principali al 2021-03-20
+====================================
+
+Rilasciati i Nuovi Report di |product|.
+
+Vedi qui :ref:`Report<report.html>`
+
+Cambiamenti principali al 2020-11-30
+====================================
+
+Rilasciata la gestione di una nuova sorgente per i contatti della rubrica Centralizzata e di |product|, il file CSV.
+
+Il modulo gestisce sia l’uso di uno specifico file CSV che il collegamento ad un file raggiungibile in HTTP/HTTPS che quindi può variare nel tempo, ad esempio esportazione periodica dei contatti in formato CSV di un software gestionale o CRM.
+
+Il formato CSV è quello standard:
+
+* il file CSV deve essere in codifica UTF-8
+* intestazioni nella prima riga
+* campi separati da virgola
+* doppie virgolette “” come qualificatori di testo obbligatori nel caso sia presente una virgola o uno spazio
+
+Vedi qui :ref:`Sorgenti Rubrica<wizard2_others.html#aggiunta-di-rubriche-esterne>`  
+
 Cambiamenti principali al 2020-07-06
-=====================================
+====================================
 
 Le nuove installazioni di |product| utilizzano il
 :ref:`nuovo sistema di provisioning <provisioning-phone2-section>` basato sul
