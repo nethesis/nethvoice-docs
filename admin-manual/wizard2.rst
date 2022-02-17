@@ -105,7 +105,7 @@ Come per i dispositivi questa sezione scansiona la rete di |product| e cerca dei
   * FXO (Specificare direttamente il numero, nel campo di testo)
 
 Una volta salvate le impostazioni è possibile caricare la configurazione sul gateway tramite il bottone "Carica"
-Il gateway prende la configurazione e si riavvia, vengono inoltre creati i fasci relativi.
+Il gateway scaricherà la configurazione da |product| e si riavvierà. Verranno inoltre creati i fasci relativi.
 
 VoIP
 ----
