@@ -247,17 +247,17 @@ Gruppi
 
 - Cliccare il bottone "Crea nuovo gruppo"
 - Specificare un nome e salvare
-- Il gruppo compare tra la lista
+- Il gruppo comparirà nella lista
 
 Profili
 -------
-Il centralino prevede di specificare determinate funzionalità per ogni utente e queste funzionalità vengono raggruppate in dei profili.
+|product| consente di selezionare le funzionalità a cui ogni utente potrà accedere e queste vengono raggruppate in dei profili.
 
-Con l'installazione, vengono creati di default 3 profili che contengono l'abilitazione o meno a certe funzionalità.
+Vengono creati di default 3 profili che contengono diversi livelli di funzionalità.
 
 - Base: funzionalità minime per l'utente
 - Standard: funzionalità di gestione classiche per l'utente
-- Avanzato: quasi tutte le funzionalità sono sbloccate, per l'utente Avanzato
+- Avanzato: quasi tutte le funzionalità sono consentite, indicato per l'utente avanzato
 
 È possibile creare anche nuovi profili, duplicando uno esistente o creandone di nuovi e specificando le varie funzionalità
 
@@ -282,7 +282,7 @@ impostazioni personali e i dispositivi associati.
 
 - :guilabel:`Associa dispositivo`, consente di selezionare un telefono non
   ancora associato e assegnarlo all'utente tra quelli gestiti con il provisioning.
-  È possibile creare delle credenziali da utilizzare su di un dispositivo non supportato 
+  È possibile creare delle credenziali da utilizzare in un dispositivo non supportato 
   dal provisioning: in tal caso è necessario utilizzare un dispositivo personalizzato.
 
 Vengono poi mostrati i dispositivi associati all'utente.

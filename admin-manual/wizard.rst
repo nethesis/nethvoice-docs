@@ -180,7 +180,7 @@ La lista degli utenti mostra quelli a cui è stato associato un interno nel prim
 - Inserire un numero di cellulare, che potrà essere usato dall'utente per abilitare l'inoltro di chiamata (se abilitato nel suo profilo)
 - Abilitare la voicemail
 - Abilitare il web phone su |product_cti|
-- Abilitare l'app Mobile
+- Abilitare l'App Mobile
 - Scegliere il profilo dell'utente tra quelli definiti precedentemente
 - Scegliere i gruppi di cui fa parte l'utente (tra quelli creati precedentemente)
 
