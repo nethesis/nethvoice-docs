@@ -181,7 +181,7 @@ La lista degli utenti mostra quelli a cui è stato associato un interno nel prim
 - Abilitare la voicemail
 - Abilitare il web phone su |product_cti|
 - Abilitare l'app Mobile
-- Scegliere il profilo da destinare all'utente (uno di quelli definiti allo step 3)
+- Scegliere il profilo dell'utente tra quelli definiti precedentemente
 - Scegliere un gruppo a cui far parte (uno di quelli creati allo step 2)
 
 .. warning::
