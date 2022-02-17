@@ -162,7 +162,7 @@ Vengono creati di default 3 profili che contengono diversi livelli di funzionali
 
 - Base: funzionalità minime per l'utente
 - Standard: funzionalità di gestione classiche per l'utente
-- Avanzato: quasi tutte le funzionalità sono sbloccate, per l'utente Avanzato
+- Avanzato: quasi tutte le funzionalità sono consentite, indicato per l'utente avanzato
 
 É possibile creare anche nuovi profili, duplicando uno esistente o creandone di nuovi e specificando le varie funzionalità.
 
