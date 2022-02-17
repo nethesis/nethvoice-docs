@@ -152,7 +152,7 @@ Gruppi
 
 - Cliccare il bottone "Crea nuovo gruppo"
 - Specificare un nome e salvare
-- Il gruppo compare tra la lista
+- Il gruppo comparirà nella lista
 
 Profili
 -------
