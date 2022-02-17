@@ -177,7 +177,7 @@ La lista degli utenti mostra quelli a cui è stato associato un interno nel prim
 
 - Creare un dispositivo personalizzato per collegare all'utente un apparato telefonico che supporta lo standard SIP non supportato dal provisioning (ad esempio un softphone)
 - Associare un telefono di quelli precedentemente configurati (effettuando il provisioning automatico)
-- Inserire un numero di cellulare
+- Inserire un numero di cellulare, che potrà essere usato dall'utente per abilitare l'inoltro di chiamata (se abilitato nel suo profilo)
 - Abilitare la voicemail
 - Abilitare il client WebRTC
 - Abilitare l'app Mobile
