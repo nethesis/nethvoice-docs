@@ -164,7 +164,7 @@ Vengono creati di default 3 profili che contengono diversi livelli di funzionali
 - Standard: funzionalità di gestione classiche per l'utente
 - Avanzato: quasi tutte le funzionalità sono consentite, indicato per l'utente avanzato
 
-É possibile creare anche nuovi profili, duplicando uno esistente o creandone di nuovi e specificando le varie funzionalità.
+È possibile creare anche nuovi profili, duplicando uno esistente o creandone di nuovi e specificando le varie funzionalità.
 
 Il profilo serve a stabilire le funzionalità abilitate per ogni utente a cui viene assegnato ed è valido per tutti i dispositivi dell'utente, sia per i telefoni fisici che per il dispositivo web utilizzato dal |product_cti| e la App mobile.
 
