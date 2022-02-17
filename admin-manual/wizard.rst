@@ -148,7 +148,7 @@ Configurazioni
 
 Gruppi
 ------
-É possibile creare dei gruppi utente che poi saranno visibili e utilizzabili nelle applicazioni, come ad esempio nel |product_cti|
+È possibile creare dei gruppi utente che poi saranno visibili e utilizzabili nelle applicazioni, ad esempio nel |product_cti|
 
 - Cliccare il bottone "Crea nuovo gruppo"
 - Specificare un nome e salvare
