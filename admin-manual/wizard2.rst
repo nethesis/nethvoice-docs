@@ -119,7 +119,7 @@ Nella sezione rotte è possibile configurare le rotte in entrata e in uscita per
 
 In entrata
 ----------
-Una volta in questa sezione, vi si presenta la lista delle rotte già configurate, con la possibilità di modificarle o eliminarle.
+In questa sezione, viene mostrata la lista delle rotte già configurate, con la possibilità di modificarle o eliminarle.
 
 Premendo sul bottone "Crea nuova rotta" si aprirà un nuovo tab con l'applicazione Visual Plan, che vi consentirà di creare, modificare e collegare i componenti del centralino che gestiranno il flusso della chiamata per il numero in ingresso 
 
