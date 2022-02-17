@@ -158,7 +158,7 @@ Profili
 -------
 |product| consente di selezionare le funzionalità a cui ogni utente potrà accedere e queste vengono raggruppate in dei profili.
 
-Con l'installazione, vengono creati di default 3 profili che contengono l'abilitazione o meno a certe funzionalità.
+Vengono creati di default 3 profili che contengono diversi livelli di funzionalità.
 
 - Base: funzionalità minime per l'utente
 - Standard: funzionalità di gestione classiche per l'utente
