@@ -175,7 +175,7 @@ Utenti
 Lo step finale della sezione :guilabel:`Configurazioni` consente di assegnare ad ogni utente le impostazioni create nei passi precedenti.
 La lista degli utenti mostra quelli a cui è stato associato un interno nel primo passaggio. Selezionando un utente è possibile:
 
-- Creare un dispositivo personalizzato per collegare all'utente un apparato telefonico non supportato (ad esempio softphone)
+- Creare un dispositivo personalizzato per collegare all'utente un apparato telefonico che supporta lo standard SIP non supportato dal provisioning (ad esempio un softphone)
 - Associare un telefono di quelli precedentemente configurati (effettuando il provisioning automatico)
 - Inserire un numero di cellulare
 - Abilitare la voicemail
