@@ -156,7 +156,7 @@ Gruppi
 
 Profili
 -------
-Il centralino prevede di specificare determinate funzionalità per ogni utente e queste funzionalità vengono raggruppate in dei profili.
+|product| consente di selezionare le funzionalità a cui ogni utente potrà accedere e queste vengono raggruppate in dei profili.
 
 Con l'installazione, vengono creati di default 3 profili che contengono l'abilitazione o meno a certe funzionalità.
 
