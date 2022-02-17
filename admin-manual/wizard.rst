@@ -173,7 +173,7 @@ Il profilo serve a stabilire le funzionalità abilitate per ogni utente a cui vi
 Utenti
 ------
 Lo step finale della sezione :guilabel:`Configurazioni` consente di assegnare ad ogni utente le impostazioni create nei passi precedenti.
-La lista degli utenti mostra quelli a cui è stato associato un interno nel primo step. Selezionando un utente è possibile:
+La lista degli utenti mostra quelli a cui è stato associato un interno nel primo passaggio. Selezionando un utente è possibile:
 
 - Creare un dispositivo personalizzato per collegare all'utente un apparato telefonico non supportato (ad esempio softphone)
 - Associare un telefono di quelli precedentemente configurati (effettuando il provisioning automatico)
