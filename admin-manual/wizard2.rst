@@ -123,7 +123,7 @@ Una volta in questa sezione, vi si presenta la lista delle rotte già configurat
 
 Premendo sul bottone "Crea nuova rotta" si aprirà un nuovo tab con l'applicazione Visual Plan, che vi consentirà di creare, modificare e collegare i componenti del centralino che gestiranno il flusso della chiamata per il numero in ingresso 
 
-Premendo il simbolo di spunta nell'applicazione Visual Plan, la configurazione della vostra rotta verrà salvata e da quel momento potrete ricevere chiamate e indirizzare il flusso a seconda della vostra scelta.
+Premendo il simbolo di spunta nell'applicazione Visual Plan, la configurazione della vostra rotta verrà salvata e da quel momento potrete ricevere chiamate che seguiranno il flusso da voi scelto.
 
 In uscita
 ---------
