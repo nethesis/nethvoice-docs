@@ -79,7 +79,7 @@ Vedi qui :ref:`Report<report.html>`
 Cambiamenti principali al 2020-11-30
 ====================================
 
-Rilasciata la gestione di una nuova sorgente per i contatti della rubrica Centralizzata e di |product|, il file CSV.
+Rilasciata la gestione dei file CSV come nuova sorgente per i contatti della rubrica Centralizzata e di |product|.
 
 Il modulo gestisce sia l’uso di uno specifico file CSV che il collegamento ad un file raggiungibile in HTTP/HTTPS che quindi può variare nel tempo, ad esempio esportazione periodica dei contatti in formato CSV di un software gestionale o CRM.
 
