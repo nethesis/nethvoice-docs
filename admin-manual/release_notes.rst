@@ -88,7 +88,7 @@ Il formato CSV è quello standard:
 * il file CSV deve essere in codifica UTF-8
 * intestazioni nella prima riga
 * campi separati da virgola
-* doppie virgolette “” come qualificatori di testo obbligatori nel caso sia presente una virgola o uno spazio
+* doppie virgolette "" come delimitatori del testo, obbligatori nel caso sia presente una virgola o uno spazio
 
 Vedi qui :ref:`Sorgenti Rubrica<wizard2_others.html#aggiunta-di-rubriche-esterne>`  
 
