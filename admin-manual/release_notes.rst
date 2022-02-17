@@ -41,7 +41,7 @@ Cambiamenti principali al 2021-06-21
 * Spiegazione per la configurazione dei dispositivi personalizzati per le varie modalità possibili
 * Spiegazione dei campi della rubrica nella applicazione Sorgenti Rubrica 
 * Codici Login/Logout e Pausa (di default \*45 e \*46) generalizzati per l’interno principale: usando il codice da un qualsiasi dispositivo sarà sempre riferito all’interno principale
-* Aggiunta opzione per URL parametrizzata solo da chiamate provenienti dalle code
+* Aggiunta opzione per URL parametrizzato solo da chiamate provenienti dalle code
 * Sistemazione delle traduzioni nell’interfaccia di |product|
 * Corretta la configurazione del modulo di espansione dei telefoni Yealink
 
