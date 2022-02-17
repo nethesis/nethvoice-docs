@@ -129,7 +129,7 @@ In uscita
 ---------
 In questa sezione è presente la lista delle rotte in uscita. La prima volta che questa pagina viene visitata il wizard vi propone delle rotte in uscita di default, con i pattern di chiamata specifici per le diverse lingue.
 
-È possibile inoltre specificare l'ordine con cui usare i fasci, precedentemente creati, e regolare così in maniera personalizzata il percorso delle chiamate in uscita.
+È possibile inoltre specificare l'ordine con cui verranno usati i fasci precedentemente creati, avendo quindi la possibilità di personalizzare la priorità dei vari fasci.
 
 Premendo il tasto "Salva" la configurazione viene scritta nel centralino e da quel momento è possibile effettuare chiamate verso l'esterno (avendo opportunamente configurato i fasci negli step precedenti).
 
