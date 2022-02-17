@@ -179,7 +179,7 @@ La lista degli utenti mostra quelli a cui è stato associato un interno nel prim
 - Associare un telefono di quelli precedentemente configurati (effettuando il provisioning automatico)
 - Inserire un numero di cellulare, che potrà essere usato dall'utente per abilitare l'inoltro di chiamata (se abilitato nel suo profilo)
 - Abilitare la voicemail
-- Abilitare il client WebRTC
+- Abilitare il web phone su |product_cti|
 - Abilitare l'app Mobile
 - Scegliere il profilo da destinare all'utente (uno di quelli definiti allo step 3)
 - Scegliere un gruppo a cui far parte (uno di quelli creati allo step 2)
