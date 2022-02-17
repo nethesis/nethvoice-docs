@@ -127,7 +127,7 @@ Premendo il simbolo di spunta nell'applicazione Visual Plan, la configurazione d
 
 In uscita
 ---------
-In questa sezione è presente la lista delle rotte in uscita presenti, la prima volta che questa pagina viene visitata, il wizard vi propone delle rotte in uscita di default con i pattern di chiamate specifici per le diverse lingue.
+In questa sezione è presente la lista delle rotte in uscita. La prima volta che questa pagina viene visitata il wizard vi propone delle rotte in uscita di default, con i pattern di chiamata specifici per le diverse lingue.
 
 È possibile inoltre specificare l'ordine con cui usare i fasci, precedentemente creati, e regolare così in maniera personalizzata il percorso delle chiamate in uscita.
 
