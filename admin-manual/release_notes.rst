@@ -36,7 +36,7 @@ Cambiamenti principali al 2021-07-24
 Cambiamenti principali al 2021-06-21
 ====================================
 
-* I profili diventano anche dei contesti Asterisk per tutti i dispositivi dei utenti.
+* I profili diventano anche dei contesti Asterisk per tutti i dispositivi degli utenti.
 * Creazione dei Trunk Voip usando la modalità PJSIP invece delle precedente SIP, solo i nuovi trunk saranno configurati in PJSIP 
 * Spiegazione per la configurazione dei dispositivi personalizzati per le varie modalità possibili
 * Spiegazione dei campi della rubrica nella applicazione Sorgenti Rubrica 
