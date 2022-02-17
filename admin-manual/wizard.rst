@@ -135,7 +135,7 @@ Premendo il tasto "Salva" la configurazione viene scritta nel centralino e da qu
 
 Dispositivi
 -----------
-In questa sezione è possibile scansionare la propria rete e il wizard troverà in automatico i telefoni che sono collegati alla vostra rete, individuando, dove è possibile, marco e modello e vi fornisce inoltre l'indirizzo IP e il MAC address.
+In questa sezione è possibile scansionare la rete del |product| e il wizard troverà in automatico i telefoni presenti, individuando, dove è possibile, marca e modello, mostrando inoltre l'indirizzo IP e il MAC address.
 
 Se in alcuni telefoni non è stato possibile trovare automaticamente il modello, servirsi del menù a tendina per specificarlo.
 
