@@ -109,7 +109,7 @@ Il gateway prende la configurazione e si riavvia, vengono inoltre creati i fasci
 
 VoIP
 ----
-È possibile creare dei fasci VoIP selezionando uno dei provider supportati, e inserendo le informazioni necessarie.
+È possibile creare dei fasci VoIP selezionando uno dei provider supportati e inserendo le informazioni necessarie.
 
 Premere "Crea" per creare la configurazione relativa per quel fascio VoIP.
 
