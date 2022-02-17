@@ -18,7 +18,7 @@ Cambiamenti principali al 2021-10-22
 ====================================
 
 * Richiama su Occupato: la funzionalità consente di prenotare la chiamata con un altro utente che è impegnato al telefono.
-* Infinite Scrolling
+* Infinite Scrolling in alcune sezioni dell'interfaccia web di |product|
 
 Cambiamenti principali al 2021-07-24
 ====================================
@@ -38,8 +38,6 @@ Cambiamenti principali al 2021-06-21
 
 * I profili diventano anche dei contesti Asterisk per tutti i dispositivi degli utenti.
 * Creazione dei Trunk Voip usando la modalità PJSIP invece delle precedente SIP, solo i nuovi trunk saranno configurati in PJSIP 
-* Spiegazione per la configurazione dei dispositivi personalizzati per le varie modalità possibili
-* Spiegazione dei campi della rubrica nella applicazione Sorgenti Rubrica 
 * Codici Login/Logout e Pausa (di default \*45 e \*46) generalizzati per l’interno principale: usando il codice da un qualsiasi dispositivo sarà sempre riferito all’interno principale
 * Aggiunta opzione per URL parametrizzato solo da chiamate provenienti dalle code
 * Sistemazione delle traduzioni nell’interfaccia di |product|
