@@ -94,7 +94,7 @@ I fasci, per collegare i gateway o le linee VoIP, vengono creati utilizzando la 
 
 Fisici
 ------
-Come per i dispositivi, questa sezione scansiona la vostra rete e cerca dei gateway disponibili, una volta individuati è possibile specificare, selezionandone uno, due impostazioni:
+Come per i dispositivi questa sezione scansiona la rete di |product| e cerca dei gateway SIP supportati. Una volta individuati è possibile specificare:
 
 - Modello: specificare il modello del gateway
 - Impostazioni dinamiche in base al modello:
