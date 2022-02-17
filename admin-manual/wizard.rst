@@ -137,7 +137,7 @@ Dispositivi
 -----------
 In questa sezione è possibile scansionare la rete del |product| e il wizard troverà in automatico i telefoni presenti, individuando, dove è possibile, marca e modello, mostrando inoltre l'indirizzo IP e il MAC address.
 
-Se in alcuni telefoni non è stato possibile trovare automaticamente il modello, servirsi del menù a tendina per specificarlo.
+Se di alcuni telefoni non è stato possibile trovare automaticamente il modello, servirsi del menù a tendina per selezionarlo.
 
 Per rieseguire la scansione della rete, premere il pulsante *Scan*
 
