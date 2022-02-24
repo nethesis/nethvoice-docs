@@ -53,6 +53,25 @@ Utilizzo di cuffie USB con tasti funzione
 
 È possibile utilizzare dispositivi USB Telephony Headset con tasti funzione per rispondere ad una chiamata o terminarla, utilizzando il tasto ON/OFF HOOK.
 
+Modelli Headset USB supportati
+==============================
+
+I modelli sottostanti sono stati provati e funzionano correttamente, potrebbero essere supportati i dispositivi conformi alle specifiche "USB Telephony Headset" con mappatura del pulsante ON/OFF HOOK.
+
+Yealink
+-------
+* UH 36
+
+Sennheiser
+----------
+
+* SC 130 USB
+
+Jabra
+-----
+
+* HSC016
+
 Combinazione tasti chiamata
 ---------------------------
 
