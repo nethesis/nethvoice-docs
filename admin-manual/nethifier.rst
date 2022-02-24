@@ -47,6 +47,12 @@ Configurazione
 È necessario salvare i dati cliccando il pulsante apposito in maniera tale da non doverli più reinserire
 agli avvii successivi. È anche possibile attivare l'esecuzione automatica di |product_nethifier| all'avvio di Windows.
 
+
+Utilizzo di cuffie USB con tasti funzione
+-----------------------------------------
+
+È possibile utilizzare dispositivi USB Telephony Headset con tasti funzione per rispondere ad una chiamata o terminarla, utilizzando il tasto ON/OFF HOOK.
+
 Combinazione tasti chiamata
 ---------------------------
 
