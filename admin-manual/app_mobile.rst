@@ -15,11 +15,12 @@ I requisiti per utillizzare l'app sono:
 - certificato valido installato sul |product|
 - ip pubblico statico
 - indirizzo FQDN del |product| raggiungibile e utilizzato nella configurazione dell'app (manualmente o nel |product_cti|)
-- protocollo SIP TLS raggiungibile
-- porta HTTPS raggiungibile
+- porta 443 HTTPS raggiungibile
 - porta 6061 TCP raggiungibile
 - range 10000-20000 UDP raggiungibile
 - :guilabel:`Accesso SIPS esterno` deve essere abilitato nella pagina :guilabel:`Amministrazione -> Impostazioni` del wizard
+
+Per far funzionare la App Mobile dalla stessa rete locale del |product| è necessario che sul firewall (più precisamente sull'apparato che gestisce il NAT dell'ip pubblico associato al |product|) sia abilita la funzione "hairpin NAT" denominata anche come NAT reflection / NAT hairpining / NAT on a stick / loopback NAT.
 
 .. note:: In alternativa al FQDN del |product| è possibile usare un nome host e dominio configurato come alias per il server con gli stessi requisiti.
    Per usarlo al posto del FQDN utilizzare questi comandi sostituendo ad ALIAS il nome host seguito dal dominio (ad esempio host.dominio.com): ::
