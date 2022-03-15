@@ -7,6 +7,11 @@ Note di rilascio |version|
 Questa release è basata su `Asterisk 13 <https://wiki.asterisk.org/wiki/display/AST/New+in+13>`_
 e `FreePBX 14 <https://www.freepbx.org/freepbx-14-release-candidate/>`_:
 
+Cambiamenti principali al 2022-03-08
+====================================
+* Nuova Presence per |product_cti|
+* Supporto cuffie USB per |product_nethifier| 
+
 Cambiamenti principali al 2022-02-21
 ====================================
 
