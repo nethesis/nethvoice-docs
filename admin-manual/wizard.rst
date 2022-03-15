@@ -35,14 +35,16 @@ Se il provider scelto non è locale, non sarà possibile creare gli utenti, che 
 
 Una volta scelta la modalità, si procede alla configurazione degli utenti.
 
-Interni
-=======
+Utenti
+======
 Il primo passo nella configurazione di |product| è definire la lista di utenti e l'abbinamento con il loro interno telefonico.
 
 In caso di account provider remoto in questa sezione comparirà l'elenco degli utenti che |parent_product| recupera remotamente.
 
 In caso di account provider locale in questa sezione comparirà invece l'elenco degli utenti l'elenco delgi utenti di |parent_product| e ci sarà la possibilità di crearne direttamente da qui di nuovi scegliendo username e il nome completo.
 
+Interni
+-------
 É possibile ora inserire gli interni relativi per ogni utente:
 
 - Inserire il numero dell'interno (consigliato a partire dal numero 200) nel campo di testo
@@ -83,6 +85,64 @@ Se il campo *password* non viene compilato, la password sarà generata casualmen
 In questo caso, il campo *password* verrà ignorato.
 
 Il tasto esporta consente di scaricare un modello di CSV con gli attuali utenti da modificare per poi importare nuovamente. Le righe precedute da # verranno considerate commenti. I gruppi CTI, una lista separata da pipe `|` verranno creati automaticamente. Il profilo CTI deve essere scelto tra quelli già creati
+
+Gruppi
+------
+É possibile creare dei gruppi utente che poi saranno visibili e utilizzabili nelle applicazioni, come ad esempio nel |product_cti| 
+
+- Cliccare il bottone "Crea nuovo gruppo"
+- Specificare un nome e salvare
+- Il gruppo compare tra la lista
+
+Profili
+-------
+Il centralino prevede di specificare determinate funzionalità per ogni utente e queste funzionalità vengono raggruppate in dei profili.
+
+Con l'installazione, vengono creati di default 3 profili che contengono l'abilitazione o meno a certe funzionalità.
+
+- Base: funzionalità minime per l'utente
+- Standard: funzionalità di gestione classiche per l'utente
+- Avanzato: quasi tutte le funzionalità sono sbloccate, per l'utente Avanzato
+
+É possibile creare anche nuovi profili, duplicando uno esistente o creandone di nuovi e specificando le varie funzionalità.
+
+Il profilo serve a stabilire le funzionalità abilitate per ogni utente a cui viene assegnato ed è valido per tutti i dispositivi dell'utente, sia per i telefoni fisici che per il dispositivo web utilizzato dal |product_cti| e la App mobile.
+
+
+.. note:: Ricordarsi di abilitare sui profili dove necessario l'accesso ai gruppi utente precedentemente creati.
+
+.. _telefoni_fisici_supportati:
+
+Dispositivi
+-----------
+In questa sezione è possibile scansionare la propria rete e il wizard troverà in automatico i telefoni che sono collegati alla vostra rete, individuando, dove è possibile, marco e modello e vi fornisce inoltre l'indirizzo IP e il MAC address.
+
+Se in alcuni telefoni non è stato possibile trovare automaticamente il modello, servirsi del menù a tendina per specificarlo.
+
+Per rieseguire la scansione della rete, premere il pulsante *Scan*
+
+.. _configurazioni:
+
+Configurazioni
+--------------
+Lo step finale della sezione Utenti, prevede di raggruppare tutte le impostazioni create e definite nei passi precedenti.
+La lista degli utenti mostra quelli a cui è stato associato un interno nel primo step. Selezionando un utente è possibile:
+
+- Creare un dispositivo personalizzato per collegare all'utente un apparato telefonico non supportato (ad esempio softphone)
+- Associare un telefono di quelli precedentemente configurati (effettuando il provisioning automatico)
+- Inserire un numero di cellulare
+- Abilitare la voicemail
+- Abilitare il client WebRTC
+- Abilitare l'app Mobile
+- Scegliere il profilo da destinare all'utente (uno di quelli definiti allo step 3)
+- Scegliere un gruppo a cui far parte (uno di quelli creati allo step 2)
+
+
+.. warning::
+
+   Le compatibilità dei telefoni e le istruzioni dettagliate di come effettuare il provisioning si trovano in :ref:`provisioning-section`
+
+
 
 Fasci
 =====
@@ -130,63 +190,6 @@ In questa sezione è presente la lista delle rotte in uscita presenti, la prima 
 É possibile inoltre specificare l'ordine con cui usare i fasci, precedentemente creati, e regolare così in maniera personalizzata il percorso delle chiamate in uscita.
 
 Premendo il tasto "Salva" la configurazione viene scritta nel centralino e da quel momento è possibile effettuare chiamate verso l'esterno (avendo opportunamente configurato i fasci negli step precedenti).
-
-.. _telefoni_fisici_supportati:
-
-Dispositivi
------------
-In questa sezione è possibile scansionare la rete del |product| e il wizard troverà in automatico i telefoni presenti, individuando, dove è possibile, marca e modello, mostrando inoltre l'indirizzo IP e il MAC address.
-
-Se di alcuni telefoni non è stato possibile trovare automaticamente il modello, servirsi del menù a tendina per selezionarlo.
-
-Per rieseguire la scansione della rete, premere il pulsante *Scan*
-
-.. _configurazioni:
-
-Configurazioni
-==============
-
-Gruppi
-------
-È possibile creare dei gruppi utente che poi saranno visibili e utilizzabili nelle applicazioni, ad esempio nel |product_cti|
-
-- Cliccare il bottone "Crea nuovo gruppo"
-- Specificare un nome e salvare
-- Il gruppo comparirà nella lista
-
-Profili
--------
-|product| consente di selezionare le funzionalità a cui ogni utente potrà accedere e queste vengono raggruppate in dei profili.
-
-Vengono creati di default 3 profili che contengono diversi livelli di funzionalità.
-
-- Base: funzionalità minime per l'utente
-- Standard: funzionalità di gestione classiche per l'utente
-- Avanzato: quasi tutte le funzionalità sono consentite, indicato per l'utente avanzato
-
-È possibile creare anche nuovi profili, duplicando uno esistente o creandone di nuovi e specificando le varie funzionalità.
-
-Il profilo serve a stabilire le funzionalità abilitate per ogni utente a cui viene assegnato ed è valido per tutti i dispositivi dell'utente, sia per i telefoni fisici che per il dispositivo web utilizzato dal |product_cti| e la App mobile.
-
-.. note:: Ricordarsi di abilitare sui profili dove necessario l'accesso ai gruppi utente precedentemente creati.
-
-Utenti
-------
-Lo step finale della sezione :guilabel:`Configurazioni` consente di assegnare ad ogni utente le impostazioni create nei passi precedenti.
-La lista degli utenti mostra quelli a cui è stato associato un interno nel primo passaggio. Selezionando un utente è possibile:
-
-- Creare un dispositivo personalizzato per collegare all'utente un apparato telefonico che supporta lo standard SIP non supportato dal provisioning (ad esempio un softphone)
-- Associare un telefono di quelli precedentemente configurati (effettuando il provisioning automatico)
-- Inserire un numero di cellulare, che potrà essere usato dall'utente per abilitare l'inoltro di chiamata (se abilitato nel suo profilo)
-- Abilitare la voicemail
-- Abilitare il web phone su |product_cti|
-- Abilitare l'App Mobile
-- Scegliere il profilo dell'utente tra quelli definiti precedentemente
-- Scegliere i gruppi di cui fa parte l'utente (tra quelli creati precedentemente)
-
-.. warning::
-
-   Le compatibilità dei telefoni e le istruzioni dettagliate di come effettuare il provisioning si trovano in :ref:`provisioning-section`
 
 Applicazioni
 ============
@@ -386,6 +389,8 @@ La pagina delle Impostazioni permette di gestire diversi aspetti della configura
 .. warning:: 
 
     Per ridurre l'uso di memoria del sistema è consigliato attivare una sola delle precedenti modalità di pubblicazione della rubrica LDAP
+
+
 
 Avanzate
 --------
