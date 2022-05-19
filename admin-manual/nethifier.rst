@@ -16,9 +16,10 @@ Requisiti
 
 - .NET Framework 4.5.
 - Server |product| 3.x.
-- Il pc su cui è in esecuzione |product_nethifier| deve risolvere l'indirizzo ``nomenethvoice.dominio``.
+- Il pc su cui è in esecuzione |product_nethifier| deve risolvere l'indirizzo FQDN di |product|.
+- il pc su cui è in esecuzione |product_nethifier| deve raggiungere il |product| sulla porta 8183 TCP usata per una connessione criptata, se non avviene la comunicazione il |product_nethifier| proverà a raggiungere il |product| sulla porta 8182 TCP con una connessione NON criptata. 
 
-.. note:: Per ottenere il nome di dominio si può utilizzare il comando ``hostname -f``
+.. note:: Per ottenere FQDN si può utilizzare il comando ``hostname -f``
 
 Download
 ========
@@ -34,7 +35,7 @@ avviato automaticamente.
 
 Per poter essere eseguito |product_nethifier| necessita di privilegi amministrativi perciò è necessario ricordarsi di installarlo utilizzando l'opzione "Esegui come amministratore".
 
-.. warning:: Durante l'installazione su Windows 10 verrà mostrato un avviso di sicurezza di Windows Defender SmartScreen. È sufficiente cliccare la voce "Esegui comunque" e continuare nelle fasi successive. Qua maggiori `informazioni <https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-defender-smartscreen/windows-defender-smartscreen-set-individual-device>`_.
+.. warning:: Durante l'installazione su Windows 10/11 verrà mostrato un avviso di sicurezza di Windows Defender SmartScreen. È sufficiente cliccare la voce "Esegui comunque" e continuare nelle fasi successive. Qua maggiori `informazioni <https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-defender-smartscreen/windows-defender-smartscreen-set-individual-device>`_.
 
 Configurazione
 ==============
