@@ -19,7 +19,7 @@ Requisiti
 - Il pc su cui è in esecuzione |product_nethifier| deve risolvere l'indirizzo FQDN di |product|.
 - il pc su cui è in esecuzione |product_nethifier| deve raggiungere il |product| sulla porta 8183 TCP usata per una connessione criptata, se non avviene la comunicazione il |product_nethifier| proverà a raggiungere il |product| sulla porta 8182 TCP con una connessione NON criptata. 
 
-.. note:: Per ottenere FQDN si può utilizzare il comando ``hostname -f``
+.. note:: Per ottenere l'indirizzo FQDN si può utilizzare il comando ``hostname -f``
 
 Download
 ========
