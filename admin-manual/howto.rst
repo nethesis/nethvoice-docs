@@ -1,27 +1,3 @@
-|product|: installazione codec g729
-===================================
-
-Se è già installato in |product| un codec g729, il seguente comando deve stampare ``INSTALLED``: ::
-
-  asterisk -rx 'core show translation' | grep -q g729 && echo INSTALLED
-
-.. warning::
-
-  Il riavvio del servizio ``asterisk`` causa la caduta delle chiamate in corso
-
-Per installare ed attivare il codec g729 di Intel eseguire i seguenti comandi: ::
-
-  yum install -y asterisk-codecs-g729
-  systemctl restart asterisk
-
-Il codec g729 di Intel non è compatibile con la versione a pagamento di Digium, 
-che si può installare seguendo la procedura che vi forniranno con l'acquisto,
-dopo aver disintallato il pacchetto ``asterisk-codecs-g729`` con il comando: ::
-
-  yum remove -y asterisk-codecs-g729
-  systemctl restart asterisk
-
-
 |product|: configurazione dell'IP locale
 ========================================
 
