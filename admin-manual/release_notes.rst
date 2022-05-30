@@ -4,8 +4,15 @@ Note di rilascio |version|
 
 |product| release |version|
 
-Questa release è basata su `Asterisk 13 <https://wiki.asterisk.org/wiki/display/AST/New+in+13>`_
+Questa release è basata su `Asterisk 18 <https://wiki.asterisk.org/wiki/display/AST/New+in+18>`_
 e `FreePBX 14 <https://www.freepbx.org/freepbx-14-release-candidate/>`_:
+
+Cambiamenti principali al 2022-05-30
+====================================
+
+* Aggiornato Asterisk alla versione 18
+* Apertura URL parametrizzata anche da |product_nethifier|
+* Aggiunto monitoraggio tempi di richiamata per Report e Qmanager 
 
 Cambiamenti principali al 2022-03-08
 ====================================
