@@ -534,7 +534,7 @@ Lo script verrà invocato tramite i seguenti parametri così come ricevuti da As
 
 .. code-block:: bash
 
-  "source, channel, endtime, duration, amaflags, uniqueid, callerid, starttime, answertime, destination, disposition, lastapplication, billableseconds, destinationcontext, destinationchannel,accountcode"
+  "source, channel, endtime, duration, amaflags, uniqueid, callerid, starttime, answertime, destination, disposition, lastapplication, billableseconds, destinationcontext, destinationchannel, accountcode"
 
 Esempio:
 
