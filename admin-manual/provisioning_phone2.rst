@@ -263,6 +263,7 @@ NethPhone
 
 * NP-X3
 * NP-X5
+* NP-X210
 
 
 Fanvil
