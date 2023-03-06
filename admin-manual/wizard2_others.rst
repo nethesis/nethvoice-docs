@@ -125,6 +125,12 @@ CSV
 
 Il pulsante :guilabel:`Verifica` consente la visualizzazione dell'anteprima dei dati prelevati dalla sorgente.
 
+Risoluzione nomi personalizzata
+...............................
+
+Nel caso si desiderasse utilizzare una sorgente diversa dalla rubrica centralizzata per risolvere i nomi, è possibile fare uno script custom di risoluzione e metterlo nella cartella `/usr/src/nethvoice/lookup.d`. 
+Nella cartella `/usr/src/nethvoice/samples/` ci sono due script di esempio `lookup_dummy.php` e `lookup_vte.php` che possono essere usati come spunto per creare il proprio personalizzato. Il primo restituisce un risultato finto qualunque numero chiami o sia chiamato, il secondo utilizza un'API esterna.
+
 Mappa
 .....
 
