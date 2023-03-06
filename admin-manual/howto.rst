@@ -534,13 +534,13 @@ Lo script verrà invocato tramite i seguenti parametri così come ricevuti da As
 
 .. code-block:: bash
 
-  "source, channel, endtime, duration, amaflags, uniqueid, callerid, starttime, answertime, destination, disposition, lastapplication, billableseconds, destinationcontext, destinationchannel"
+  "source, channel, endtime, duration, amaflags, uniqueid, callerid, starttime, answertime, destination, disposition, lastapplication, billableseconds, destinationcontext, destinationchannel, accountcode"
 
 Esempio:
 
 .. code-block:: bash
   
-  ./<SCRIPT_PATH> '200' 'PJSIP/200-00000000' '2019-01-17 18:05:13' '10' 'DOCUMENTATION' '1547744703.0' '"Alessandro Polidori" <200>' '2019-01-17 18:05:03' '2019-01-17 18:05:09' '201' 'ANSWERED' 'Dial' '3' 'ext-local' 'PJSIP/201-00000001' 
+  ./<SCRIPT_PATH> '200' 'PJSIP/200-00000000' '2019-01-17 18:05:13' '10' 'DOCUMENTATION' '1547744703.0' '"Alessandro Polidori" <200>' '2019-01-17 18:05:03' '2019-01-17 18:05:09' '201' 'ANSWERED' 'Dial' '3' 'ext-local' 'PJSIP/201-00000001' '201'
 
 
 Per attivare l'esecuzione di uno script eseguire:

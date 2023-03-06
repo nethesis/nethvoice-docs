@@ -5,11 +5,18 @@ Provisioning dei gateway
 Gateway supportati
 ===================
 
-SANGOMA
--------
+GRANDSTREAM
+-----------
 
-* Vega 60 2 BRI, 4 BRI 4 FXO
-* Vega 100G 
+* Modelli FXS HT801 e HT802
+* Modelli FXS HT812 e HT814
+* Modelli FXS GXW4216 e GXW4224 e GXW4232 e GXW4248
+
+
+MEDIATRIX
+---------
+
+* Serie 4400
 
 
 PATTON
@@ -19,10 +26,12 @@ PATTON
 * Modelli PRI SmartNode e Trinity
 * Modelli FXO SmartNode
 
-MEDIATRIX
----------
 
-* Serie 4400
+SANGOMA
+-------
+
+* Vega 60 2 BRI, 4 BRI 4 FXO
+* Vega 100G
 
 Provisioning
 ============
@@ -50,6 +59,10 @@ Una volta trovato in rete il gateway che si vuole configurare è necessario spec
 4. IP del |product|, in alcuni scenari d'installazione il gateway può raggiungere il |product| non tramite il suo IP locale
 5. Eventuali caratteristiche necessarie alla configurazione delle linee collegate (per linee ISDN la modalità della borchia, per linee analogiche il numero chiamato della linea)
 
+.. note:: Per i modelli Grandstream con 2 interfacce di rete, va indicato il mac-address dell'interfaccia LAN ma la configurazione creata da |product| utilizza l'interfaccia WAN che è quella che dovrà essere usata
+
 Dopo aver salvato la configurazione è possibile cliccando sul pulsante :guilabel:`Carica` consentire al |product| di collegarsi in telnet al gateway per caricare e/o indicare dove recuperare (a seconda della marca) la configurazione.
+
+.. note:: I modelli Grandstream non supportano la funzionalità di caricamento della configurazione da |product|, la configurazione va scaricata e caricata nell'interfaccia Web del gateway (sezione Upload Configuration)
 
 C'è anche la possibilità di scaricare la configurazione del gateway per caricarla tramite l’interfaccia web nel caso il gateway non sia raggiungibile direttamente dal |product| cliccando nel tasto per la gestione (simbolo con tre quadratini).

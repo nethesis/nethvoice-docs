@@ -61,17 +61,30 @@ I modelli sottostanti sono stati provati e funzionano correttamente, potrebbero 
 
 Yealink
 -------
+
 * UH 36
 
 Sennheiser
 ----------
 
+* SC 30 USB
 * SC 130 USB
 
 Jabra
 -----
 
 * HSC016
+
+Logitech
+--------
+
+* H650e USB
+
+Snom
+----
+
+* A330M USB
+* A330D USB
 
 Combinazione tasti chiamata
 ---------------------------
