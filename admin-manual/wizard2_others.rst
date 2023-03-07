@@ -272,6 +272,8 @@ Tutti gli utenti che hanno quel profilo saranno abilitati all'utilizzo dell'URL 
     1. Ad un profilo può essere associato un solo URL.
     2. Affinché l'URL possa essere invocato è necessario che l'utente finale abbia abilitato la visualizzazione dei popups nel proprio browser !
 
+In alcuni casi può essere necessario eseguire un'API per poter formare l'URL che dovrà essere visualizzato dal CTI, per esempio se si deve aprire un URL che contiene un codice cliente, ma è necessario eseguire un API esterna per poter trovare il corretto codice cliente a partire dal numero di telefono. Per ottenere questo comportamento, è necessario creare uno script personalizzato. Si può prendere d'esempio lo script `/usr/src/nethvoice/parametrized_url_customercode.php`
+
 Gestione Multipla Interni
 -------------------------
 
