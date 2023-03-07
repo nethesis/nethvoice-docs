@@ -565,6 +565,11 @@ Per disattivarlo eseguire:
 
 .. note:: Lo script deve essere eseguibile dall'utente "asterisk" e si consiglia di configurare opportunamente i permessi del file.
 
+Inviare i dettagli della chiamata tramite API
+.............................................
+
+Se si volesse usare uno script personalizzato per inviare i dettagli delle chiamate ad un servizio esterno utilizzando un'API, è possibile prendere spunto dallo script di esempio `/usr/src/nethvoice/samples/send_cdr_data.php`
+
 |product_cti|: eseguire uno script per ogni chiamata in ingresso dall'esterno
 =============================================================================
 

@@ -125,6 +125,12 @@ CSV
 
 Il pulsante :guilabel:`Verifica` consente la visualizzazione dell'anteprima dei dati prelevati dalla sorgente.
 
+Risoluzione nomi personalizzata
+...............................
+
+Nel caso si desiderasse utilizzare una sorgente diversa dalla rubrica centralizzata per risolvere i nomi, è possibile fare uno script custom di risoluzione e metterlo nella cartella `/usr/src/nethvoice/lookup.d`. 
+Nella cartella `/usr/src/nethvoice/samples/` ci sono due script di esempio `lookup_dummy.php` e `lookup_vte.php` che possono essere usati come spunto per creare il proprio personalizzato. Il primo restituisce un risultato finto qualunque numero chiami o sia chiamato, il secondo utilizza un'API esterna.
+
 Mappa
 .....
 
@@ -265,6 +271,8 @@ Tutti gli utenti che hanno quel profilo saranno abilitati all'utilizzo dell'URL 
 
     1. Ad un profilo può essere associato un solo URL.
     2. Affinché l'URL possa essere invocato è necessario che l'utente finale abbia abilitato la visualizzazione dei popups nel proprio browser !
+
+In alcuni casi può essere necessario eseguire un'API per poter formare l'URL che dovrà essere visualizzato dal CTI, per esempio se si deve aprire un URL che contiene un codice cliente, ma è necessario eseguire un API esterna per poter trovare il corretto codice cliente a partire dal numero di telefono. Per ottenere questo comportamento, è necessario creare uno script personalizzato. Si può prendere d'esempio lo script `/usr/src/nethvoice/parametrized_url_customercode.php`
 
 Gestione Multipla Interni
 -------------------------

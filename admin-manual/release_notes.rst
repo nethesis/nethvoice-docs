@@ -7,6 +7,16 @@ Note di rilascio |version|
 Questa release è basata su `Asterisk 18 <https://wiki.asterisk.org/wiki/display/AST/New+in+18>`_
 e `FreePBX 14 <https://www.freepbx.org/freepbx-14-release-candidate/>`_:
 
+
+Cambiamenti principali al 2023-03-05
+====================================
+
+* Aggiunta integrazione Google Speech to text con le caselle vocali
+* Aggiunta integrazione con API custom per chiamate in ingresso
+* Aggiornato Janus alla versione 0.12.3
+* Aggiunto supporto Gateway FXS Grandstream
+* Aggiunto NethPhone X210
+
 Cambiamenti principali al 2022-05-30
 ====================================
 
