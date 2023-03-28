@@ -1,6 +1,7 @@
 ============
 Introduzione
 ============
+
 |product| è una nuova soluzione telefonica aperta ed integrata con l'intero sistema informativo aziendale, in grado di fornire tutti i servizi di comunicazione e collaborazione: dati, voce e video.
 
 Il cuore OpenSource di |product| è basato principalmente su due progetti `Asterisk <http://www.asterisk.org/>`_ e `FreePBX <http://www.freepbx.org/>`_ potenziati grazie allo sviluppo di innumerevoli moduli e funzioni per semplificarne l’utilizzo e permetterne una forte integrazione con i dati presenti in azienda, pur mantenendo la caratteristica di apertura volta a consentirne la massima flessibilità a chiunque intenda sviluppare le proprie integrazioni usando i linguaggi di programmazione più comuni.
@@ -12,6 +13,7 @@ Il cuore OpenSource di |product| è basato principalmente su due progetti `Aster
 
 Componenti e connessioni
 ========================
+
 |product| integra un centralino tradizionale, con la tecnologia VOIP, linee ISDN e/o linee Analogiche e/o Flussi primari ed un sistema linux di tipo enterprise quale |parent_product|. |product| non è altro che uno dei tanti moduli che è possibile installare su |parent_product| di cui può sfruttare tutte le componenti e potenzialità. |parent_product|, derivato da RedHat Enterprise e Centos, ha tra i servizi installati 
 
 * Apache

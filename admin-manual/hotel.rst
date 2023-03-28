@@ -30,6 +30,7 @@ Tutti gli interni che fanno parte del profilo **hotel** entrano a far parte dell
 
 Come configurare il centralino
 ==============================
+
 Consigliamo di configurare il centralino in questo modo:
 
 * tutti gli interni delle camere devono essere aggiunti al profilo hotel dalla sezione `Configurazioni` o utilizzando l'applicazione `Gestione Multipla Interni`
@@ -38,6 +39,7 @@ Consigliamo di configurare il centralino in questo modo:
 
 Codici funzioni da telefono
 ===========================
+
 Nell'interfaccia di gestione del centralino |product| in Codici Servizi si trovano i codici per utilizzare le funzionalità del |product_hotel| dai telefoni.
 
 Ad esempio per aggiungere un extra per una camera dovrò chiamare ::
