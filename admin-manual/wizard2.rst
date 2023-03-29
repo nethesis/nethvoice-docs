@@ -27,6 +27,7 @@ Per l'accesso iniziale utilizzare le credenziali
 
 Modalità utenti per il centralino
 =================================
+
 Una volta effettuato il login, se non è ancora stato configurato un account provider sulla macchina, l'interfaccia mostrerà la possibilità di scegliere se installare un account provider LDAP locale o configurarlo manualmente.
 
 Nel primo caso, non verranno richieste ulteriori configurazioni, mentre nel secondo si verrà rediretti all'interfaccia di |parent_product|, dove sarà possibile configurare il provider degli utenti.
@@ -37,6 +38,7 @@ Una volta scelta la modalità, si procede alla configurazione degli utenti.
 
 Interni
 =======
+
 Il primo passo nella configurazione di |product| è definire la lista di utenti e l'abbinamento con il loro interno telefonico.
 
 In caso di account provider remoto in questa sezione comparirà l'elenco degli utenti che |parent_product| recupera remotamente.
@@ -86,6 +88,7 @@ Il tasto esporta consente di scaricare un modello di CSV con gli attuali utenti 
 
 Fasci
 =====
+
 Nella sezione fasci è possibile configurare i gateway per gestire le linee fisiche o creare fascio VoIP specificando le credenziali delle linee SIP date dal provider.
 
 I fasci, per collegare i gateway o le linee VoIP, vengono creati utilizzando la libreria PJSIP.
@@ -94,6 +97,7 @@ I fasci, per collegare i gateway o le linee VoIP, vengono creati utilizzando la 
 
 Fisici
 ------
+
 Come per i dispositivi questa sezione scansiona la rete di |product| e cerca dei gateway SIP supportati. Una volta individuati è possibile specificare:
 
 - Modello: specificare il modello del gateway
@@ -109,16 +113,19 @@ Il gateway scaricherà la configurazione da |product| e si riavvierà. Verranno 
 
 VoIP
 ----
+
 È possibile creare dei fasci VoIP selezionando uno dei provider supportati e inserendo le informazioni necessarie.
 
 Premere "Crea" per creare la configurazione relativa per quel fascio VoIP.
 
 Rotte
 =====
+
 Nella sezione rotte è possibile configurare le rotte in entrata e in uscita per il vostro centralino
 
 In entrata
 ----------
+
 In questa sezione, viene mostrata la lista delle rotte già configurate, con la possibilità di modificarle o eliminarle.
 
 Premendo sul bottone "Crea nuova rotta" si aprirà un nuovo tab con l'applicazione Visual Plan, che vi consentirà di creare, modificare e collegare i componenti del centralino che gestiranno il flusso della chiamata per il numero in ingresso 
@@ -127,6 +134,7 @@ Premendo il simbolo di spunta nell'applicazione Visual Plan, la configurazione d
 
 In uscita
 ---------
+
 In questa sezione è presente la lista delle rotte in uscita. La prima volta che questa pagina viene visitata il wizard vi propone delle rotte in uscita di default, con i pattern di chiamata specifici per le diverse lingue.
 
 È possibile inoltre specificare l'ordine con cui verranno usati i fasci precedentemente creati, avendo quindi la possibilità di personalizzare la priorità dei vari fasci.
@@ -243,6 +251,7 @@ Configurazioni
 
 Gruppi
 ------
+
 È possibile creare dei gruppi utente che poi saranno visibili e utilizzabili nelle applicazioni, come ad esempio nel |product_cti|
 
 - Cliccare il bottone "Crea nuovo gruppo"
@@ -251,6 +260,7 @@ Gruppi
 
 Profili
 -------
+
 |product| consente di selezionare le funzionalità a cui ogni utente potrà accedere e queste vengono raggruppate in dei profili.
 
 Vengono creati di default 3 profili che contengono diversi livelli di funzionalità.
@@ -263,8 +273,92 @@ Vengono creati di default 3 profili che contengono diversi livelli di funzionali
 
 .. note:: Ricordarsi di abilitare sui profili dove necessario l'accesso ai gruppi utente precedentemente creati.
 
+Permessi
+^^^^^^^^
+
+Impostazioni
+~~~~~~~~~~~~
+
+- il permesso generale abilita o disabilita l'accesso a tutte le funzionalità della sezione e le impostazioni generali di notifica
+- :guilabel:`DND`, abilita la configurazione del *non disturbare*
+- :guilabel:`Inoltro di chiamata`, abilita la configurazione dell'*inoltro di chiamata (deviazione)*
+- :guilabel:`Registrazione`, abilita la *registrazione* delle proprie conversazioni. È possibile anche *visualizzare/ascoltare/eliminare* le proprie registrazioni
+- :guilabel:`Conferenza`, abilita la creazione di *audio conferenze* in |product_cti|
+- :guilabel:`Parcheggi`, abilita la visualizzazione lo stato dei *parcheggi* e la possibilità di prendere le chiamate parcheggiate
+- :guilabel:`Chat`, abilita il servizio *chat* in |product_cti|
+- :guilabel:`Privacy`, abilita l'*oscuramento delle ultime 3 cifre* (modificabile da riga di comando) del numero chiamato e/o chiamante degli altri utenti in |product_cti|
+- :guilabel:`Condivisione Schermo`, abilitala condivisione dello schermo durante una chiamata effettuata tra due |product_cti|
+- :guilabel:`Pulsanti Telefono Fisico`, abilita la configurazione dei *tasti dei telefoni fisici* da parte dell'utentei in |product_cti|. Questi corrispondono ai Line Key mostrati nelle pagine :ref:`wizard2-dispositivi`
+- :guilabel:`Video Conference`, abilita la creazione di una *video conferenza* in |product_cti|
+
+Rotte in uscita
+~~~~~~~~~~~~i~~
+
+- vengono mostrate tutte le *rotte in uscita* configurate in |product| ed è possibile abilitare/disabilitare l'utilizzo singolarmente
+
+Rubrica
+~~~~~~~
+
+- il permesso generale abilita la visualizzazione della *rubrica* in |product_cti| e la possibilità di aggiungere contatti, modificare ed eliminare i contatti propri
+- :guilabel:`Rubrica Avanzata`, abilita la possibilità di modificare/eliminare anche i *contatti non propri* della rubrica in |product_cti|
+  
+Schede Cliente
+~~~~~~~~~~~~~~
+
+- il permesso generale abilita la possibilità di vedere sul |product_cti| la *scheda cliente*
+- per ogni sezione della *scheda cliente* è possibile abilitare/disabilitare la visualizzazione
+
+Pannello Presenza
+~~~~~~~~~~~~~~~~~
+
+- il permesso generale abilita la visualizzazione del pannello *operatori* in |product_cti|
+- :guilabel:`Ascolto`, abilita l'*ascolto* di chiamate di altri utenti
+- :guilabel:`Intrusione`, abilita l'*intromissione* in una chiamata di un altro utente (ascolto di chiamante e chiamato, conversazione solo con l'utente)
+- :guilabel:`Registrazione Avanzate`, abilita la *registrazione* di chiamate di altri utenti
+- :guilabel:`Pickup`, abilita la *risposta per assente* per chiamate di altri utenti
+- :guilabel:`Trasferiemnto Chiamata`, abilita il *trasferimento di chiamata* per chiamate di altri utenti 
+- :guilabel:`Parcheggio Avanzato`, abilita la possibilità di *parcheggiare* chiamate di altri utenti e di riprenderle
+- :guilabel:`Chiudi`, abilita la possibilità di *chiudere* le chiamate di altri utenti
+- :guilabel:`Linee Centralino`, abilita la visione in |product_cti| dello *stato dei fasci* configurati in |product|
+- :guilabel:`Telefono Avanzato`, abilita le *funzionalità del telefono* (chiudi, chiama, rispondi) sulle conversazioni che non appartengono all'utente
+- per ogni *gruppo di utenti* configurato in |product| è possibile abilitare/disabilitare la visualizzazione
+
+Pannello agente di coda
+~~~~~~~~~~~~~~~~~~~~~~~
+
+- il permesso generale abilita la sezione *Code* in |product_cti| con le informazioni delle code di appartenenza, la possibilità di fare login/logout ed entrare/uscire dalla pausa
+- :guilabel:`Pannello agente di coda avanzato`, abilita *informazioni avanzate* sullo stato delle code e degli agenti
+- :guilabel:`Chiamate non gestite`, abilita l'accesso alla sezione *chiamate non gestite*
+
+Sorgenti Video
+~~~~~~~~~~~~~~
+
+- il permesso generale abilita l'accesso alla sezione *sorgenti video* in |product_cti|
+- per ogni *sorgente video* configurata in |product| è possibile abilitare/disabilitare la visualizzazione
+
+Fuori Orario
+~~~~~~~~~~~~
+
+- il permesso generale abilita l'accesso alla sezione *fuori orario* di |product_cti| consentendo di cambiare il percorso delle proprie chiamate in entrata
+- :guilabel:`Fuori orario avanzato`, consente di modificare il *percorso della chiamata* in entrata dell'utente e delle rotte in entrata generiche
+- :guilabel:`Fuori orario completo`, consente la modifica di tutti i *percorsi delle chiamate* in arrivo
+
+Queue Manager
+~~~~~~~~~~~~~
+
+- il permesso generale abilita l'accesso alla sezione *QManager* in |product_cti|
+- per ogni *coda* configurata in |product| è possibile abilitare/disabilitare la visualizzazionea dello stato e dei dati
+
+Posto Operatore
+~~~~~~~~~~~~~~~
+
+- il permesso generale abilita l'accesso alla sezione *posto operatore* in |product_cti|
+- va abilitata una sola *coda* configurata in |product| da usare come sorgente delle chiamate da gestire
+
+
 Utenti
 ------
+
 La pagina :guilabel:`Utenti` stabilisce per ogni singolo utente le
 impostazioni personali e i dispositivi associati.
 
@@ -400,6 +494,7 @@ La sezione Avanzate consente l'accesso diretto all'interfaccia avanzata di |prod
 
 Report
 ------
+
 La sezione "Report" riporta l'elenco completo degli utenti del centralino specificando il loro:
 
 - Interno

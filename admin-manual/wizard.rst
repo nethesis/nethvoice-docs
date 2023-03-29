@@ -27,6 +27,7 @@ Le credenziali per il login sono le seguenti:
 
 Modalità utenti per il centralino
 =================================
+
 Una volta effettuato il login, se non è ancora stato configurato un account provider sulla macchina, l'interfaccia mostrerà la possibilità di scegliere se installare un account provider LDAP locale o configurarlo manualmente. 
 
 Nel primo caso, non verranno richieste ulteriori configurazioni, mentre nel secondo si verrà rediretti all'interfaccia di |parent_product|, dove sarà possibile configurare il provider degli utenti. 
@@ -37,6 +38,7 @@ Una volta scelta la modalità, si procede alla configurazione degli utenti.
 
 Interni
 =======
+
 Il primo passo nella configurazione di |product| è definire la lista di utenti e l'abbinamento con il loro interno telefonico.
 
 In caso di account provider remoto in questa sezione comparirà l'elenco degli utenti che |parent_product| recupera remotamente.
@@ -86,12 +88,14 @@ Il tasto esporta consente di scaricare un modello di CSV con gli attuali utenti 
 
 Fasci
 =====
+
 Nella sezione fasci è possibile configurare i gateway per gestire le linee fisiche o creare fascio VoIP specificando le credenziali dei vostri provider
 
 .. _fisiciold:
 
 Fisici
 ------
+
 Come per i dispositivi, questa sezione scansiona la vostra rete e cerca dei gateway disponibili, una volta individuati è possibile specificare, selezionandone uno, due impostazioni:
 
 - Modello: specificare il modello del gateway
@@ -107,16 +111,19 @@ Il gateway prende la configurazione e si riavvia, vengono inoltre creati i fasci
 
 VoIP
 ----
+
 É possibile creare dei fasci VoIP selezionando uno dei provider supportati, e inserendo le informazioni necessarie.
 
 Premere "Crea" per creare la configurazione relativa per quel fascio VoIP.
 
 Rotte
 =====
+
 Nella sezione rotte è possibile configurare le rotte in entrata e in uscita per il vostro centralino
 
 In entrata
 ----------
+
 Una volta in questa sezione, vi si presenta la lista delle rotte già configurate, con la possibilità di modificarle o eliminarle.
 
 Premendo sul bottone "Crea nuova rotta" si apre una differente applicazione il Visual Plan, che vi consente di creare, modificare e collegare le varie componenti per gestire al meglio il flusso della chiamata su un determinato numero in ingresso.
@@ -125,6 +132,7 @@ Premendo il simbolo di spunta nell'applicazione Visual Plan, la configurazione d
 
 In uscita
 ---------
+
 In questa sezione è presente la lista delle rotte in uscita presenti, la prima volta che questa pagina viene visitata, il wizard vi propone delle rotte in uscita di default con i pattern di chiamate specifici per le diverse lingue.
 
 É possibile inoltre specificare l'ordine con cui usare i fasci, precedentemente creati, e regolare così in maniera personalizzata il percorso delle chiamate in uscita.
@@ -135,6 +143,7 @@ Premendo il tasto "Salva" la configurazione viene scritta nel centralino e da qu
 
 Dispositivi
 -----------
+
 In questa sezione è possibile scansionare la rete del |product| e il wizard troverà in automatico i telefoni presenti, individuando, dove è possibile, marca e modello, mostrando inoltre l'indirizzo IP e il MAC address.
 
 Se di alcuni telefoni non è stato possibile trovare automaticamente il modello, servirsi del menù a tendina per selezionarlo.
@@ -148,6 +157,7 @@ Configurazioni
 
 Gruppi
 ------
+
 È possibile creare dei gruppi utente che poi saranno visibili e utilizzabili nelle applicazioni, ad esempio nel |product_cti|
 
 - Cliccare il bottone "Crea nuovo gruppo"
@@ -156,6 +166,7 @@ Gruppi
 
 Profili
 -------
+
 |product| consente di selezionare le funzionalità a cui ogni utente potrà accedere e queste vengono raggruppate in dei profili.
 
 Vengono creati di default 3 profili che contengono diversi livelli di funzionalità.
@@ -172,6 +183,7 @@ Il profilo serve a stabilire le funzionalità abilitate per ogni utente a cui vi
 
 Utenti
 ------
+
 Lo step finale della sezione :guilabel:`Configurazioni` consente di assegnare ad ogni utente le impostazioni create nei passi precedenti.
 La lista degli utenti mostra quelli a cui è stato associato un interno nel primo passaggio. Selezionando un utente è possibile:
 
@@ -190,6 +202,7 @@ La lista degli utenti mostra quelli a cui è stato associato un interno nel prim
 
 Applicazioni
 ============
+
 La sezione "Applicazioni" consente di creare, modificare o eliminare determinate funzionalità del centralino, che nel wizard vengono solo create e configurate, ma che poi vengono utilizzate nel CTI.
 
 Ad esempio le schede cliente, nel wizard, vengono configurate per accedere al database e per mostrare in maniera pratica le informazioni ottenute, ma il reale utilizzo sarà all'interno del CTI, durante le chiamate o durante la ricerca di determinate informazioni.
@@ -255,6 +268,7 @@ La variabile `$NUMBER` non è altro che il numero chiamante del centralino a cui
 
 Sorgenti video
 --------------
+
 In questa sezione è possibile configurare le sorgenti video o telecamere IP. Cliccando sul bottone "Crea nuova sorgente" è possibile compilare un form per la creazione:
 
 - Nome: specificare il nome da dare alla sorgente
