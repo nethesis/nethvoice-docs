@@ -292,7 +292,7 @@ Impostazioni
 - :guilabel:`Video Conference`, abilita la creazione di una *video conferenza* in |product_cti|
 
 Rotte in uscita
-~~~~~~~~~~~~i~~
+~~~~~~~~~~~~~~~
 
 - vengono mostrate tutte le *rotte in uscita* configurate in |product| ed è possibile abilitare/disabilitare l'utilizzo singolarmente
 
