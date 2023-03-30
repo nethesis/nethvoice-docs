@@ -52,7 +52,7 @@ In caso di account provider locale in questa sezione comparirà invece l'elenco 
 - L'utente si evidenzia e una spunta verde compare se tutto è andato a buon fine
 
 Importazione utenti da csv
-..........................
+--------------------------
 
 Nei centralini che non usano un account provider esterno, è possibile importare gli utenti con un file CSV.
 
