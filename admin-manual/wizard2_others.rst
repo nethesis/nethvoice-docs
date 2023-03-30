@@ -83,6 +83,8 @@ In questa sezione è possibile configurare le sorgenti video o telecamere IP. Cl
 
 Una volta completata la compilazione del form premere "Salva" per salvare le informazioni e creare una nuova sorgente video.
 
+.. _external-phonebook:
+
 Aggiunta di rubriche esterne
 ----------------------------
 
