@@ -94,7 +94,7 @@ Cambiamenti principali al 2021-03-20
 
 Rilasciati i Nuovi Report di |product|.
 
-Vedi qui :ref:`Report<report.html>`
+Vedi qui :ref:`Report <report>`
 
 Cambiamenti principali al 2020-11-30
 ====================================
@@ -110,7 +110,7 @@ Il formato CSV è quello standard:
 * campi separati da virgola
 * doppie virgolette "" come delimitatori del testo, obbligatori nel caso sia presente una virgola o uno spazio
 
-Vedi qui :ref:`Sorgenti Rubrica<wizard2_others.html#aggiunta-di-rubriche-esterne>`  
+Vedi qui :ref:`Sorgenti Rubrica <external-phonebook>`
 
 Cambiamenti principali al 2020-07-06
 ====================================
