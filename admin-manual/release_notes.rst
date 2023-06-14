@@ -12,7 +12,7 @@ Cambiamenti principali al 2023-06-14
 ====================================
 
 * |product| Provisioning: aggiunto il supporto per i telefoni Fanvil serie V6X e X300X
-* Corretto comporatamento rubrica LDAP per telefoni Fanvil che non gestivano più di 64 caratteri
+* Corretto comportamento rubrica LDAP per telefoni Fanvil che non gestivano più di 64 caratteri
 * Report |product|: corretto calcolo posizione minima, massima, media in coda
 
 Cambiamenti principali al 2023-03-05
