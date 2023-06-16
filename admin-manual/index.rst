@@ -92,6 +92,11 @@ Manuale amministratore |product| |release|
    report
    queue_report
 
+.. toctree::
+   :caption: Integrazioni
+   :maxdepth: 1
+
+   integration
 
 .. toctree::
    :caption: CTI: Guida Sviluppatori
