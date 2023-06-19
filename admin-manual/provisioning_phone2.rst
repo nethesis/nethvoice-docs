@@ -271,6 +271,7 @@ Fanvil
 
 **Versione FIRMWARE 2.0 o superiore**
 
+* V62, V64, V65, V67
 * X1S, X1SP
 * X210
 * X3, X3S, X3SP, X3G, X3SG, X3U
@@ -278,6 +279,7 @@ Fanvil
 * X5S, X5U
 * X6, X6U
 * X7C
+* X301, X303
 
 
 Yealink 
