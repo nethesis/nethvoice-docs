@@ -1,12 +1,12 @@
-============
-Integrazioni
-============
-
-
-.. _integratio4:
-
-vtenext 
 =======
+vtenext
+=======
+
+
+.. _integration:
+
+Descrizione 
+===========
 
 L'integrazione tra |product| e **vtenext** di default riguarda queste funzionalità:
 
@@ -19,27 +19,33 @@ L'integrazione tra |product| e **vtenext** di default riguarda queste funzionali
 Configurazione
 --------------
 
-1) copiare il file */usr/src/nethvoice/samples/lookup_vte.php* in */usr/src/nethvoice/lookup.d/* con il comando:
+1) copiare il file */usr/src/nethvoice/samples/lookup_vte.php* in */usr/src/nethvoice/lookup.d/* con il comando: ::
         
  cp /usr/src/nethvoice/samples/lookup_vte.php /usr/src/nethvoice/lookup.d/
 
-  Modificare il file inserendo i valori di **$url** e **$authorization_token** con quelli forniti dagli amministratori di **vtenext**
+.. note::
 
-2) copiare il file */usr/share/phonebooks/samples/vte.php* in */usr/share/phonebooks/scripts/* con il comando: 
+   Modificare il file inserendo i valori di **$url** e **$authorization_token** con quelli forniti dagli amministratori di **vtenext**
+
+2) copiare il file */usr/share/phonebooks/samples/vte.php* in */usr/share/phonebooks/scripts/* con il comando: ::
 
  cp /usr/share/phonebooks/samples/vte.php /usr/share/phonebooks/scripts/
 
-  Modificare il file inserendo i valori di **$url** e **$authorization_token** con quelli forniti dagli amministratori di **vtenext**
+.. note::
 
-3) installare il pacchetto aggiuntivo *node-crm* con il comando 
+   Modificare il file inserendo i valori di **$url** e **$authorization_token** con quelli forniti dagli amministratori di **vtenext**
+
+3) installare il pacchetto aggiuntivo *node-crm* con il comando: ::
 
  yum install node-crm
 
-  copiare il file */usr/src/nethvoice/samples/vte_incoming_call.php* in */usr/src/nethvoice/*
+copiare il file */usr/src/nethvoice/samples/vte_incoming_call.php* in */usr/src/nethvoice/*
 
-  Modificare il file inserendo i valori di **$url** e **$authorization_token** con quelli forniti dagli amministratori di **vtenext**
+.. note::
 
-  Aggiungere al backup il file */usr/src/nethvoice/vte_incoming_call.php* aggiungendo una riga al file */etc/backup-data.d/custom.include*
+   Modificare il file inserendo i valori di **$url** e **$authorization_token** con quelli forniti dagli amministratori di **vtenext**
+
+Aggiungere al backup il file */usr/src/nethvoice/vte_incoming_call.php* aggiungendo una riga al file */etc/backup-data.d/custom.include*
 
 4) configurazione a carico dell'amministratore di **vtenext**, è necessario fornirgli le credenziali di una utenza creata ad hoc con il permesso :guilabel:`Telefono Avanzato` attivato  (è possibile usare la stessa anche al punto 5)
 
