@@ -297,9 +297,10 @@ Snom
 
 **Versione FIRMWARE 8.7.5 o superiore**
 
-* D120
+* D120, D140, D150
 * D305, D315, D345, D375, D385
 * D710, D712, D713, D715, D717, D725, D735, D745, D765, D785
+* D862, D865
 
 Gigaset
 -------
