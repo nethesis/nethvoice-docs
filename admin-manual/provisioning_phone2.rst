@@ -265,22 +265,21 @@ NethPhone
 * NP-X5
 * NP-X210
 
-
 Fanvil
 ------
 
 **Versione FIRMWARE 2.0 o superiore**
 
 * V62, V64, V65, V67
-* X1S, X1SP
+* X1/S/SP
 * X210
-* X3, X3S, X3SP, X3G, X3SG, X3U
-* X4, X4G, X4SG, X4U
-* X5S, X5U
-* X6, X6U
-* X7C
-* X301, X303
-
+* X3/S/SP/G/SG, X3U, X3U Pro
+* X4/G/SG, X4U, X4U-V2
+* X5S, X5U, X5U-V2
+* X6, X6U, X6U-V2
+* X7A/C
+* X301/P/G/W, X303/P/G/W
+* H2U, H2U-V2, H5
 
 Yealink 
 -------
