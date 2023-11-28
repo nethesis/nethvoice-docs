@@ -261,6 +261,18 @@ Eseguire: ::
 
 dove <PROTO> può assumere i valori *http* o *https*.
 
+Hardening https
+---------------
+
+Di default |product| accetta connessioni dal |product_nethifier| anche utilizzando versioni di cifratura vecchie e questo può essere rilevato come problema di sicurezza quando viene effettuato un Vulnerability Assessment.
+ È possibile disabilitare i protocolli TLS 1.0 e TLS 1.1 per evitare queste segnalazioni, tenendo presente che potrebbero esserci problemi con alcuni client dotati di sistemi operativi datati.
+
+Per disabilitare TLS 1.0 e TLS 1.1 per |product_nethifier| eseguire i comandi: ::
+
+ config setprop nethcti-server tlsOptions true
+ signal-event nethcti-server3-update
+
+
 Backup
 ------
 
