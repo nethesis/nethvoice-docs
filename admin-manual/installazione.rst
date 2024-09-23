@@ -42,7 +42,8 @@ Accesso Esterno
 Interfaccia Web
 ---------------
 
-Per accedere da una rete diversa da quelle locali o fidate all'interfaccia web di amministrazione di |product|, aggiungere la rete di provenienza nel menù *Accesso centralino-> Accesso interfaccia web* di |parent_product|.
+Per accedere da una rete diversa da quelle locali o fidate all'interfaccia web di amministrazione di |product|, aggiungere la rete di provenienza nel menù *Applications -> FreePBX (Impostazioni) -> Impostazioni* di |parent_product| e 
+selezionare *Crea nuovo accesso*. Inserire l'IP pubblico al quale consentire l'accesso.
 
 
 Servizi
